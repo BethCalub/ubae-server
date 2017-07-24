@@ -18,7 +18,6 @@ function onConnect(socket) {
   // Insert sockets below
   require('../api/dept/dept.socket').register(socket);
   require('../api/ubae/ubae.socket').register(socket);
-  require('../api/thing/thing.socket').register(socket);
 }
 
 export default function(socketio) {

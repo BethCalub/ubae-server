@@ -5,6 +5,7 @@
 'use strict';
 
 import express from 'express';
+import cors from 'cors';
 import mongoose from 'mongoose';
 mongoose.Promise = require('bluebird');
 import config from './config/environment';
@@ -20,6 +21,7 @@ mongoose.connection.on('error', function(err) {
 
 // Setup server
 var app = express();
+app.use(cors());
 var server = http.createServer(app);
 var socketio = require('socket.io')(server, {
   serveClient: config.env !== 'production',

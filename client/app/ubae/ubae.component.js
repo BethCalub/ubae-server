@@ -29,11 +29,12 @@ export class UbaeComponent {
       });
   }
 
-  uSearch() {
+  ubaeSearch() {
     if(this.ubaeQuery) {
       this.$http.get('/api/ubae/use?i=' + this.ubaeQuery)
       .then(response => {
         this.ubaeResults = response.data;
+        this.ubaeQuery = '';
       });
     }
   }

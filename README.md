@@ -1,4 +1,5 @@
-# University of Baguio Assistive Extension (UBAE) Information Chatbot
+# University of Baguio Assistive Extension (UBAE) 
+# Information Chatbot
 
 ## Getting Started
 
