@@ -66,18 +66,16 @@ exports.results = function(story, getCommand) {
   case 'where':
     result = {
       _say: 'This is what I have found.',
-      office: story.officename,
       dept: story.department,
-      bldg: story.location.building,
-      flr: story.location.floor,
-      rm: story.location.room,
+      bldg: 'Building Name',
+      flr: 'Floor',
+      rm: 'Room',
       _t: Date.now()
     };
     break;
   case 'which':
     result = {
       _say: 'This is what I have found.',
-      office: story.officename,
       dept: story.department,
       _t: Date.now()
     };
@@ -85,7 +83,6 @@ exports.results = function(story, getCommand) {
   case 'what':
     result = {
       _say: 'This is what I have found.',
-      office: story.officename,
       dept: story.department,
       _t: Date.now()
     };

@@ -12,6 +12,8 @@
 
 import jsonpatch from 'fast-json-patch';
 import Ubae from './ubae.model';
+import Dept from '../dept/dept.model';
+import ubaeAI from './ubae.logic.js';
 
 function respondWithResult(res, statusCode) {
   statusCode = statusCode || 200;
@@ -62,6 +64,43 @@ function handleError(res, statusCode) {
   return function(err) {
     res.status(statusCode).send(err);
   };
+}
+
+export function use(req, res) {
+  try {
+    var userInput = req.query.i;
+    var normalized = ubaeAI.stemmer(userInput);
+    var getKeywords = ubaeAI.getKeywords(normalized);
+    var getCommand = ubaeAI.commandSearch(userInput);
+    console.log(getCommand);
+    if(getCommand !== undefined) {
+      console.log(getKeywords);
+      if(getKeywords.length > 0) {
+        var keyRegex = new RegExp(getKeywords.join('|'), 'i');
+        Dept.findOne({ tags: { $all: [keyRegex] } })
+          .exec(function(err, story) {
+            if(err) return handleError(err);
+            if(story !== null) {
+              return res.send({
+                in: userInput,
+                cmd: getCommand,
+                tags: getKeywords,
+                result: ubaeAI.results(story, getCommand)
+              });
+            } else {
+              return res.send(ubaeAI.errResults('Sorry but I can\'t seem to find anything related'));
+            }
+          });
+      } else {
+        return res.send(ubaeAI.errResults('Please be more specific'));
+      }
+    } else {
+      return res.send(ubaeAI.errResults('I don\'t know what you want to find. ' +
+        'Please start your question with WHAT, WHERE, HOW, or WHICH'));
+    }
+  } catch(err) {
+    return res.send(ubaeAI.errResults('Please type in a question.'));
+  }
 }
 
 // Gets a list of Ubaes
