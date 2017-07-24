@@ -12,21 +12,21 @@ export class MainController {
     this.socket = socket;
 
     $scope.$on('$destroy', function() {
-      socket.unsyncUpdates('thing');
+      socket.unsyncUpdates('dept');
     });
   }
 
   $onInit() {
-    this.$http.get('/api/things')
+    this.$http.get('/api/depts')
       .then(response => {
         this.awesomeThings = response.data;
-        this.socket.syncUpdates('thing', this.awesomeThings);
+        this.socket.syncUpdates('dept', this.awesomeThings);
       });
   }
 
   addThing() {
     if(this.newThing) {
-      this.$http.post('/api/things', {
+      this.$http.post('/api/depts', {
         name: this.newThing
       });
       this.newThing = '';
@@ -34,7 +34,7 @@ export class MainController {
   }
 
   deleteThing(thing) {
-    this.$http.delete(`/api/things/${thing._id}`);
+    this.$http.delete(`/api/depts/${thing._id}`);
   }
 
   // uibModal.open({
