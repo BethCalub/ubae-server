@@ -2,41 +2,24 @@
 
 import swd from './ubae.swd.js';
 import natural from 'natural';
+// import compromise from 'compromise';
 
-exports.getKeywords = function(normalized) {
+const commandList = ['WHERE', 'HOW', 'WHAT', 'WHICH'];
+const typeList = ['OFFICE', 'DEPARTMENT', 'SCHOOL', 'DEPT'];
+
+function stemmer(input) {
   var tokenizer = new natural.WordTokenizer();
-  return tokenizer.tokenize(normalized);
-};
-
-exports.commandSearch = function(req, res) {
-  req = req.toUpperCase();
-  req = req.replace(/[^\w\s]|_/g, '');
-  req = req.replace(/\s+/g, ' ');
-  req = req.split(' ');
-  var commandList = ['WHERE', 'HOW', 'WHAT', 'WHICH'];
-  for(var commandIndex = 0; commandIndex < commandList.length; commandIndex++) {
-    var currentreq = commandList[commandIndex];
-    for(var inputIndex = 0; inputIndex < req.length; inputIndex++) {
-      var currentUserInput = req[inputIndex];
-      if(currentreq === currentUserInput) {
-        return currentreq.toLowerCase();
-      }
-    }
-  }
-};
-
-exports.stemmer = function(sentence) {
   var word;
   var stopWord;
   var regexStr;
   var regex;
-  var cleansedString = sentence.replace(/[^\w\s]|_/g, '').replace(/\s+/g, ' ');
+  var cleansedString = input.replace(/[^\w\s]|_/g, '').replace(/\s+/g, ' ');
   var stopWords = swd.sw();
   var words = cleansedString.match(/[^\s]+|\s+[^\s+]$/g);
-  for(var wordsIndex = 0; wordsIndex < words.length; wordsIndex++) {
-    for(var stopWordIndex = 0; stopWordIndex < stopWords.length; stopWordIndex++) {
-      word = words[wordsIndex].replace(/\s+|[^a-z]+/ig, '');
-      stopWord = stopWords[stopWordIndex];
+  for(var i = 0; i < words.length; i++) {
+    for(var y = 0; y < stopWords.length; y++) {
+      word = words[i].replace(/\s+|[^a-z]+/ig, '');
+      stopWord = stopWords[y];
       if(word.toLowerCase() === stopWord) {
         regexStr = '^\\s*' + stopWord + '\\s*$';
         regexStr += '|^\\s*' + stopWord + '\\s+';
@@ -47,7 +30,43 @@ exports.stemmer = function(sentence) {
       }
     }
   }
-  return cleansedString.replace(/^\s+|\s+$/g, '').toLowerCase();
+  return tokenizer.tokenize(cleansedString.replace(/^\s+|\s+$/g, '').toLowerCase());
+}
+
+function wordSearch(input, list) {
+  input = input.toUpperCase()
+    .replace(/[^\w\s]|_/g, '')
+    .replace(/\s+/g, ' ')
+    .split(' ');
+  for(var y = 0; y < list.length; y++) {
+    var cur = list[y];
+    for(var x = 0; x < input.length; x++) {
+      var currentUserInput = input[x];
+      if(cur === currentUserInput) {
+        return cur.toLowerCase();
+      }
+    }
+  }
+}
+
+exports.getKeywords = function(input) {
+  return stemmer(input);
+};
+
+exports.getCommand = function(input) {
+  return wordSearch(input, commandList);
+};
+
+exports.getType = function(input) {
+  return wordSearch(input, typeList);
+};
+
+exports.getQuery = function(input) {
+  return {
+    keywords: stemmer(input),
+    commands: wordSearch(input, commandList),
+    location: wordSearch(input, typeList)
+  };
 };
 
 exports.errResults = function(message) {

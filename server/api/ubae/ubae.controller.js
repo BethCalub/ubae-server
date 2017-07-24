@@ -69,37 +69,44 @@ function handleError(res, statusCode) {
 export function use(req, res) {
   try {
     var userInput = req.query.i;
-    var normalized = ubaeAI.stemmer(userInput);
-    var getKeywords = ubaeAI.getKeywords(normalized);
-    var getCommand = ubaeAI.commandSearch(userInput);
-    console.log(getCommand);
-    if(getCommand !== undefined) {
-      console.log(getKeywords);
-      if(getKeywords.length > 0) {
-        var keyRegex = new RegExp(getKeywords.join('|'), 'i');
+    var ubae = ubaeAI.getQuery(userInput);
+    console.log(ubae.commands);
+    if(ubae.commands !== undefined) {
+      console.log(ubae.keywords);
+      if(ubae.keywords.length > 0) {
+        var keyRegex = new RegExp(ubae.keywords.join('|'), 'i');
         Dept.findOne({ tags: { $all: [keyRegex] } })
           .exec(function(err, story) {
             if(err) return handleError(err);
             if(story !== null) {
               return res.send({
                 in: userInput,
-                cmd: getCommand,
-                tags: getKeywords,
-                result: ubaeAI.results(story, getCommand)
+                cmd: ubae.commands,
+                tags: ubae.keywords,
+                result: ubaeAI.results(story, ubae.commands)
               });
             } else {
-              return res.send(ubaeAI.errResults('Sorry but I can\'t seem to find anything related'));
+              return res.send(ubaeAI.errResults(
+                'Sorry but I can\'t seem to find anything related'
+              ));
             }
           });
       } else {
-        return res.send(ubaeAI.errResults('Please be more specific'));
+        return res.send(ubaeAI.errResults(
+          'Please be more specific'
+        ));
       }
     } else {
-      return res.send(ubaeAI.errResults('I don\'t know what you want to find. ' +
-        'Please start your question with WHAT, WHERE, HOW, or WHICH'));
+      // Add an exception flow.
+      return res.send(ubaeAI.errResults(
+        'I don\'t know what you want to find. ' +
+        'Please start your question with WHAT, WHERE, HOW, or WHICH'
+      ));
     }
   } catch(err) {
-    return res.send(ubaeAI.errResults('Please type in a question.'));
+    return res.send(ubaeAI.errResults(
+      'Please type in a question.'
+    ));
   }
 }
 
