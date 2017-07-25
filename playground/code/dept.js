@@ -17,7 +17,3 @@ let dept = {
     }
   }]
 };
-
-let office = {
-  
-};

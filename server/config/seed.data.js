@@ -326,39 +326,420 @@ let sit = {
   }]
 };
 
+let ste = {
+  department: 'SCHOOL OF TEACHER EDUCATION',
+  mission: '',
+  objectives: {
+    header: 'The School of Teacher Education aims to produce a graduate who ',
+    list: ['1. actualizes high academic proficiency in the domains of learning;',
+      '2. facilitates effectively and efficiently in a learning environment conducive to diverse learners;',
+      '3. imbibes a strong sense of professionalism as embodied in the Code of Ethics for teachers;',
+      '4. undertakes researches in addressing the current trends in education;',
+      '5. advocates environmental protection and preservation for sustainable development; and',
+      '6. exemplifies the highest standards and practices of professional teachers.'
+    ]
+  },
+  location: {
+    bldg: 'H building',
+    floor: '',
+    room: ''
+  },
+  tags: ['STE', 'Educ', 'Teacher'],
+  programs: [{
+    name: 'Doctor of Philosophy in Development Education',
+    requirements: '',
+    prereq: '',
+    years: null,
+    programType: 'Graduate',
+    objectives: {
+      header: 'The Doctor of Philosophy in Development Education Program aims to produce a graduate who',
+      list: ['1. utilizes sound philosophical thoughts in making informed decisions foreducational development;',
+        '2. develops tenets that will serve as foundation for the improvement of education;',
+        '3. exemplifies the value of a holistically developed professional who advocates fairness and equality in the work place and the community;',
+        '4. conducts philosophical researches for the betterment of the community;',
+        '5. serves as a pillar in the formation of the real essence of humanity; ',
+        '6. integrates and uses different viewpoints for the transformation of the workplace and the special milieu.'
+      ]
+    },
+    tags: ['Doctor in Philosophy', 'Philos', 'Philosophy']
+  }, {
+    name: 'Doctor of Education',
+    requirements: '',
+    prereq: '',
+    years: null,
+    programType: 'Graduate',
+    objectives: {
+      header: '',
+      list: ['']
+    },
+    tags: ['Doctor in Education', 'Phd in Education']
+  }, {
+    name: 'Master of Arts in Education',
+    requirements: '',
+    prereq: '',
+    years: null,
+    programType: 'Graduate',
+    objectives: {
+      header: 'The Master of Arts in Education Major in Educational Management Program aims to produce a graduate who',
+      list: ['1.possesses commendable cognitive talent worthy of emulation;,',
+        '2.manifests competent supervisory and administrative skills in the academe;',
+        '3. serves as a role model of ethical and aesthetic attributes in the community;',
+        '4.undertakes and applies significant researches to improve the teaching profession;',
+        '5.engages in programs for functional literacy;',
+        '6.initiates in the promotion of access to quality education'
+      ]
+    },
+    tags: ['Master in Education']
+  }, {
+    name: 'Bachelor of Elementary Education',
+    requirements: '',
+    prereq: '',
+    years: 4,
+    programType: 'Baccalaureate',
+    objectives: {
+      header: 'The Bachelor in Elementary Education Program aims to produce a graduate who',
+      list: ['1. concretizes noble quality education in the teaching-learning process;',
+        '2. demonstrates competence and resourcefulness in creating a child-centered learning;',
+        '3. relates well with others through sound ethical practices;',
+        '4. conducts researches related to professional growth and development;',
+        '5. practices stewardship of the environment to help sustain ecological balance;',
+        '6. embodies the highest standards and practices expected of an elementary teacher.'
+      ]
+    },
+    tags: ['Elementary Education']
+  }, {
+    name: 'Bachelor of Secondary Education',
+    requirements: 'Requirement after Graduation: Licensure Examination for Teachers',
+    prereq: '',
+    years: 4,
+    programType: 'Baccalaureate',
+    objectives: {
+      header: 'The Bachelor in Secondary Education Program aims to produce a graduate who',
+      list: ['1 undertakes scholarly endeavors for quality education;',
+        '2. practices innovative and creative techniques in facilitating learning in the area of specialization;',
+        '3. interacts well with others through positive ethical practices;',
+        '4. generates researches for the enhancement of the teaching-learning process;',
+        '5. advocates responsible stewardship of the environment through community involvement;',
+        '6. personifies the highest standards and practices expected of a secondary education teacher.'
+      ]
+    },
+    tags: ['Secondary Education']
+  }]
+};
+
 let scjps = {
   department: 'SCHOOL OF CRIMINAL JUSTICE AND PUBLIC SAFETY',
-  mission: 'The University of Baguio educates individuals to be empowered professionals in a global community. The School of Criminal Justice and Public Safety, in its dynamic atmosphere for learning, endeavors to train future Criminologists and Forensic Scientists who embody the ideals of patriotism, justice, truth, integrity and service.',
-  tags: ['SCJPS']
+  mission: 'The University of Baguio educates individuals t be empowered professionals in a global community. The school of Criminal Justice and Public Safety, in its dynamic atmosphere for learning, endeavors to train future Criminologists and Forensic Scientists who embody the ideals of patriotism, justice, truth, integrity and service.',
+  objectives: {
+    header: 'The SCJPS aims to produce a graduate who:',
+    list: ['1. demonstrates exemplary performance in the law enforcement profession;',
+      '2. ensures accurate, complete, and prompt conduct of case investigations;',
+      '3. promotes and protects human rights without discrimination and bias;',
+      '4. conducts criminological and forensic researches for community well - being;',
+      '5. advocates crime prevention programs for a safer environment; and',
+      '6 .exemplifies responsible leadership through socio-civic endeavors.'
+    ]
+  },
+  location: {
+    bldg: 'Building Name',
+    floor: 'Floor',
+    room: 'Room'
+  },
+  tags: ['SCJPS'],
+  programs: [{
+    name: 'Doctor of Philisophy in Criminology',
+    requirements: '',
+    prereq: '',
+    years: null,
+    programType: 'Graduate',
+    objectives: {
+      header: 'The Doctor of Philosophy in Criminology Program aims to produce a graduate who:',
+      list: ['1. exhibits a high level of technical and academic expertise suited to the field of Criminology;',
+        '2. demonstrates competencies and skills befitting future leaders and managers of different law enforcement agencies;',
+        '3. acts in accordance with precepts and values expected of a law enforcer;',
+        '4. undertakes research that contributes to the formulation and implementation of policies on peace and order;',
+        '5. assists the government in designing approaches and programs that effectively address public safety issues; and ',
+        '6. exudes the highest degree of professionalism in dealing with different people.'
+      ]
+    },
+    tags: ['PhD Criminology']
+  }, {
+    name: 'Master of Science in Criminology',
+    requirements: '',
+    prereq: '',
+    years: null,
+    programType: 'Graduate',
+    objectives: {
+      header: 'The Master of Science in Criminal Justice with Specialization in Criminology Program aims to produce a graduate who:',
+      list: ['1. excels in the field of criminal justice education;',
+        '2. exercises due diligence in handling cases and issues dealing with the rights and welfare of the citizenry;',
+        '3. manifests virtuous behavior in the promotion of a law-abiding society;',
+        '4. conducts advanced and independent researches in criminal justice;',
+        '5. leads in the preservation of a dignified life; and',
+        '6. takes a proactive role in promoting peace and order in the community.'
+      ]
+    },
+    tags: ['Master Criminology']
+  }, {
+    name: 'Bachelor of Science in Criminology',
+    requirements: 'Requirement after Graduation: Licensure Examination for Criminologists',
+    prereq: '',
+    years: 5,
+    programType: 'Baccalaureate',
+    objectives: {
+      header: 'The Bachelor of Science in Criminology Program aims to produce a graduate who:',
+      list: ['1. displays exceptional skills in law enforcement administration;',
+        '2. manifests competencies in crime prevention, scientific crime detection and correctional administration;',
+        '3. fosters the values of integrity, accountability and responsibility while serving their fellowmen, community and country;',
+        '4. undertakes and utilizes criminological researches on the nature, causes, treatment or punishment of criminal behavior and how criminal justice agencies respond to crime, criminals and victims',
+        '5. promotes ideas of stewardship and paternalism for the community and environment and;',
+        '6. demonstrates reputable servant leadership in the discharge of his functions.'
+      ]
+    },
+    tags: ['Crim', 'Criminology', 'Bachelor Criminology']
+  }, {
+    name: 'Bachelor of Science in Forenscic Science',
+    requirements: '',
+    prereq: '',
+    years: 5,
+    programType: 'Baccalaureate',
+    objectives: {
+      header: 'The Bachelor of Forensic Science Program aims to produce a graduate who:',
+      list: ['1. demonstrates scientific-based problem solving;',
+        '2. applies modern methods of forensic analysis in a laboratory setting;',
+        '3. uses forensic evidence that assists in the administration of justice;',
+        '4. conducts scientific researches and design appropriate experiments on forensic science;',
+        '5. establishes a sustainable outreach program for the community; and',
+        '6. shares forensic knowledge to law enforcement agencies.'
+      ]
+    },
+    tags: ['Bachelor Forensic Science', 'Forensic', 'Forensic Science']
+  }]
+};
+
+let son = {
+  department: 'SCHOOL OF NURSING',
+  mission: 'The University of Baguio educates individuals to be empowered professionals in a global community. The School of Nursing commits itself to the development of exceptionally competent and value-driven health professionals.',
+  objectives: {
+    header: 'The School of Nursing aims to produce a health care graduate who',
+    list: ['1. exhibits the necessary knowledge, skills and attitudes in promoting and maintaining the holistic well-being of the patient;',
+      '2. demonstrates proficiency in the delivery of health-care services;',
+      '3. practices the ethico-moral and legal aspects of the nursing profession;',
+      '4. conducts health-related researches and applies findings for the enhancement of the care of the patient;',
+      '5. participates actively in community services to improve the quality of life;',
+      '6. demonstrates effective and efficient leadership capabilities through the health-care concepts, functions and activities.'
+    ]
+  },
+  location: {
+    bldg: '',
+    floor: '',
+    room: ''
+  },
+  tags: ['SON', 'Nursing', 'Nurse'],
+  programs: [{
+    name: 'Bachelor of Science in Nursing',
+    requirements: 'Requirement after Graduation: Licensure Examination for Nurses',
+    prereq: '',
+    years: null,
+    programType: 'Baccalaureate',
+    objectives: {
+      header: 'The Bachelor of Science in Nursing Program aims to produce a graduate who',
+      list: ['1. shows commendable nursing skills, knowledge and attitude in the health care system;',
+        '2. demonstrates proficiency of the required and relevant nursing skills;',
+        '3. applies bio-ethics principles and approaches consistent with the code of ethics for nurses;',
+        '4. conducts nursing researches and adapts evidence-based practices in nursing;',
+        '5. engages in community services to promote and maintain the health of clients;',
+        '6. exemplifies ideal managerial and leadership skills in the practice of the nursing profession.'
+      ]
+    },
+    tags: ['BSN']
+  }, {
+    name: 'Diploma in Midwifery',
+    requirements: 'Requirement after Graduation: Licensure Examination for Midwives',
+    prereq: '',
+    years: 2,
+    programType: '',
+    objectives: {
+      header: 'The Diploma in Midwifery Program aims to produce a graduate who',
+      list: ['1. exhibits exemplary knowledge in the holistic care of mother and child;',
+        '2. displays pertinent skills required in the line of work;',
+        '3. observes ethico-moral and legal principles in the practice of the midwifery profession;',
+        '4. utilizes evidence-based practices in the care of the client;',
+        '5. participates activity in community services to improve quality of life;',
+        '6. delivers effective and efficient Midwifery services most beneficial to the client'
+      ]
+    },
+    tags: ['Midwife', 'Diploma']
+  }, {
+    name: 'Certificate in Health Care Services [Nursing Assistant]',
+    requirements: '',
+    prereq: '',
+    years: 1,
+    programType: '',
+    objectives: {
+      header: 'The Health Care Services Program aims to produce a graduate who:',
+      list: ['1. exhibits sufficient knowledge, skills and attitudes in the promotion of wellness;',
+        '2. displays expertise of appropriate competencies in the alleviation of client affliction;',
+        '3. observes applicable moral principles in the care of the clients;',
+        '4. applies evidence-based practices in the conduct of work;',
+        '5. joins actively in health-related community services;',
+        '6. demonstrates compassion to client and devotion to duties'
+      ]
+    },
+    tags: ['Health Care', 'Certificate']
+  }]
+};
+
+let sns = {
+  department: 'SCHOOL OF NATURAL SCIENCES',
+  mission: 'The University of Baguio educates individuals to be empowered professionalsin the global community. The School of Natural Sciences is a dynamic and valueorientedcommunity committed to the advancement of the modern health caresystem.',
+  objectives: {
+    header: 'The School of Natural Sciences aims to produce a graduate who',
+    list: ['1. performs exemplary allied health medical services;',
+      '2. competes globally in delivering advanced health care services;',
+      '3. adapts a strong sense of social responsibility and accountability in a diverse culture;',
+      '4. undertakes relevant scientific researches for community advancement;',
+      '5. advocates noble ecological practices for a healthy environment;',
+      '6. supports and sustains quality of work in the attainment of total wellness'
+    ]
+  },
+  location: {
+    bldg: '',
+    floor: '',
+    room: ''
+  },
+  tags: ['SNS', 'Natural Sciences'],
+  programs: [{
+    name: 'Bachelor of Science in Physical Therapy',
+    requirements: 'Requirement after Graduation: Licensure Examination for Physical Therapists ',
+    prereq: '',
+    years: 5,
+    programType: 'Baccaluarate',
+    objectives: {
+      header: 'The BSPT Program aims to produce a graduate who: ',
+      list: ['1. adheres to standards of the physical therapy profession;',
+        '2. provides suitable habilitation and rehabilitation services with compassion;',
+        '3. delivers holistic quality healthcare with the highest degree of professional,moral and ethical standards;',
+        '4. leads in rehabilitation-related researches;',
+        '5. supports community-building through rehabilitation programs; ',
+        '6. advocates excellence in the physical wellness field.'
+      ]
+    },
+    tags: ['PT', 'Physical Therapy', 'BSPT']
+  }, {
+    name: 'Bachelor of Medical Laboratory Science',
+    requirements: 'Requirement after Graduation: Licensure Examination for Medical Technologists ',
+    prereq: '',
+    years: 4,
+    programType: 'Baccaluarate',
+    objectives: {
+      header: 'The BMLS Program aims to produce a graduate who: ',
+      list: ['1. carries out precise clinical laboratory work;',
+        '2. demonstrates competence required of a clinical laboratory professional;',
+        '3. leads in upholding the integrity of the profession;',
+        '4. conducts researches on health and other allied disciplines;',
+        '5. promotes a healthy environment through clean and green programs;',
+        '6. ensures quality performance in laboratory science.'
+      ]
+    },
+    tags: ['BMLS ', 'Medical Laboratory Science']
+  }]
 };
 
 let sihtm = {
   department: 'SCHOOL OF INTERNATIONAL HOSPITALITY AND TOURISM MANAGEMENT',
   mission: 'The University of Baguio educates individuals to be empowered professionals in a global community. The School of International Hospitality and Tourism Management commits itself to train worldwide experts in the industry.',
-  tags: ['SIHTM']
+  objectives: {
+    header: 'The School of International Hospitality and Tourism Management aims to produce a graduate who:',
+    list: [' 1. demonstrates mastery of knowledge and skills in the industry operations at par with international standards;',
+      '2. exhibits required competence in the conduct of functions;',
+      '3. performs quality services with sincerity, honesty and integrity;',
+      '4. utilizes researches in improving hospitality and tourism industry operations;',
+      '5. upholds a deep sense of social responsibility and accountability in a multicultural setting; and',
+      '6. delivers quality services driven by passion for excellence.'
+    ]
+  },
+  location: {
+    bldg: 'Building Name',
+    floor: 'Floor',
+    room: 'Room'
+  },
+  tags: ['SIHTM'],
+  programs: [{
+    name: 'Bachelor of Science in Hotel and Restaurant Management',
+    requirements: '',
+    prereq: '',
+    years: null,
+    programType: '',
+    objectives: {
+      header: 'The Bachelor of Science in Hotel and Restaurant Management Program aims to produce a graduate who:',
+      list: ['1. displays competence in managerial and entrepreneurial skills in hotel and restaurant industry;',
+        '2. demonstrates strong leadership and administrative expertise;',
+        '3. manifests uprightness in the performance of duties and responsibilities;',
+        '4. conducts and utilizes research that enhances service operations;',
+        '5. sustains commitment in promoting livelihood programs for community development; and',
+        '6. exudes the dedication for praiseworthy services with the highest degree of professionalism.'
+      ]
+    },
+    tags: ['BSHRM']
+  }, {
+    name: 'Bachelor of Science in Tourism',
+    requirements: '',
+    prereq: '',
+    years: null,
+    programType: '',
+    objectives: {
+      header: 'The Bachelor of Science in Tourism Management Program aims to produce a graduate who',
+      list: ['1. performs effectively and efficiently relevant skills in the travel and tourism industry;',
+        '2. exhibits expertise in tourism management;',
+        '3. works with honor and integrity;',
+        '4. continues the conduct and utilization of research for the improvement of the industry;',
+        '5. observes green initiatives to sustain the industry and the environment; and',
+        '6. ensures client satisfaction through exceptional customer service'
+      ]
+    },
+    tags: ['TOURISM']
+  }, {
+    name: 'Associate in Arts in Hotel and Restaurant Management',
+    requirements: '',
+    prereq: '',
+    years: 2,
+    programType: 'Ladderized',
+    objectives: {
+      header: 'The Associate of Arts/Associate in Hotel and Restaurant Management Programs aim to produce a graduate who:',
+      list: ['1. demonstrates the core competencies in the hospitality industry;',
+        '2. manifests proficiency in supervisory and technical skills; ',
+        '3. performs tasks with courtesy, honesty, and dedication;',
+        '4. utilizes research in improving HRM service operations;',
+        '5. supports the promotion of livelihood programs for community development; and',
+        '6. exceeds expectations of guests through cordial and devoted service'
+      ]
+    },
+    tags: ['AAHRM']
+  }, {
+    name: 'Associate in Hotel and Restaurant Management',
+    requirements: '',
+    prereq: '',
+    years: 1,
+    programType: 'Ladderized',
+    objectives: {
+      header: 'The Associate of Arts/Associate in Hotel and Restaurant Management Programs aim to produce a graduate who:',
+      list: ['1. demonstrates the core competencies in the hospitality industry;',
+        '2. manifests proficiency in supervisory and technical skills; ',
+        '3. performs tasks with courtesy, honesty, and dedication;',
+        '4. utilizes research in improving HRM service operations;',
+        '5. supports the promotion of livelihood programs for community development; and',
+        '6. exceeds expectations of guests through cordial and devoted service'
+      ]
+    },
+    tags: ['AHRM']
+  }]
 };
 
 let slahs = {
   department: 'SCHOOL OF LIBERAL ARTS AND HUMAN SCIENCES',
   mission: 'The University of Baguio educates individuals to be empowered professionals in the global community. The School of Liberal Arts and Human Sciences provides its students with total education apt to their chosen career.',
   tags: ['SLAHS']
-};
-
-let sns = {
-  department: 'SCHOOL OF NATURAL SCIENCES',
-  mission: 'The University of Baguio educates individuals to be empowered professionals in the global community. The School of Natural Sciences is a dynamic and value- oriented community committed to the advancement of the modern health care system.',
-  tags: ['SNS']
-};
-
-let son = {
-  department: 'SCHOOL OF NURSING',
-  mission: 'The University of Baguio educates individuals to be empowered professionals in a global community. The School of Nursing commits itself to the development of exceptionally competent and value-driven health professionals.',
-  tags: ['SON']
-};
-
-let ste = {
-  department: 'SCHOOL OF TEACHER EDUCATION',
-  tags: ['STE']
 };
 
 exports.departments = [sbaa, scjps, sod, sea, sit, sihtm, sol, slahs, sns, son, ste];
