@@ -29,8 +29,7 @@ var DeptSchema = new mongoose.Schema({
   }],
   programs: [{
     name: {
-      type: String,
-      uppercase: true
+      type: String
     },
     requirements: String,
     prereq: String,

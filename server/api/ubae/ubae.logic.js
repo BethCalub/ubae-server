@@ -6,6 +6,7 @@ import natural from 'natural';
 
 const commandList = ['WHERE', 'HOW', 'WHAT', 'WHICH'];
 const typeList = ['OFFICE', 'DEPARTMENT', 'SCHOOL', 'DEPT'];
+const programList = ['SERVICES', 'COURSES', 'PROGRAMS'];
 
 function stemmer(input) {
   var tokenizer = new natural.WordTokenizer();
@@ -78,7 +79,8 @@ exports.getQuery = function(input) {
   return {
     keywords: stemmer(input),
     commands: wordSearch(input, commandList),
-    location: wordSearch(input, typeList)
+    location: wordSearch(input, typeList),
+    program: wordSearch(input, programList)
   };
 };
 
@@ -93,10 +95,11 @@ exports.errResults = function(message) {
 
 exports.results = function(story, getCommand) {
   var dept = titleCase(story.department);
+  var say = 'Hello, I\'m UBAE';
   switch (getCommand) {
   case 'where':
     var location = story.location;
-    var say = 'The main office of the '
+    say = 'The main office of the '
       + dept + ' is located at '
       + location.bldg + ' building '
       + location.floor.toLowerCase()
@@ -110,22 +113,29 @@ exports.results = function(story, getCommand) {
     };
 
   case 'what':
-    var say = 'These are the courses offered by the '
-      + dept + '.';
     var courses = story.programs;
     var progs = [];
-
+    var programList = '';
     for(var index = 0; index < courses.length; index++) {
-      var element = titleCase(courses[index].name)
+      var element = courses[index].name;
       progs.push(element);
     }
 
+    for(var i = 0; i < progs.length; i++) {
+      if(i > progs.length - 2) {
+        programList = programList + ' and ' + progs[i] + '.';
+      } else {
+        programList = programList + ' ' + progs[i] + ',';
+      }
+    }
+
+    say = 'The courses offered by the '
+      + dept + ' are the following:' + programList;
 
     return {
       _say: say,
       dept: story.department,
-      programs: courses.name,
-      progs: progs,
+      programs: progs,
       _t: Date.now()
     };
 

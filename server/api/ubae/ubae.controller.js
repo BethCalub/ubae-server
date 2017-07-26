@@ -82,6 +82,7 @@ export function use(req, res) {
               return res.send({
                 in: userInput,
                 cmd: ubae.commands,
+                local: ubae.location,
                 tags: ubae.keywords,
                 result: ubaeAI.results(story, ubae.commands)
               });

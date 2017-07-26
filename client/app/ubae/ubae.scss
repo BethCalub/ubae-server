@@ -1,0 +1,101 @@
+$chat-header-color: rgba(45, 62, 70, 1.0);
+$chat-base-color: rgba(255, 255, 255, 1.0);
+$chat-border-color: rgba(200, 200, 200, 1.0);
+$chat-border-style: 1px solid $chat-border-color;
+$chat-min-size: 400px;
+#chat {
+  background-color: $chat-base-color;
+  padding-top: 70px;
+  position: relative;
+  .chat-body {
+    ul {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      li {
+        list-style: none;
+        background-color: $chat-header-color;
+        color: white;
+        border-radius: 5px 15px 15px 15px;
+        margin: 5px 5px;
+        padding: 10px 15px;
+      }
+      position: relative;
+      bottom: 0;
+    }
+    overflow-y: auto;
+    z-index: 998;
+    height: 100%;
+  }
+  .chat-keywords {
+    position: fixed;
+    height: 40px;
+    background-color: rgba(35, 35, 35, 1.0);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 50px;
+    z-index: 999;
+    button {
+      margin: 6px 0;
+      margin-left: 5px;
+      border-radius: 25px;
+      border-style: none;
+      padding: 4px 15px;
+      color: white;
+      background-color: rgba(65, 82, 90, 1.0);
+    }
+    button:hover {
+      background-color: rgba(255, 255, 255, 1.0);
+      color: $chat-header-color;
+    }
+  }
+  .chat-box {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px; // padding: 5px;
+    background-color: $chat-base-color; // border-top: $chat-border-style;
+    z-index: 999;
+    margin: auto;
+    input[type=text] {
+      height: 100%;
+      border: none;
+      float: left;
+      box-sizing: border-box;
+      width: 85%;
+      padding: 7px 5px;
+      outline: none;
+    }
+    button {
+      height: 100%;
+      float: right;
+      width: 15%;
+      padding: 7px 5px;
+      border-style: none;
+      background-color: $chat-header-color;
+      color: white;
+    }
+    button:hover {
+      background-color: rgba(125, 125, 125, 1.0);
+      color: white;
+      // border-left: solid 3px rgba(45, 62, 70, 1.0);
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  // #chat {
+  //       border-right: $chat-border-style;
+  //         .chat-body {
+  //   max-width: 375px;
+  // }
+  // .chat-footer {
+  //   max-width: 375px;
+  // }
+  // }
+}

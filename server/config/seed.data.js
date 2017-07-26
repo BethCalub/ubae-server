@@ -32,7 +32,7 @@ let sbaa = {
       ]
     },
   }, {
-    name: 'Bachelor of Science in Business Administration ',
+    name: 'Bachelor of Science in Business Administration',
     years: 5,
     requirements: 'Requirement after Graduation: Licensure Examniation for Certified Public Accountants.',
     programType: 'Baccaluarate',

@@ -1,4 +1,4 @@
-<!-- <div class="container">
+ <!-- <div class="container">
   <div class="row">
     <h1>Departments</h1>
   </div>
@@ -32,47 +32,22 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>  -->
 
-
-<div class="container">
-  
-  <div class="row">
-    <div class="col-xs-12">
-      
-      <form action="" method="POST" class="form-inline" role="form">
-      
-        <div class="form-group">
-          <label class="sr-only" for="">label</label>
-          <input type="email" class="form-control" id="" placeholder="Input field">
-        </div>
-                <div class="form-group">
-          <label class="sr-only" for="">label</label>
-          <input type="email" class="form-control" id="" placeholder="Input field">
-        </div>
-                <div class="form-group">
-          <label class="sr-only" for="">label</label>
-          <input type="email" class="form-control" id="" placeholder="Input field">
-        </div>
-                <div class="form-group">
-          <label class="sr-only" for="">label</label>
-          <input type="email" class="form-control" id="" placeholder="Input field">
-        </div>
-                <div class="form-group">
-          <label class="sr-only" for="">label</label>
-          <input type="email" class="form-control" id="" placeholder="Input field">
-        </div>
-                <div class="form-group">
-          <label class="sr-only" for="">label</label>
-          <input type="email" class="form-control" id="" placeholder="Input field">
-        </div>
-      
-        
-      
-        <button type="submit" class="btn btn-primary">Submit</button>
-      </form>
-      
-    </div>
+<div id="chat">
+  <div class="chat-body">
+    <ul>
+      <li>{{ $ctrl.awesomeThings.result._say}} {{$ctrl.awesomeThings.result.dept}}</li>
+    </ul>
   </div>
-  
+  <div class="chat-keywords">
+    <button>What</button>
+    <button>Where</button>
+    <button>How</button>
+    <button>Which</button>
+  </div>
+  <div class="chat-box">
+    <input type="text" placeholder=">Say Hi_" ng-model="$ctrl.newThing">
+    <button type="submit" ng-click="$ctrl.searchThing()">Send</button>
+  </div>
 </div>
