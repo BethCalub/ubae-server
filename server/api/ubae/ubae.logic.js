@@ -49,6 +49,19 @@ function wordSearch(input, list) {
   }
 }
 
+function titleCase(str) {
+  var dispose = ['of', 'and', 'in'];
+  return str.toLowerCase().split(' ')
+    .map(function(word) {
+      if(dispose.indexOf(word) > -1) {
+        return word.replace(word[0], word[0]);
+      } else {
+        return word.replace(word[0], word[0].toUpperCase());
+      }
+    })
+    .join(' ');
+}
+
 exports.getKeywords = function(input) {
   return stemmer(input);
 };
@@ -78,67 +91,63 @@ exports.errResults = function(message) {
   };
 };
 
-function titleCase(str) {
-  return str.toLowerCase().split(' ')
-    .map(function(word) {
-      if(word == 'of' | word == 'and') {
-        return word.replace(word[0], word[0]);
-      } else {
-        return word.replace(word[0], word[0].toUpperCase());
-      }
-    })
-    .join(' ');
-}
-
 exports.results = function(story, getCommand) {
-  var result;
-  //switch
+  var dept = titleCase(story.department);
   switch (getCommand) {
   case 'where':
-    var dept = titleCase(story.department);
     var location = story.location;
-    var say = 'The main office of the ' +
-      dept + ' is located at ' +
-      location.bldg + ' building ' +
-      location.floor.toLowerCase() +
-      ' floor Room ' + location.room + '.';
+    var say = 'The main office of the '
+      + dept + ' is located at '
+      + location.bldg + ' building '
+      + location.floor.toLowerCase()
+      + ' floor Room ' + location.room + '.';
 
-    result = {
+    return {
+      _t: Date.now(),
       _say: say,
       dept: story.department,
-      location: story.location,
+      location: story.location
+    };
+
+  case 'what':
+    var say = 'These are the courses offered by the '
+      + dept + '.';
+    var courses = story.programs;
+    var progs = [];
+
+    for(var index = 0; index < courses.length; index++) {
+      var element = titleCase(courses[index].name)
+      progs.push(element);
+    }
+
+
+    return {
+      _say: say,
+      dept: story.department,
+      programs: courses.name,
+      progs: progs,
       _t: Date.now()
     };
-    break;
+
   // case 'which':
-  //   result = {
+  //   return = {
   //     _say: 'This is what I have found.',
   //     dept: story.department,
   //     _t: Date.now()
   //   };
-  //   break;
-  // case 'what':
-  //   result = {
-  //     _say: 'This is what I have found.',
-  //     dept: story.department,
-  //     programs: story.programs,
-  //     _t: Date.now()
-  //   };
-  //   break;
+
   // case 'how':
-  //   result = {
+  //   return = {
   //     _say: 'This is what I have found.',
   //     dept: story.department,
   //     programs: story.programs,
   //     _t: Date.now()
   //   };
-  //   break;
+
   default:
-    result = {
+    return {
       _say: 'Sorry but i can\'t find what you\'re looking for.',
       _t: Date.now()
     };
-    break;
   }
-  return result;
 };
