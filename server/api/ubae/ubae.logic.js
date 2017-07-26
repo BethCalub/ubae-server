@@ -78,34 +78,61 @@ exports.errResults = function(message) {
   };
 };
 
+function titleCase(str) {
+  return str.toLowerCase().split(' ')
+    .map(function(word) {
+      if(word == 'of' | word == 'and') {
+        return word.replace(word[0], word[0]);
+      } else {
+        return word.replace(word[0], word[0].toUpperCase());
+      }
+    })
+    .join(' ');
+}
+
 exports.results = function(story, getCommand) {
   var result;
   //switch
   switch (getCommand) {
   case 'where':
+    var dept = titleCase(story.department);
+    var location = story.location;
+    var say = 'The main office of the ' +
+      dept + ' is located at ' +
+      location.bldg + ' building ' +
+      location.floor.toLowerCase() +
+      ' floor Room ' + location.room + '.';
+
     result = {
-      _say: 'This is what I have found.',
+      _say: say,
       dept: story.department,
-      bldg: 'Building Name',
-      flr: 'Floor',
-      rm: 'Room',
+      location: story.location,
       _t: Date.now()
     };
     break;
-  case 'which':
-    result = {
-      _say: 'This is what I have found.',
-      dept: story.department,
-      _t: Date.now()
-    };
-    break;
-  case 'what':
-    result = {
-      _say: 'This is what I have found.',
-      dept: story.department,
-      _t: Date.now()
-    };
-    break;
+  // case 'which':
+  //   result = {
+  //     _say: 'This is what I have found.',
+  //     dept: story.department,
+  //     _t: Date.now()
+  //   };
+  //   break;
+  // case 'what':
+  //   result = {
+  //     _say: 'This is what I have found.',
+  //     dept: story.department,
+  //     programs: story.programs,
+  //     _t: Date.now()
+  //   };
+  //   break;
+  // case 'how':
+  //   result = {
+  //     _say: 'This is what I have found.',
+  //     dept: story.department,
+  //     programs: story.programs,
+  //     _t: Date.now()
+  //   };
+  //   break;
   default:
     result = {
       _say: 'Sorry but i can\'t find what you\'re looking for.',

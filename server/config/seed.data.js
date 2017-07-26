@@ -12,6 +12,11 @@ let sbaa = {
       '6. development; and exhibits commendable accomplishments in business and accountancy.'
     ]
   },
+  location: {
+    bldg: 'H',
+    floor: '3rd',
+    room: 'H310'
+  },
   tags: ['SBAA', 'Accountancy', 'Business Ad'],
   programs: [{
     name: 'Master in Business Administration',
@@ -70,6 +75,11 @@ let sod = {
   department: 'SCHOOL OF DENTISTRY',
   mission: 'The University of Baguio educates individuals to be empowered professionals in a global community. The School of Dentistry is committed in providing excellent dental education to produce competitive and socially responsible dentists.',
   tags: ['SOD', 'Dentistry', 'Dentist'],
+  location: {
+    bldg: 'A',
+    floor: '10th',
+    room: 'A1024'
+  },
   programs: [{
     name: 'Master in Dental Education',
     programType: 'Graduate',
@@ -116,6 +126,11 @@ let sol = {
       '4. ensures that no person shall be deprived of legal assistance by reason of poverty.'
     ]
   },
+  location: {
+    bldg: 'A',
+    floor: '10th',
+    room: 'A1024'
+  },
   tags: ['SOL', 'Law', 'Lawyer'],
   programs: [{
     name: 'Bachelor of Laws and Letters',
@@ -136,6 +151,11 @@ let sea = {
       '5. commits to community development and environmental protection; and ',
       '6. manifests and ensures excellence in the field of expertise.',
     ]
+  },
+  location: {
+    bldg: 'HB',
+    floor: '2nd',
+    room: 'HB210'
   },
   tags: ['SEA', 'Engineering', 'Architecture', 'Engineer', 'Architect'],
   programs: [{
@@ -232,6 +252,11 @@ let sit = {
       '5. initiates and participates in community-based activities that contribute to sustainable development; and',
       '6. utilizes leadership qualities for commendable performance in the field of endeavor.'
     ]
+  },
+  location: {
+    bldg: 'F',
+    floor: '2nd',
+    room: 'F201'
   },
   tags: ['SIT', 'IT', 'Computer', 'Programmer'],
   programs: [{
@@ -340,9 +365,9 @@ let ste = {
     ]
   },
   location: {
-    bldg: 'H building',
-    floor: '',
-    room: ''
+    bldg: 'H',
+    floor: '10th',
+    room: 'A1024'
   },
   tags: ['STE', 'Educ', 'Teacher'],
   programs: [{
@@ -441,9 +466,9 @@ let scjps = {
     ]
   },
   location: {
-    bldg: 'Building Name',
-    floor: 'Floor',
-    room: 'Room'
+    bldg: 'A',
+    floor: '10th',
+    room: 'A1024'
   },
   tags: ['SCJPS'],
   programs: [{
@@ -531,9 +556,9 @@ let son = {
     ]
   },
   location: {
-    bldg: '',
-    floor: '',
-    room: ''
+    bldg: 'A',
+    floor: '10th',
+    room: 'A1024'
   },
   tags: ['SON', 'Nursing', 'Nurse'],
   programs: [{
@@ -604,9 +629,9 @@ let sns = {
     ]
   },
   location: {
-    bldg: '',
-    floor: '',
-    room: ''
+    bldg: 'A',
+    floor: '10th',
+    room: 'A1024'
   },
   tags: ['SNS', 'Natural Sciences'],
   programs: [{
@@ -660,9 +685,9 @@ let sihtm = {
     ]
   },
   location: {
-    bldg: 'Building Name',
-    floor: 'Floor',
-    room: 'Room'
+    bldg: 'A',
+    floor: '10th',
+    room: 'A1024'
   },
   tags: ['SIHTM'],
   programs: [{
@@ -750,9 +775,9 @@ let slahs = {
     ]
   },
   location: {
-    bldg: '',
-    floor: '',
-    room: ''
+    bldg: 'A',
+    floor: '10th',
+    room: 'A1024'
   },
   tags: ['SLAHS', 'Liberal'],
   programs: [{
@@ -918,92 +943,3 @@ let slahs = {
 
 
 exports.departments = [sbaa, scjps, sod, sea, sit, sihtm, sol, slahs, sns, son, ste];
-
-exports.dept = [{
-  department: 'School of Information Technology',
-  location: {
-    building: 'F Building',
-    floor: 'Second Floor',
-    room: 'F201'
-  },
-  tags: [
-    'SIT',
-    'Information Technology',
-    'SIT'
-  ],
-  rooms: [{
-    roomname: 'Dean\'s Office',
-    location: {
-      building: 'F Building',
-      floor: '2nd Floor',
-      room: 'F201'
-    },
-    tags: ['SIT Dean', 'SIT Main']
-  }, {
-    roomname: 'Consultation Room',
-    location: {
-      building: 'F Building',
-      floor: '2nd Floor',
-      room: 'F219'
-    },
-    tags: ['SIT Consulation', 'Defense Room']
-  }],
-  services: [{
-    service: 'Mobile Programming',
-    description: 'Mobile Application Development',
-    tags: [
-      'mobile',
-      'development',
-      'android',
-      'ios'
-    ],
-    requirements: [
-      'laptop',
-      'basic programming concept',
-      'java',
-      'android studio'
-    ],
-    process: [
-      '1. Register',
-      '2. Go on scheduled data',
-    ],
-    active: true
-  }],
-  active: true
-}, {
-  department: 'School of Dentistry',
-  location: {
-    building: 'B Building',
-    floor: 'Second Floor',
-    room: 'B201'
-  },
-  tags: [
-    'SOD',
-    'Dentistry',
-  ],
-  rooms: [{
-    roomname: 'Dean\'s Office',
-    location: {
-      building: 'B Building',
-      floor: '2nd Floor',
-      room: 'B201'
-    },
-    tags: ['SOD Dean', 'SOD Main']
-  }],
-  services: [{
-    service: 'Tooth Extraction',
-    description: 'Dental Service',
-    tags: [
-      'Tooth Extraction'
-    ],
-    requirements: [
-      'ID'
-    ],
-    process: [
-      '1. Register',
-      '2. Go on scheduled data',
-    ],
-    active: true
-  }],
-  active: true
-}];
