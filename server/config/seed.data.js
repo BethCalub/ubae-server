@@ -13,6 +13,21 @@ const son = require('./data/dept/dept.son.js');
 const ste = require('./data/dept/dept.ste.js');
 
 //Offices
+const arc = require('./data/office/office.arc.js');
+const athletics = require('./data/office/office.athletics.js');
+const ccsd = require('./data/office/office.ccsd.js');
+const clinic = require('./data/office/office.clinic.js');
+const ecos = require('./data/office/office.ecos.js');
+const larc = require('./data/office/office.larc.js');
+const library = require('./data/office/office.library.js');
+const maps = require('./data/office/office.maps.js');
+const mis = require('./data/office/office.mis.js');
+const osa = require('./data/office/office.osa.js');
+const rndc = require('./data/office/office.rndc.js');
+const sas = require('./data/office/office.sas.js');
+const security = require('./data/office/office.security.js');
+
+//Exports Department
 exports.departments = [
   sbaa.sbaa,
   scjps.scjps,
@@ -27,4 +42,19 @@ exports.departments = [
   ste.ste
 ];
 
-exports.offices = [];
+//Exports Offices
+exports.offices = [
+  arc.arc,
+  athletics.athletics,
+  ccsd.ccsd,
+  clinic.clinic,
+  ecos.ecos,
+  larc.larc,
+  library.library,
+  maps.maps,
+  mis.mis,
+  osa.osa,
+  rndc.rndc,
+  sas.sas,
+  security.security
+];

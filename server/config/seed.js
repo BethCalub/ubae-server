@@ -6,6 +6,7 @@
 'use strict';
 // import Ubae from '../api/ubae/ubae.model';
 import Dept from '../api/dept/dept.model';
+import Office from '../api/office/office.model';
 import User from '../api/user/user.model';
 import config from './environment/';
 import UbaeData from './seed.data.js';
@@ -15,8 +16,15 @@ export default function seedDatabaseIfNeeded() {
     Dept.find({}).remove()
       .then(() => {
         Dept.create(UbaeData.departments)
-          .then(() => console.log('finished populating Department'))
-          .catch(err => console.log('error populating Department', err));
+          .then(() => console.log('finished populating Departments'))
+          .catch(err => console.log('error populating Departments', err));
+      });
+
+    Office.find({}).remove()
+      .then(() => {
+        Office.create(UbaeData.offices)
+          .then(() => console.log('finished populating Offices'))
+          .catch(err => console.log('error populating Offices', err));
       });
 
     User.find({}).remove()
@@ -33,8 +41,8 @@ export default function seedDatabaseIfNeeded() {
           email: 'admin@example.com',
           password: 'admin'
         })
-        .then(() => console.log('finished populating users'))
-        .catch(err => console.log('error populating users', err));
+        .then(() => console.log('finished populating Accounts'))
+        .catch(err => console.log('error populating Accounts', err));
       });
   }
 }

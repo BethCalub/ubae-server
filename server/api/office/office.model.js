@@ -11,13 +11,19 @@ var OfficeSchema = new mongoose.Schema({
     floor: String,
     room: String,
   },
-  tags: [String],
+  tags: [{
+    type: String,
+    uppercase: true
+  }],
   services: [{
     name: String,
     description: String,
     requirements: [String],
     process: [String],
-    tags: [String]
+    tags: [{
+      type: String,
+      uppercase: true
+    }]
   }],
   active: Boolean
 });
