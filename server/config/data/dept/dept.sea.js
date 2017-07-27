@@ -18,7 +18,7 @@ exports.sea = {
     floor: '2nd',
     room: 'HB210'
   },
-  tags: ['SEA', 'Engineering', 'Architecture', 'Engineer', 'Architect'],
+  tags: ['SEA', 'Engineering', 'Architecture', 'Engineer', 'Architect', 'Engineering and Architecture'],
   programs: [{
     name: 'Bachelor of Science in Architecture',
     requirements: 'Requirement after Graduation: Licensure Examination for Architects',

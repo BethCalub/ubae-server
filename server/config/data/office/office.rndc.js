@@ -38,7 +38,7 @@ exports.rndc = {
     description: 'Publication of Research',
     requirements: ['Full manuscript', 'Ethics Clearance', 'Letter of Acceptance'],
     process: ['1. Submit Full manuscript to R&DC.',
-      '2. Sign the Consent to publish and transfer of copyright.',
+      '2. Sign the Consent to publish and transfer of copyright.',
       '3. Your research will then undergo tool validation verification.',
       '4. Submit ethics clearance.',
       '5. If your study is quantitative, your research will be verified by a statistician.'
@@ -46,7 +46,7 @@ exports.rndc = {
     tags: ['Publication of Research findings', 'Catalyst']
   }, {
     name: 'Tool Validation',
-    requirements: 'Statement of the Problem, methodology and Questionnaire signed by members of the panelist and adviser.',
+    requirements: 'Statement of the Problem, Methodology and Questionnaire signed by members of the panelist and adviser.',
     process: '1. Go to the R&DC Office and submit requirements',
     tags: 'Tool Validation'
   }, {

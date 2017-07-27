@@ -101,9 +101,9 @@ exports.clinic = {
       '*If all the exams are within the normal limits, you will be given the Health Certificate',
       '*If one or more parameters are not normal, your Health Certificate will be withheld until after treatment, and the patient may be reffered to a specialist or for further diagnostic examination.'
     ],
-    tags: ['Physical Examination', 'Physical Exam for local OJT', 'Medical Examination', 'Medical Exam for local OJT/', 'Medical Examination']
+    tags: ['Physical Examination', 'Physical Exam for local OJT', 'Medical Examination', 'Medical Exam for local OJT', 'Medical Examination']
   }, {
-    name: 'Physical/Medical Examination for International OJT   ',
+    name: 'Physical/Medical Examination for International OJT',
     description: 'Available for UB Students',
     requirements: 'Endorsement Letter',
     process: ['1. Present the endorsement letter to the Medical Clinic Staff to obtain a Physical Exam Checklist.',

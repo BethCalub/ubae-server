@@ -17,7 +17,7 @@ exports.sihtm = {
     floor: '10th',
     room: 'A1024'
   },
-  tags: ['SIHTM'],
+  tags: ['SIHTM', 'Internationl Hostpitality and Tourism Management'],
   programs: [{
     name: 'Bachelor of Science in Hotel and Restaurant Management',
     requirements: '',

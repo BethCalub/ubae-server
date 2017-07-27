@@ -16,7 +16,7 @@ exports.sit = {
     floor: '2nd',
     room: 'F201'
   },
-  tags: ['SIT', 'IT', 'Computer', 'Programmer'],
+  tags: ['SIT', 'IT', 'Computer', 'Programmer', 'Information Technology'],
   programs: [{
     name: 'Bachelor of Science in Computer Engineering',
     years: 5,

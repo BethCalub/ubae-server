@@ -17,7 +17,7 @@ exports.sbaa = {
     floor: '3rd',
     room: 'H310'
   },
-  tags: ['SBAA', 'Accountancy', 'Business Ad'],
+  tags: ['SBAA', 'Accountancy', 'Business Ad', 'Business Administration and Accountancy'],
   programs: [{
     name: 'Master in Business Administration',
     programType: 'Graduate',

@@ -17,7 +17,7 @@ exports.slahs = {
     floor: '10th',
     room: 'A1024'
   },
-  tags: ['SLAHS', 'Liberal'],
+  tags: ['SLAHS', 'Liberal', 'Liberal Arts and Human Sciences'],
   programs: [{
     name: 'Master in Public Administration',
     requirements: '',

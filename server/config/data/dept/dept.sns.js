@@ -17,7 +17,7 @@ exports.sns = {
     floor: '10th',
     room: 'A1024'
   },
-  tags: ['SNS', 'Natural Sciences'],
+  tags: ['SNS', 'Natural Sciences', 'Natural Sciences'],
   programs: [{
     name: 'Bachelor of Science in Physical Therapy',
     requirements: 'Requirement after Graduation: Licensure Examination for Physical Therapists ',

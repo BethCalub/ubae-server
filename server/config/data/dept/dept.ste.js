@@ -17,7 +17,7 @@ exports.ste = {
     floor: '10th',
     room: 'A1024'
   },
-  tags: ['STE', 'Educ', 'Teacher'],
+  tags: ['STE', 'Educ', 'Teacher', 'Teacher Education'],
   programs: [{
     name: 'Doctor of Philosophy in Development Education',
     requirements: '',
