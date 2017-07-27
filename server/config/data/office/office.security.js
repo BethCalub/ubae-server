@@ -30,6 +30,6 @@ exports.security = {
     process: ['1. Dial 442-4915 or local no. 234/309',
       '2. Report emergencies and Criminal Activities'
     ],
-    tags: ['Security Contact', 'Emergency hotline']
+    tags: ['Security Contact', 'Emergency Hotline']
   }]
 };

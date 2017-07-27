@@ -15,43 +15,43 @@ exports.ccsd = {
     process: ['1a. Students can just go to the office/ walk-in',
       '1b. Referrals by the Deans(students with failing grades and dropped Attendance Monitoring Cards), Office of Students Affairs (Students with disciplinary concerns), Faculty, Parents or Other University Personnel'
     ],
-    tags: ['Student development facilitation and counseling services', 'counseling', 'Student development facilitation']
+    tags: ['Student Development Facilitation and Counseling Services', 'Counseling', 'Student Development Facilitation']
   }, {
-    name: 'Psychological testing service',
+    name: 'Psychological Testing Service',
     description: 'Get to know yourself better through our various tests!',
     requirements: 'Should be requested by instructors or dean',
     process: ['1. Just go to the office/walk-in'],
-    tags: ['Psychological testing service', 'Psychological test']
+    tags: ['Psychological Test', 'Psychological Testing Service', 'Psychological']
   }, {
     name: 'Personality Test',
     description: 'Get to know yourself better through our various tests!',
     requirements: 'Should be requested by instructors or dean',
     process: ['1. Just go to the office/walk-in'],
-    tags: ['Psychological testing service', 'Psychological test', 'Personality Test']
+    tags: ['Psychological Testing Service', 'Psychological Test', 'Personality Test']
   }, {
     name: 'Interest Test',
     description: 'Get to know yourself better through our various tests!',
     requirements: 'Should be requested by instructors or dean',
     process: ['1. Just go to the office/walk-in'],
-    tags: ['Psychological testing service', 'Psychological test', 'Interest Test']
+    tags: ['Psychological Testing Service', 'Psychological Test', 'Interest Test']
   }, {
     name: 'Aptitude Test',
     description: 'Get to know yourself better through our various tests!',
     requirements: 'Should be requested by instructors or dean',
     process: ['1. Just go to the office/walk-in'],
-    tags: ['Psychological testing service', 'Psychological test', 'Aptitude Test']
+    tags: ['Psychological Testing Service', 'Psychological Test', 'Aptitude Test']
   }, {
     name: 'Mental Ability',
     description: 'Get to know yourself better through our various tests!',
     requirements: 'Should be requested by instructors or dean',
     process: ['1. Just go to the office/walk-in'],
-    tags: ['Psychological testing service', 'Psychological test', 'Mental Ability']
+    tags: ['Psychological Testing Service', 'Psychological Test', 'Mental Ability']
   }, {
     name: 'Battery Test',
     description: 'Get to know yourself better through our various tests!',
     requirements: 'Should be requested by instructors or dean',
     process: ['1. Just go to the office/walk-in'],
-    tags: ['Psychological testing service', 'Psychological test', 'Battery Test']
+    tags: ['Psychological Testing service', 'Psychological Test', 'Battery Test']
   }, {
     name: 'Career and placement services',
     description: ['Exit interviews for students transferring to a different school',
@@ -61,6 +61,6 @@ exports.ccsd = {
     ],
     requirements: 'Should be recommended by the instructor or dean',
     process: ['1. Just go directly to the office/walk-in but you should be recommended by your teacher or dean'],
-    tags: ['Career and placement services', 'Career', 'Placement']
+    tags: ['Career and Placement services', 'Career', 'Placement']
   }]
 };

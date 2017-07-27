@@ -19,7 +19,8 @@ exports.sod = {
         '4. uses scientific studies to improve the oral health of the society; and',
         '5. aids client in effectiveness decision-making through timely interventions and pieces of advice.'
       ]
-    }
+    },
+    tags: ['Master Dental Education', 'Dental Education M.A.']
   }, {
     name: 'Doctor of Dental Medicine',
     years: 4,
@@ -35,10 +36,12 @@ exports.sod = {
         '5. advocates oral health through community education and outreach programs; and',
         '6. devotes career to the advancement of total wellness.'
       ]
-    }
+    },
+    tags: ['Doctor Dental Medicine', 'DMD']
   }, {
     name: 'Pre-Dentistry',
     years: 2,
-    programType: 'Baccalaureate'
+    programType: 'Baccalaureate',
+    tags: ['Pre-Dentistry']
   }]
 };

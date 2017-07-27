@@ -15,7 +15,7 @@ exports.sas = {
     process: ['1. Go to the the designated assessment windows',
       '2. Present your valid ID.'
     ],
-    tags: ['Assessment', 'Assessment of Fees', 'Assessment of account inquiry']
+    tags: ['Assessment', 'Assessment of Fees', 'Assessment of Account Inquiry']
   }, {
     name: 'Issuance of examination permits',
     description: 'Responsible for the issuance of examination permits',
@@ -24,7 +24,7 @@ exports.sas = {
       '2. Pay the minimum required payment',
       '3. Get your permit on the specified window of your department'
     ],
-    tags: ['Examination Permit', 'Permin']
+    tags: ['Examination Permit', 'Permit']
   }, {
     name: 'Issuance of Clearance for the release of school credentials',
     description: 'Before the ARC releases the student’s credentials, the clearance form must be cleared by all offices and the students accounts office will be the last one to sign because they will oversee if the student paid all his/her tuition fee and other fees.',

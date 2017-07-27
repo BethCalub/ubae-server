@@ -15,7 +15,7 @@ exports.clinic = {
     process: ['1. Go to the Clinic and consult the Dentist.',
       '2. You will then be scheduled for your tooth extraction.'
     ],
-    tags: ['Free tooth extraction', 'tooth extraction']
+    tags: ['Free Tooth extraction', 'Tooth Extraction']
   }, {
     name: 'Minor Surgery',
     description: 'Available for UB Students and Employees. Minor surgeries includes Suturing, Excision, and Circumcision.',
@@ -52,10 +52,10 @@ exports.clinic = {
     tags: ['Radiology Service', 'Radiology', 'Medtech Laboratory', 'Clinic Laboratory']
   }, {
     name: 'Vaccinations',
-    description: 'Vaccinations(Hep B; Influenza Vaccine/AH1N1 vaccine; Cervical Cancer; Anti-pneumonia) available for UB Students, employees and UB Partner Communities.',
+    description: 'Vaccinations(Hep B; Influenza Vaccine/AH1N1 vaccine; Cervical Cancer; Anti-Pneumonia) available for UB Students, employees and UB Partner Communities.',
     requirements: 'Valid ID',
     process: '1. Go to the Clinic and present your Valid ID.',
-    tags: ['Vaccinations', 'Hep B Vaccine', 'Influenza Vaccine', 'AH1N1 Vaccine', 'Cervical Cancer Vaccine', 'Anti-pneumonia Vaccine']
+    tags: ['Vaccinations', 'Hep B Vaccine', 'Influenza Vaccine', 'AH1N1 Vaccine', 'Cervical Cancer Vaccine', 'Anti-Pneumonia Vaccine']
   }, {
     name: 'X-ray',
     description: 'The University offers X-Ray service for all.',
@@ -63,7 +63,7 @@ exports.clinic = {
     process: ['1. Go to the clinic to ask request.',
       '2. Give the payment to the cashier.'
     ],
-    tags: 'X-ray'
+    tags: 'X-Ray'
   }, {
     name: 'Consultation',
     description: 'Available for UB Students and Employees',
@@ -74,13 +74,13 @@ exports.clinic = {
       '4. Have your vital signs recorded and proceed to the Physician for check-up.',
       '5. Get your medicine from the Nurse.'
     ],
-    tags: ['Consultation', 'Check-up', 'Consult']
+    tags: ['Consultation', 'Check-Up', 'Consult']
   }, {
     name: 'Medical Certificate',
     description: 'Issuing medical certificate for students who was sent home',
     requirements: ['If seen by another Medical Doctor, present a valid Medical Certificate from the MD', 'If hospitalized, get a valid Medical Certificate from the Hospital.'],
     process: ['1. Consult the University Doctor', '*Medical Certificate will be issued if the Doctor instructed you to go home.'],
-    tags: ['Medical Certificate', 'TAG 2']
+    tags: ['Medical Certificate']
   }, {
     name: 'Physical/Medical Examination for local OJT/ Practicum (SIHTM)',
     description: 'Available for UB Students',
@@ -91,7 +91,7 @@ exports.clinic = {
       '*If all the exams are within the normal limits, you will be given the Health Certificate',
       '*If one or more parameters are not normal, your Health Certificate will be withheld until after treatment, and the patient may be reffered to a specialist or for further diagnostic examination.'
     ],
-    tags: ['Physical Examination', 'Physical Exam for local OJT SIHTM', 'Physical Examination SIHTM', 'Medical Examination', 'Medical Exam for local OJT SIHTM', 'Medical Examination SIHTM']
+    tags: ['Physical Examination', 'Physical Exam for Local OJT SIHTM', 'Physical Examination SIHTM', 'Medical Examination', 'Medical Exam for Local OJT SIHTM', 'Medical Examination SIHTM']
   }, {
     name: 'Physical/Medical Examination for local OJT/ Practicum (Non-SIHTM Students)',
     description: 'Available for UB Students',
@@ -101,7 +101,7 @@ exports.clinic = {
       '*If all the exams are within the normal limits, you will be given the Health Certificate',
       '*If one or more parameters are not normal, your Health Certificate will be withheld until after treatment, and the patient may be reffered to a specialist or for further diagnostic examination.'
     ],
-    tags: ['Physical Examination', 'Physical Exam for local OJT', 'Medical Examination', 'Medical Exam for local OJT', 'Medical Examination']
+    tags: ['Physical Examination', 'Physical Exam for Local OJT', 'Medical Examination', 'Medical Exam for Local OJT', 'Medical Examination']
   }, {
     name: 'Physical/Medical Examination for International OJT',
     description: 'Available for UB Students',

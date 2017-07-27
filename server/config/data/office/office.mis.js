@@ -31,7 +31,7 @@ exports.mis = {
     process: ['1. Go to the MIS office',
       '2. Present your valid ID'
     ],
-    tags: ['Software']
+    tags: ['Software', 'Installation']
   }, {
     name: 'Printing and validation of student ID',
     description: '',
@@ -64,6 +64,6 @@ exports.mis = {
     process: ['1. Go to the MIS office and request for an account',
       '2. Present valid ID'
     ],
-    tags: ['WiFi', 'Wifi account']
+    tags: ['WiFi', 'WiFi Account']
   }]
 };

@@ -17,7 +17,7 @@ exports.scjps = {
     floor: '10th',
     room: 'A1024'
   },
-  tags: ['SCJPS','Criminal Justice and Public Safety','crim'],
+  tags: ['SCJPS', 'Criminal Justice and Public Safety', 'Crim'],
   programs: [{
     name: 'Doctor of Philisophy in Criminology',
     requirements: '',

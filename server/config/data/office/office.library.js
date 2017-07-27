@@ -7,11 +7,11 @@ exports.library = {
     floor: '',
     room: ''
   },
-  tags: ['library', 'lib'],
+  tags: ['Library', 'Lib'],
   services: [{
     name: 'Follet-DLM Mobile Application',
     description: '',
-    requirements: ['Internet', 'Web browser'],
+    requirements: ['Internet', 'Web Browser'],
     process: ['1. Download and install Destiny Quest mobile app from the app store or Google Play.',
       '2. Launch the Destiny Quest mobile app.',
       '3. Enter your Destiny URL (follett.ubaguio.edu) and tap Connect.',
@@ -47,24 +47,24 @@ exports.library = {
     description: '',
     requirements: ['Valid ID'],
     process: [''],
-    tags: ['clearance']
+    tags: ['Clearance']
   }, {
     name: 'Library Orientation',
     description: '',
     requirements: ['Valid ID'],
     process: ['1. Just go to the Centennial Library for Library Orientation Request'],
-    tags: ['LIbrary tour', 'Library orientation']
+    tags: ['LIbrary Tour', 'Library Orientation']
   }, {
     name: 'Computers for internet surfing in the library',
     description: 'Availing of students and employees to use computers with internet and also free wifi.',
     requirements: ['Valid ID'],
     process: [''],
-    tags: ['Library computer', 'Library wifi']
+    tags: ['Library Computer', 'Library WiFi']
   }, {
     name: 'Discussion rooms',
     description: '',
     requirements: ['Valid ID'],
     process: ['1. Fill up Discussion Room Reservation Form'],
-    tags: ['Library Discussion room']
+    tags: ['Library Discussion Room', 'Discussion Room', 'Discussion']
   }]
 };

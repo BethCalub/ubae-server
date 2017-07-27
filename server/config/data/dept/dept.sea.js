@@ -34,7 +34,8 @@ exports.sea = {
         '5.engenders the importance of preserving, conserving, and promoting the nation’s heritage and culture; and',
         '6. exudes effective expression of ideas through creative and authentic architectural designs.'
       ]
-    }
+    },
+    tags: ['Architecture', 'BS.Arch', 'Archi']
   }, {
     name: 'Bachelor of Science in Civil Engineering',
     requirements: 'Requirement after Graduation: Licensure Examination for Civil Engineers',
@@ -50,7 +51,8 @@ exports.sea = {
         '5. shows concern on environmental issues through developmental projects; and',
         '6. executes a high level of technical expertise in their chosen field.'
       ]
-    }
+    },
+    tags: ['Civil', 'Civil Engineering', 'BSCE']
   }, {
     name: 'Bachelor of Science in Electronics and Communications Engineering',
     requirements: 'Requirement after Graduation: Licensure Examination for Electronics and Communications Engineers',
@@ -66,7 +68,8 @@ exports.sea = {
         '5. develops social awareness for the protection of the environment; and',
         '6. practices notable performance in the exercise of the profession.'
       ]
-    }
+    },
+    tags: ['Electronics Communications Engineering', 'Electronics', 'Communications Engineering', 'BSECE']
   }, {
     name: 'Bachelor of Science in Environmental and Sanitary Engineering',
     requirements: 'Requirement after Graduation: Licensure Examination for Sanitary Engineers',
@@ -82,9 +85,10 @@ exports.sea = {
         '5.practices environmental sensitivity and responsibility; and',
         '6.exhibits distinct capability in the field of Environmental and Sanitary Engineering.',
       ]
-    }
+    },
+    tags: ['Environmental and Sanitary Engineering', 'Environmental', 'Sanitary']
   }, {
-    name: 'Bachelor of Science in Industrial Technology, major in Mechatronics',
+    name: 'Bachelor of Science in Industrial Technology, Major in Mechatronics',
     requirements: '',
     years: 4,
     programType: '',
@@ -98,6 +102,7 @@ exports.sea = {
         '5. participates in community development and environmental protection programs; and',
         '6. demonstrates and ensures excellence in the field of Mechatronics.'
       ]
-    }
+    },
+    tags: ['Industrial Technology', 'Mechatronics']
   }]
 };

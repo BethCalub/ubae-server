@@ -7,19 +7,19 @@ exports.larc = {
     floor: 'Floor',
     room: 'Room'
   },
-  tags: ['LARC'],
+  tags: ['LARC', 'Linkages Office', 'Alumni Office', 'Review Center'],
   services: [{
     name: 'Processes International On The Job Training (IOJT) applicants and exchange scholars',
     description: '',
     requirements: [''],
     process: ['1. Give approval sheet/form from dean and consent from parent'],
-    tags: ['IOJT', 'International on the job triaining', 'OJT abroad']
+    tags: ['IOJT', 'International On The Job Triaining', 'OJT Abroad']
   }, {
     name: 'Assists the UBAFI in issuing the membership identification cards of its members.',
     description: '',
     requirements: [''],
     process: ['1. Signing clearance form for Alumni ID'],
-    tags: ['UBAFI', 'Alumni ID']
+    tags: ['UBAFI', 'Alumni ID', 'Alumni']
   }, {
     name: 'Gives copies of PRC Board Syllabi for STE Students',
     description: '',

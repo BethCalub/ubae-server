@@ -16,13 +16,13 @@ exports.maps = {
       '2. Dean and VP Administration must sign the form',
       '3. Return form to MAPS office'
     ],
-    tags: ['Press releases', 'Advertisements', 'newspapers', 'magazines', 'website']
+    tags: ['Press Releases', 'Advertisements', 'Newspapers', 'Magazines', 'Website']
   }, {
     name: 'Yearbook and Graduation materials',
     description: 'Yearbooks are optional for Students if they want to avail it or not.',
     requirements: 'Form from MAPS',
     process: '1. Fill up and submit the form to the MAPS Office',
-    tags: ['Yearbook and Graduation materials', 'Yearbook', 'Graduation Materials']
+    tags: ['Yearbook and Graduation Materials', 'Yearbook', 'Graduation Materials']
   }, {
     name: 'Social Media Content Development',
     description: 'University wide- for students and employees',

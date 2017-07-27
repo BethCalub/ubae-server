@@ -30,7 +30,8 @@ exports.sit = {
         '5. spearheads in computer-related activities geared towards the development of the community; and',
         '6. applies relevant skills to lead effectively in the chosen career.'
       ]
-    }
+    },
+    tags: ['Computer Engineering', 'BSCOE']
   }, {
     name: 'Bachelor of Science in Computer Science',
     years: 4,
@@ -45,7 +46,8 @@ exports.sit = {
         '5. leads in community-related activities aligned to the area of specialization; and',
         '6. acts as the prime mover in Networking Engineering.'
       ]
-    }
+    },
+    tags: ['Computer Science', 'BSCS', 'ComSci']
   }, {
     name: 'Bachelor of Science in Information Technology',
     years: 4,
@@ -60,7 +62,8 @@ exports.sit = {
         '5. promotes IT-related activities geared toward sustainable community development; and',
         '6. applies leadership skills in Software Development of Network Administration.'
       ]
-    }
+    },
+    tags: ['BSIT']
   }, {
     name: 'Associate in Computer Technology, Multimedia and Web Design',
     years: 2,
@@ -75,7 +78,8 @@ exports.sit = {
         '5. joins in IT-related activities that promote community development; and ',
         '6. employs leadership abilities for remarkable performance.'
       ]
-    }
+    },
+    tags: ['ACT', 'MWD', 'Associate Computer Technology', 'Associate Multimedia Web Design']
   }, {
     name: 'Associate in Computer Technology, Computer and Network Servicing',
     years: 2,
@@ -90,21 +94,27 @@ exports.sit = {
         '5. joins in IT-related activities that promote community development; and ',
         '6. employs leadership abilities for remarkable performance.'
       ]
-    }
+    },
+    tags: ['CNS', 'Computer Network Servicing']
   }, {
     name: 'CISCO Certified Network Associate',
     programType: 'Short Course',
+    tags: ['CCNA', 'CISCO Certified Network Associate']
   }, {
     name: 'Linux System Administration (Junior Level)',
     programType: 'Short Course',
+    tags: ['Linux System Administration']
   }, {
     name: 'Troubleshooting for Non-Technicians',
     programType: 'Short Course',
+    tags: ['Troubleshooting', 'Non-Technicians']
   }, {
     name: 'Desktop Publishing using Adobe Applications',
     programType: 'Short Course',
+    tags: ['Desktop Publising', 'Adobe Applications']
   }, {
     name: 'Web Design and Development',
     programType: 'Short Course',
+    tags: ['Web Design Development', 'Web Development', 'Website Development']
   }]
 };

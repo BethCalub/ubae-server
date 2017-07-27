@@ -16,7 +16,7 @@ exports.arc = {
       '2. Submit documents to admission area for giving your official ID number and checking of requirements',
       '3. You will then go to the respective deans office.'
     ],
-    tags: ['Admission for freshmen', 'admission']
+    tags: ['Admission Freshmen', 'Admission', 'Freshmen']
   }, {
     name: 'Admission for Transferee',
     description: 'The admission is the process through which students enter tertiary education in the university.',
@@ -25,7 +25,7 @@ exports.arc = {
       '2. Submit documents to admission area for giving your official ID number and checking of requirements',
       '3. You will then go to the respective deans office.'
     ],
-    tags: ['Admission for transferee', 'admission']
+    tags: ['Admission Transferee', 'Admission', 'Transferee']
   }, {
     name: 'Enrollment for Freshmen',
     description: '',
@@ -36,7 +36,7 @@ exports.arc = {
       '4. Go to cashier to pay the downpayment',
       '5. Proceed to MIS for your ID and printed schedule'
     ],
-    tags: ['Enrollment for Freshmen', 'Enrollment']
+    tags: ['Enrollment Freshmen', 'Enrollment', 'Freshmen']
   }, {
     name: 'Enrollment for Transferee',
     description: '',
@@ -47,7 +47,7 @@ exports.arc = {
       '4. Go to cashier to pay the downpayment',
       '5. Proceed to MIS for your ID and printed schedule'
     ],
-    tags: ['Enrollment for Transferee', 'Enrollment']
+    tags: ['Enrollment Transferee', 'Enrollment', 'Transferee']
   }, {
     name: 'Enrollment for New International Student',
     description: '',
@@ -59,7 +59,7 @@ exports.arc = {
       '5. Go to cashier to pay the required amount',
       '6. Proceed to MIS for your ID and printed schedule'
     ],
-    tags: ['Enrollment for New International Student', 'Enrollment']
+    tags: ['Enrollment New International Student', 'Enrollment', 'International Student']
   }, {
     name: 'Enrollment for Current Student',
     description: '',
@@ -69,7 +69,7 @@ exports.arc = {
       '3. Pay the required downpayment at the Cashier',
       '4. Proceed to MIS for Application of ID and printing of schedule'
     ],
-    tags: ['Enrollment for Current Student', 'Enrollment']
+    tags: ['Enrollment Current Student', 'Enrollment', 'Current Student']
   }, {
     name: 'Release of Student Records for Graduates',
     description: 'Releasing documents of students',
@@ -79,7 +79,7 @@ exports.arc = {
       '3. If there is no deficiency, ARC will release your claim stamp',
       '4. Your record will be released after 15 days'
     ],
-    tags: ['Release of Student Records for Graduates', 'Release of Student Records']
+    tags: ['Release of Student Records for Graduates', 'Release of Student Records', 'Graduate Records', 'Graduate', 'Records']
   }, {
     name: 'Release of Student Records for Under-Graduates',
     description: 'Releasing documents of students',
@@ -88,6 +88,6 @@ exports.arc = {
       '2. Pay required amount at the Cashier',
       '3. Submit clearance to ARC for checking'
     ],
-    tags: ['Release of Student Records for Under-Graduates', 'Release of Student Records']
+    tags: ['Release of Student Records for Under-Graduates', 'Release of Student Records', 'Under-Graduate Records', 'Under-Graduate', 'Records']
   }]
 };

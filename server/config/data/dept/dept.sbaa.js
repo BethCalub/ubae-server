@@ -31,6 +31,7 @@ exports.sbaa = {
         '6. promotes ethical management practices that ensure the well-being of employees.'
       ]
     },
+    tags: ['Master in Business Administration', 'MBA']
   }, {
     name: 'Bachelor of Science in Business Administration',
     years: 5,
@@ -45,7 +46,8 @@ exports.sbaa = {
         '5. takes personal initiative and responsibility through participation in community-related activities; and ',
         '6. contributes to successful business ventures by creditable work performance.'
       ]
-    }
+    },
+    tags: ['Bachelor of Science in Business Administration', 'BSBA']
   }, {
     name: 'Bachelor of Science in Accountancy',
     years: 4,
@@ -59,14 +61,17 @@ exports.sbaa = {
         '5. satisfies the demands of a dynamic industry for a better community; and ',
         '6. typifies excellence in the practice of the accounting profession.'
       ]
-    }
+    },
+    tags: ['Bachelor of Science in Accountancy', 'BSA']
   }, {
     name: 'Associate in Accounting Technology',
     years: 3,
-    programType: 'Ladderized Program'
+    programType: 'Ladderized Program',
+    tags: ['Associate Accounting Technology']
   }, {
     name: 'Certificate in Accounting Technology',
     years: 2,
-    programType: 'Ladderized Program'
+    programType: 'Ladderized Program',
+    tags: ['Certificate Accounting Technology']
   }]
 };

@@ -13,6 +13,6 @@ exports.ecos = {
     description: 'The Community Advancement through Responsive Extension Services (CARES) Program',
     requirements: 'Form from ECOS office, and parents consent form/waiver',
     process: ['Just go to the ECOS Office for application'],
-    tags: 'UBCARES Program'
+    tags: ['UBCARES Program', 'Outreach Volunteer', 'Outreach', 'Volunteer']
   }]
 };
