@@ -7,7 +7,7 @@ exports.ccsd = {
     floor: '2nd',
     room: 'F206'
   },
-  tags: ['Center for Counseling and Student Development	', 'CCSD'],
+  tags: ['Center for Counseling and Student Development', 'CCSD'],
   services: [{
     name: 'Student development facilitation and counseling services',
     description: 'We are your family and we are ready to help you overcome your obstacles in life.',

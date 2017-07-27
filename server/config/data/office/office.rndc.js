@@ -80,5 +80,4 @@ exports.rndc = {
     process: '1. Go to the R&DC Office and login to the log book',
     tags: 'Use of computers'
   }]
-
 };
