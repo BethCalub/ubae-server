@@ -1,31 +1,31 @@
 'use strict';
 //Departments
-const sbaa = require('./data/dept/dept.sbaa.js');
-const scjps = require('./data/dept/dept.scjps.js');
-const sea = require('./data/dept/dept.sea.js');
-const sihtm = require('./data/dept/dept.sihtm.js');
-const sit = require('./data/dept/dept.sit.js');
-const slahs = require('./data/dept/dept.slahs.js');
-const sns = require('./data/dept/dept.sns.js');
-const sod = require('./data/dept/dept.sod.js');
-const sol = require('./data/dept/dept.sol.js');
-const son = require('./data/dept/dept.son.js');
-const ste = require('./data/dept/dept.ste.js');
+import sbaa from './data/dept/dept.sbaa.js';
+import scjps from './data/dept/dept.scjps.js';
+import sea from './data/dept/dept.sea.js';
+import sihtm from './data/dept/dept.sihtm.js';
+import sit from './data/dept/dept.sit.js';
+import slahs from './data/dept/dept.slahs.js';
+import sns from './data/dept/dept.sns.js';
+import sod from './data/dept/dept.sod.js';
+import sol from './data/dept/dept.sol.js';
+import son from './data/dept/dept.son.js';
+import ste from './data/dept/dept.ste.js';
 
 //Offices
-const arc = require('./data/office/office.arc.js');
-const athletics = require('./data/office/office.athletics.js');
-const ccsd = require('./data/office/office.ccsd.js');
-const clinic = require('./data/office/office.clinic.js');
-const ecos = require('./data/office/office.ecos.js');
-const larc = require('./data/office/office.larc.js');
-const library = require('./data/office/office.library.js');
-const maps = require('./data/office/office.maps.js');
-const mis = require('./data/office/office.mis.js');
-const osa = require('./data/office/office.osa.js');
-const rndc = require('./data/office/office.rndc.js');
-const sas = require('./data/office/office.sas.js');
-const security = require('./data/office/office.security.js');
+import arc from './data/office/office.arc.js';
+import athletics from './data/office/office.athletics.js';
+import ccsd from './data/office/office.ccsd.js';
+import clinic from './data/office/office.clinic.js';
+import ecos from './data/office/office.ecos.js';
+import larc from './data/office/office.larc.js';
+import library from './data/office/office.library.js';
+import maps from './data/office/office.maps.js';
+import mis from './data/office/office.mis.js';
+import osa from './data/office/office.osa.js';
+import rndc from './data/office/office.rndc.js';
+import sas from './data/office/office.sas.js';
+import security from './data/office/office.security.js';
 
 //Exports Department
 exports.departments = [
