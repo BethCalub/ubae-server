@@ -1,6 +1,6 @@
 'use strict';
 
-import swd from './ubae.swd.js';
+import swd from '../../components/nlp/ubae.swd.js';
 import natural from 'natural';
 // import compromise from 'compromise';
 
