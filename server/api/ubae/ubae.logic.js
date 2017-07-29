@@ -132,10 +132,17 @@ exports.results = function(story, getCommand) {
     say = 'The courses offered by the '
       + dept + ' are the following:' + programList;
 
+    // return {
+    //   _say: say,
+    //   dept: story.department,
+    //   programs: progs,
+    //   _t: Date.now()
+    // };
+
     return {
       _say: say,
       dept: story.department,
-      programs: progs,
+      programs: story.programs,
       _t: Date.now()
     };
 
