@@ -13,7 +13,7 @@
 import jsonpatch from 'fast-json-patch';
 import Ubae from './ubae.model';
 import Dept from '../dept/dept.model';
-import ubaeAI from './ubae.logic.js';
+import ubaeAI from '../../components/nlp/nlp.js';
 
 function respondWithResult(res, statusCode) {
   statusCode = statusCode || 200;
@@ -66,48 +66,55 @@ function handleError(res, statusCode) {
   };
 }
 
+// Get results from UBAE
 export function use(req, res) {
-  try {
-    var userInput = req.query.i;
+  var userInput = req.query.i;
+  if(userInput) { //check if null
     var ubae = ubaeAI.getQuery(userInput);
-    console.log(ubae.commands);
-    if(ubae.commands !== undefined) {
-      console.log(ubae.keywords);
-      if(ubae.keywords.length > 0) {
-        var keyRegex = new RegExp(ubae.keywords.join('|'), 'i');
-        Dept.findOne({ tags: { $all: [keyRegex] } })
-          .exec(function(err, story) {
-            if(err) return handleError(err);
-            if(story !== null) {
-              return res.send({
-                in: userInput,
-                cmd: ubae.commands,
-                local: ubae.location,
-                tags: ubae.keywords,
-                result: ubaeAI.results(story, ubae.commands)
-              });
-            } else {
-              return res.send(ubaeAI.errResults(
-                'Sorry but I can\'t seem to find anything related'
-              ));
-            }
-          });
-      } else {
-        return res.send(ubaeAI.errResults(
-          'Please be more specific'
-        ));
-      }
+    if(ubae.keywords.length > 0) { //check if there is keywords
+      var keyRegex = new RegExp(ubae.keywords.join('|'), 'i');
+      return Dept.findOne({
+        department: 'SCHOOL OF BUSINESS ADMINISTRATION AND ACCOUNTANCY'
+        // tags: {
+        //   $all: [keyRegex]
+        // }
+      })
+      .select('department location programs.name programs.years program.programType')
+      // .populate({
+      //   path: 'programs',
+      //   match: { tags: 'BSCOE'}
+      // })
+      .exec()
+      .then(respondWithResult(res))
+      .catch(handleError(res));
+
+      // Dept.findOne({
+      //   tags: {
+      //     $all: [keyRegex]
+      //   }
+      // }).exec(function(err, story) {
+      //   if(err) return handleError(err);
+      //   if(story !== null) {
+      //     return res.send({
+      //       in: userInput,
+      //       cmd: ubae.commands,
+      //       mod: ubae.modifiers,
+      //       tags: ubae.keywords,
+      //       location: story.location
+      //     });
+      //   } else {
+      //     return res.send('No Result');
+      //   }
+      // });
     } else {
-      // Add an exception flow.
-      return res.send(ubaeAI.errResults(
-        'I don\'t know what you want to find. ' +
-        'Please start your question with WHAT, WHERE, HOW, or WHICH'
-      ));
+      return res.send('No Keywords');
+      //No exception return error message.
+      //Sorry, but I can't seem to find anything related.
     }
-  } catch(err) {
-    return res.send(ubaeAI.errResults(
-      'Please type in a question.'
-    ));
+  } else {
+    return res.send('No Input');
+    //No exception return error message.
+    //There is nothing to find. Can you please re-type your question?
   }
 }
 

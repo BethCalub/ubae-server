@@ -1,55 +1,5 @@
 'use strict';
 
-import swd from '../../components/nlp/ubae.swd.js';
-import natural from 'natural';
-// import compromise from 'compromise';
-
-const commandList = ['WHERE', 'HOW', 'WHAT', 'WHICH'];
-const typeList = ['OFFICE', 'DEPARTMENT', 'SCHOOL', 'DEPT'];
-const programList = ['SERVICES', 'COURSES', 'PROGRAMS'];
-
-function stemmer(input) {
-  var tokenizer = new natural.WordTokenizer();
-  var word;
-  var stopWord;
-  var regexStr;
-  var regex;
-  var cleansedString = input.replace(/[^\w\s]|_/g, '').replace(/\s+/g, ' ');
-  var stopWords = swd.sw();
-  var words = cleansedString.match(/[^\s]+|\s+[^\s+]$/g);
-  for(var i = 0; i < words.length; i++) {
-    for(var y = 0; y < stopWords.length; y++) {
-      word = words[i].replace(/\s+|[^a-z]+/ig, '');
-      stopWord = stopWords[y];
-      if(word.toLowerCase() === stopWord) {
-        regexStr = '^\\s*' + stopWord + '\\s*$';
-        regexStr += '|^\\s*' + stopWord + '\\s+';
-        regexStr += '|\\s+' + stopWord + '\\s*$';
-        regexStr += '|\\s+' + stopWord + '\\s+';
-        regex = new RegExp(regexStr, 'ig');
-        cleansedString = cleansedString.replace(regex, ' ');
-      }
-    }
-  }
-  return tokenizer.tokenize(cleansedString.replace(/^\s+|\s+$/g, '').toLowerCase());
-}
-
-function wordSearch(input, list) {
-  input = input.toUpperCase()
-    .replace(/[^\w\s]|_/g, '')
-    .replace(/\s+/g, ' ')
-    .split(' ');
-  for(var y = 0; y < list.length; y++) {
-    var cur = list[y];
-    for(var x = 0; x < input.length; x++) {
-      var currentUserInput = input[x];
-      if(cur === currentUserInput) {
-        return cur.toLowerCase();
-      }
-    }
-  }
-}
-
 function titleCase(str) {
   var dispose = ['of', 'and', 'in'];
   return str.toLowerCase().split(' ')
@@ -62,27 +12,6 @@ function titleCase(str) {
     })
     .join(' ');
 }
-
-exports.getKeywords = function(input) {
-  return stemmer(input);
-};
-
-exports.getCommand = function(input) {
-  return wordSearch(input, commandList);
-};
-
-exports.getType = function(input) {
-  return wordSearch(input, typeList);
-};
-
-exports.getQuery = function(input) {
-  return {
-    keywords: stemmer(input),
-    commands: wordSearch(input, commandList),
-    location: wordSearch(input, typeList),
-    program: wordSearch(input, programList)
-  };
-};
 
 exports.errResults = function(message) {
   return {
