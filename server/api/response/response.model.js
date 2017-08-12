@@ -6,7 +6,7 @@ import {registerEvents} from './response.events';
 var ResponseSchema = new mongoose.Schema({
   message: String,
   type: String,
-  tags: String,
+  tags: [String],
   active: Boolean
 });
 

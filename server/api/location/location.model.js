@@ -5,11 +5,10 @@ import {registerEvents} from './location.events';
 
 var LocationSchema = new mongoose.Schema({
   name: String,
-  info: String,
   building: String,
   floor: String,
   room: String,
-  tags: String,
+  tags: [String],
   dept_id: String,
   active: Boolean
 });

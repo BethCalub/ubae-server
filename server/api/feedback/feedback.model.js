@@ -5,8 +5,9 @@ import {registerEvents} from './feedback.events';
 
 var FeedbackSchema = new mongoose.Schema({
   name: String,
-  info: String,
-  active: Boolean
+  message: String,
+  timestamp: Date,
+  status: Boolean
 });
 
 registerEvents(FeedbackSchema);
