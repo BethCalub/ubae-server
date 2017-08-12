@@ -1,0 +1,44 @@
+<div class="container">
+
+<div class="row">
+    <label>Add Departments</label>
+    <p class="input-group">
+      <input type="text" class="form-control" placeholder="Department Name" ng-model="deptCtrl.newDept">
+      <span class="input-group-btn">
+        <button type="submit" class="btn btn-primary" ng-click="deptCtrl.addDepartment()">Add New</button>
+      </span>
+    </p>
+</div>  
+
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Department</th>
+          <th>Mission</th>
+          <th>Building</th>
+          <th>Floor</th>
+          <th>Room</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="dept in deptCtrl.deptList">
+          <td>{{dept.department}}</td>
+          <td>{{dept.mission}}</td>
+          <td>{{dept.location.bldg}}</td>
+          <td>{{dept.location.floor}}</td>
+          <td>{{dept.location.room}}</td>
+          <td>
+              <button type="button" class="close" ng-click="deptCtrl.deleteDept(dept)">&times;</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+  </div>
+</div>
+  
+</div>

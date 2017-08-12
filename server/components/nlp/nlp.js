@@ -1,10 +1,7 @@
 'use strict';
 import swd from './dictionary/swd.js';
+import mod from './dictionary/modifiers.js';
 import natural from 'natural';
-
-const commandList = ['WHERE', 'HOW', 'WHAT', 'WHICH'];
-const typeList = ['OFFICE', 'DEPARTMENT', 'SCHOOL', 'DEPT'];
-const programList = ['SERVICES', 'COURSES', 'PROGRAMS'];
 
 function keywordSearch(input) {
   var tokenizer = new natural.WordTokenizer();
@@ -53,18 +50,18 @@ exports.getKeywords = function(input) {
 };
 
 exports.getCommand = function(input) {
-  return listSearch(input, commandList);
+  return listSearch(input, mod.commandList);
 };
 
 exports.getType = function(input) {
-  return listSearch(input, typeList);
+  return listSearch(input, mod.typeList);
 };
 
 exports.getQuery = function(input) {
   return {
     keywords: keywordSearch(input),
-    commands: listSearch(input, commandList),
-    modifiers: listSearch(input, typeList)
+    commands: listSearch(input, mod.commandList),
+    modifiers: listSearch(input, mod.locationList)
   };
 };
 
