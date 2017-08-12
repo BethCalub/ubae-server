@@ -16,6 +16,7 @@ function onConnect(socket) {
   });
 
   // Insert sockets below
+  require('../api/feedback/feedback.socket').register(socket);
   require('../api/response/response.socket').register(socket);
   require('../api/location/location.socket').register(socket);
   require('../api/office/office.socket').register(socket);
