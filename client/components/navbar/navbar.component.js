@@ -7,6 +7,12 @@ export class NavbarComponent {
   menu = [{
     title: 'Home',
     state: 'main'
+  }, {
+    title: 'Response',
+    state: 'response'
+  }, {
+    title: 'Ubae',
+    state: 'ubae'
   }];
 
   isCollapsed = true;

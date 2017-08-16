@@ -1,0 +1,101 @@
+<div class="container" id="response">
+  <div class="row">
+    
+
+    
+  </div>
+  <div class="row ">
+    <div class="col-xs-9">
+        <h4>Database:</h4>
+    </div>
+    <div class="col-xs-3">
+                <label class="sr-only" for="search">Search</label>
+                <input type="text" class="form-control" id="search" placeholder="Input field">
+    </div>
+  </div>
+  <div class="row list">
+    <table class="table table-condensed table-hover">
+      <thead>
+        <tr>
+          <th>Responds to</th>
+          <th>UBAE Response</th>
+          <th>Response Type</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="response in responseCtrl.responseList">
+          <td>{{response.tags}}</td>
+          <td>
+            <a class="btn btn-link" ng-click="responseCtrl.getResponse(response._id)" uib-tooltip="Select to edit this entry.">
+              {{response.message}}</a>
+          </td>
+          <td>{{response.type}}</td>
+          <td>
+            <button type="button" class="close" ng-click="responseCtrl.deleteResponse(response._id)" uib-tooltip="WARNING!!! This action will archive this entry.">&times;</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr>
+  <div class="row">
+    <h4>Create/Update Entry</h4>
+  </div>
+  <div class="row">
+    <div class="col-xs-4">
+      <div class="form-group">
+        <label for="msg">UBAE Response</label>
+      </div>
+    </div>
+    <div class="col-xs-3">
+      <div class="form-group">
+        <label for="tgs">Respond to:</label>
+      </div>
+    </div>
+    <div class="col-xs-3">
+      <div class="form-group">
+        <label class="control-label">Response Type</label>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="form-group">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4">
+      <div class="form-group">
+        <input type="text" id="msg" class="form-control" ng-model="responseCtrl.message" placeholder="What will ubae say?">
+      </div>
+    </div>
+    <div class="col-xs-3">
+      <div class="form-group">
+        <input type="text" id="tgs" class="form-control" ng-model="responseCtrl.tags" placeholder="Tip: Use a unique keyword.">
+      </div>
+    </div>
+    <div class="col-xs-3">
+      <div class="form-group">
+        <div class="radio">
+          <label>
+            <input type="radio" name="typeRadios" ng-model="responseCtrl.type" value="General" checked="">
+              General
+          </label>
+          <label>
+            <input type="radio" name="typeRadios" ng-model="responseCtrl.type" value="Error">
+              Error
+              </label>
+          <label>
+             <input type="radio" name="typeRadios" ng-model="responseCtrl.type" value="Help">
+              Help
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-2">
+      <div class="form-group">
+        <button type="submit" ng-click="responseCtrl.addResponse()" class="btn btn-block btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>

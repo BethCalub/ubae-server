@@ -9,6 +9,10 @@ $fa-font-path: '/assets/fonts/font-awesome/';
  * App-wide Styles
  */
 
+ .main {
+   padding-top:120px;
+ }
+
 .browserupgrade {
   margin: 0.2em 0;
   background: #ccc;
@@ -21,7 +25,9 @@ $fa-font-path: '/assets/fonts/font-awesome/';
 @import 'admin/admin';
 @import 'dept/dept';
 @import 'main/main';
+@import 'response/response';
 @import 'ubae/ubae';
 @import '../components/footer/footer';
 @import '../components/modal/modal';
+@import '../components/navbar/navbar';
 /* endinject */

@@ -4,10 +4,23 @@ import mongoose from 'mongoose';
 import {registerEvents} from './response.events';
 
 var ResponseSchema = new mongoose.Schema({
-  message: String,
-  type: String,
-  tags: [String],
-  active: Boolean
+  message: {
+    type: String,
+    required: true
+  },
+  type: {
+    type: String,
+    default: 'General',
+    required: true
+  },
+  tags: [{
+    type: String,
+    required: true
+  }],
+  active: {
+    type: Boolean,
+    default: true
+  }
 });
 
 registerEvents(ResponseSchema);
