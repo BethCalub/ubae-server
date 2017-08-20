@@ -1,101 +1,145 @@
-<div class="container" id="response">
+<div class="container-fluid" id="response">
   <div class="row">
-    
-
-    
-  </div>
-  <div class="row ">
-    <div class="col-xs-9">
-        <h4>Database:</h4>
+    <div class="col-sm-7">
+      <h4>{{responseCtrl.tableName}} Entries:</h4>
     </div>
-    <div class="col-xs-3">
-                <label class="sr-only" for="search">Search</label>
-                <input type="text" class="form-control" id="search" placeholder="Input field">
+    <div class="col-sm-2">
+        <div class="form-group">
+        <select
+        ng-model="responseCtrl.filterType" name="response" 
+        ng-options="x for x in responseCtrl.typeSelect"
+        class="form-control input-sm" required="required">
+      </select>
+        </div>
+    </div>
+    <div class="col-sm-3">
+        <div class="form-group">
+      <label class="sr-only" for="search">Search</label>
+      <input type="text" class="form-control input-sm" id="search" ng-model="responseCtrl.searchResponses" 
+        uib-tooltip="Search for information contained in the {{responseCtrl.tableName}} database. This will filter out the information as you type."
+        tooltip-placement="bottom"
+        placeholder="Search {{responseCtrl.tableName}}">
+      </div>
     </div>
   </div>
+  <hr>
   <div class="row list">
-    <table class="table table-condensed table-hover">
+    <table class="table table-condensed table-hover fixed">
       <thead>
         <tr>
-          <th>Responds to</th>
-          <th>UBAE Response</th>
-          <th>Response Type</th>
+          <th>#</th>
+          <th>Trigger</th>
+          <th>Message</th>
           <th></th>
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="response in responseCtrl.responseList">
-          <td>{{response.tags}}</td>
-          <td>
-            <a class="btn btn-link" ng-click="responseCtrl.getResponse(response._id)" uib-tooltip="Select to edit this entry.">
-              {{response.message}}</a>
+        <tr ng-repeat="response in responseCtrl.responseList | orderBy: 'type' | 
+        filter: { type : responseCtrl.filterType, tags : responseCtrl.searchResponses}">
+          <td style="width: 20px">{{$index + 1}}</td>
+          <td style="width: 35%">     
+            <ul>  
+              <li ng-repeat="tags in response.tags">
+                <span class="label label-danger" 
+                uib-tooltip="{{tags}}" 
+                tooltip-placement="top">
+                  {{tags}}
+                </span>
+              </li>
+            </ul>
           </td>
-          <td>{{response.type}}</td>
+          <td class="flex-response">
+            <a href="" ng-click="responseCtrl.getResponse(response._id)" 
+            uib-tooltip="Select to edit this entry. Please take note that you can only edit the keywords for every entry."
+            tooltip-placement="bottom">
+              "{{response.message}}"</a>
+          </td>
           <td>
-            <button type="button" class="close" ng-click="responseCtrl.deleteResponse(response._id)" uib-tooltip="WARNING!!! This action will archive this entry.">&times;</button></td>
+            <button type="button" class="close" ng-click="responseCtrl.deleteResponse(response._id)" 
+            uib-tooltip="WARNING!!! This action will delete this entry."
+            tooltip-placement="left">&times;</button></td>
         </tr>
       </tbody>
     </table>
   </div>
   <hr>
-  <div class="row">
-    <h4>Create/Update Entry</h4>
+</div>
+
+<div class="container" id="response">
+<div class="row">
+    <div class="col-sm-4">
+        <h4>Create/Update {{responseCtrl.tableName}}</h4>
+    </div>
+    <div class="col-sm-offset-6 col-sm-2" style="text-align: right">
+        <a class="btn btn-link" ng-click="responseCtrl.resetResponse()"
+        ng-hide="isCollapsed" 
+        uib-tooltip="This will reset the form. WARNING: Any changes made will be discarded." 
+        tooltip-placement="top-right"><sub>Reset Form</sub></a>
+      </div>
   </div>
-  <div class="row">
-    <div class="col-xs-4">
-      <div class="form-group">
-        <label for="msg">UBAE Response</label>
+  <div class="row" ng-show="isCollapsed">
+      <div class="col-sm-12 confirmSave">
+          <label class="control-label col-sm-12" style="float:left">
+            This action will will add or update this entry in the database. Are you sure you want to continue?</label>
+          <br>
+          <button type="button" 
+          ng-click="responseCtrl.saveResponse(); isCollapsed = !isCollapsed" 
+          ng-disabled="responseForm.$invalid" 
+          class="btn btn-danger btn-block">
+              Yes! I'm Sure
+          </button>
+          <button type="button" 
+          ng-disabled="responseForm.$invalid" 
+          ng-click="isCollapsed = !isCollapsed"
+          class="btn btn-default btn-sm btn-block">
+              Cancel
+          </button>
       </div>
-    </div>
-    <div class="col-xs-3">
-      <div class="form-group">
-        <label for="tgs">Respond to:</label>
-      </div>
-    </div>
-    <div class="col-xs-3">
-      <div class="form-group">
-        <label class="control-label">Response Type</label>
-      </div>
-    </div>
-    <div class="col-xs-2">
-      <div class="form-group">
-      </div>
-    </div>
   </div>
-  <div class="row">
-    <div class="col-xs-4">
-      <div class="form-group">
-        <input type="text" id="msg" class="form-control" ng-model="responseCtrl.message" placeholder="What will ubae say?">
-      </div>
-    </div>
-    <div class="col-xs-3">
-      <div class="form-group">
-        <input type="text" id="tgs" class="form-control" ng-model="responseCtrl.tags" placeholder="Tip: Use a unique keyword.">
-      </div>
-    </div>
-    <div class="col-xs-3">
-      <div class="form-group">
-        <div class="radio">
-          <label>
-            <input type="radio" name="typeRadios" ng-model="responseCtrl.type" value="General" checked="">
-              General
-          </label>
-          <label>
-            <input type="radio" name="typeRadios" ng-model="responseCtrl.type" value="Error">
-              Error
-              </label>
-          <label>
-             <input type="radio" name="typeRadios" ng-model="responseCtrl.type" value="Help">
-              Help
-          </label>
+
+  <div class="row" ng-hide="isCollapsed">
+    <form name="responseForm" novalidate>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="tgs">Respond to:</label>
+          <input type="text" id="tags" name="tags" class="form-control" 
+          uib-tooltip="TIP: Separate your keywords using a comma ','. 
+            Example: Keyword1, Keyword2, Keyword3" 
+          tooltip-placement="bottom-left" 
+          ng-model="responseCtrl.tags" 
+          placeholder="Keywords to respond to"
+            required>
+            <span style="color:red" ng-show="myForm.tags.$dirty"> invalid </span>
         </div>
       </div>
-    </div>
-    <div class="col-xs-2">
-      <div class="form-group">
-        <button type="submit" ng-click="responseCtrl.addResponse()" class="btn btn-block btn-primary">Save</button>
+      <div class="col-sm-4">
+        <div class="form-group">
+            <label for="msg">Response</label>
+          <input type="text" id="msg" 
+          ng-disabled="responseForm.tags.$invalid || responseCtrl.responseId" 
+          uib-tooltip="TIP: Enter a message that will be used by UBAE when a keyword is detected. 
+            Example: keyword: 'Hi' then the response will be 'Hello'" 
+          tooltip-placement="bottom left"  name="message" 
+          class="form-control" ng-model="responseCtrl.message"
+            placeholder="What will UBAE say" required>
+        </div>
       </div>
-    </div>
+      <div class="col-sm-2">
+          <label class="control-label">Type</label>
+          <select ng-disabled="responseForm.message.$invalid || responseCtrl.responseId" 
+          ng-model="responseCtrl.type" name="response" 
+          ng-options="x for x in responseCtrl.typeSelect"
+          class="form-control" required="required">
+        </select>
+      </div>
+      <div class="col-sm-2">
+          <label class="control-label">&nbsp;</label>
+          <button type="button" ng-click="isCollapsed = !isCollapsed" 
+          ng-disabled="responseForm.$invalid" class="btn btn-block btn-danger">
+              Save Entry
+            </button>
+      </div>
+    </form>
   </div>
 </div>
 <hr>

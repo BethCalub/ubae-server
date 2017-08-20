@@ -47,7 +47,8 @@ Version: 1.0
 }
 
 #header-2 .navbar-toggle:hover .icon-bar {
-	background-color: #3498DB;
+	// background-color: #3498DB;
+	background-color: crimson;
 }
 
 #header-2 .navbar-fixed-top .navbar-collapse {
@@ -62,6 +63,15 @@ Version: 1.0
 	margin-top: 25px;
 }
 
+#header-2 .main-nav .nav .nav-item p {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 15px;
+	color: #666;
+	background: none;
+}
+
 #header-2 .main-nav .nav .nav-item a {
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
@@ -72,11 +82,13 @@ Version: 1.0
 }
 
 #header-2 .main-nav .nav .nav-item.active a {
-	color: #3498DB;
+	// color: #3498DB;
+	color: crimson;
 }
 
 #header-2 .main-nav .nav .nav-item a:hover {
-	color: #3498DB;
+	// color: #3498DB;
+	color: crimson;
 }
 
 #header-2 .main-nav .nav .nav-item a:focus {

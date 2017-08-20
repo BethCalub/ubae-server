@@ -40,6 +40,12 @@ export default function seedDatabaseIfNeeded() {
           name: 'Admin',
           email: 'admin@example.com',
           password: 'admin'
+        }, {
+          provider: 'local',
+          role: 'admin',
+          name: 'Earmix',
+          email: 'earmix@ubae.com',
+          password: 'earmix'
         })
         .then(() => console.log('finished populating Accounts'))
         .catch(err => console.log('error populating Accounts', err));

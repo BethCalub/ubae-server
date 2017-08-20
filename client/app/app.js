@@ -20,6 +20,7 @@ import _Auth from '../components/auth/auth.module';
 import account from './account';
 import admin from './admin';
 import navbar from '../components/navbar/navbar.component';
+import modal from '../components/modal/modal.service';
 import footer from '../components/footer/footer.component';
 import deptService from '../services/department/department.service';
 import main from './main/main.component';
@@ -29,11 +30,16 @@ import util from '../components/util/util.module';
 import socket from '../components/socket/socket.service';
 import ubae from './ubae/ubae.component';
 
+import ResponseComponent from './response/response.component';
+import EventComponent from './event/event.component';
+import FeedbackComponent from './feedback/feedback.component';
+
 import './app.scss';
 
 angular.module('ubaeApiApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
-  uiBootstrap, _Auth, account, admin, 'validation.match', ubae, dept, deptService, navbar, footer, main, constants,
-  socket, util
+  uiBootstrap, _Auth, account, admin, 'validation.match', ubae, dept, modal, deptService, navbar, footer, main, constants,
+  socket, util,
+  ResponseComponent, EventComponent, FeedbackComponent
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {

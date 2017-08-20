@@ -15,7 +15,8 @@ var ResponseSchema = new mongoose.Schema({
   },
   tags: [{
     type: String,
-    required: true
+    required: true,
+    lowercase: true
   }],
   active: {
     type: Boolean,

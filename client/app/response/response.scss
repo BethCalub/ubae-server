@@ -1,12 +1,10 @@
 #response {
 	.list {
 		// border: 1px solid black;
-		height: 500px;
+		min-height: 390px;
+		// height: 800px;
 		overflow-y: scroll;
 		overflow-x: hidden;
-
-
-
 	}
 	.list::-webkit-scrollbar {
 		width: 4px;
@@ -18,6 +16,60 @@
 		background-color: darkgray;
 		// outline: 1px solid slategray;
 	}
-
-
+	// input.ng-invalid {
+	// 	// background-color: pink;
+	// 	border: 2px solid crimson;
+	// }
+	// input.ng-valid {
+	// 	// background-color: pink;
+	// 	border: 2px solid greenyellow;
+	// }
+	// input.ng-untouched {
+	// 	background-color: paleturquoise;
+	// }
+	ul {
+		@extend .flex-response;
+    list-style-type: none;
+    margin: 0;
+		padding: 0;
+		il {
+			display: inline;
+		}
+	}
 }
+
+.flex-response {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.confirmSave {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+
+
+/*Setting the table width is important!*/
+/*Hide text outside the cell.*/
+
+// table.fixed td:nth-of-type(1) {
+//   width: 30%;
+// }
+// /*Setting the width of column 1.*/
+
+// table.fixed td:nth-of-type(2) {
+//   width: 30%;
+// }
+// /*Setting the width of column 2.*/
+
+// table.fixed td:nth-of-type(3) {
+//   width: 40%;
+// }
+/*Setting the width of column 3.*/
+
+

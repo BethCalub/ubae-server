@@ -10,6 +10,7 @@ export class MainController {
   constructor($http, $scope, socket) {
     this.$http = $http;
     this.socket = socket;
+    this.animationsEnabled = true;
 
     $scope.$on('$destroy', function() {
       socket.unsyncUpdates('dept');

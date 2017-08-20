@@ -5,6 +5,7 @@ export default function($stateProvider) {
   $stateProvider
     .state('response', {
       url: '/response',
-      template: '<response></response>'
+      template: '<response></response>',
+      authenticate: true
     });
 }

@@ -2,6 +2,7 @@
 
 import mongoose from 'mongoose';
 import {registerEvents} from './location.events';
+var Schema = mongoose.Schema;
 
 var LocationSchema = new mongoose.Schema({
   name: String,
@@ -9,7 +10,11 @@ var LocationSchema = new mongoose.Schema({
   floor: String,
   room: String,
   tags: [String],
-  dept_id: String,
+  dept: {
+    type: Schema.Types.ObjectId,
+    ref: 'Department',
+    require: true
+  },
   active: Boolean
 });
 

@@ -11,6 +11,7 @@ $fa-font-path: '/assets/fonts/font-awesome/';
 
  .main {
    padding-top:120px;
+   margin: 0 25px;
  }
 
 .browserupgrade {
@@ -22,8 +23,11 @@ $fa-font-path: '/assets/fonts/font-awesome/';
 
 // Component styles are injected through gulp
 /* inject:scss */
+@import 'account/login/login';
 @import 'admin/admin';
 @import 'dept/dept';
+@import 'event/event';
+@import 'feedback/feedback';
 @import 'main/main';
 @import 'response/response';
 @import 'ubae/ubae';

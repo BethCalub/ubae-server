@@ -1,12 +1,45 @@
 <div class="container">
-  <p>The delete user and user index api routes are restricted to users with the 'admin' role.</p>
-  <ul class="list-group user-list">
-    <li class="list-group-item" ng-repeat="user in admin.users">
-	    <div class="user-info">
-	        <strong>{{user.name}}</strong><br>
-	        <span class="text-muted">{{user.email}}</span>
-	    </div>
-        <a ng-click="admin.delete(user)" class="trash"><span class="fa fa-trash fa-2x"></span></a>
-    </li>
-  </ul>
+  <row>
+      <div class="col-xs-9">
+          <h4>Accounts Entries:</h4>
+        </div>
+      <div class="col-xs-3">
+          <input type="text" class="form-control input-sm" id="search" 
+            ng-model="admin.searchAccounts" 
+            uib-tooltip="Search for information contained in the Accounts database. 
+              This will filter out the information as you type."
+            tooltip-placement="left" tooltip-is-open="isTooltipOpen" tooltip-trigger="click" tooltip-animation="false" tooltip-popup-delay="1000" tooltip-popup-close-delay="1000"
+            placeholder="Search Accounts">
+        </div>
+  </row>
+  <row>
+      <table class="table table-condensed table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>User Name</th>
+              <th>Email</th>
+              <th>Access</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="user in admin.users | filter: admin.searchAccounts">
+             <td>{{$index + 1 }}</td>
+             <td>{{user.name}}</td>
+             <td>{{user.email}}</td>
+             <td>{{user.role}}</td>
+              <td>
+                <button type="button" class="close" 
+                  ng-click="admin.delete(user)" 
+                  uib-tooltip="WARNING!!! This action will PERMANENTLY delete this account."
+                  tooltip-placement="left">&times;
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </row>
 </div>
+
+

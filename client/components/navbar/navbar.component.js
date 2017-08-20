@@ -8,11 +8,11 @@ export class NavbarComponent {
     title: 'Home',
     state: 'main'
   }, {
-    title: 'Response',
+    title: 'Responses',
     state: 'response'
   }, {
-    title: 'Ubae',
-    state: 'ubae'
+    title: 'Events',
+    state: 'event'
   }];
 
   isCollapsed = true;
@@ -24,7 +24,6 @@ export class NavbarComponent {
     this.isAdmin = Auth.isAdminSync;
     this.getCurrentUser = Auth.getCurrentUserSync;
   }
-
 }
 
 export default angular.module('directives.navbar', [])

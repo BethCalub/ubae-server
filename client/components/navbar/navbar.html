@@ -47,21 +47,21 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" uib-collapse="$ctrl.isCollapsed" id="navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="nav-item active" ng-repeat="item in $ctrl.menu" ui-sref-active="active">
-            <a ui-sref="{{item.state}}">{{item.title}}</a>
+          <li class="nav-item active" ng-show="$ctrl.isLoggedIn()" ng-repeat="item in $ctrl.menu" ui-sref-active="active">
+            <a ng-model="$ctrl.isCollapsed = !$ctrl.isCollapsed" ui-sref="{{item.state}}">{{item.title}}</a>
           </li>
           <li class="nav-item" ng-show="$ctrl.isAdmin()" ui-sref-active="active">
-            <a ui-sref="admin">Admin</a>
+            <a ng-click="$ctrl.isCollapsed = !$ctrl.isCollapsed" ui-sref="admin">Accounts</a>
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li class="nav-item" ng-hide="$ctrl.isLoggedIn()" ui-sref-active="active"><a ui-sref="signup">Sign up</a></li>
-          <li class="nav-item" ng-hide="$ctrl.isLoggedIn()" ui-sref-active="active"><a ui-sref="login">Login</a></li>
+          <li class="nav-item" ng-hide="$ctrl.isLoggedIn()" ui-sref-active="active"><a ng-click="$ctrl.isCollapsed = !$ctrl.isCollapsed" ui-sref="signup">Sign up</a></li>
+          <li class="nav-item" ng-hide="$ctrl.isLoggedIn()" ui-sref-active="active"><a ng-click="$ctrl.isCollapsed = !$ctrl.isCollapsed" ui-sref="login">Login</a></li>
           <li class="nav-item" ng-show="$ctrl.isLoggedIn()">
             <p class="navbar-text">Hello {{ $ctrl.getCurrentUser().name }}</p>
           </li>
-          <li class="nav-item" ng-show="$ctrl.isLoggedIn()" ui-sref-active="active"><a ui-sref="settings"><span class="glyphicon glyphicon-cog"></span></a></li>
-          <li class="nav-item" ng-show="$ctrl.isLoggedIn()"><a ui-sref="logout">Logout</a></li>
+          <li class="nav-item" ng-show="$ctrl.isLoggedIn()" ui-sref-active="active"><a ng-click="$ctrl.isCollapsed = !$ctrl.isCollapsed" ui-sref="settings"><span class="glyphicon glyphicon-cog"></span></a></li>
+          <li class="nav-item" ng-show="$ctrl.isLoggedIn()"><a ng-click="$ctrl.isCollapsed = !$ctrl.isCollapsed" ui-sref="logout">Logout</a></li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
