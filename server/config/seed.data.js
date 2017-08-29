@@ -27,8 +27,20 @@ import rndc from './data/office/office.rndc.js';
 import sas from './data/office/office.sas.js';
 import security from './data/office/office.security.js';
 
+//Locations
+import location from './data/location.ubae.js';
+
+//Departments
+import department from './data/department.ubae.js';
+
+//Services
+import service from './data/services.ubae.js';
+
+//Programs
+import program from './data/program.ubae.js';
+
 //Exports Department
-exports.departments = [
+exports.depts = [
   sbaa.sbaa,
   scjps.scjps,
   sea.sea,
@@ -58,3 +70,8 @@ exports.offices = [
   sas.sas,
   security.security
 ];
+
+exports.departments = department.department;
+exports.locations = location.location;
+exports.services = service.service;
+exports.programs = program.program;
