@@ -5,6 +5,7 @@ export default function($stateProvider) {
   $stateProvider
     .state('program', {
       url: '/program',
-      template: '<program></program>'
+      template: '<program></program>',
+      authenticate: true
     });
 }

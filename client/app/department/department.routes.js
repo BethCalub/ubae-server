@@ -5,6 +5,7 @@ export default function($stateProvider) {
   $stateProvider
     .state('department', {
       url: '/department',
-      template: '<department></department>'
+      template: '<department></department>',
+      authenticate: true
     });
 }

@@ -5,6 +5,7 @@ export default function($stateProvider) {
   $stateProvider
     .state('service', {
       url: '/service',
-      template: '<service></service>'
+      template: '<service></service>',
+      authenticate: true
     });
 }

@@ -5,6 +5,7 @@ export default function($stateProvider) {
   $stateProvider
     .state('feedback', {
       url: '/feedback',
-      template: '<feedback></feedback>'
+      template: '<feedback></feedback>',
+      authenticate: true
     });
 }
