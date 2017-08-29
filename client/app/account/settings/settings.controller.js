@@ -25,6 +25,9 @@ export default class SettingsController {
       this.Auth.changePassword(this.user.oldPassword, this.user.newPassword)
         .then(() => {
           this.message = 'Password successfully changed.';
+          // this.user.oldPassword = '';
+          // this.user.newPassword = '';
+          // this.user.confirmPassword = '';
         })
         .catch(() => {
           form.password.$setValidity('mongoose', false);

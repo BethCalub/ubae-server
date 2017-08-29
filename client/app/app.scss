@@ -25,11 +25,15 @@ $fa-font-path: '/assets/fonts/font-awesome/';
 /* inject:scss */
 @import 'account/login/login';
 @import 'admin/admin';
+@import 'department/department';
 @import 'dept/dept';
 @import 'event/event';
 @import 'feedback/feedback';
+@import 'location/location';
 @import 'main/main';
+@import 'program/program';
 @import 'response/response';
+@import 'service/service';
 @import 'ubae/ubae';
 @import '../components/footer/footer';
 @import '../components/modal/modal';
