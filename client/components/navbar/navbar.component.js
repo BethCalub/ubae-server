@@ -5,24 +5,34 @@ import angular from 'angular';
 
 export class NavbarComponent {
   menu = [{
-    title: 'Home',
-    state: 'main'
-  }, {
     title: 'Responses',
     state: 'response'
   }, {
-    title: 'Events',
-    state: 'event'
+    title: 'Locations',
+    state: 'location'
+  }, {
+    title: 'Departments',
+    state: 'department'
+  }, {
+    title: 'Services',
+    state: 'service'
+  }, {
+    title: 'Programs',
+    state: 'program'
   }];
 
   isCollapsed = true;
 
   constructor(Auth) {
     'ngInject';
-
+    this.close = this.closeNav();
     this.isLoggedIn = Auth.isLoggedInSync;
     this.isAdmin = Auth.isAdminSync;
     this.getCurrentUser = Auth.getCurrentUserSync;
+  }
+
+  closeNav() {
+    this.isCollapsed = false;
   }
 }
 

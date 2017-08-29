@@ -4,13 +4,23 @@ import mongoose from 'mongoose';
 import {registerEvents} from './service.events';
 
 var ServiceSchema = new mongoose.Schema({
-  name: String,
+  name: {
+    type: String,
+    required: true
+  },
   info: String,
   process: [String],
   requirements: [String],
-  tags: [String],
-  dept_id: String,
-  active: Boolean
+  tags: [{
+    type: String,
+    lowercase: true,
+    required: true
+  }],
+  // dept_id: String,
+  active: {
+    type: Boolean,
+    default: true
+  }
 });
 
 registerEvents(ServiceSchema);

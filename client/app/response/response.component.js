@@ -5,34 +5,23 @@ import routes from './response.routes';
 
 export class ResponseComponent {
   responseList = [];
-  tableName = 'Responses';
   searchResponses = '';
-
-  responseId = '';
-  message = '';
-  type = 'General';
-  tags = '';
-  active = true;
-
-  responseEntities = {
-    message: this.message,
-    type: this.type,
-    tags: this.tags.split(', ')
-  }
 
   /*@ngInject*/
   constructor($http, $scope, socket) {
     this.$http = $http;
     this.socket = socket;
+    this.tableName = 'Responses';
+
     this.typeSelect = ['General', 'Error', 'Help'];
     this.link = '/api/responses';
+    // this.link = 'http://ubae.herokuapp.com/api/responses';
     this.filterType = 'General';
     this.isCollapsed = false;
+    this.showNotif = false;
 
     this.responseId = '';
-    this.message = '';
     this.type = 'General';
-    this.tags = '';
     this.active = true;
 
     $scope.$on('$destroy', function() {
@@ -45,12 +34,19 @@ export class ResponseComponent {
   }
 
   setResponseEntry() {
-    var responseArray = {
+    return {
       message: this.message,
       type: this.type,
       tags: this.getTags(this.tags)
     };
-    return responseArray;
+  }
+
+  resetResponse() {
+    this.message = '';
+    this.type = 'General';
+    this.tags = '';
+    this.active = true;
+    this.responseId = '';
   }
 
   getTags(toArray) {
@@ -63,11 +59,57 @@ export class ResponseComponent {
     return tagsArray;
   }
 
+  setNotif(_msg, response, _alert) {
+    this.showNotif = true;
+    return {
+      message: _msg,
+      code: response.status,
+      status: response.statusText,
+      alert: _alert
+    };
+  }
+
+  dismissNotif() {
+    this.showNotif = false;
+  }
+
+  saveResponse() {
+    if(this.responseId) {
+      this.$http.put(this.link + '/' + this.responseId, {
+        message: this.message,
+        type: this.type,
+        tags: this.getTags(this.tags),
+        active: true
+      })
+      .then(response => {
+        this.eventStatus = this.setNotif('Updated Successfully!', response, 'alert-success');
+        this.resetResponse();
+        this.getResponses();
+      }, err => {
+        this.eventStatus = this.setNotif('Updating Failed!', err, 'alert-danger');
+      });
+    } else {
+      this.$http.post(this.link, {
+        message: this.message,
+        type: this.type,
+        tags: this.getTags(this.tags)
+      })
+      .then(response => {
+        this.eventStatus = this.setNotif('Added Successfully!', response, 'alert-success');
+        this.resetResponse();
+      }, err => {
+        this.eventStatus = this.setNotif('Adding Failed!', err, 'alert-danger');
+      });
+    }
+  }
+
   getResponses() {
     this.$http.get(this.link)
     .then(response => {
       this.responseList = response.data;
       this.socket.syncUpdates('response', this.responseList);
+    }, err => {
+      this.error = err.statusText;
     });
   }
 
@@ -78,40 +120,21 @@ export class ResponseComponent {
         this.type = response.data.type;
         this.tags = response.data.tags;
         this.responseId = response.data._id;
+      }, err => {
+        this.error = err.statusText;
       });
   }
 
-  saveResponse() {
-    if(this.responseId) {
-      this.updateResponse(this.responseId);
-    } else {
-      this.addResponse();
-    }
-    this.resetResponse();
-    this.getResponses();
-  }
-
-  addResponse() {
-    this.$http.post(this.link, this.setResponseEntry());
-  }
-
-  updateResponse(_id) {
-    this.$http.put(this.link + '/' + _id,
-      this.setResponseEntry()
-    );
-  }
-
+  // DELETE RESPONSE
   deleteResponse(_id) {
-    this.$http.delete(this.link + '/' + _id);
+    this.$http.delete(this.link + '/' + _id)
+    .then(response => {
+      this.eventStatus = this.setNotif('Deleted Successfully!', response, 'alert-success');
+      this.resetResponse();
+    }, err => {
+      this.eventStatus = this.setNotif('Deleting Failed!', err, 'alert-danger');
+    });
     this.resetResponse();
-  }
-
-  resetResponse() {
-    this.message = '';
-    this.type = 'General';
-    this.tags = '';
-    this.active = true;
-    this.responseId = '';
   }
 }
 

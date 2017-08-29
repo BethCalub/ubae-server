@@ -1,4 +1,8 @@
 <div class="container-fluid" id="response">
+  <div class="alert {{responseCtrl.eventStatus.alert}}" ng-show="responseCtrl.showNotif">
+    <button type="button" class="close" ng-click="responseCtrl.dismissNotif()" aria-hidden="true">&times;</button>
+    <strong>{{responseCtrl.eventStatus.status}}</strong> {{responseCtrl.eventStatus.message}}
+  </div>
   <div class="row">
     <div class="col-sm-7">
       <h4>{{responseCtrl.tableName}} Entries:</h4>
@@ -28,7 +32,7 @@
       <thead>
         <tr>
           <th>#</th>
-          <th>Trigger</th>
+          <th>Tags</th>
           <th>Message</th>
           <th></th>
         </tr>
@@ -72,28 +76,8 @@
     </div>
     <div class="col-sm-offset-6 col-sm-2" style="text-align: right">
         <a class="btn btn-link" ng-click="responseCtrl.resetResponse()"
-        ng-hide="isCollapsed" 
         uib-tooltip="This will reset the form. WARNING: Any changes made will be discarded." 
         tooltip-placement="top-right"><sub>Reset Form</sub></a>
-      </div>
-  </div>
-  <div class="row" ng-show="isCollapsed">
-      <div class="col-sm-12 confirmSave">
-          <label class="control-label col-sm-12" style="float:left">
-            This action will will add or update this entry in the database. Are you sure you want to continue?</label>
-          <br>
-          <button type="button" 
-          ng-click="responseCtrl.saveResponse(); isCollapsed = !isCollapsed" 
-          ng-disabled="responseForm.$invalid" 
-          class="btn btn-danger btn-block">
-              Yes! I'm Sure
-          </button>
-          <button type="button" 
-          ng-disabled="responseForm.$invalid" 
-          ng-click="isCollapsed = !isCollapsed"
-          class="btn btn-default btn-sm btn-block">
-              Cancel
-          </button>
       </div>
   </div>
 
@@ -101,43 +85,46 @@
     <form name="responseForm" novalidate>
       <div class="col-sm-4">
         <div class="form-group">
-          <label for="tgs">Respond to:</label>
+          <label for="tags">Respond to:</label>
           <input type="text" id="tags" name="tags" class="form-control" 
-          uib-tooltip="TIP: Separate your keywords using a comma ','. 
-            Example: Keyword1, Keyword2, Keyword3" 
-          tooltip-placement="bottom-left" 
-          ng-model="responseCtrl.tags" 
-          placeholder="Keywords to respond to"
-            required>
-            <span style="color:red" ng-show="myForm.tags.$dirty"> invalid </span>
+            uib-tooltip="TIP: Separate your keywords using a comma ','. 
+              Example: Keyword1, Keyword2, Keyword3" 
+            tooltip-placement="bottom-left" 
+            ng-model="responseCtrl.tags" 
+            placeholder="Keywords to respond to" required>
         </div>
       </div>
       <div class="col-sm-4">
         <div class="form-group">
-            <label for="msg">Response</label>
-          <input type="text" id="msg" 
-          ng-disabled="responseForm.tags.$invalid || responseCtrl.responseId" 
-          uib-tooltip="TIP: Enter a message that will be used by UBAE when a keyword is detected. 
-            Example: keyword: 'Hi' then the response will be 'Hello'" 
-          tooltip-placement="bottom left"  name="message" 
-          class="form-control" ng-model="responseCtrl.message"
+          <label for="message">Response</label>
+          <input type="text" id="message" name="message" class="form-control" 
+            ng-disabled="responseForm.tags.$invalid || responseCtrl.responseId" 
+            uib-tooltip="TIP: Enter a message that will be used by UBAE when a keyword is detected. 
+              Example: keyword: 'Hi' then the response will be 'Hello'" 
+            tooltip-placement="bottom left"  
+            ng-model="responseCtrl.message"
             placeholder="What will UBAE say" required>
         </div>
       </div>
       <div class="col-sm-2">
+        <div class="form-group">
           <label class="control-label">Type</label>
-          <select ng-disabled="responseForm.message.$invalid || responseCtrl.responseId" 
-          ng-model="responseCtrl.type" name="response" 
-          ng-options="x for x in responseCtrl.typeSelect"
-          class="form-control" required="required">
-        </select>
+          <select class="form-control" name="response"  required="required"
+            ng-disabled="responseForm.message.$invalid || responseCtrl.responseId"
+            ng-model="responseCtrl.type" 
+            ng-options="x for x in responseCtrl.typeSelect">
+          </select>
+        </div>
       </div>
       <div class="col-sm-2">
+        <div class="form-group">
           <label class="control-label">&nbsp;</label>
-          <button type="button" ng-click="isCollapsed = !isCollapsed" 
-          ng-disabled="responseForm.$invalid" class="btn btn-block btn-danger">
+          <button type="button" class="btn btn-block btn-danger"
+            ng-disabled="responseForm.$invalid" 
+            ng-click="responseCtrl.saveResponse()">
               Save Entry
-            </button>
+          </button>
+        </div>
       </div>
     </form>
   </div>

@@ -2,20 +2,36 @@
 
 import mongoose from 'mongoose';
 import {registerEvents} from './department.events';
-var Schema = mongoose.Schema;
+// var Schema = mongoose.Schema;
 
 var DepartmentSchema = new mongoose.Schema({
-  name: String,
-  info: String,
-  acronym: String,
-  type: String,
-  tags: [String],
-  location: {
-    type: Schema.Types.ObjectId,
-    ref: 'Location',
-    require: true
+  name: {
+    type: String,
+    required: true
   },
-  active: Boolean
+  info: String,
+  acronym: {
+    type: String,
+    uppercase: true
+  },
+  type: {
+    type: String,
+    required: true
+  },
+  tags: [{
+    type: String,
+    lowercase: true,
+    required: true
+  }],
+  // location: {
+  //   type: Schema.Types.ObjectId,
+  //   ref: 'Location',
+  //   require: true
+  // },
+  active: {
+    type: Boolean,
+    default: true
+  }
 });
 
 registerEvents(DepartmentSchema);

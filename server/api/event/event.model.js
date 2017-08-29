@@ -4,14 +4,18 @@ import mongoose from 'mongoose';
 import {registerEvents} from './event.events';
 
 var EventSchema = new mongoose.Schema({
-  name: String,
+  name: {
+    type: String,
+    required: true
+  },
+  info: String,
   location: String,
   requirements: String,
   startDate: Date,
   endDate: Date,
   startTime: Date,
   endTime: Date,
-  tags: String,
+  tags: [String],
   active: Boolean
 });
 

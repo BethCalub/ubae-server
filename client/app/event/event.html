@@ -1,0 +1,116 @@
+<div class="container-fluid" id="response">
+  <div class="alert {{eventCtrl.eventStatus.alert}}" ng-show="eventCtrl.showNotif">
+    <button type="button" class="close" ng-click="eventCtrl.dismissNotif()" aria-hidden="true">&times;</button>
+    <strong>{{eventCtrl.eventStatus.status}}</strong> {{eventCtrl.eventStatus.message}}
+  </div>
+  <div class="row">
+    <div class="col-sm-9">
+      <h4>{{eventCtrl.tableName}} Entries:</h4>
+    </div>
+    <!-- <div class="col-sm-2">
+        <div class="form-group">
+        <select
+        ng-model="eventCtrl.filterType" name="response" 
+        ng-options="x for x in eventCtrl.typeSelect"
+        class="form-control input-sm" required="required">
+      </select>
+        </div>
+    </div> -->
+    <div class="col-sm-3">
+      <div class="form-group">
+        <label class="sr-only" for="search">Search</label>
+        <input type="text" class="form-control input-sm" id="search" ng-model="eventCtrl.searchResponses" uib-tooltip="Search for information contained in the {{eventCtrl.tableName}} database. This will filter out the information as you type."
+          tooltip-placement="bottom" placeholder="Search {{eventCtrl.tableName}}">
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row list">
+    <table class="table table-condensed table-hover fixed">
+      <thead>
+        <tr>
+          <th ng-repeat="headers in eventCtrl.tableEntries">{{headers}}</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="response in eventCtrl.eventList | 
+        filter: { tags: eventCtrl.searchResponses }">
+          <td style="width: 20px">{{$index + 1}}</td>
+          <td><a ng-click="eventCtrl.getEvent(response._id)">{{response.name}}</a></td>
+          <td>{{response.info}}</td>
+          <td>{{response.location}}</td>
+          <td>{{response.startDate | date: "shortDate"}} to {{response.endDate | date: "shortDate"}}</td>
+          <!-- <td>{{response.startTime | date: "shortTime"}} to {{response.endTime | date: "shortTime"}}</td> -->
+          <td style="width: 35%">
+            <ul>
+              <li ng-repeat="tags in response.tags">
+                <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
+                  {{tags}}
+                </span>
+              </li>
+            </ul>
+          </td>
+          <td>
+            <button type="button" class="close" ng-click="eventCtrl.deleteEvent(response._id)"
+              uib-tooltip="WARNING!!! This action will delete this entry."
+              tooltip-placement="left">&times;</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <hr>
+</div>
+
+
+<form name="eventForm">
+  <legend>Event</legend>
+
+  <div class="form-group">
+    <label for="">Name</label>
+    <input type="text" ng-model="eventCtrl.eventName" class="form-control" id="name" placeholder="Event Name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="">Information</label>
+    <input type="text" ng-model="eventCtrl.eventInfo" class="form-control" id="info" placeholder="Information" required>
+  </div>
+
+  <div class="form-group">
+    <label for="">Location</label>
+    <input type="text" ng-model="eventCtrl.eventLocation" class="form-control" id="location" placeholder="Location" required>
+  </div>
+
+  <div class="form-group">
+    <label for="">Start Date</label>
+    <input type="text" ng-model="eventCtrl.eventStartDate" class="form-control" id="location" placeholder="Start Date" required>
+  </div>
+
+  <div class="form-group">
+    <label for="">End Date</label>
+    <input type="text" ng-model="eventCtrl.eventEndDate" class="form-control" id="location" placeholder="End Date" required>
+  </div>
+
+  <!-- <div class="form-group">
+    <label for="">Start Time</label>
+    <input type="text" ng-model="eventCtrl.eventStartTime" class="form-control" id="location" placeholder="Input field">
+  </div> -->
+
+  <!-- <div class="form-group">
+    <label for="">End Time</label>
+    <input type="text" ng-model="eventCtrl.eventEndTime" class="form-control" id="location" placeholder="Input field">
+  </div> -->
+
+  <div class="form-group">
+    <label for="">Tags</label>
+    <input type="text" ng-model="eventCtrl.eventTags" class="form-control" id="location" placeholder="Tags" required>
+  </div>
+
+  <button type="submit" 
+  ng-disabled="eventForm.$invalid" 
+  ng-click="eventCtrl.saveEvent()" class="btn btn-primary">Submit</button>
+</form>
+
+
+<!-- <button ng-click="eventCtrl.saveEvent()" type="button" class="btn btn-default">Add Entries</button> -->

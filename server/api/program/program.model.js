@@ -4,16 +4,26 @@ import mongoose from 'mongoose';
 import {registerEvents} from './program.events';
 
 var ProgramSchema = new mongoose.Schema({
-  name: String,
+  name: {
+    type: String,
+    required: true
+  },
   acronym: String,
   info: String,
   requirements: [String],
   type: String,
   prerequisite: String,
   duration: String,
-  tags: [String],
-  dept_id: [String],
-  active: Boolean
+  tags: [{
+    type: String,
+    lowercase: true,
+    required: true
+  }],
+  // dept_id: [String],
+  active: {
+    type: Boolean,
+    default: true
+  }
 });
 
 registerEvents(ProgramSchema);
