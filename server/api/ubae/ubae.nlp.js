@@ -45,18 +45,6 @@ function listSearch(input, list) {
   }
 }
 
-exports.getKeywords = function(input) {
-  return keywordSearch(input);
-};
-
-exports.getCommand = function(input) {
-  return listSearch(input, mod.commandList);
-};
-
-exports.getType = function(input) {
-  return listSearch(input, mod.typeList);
-};
-
 exports.getQuery = function(input) {
   return {
     keywords: keywordSearch(input),
@@ -64,28 +52,3 @@ exports.getQuery = function(input) {
     modifiers: listSearch(input, mod.locationList)
   };
 };
-
-      // if(ubae.keywords.length > 0) {
-      //   var keyRegex = new RegExp(ubae.keywords.join('|'), 'i');
-      //   Dept.findOne({ tags: { $all: [keyRegex] } })
-      //     .exec(function(err, story) {
-      //       if(err) return handleError(err);
-      //       if(story !== null) {
-      //         return res.send({
-      //           in: userInput,
-      //           cmd: ubae.commands,
-      //           local: ubae.location,
-      //           tags: ubae.keywords,
-      //           result: ubaeAI.results(story, ubae.commands)
-      //         });
-      //       } else {
-      //         return res.send(ubaeAI.errResults(
-      //           'Sorry but I can\'t seem to find anything related'
-      //         ));
-      //       }
-      //     });
-      // } else {
-      //   return res.send(ubaeAI.errResults(
-      //     'Please be more specific'
-      //   ));
-      // }

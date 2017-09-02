@@ -35,11 +35,11 @@ exports.location = [{
   room: 'AA',
   tags: ['SIHTM Dean', 'HRM', 'Tourism']
 }, {
-  name: 'SOD Dean\'s Office ',
+  name: 'SOL Dean\'s Office ',
   building: 'F Building',
   floor: '1st',
   room: 'F104',
-  tags: ['SOD Dean', 'LAW']
+  tags: ['SOL Dean', 'LAW']
 }, {
   name: 'SLAHS Dean\'s Office ',
   building: 'H Building',
