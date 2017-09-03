@@ -25,7 +25,6 @@ function onConnect(socket) {
   require('../api/location/location.socket').register(socket);
   require('../api/office/office.socket').register(socket);
   require('../api/dept/dept.socket').register(socket);
-  // require('../api/ubae/ubae.socket').register(socket);
 }
 
 export default function(socketio) {

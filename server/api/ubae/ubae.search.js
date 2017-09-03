@@ -26,15 +26,16 @@ function createFeedback(_in, cmd, mod, tag, ubaeresponse = '') {
     command: cmd,
     modifier: mod,
     keywords: tag,
-    response: ubaeresponse
+    response: ubaeresponse,
+    timestamp: Date.now()
   })
   .then(() => console.log('Successfully added feedback.'))
   .catch(err => console.log('Failed adding feedback.', err));
 }
 
-function ubaeResponse(_msg) {
+function ubaeResponse(message) {
   return {
-    _say: _msg,
+    _say: message,
     _t: Date.now()
   };
 }
@@ -42,7 +43,7 @@ function ubaeResponse(_msg) {
 function ubaeInput(userInput, ubae) {
   return {
     in: userInput,
-    cmd: ubae.commands,
+    cmd: ubae.command,
     mod: ubae.modifiers,
     tags: ubae.keywords,
   };
@@ -50,7 +51,6 @@ function ubaeInput(userInput, ubae) {
 
 exports.searchWhat = function(req, res, userInput, ubae) {
   var msg = '';
-  var keyRegex = new RegExp(ubae.keywords.join('|'), 'i');
   return res.send({
     result: ubaeResponse('You asked for what.')
   });
@@ -58,7 +58,6 @@ exports.searchWhat = function(req, res, userInput, ubae) {
 
 exports.searchWhen = function(req, res, userInput, ubae) {
   var msg = '';
-  var keyRegex = new RegExp(ubae.keywords.join('|'), 'i');
   return res.send({
     result: ubaeResponse('You asked for when.')
   });
@@ -66,7 +65,6 @@ exports.searchWhen = function(req, res, userInput, ubae) {
 
 exports.searchWhere = function(req, res, userInput, ubae) {
   var msg = '';
-  var keyRegex = new RegExp(ubae.keywords.join('|'), 'i');
   return res.send({
     result: ubaeResponse('You asked for where.')
   });
@@ -74,7 +72,6 @@ exports.searchWhere = function(req, res, userInput, ubae) {
 
 exports.searchHow = function(req, res, userInput, ubae) {
   var msg = '';
-  var keyRegex = new RegExp(ubae.keywords.join('|'), 'i');
   return res.send({
     result: ubaeResponse('You asked for how.')
   });
@@ -82,7 +79,6 @@ exports.searchHow = function(req, res, userInput, ubae) {
 
 exports.searchHelp = function(req, res, userInput, ubae) {
   var msg = '';
-  var keyRegex = new RegExp(ubae.keywords.join('|'), 'i');
   return res.send({
     result: ubaeResponse('You asked for help.')
   });
@@ -90,10 +86,9 @@ exports.searchHelp = function(req, res, userInput, ubae) {
 
 exports.searchResponse = function(req, res, userInput, ubae) {
   var msg = '';
-  var keyRegex = new RegExp(ubae.keywords.join('|'), 'i');
   return Response.findOne({
     tags: {
-      $all: [keyRegex]
+      $all: ubae.regex
     }
   }).exec(function(err, story) {
     if(err) return handleError(err);
@@ -104,7 +99,7 @@ exports.searchResponse = function(req, res, userInput, ubae) {
       });
     } else {
       msg = 'Sorry! but I can\'t find anything related';
-      createFeedback(userInput, ubae.commands, ubae.modifiers, ubae.keywords, msg);
+      createFeedback(userInput, ubae.command, ubae.classifier, ubae.keywords, msg);
       return res.send({
         result: ubaeResponse(msg)
       });

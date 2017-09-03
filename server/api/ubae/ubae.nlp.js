@@ -3,6 +3,23 @@ import swd from './dictionary/swd.js';
 import mod from './dictionary/modifiers.js';
 import natural from 'natural';
 
+var classifier = new natural.BayesClassifier();
+
+initClassifier();
+
+function initClassifier() {
+  classifier.addDocument('School of', 'department');
+  classifier.addDocument('Department', 'department');
+  classifier.addDocument('Office of', 'office');
+  classifier.addDocument('Faculty of', 'office');
+  classifier.addDocument('University of', 'university');
+  classifier.addDocument('UBAE', 'system');
+  classifier.train();
+  classifier.save('classifier.json', function(err, classifier) {
+    // the classifier is saved to the classifier.json file!
+  });
+}
+
 function keywordSearch(input) {
   var tokenizer = new natural.WordTokenizer();
   var word;
@@ -45,10 +62,34 @@ function listSearch(input, list) {
   }
 }
 
+function toRegexArray(keywords) {
+  var regexArray = [];
+  for(var index = 0; index < keywords.length; index++) {
+    var regex = new RegExp('^' + keywords[index], 'i');
+    regexArray.push(regex);
+  }
+  return regexArray;
+}
+
+function toRegexArrayStemmed(input) {
+  natural.PorterStemmer.attach();
+  var keywords = input.tokenizeAndStem();
+  var regexArray = [];
+  for(var index = 0; index < keywords.length; index++) {
+    var regex = new RegExp('^' + keywords[index], 'i');
+    regexArray.push(regex);
+  }
+  return regexArray;
+}
+
 exports.getQuery = function(input) {
   return {
+    command: listSearch(input, mod.commandList),
+    classifier: classifier.classify(input),
+    modifiers: listSearch(input, mod.locationList),
     keywords: keywordSearch(input),
-    commands: listSearch(input, mod.commandList),
-    modifiers: listSearch(input, mod.locationList)
+    regex: toRegexArray(keywordSearch(input)),
+    regexLine: new RegExp(keywordSearch(input).join('|'), 'i'),
+    stemmed: toRegexArrayStemmed(input)
   };
 };
