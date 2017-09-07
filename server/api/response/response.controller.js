@@ -12,6 +12,8 @@
 
 import jsonpatch from 'fast-json-patch';
 import Response from './response.model';
+import natural from 'natural';
+import UbaeNLP from '../ubae/ubae.nlp';
 
 function respondWithResult(res, statusCode) {
   statusCode = statusCode || 200;
@@ -81,7 +83,12 @@ export function show(req, res) {
 
 // Creates a new Response in the DB
 export function create(req, res) {
-  return Response.create(req.body)
+  natural.PorterStemmer.attach();
+  return Response.create({
+    message: req.body.message,
+    // tags: JSON.stringify(req.body.tags).tokenizeAndStem()
+    tags: UbaeNLP.getKeywords(JSON.stringify(req.body.tags))
+  })
     .then(respondWithResult(res, 201))
     .catch(handleError(res));
 }
@@ -92,7 +99,6 @@ export function upsert(req, res) {
     Reflect.deleteProperty(req.body, '_id');
   }
   return Response.findOneAndUpdate({_id: req.params.id}, req.body, {new: true, upsert: true, setDefaultsOnInsert: true, runValidators: true}).exec()
-
     .then(respondWithResult(res))
     .catch(handleError(res));
 }

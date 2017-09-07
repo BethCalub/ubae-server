@@ -11,6 +11,7 @@ var ResponseSchema = new mongoose.Schema({
   type: {
     type: String,
     default: 'General',
+    lowercase: true,
     required: true
   },
   tags: [{

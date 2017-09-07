@@ -20,6 +20,7 @@ import _Auth from '../components/auth/auth.module';
 import account from './account';
 import admin from './admin';
 import navbar from '../components/navbar/navbar.component';
+import sidenav from '../components/sidenav/sidenav.directive';
 import modal from '../components/modal/modal.service';
 import footer from '../components/footer/footer.component';
 import deptService from '../services/department/department.service';
@@ -40,9 +41,9 @@ import ProgramComponent from './program/program.component';
 import './app.scss';
 
 angular.module('ubaeApiApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
-  uiBootstrap, _Auth, account, admin, 'validation.match', ubae, modal, deptService, navbar, footer, main, constants,
+  uiBootstrap, _Auth, account, admin, 'validation.match', ubae, modal, deptService, navbar, sidenav, footer, main, constants,
   socket, util,
-  ResponseComponent, EventComponent, FeedbackComponent, LocationComponent, 
+  ResponseComponent, EventComponent, FeedbackComponent, LocationComponent,
   DepartmentComponent, ServiceComponent, ProgramComponent
 ])
   .config(routeConfig)

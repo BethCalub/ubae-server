@@ -1,1 +1,0 @@
-{"classifier":{"classFeatures":{"dept":{"0":2},"office":{"1":2}},"classTotals":{"dept":2,"office":2},"totalExamples":3,"smoothing":1},"docs":[{"label":"dept","text":["school"]},{"label":"office","text":["offic"]}],"features":{"school":1,"offic":1},"stemmer":{},"lastAdded":2,"events":{"domain":null,"_events":{},"_eventsCount":0}}

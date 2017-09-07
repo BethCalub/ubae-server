@@ -15,7 +15,6 @@ export class ResponseComponent {
 
     this.typeSelect = ['General', 'Error', 'Help'];
     this.link = '/api/responses';
-    // this.link = 'http://ubae.herokuapp.com/api/responses';
     this.filterType = 'General';
     this.isCollapsed = false;
     this.showNotif = false;
@@ -77,9 +76,7 @@ export class ResponseComponent {
     if(this.responseId) {
       this.$http.put(this.link + '/' + this.responseId, {
         message: this.message,
-        type: this.type,
-        tags: this.getTags(this.tags),
-        active: true
+        tags: this.tags.split(',')
       })
       .then(response => {
         this.eventStatus = this.setNotif('Updated Successfully!', response, 'alert-success');
@@ -91,8 +88,7 @@ export class ResponseComponent {
     } else {
       this.$http.post(this.link, {
         message: this.message,
-        type: this.type,
-        tags: this.getTags(this.tags)
+        tags: this.tags
       })
       .then(response => {
         this.eventStatus = this.setNotif('Added Successfully!', response, 'alert-success');

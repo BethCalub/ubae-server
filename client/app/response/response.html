@@ -94,11 +94,11 @@
             placeholder="Keywords to respond to" required>
         </div>
       </div>
-      <div class="col-sm-4">
+      <div class="col-sm-6">
         <div class="form-group">
           <label for="message">Response</label>
           <input type="text" id="message" name="message" class="form-control" 
-            ng-disabled="responseForm.tags.$invalid || responseCtrl.responseId" 
+
             uib-tooltip="TIP: Enter a message that will be used by UBAE when a keyword is detected. 
               Example: keyword: 'Hi' then the response will be 'Hello'" 
             tooltip-placement="bottom left"  
@@ -106,7 +106,7 @@
             placeholder="What will UBAE say" required>
         </div>
       </div>
-      <div class="col-sm-2">
+      <!-- <div class="col-sm-2">
         <div class="form-group">
           <label class="control-label">Type</label>
           <select class="form-control" name="response"  required="required"
@@ -115,7 +115,7 @@
             ng-options="x for x in responseCtrl.typeSelect">
           </select>
         </div>
-      </div>
+      </div> -->
       <div class="col-sm-2">
         <div class="form-group">
           <label class="control-label">&nbsp;</label>

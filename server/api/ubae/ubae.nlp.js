@@ -1,22 +1,43 @@
 'use strict';
 import swd from './dictionary/swd.js';
 import mod from './dictionary/modifiers.js';
+import cls from './dictionary/classifiers.js';
 import natural from 'natural';
 
 var classifier = new natural.BayesClassifier();
 
-initClassifier();
+// loadClassifier();
+// initClassifier();
 
 function initClassifier() {
-  classifier.addDocument('School of', 'department');
-  classifier.addDocument('Department', 'department');
-  classifier.addDocument('Office of', 'office');
-  classifier.addDocument('Faculty of', 'office');
-  classifier.addDocument('University of', 'university');
-  classifier.addDocument('UBAE', 'system');
+  cls.classifiers.forEach(function(element) {
+    classifier.addDocument(element.text, element.tag);
+    console.log('training ' + element.text);
+  }, this);
   classifier.train();
+  console.log('classifiers succesfully trained');
   classifier.save('classifier.json', function(err, classifier) {
-    // the classifier is saved to the classifier.json file!
+    if(err) throw err;
+    console.log('classifiers successfully saved');
+  });
+}
+
+function addClassifier(text, tag) {
+  classifier.addDocument(text, tag);
+  classifier.train();
+}
+
+function saveClassifier() {
+  classifier.save('classifier.json', function(err, classifier) {
+    if(err) throw err;
+    console.log('classifier successfully saved');
+  });
+}
+
+function loadClassifier() {
+  natural.BayesClassifier.load('classifier.json', null, function(err, classifier) {
+    if(err) throw err;
+    console.log('classifiers loaded');
   });
 }
 
@@ -82,14 +103,23 @@ function toRegexArrayStemmed(input) {
   return regexArray;
 }
 
+exports.getKeywords = function(input) {
+  return keywordSearch(input);
+};
+
 exports.getQuery = function(input) {
   return {
+    _in: input,
     command: listSearch(input, mod.commandList),
     classifier: classifier.classify(input),
     modifiers: listSearch(input, mod.locationList),
     keywords: keywordSearch(input),
     regex: toRegexArray(keywordSearch(input)),
     regexLine: new RegExp(keywordSearch(input).join('|'), 'i'),
-    stemmed: toRegexArrayStemmed(input)
+    stemmed: toRegexArrayStemmed(input),
+    bayes: {
+      result: classifier.classify(input),
+      probability: classifier.getClassifications(input)
+    },
   };
 };
