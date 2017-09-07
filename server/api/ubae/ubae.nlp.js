@@ -6,7 +6,6 @@ import natural from 'natural';
 
 var classifier = new natural.BayesClassifier();
 
-// loadClassifier();
 // initClassifier();
 
 function initClassifier() {
@@ -111,15 +110,8 @@ exports.getQuery = function(input) {
   return {
     _in: input,
     command: listSearch(input, mod.commandList),
-    classifier: classifier.classify(input),
-    modifiers: listSearch(input, mod.locationList),
+    // classifier: classifier.classify(input),
     keywords: keywordSearch(input),
-    regex: toRegexArray(keywordSearch(input)),
-    regexLine: new RegExp(keywordSearch(input).join('|'), 'i'),
-    stemmed: toRegexArrayStemmed(input),
-    bayes: {
-      result: classifier.classify(input),
-      probability: classifier.getClassifications(input)
-    },
+    stemmed: toRegexArrayStemmed(input)
   };
 };

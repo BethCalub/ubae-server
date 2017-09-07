@@ -14,12 +14,12 @@ import Location from '../location/location.model';
 //   };
 // }
 
-function handleError(res, statusCode) {
-  statusCode = statusCode || 500;
-  return function(err) {
-    res.status(statusCode).send(err);
-  };
-}
+// function handleError(res, statusCode) {
+//   statusCode = statusCode || 500;
+//   return function(err) {
+//     res.status(statusCode).send(err);
+//   };
+// }
 
 function createFeedback(_in, cmd, mod, tag, ubaeresponse = '') {
   Feedback.create({
@@ -65,7 +65,7 @@ function generateResults(err, story, userInput, ubae) {
         result: ubaeResponse(msg, story, length),
       };
     } else {
-      // msg = 'This is what I have found. :)';
+       // msg = 'This is what I have found. :)';
       msg = 'The ' + story[0].name + 'is located at ' + story[0].building + ' ' +
       story[0].floor + ' Floor, Room ' + story[0].room + '.';
       return {

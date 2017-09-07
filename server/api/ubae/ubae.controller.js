@@ -8,7 +8,7 @@
 import UbaeNLP from './ubae.nlp';
 import UbaeSearch from './ubae.search';
 
-// Get results from UBAE
+// UBAE SEARCH ENGINE
 export function use(req, res) {
   var userInput = req.query.i;
   if(userInput) {
@@ -46,22 +46,17 @@ export function use(req, res) {
   }
 }
 
+// NATURAL LANGUAGE PROCESSING
 export function nlp(req, res) {
   var userInput = req.query.i;
   if(userInput) {
     var ubae = UbaeNLP.getQuery(userInput);
     return res.send({
       input: ubae._in,
-      keywords: ubae.keywords,
       command: ubae.command,
-      modifiers: ubae.modifiers,
-      classifier: ubae.classify,
-      regex: {
-        // array: ubae.regex.toString(),
-        joined: ubae.regexLine.toString(),
-        stemmed: ubae.stemmed.toString(),
-      },
-      naivebayes: ubae.bayes
+      // classifier: ubae.classifier,
+      tags: ubae.keywords,
+      stemmed: ubae.stemmed.toString().split(',')
     });
   } else {
     return res.send({
