@@ -1,44 +1,11 @@
 'use strict';
 import swd from './dictionary/swd.js';
 import mod from './dictionary/modifiers.js';
-import cls from './dictionary/classifiers.js';
+// import cls from './dictionary/classifiers.js';
+// import bayes from '../../components/bayes/bayes.js';
 import natural from 'natural';
 
 var classifier = new natural.BayesClassifier();
-
-// initClassifier();
-
-function initClassifier() {
-  cls.classifiers.forEach(function(element) {
-    classifier.addDocument(element.text, element.tag);
-    console.log('training ' + element.text);
-  }, this);
-  classifier.train();
-  console.log('classifiers succesfully trained');
-  classifier.save('classifier.json', function(err, classifier) {
-    if(err) throw err;
-    console.log('classifiers successfully saved');
-  });
-}
-
-function addClassifier(text, tag) {
-  classifier.addDocument(text, tag);
-  classifier.train();
-}
-
-function saveClassifier() {
-  classifier.save('classifier.json', function(err, classifier) {
-    if(err) throw err;
-    console.log('classifier successfully saved');
-  });
-}
-
-function loadClassifier() {
-  natural.BayesClassifier.load('classifier.json', null, function(err, classifier) {
-    if(err) throw err;
-    console.log('classifiers loaded');
-  });
-}
 
 function keywordSearch(input) {
   var tokenizer = new natural.WordTokenizer();
@@ -82,15 +49,6 @@ function listSearch(input, list) {
   }
 }
 
-function toRegexArray(keywords) {
-  var regexArray = [];
-  for(var index = 0; index < keywords.length; index++) {
-    var regex = new RegExp('^' + keywords[index], 'i');
-    regexArray.push(regex);
-  }
-  return regexArray;
-}
-
 function toRegexArrayStemmed(input) {
   natural.PorterStemmer.attach();
   var keywords = input.tokenizeAndStem();
@@ -110,7 +68,7 @@ exports.getQuery = function(input) {
   return {
     _in: input,
     command: listSearch(input, mod.commandList),
-    // classifier: classifier.classify(input),
+    classifier: 'Unavailable',
     keywords: keywordSearch(input),
     stemmed: toRegexArrayStemmed(input)
   };
