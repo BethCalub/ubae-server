@@ -6,7 +6,7 @@
 'use strict';
 
 import UbaeNLP from './nlp/ubae.nlp';
-import UbaeSearch from './use/use.search';
+import UbaeSearch from './ubae.use';
 
 // UBAE SEARCH ENGINE
 export function use(req, res) {
@@ -17,10 +17,10 @@ export function use(req, res) {
     if(!help) {
       if(ubae.keywords.length >= 0) {
         switch (ubae.command) {
-        // case 'what':
-        //   return UbaeSearch.searchWhat(req, res, userInput, ubae);
-        // case 'when':
-        //   return UbaeSearch.searchWhen(req, res, userInput, ubae);
+        case 'what':
+          return UbaeSearch.searchWhat(req, res, userInput, ubae);
+        case 'when':
+          return UbaeSearch.searchWhen(req, res, userInput, ubae);
         case 'where':
           return UbaeSearch.searchWhere(req, res, userInput, ubae);
         case 'how':
