@@ -13,23 +13,23 @@ exports.help = function(req, res, userInput, ubae) {
   switch (ubae.command) {
   case 'what':
     return res.send({
-      result: ubaeResponse('Help What')
+      result: ubaeResponse('To search for details, follow this guide: "WHAT [SERVICES, COURSES, REQUIREMENTS] [KEYWORD]". The arrangement of words is not important except for the WHAT command word.')
     });
   case 'when':
     return res.send({
-      result: ubaeResponse('Help When')
+      result: ubaeResponse('To search for an event, follow this guide: "WHEN [KEYWORD]". The arrangement of words is not important except for the WHEN command word.')
     });
   case 'where':
     return res.send({
-      result: ubaeResponse('To search for a location, follow this guide: "WHERE [DEPARTMENT, OFFICE] [KEYWORD]". The arrangement of words is not importand except for the WHERE command word.')
+      result: ubaeResponse('To search for a location, follow this guide: "WHERE [DEPARTMENT, OFFICE] [KEYWORD]". The arrangement of words is not important except for the WHERE command word.')
     });
   case 'how':
     return res.send({
-      result: ubaeResponse('Help How')
+      result: ubaeResponse('To search instructions for a process, follow this guide: "HOW [KEYWORD]". The arrangement of words is not important except for the HOW command word.')
     });
   case 'which':
     return res.send({
-      result: ubaeResponse('Help Which')
+      result: ubaeResponse('To search for a office that provide such services, follow this guide: "WHICH  [DEPARTMENT, OFFICE] [KEYWORD]". The arrangement of words is not important except for the WHICH command word.')
     });
   default:
     return res.send({

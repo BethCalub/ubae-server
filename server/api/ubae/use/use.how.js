@@ -12,6 +12,6 @@ function ubaeResponse(message, story, entries) {
 exports.how = function(req, res, userInput, ubae) {
   var msg = '';
   return res.send({
-    result: ubaeResponse('You asked for ' + userInput)
+    result: ubaeResponse('You asked for ' + ubae.command)
   });
 };

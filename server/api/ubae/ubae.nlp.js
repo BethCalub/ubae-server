@@ -12,10 +12,10 @@ exports.getKeywords = function(input) {
 exports.getQuery = function(input) {
   return {
     _in: input,
-    command: linear.listSearch(input, mod.commandList),
+    command: linear.commandSearch(input, mod.commandList),
     classifier: 'Unavailable',
     keywords: stopper.keywordSearch(input),
     stemmed: stemmer.toRegexArrayStemmed(input),
-    help: true
+    help: linear.helpSearch(input),
   };
 };

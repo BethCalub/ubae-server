@@ -11,10 +11,9 @@ import UbaeSearch from './ubae.use';
 // UBAE SEARCH ENGINE
 export function use(req, res) {
   var userInput = req.query.i;
-  var help = false;
   if(userInput) {
     var ubae = UbaeNLP.getQuery(userInput);
-    if(!help) {
+    if(!ubae.help) {
       if(ubae.keywords.length >= 0) {
         switch (ubae.command) {
         case 'what':
