@@ -5,7 +5,7 @@
 
 'use strict';
 
-import UbaeNLP from './nlp/ubae.nlp';
+import UbaeNLP from './ubae.nlp';
 import UbaeSearch from './ubae.use';
 
 // UBAE SEARCH ENGINE

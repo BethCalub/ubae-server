@@ -13,7 +13,7 @@
 import jsonpatch from 'fast-json-patch';
 import Response from './response.model';
 import natural from 'natural';
-import UbaeNLP from '../ubae/nlp/ubae.nlp';
+import UbaeNLP from '../ubae/ubae.nlp';
 
 function respondWithResult(res, statusCode) {
   statusCode = statusCode || 200;
