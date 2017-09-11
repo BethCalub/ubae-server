@@ -15,6 +15,7 @@ exports.getQuery = function(input) {
     command: linear.listSearch(input, mod.commandList),
     classifier: 'Unavailable',
     keywords: stopper.keywordSearch(input),
-    stemmed: stemmer.toRegexArrayStemmed(input)
+    stemmed: stemmer.toRegexArrayStemmed(input),
+    help: true
   };
 };
