@@ -10,7 +10,7 @@ function ubaeResponse(message, story, entries) {
 }
 
 exports.help = function(req, res, userInput, ubae) {
-  switch (ubae.command) {
+  switch (ubae.helpCmd) {
   case 'what':
     return res.send({
       result: ubaeResponse('To search for details, follow this guide: "WHAT [SERVICES, COURSES, REQUIREMENTS] [KEYWORD]". The arrangement of words is not important except for the WHAT command word.')

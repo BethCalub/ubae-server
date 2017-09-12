@@ -17,5 +17,6 @@ exports.getQuery = function(input) {
     keywords: stopper.keywordSearch(input),
     stemmed: stemmer.toRegexArrayStemmed(input),
     help: linear.helpSearch(input),
+    helpCmd: linear.listSearch(input, mod.commandList)
   };
 };

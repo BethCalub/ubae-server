@@ -36,6 +36,14 @@ exports.deptList = [
   'STE'
 ];
 
+exports.classifierList = [
+  {what: ['SERVICES', 'PROGRAMS', 'COURSES', 'REQUIREMENTS']},
+  {when: ['EXAMS', 'ENROLLMENT', 'GRADUATION']},
+  {where: ['OFFICE', 'DEPARTMENT', 'SCHOOL', 'UNIVERSITY']},
+  {how: ['SERVICES']},
+  {which: ['DEPARTMENT', 'OFFICE']}
+];
+
 exports.officeList = [
   'ARC',
   'ATHLETICS',
