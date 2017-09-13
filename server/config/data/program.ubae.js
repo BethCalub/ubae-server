@@ -15,7 +15,7 @@ exports.program = [{
   type: 'Baccaluarate',
   prerequisite: '',
   duration: '5 Years',
-  tags: ['BSAC','Bachelor', 'Science', 'Accountancy' , 'Course', 'Program']
+  tags: ['BSAC', 'Bachelor', 'Science', 'Accountancy', 'Course', 'Program']
 }, {
   name: 'Bacheclor of Science in Business Administration, major in Financial Management',
   acronym: 'BSBA-FM',
@@ -24,7 +24,7 @@ exports.program = [{
   type: 'Baccaluarate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BSBAFM', 'FinMan','Bachelor', 'Science', 'Financial', 'Management', 'Program', 'Course']
+  tags: ['BSBAFM', 'FinMan', 'Bachelor', 'Science', 'Financial', 'Management', 'Program', 'Course']
 }, {
   name: 'Bacheclor of Science in Business Administration, major in Marketing Management',
   acronym: 'BSBA-MM',
@@ -42,7 +42,7 @@ exports.program = [{
   type: 'Baccaluarate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BSBAOM', 'Bachelor','Science', 'Operations', 'Management', 'Program','Course']
+  tags: ['BSBAOM', 'Bachelor', 'Science', 'Operations', 'Management', 'Program', 'Course']
 }, {
   name: 'Bacheclor of Science in Business Administration, major in Human Resource Development Management',
   acronym: 'BSBA-HRDM',
@@ -177,7 +177,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BSIT','Mecha','Bachelor','Science','Industrial','Technology', 'Mechatronics', 'Program', 'Course']
+  tags: ['BSIT', 'Mecha', 'Bachelor', 'Science', 'Industrial', 'Technology', 'Mechatronics', 'Program', 'Course']
 }, {
   name: 'Bachelor of Science in Computer Engineering',
   acronym: 'BS-CPE',
@@ -240,7 +240,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: 'Years',
-  tags: ['BSTM', 'Bachelor', 'Science', 'Tourism' , 'Management', 'Program', 'Course']
+  tags: ['BSTM', 'Bachelor', 'Science', 'Tourism', 'Management', 'Program', 'Course']
 }, {
   name: 'Associate in Arts in Hotel and Restaurant Management',
   acronym: 'AA-HRM',

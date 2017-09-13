@@ -3,7 +3,7 @@ exports.department = [{
   acronym: 'SIT',
   info: 'The School of Information Technology envisions itself as a leading educator that develops students to become competent, innovative, and morally upright information technology specialists',
   type: 'School',
-  tags: ['SIT', 'IT', 'Information', 'Technology', 'CS', 'ComSci', 'CompSci', 'COE','Department', 'School']
+  tags: ['SIT', 'IT', 'Information', 'Technology', 'CS', 'ComSci', 'CompSci', 'COE', 'Department', 'School']
 }, {
   name: 'School of Business Administration and Accountancy',
   acronym: 'SBAA',
@@ -27,7 +27,7 @@ exports.department = [{
   acronym: 'SIHTM',
   info: 'The School of International Hospitality and Tourism Management commits itself to train worldwide experts in the industry.',
   type: 'School',
-  tags: ['SIHTM', 'Department', 'Tourism', 'HRM','International', 'Hospitality', 'Tourism', 'Management', 'School']
+  tags: ['SIHTM', 'Department', 'Tourism', 'HRM', 'International', 'Hospitality', 'Tourism', 'Management', 'School']
 }, {
   name: 'School of Liberal Arts and Human Sciences',
   acronym: 'SLAHS',

@@ -183,4 +183,3 @@ exports.location = [{
   room: 'F103',
   tags: ['SAS', 'Students', 'Accounts', 'Office']
 }];
-
