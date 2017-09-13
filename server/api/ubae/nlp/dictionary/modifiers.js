@@ -5,9 +5,36 @@ exports.commandList = [
   'HOW',
   'WHAT',
   'WHICH',
-  'WHEN',
-  'HELP'
+  'WHEN'
 ];
+
+exports.whatList = [
+  'SERVICES', 'PROGRAMS', 'COURSES', 'REQUIREMENTS'
+];
+
+exports.whenList = [
+  'EXAMS', 'ENROLLMENT', 'GRADUATION'
+];
+
+exports.whereList = [
+  'OFFICE', 'DEPARTMENT', 'SCHOOL', 'UNIVERSITY'
+];
+
+exports.howList = [
+  'SERVICES'
+];
+
+exports.which = [
+  'DEPARTMENT', 'OFFICE'
+];
+
+exports.classifierList = {
+  what: ['SERVICES', 'PROGRAMS', 'COURSES', 'REQUIREMENTS'],
+  when: ['EXAMS', 'ENROLLMENT', 'GRADUATION'],
+  where: ['OFFICE', 'DEPARTMENT', 'SCHOOL', 'UNIVERSITY'],
+  how: ['SERVICES'],
+  which: ['DEPARTMENT', 'OFFICE']
+};
 
 exports.locationList = [
   'OFFICE',
@@ -34,14 +61,6 @@ exports.deptList = [
   'SOL',
   'SON',
   'STE'
-];
-
-exports.classifierList = [
-  {what: ['SERVICES', 'PROGRAMS', 'COURSES', 'REQUIREMENTS']},
-  {when: ['EXAMS', 'ENROLLMENT', 'GRADUATION']},
-  {where: ['OFFICE', 'DEPARTMENT', 'SCHOOL', 'UNIVERSITY']},
-  {how: ['SERVICES']},
-  {which: ['DEPARTMENT', 'OFFICE']}
 ];
 
 exports.officeList = [

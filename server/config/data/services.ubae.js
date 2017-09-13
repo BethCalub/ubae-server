@@ -6,7 +6,7 @@ exports.service = [{
     '2. Submit documents to admission area for giving your official ID number and checking of requirements',
     '3. You will then go to the respective deans office.'
   ],
-  tags: ['Admission Freshmen', 'Admission', 'Freshmen']
+  tags: ['Admission', 'Freshmen', 'New', 'Student']
 }, {
   name: 'Admission for Transferee',
   info: 'The admission is the process through which students enter tertiary education in the university.',
@@ -15,7 +15,7 @@ exports.service = [{
     '2. Submit documents to admission area for giving your official ID number and checking of requirements',
     '3. You will then go to the respective deans office.'
   ],
-  tags: ['Admission Transferee', 'Admission', 'Transferee']
+  tags: ['Admission', 'Transferee', 'Student']
 }, {
   name: 'Enrollment for Freshmen',
   info: '',
@@ -26,7 +26,7 @@ exports.service = [{
     '4. Go to cashier to pay the downpayment',
     '5. Proceed to MIS for your ID and printed schedule'
   ],
-  tags: ['Enrollment Freshmen', 'Enrollment', 'Freshmen']
+  tags: ['Enrollment', 'Freshmen', 'Student']
 }, {
   name: 'Enrollment for Transferee',
   info: '',
@@ -37,7 +37,7 @@ exports.service = [{
     '4. Go to cashier to pay the downpayment',
     '5. Proceed to MIS for your ID and printed schedule'
   ],
-  tags: ['Enrollment Transferee', 'Enrollment', 'Transferee']
+  tags: ['Enrollment', 'Transferee', 'Student']
 }, {
   name: 'Enrollment for New International Student',
   info: '',
@@ -49,7 +49,7 @@ exports.service = [{
     '5. Go to cashier to pay the required amount',
     '6. Proceed to MIS for your ID and printed schedule'
   ],
-  tags: ['Enrollment New International Student', 'Enrollment', 'International Student']
+  tags: ['International', 'Enrollment', 'Student']
 }, {
   name: 'Enrollment for Current Student',
   info: '',
@@ -59,7 +59,7 @@ exports.service = [{
     '3. Pay the required downpayment at the Cashier',
     '4. Proceed to MIS for Application of ID and printing of schedule'
   ],
-  tags: ['Enrollment Current Student', 'Enrollment', 'Current Student']
+  tags: ['Current', 'Enrollment', 'Student']
 }, {
   name: 'Release of Student Records for Graduates',
   info: 'Releasing documents of students',

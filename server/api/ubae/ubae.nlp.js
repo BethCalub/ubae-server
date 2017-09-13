@@ -10,10 +10,12 @@ exports.getKeywords = function(input) {
 };
 
 exports.getQuery = function(input) {
+  // console.log(linear.commandSearch(input, mod.classifierList.how));
+
   return {
     _in: input,
     command: linear.commandSearch(input, mod.commandList),
-    classifier: 'Unavailable',
+    classifier: 'unavailable',
     keywords: stopper.keywordSearch(input),
     stemmed: stemmer.toRegexArrayStemmed(input),
     help: linear.helpSearch(input),

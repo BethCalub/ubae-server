@@ -12,15 +12,6 @@ function ubaeResponse(message, story, entries) {
   };
 }
 
-function ubaeResponse(message, story, entries) {
-  return {
-    _entries: entries,
-    _say: message,
-    _t: Date.now(),
-    _res: story
-  };
-}
-
 function ubaeInput(userInput, ubae) {
   return {
     in: userInput,
@@ -79,9 +70,6 @@ exports.where = function(req, res, userInput, ubae) {
       $all: ubae.stemmed
     }
   }).exec(function(err, story) {
-    // var msg = 'The ' + story[0].name + 'is located at ' + story[0].building + ' ' +
-    // story[0].floor + ' Floor, Room ' + story[0].room + '.';
     return res.send(generateResults(err, story, userInput, ubae));
-    // return res.send('Hello');
   });
 };

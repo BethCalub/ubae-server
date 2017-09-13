@@ -10,7 +10,6 @@ exports.listSearch = function(input, list) {
     for(var x = 0; x < input.length; x++) {
       var currentUserInput = input[x];
       if(cur === currentUserInput) {
-        console.log(y, x);
         return cur.toLowerCase();
       }
     }
