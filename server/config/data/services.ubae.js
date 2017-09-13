@@ -69,7 +69,7 @@ exports.service = [{
     '3. If there is no deficiency, ARC will release your claim stamp',
     '4. Your record will be released after 15 days'
   ],
-  tags: ['Release of Student Records for Graduates', 'Release of Student Records', 'Graduate Records', 'Graduate', 'Records']
+  tags: ['Release', 'Records', 'Graduates']
 }, {
   name: 'Release of Student Records for Under-Graduates',
   info: 'Releasing documents of students',
@@ -78,7 +78,7 @@ exports.service = [{
     '2. Pay required amount at the Cashier',
     '3. Submit clearance to ARC for checking'
   ],
-  tags: ['Release of Student Records for Under-Graduates', 'Release of Student Records', 'Under-Graduate Records', 'Under-Graduate', 'Records']
+  tags: ['Release', 'Records', 'Undergraduate']
 }, {
   name: 'Assists students who are qualified for athletic scholarship',
   info: '',

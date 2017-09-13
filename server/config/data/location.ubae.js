@@ -7,7 +7,9 @@ exports.location = [{
     'school',
     'business',
     'administration',
-    'accountancy'
+    'accountancy',
+    'location',
+    'department'
   ]
 }, {
   name: 'SCJPS Dean\'s Office ',
@@ -15,7 +17,13 @@ exports.location = [{
   floor: '8th',
   room: 'A801',
   tags: ['SCJPS', 'Dean', 'Office',
-    'school', 'criminal', 'justice', 'public', 'safety'
+    'school',
+    'criminal',
+    'justice',
+    'public',
+    'safety',
+    'location',
+    'department'
   ]
 }, {
   name: 'SOD Dean\'s Office ',
@@ -24,7 +32,9 @@ exports.location = [{
   room: 'B301',
   tags: ['SOD', 'Dean', 'Office',
     'school',
-    'dentistry'
+    'dentistry',
+    'location',
+    'department'
   ]
 }, {
   name: 'SEA Dean\'s Office ',
@@ -32,7 +42,11 @@ exports.location = [{
   floor: '2nd',
   room: 'HB202',
   tags: ['SEA', 'Dean', 'Office',
-    'school', 'engineering', 'architecture'
+    'school',
+    'engineering',
+    'architecture',
+    'location',
+    'department'
   ]
 }, {
   name: 'SIT Dean\'s Office ',
@@ -40,7 +54,11 @@ exports.location = [{
   floor: '2nd',
   room: 'F201',
   tags: ['SIT', 'Dean', 'Office',
-    'school', 'information', 'technology'
+    'school',
+    'information',
+    'technology',
+    'location',
+    'department'
   ]
 }, {
   name: 'SIHTM Dean\'s Office ',
@@ -48,8 +66,13 @@ exports.location = [{
   floor: 'AA',
   room: 'AA',
   tags: ['SIHTM', 'Dean', 'Office',
-    'school', 'international', 'hospitality',
-    'tourism', 'management'
+    'school',
+    'international',
+    'hospitality',
+    'tourism',
+    'management',
+    'location',
+    'department'
   ]
 }, {
   name: 'SOL Dean\'s Office ',
@@ -57,7 +80,10 @@ exports.location = [{
   floor: '1st',
   room: 'F104',
   tags: ['SOL', 'Dean', 'Office',
-    'school', 'law'
+    'school',
+    'law',
+    'location',
+    'department'
   ]
 }, {
   name: 'SLAHS Dean\'s Office ',
@@ -65,7 +91,13 @@ exports.location = [{
   floor: '2nd',
   room: 'H201',
   tags: ['SLAHS', 'Dean', 'Office',
-    'school', 'liberal', 'arts', 'human', 'science'
+    'school',
+    'liberal',
+    'arts',
+    'human',
+    'science',
+    'location',
+    'department'
   ]
 }, {
   name: 'SNS Dean\'s Office ',
@@ -73,7 +105,11 @@ exports.location = [{
   floor: '5th',
   room: 'B501',
   tags: ['SNS Dean', 'Dean', 'Office',
-    'school', 'natural', 'science'
+    'school',
+    'natural',
+    'science',
+    'location',
+    'department'
   ]
 }, {
   name: 'SON Dean\'s Office ',
@@ -81,7 +117,10 @@ exports.location = [{
   floor: '3rd',
   room: 'A301',
   tags: ['SON', 'Dean', 'Office',
-    'school', 'nursing'
+    'school',
+    'nursing',
+    'location',
+    'department'
   ]
 }, {
   name: 'STE Dean\'s Office ',
@@ -89,20 +128,24 @@ exports.location = [{
   floor: '5th',
   room: 'H501',
   tags: ['STE', 'Dean', 'Office',
-    'school', 'teacher', 'education'
+    'school',
+    'teacher',
+    'education',
+    'location',
+    'department'
   ]
 }, {
   name: 'Athletics Office ',
   building: 'D Building',
   floor: '2nd',
   room: 'D201',
-  tags: ['Athletics']
+  tags: ['Athletics', 'Office']
 }, {
   name: 'Center for Counseling and Student Development Office ',
   building: 'F Building',
   floor: '2nd',
   room: 'F206',
-  tags: ['CCSD', 'Counseling', 'Development']
+  tags: ['CCSD', 'Counseling', 'Development', 'Office']
 }, {
   name: 'University of Baguio Clinic ',
   building: 'F Building',
@@ -114,7 +157,7 @@ exports.location = [{
   building: 'F Building',
   floor: '2nd',
   room: 'F205',
-  tags: ['MAPS', 'Media', 'Affairs', 'Publications']
+  tags: ['MAPS', 'Media', 'Affairs', 'Publications', 'Office']
 }, {
   name: 'Office of Student Affairs',
   building: 'F Building',
@@ -126,17 +169,18 @@ exports.location = [{
   building: 'F Building',
   floor: '3rd',
   room: 'F403',
-  tags: ['MIS', 'Management', 'Information', 'Systems']
+  tags: ['MIS', 'Management', 'Information', 'Systems', 'Office']
 }, {
   name: 'Research and Development Center Office ',
   building: 'F Building',
   floor: '2nd',
   room: 'F208',
-  tags: ['RNDC', 'Research', 'Development', 'Center']
+  tags: ['RNDC', 'Research', 'Development', 'Center', 'Office']
 }, {
   name: 'Student Accounts Section Office ',
   building: 'F Building',
   floor: '1st',
   room: 'F103',
-  tags: ['SAS', 'Students', 'Accounts']
+  tags: ['SAS', 'Students', 'Accounts', 'Office']
 }];
+
