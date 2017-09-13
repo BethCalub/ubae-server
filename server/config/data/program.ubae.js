@@ -2,11 +2,11 @@ exports.program = [{
   name: 'Master in Business Administration',
   acronym: 'MBA',
   info: '',
-  requirements: '',
+  requirements: 'Graduate of any 4 year course',
   type: 'Graduate',
   prerequisite: '',
-  duration: '',
-  tags: ['MBA', 'Master Business Ad']
+  duration: '2 Years',
+  tags: ['MBA', 'Master', 'Business', 'Administration', 'Program']
 }, {
   name: 'Bacheclor of Science in Accountancy',
   acronym: 'BS-AC',
@@ -15,7 +15,7 @@ exports.program = [{
   type: 'Baccaluarate',
   prerequisite: '',
   duration: '5 Years',
-  tags: ['BSAC', 'Accountancy']
+  tags: ['BSAC','Bachelor', 'Science', 'Accountancy' , 'Course', 'Program']
 }, {
   name: 'Bacheclor of Science in Business Administration, major in Financial Management',
   acronym: 'BSBA-FM',
@@ -24,7 +24,7 @@ exports.program = [{
   type: 'Baccaluarate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BSBAFM', 'FinMan', 'Financial Management']
+  tags: ['BSBAFM', 'FinMan','Bachelor', 'Science', 'Financial', 'Management', 'Program', 'Course']
 }, {
   name: 'Bacheclor of Science in Business Administration, major in Marketing Management',
   acronym: 'BSBA-MM',
@@ -33,7 +33,7 @@ exports.program = [{
   type: 'Baccaluarate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BSBAMM', 'Marketing Management']
+  tags: ['BSBAMM', 'Bachelor', 'Science', 'Marketing', 'Management', 'Program', 'Course']
 }, {
   name: 'Bacheclor of Science in Business Administration, major in Operations Management',
   acronym: 'BSBA-OM',
@@ -42,7 +42,7 @@ exports.program = [{
   type: 'Baccaluarate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BSBAOM', 'Operations Management']
+  tags: ['BSBAOM', 'Bachelor','Science', 'Operations', 'Management', 'Program','Course']
 }, {
   name: 'Bacheclor of Science in Business Administration, major in Human Resource Development Management',
   acronym: 'BSBA-HRDM',
@@ -51,7 +51,7 @@ exports.program = [{
   type: 'Baccaluarate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BSBAHRDM', 'Human Resource Development Management']
+  tags: ['BSBAHRDM', 'Bachelor', 'Science', 'Human', 'Resource', 'Development', 'Management', 'Program', 'Course']
 }, {
   name: 'Associate in Accounting Technology',
   acronym: 'AAT',
@@ -60,7 +60,7 @@ exports.program = [{
   type: 'Ladderized',
   prerequisite: '',
   duration: '3 Years',
-  tags: ['AAT', 'Associate Accounting Technology']
+  tags: ['AAT', 'Associate', 'Accounting', 'Technology', 'Program', 'Course']
 }, {
   name: 'Certificate in Accounting Technology',
   acronym: 'CAT',
@@ -69,25 +69,25 @@ exports.program = [{
   type: 'Ladderized',
   prerequisite: '',
   duration: '2 Years',
-  tags: ['CAT', 'Certificate Accounting Technology']
+  tags: ['CAT', 'Certificate', 'Accounting', 'Technology', 'Program', 'Course']
 }, {
   name: 'Doctor of Philosophy in Criminal Justice with Specialization in Criminology',
   acronym: 'PHD-CJSC',
   info: '',
-  requirements: '',
+  requirements: 'Graduate of BS-CRIM or BFSci',
   type: 'Graduate',
   prerequisite: '',
-  duration: '',
-  tags: ['PHDCJSC', 'Doctor Criminology']
+  duration: '3 Years',
+  tags: ['PHDCJSC', 'Doctor', 'Philosophy', 'Criminal', 'Justice', 'Specialization', 'Criminology', 'Program', 'Course']
 }, {
   name: 'Master of Science in Criminal Justice with Specialization in Criminology',
   acronym: 'MS-CJSC',
   info: '',
-  requirements: '',
+  requirements: 'Graduate of BS-CRIM or BFSci',
   type: 'Graduate',
   prerequisite: '',
-  duration: '',
-  tags: ['MSCJSC', 'Master Criminology']
+  duration: '2 Years',
+  tags: ['MSCJSC', 'Master', 'Science', 'Criminal', 'Justice', 'Specialization', 'Criminology', 'Program', 'Course']
 }, {
   name: 'Bachelor of Science in Criminology',
   acronym: 'BS-CRIM',
@@ -95,8 +95,8 @@ exports.program = [{
   requirements: 'Requirement after graduation: Licensure Examination for Criminologists',
   type: 'Baccalaureate',
   prerequisite: '',
-  duration: '',
-  tags: ['BSCRIM', 'crim']
+  duration: '4 Years',
+  tags: ['BSCRIM', 'crim', 'Bachelor', 'Science', 'Criminology', 'Program', 'Course']
 }, {
   name: 'Bachelor of Science in Forensic Science',
   acronym: 'BFSci',
@@ -104,17 +104,17 @@ exports.program = [{
   requirements: '',
   type: 'Baccalaureate',
   prerequisite: '',
-  duration: '',
-  tags: ['BFSci', 'Forensic Science']
+  duration: '4 Years',
+  tags: ['BFSci', 'Bachelor', 'Science', 'Forensic', 'Program', 'Course']
 }, {
   name: 'Master in Dental Education',
   acronym: 'MDE',
   info: '',
-  requirements: '',
+  requirements: 'Graduate of Doctor of Dental Medicine',
   type: 'Graduate',
   prerequisite: '',
-  duration: '',
-  tags: ['MDE', 'Master Dental Education']
+  duration: '2 Years',
+  tags: ['MDE', 'Master', 'Dental', 'Education', 'Program', 'Course']
 }, {
   name: 'Doctor of Dental Medicine',
   acronym: 'DM',
@@ -122,17 +122,17 @@ exports.program = [{
   requirements: 'Requirement after graduation: Liscensure Examination for Dentists',
   type: 'Baccalaureate',
   prerequisite: '',
-  duration: '6 Years',
-  tags: ['DM', 'Doctor Dental Medicine']
+  duration: '4 Years',
+  tags: ['DM', 'Doctor', 'Dental', 'Medicine', 'Program', 'Course']
 }, {
   name: 'Pre-Dentistry',
   acronym: 'Pre-Den',
   info: '',
   requirements: '',
-  type: 'Baccalaureate',
+  type: 'Short Course',
   prerequisite: '',
   duration: '2 Years',
-  tags: ['Pre Den']
+  tags: ['Pre', 'Den', 'Dentistry', 'Program', 'Course']
 }, {
   name: 'Bachelor of Science in Architecture',
   acronym: 'BS-ARCH',
@@ -141,7 +141,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '5 Years',
-  tags: ['BSARCH', 'Architecture']
+  tags: ['BSARCH', 'Bachelor', 'Science', 'Architecture', 'Program', 'Course']
 }, {
   name: 'Bachelor of Science in Civil Engineering',
   acronym: 'BS-CE',
@@ -150,7 +150,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '5 Years',
-  tags: ['BSCE', 'Civil']
+  tags: ['BSCE', 'Bachelor', 'Science', 'Civil', 'Engineering', 'Program', 'Course']
 }, {
   name: 'Bachelor of Science in Electronics and Communications Engineering',
   acronym: 'BS-ECE',
@@ -159,7 +159,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '5 Years',
-  tags: ['BSECE', 'ECE', 'Electronics Communications']
+  tags: ['BSECE', 'ECE', 'Bachelor', 'Science', 'Electronics', 'Communications', 'Engineering', 'Program', 'Course']
 }, {
   name: 'Bachelor of Science in Environmental and Sanitary Engineering',
   acronym: 'BS-ESE',
@@ -168,7 +168,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '5 Years',
-  tags: ['BSESE', 'Environmental Sanitary']
+  tags: ['BSESE', 'Bachelor', 'Science', 'Environmental', 'Sanitary', 'Engineering', 'Program', 'Course']
 }, {
   name: 'Bachelor of Science in Industrial Technology, major in Mechatronics',
   acronym: 'BSIT-MECHA',
@@ -177,7 +177,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['Mechatronics']
+  tags: ['BSIT','Mecha','Bachelor','Science','Industrial','Technology', 'Mechatronics', 'Program', 'Course']
 }, {
   name: 'Bachelor of Science in Computer Engineering',
   acronym: 'BS-CPE',
@@ -185,8 +185,8 @@ exports.program = [{
   requirements: '',
   type: 'Baccalaureate',
   prerequisite: '',
-  duration: '5 Years',
-  tags: ['BSCPE', 'Computer Engineering']
+  duration: '4 Years',
+  tags: ['BSCPE', 'Bachelor', 'Science', 'Computer', 'Engineering', 'Program', 'Course']
 }, {
   name: 'Bachelor of Science in Computer Science',
   acronym: 'BS-CS',
@@ -195,7 +195,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BSCS', 'ComSci', 'Computer Science']
+  tags: ['BSCS', 'ComSci', 'Bachelor', 'Science', 'Computer', 'Program', 'Course']
 }, {
   name: 'Bachelor of Science in Information Technology',
   acronym: 'BS-IT',
@@ -204,25 +204,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BSIT', 'IT', 'Information Technology']
-}, {
-  name: 'Associate in Computer Technology, with Specialization in Multimedia and Web Design',
-  acronym: 'ACT-MWD',
-  info: '',
-  requirements: '',
-  type: 'Ladderized',
-  prerequisite: '',
-  duration: '2 Years',
-  tags: ['ACT MWD', 'Multimedia', 'Web Design']
-}, {
-  name: 'Associate in Computer Technology, with Specialization in Computer and Network Servicing',
-  acronym: 'ACT-CNS',
-  info: '',
-  requirements: '',
-  type: 'Ladderized',
-  prerequisite: '',
-  duration: '2 Years',
-  tags: ['ACT CNS', ' Computer Network Servicing']
+  tags: ['BSIT', 'IT', 'Bachelor', 'Science', 'Information', 'Technology', 'Program', 'Course']
 }, {
   name: 'Cisco Certified Entry Level',
   acronym: 'CCENT',
@@ -231,7 +213,7 @@ exports.program = [{
   type: 'Short Course',
   prerequisite: '',
   duration: '108 Hours',
-  tags: ['CCENT']
+  tags: ['CCENT', 'Cisco', 'Certified', 'Entry', 'Level', 'Program', 'Course']
 }, {
   name: 'Cisco Certified Network Associate',
   acronym: 'CCNA',
@@ -240,7 +222,7 @@ exports.program = [{
   type: 'Short Course',
   prerequisite: '',
   duration: '216 Hours',
-  tags: ['CCNA']
+  tags: ['CCNA', 'Cisco', 'Certified', 'Network', 'Associate', 'Program', 'Course']
 }, {
   name: 'Bachelor of Science in Hotel and Restaurant Management',
   acronym: 'BS-HRM',
@@ -248,8 +230,8 @@ exports.program = [{
   requirements: '',
   type: 'Baccalaureate',
   prerequisite: '',
-  duration: 'Years',
-  tags: ['BSHRM', 'HRM', 'Hotel Restaurant']
+  duration: '4 Years',
+  tags: ['BSHRM', 'HRM', 'Bachelor', 'Science', 'Hotel', 'Restaurant', 'Program', 'Course']
 }, {
   name: 'Bachelor of Science in Tourism Management',
   acronym: 'BS-TM',
@@ -258,7 +240,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: 'Years',
-  tags: ['BSTM', 'Tourism']
+  tags: ['BSTM', 'Bachelor', 'Science', 'Tourism' , 'Management', 'Program', 'Course']
 }, {
   name: 'Associate in Arts in Hotel and Restaurant Management',
   acronym: 'AA-HRM',
@@ -267,16 +249,7 @@ exports.program = [{
   type: 'Ladderized',
   prerequisite: '',
   duration: '2 Years',
-  tags: ['AAHRM']
-}, {
-  name: 'Associate in Hotel and Restaurant Management',
-  acronym: 'AHRM',
-  info: '',
-  requirements: '',
-  type: 'Ladderized',
-  prerequisite: '',
-  duration: '1 Year',
-  tags: ['AHRM']
+  tags: ['AAHRM', 'Associate', 'Arts', 'Hotel', 'Restaurant', 'Management', 'Program', 'Course']
 }, {
   name: 'Bachelor of Laws and Letters',
   acronym: 'LLB',
@@ -284,26 +257,26 @@ exports.program = [{
   requirements: 'Requirement after graduation: BAR examination',
   type: '',
   prerequisite: '',
-  duration: 'Years',
-  tags: ['LLB', 'Laws Letters', 'Law']
+  duration: '4 Years',
+  tags: ['LLB', 'Bachelor', 'Laws', 'Letters', 'Program', 'Course']
 }, {
   name: 'Master in Public Administration',
   acronym: 'MPA',
   info: '',
-  requirements: '',
+  requirements: 'Graduate of Bachelor of Arts in Broadcasting or Bachelor of Arts in Mass Communication',
   type: 'Graduate',
   prerequisite: '',
-  duration: 'Years',
-  tags: ['MPA', 'Master Public Administration']
+  duration: '2 Years',
+  tags: ['MPA', 'Master', 'Public', 'Administration', 'Program', 'Course']
 }, {
   name: 'Master of Arts in English',
   acronym: 'MAEng',
   info: '',
-  requirements: '',
+  requirements: 'Graduate of Bachelor of Arts in English',
   type: 'Graduate',
   prerequisite: '',
-  duration: 'Years',
-  tags: ['MAEng', 'Master English']
+  duration: '2 Years',
+  tags: ['MAEng', 'Master', 'Arts', 'English', 'Program', 'Course']
 }, {
   name: 'Bachelor of Arts in Broadcasting',
   acronym: 'BA-Broad',
@@ -312,7 +285,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BABroad', 'Broadcasting']
+  tags: ['BABroad', 'Bachelor', 'Arts', 'Broadcasting', 'Program', 'Course']
 }, {
   name: 'Bachelor of Arts in English',
   acronym: 'BA-Eng',
@@ -321,7 +294,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BAEng', 'Bachelor English']
+  tags: ['BAEng', 'Bachelor', 'Arts', 'English', 'Program', 'Course']
 }, {
   name: 'Bachelor of Arts in Mass Communication',
   acronym: 'BA-Comm',
@@ -330,7 +303,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BAComm', 'Mass Comm', 'Mass Communication']
+  tags: ['BAComm', 'Mass', 'Comm', 'Bachelor', 'Arts', 'Mass', 'Communication', 'Program', 'Course']
 }, {
   name: 'Bachelor of Arts in Political Science',
   acronym: 'BA-PolSci',
@@ -339,7 +312,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BAPolSci', 'PolSci', 'Political Science']
+  tags: ['BAPolSci', 'PolSci', 'Bachelor', 'Arts', 'Political', 'Science', 'Program', 'Course']
 }, {
   name: 'Bachelor of Science in Psychology',
   acronym: 'BS-Psych',
@@ -348,7 +321,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BSPsych', 'Psychology']
+  tags: ['BSPsych', 'Bachelor', 'Science', 'Psychology', 'Program', 'Course']
 }, {
   name: 'Bachelor of Arts in Music',
   acronym: 'BA-Music',
@@ -357,7 +330,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BAMusic', 'Music']
+  tags: ['BAMusic', 'Bachelor', 'Arts', 'Music', 'Program', 'Course']
 }, {
   name: 'Extension Classes in Music',
   acronym: '',
@@ -366,16 +339,7 @@ exports.program = [{
   type: 'Special Program',
   prerequisite: '',
   duration: '10 Hours',
-  tags: ['Extension Music']
-}, {
-  name: 'Short Courses in Photography and Digital Arts',
-  acronym: '',
-  info: '',
-  requirements: '',
-  type: 'Special Program',
-  prerequisite: '',
-  duration: 'Years',
-  tags: ['Photography', 'Digital Arts']
+  tags: ['Extension', 'Classes', 'Music']
 }, {
   name: 'Bachelor of Science in Physical Therapy',
   acronym: 'BS-PT',
@@ -384,7 +348,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '5 Years',
-  tags: ['BSPT', 'PT', 'Physical Therapy']
+  tags: ['BSPT', 'PT', 'Bachelor', 'Science', 'Physical', 'Therapy']
 }, {
   name: 'Bachelor of Medical Laboratory Science',
   acronym: 'BMLS',
@@ -393,7 +357,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BMLS', 'Medical Laboratory']
+  tags: ['BMLS', 'Bachelor', 'Science', 'Medical', 'Laboratory', 'Program', 'Course']
 }, {
   name: 'Bachelor of Science in Nursing',
   acronym: 'BSN',
@@ -402,34 +366,25 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: 'Years',
-  tags: ['BSN', 'Nursing']
-}, {
-  name: 'Diploma in Midwifery',
-  acronym: 'MW',
-  info: '',
-  requirements: 'Requirement after graduation: Licensure Examination for Midwives',
-  type: 'program',
-  prerequisite: '',
-  duration: '2 Years',
-  tags: ['MW', 'Midwifery']
+  tags: ['BSN', 'Bachelor', 'Science', 'Nursing', 'Program', 'Course']
 }, {
   name: 'Certificate in Health Care Services [Nursing Assistant]',
   acronym: 'HCS',
   info: '',
   requirements: '',
-  type: 'program',
+  type: 'Short Course',
   prerequisite: '',
   duration: '1 Year',
-  tags: ['HCS', 'Health Care']
+  tags: ['HCS', 'Health', 'Care', 'Services', 'Program', 'Course']
 }, {
   name: 'Doctor of Philosophy in Development Education',
   acronym: 'Ph.DevEd',
   info: '',
-  requirements: '',
+  requirements: 'Graduate of Bachelor of Elementary Education or Bachelor of Secondary Education',
   type: 'Graduate',
   prerequisite: '',
-  duration: 'Years',
-  tags: ['PHDevEd', 'Development Education']
+  duration: '3 Years',
+  tags: ['PHDevEd', 'Doctor', 'Philosophy', 'Development', 'Education', 'Program', 'Course']
 }, {
   name: 'Doctor of Education',
   acronym: 'EDD',
@@ -437,8 +392,8 @@ exports.program = [{
   requirements: '',
   type: 'Graduate',
   prerequisite: '',
-  duration: 'Years',
-  tags: ['EDD', 'Doctor Education']
+  duration: '3 Years',
+  tags: ['EDD', 'Doctor', 'Education', 'Program', 'Course']
 }, {
   name: 'Master of Arts in Education',
   acronym: 'MAEd',
@@ -446,8 +401,8 @@ exports.program = [{
   requirements: '',
   type: 'Graduate',
   prerequisite: '',
-  duration: 'Years',
-  tags: ['MAEd', 'Master Education']
+  duration: '2 Years',
+  tags: ['MAEd', 'Master', 'Arts', 'Education', 'Program', 'Course']
 }, {
   name: 'Bachelor of Elementary Education, major in General Education',
   acronym: 'BEEd-GenEd',
@@ -456,7 +411,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BEEd GenEd', 'General Education']
+  tags: ['BEEd GenEd', 'Bachelor', 'Elementary', 'Education', 'Major', 'General', 'Education', 'Program', 'Course']
 }, {
   name: 'Bachelor of Elementary Education, major in Special Education',
   acronym: 'BEEd-SpEd',
@@ -465,16 +420,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BEEd SpEd', 'Special Education']
-}, {
-  name: 'Bachelor of Secondary Education, major in Biological Science',
-  acronym: 'BSED-Biological Science',
-  info: '',
-  requirements: 'Requirement after graduation: Licensure Examination for Teachers',
-  type: 'Baccalaureate',
-  prerequisite: '',
-  duration: '4 Years',
-  tags: ['BSED Biological Science']
+  tags: ['BEEd SpEd', 'Bachelor', 'Elementary', 'Special', 'Education', 'Program', 'Course']
 }, {
   name: 'Bachelor of Secondary Education',
   acronym: 'BSED',
@@ -483,5 +429,5 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BSED', 'Secondary Education']
+  tags: ['BSED', 'Bachelor', 'Secondary', 'Education', 'Program', 'Course']
 }];

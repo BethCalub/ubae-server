@@ -78,7 +78,7 @@ exports.service = [{
     '2. Pay required amount at the Cashier',
     '3. Submit clearance to ARC for checking'
   ],
-  tags: ['Release', 'Records', 'Undergraduate']
+  tags: ['Release', 'Records', 'Undergraduate', 'Under-graduate']
 }, {
   name: 'Assists students who are qualified for athletic scholarship',
   info: '',
@@ -86,7 +86,7 @@ exports.service = [{
   process: ['1. Just go to the athletics office/ walk-in',
     '2. No requirement needed, just join training everytime'
   ],
-  tags: ['Atheltic Scholarship', 'Table tennis', 'Lawn tennis', 'Badminton', 'Wushu', 'Judo', 'Taekwondo', 'Arnis', 'Boxing', 'Baseball', 'Softball', 'Volleyball', 'Basketball']
+  tags: ['Atheltic', 'Scholarship']
 }, {
   name: 'Lending of sports equipments',
   info: '',
@@ -94,7 +94,7 @@ exports.service = [{
   process: ['1. Just go to the athletics office/ walk-in',
     '2. Present valid ID'
   ],
-  tags: ['Sports Equipment']
+  tags: ['Lending', 'Sports', 'Equipment']
 }, {
   name: 'Student development facilitation and counseling services',
   info: 'We are your family and we are ready to help you overcome your obstacles in life.',
@@ -102,43 +102,43 @@ exports.service = [{
   process: ['1a. Students can just go to the office/ walk-in',
     '1b. Referrals by the Deans(students with failing grades and dropped Attendance Monitoring Cards), Office of Students Affairs (Students with disciplinary concerns), Faculty, Parents or Other University Personnel'
   ],
-  tags: ['Student Development Facilitation and Counseling Services', 'Counseling', 'Student Development Facilitation']
+  tags: ['Student', 'Development', 'Facilitation', 'Counseling', 'Services']
 }, {
   name: 'Psychological Testing Service',
   info: 'Get to know yourself better through our various tests!',
   requirements: ['Should be requested by instructors or dean'],
   process: ['1. Just go to the office/walk-in'],
-  tags: ['Psychological Test', 'Psychological Testing Service', 'Psychological']
+  tags: ['Psychological', 'Test', 'Testing', 'Service']
 }, {
   name: 'Personality Test',
   info: 'Get to know yourself better through our various tests!',
   requirements: ['Should be requested by instructors or dean'],
   process: ['1. Just go to the office/walk-in'],
-  tags: ['Psychological Testing Service', 'Psychological Test', 'Personality Test']
+  tags: ['Personality', 'Testing', 'Service', 'Personality', 'Test']
 }, {
   name: 'Interest Test',
   info: 'Get to know yourself better through our various tests!',
   requirements: ['Should be requested by instructors or dean'],
   process: ['1. Just go to the office/walk-in'],
-  tags: ['Psychological Testing Service', 'Psychological Test', 'Interest Test']
+  tags: ['Interest', 'Testing', 'Service', 'Interest', 'Test']
 }, {
   name: 'Aptitude Test',
   info: 'Get to know yourself better through our various tests!',
   requirements: ['Should be requested by instructors or dean'],
   process: ['1. Just go to the office/walk-in'],
-  tags: ['Psychological Testing Service', 'Psychological Test', 'Aptitude Test']
+  tags: ['Aptitude', 'Testing', 'Service', 'Aptitude', 'Test']
 }, {
   name: 'Mental Ability',
   info: 'Get to know yourself better through our various tests!',
   requirements: ['Should be requested by instructors or dean'],
   process: ['1. Just go to the office/walk-in'],
-  tags: ['Psychological Testing Service', 'Psychological Test', 'Mental Ability']
+  tags: ['Mental', 'Ability', 'Testing', 'Service', 'Mental', 'Ability', 'Test']
 }, {
   name: 'Battery Test',
   info: 'Get to know yourself better through our various tests!',
   requirements: ['Should be requested by instructors or dean'],
   process: ['1. Just go to the office/walk-in'],
-  tags: ['Psychological Testing service', 'Psychological Test', 'Battery Test']
+  tags: ['Battery', 'Testing', 'Service', 'Battery', 'Test']
 }, {
   name: 'Career and placement services',
   info: ['Exit interviews for students transferring to a different school',
@@ -148,7 +148,7 @@ exports.service = [{
   ],
   requirements: ['Should be recommended by the instructor or dean'],
   process: ['1. Just go directly to the office/walk-in but you should be recommended by your teacher or dean'],
-  tags: ['Career and Placement services', 'Career', 'Placement']
+  tags: ['service', 'Career', 'Placement']
 }, {
   name: 'Free tooth extraction',
   info: 'Available for UB Students and Employees',
@@ -156,7 +156,7 @@ exports.service = [{
   process: ['1. Go to the Clinic and consult the Dentist.',
     '2. You will then be scheduled for your tooth extraction.'
   ],
-  tags: ['Free Tooth extraction', 'Tooth Extraction']
+  tags: ['Free', 'Tooth', 'extraction', 'Service']
 }, {
   name: 'Minor Surgery',
   info: 'Available for UB Students and Employees. Minor surgeries includes Suturing, Excision, and Circumcision.',
@@ -165,7 +165,7 @@ exports.service = [{
     '2. The procedure will then be explained and scheduled',
     '3. Give payment to the Cashier.'
   ],
-  tags: ['Minor Surgery', 'Suturing', 'Excision', 'Circumcision']
+  tags: ['Minor', 'Surgery', 'Suturing', 'Excision', 'Circumcision', 'Service']
 }, {
   name: 'Physical Examination',
   info: 'Physical Examination for OJTs, Practicum, Competitions and Clinical exposure.',
@@ -174,7 +174,7 @@ exports.service = [{
     '2. Give payment to the Cashier.',
     '3. You will then be examined for X-ray, Dental and other required Medical Examinations'
   ],
-  tags: 'Physical Examination'
+  tags: ['Physical', 'Examination', 'Service']
 }, {
   name: 'Facilitation of Accident Insurance',
   info: 'If a student or employee had an accident inside the campus, the university will be the one to pay all the hospital bills.',
@@ -182,7 +182,7 @@ exports.service = [{
   process: ['1. Get all the receipts incurred in the hospital.',
     '2. Give receipts to the Clinic.'
   ],
-  tags: ['Facilitation of Accident Insurance', 'Accident Insurance']
+  tags: ['Facilitation', 'Accident', 'Insurance', 'Service']
 }, {
   name: 'Radiology and Medtech/Clinical Laboratory Services',
   info: 'Available for UB Students and Employees',
@@ -190,13 +190,13 @@ exports.service = [{
   process: ['1. Go to the Clinic to get request',
     '2. You will then be scheduled to for your service.'
   ],
-  tags: ['Radiology Service', 'Radiology', 'Medtech Laboratory', 'Clinic Laboratory']
+  tags: ['Radiology', 'Service', 'Medtech', 'Laboratory', 'Clinic']
 }, {
   name: 'Vaccinations',
   info: 'Vaccinations(Hep B; Influenza Vaccine/AH1N1 vaccine; Cervical Cancer; Anti-Pneumonia) available for UB Students, employees and UB Partner Communities.',
   requirements: ['Valid ID'],
   process: '1. Go to the Clinic and present your Valid ID.',
-  tags: ['Vaccinations', 'Hep B Vaccine', 'Influenza Vaccine', 'AH1N1 Vaccine', 'Cervical Cancer Vaccine', 'Anti-Pneumonia Vaccine']
+  tags: ['Vaccinations', 'Vaccine', 'Service']
 }, {
   name: 'X-ray',
   info: 'The University offers X-Ray service for all.',
@@ -204,7 +204,7 @@ exports.service = [{
   process: ['1. Go to the clinic to ask request.',
     '2. Give the payment to the cashier.'
   ],
-  tags: 'X-Ray'
+  tags: ['X-Ray', 'Service']
 }, {
   name: 'Consultation',
   info: 'Available for UB Students and Employees',
@@ -215,7 +215,7 @@ exports.service = [{
     '4. Have your vital signs recorded and proceed to the Physician for check-up.',
     '5. Get your medicine from the Nurse.'
   ],
-  tags: ['Consultation', 'Check-Up', 'Consult']
+  tags: ['Consultation', 'Check-Up', 'Consult', 'Service']
 }, {
   name: 'Medical Certificate',
   info: 'Issuing medical certificate for students who was sent home',
@@ -232,7 +232,7 @@ exports.service = [{
     '*If all the exams are within the normal limits, you will be given the Health Certificate',
     '*If one or more parameters are not normal, your Health Certificate will be withheld until after treatment, and the patient may be reffered to a specialist or for further diagnostic examination.'
   ],
-  tags: ['Physical Examination', 'Physical Exam for Local OJT SIHTM', 'Physical Examination SIHTM', 'Medical Examination', 'Medical Exam for Local OJT SIHTM', 'Medical Examination SIHTM']
+  tags: ['Physical', 'Examination', 'Exam', 'OJT', 'SIHTM', 'Medical', 'Service', 'IHTM']
 }, {
   name: 'Physical/Medical Examination for local OJT/ Practicum (Non-SIHTM Students)',
   info: 'Available for UB Students',
@@ -242,7 +242,7 @@ exports.service = [{
     '*If all the exams are within the normal limits, you will be given the Health Certificate',
     '*If one or more parameters are not normal, your Health Certificate will be withheld until after treatment, and the patient may be reffered to a specialist or for further diagnostic examination.'
   ],
-  tags: ['Physical Examination', 'Physical Exam for Local OJT', 'Medical Examination', 'Medical Exam for Local OJT', 'Medical Examination']
+  tags: ['Physical', 'Examination', 'Exam', 'OJT', 'Medical', 'Service']
 }, {
   name: 'Physical/Medical Examination for International OJT',
   info: 'Available for UB Students',
@@ -254,31 +254,31 @@ exports.service = [{
     '*If all the exams are within the normal limits, you will be given the Health Certificate',
     '*If one or more parameters are not normal, your Health Certificate will be withheld until after treatment, and the patient may be reffered to a specialist or for further diagnostic examination.'
   ],
-  tags: ['Physical Examination', 'Physical Exam for International OJT', 'Medical Examination', 'Medical Exam for International OJT', 'Medical Examination International OJT']
+  tags: ['International', 'Physical', 'Examination', 'Exam', 'OJT', 'Medical', 'Service']
 }, {
   name: 'UBCARES Program',
   info: 'The Community Advancement through Responsive Extension Services (CARES) Program',
   requirements: ['Form from ECOS office', 'parents consent form/waiver'],
   process: ['Just go to the ECOS Office for application'],
-  tags: ['UBCARES Program', 'Outreach Volunteer', 'Outreach', 'Volunteer']
+  tags: ['UBCARES', 'Program', 'Outreach', 'Volunteer', 'Service']
 }, {
   name: 'Processes International On The Job Training (IOJT) applicants and exchange scholars',
   info: '',
   requirements: ['None'],
   process: ['1. Give approval sheet/form from dean and consent from parent'],
-  tags: ['IOJT', 'International On The Job Triaining', 'OJT Abroad']
+  tags: ['IOJT', 'International', 'Job', 'Triaining', 'OJT', 'Abroad', 'Service']
 }, {
   name: 'Assists the UBAFI in issuing the membership identification cards of its members.',
   info: '',
   requirements: ['None'],
   process: ['1. Signing clearance form for Alumni ID'],
-  tags: ['UBAFI', 'Alumni ID', 'Alumni']
+  tags: ['UBAFI', 'Alumni', 'ID', 'Service']
 }, {
   name: 'Gives copies of PRC Board Syllabi for STE Students',
   info: '',
   requirements: ['None'],
   process: ['1. Just go to the Review Center or Print copy from website'],
-  tags: ['Board STE', 'Board Syllabi']
+  tags: ['Board', 'STE', 'Syllabi', 'Service']
 }, {
   name: 'Follet-DLM Mobile Application',
   info: '',
@@ -290,7 +290,7 @@ exports.service = [{
     '5. Enter your User ID and Password. Username: ID NUMBER (eg. 150016)  Password: SURNAME (eg. delacruz)',
     '6. Tap Log in.'
   ],
-  tags: ['Follet', 'Mobile Application']
+  tags: ['Follet', 'Mobile', 'Application']
 }, {
   name: 'Journals',
   info: '',
@@ -312,31 +312,31 @@ exports.service = [{
     '2c. type in USERNAME: universityofbaguio',
     '3c. type in PASSWORD: 123456'
   ],
-  tags: ['E-Journal', 'Online Journals']
+  tags: ['E-Journal', 'Online', 'Journals']
 }, {
   name: 'Clearance signing',
   info: '',
   requirements: ['Valid ID'],
   process: [''],
-  tags: ['Clearance']
+  tags: ['Clearance', 'Signing']
 }, {
   name: 'Library Orientation',
   info: '',
   requirements: ['Valid ID'],
   process: ['1. Just go to the Centennial Library for Library Orientation Request'],
-  tags: ['LIbrary Tour', 'Library Orientation']
+  tags: ['LIbrary', 'Tour', 'Orientation']
 }, {
   name: 'Computers for internet surfing in the library',
   info: 'Availing of students and employees to use computers with internet and also free wifi.',
   requirements: ['Valid ID'],
   process: [''],
-  tags: ['Library Computer', 'Library WiFi']
+  tags: ['Library', 'Computer', 'WiFi']
 }, {
   name: 'Discussion rooms',
   info: '',
   requirements: ['Valid ID'],
   process: ['1. Fill up Discussion Room Reservation Form'],
-  tags: ['Library Discussion Room', 'Discussion Room', 'Discussion']
+  tags: ['Library', 'Discussion', 'Room']
 }, {
   name: 'Press releases and advertisements',
   info: 'Publications of advertisements, newspapers, magazines, and websites.',
@@ -345,7 +345,7 @@ exports.service = [{
     '2. Dean and VP Administration must sign the form',
     '3. Return form to MAPS office'
   ],
-  tags: ['Press Releases', 'Advertisements', 'Newspapers', 'Magazines', 'Website']
+  tags: ['Press', 'Releases', 'Advertisements', 'Newspapers', 'Magazines', 'Service']
 }, {
   name: 'Yearbook and Graduation materials',
   info: 'Yearbooks are optional for Students if they want to avail it or not.',
@@ -360,7 +360,7 @@ exports.service = [{
     '2. Dean and VP Administration must sign the form',
     '3. Return form to MAPS office'
   ],
-  tags: ['Social Media Content Development', 'Social Media']
+  tags: ['Social', 'Media', 'Content', 'Development', 'Service']
 }, {
   name: 'Website Content Development',
   info: 'University wide- for students and employees who wants to be featured in the ubaguio.edu website',
@@ -369,7 +369,7 @@ exports.service = [{
     '2. Dean and VP Administration must sign the form',
     '3. Return form to MAPS office'
   ],
-  tags: ['Website Content Development', 'Website']
+  tags: ['Website', 'Content', 'Development', 'Service']
 }, {
   name: 'Virus scanning and removal for flash drives and portable hard disk',
   info: '',
@@ -377,7 +377,7 @@ exports.service = [{
   process: ['1. Go to the MIS office',
     '2. Present your valid ID'
   ],
-  tags: ['USB', 'Virus Scanning']
+  tags: ['USB', 'Virus', 'Scanning', 'Flashdrive', 'Service']
 }, {
   name: 'Assessment of PC or Laptop',
   info: 'The office only checks the problem of your laptop or PC, but they dont do repairing.',
@@ -385,7 +385,7 @@ exports.service = [{
   process: ['1. Go to the MIS office',
     '2. Present your valid ID'
   ],
-  tags: ['PC', 'Laptop', 'Assesment']
+  tags: ['PC', 'Laptop', 'Assesment', 'Service']
 }, {
   name: 'Installation of open-source or free software',
   info: 'The office gives students open source softwares',
@@ -393,7 +393,7 @@ exports.service = [{
   process: ['1. Go to the MIS office',
     '2. Present your valid ID'
   ],
-  tags: ['Software', 'Installation']
+  tags: ['Software', 'Installation', 'Service']
 }, {
   name: 'Printing and validation of student ID',
   info: '',
@@ -409,7 +409,7 @@ exports.service = [{
     '1C. Go to the MIS office',
     '2C. Present your valid ID'
   ],
-  tags: ['Student ID']
+  tags: ['Student', 'ID', 'Service']
 }, {
   name: 'Printing of alumni and other IDs',
   info: '',
@@ -418,7 +418,7 @@ exports.service = [{
     '2. You will then be asked for your signature',
     '3. You will then have your ID picture.'
   ],
-  tags: ['Alumni ID']
+  tags: ['Alumni', 'ID', 'Service']
 }, {
   name: 'Creation of Wi-Fi account',
   info: '',
@@ -426,7 +426,7 @@ exports.service = [{
   process: ['1. Go to the MIS office and request for an account',
     '2. Present valid ID'
   ],
-  tags: ['WiFi', 'WiFi Account']
+  tags: ['WiFi', 'Account', 'Service']
 }, {
   name: 'Readmissions',
   info: 'Getting dropped class cards',
@@ -434,7 +434,7 @@ exports.service = [{
   process: ['1. Go to the office of student affairs',
     '2. Fill up AMC form/ Readmission slip'
   ],
-  tags: ['Class Card', 'Readmission']
+  tags: ['Class', 'Card', 'Readmission']
 }, {
   name: 'Performing Arts',
   info: 'For students who wants to apply for performing arts scholarship',
@@ -442,7 +442,7 @@ exports.service = [{
   process: ['1. Go to student account and fill up scholarship form or yellow form',
     '2. Go to Sir.Amado Orden Jr. from the OSA Director office and he will be the one to process'
   ],
-  tags: ['UB Graces', 'UB Voices', 'UB Chamber Orchestra', 'Plug and Play Band', 'UBBUK Ethnic Dance Group', 'Performing Arts']
+  tags: ['Performing', 'Arts', 'Scholarship', 'Service']
 }, {
   name: 'Format Editing',
   info: 'Formatting students documents with APA Format',
@@ -451,7 +451,7 @@ exports.service = [{
     '2. Submit a copy of your study or a copy of manuscript.',
     '3. Go to the RNDC Office and login to the log book'
   ],
-  tags: ['Format Editing', 'APA Format Editing']
+  tags: ['Format', 'Editing', 'APA', 'Service']
 }, {
   name: 'Statistic Package for Social Sciences',
   info: 'SPSS is one of the most popular statistical packages which can perform highly complex data manipulation and analysis with simple instructions.',
@@ -460,14 +460,14 @@ exports.service = [{
     '2. Submit a copy of your study or a copy of manuscript.',
     '3. The office will be the one to reffer you with a statistician.'
   ],
-  tags: ['Statistic Package for Social Sciences', 'SPSS', 'Statistics Assistance']
+  tags: ['Statistic', 'Package', 'Social', 'Sciences', 'SPSS', 'Assistance', 'Service']
 }, {
   name: 'Poster Preparation',
   requirements: ['Request Letter'],
   process: ['1. Give a request letter with the poster size, font, color, text and other information about your poster.',
     '2. Submit Request Letter to the RNDC Office.'
   ],
-  tags: ['Poster Preparation']
+  tags: ['Poster', 'Preparation']
 }, {
   name: 'Publication of Research findings (Catalyst)',
   info: 'Publication of Research',
@@ -478,12 +478,12 @@ exports.service = [{
     '4. Submit ethics clearance.',
     '5. If your study is quantitative, your research will be verified by a statistician.'
   ],
-  tags: ['Publication of Research Findings', 'Catalyst']
+  tags: ['Publication', 'Research', 'Findings', 'Catalyst', 'Service']
 }, {
   name: 'Tool Validation',
   requirements: ['Statement of the Problem, Methodology and Questionnaire signed by members of the panelist and adviser.'],
   process: ['1. Go to the RNDC Office and submit requirements'],
-  tags: ['Tool Validation']
+  tags: ['Tool', 'Validation', 'Service']
 }, {
   name: 'Grammar Check',
   info: 'Allows students to use Grammarly to check the grammar of their documents or files',
@@ -491,7 +491,7 @@ exports.service = [{
   process: ['1. Go to the RNDC Office and login to the log book',
     '2. Send Manuscript to RNDC email.'
   ],
-  tags: ['Grammar Check']
+  tags: ['Grammar', 'Check', 'Service']
 }, {
   name: 'Plagiarism Test',
   info: 'Allows students to use Grammarly to check the plagiarism of their documents or files',
@@ -499,7 +499,7 @@ exports.service = [{
   process: ['1. Go to the RNDC Office and login to the log book',
     '2. Send Manuscript to RNDC email.'
   ],
-  tags: ['Plagiarism Test']
+  tags: ['Plagiarism', 'Test', 'Service']
 }, {
   name: 'Spell Check',
   info: 'Allows students to use Grammarly to check the spelling of their documents or files',
@@ -507,13 +507,13 @@ exports.service = [{
   process: ['1. Go to the RNDC Office and login to the log book',
     '2. Send Manuscript to RNDC email.'
   ],
-  tags: ['Spell Check']
+  tags: ['Spell', 'Check', 'Service']
 }, {
   name: 'Use of computers',
   info: 'Allows students to use the office computer',
   requirements: ['Valid ID'],
   process: '1. Go to the RNDC Office and login to the log book',
-  tags: ['Use of Computers']
+  tags: ['Computers', 'RNDC', 'Service']
 }, {
   name: 'In-charge of issuance of assessment of school fees/accounts inquiry',
   info: 'The assessment is automatically generated in the student’s portal, but they can also have the printed assessment if they go to the specific windows here that prints the assessment.',
@@ -521,7 +521,7 @@ exports.service = [{
   process: ['1. Go to the the designated assessment windows',
     '2. Present your valid ID.'
   ],
-  tags: ['Assessment', 'Assessment of Fees', 'Assessment of Account Inquiry']
+  tags: ['Assessment', 'Fees', 'Account', 'Inquiry', 'Service']
 }, {
   name: 'Issuance of examination permits',
   info: 'Responsible for the issuance of examination permits',
@@ -530,7 +530,7 @@ exports.service = [{
     '2. Pay the minimum required payment',
     '3. Get your permit on the specified window of your department'
   ],
-  tags: ['Examination Permit', 'Permit']
+  tags: ['Examination', 'Permit', 'Service']
 }, {
   name: 'Issuance of Clearance for the release of school credentials',
   info: 'Before the ARC releases the student’s credentials, the clearance form must be cleared by all offices and the students accounts office will be the last one to sign because they will oversee if the student paid all his/her tuition fee and other fees.',
@@ -540,7 +540,7 @@ exports.service = [{
     '*If the you already paid all your fees, your clearance form will be signed',
     '*If the you have an outstanding balance, you should pay your fee first'
   ],
-  tags: ['Clearance', 'Release of School Credentials']
+  tags: ['Clearance', 'Release', 'School', 'Credentials', 'Service']
 }, {
   name: 'Investigate complaints, offenses, reports, and any other unusual or suspicious activities in the campus',
   info: 'The Security Department conducts investigation of various crimes or offenses that happened inside the school campus.',
@@ -549,13 +549,13 @@ exports.service = [{
     '*The office will conduct the investigation by retrieving CCTV Footages and interviewing.',
     '*If both parties are not yet fine, or no one admitted their misconduct, they will be brought to OSA.'
   ],
-  tags: ['Complaints', 'Offenses', 'Reports', 'Suspicious Activities']
+  tags: ['Complaints', 'Offenses', 'Reports', 'Suspicious', 'Activities', 'Service']
 }, {
   name: 'Lost & Found',
   info: 'Students bring Lost Items to the Security Office for safe-keeping, and returning the lost items to the respective owner.',
   requirements: ['Lost Item'],
   process: ['1. Bring the Item to the Security Office or give the item to the marshalls'],
-  tags: ['Lost and Found', 'Lost Items']
+  tags: ['Lost', 'Found', 'Items', 'Service']
 }, {
   name: 'Security Contact',
   info: 'Students and employees of the university can contact the security office anytime and anywhere.',
@@ -563,5 +563,5 @@ exports.service = [{
   process: ['1. Dial 442-4915 or local no. 234/309',
     '2. Report emergencies and Criminal Activities'
   ],
-  tags: ['Security Contact', 'Emergency Hotline']
+  tags: ['Security', 'Contact', 'Emergency', 'Hotline', 'Service']
 }];
