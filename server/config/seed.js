@@ -44,12 +44,13 @@ export default function seedDatabaseIfNeeded() {
           .then(() => console.log('finished populating Responses'))
           .catch(err => console.log('error populating Responses', err));
       });
-    // Informations.find({}).remove()
-    //   .then(() => {
-    //     Informations.create(UbaeData.informations)
-    //       .then(() => console.log('finished populating Informations'))
-    //       .catch(err => console.log('error populating Informations', err));
-    //   });
+      
+    Informations.find({}).remove()
+      .then(() => {
+        Informations.create(UbaeData.informations)
+          .then(() => console.log('finished populating Informations'))
+          .catch(err => console.log('error populating Informations', err));
+      });
     
     Events.find({}).remove()
       .then(() => {

@@ -37,7 +37,7 @@ var instruction = [{
   ],
   type: '',
   message: 'First, you need to go to the ARC Extension to fill up the online form. After that, you need to submit your documents to the admission area for the checking of your documents and for the creation of your official ID number. Then you will need to proceed to the respective Dean\'s of the course you want to take up for the enrollment of subjects. For the next step, you will need to pay the required downpayment to the cashier, and lastly, go to the MIS office for the printing of your ID and schedule. ',
-  tags: ['Enrollment', 'Transferee', 'Student', 'ARC', 'Service', 'Process']
+  tags: ['Enrollment', 'Freshmen', 'Student', 'ARC', 'Service', 'Process']
 }, {
   name: 'Enrollment for Transferee',
   process: ['1. Go to ARC Extension to fill up form online',
@@ -108,12 +108,9 @@ var instruction = [{
   tags: ['Lending', 'Sports', 'Equipment', 'Service', 'Process']
 }, {
   name: 'Student Development Facilitation and Counseling Services',
-  process: ['Students can just go to the office/ walk-in but should be reffered by the dean, instructor, Faculty, Parents, or other University Personnel'],
-  process: ['1a. Students can just go to the office/ walk-in',
-    '1b. Referrals by the Deans(students with failing grades and dropped Attendance Monitoring Cards), Office of Students Affairs (Students with disciplinary concerns), Faculty, Parents or Other University Personnel'
-  ],
+  process: ['Students can just go to the office walk-in or should be reffered by the dean, instructor, Faculty, Parents, or other University Personnel'],
   type: '',
-  message: 'Kindly go to the CCSD office for them to assist your concern. But take note that you should be reffered by your parent, a University Personnel or a fellow student.',
+  message: 'Kindly go to the CCSD office for them to assist your concern.',
   tags: ['Student', 'Development', 'Facilitation', 'Counseling', 'Service', 'Process']
 }, {
   name: 'Psychological Testing Service',
@@ -244,7 +241,7 @@ var instruction = [{
   '4. Proceed to the MD for the Physical Examination and issuance of Health Certificate.'],
   type: '',
   message: 'Present the endorsement letter to the medical clinic staff to obtain a Physical Exam Checklist. Undergo the different examinations from the checklist. Collate the results and give it to the student assistant. Lastly, proceed to the MD for the Physical Examination and issuancd of your certificate.',
-  tags: ['Physical', 'Medical', 'Examination', 'International', 'OJT', 'IOJT', 'Service', 'Process']
+  tags: ['Physical', 'Medical', 'Examination', 'International', 'IOJT', 'Service', 'Process']
 }, {
   name: 'UBCARES Program',
   process: ['Just go to the ECOS Office for application'],
@@ -547,4 +544,4 @@ var instruction = [{
   tags: ['Student', 'Organization', 'Org', 'Government']
 }];
 
-exports.location = instruction;
+exports.instruction = instruction;
