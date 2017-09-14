@@ -459,6 +459,420 @@ var information = [{
   type: '',
   message: 'Bachelor of Secondary Education (BSED) is a 4 Year Bachelors Degree course offerred in the STE department. After Graduation Licensure Examination for Teachers must be taken',
   tags: ['BSED', 'BS', 'ED', 'Bachelor', 'Secondary', 'Education', 'Program', 'Course', 'STE', 'Baccalaureate']
+}, {
+  name: 'Admission for freshmen',
+  info: 'The admission is the process through which students enter tertiary education in the university. Requirements: Form 138, NSO Birth Certificate, Good Moral Character',
+  type: '',
+  message: 'The admission is the process through which students enter tertiary education in the university. Requirements: Form 138, NSO Birth Certificate, Good Moral Character',
+  tags: ['Admission', 'Freshmen', 'New', 'Student', 'Service', 'Requirements', 'ARC']
+}, {
+  name: 'Admission for Transferee',
+  info: 'The admission is the message through which students enter tertiary education in the university. Requirements: Transfer Credential, NSO Birth Certificate, Good Moral Character',
+  type: '',
+  message: 'The admission is the message through which students enter tertiary education in the university. Requirements: Transfer Credential, NSO Birth Certificate, Good Moral Character',
+  tags: ['Admission', 'Transferee', 'Transfer', 'Student', 'Service', 'Requirements', 'ARC']
+}, {
+  name: 'Enrollment for Freshmen',
+  info: 'Enrolling freshmen to the university. Requirements: Form 138, NSO Birth Certificate, Good Moral Character',
+  type: '',
+  message: 'Enrolling freshmen to the university. Requirements: Form 138, NSO Birth Certificate, Good Moral Character',
+  tags: ['Enrollment', 'Enroll', 'Freshmen', 'Student', 'New', 'Service', 'Requirements', 'ARC']
+}, {
+  name: 'Enrollment for Transferee',
+  info: 'Enrolling transferee to the university. Requirements: Transfer Credential, NSO Birth Certificate, Good Moral Character',
+  type: '',
+  message: 'Enrolling transferee to the university. Requirements: Transfer Credential, NSO Birth Certificate, Good Moral Character',
+  tags: ['Enrollment', 'Enroll', 'Transferee', 'Student', 'Transfer', 'Service', 'Requirements', 'ARC']
+}, {
+  name: 'Enrollment for New International Student',
+  info: 'Enrollment of International Student to the university. Requirements: Student Visa and Passport, Authenticated School Records, CRO Form 14',
+  type: '',
+  message: 'Enrollment of International Student to the university. Requirements: Student Visa and Passport, Authenticated School Records, CRO Form 14',
+  tags: ['International', 'Enroll', 'Enrollment', 'Student', 'Service', 'Requirements', 'ARC']
+}, {
+  name: 'Enrollment for Current Student',
+  info: 'Enrollment of Current Students to the universirt. Requirements: Vailid ID',
+  type: '',
+  message: 'Enrollment of Current Students to the universirt. Requirements: Vailid ID',
+  tags: ['Current', 'Enrollment', 'Enroll', 'Student', 'Service', 'Requirements', 'ARC']
+}, {
+  name: 'Release of Student Records for Graduates',
+  info: 'Releasing documents of graduate students. Requirements: Clearance form',
+  type: '',
+  message: 'Releasing documents of graduate students. Requirements: Clearance form',
+  tags: ['Release', 'Records', 'Graduates', 'Student', 'Service', 'Requirements', 'ARC']
+}, {
+  name: 'Release of Student Records for Under-Graduates',
+  info: 'Releasing documents of under-graduate students Requirements: Clearance form',
+  type: '',
+  message: 'Releasing documents of under-graduate students Requirements: Clearance form',
+  tags: ['Release', 'Records', 'Undergraduate', 'Under-graduate', 'Service', 'Requirements', 'ARC']
+}, {
+  name: 'Athletic Scholarship',
+  info: 'Assists students who are qualified for athletic scholarship. Requirements: None',
+  type: '',
+  message: 'Assists students who are qualified for athletic scholarship. Requirements: None',
+  tags: ['Atheltic', 'Scholarship', 'Service', 'Requirements']
+}, {
+  name: 'Sports Equipment',
+  info: 'Lending of sports equipments. Requirements: Valid ID',
+  type: '',
+  message: 'Lending of sports equipments. Requirements: Valid ID',
+  tags: ['Lending', 'Sports', 'Equipment', 'Borrowing', 'Athletic', 'Requirements']
+}, {
+  name: 'Student development facilitation and counseling services',
+  info: 'We are your family and we are ready to help you overcome your obstacles in life. Requirement: Students can just go to the office/ walk-in but should be reffered by the dean, instructor, Faculty, Parents, or other University Personnel',
+  type: '',
+  message: 'We are your family and we are ready to help you overcome your obstacles in life. Requirement: Students can just go to the office/ walk-in but should be reffered by the dean, instructor, Faculty, Parents, or other University Personnel',
+  tags: ['Student', 'Development', 'Facilitation', 'Counseling', 'Services', 'Requirements', 'CCSD']
+}, {
+  name: 'Psychological Testing Service',
+  info: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  type: '',
+  message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  tags: ['Psychological', 'Test', 'Testing', 'Service', 'CCSD', 'Requirements']
+}, {
+  name: 'Personality Test',
+  info: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  type: '',
+  message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  tags: ['Personality', 'Testing', 'Service', 'Test', 'Requirements', 'CCSD']
+}, {
+  name: 'Interest Test',
+  info: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  type: '',
+  message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  tags: ['Interest', 'Testing', 'Service', 'Test', 'Requirements', 'CCSD']
+}, {
+  name: 'Aptitude Test',
+  info: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  type: '',
+  message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  tags: ['Aptitude', 'Testing', 'Service', 'Test', 'Requirements', 'CCSD']
+}, {
+  name: 'Mental Ability',
+  info: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  type: '',
+  message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  tags: ['Mental', 'Ability', 'Testing', 'Service', 'Test', 'Requirements', 'CCSD']
+}, {
+  name: 'Battery Test',
+  info: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  type: '',
+  message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  tags: ['Battery', 'Testing', 'Service', 'Test', 'Requirements', 'CCSD']
+}, {
+  name: 'Career and placement services',
+  info: 'Career and placement services for graduating students. Requirements: Should be recommended by the instructor or dean',
+  type: '',
+  message: 'Career and placement services for graduating students. Requirements: Should be recommended by the instructor or dean',
+  tags: ['service', 'Career', 'Placement', 'Requirements', 'CCSD']
+}, {
+  name: 'Tooth extraction',
+  info: 'Free tooth extraction available for UB Students and Employees. Requirements: Valid ID',
+  type: '',
+  message: 'Free tooth extraction available for UB Students and Employees. Requirements: Valid ID',
+  tags: ['Free', 'Tooth', 'extraction', 'Service', 'Clinic', 'Requirements']
+}, {
+  name: 'Minor Surgery',
+  info: 'Minor Sugery available for UB Students and Employees. Minor surgeries includes Suturing, Excision, and Circumcision. Requirements: Valid ID',
+  type: '',
+  message: 'Minor Sugery available for UB Students and Employees. Minor surgeries includes Suturing, Excision, and Circumcision. Requirements: Valid ID',
+  tags: ['Minor', 'Surgery', 'Suturing', 'Excision', 'Circumcision', 'Service', 'Clinic', 'Requirements']
+}, {
+  name: 'Physical Examination',
+  info: 'Physical Examination for OJTs, Practicum, Competitions and Clinical exposure. Requirements: Checklist from Clinic, Valid ID',
+  type: '',
+  message: 'Physical Examination for OJTs, Practicum, Competitions and Clinical exposure. Requirements: Checklist from Clinic, Valid ID',
+  tags: ['Physical', 'Examination', 'Service', 'Clinic', 'Requirements']
+}, {
+  name: 'Facilitation of Accident Insurance',
+  info: 'If a student or employee had an accident inside the campus, the university will be the one to pay all the hospital bills. Requirements: Receipts',
+  type: '',
+  message: 'If a student or employee had an accident inside the campus, the university will be the one to pay all the hospital bills. Requirements: Receipts',
+  tags: ['Facilitation', 'Accident', 'Insurance', 'Service', 'Clinic', 'Requirements']
+}, {
+  name: 'Radiology and Medtech/Clinical Laboratory Services',
+  info: 'Radiology and Medtech/Clinical Laboratory Services available for UB Students and Employees. Requirements: Valid ID',
+  type: '',
+  message: 'Radiology and Medtech/Clinical Laboratory Services available for UB Students and Employees. Requirements: Valid ID',
+  tags: ['Radiology', 'Service', 'Medtech', 'Laboratory', 'Clinic', 'Requirements']
+}, {
+  name: 'Vaccinations',
+  info: 'Vaccinations(Hep B; Influenza Vaccine/AH1N1 vaccine; Cervical Cancer; Anti-Pneumonia) available for UB Students, employees and UB Partner Communities. Requirements: Valid ID',
+  type: '',
+  message: 'Vaccinations(Hep B; Influenza Vaccine/AH1N1 vaccine; Cervical Cancer; Anti-Pneumonia) available for UB Students, employees and UB Partner Communities. Requirements: Valid ID',
+  tags: ['Vaccinations', 'Vaccine', 'Service', 'Clinic', 'Requirements']
+}, {
+  name: 'X-ray',
+  info: 'The University offers X-Ray service for all. Requirements: Payment Receipt',
+  type: '',
+  message: 'The University offers X-Ray service for all. Requirements: Payment Receipt',
+  tags: ['X-Ray', 'Service', 'Clinic', 'Requirements']
+}, {
+  name: 'Consultation',
+  info: 'Consultation or chekup available for UB Students and Employees. Requirements: Valid ID',
+  type: '',
+  message: 'Consultation or chekup available for UB Students and Employees. Requirements: Valid ID',
+  tags: ['Consultation', 'Check', 'Up', 'Check-up', 'Consult', 'Service', 'Clinic', 'Requirements']
+}, {
+  name: 'Medical Certificate',
+  info: 'Issuing medical certificate for students who was sent home. Requirements: If seen by another Medical Doctor, present a valid Medical Certificate from the MD. If hospitalized, get a valid Medical Certificate from the Hospital.',
+  type: '',
+  message: 'Issuing medical certificate for students who was sent home. Requirements: If seen by another Medical Doctor, present a valid Medical Certificate from the MD. If hospitalized, get a valid Medical Certificate from the Hospital.',
+  tags: ['Medical', 'Certificate', 'Clinic', 'Requirements', 'Service']
+}, {
+  name: 'Physical/Medical Examination for local OJT/ Practicum (SIHTM)',
+  info: 'Physical/Medical Examination for local OJT/ Practicum available for SIHTM students. Requirements: Results from initial Medical Examination',
+  type: '',
+  message: 'Physical/Medical Examination for local OJT/ Practicum available for SIHTM students. Requirements: Results from initial Medical Examination',
+  tags: ['Physical', 'Examination', 'Exam', 'OJT', 'SIHTM', 'Medical', 'Service', 'IHTM', 'Clinic', 'Requirements']
+}, {
+  name: 'Physical/Medical Examination for local OJT/ Practicum (Non-SIHTM Students)',
+  info: 'Physical/Medical Examination for local OJT/ Practicum available for UB Students. Requirements: Checklist from the Clinic',
+  type: '',
+  message: 'Physical/Medical Examination for local OJT/ Practicum available for UB Students. Requirements: Checklist from the Clinic',
+  tags: ['Physical', 'Examination', 'Exam', 'OJT', 'Medical', 'Service', 'Clinic', 'Requirements']
+}, {
+  name: 'Physical/Medical Examination for International OJT',
+  info: 'Physical/Medical Examination for International OJT available for UB Students. Requirements: Endorsement Letter',
+  type: '',
+  message: 'Physical/Medical Examination for International OJT available for UB Students. Requirements: Endorsement Letter',
+  tags: ['International', 'Physical', 'Examination', 'Exam', 'OJT', 'Medical', 'Service', 'Clinic', 'Requirements']
+}, {
+  name: 'UBCARES Program',
+  info: 'The Community Advancement through Responsive Extension Services (CARES) Program. Requirements: Form from ECOS office, parents consent form/waiver',
+  type: '',
+  message: 'The Community Advancement through Responsive Extension Services (CARES) Program. Requirements: Form from ECOS office, parents consent form/waiver',
+  tags: ['UBCARES', 'Program', 'Outreach', 'Volunteer', 'Service', 'ECOS', 'Requirements']
+}, {
+  name: 'Processees International On The Job Training (IOJT) applicants and exchange scholars',
+  info: 'Requirement: None',
+  type: '',
+  message: 'Processees International On The Job Training (IOJT) applicants and exchange scholars Requirement: None',
+  tags: ['IOJT', 'International', 'Job', 'Training', 'OJT', 'Abroad', 'Service', 'Exhcange', 'Scholars', 'LARC', 'Requirements']
+}, {
+  name: 'Assists the UBAFI in issuing the membership identification cards of its members.',
+  info: 'Requirement: None',
+  type: '',
+  message: 'Assists the UBAFI in issuing the membership identification cards of its members. Requirement: None',
+  tags: ['UBAFI', 'Alumni', 'ID', 'Service', 'LARC', 'Requirements']
+}, {
+  name: 'Gives copies of PRC Board Syllabi for STE Students',
+  info: 'Requirements: None',
+  type: '',
+  message: 'Gives copies of PRC Board Syllabi for STE Students. Requirements: None',
+  tags: ['Board', 'STE', 'Syllabi', 'Service', 'LARC', 'Requirements']
+}, {
+  name: 'Follet-DLM ',
+  info: 'Follet-DLM is a Mobile Application. Requirement: Internet, Web Browser',
+  type: '',
+  message: 'Follet-DLM is a Mobile Application. Requirement: Internet, Web Browser',
+  tags: ['Follet', 'Mobile', 'Application', 'Library']
+}, {
+  name: 'Journals',
+  info: 'There are journals available in the library. Requirements: Valid ID',
+  type: '',
+  message: 'There are journals available in the library. Requirements: Valid ID',
+  tags: ['Journal', 'Books', 'Magazines', 'Newspaper', 'Service', 'Requirement', 'Library']
+}, {
+  name: 'New Library Databases/E-Journals',
+  info: 'Online resources available for students. Requirements: None',
+  type: ['None'],
+  message: 'Online resources available for students. Requirements: None',
+  tags: ['E-Journal', 'Online', 'Journals', 'Service', 'Requirement', 'Library']
+}, {
+  name: 'Clearance signing',
+  info: 'Clearance signing for releasing of records. Requirement: Valid ID',
+  type: ['Valid ID'],
+  message: 'Clearance signing for releasing of records. Requirement: Valid ID',
+  tags: ['Clearance', 'Signing', 'Service', 'Requirement', 'Library']
+}, {
+  name: 'Library Orientation',
+  info: 'A tour on the library. Requirement: Valid ID',
+  type: ['Valid ID'],
+  message: 'A tour on the library. Requirement: Valid ID',
+  tags: ['LIbrary', 'Tour', 'Orientation', 'Service', 'Requirement']
+}, {
+  name: 'Computers for internet surfing in the library',
+  info: 'Availing of students and employees to use computers with internet and also free wifi. Requirements: None',
+  type: '',
+  message: 'Availing of students and employees to use computers with internet and also free wifi. Requirements: None',
+  tags: ['Library', 'Computer', 'WiFi', 'Service', 'Requirement']
+}, {
+  name: 'Discussion rooms',
+  info: 'Availing of the discussion room. Requirement: None',
+  type: '',
+  message: 'Availing of the discussion room. Requirement: None',
+  tags: ['Library', 'Discussion', 'Room', 'Service', 'Requirement']
+}, {
+  name: 'Press releases and advertisements',
+  info: 'Publications of advertisements, newspapers, magazines, and websites.',
+  type: '',
+  message: 'Publications of advertisements, newspapers, magazines, and websites.',
+  tags: ['Press', 'Releases', 'Advertisements', 'Newspapers', 'Magazines', 'Service']
+}, {
+  name: 'Yearbook and Graduation materials',
+  info: 'Yearbooks are optional for Students if they want to avail it or not. Requirements: Ad Requisition Form from MAPS',
+  type: '',
+  message: 'Yearbooks are optional for Students if they want to avail it or not. Requirements: Ad Requisition Form from MAPS',
+  tags: ['Materials', 'Yearbook', 'Graduation', 'Service', 'Requirements', 'MAPS']
+}, {
+  name: 'Social Media Content Development',
+  info: 'Social Media Content Development for students and employees. Requirements: Ad Requisition Form from MAPS',
+  type: '',
+  message: 'Social Media Content Development for students and employees. Requirements: Ad Requisition Form from MAPS',
+  tags: ['Social', 'Media', 'Content', 'Development', 'Service', 'Requirements', 'MAPS']
+}, {
+  name: 'Website Content Development',
+  info: 'Website Content Development for students and employees who wants to be featured in the ubaguio.edu website.Requirements: Ad Requisition Form from MAPS',
+  type: '',
+  message: 'Website Content Development for students and employees who wants to be featured in the ubaguio.edu website.Requirements: Ad Requisition Form from MAPS',
+  tags: ['Website', 'Content', 'Development', 'Service', 'Requirements', 'MAPS']
+}, {
+  name: 'Virus scanning and removal for flash drives and portable hard disk',
+  info: 'Reqruirements: Valid ID',
+  type: '',
+  message: 'Virus scanning and removal for flash drives and portable hard disk. Reqruirements: Valid ID',
+  tags: ['USB', 'Virus', 'Scanning', 'Flashdrive', 'Service', 'Requiremets', 'MIS']
+}, {
+  name: 'Assessment of PC or Laptop',
+  info: 'The office only checks the problem of your laptop or PC, but they dont do repairing. Requirement: Valid ID',
+  type: '',
+  message: 'The office only checks the problem of your laptop or PC, but they dont do repairing. Requirement: Valid ID',
+  tags: ['PC', 'Laptop', 'Assesment', 'Service']
+}, {
+  name: 'Installation of open-source or free software',
+  info: 'The office gives students open source softwares. Requirements: Valid ID',
+  type: '',
+  message: 'The office gives students open source softwares. Requirements: Valid ID',
+  tags: ['Software', 'Installation', 'Service', 'Requiremets', 'MIS']
+}, {
+  name: 'Student ID',
+  info: 'Printing and validation of Student ID. Requirement: A. Freshmen- must be enrolled, receipt of enrollment, B. ID Replacement- replacement form from student affairs, receipt of id replacement payment, C. Validation- ID',
+  type: '',
+  message: 'Printing and validation of Student ID. Requirement: A. Freshmen- must be enrolled, receipt of enrollment, B. ID Replacement- replacement form from student affairs, receipt of id replacement payment, C. Validation- ID',
+  tags: ['Student', 'ID', 'Service', 'Requiremets', 'MIS']
+}, {
+  name: 'Alumni and other IDs',
+  info: 'Printing of Alumni and other IDs. Reqruirements: Alumni- clearance form',
+  type: '',
+  message: 'Printing of Alumni and other IDs. Reqruirements: Alumni- clearance form',
+  tags: ['Alumni', 'Other', 'ID', 'Service', 'Requiremets', 'MIS']
+}, {
+  name: 'Wi-Fi account',
+  info: 'Creation of Wi-Fi account Requirements: Valid ID',
+  type: '',
+  message: 'Creation of Wi-Fi account Requirements: Valid ID',
+  tags: ['Creation', 'Create', 'WiFi', 'Account', 'Service', 'Requiremets', 'MIS']
+}, {
+  name: 'Readmissions',
+  info: 'Getting dropped class cards. Requirement: Valid ID',
+  type: '',
+  message: 'Getting dropped class cards. Requirement: Valid ID',
+  tags: ['Class', 'Card', 'Readmission', 'Service', 'Requirements', 'OSA']
+}, {
+  name: 'Performing Arts',
+  info: 'For students who wants to apply for performing arts scholarship. Requirements: None',
+  type: '',
+  message: 'For students who wants to apply for performing arts scholarship. Requirements: None',
+  tags: ['Performing', 'Arts', 'Scholarship', 'Service', 'Requirements', 'OSA']
+}, {
+  name: 'Format Editing',
+  info: 'Formatting students documents with APA Format. Requirement: A copy of Manuscript, Valid ID',
+  type: '',
+  message: 'Formatting students documents with APA Format. Requirement: A copy of Manuscript, Valid ID',
+  tags: ['Format', 'Editing', 'APA', 'Service', 'Requirements', 'RNDC']
+}, {
+  name: 'Statistic Package for Social Sciences',
+  info: 'SPSS is one of the most popular statistical packages which can perform highly complex data manipulation and analysis with simple instructions. Requirement: Your study or copy of manuscript., Valid ID',
+  type: '',
+  message: 'SPSS is one of the most popular statistical packages which can perform highly complex data manipulation and analysis with simple instructions. Requirement: Your study or copy of manuscript., Valid ID',
+  tags: ['Statistic', 'Package', 'Social', 'Sciences', 'SPSS', 'Assistance', 'Service', 'Requirements', 'RNDC']
+}, {
+  name: 'Poster Preparation',
+  info: 'Preparing poster. Requirement: Request Letter',
+  type: '',
+  message: 'Preparing poster. Requirement: Request Letter',
+  tags: ['Poster', 'Preparation', 'Service', 'Requirements', 'RNDC']
+}, {
+  name: 'Publication of Research findings (Catalyst)',
+  info: 'Requirement: Full manuscript, Ethics Clearance, Letter of Acceptance',
+  type: '',
+  message: 'Publication of Research findings (Catalyst) Requirement: Full manuscript, Ethics Clearance, Letter of Acceptance',
+  tags: ['Publication', 'Research', 'Findings', 'Catalyst', 'Service', 'Requirements', 'RNDC']
+}, {
+  name: 'Tool Validation',
+  info: 'Requirement:Statement of the Problem, Methodology and Questionnaire signed by members of the panelist and adviser.',
+  type: '',
+  message: 'Tool Validation. Requirement:Statement of the Problem, Methodology and Questionnaire signed by members of the panelist and adviser.',
+  tags: ['Tool', 'Validation', 'Service', 'Requirements', 'RNDC']
+}, {
+  name: 'Grammar Check',
+  info: 'Allows students to use Grammarly to check the grammar of their documents or files. Requirement: Valid ID',
+  type: '',
+  message: 'Allows students to use Grammarly to check the grammar of their documents or files. Requirement: Valid ID',
+  tags: ['Grammar', 'Check', 'Service', 'Requirements', 'RNDC']
+}, {
+  name: 'Plagiarism Test',
+  info: 'Allows students to use Grammarly to check the plagiarism of their documents or files. Requirement: Valid ID',
+  type: '',
+  message: 'Allows students to use Grammarly to check the plagiarism of their documents or files. Requirement: Valid ID',
+  tags: ['Plagiarism', 'Test', 'Service', 'Requirements', 'RNDC']
+}, {
+  name: 'Spell Check',
+  info: 'Allows students to use Grammarly to check the spelling of their documents or files. Requirement: Valid ID',
+  type: '',
+  message: 'Allows students to use Grammarly to check the spelling of their documents or files. Requirement: Valid ID',
+  tags: ['Spell', 'Check', 'Service', 'Requirements', 'RNDC']
+}, {
+  name: 'Use of computers',
+  info: 'Allows students to use the office computer. Requirement: Valid ID',
+  type: '',
+  message: 'Allows students to use the office computer. Requirement: Valid ID',
+  tags: ['Computers', 'RNDC', 'Service', 'Requirements', 'RNDC']
+}, {
+  name: 'In-charge of issuance of assessment of school fees/accounts inquiry',
+  info: 'The assessment is automatically generated in the student’s portal, but they can also have the printed assessment if they go to the specific windows here that prints the assessment. Requirements: Valid ID',
+  type: '',
+  message: 'The assessment is automatically generated in the student’s portal, but they can also have the printed assessment if they go to the specific windows here that prints the assessment. Requirements: Valid ID',
+  tags: ['Assessment', 'Fees', 'Account', 'Inquiry', 'Service', 'Requirements', 'SAS']
+}, {
+  name: 'Issuance of examination permits',
+  info: 'Responsible for the issuance of examination permits. Requirements: Assessment of Fee, Payment Receipt',
+  type: '',
+  message: 'Responsible for the issuance of examination permits. Requirements: Assessment of Fee, Payment Receipt',
+  tags: ['Examination', 'Permit', 'Service', 'Requirements', 'SAS']
+}, {
+  name: 'Issuance of Clearance for the release of school credentials',
+  info: 'Before the ARC releases the student’s credentials, the clearance form must be cleared by all offices and the students accounts office will be the last one to sign because they will oversee if the student paid all his/her tuition fee and other fees. Requirements: Signed Clearance Form',
+  type: '',
+  message: 'Before the ARC releases the student’s credentials, the clearance form must be cleared by all offices and the students accounts office will be the last one to sign because they will oversee if the student paid all his/her tuition fee and other fees. Requirements: Signed Clearance Form',
+  tags: ['Clearance', 'Release', 'School', 'Credentials', 'Service', 'Requirements', 'SAS']
+}, {
+  name: 'Investigate complaints, offenses, reports, and any other unusual or suspicious activities in the campus',
+  info: 'The Security Department conducts investigation of various crimes or offenses that happened inside the school campus. Requirement: None',
+  type: '',
+  message: 'The Security Department conducts investigation of various crimes or offenses that happened inside the school campus. Requirement: None',
+  tags: ['Complaints', 'Offenses', 'Reports', 'Suspicious', 'Activities', 'Service', 'Requirements', 'Security']
+}, {
+  name: 'Lost & Found',
+  info: 'Students bring Lost Items to the Security Office for safe-keeping, and returning the lost items to the respective owner. Requirements: Lost Item',
+  type: '',
+  message: 'Students bring Lost Items to the Security Office for safe-keeping, and returning the lost items to the respective owner. Requirements: Lost Item',
+  tags: ['Lost', 'Found', 'Items', 'Service', 'Requirements', 'Security']
+}, {
+  name: 'Security Contact',
+  info: 'Students and employees of the university can contact the security office anytime and anywhere.',
+  type: '',
+  message: 'Students and employees of the university can contact the security office anytime and anywhere.',
+  tags: ['Security', 'Contact', 'Emergency', 'Hotline', 'Service', 'Security']
+}, {
+  name: 'University of Baguio Assistive Extension',
+  info: 'University of Baguio Assistive Extension (UBAE) is an information chatbot catered to answer the questions of the students concerning the university',
+  type: '',
+  message: 'University of Baguio Assistive Extension (UBAE) is an information chatbot catered to answer the questions of the students concerning the university',
+  tags: ['UBAE']
 }];
 
 exports.information = information;

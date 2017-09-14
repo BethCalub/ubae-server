@@ -294,7 +294,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BA','Eng', 'Bachelor', 'Arts', 'English', 'Program', 'Course']
+  tags: ['BA', 'Eng', 'Bachelor', 'Arts', 'English', 'Program', 'Course']
 }, {
   name: 'Bachelor of Arts in Mass Communication',
   acronym: 'BA-Comm',
