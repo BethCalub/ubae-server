@@ -1,14 +1,14 @@
 /**
- * Process model events
+ * Instruction model events
  */
 
 'use strict';
 
 import {EventEmitter} from 'events';
-var ProcessEvents = new EventEmitter();
+var InstructionEvents = new EventEmitter();
 
 // Set max event listeners (0 == unlimited)
-ProcessEvents.setMaxListeners(0);
+InstructionEvents.setMaxListeners(0);
 
 // Model events
 var events = {
@@ -17,19 +17,19 @@ var events = {
 };
 
 // Register the event emitter to the model events
-function registerEvents(Process) {
+function registerEvents(Instruction) {
   for(var e in events) {
     let event = events[e];
-    Process.post(e, emitEvent(event));
+    Instruction.post(e, emitEvent(event));
   }
 }
 
 function emitEvent(event) {
   return function(doc) {
-    ProcessEvents.emit(event + ':' + doc._id, doc);
-    ProcessEvents.emit(event, doc);
+    InstructionEvents.emit(event + ':' + doc._id, doc);
+    InstructionEvents.emit(event, doc);
   };
 }
 
 export {registerEvents};
-export default ProcessEvents;
+export default InstructionEvents;

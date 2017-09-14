@@ -1,14 +1,14 @@
 /**
- * Service model events
+ * Information model events
  */
 
 'use strict';
 
 import {EventEmitter} from 'events';
-var ServiceEvents = new EventEmitter();
+var InformationEvents = new EventEmitter();
 
 // Set max event listeners (0 == unlimited)
-ServiceEvents.setMaxListeners(0);
+InformationEvents.setMaxListeners(0);
 
 // Model events
 var events = {
@@ -17,19 +17,19 @@ var events = {
 };
 
 // Register the event emitter to the model events
-function registerEvents(Service) {
+function registerEvents(Information) {
   for(var e in events) {
     let event = events[e];
-    Service.post(e, emitEvent(event));
+    Information.post(e, emitEvent(event));
   }
 }
 
 function emitEvent(event) {
   return function(doc) {
-    ServiceEvents.emit(event + ':' + doc._id, doc);
-    ServiceEvents.emit(event, doc);
+    InformationEvents.emit(event + ':' + doc._id, doc);
+    InformationEvents.emit(event, doc);
   };
 }
 
 export {registerEvents};
-export default ServiceEvents;
+export default InformationEvents;

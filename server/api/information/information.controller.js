@@ -1,17 +1,17 @@
 /**
  * Using Rails-like standard naming convention for endpoints.
- * GET     /api/services              ->  index
- * POST    /api/services              ->  create
- * GET     /api/services/:id          ->  show
- * PUT     /api/services/:id          ->  upsert
- * PATCH   /api/services/:id          ->  patch
- * DELETE  /api/services/:id          ->  destroy
+ * GET     /api/informations              ->  index
+ * POST    /api/informations              ->  create
+ * GET     /api/informations/:id          ->  show
+ * PUT     /api/informations/:id          ->  upsert
+ * PATCH   /api/informations/:id          ->  patch
+ * DELETE  /api/informations/:id          ->  destroy
  */
 
 'use strict';
 
 import jsonpatch from 'fast-json-patch';
-import Service from './service.model';
+import Information from './information.model';
 
 function respondWithResult(res, statusCode) {
   statusCode = statusCode || 200;
@@ -64,54 +64,54 @@ function handleError(res, statusCode) {
   };
 }
 
-// Gets a list of Services
+// Gets a list of Informations
 export function index(req, res) {
-  return Service.find().exec()
+  return Information.find().exec()
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
 
-// Gets a single Service from the DB
+// Gets a single Information from the DB
 export function show(req, res) {
-  return Service.findById(req.params.id).exec()
+  return Information.findById(req.params.id).exec()
     .then(handleEntityNotFound(res))
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
 
-// Creates a new Service in the DB
+// Creates a new Information in the DB
 export function create(req, res) {
-  return Service.create(req.body)
+  return Information.create(req.body)
     .then(respondWithResult(res, 201))
     .catch(handleError(res));
 }
 
-// Upserts the given Service in the DB at the specified ID
+// Upserts the given Information in the DB at the specified ID
 export function upsert(req, res) {
   if(req.body._id) {
     Reflect.deleteProperty(req.body, '_id');
   }
-  return Service.findOneAndUpdate({_id: req.params.id}, req.body, {new: true, upsert: true, setDefaultsOnInsert: true, runValidators: true}).exec()
+  return Information.findOneAndUpdate({_id: req.params.id}, req.body, {new: true, upsert: true, setDefaultsOnInsert: true, runValidators: true}).exec()
 
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
 
-// Updates an existing Service in the DB
+// Updates an existing Information in the DB
 export function patch(req, res) {
   if(req.body._id) {
     Reflect.deleteProperty(req.body, '_id');
   }
-  return Service.findById(req.params.id).exec()
+  return Information.findById(req.params.id).exec()
     .then(handleEntityNotFound(res))
     .then(patchUpdates(req.body))
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
 
-// Deletes a Service from the DB
+// Deletes a Information from the DB
 export function destroy(req, res) {
-  return Service.findById(req.params.id).exec()
+  return Information.findById(req.params.id).exec()
     .then(handleEntityNotFound(res))
     .then(removeEntity(res))
     .catch(handleError(res));

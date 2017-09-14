@@ -1,6 +1,6 @@
 'use strict';
 
-import Services from '../../service/service.model';
+import Instruction from '../../instruction/instruction.model';
 import Feedback from '../../feedback/feedback.model';
 
 function ubaeResponse(message, story, entries) {
@@ -64,7 +64,7 @@ function generateResults(err, story, userInput, ubae) {
 }
 
 exports.how = function(req, res, userInput, ubae) {
-  return Services.find({
+  return Instruction.find({
     tags: {
       $all: ubae.stemmed
     }

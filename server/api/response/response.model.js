@@ -12,7 +12,7 @@ var ResponseSchema = new mongoose.Schema({
     type: String,
     default: 'General',
     lowercase: true,
-    required: true
+    required: false
   },
   tags: [{
     type: String,

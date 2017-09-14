@@ -39,6 +39,15 @@ import service from './data/services.ubae.js';
 //Programs
 import program from './data/program.ubae.js';
 
+//Instructions
+import instruction from './data/instruction.ubae.js';
+
+import information from './data/information.ubae.js';
+
+import event from './data/event.ubae.js';
+
+import response from './data/response.ubae.js';
+
 exports.accounts = [
   {
     provider: 'local',
@@ -109,3 +118,7 @@ exports.departments = department.department;
 exports.locations = location.location;
 exports.services = service.service;
 exports.programs = program.program;
+exports.instructions = instruction.instruction;
+exports.informations = information.information;
+exports.events = event.event;
+exports.responses = response.response;

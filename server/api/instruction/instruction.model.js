@@ -1,32 +1,24 @@
 'use strict';
 
 import mongoose from 'mongoose';
-import {registerEvents} from './event.events';
+import {registerEvents} from './instruction.events';
 
-var EventSchema = new mongoose.Schema({
+var InstructionSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true
   },
-  event: {
+  process: [{
     type: String,
     required: true
-  },
-  startDate: {
-    type: Date,
-    required: false
-  },
-  endDate: {
-    type: Date,
-    required: false
-  },
+  }],
   type: {
     type: String,
     required: false
   },
   message: {
     type: String,
-    required: true
+    required: false
   },
   tags: [{
     type: String,
@@ -39,5 +31,5 @@ var EventSchema = new mongoose.Schema({
   }
 });
 
-registerEvents(EventSchema);
-export default mongoose.model('Event', EventSchema);
+registerEvents(InstructionSchema);
+export default mongoose.model('Instruction', InstructionSchema);

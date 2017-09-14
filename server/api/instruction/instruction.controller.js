@@ -1,17 +1,17 @@
 /**
  * Using Rails-like standard naming convention for endpoints.
- * GET     /api/processes              ->  index
- * POST    /api/processes              ->  create
- * GET     /api/processes/:id          ->  show
- * PUT     /api/processes/:id          ->  upsert
- * PATCH   /api/processes/:id          ->  patch
- * DELETE  /api/processes/:id          ->  destroy
+ * GET     /api/instructions              ->  index
+ * POST    /api/instructions              ->  create
+ * GET     /api/instructions/:id          ->  show
+ * PUT     /api/instructions/:id          ->  upsert
+ * PATCH   /api/instructions/:id          ->  patch
+ * DELETE  /api/instructions/:id          ->  destroy
  */
 
 'use strict';
 
 import jsonpatch from 'fast-json-patch';
-import Process from './process.model';
+import Instruction from './instruction.model';
 
 function respondWithResult(res, statusCode) {
   statusCode = statusCode || 200;
@@ -64,54 +64,54 @@ function handleError(res, statusCode) {
   };
 }
 
-// Gets a list of Processs
+// Gets a list of Instructions
 export function index(req, res) {
-  return Process.find().exec()
+  return Instruction.find().exec()
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
 
-// Gets a single Process from the DB
+// Gets a single Instruction from the DB
 export function show(req, res) {
-  return Process.findById(req.params.id).exec()
+  return Instruction.findById(req.params.id).exec()
     .then(handleEntityNotFound(res))
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
 
-// Creates a new Process in the DB
+// Creates a new Instruction in the DB
 export function create(req, res) {
-  return Process.create(req.body)
+  return Instruction.create(req.body)
     .then(respondWithResult(res, 201))
     .catch(handleError(res));
 }
 
-// Upserts the given Process in the DB at the specified ID
+// Upserts the given Instruction in the DB at the specified ID
 export function upsert(req, res) {
   if(req.body._id) {
     Reflect.deleteProperty(req.body, '_id');
   }
-  return Process.findOneAndUpdate({_id: req.params.id}, req.body, {new: true, upsert: true, setDefaultsOnInsert: true, runValidators: true}).exec()
+  return Instruction.findOneAndUpdate({_id: req.params.id}, req.body, {new: true, upsert: true, setDefaultsOnInsert: true, runValidators: true}).exec()
 
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
 
-// Updates an existing Process in the DB
+// Updates an existing Instruction in the DB
 export function patch(req, res) {
   if(req.body._id) {
     Reflect.deleteProperty(req.body, '_id');
   }
-  return Process.findById(req.params.id).exec()
+  return Instruction.findById(req.params.id).exec()
     .then(handleEntityNotFound(res))
     .then(patchUpdates(req.body))
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
 
-// Deletes a Process from the DB
+// Deletes a Instruction from the DB
 export function destroy(req, res) {
-  return Process.findById(req.params.id).exec()
+  return Instruction.findById(req.params.id).exec()
     .then(handleEntityNotFound(res))
     .then(removeEntity(res))
     .catch(handleError(res));

@@ -48,8 +48,7 @@ function generateResults(err, story, userInput, ubae) {
       };
     } else {
        // msg = 'This is what I have found. :)';
-      msg = 'The ' + story[0].name + 'is located at ' + story[0].building + ' ' +
-      story[0].floor + ' Floor, Room ' + story[0].room + '.';
+      msg = story[0].message;
       return {
         user: ubaeInput(userInput, ubae),
         result: ubaeResponse(msg, story, length),
@@ -66,10 +65,12 @@ function generateResults(err, story, userInput, ubae) {
 
 exports.where = function(req, res, userInput, ubae) {
   return Location.find({
+    active: true,
     tags: {
       $all: ubae.stemmed
     }
-  }).exec(function(err, story) {
+  }).select('name location type message')
+  .exec(function(err, story) {
     return res.send(generateResults(err, story, userInput, ubae));
   });
 };

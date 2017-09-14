@@ -78,7 +78,7 @@ exports.program = [{
   type: 'Graduate',
   prerequisite: '',
   duration: '3 Years',
-  tags: ['PHDCJSC', 'Doctor', 'Philosophy', 'Criminal', 'Justice', 'Specialization', 'Criminology', 'Program', 'Course']
+  tags: ['PHD', 'CJSC', 'Doctor', 'Philosophy', 'Criminal', 'Justice', 'Specialization', 'Criminology', 'Program', 'Course']
 }, {
   name: 'Master of Science in Criminal Justice with Specialization in Criminology',
   acronym: 'MS-CJSC',
@@ -87,7 +87,7 @@ exports.program = [{
   type: 'Graduate',
   prerequisite: '',
   duration: '2 Years',
-  tags: ['MSCJSC', 'Master', 'Science', 'Criminal', 'Justice', 'Specialization', 'Criminology', 'Program', 'Course']
+  tags: ['MS', 'CJSC', 'Master', 'Science', 'Criminal', 'Justice', 'Specialization', 'Criminology', 'Program', 'Course']
 }, {
   name: 'Bachelor of Science in Criminology',
   acronym: 'BS-CRIM',
@@ -276,7 +276,7 @@ exports.program = [{
   type: 'Graduate',
   prerequisite: '',
   duration: '2 Years',
-  tags: ['MAEng', 'Master', 'Arts', 'English', 'Program', 'Course']
+  tags: ['MA', 'Eng', 'Master', 'Arts', 'English', 'Program', 'Course']
 }, {
   name: 'Bachelor of Arts in Broadcasting',
   acronym: 'BA-Broad',
@@ -285,7 +285,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BABroad', 'Bachelor', 'Arts', 'Broadcasting', 'Program', 'Course']
+  tags: ['BA', 'Broad', 'Bachelor', 'Arts', 'Broadcasting', 'Program', 'Course']
 }, {
   name: 'Bachelor of Arts in English',
   acronym: 'BA-Eng',
@@ -294,7 +294,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BAEng', 'Bachelor', 'Arts', 'English', 'Program', 'Course']
+  tags: ['BA','Eng', 'Bachelor', 'Arts', 'English', 'Program', 'Course']
 }, {
   name: 'Bachelor of Arts in Mass Communication',
   acronym: 'BA-Comm',
@@ -303,7 +303,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BAComm', 'Mass', 'Comm', 'Bachelor', 'Arts', 'Mass', 'Communication', 'Program', 'Course']
+  tags: ['BA', 'Comm', 'Mass', 'Comm', 'Bachelor', 'Arts', 'Mass', 'Communication', 'Program', 'Course']
 }, {
   name: 'Bachelor of Arts in Political Science',
   acronym: 'BA-PolSci',
@@ -312,7 +312,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BAPolSci', 'PolSci', 'Bachelor', 'Arts', 'Political', 'Science', 'Program', 'Course']
+  tags: ['BA', 'PolSci', 'Bachelor', 'Arts', 'Political', 'Science', 'Program', 'Course']
 }, {
   name: 'Bachelor of Science in Psychology',
   acronym: 'BS-Psych',
@@ -321,7 +321,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BSPsych', 'Bachelor', 'Science', 'Psychology', 'Program', 'Course']
+  tags: ['BS', 'Psych', 'Bachelor', 'Science', 'Psychology', 'Program', 'Course']
 }, {
   name: 'Bachelor of Arts in Music',
   acronym: 'BA-Music',
@@ -330,7 +330,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BAMusic', 'Bachelor', 'Arts', 'Music', 'Program', 'Course']
+  tags: ['BA', 'Music', 'Bachelor', 'Arts', 'Music', 'Program', 'Course']
 }, {
   name: 'Extension Classes in Music',
   acronym: '',
@@ -384,7 +384,7 @@ exports.program = [{
   type: 'Graduate',
   prerequisite: '',
   duration: '3 Years',
-  tags: ['PHDevEd', 'Doctor', 'Philosophy', 'Development', 'Education', 'Program', 'Course']
+  tags: ['PH', 'DevEd', 'Doctor', 'Philosophy', 'Development', 'Education', 'Program', 'Course']
 }, {
   name: 'Doctor of Education',
   acronym: 'EDD',
@@ -411,7 +411,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BEEd GenEd', 'Bachelor', 'Elementary', 'Education', 'Major', 'General', 'Education', 'Program', 'Course']
+  tags: ['BEEd', 'GenEd', 'Bachelor', 'Elementary', 'Education', 'Major', 'General', 'Education', 'Program', 'Course']
 }, {
   name: 'Bachelor of Elementary Education, major in Special Education',
   acronym: 'BEEd-SpEd',
@@ -420,7 +420,7 @@ exports.program = [{
   type: 'Baccalaureate',
   prerequisite: '',
   duration: '4 Years',
-  tags: ['BEEd SpEd', 'Bachelor', 'Elementary', 'Special', 'Education', 'Program', 'Course']
+  tags: ['BEEd', 'SpEd', 'Bachelor', 'Elementary', 'Special', 'Education', 'Program', 'Course']
 }, {
   name: 'Bachelor of Secondary Education',
   acronym: 'BSED',
