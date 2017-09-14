@@ -4,7 +4,7 @@
 
 'use strict';
 
-import DeptEvents from './dept.events';
+import ProcessEvents from './process.events';
 
 // Model events to emit
 var events = ['save', 'remove'];
@@ -13,9 +13,9 @@ export function register(socket) {
   // Bind model events to socket events
   for(var i = 0, eventsLength = events.length; i < eventsLength; i++) {
     var event = events[i];
-    var listener = createListener(`dept:${event}`, socket);
+    var listener = createListener(`process:${event}`, socket);
 
-    DeptEvents.on(event, listener);
+    ProcessEvents.on(event, listener);
     socket.on('disconnect', removeListener(event, listener));
   }
 }
@@ -29,6 +29,6 @@ function createListener(event, socket) {
 
 function removeListener(event, listener) {
   return function() {
-    DeptEvents.removeListener(event, listener);
+    ProcessEvents.removeListener(event, listener);
   };
 }

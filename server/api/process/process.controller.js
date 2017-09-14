@@ -1,17 +1,17 @@
 /**
  * Using Rails-like standard naming convention for endpoints.
- * GET     /api/programs              ->  index
- * POST    /api/programs              ->  create
- * GET     /api/programs/:id          ->  show
- * PUT     /api/programs/:id          ->  upsert
- * PATCH   /api/programs/:id          ->  patch
- * DELETE  /api/programs/:id          ->  destroy
+ * GET     /api/processes              ->  index
+ * POST    /api/processes              ->  create
+ * GET     /api/processes/:id          ->  show
+ * PUT     /api/processes/:id          ->  upsert
+ * PATCH   /api/processes/:id          ->  patch
+ * DELETE  /api/processes/:id          ->  destroy
  */
 
 'use strict';
 
 import jsonpatch from 'fast-json-patch';
-import Program from './program.model';
+import Process from './process.model';
 
 function respondWithResult(res, statusCode) {
   statusCode = statusCode || 200;
@@ -64,54 +64,54 @@ function handleError(res, statusCode) {
   };
 }
 
-// Gets a list of Programs
+// Gets a list of Processs
 export function index(req, res) {
-  return Program.find().exec()
+  return Process.find().exec()
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
 
-// Gets a single Program from the DB
+// Gets a single Process from the DB
 export function show(req, res) {
-  return Program.findById(req.params.id).exec()
+  return Process.findById(req.params.id).exec()
     .then(handleEntityNotFound(res))
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
 
-// Creates a new Program in the DB
+// Creates a new Process in the DB
 export function create(req, res) {
-  return Program.create(req.body)
+  return Process.create(req.body)
     .then(respondWithResult(res, 201))
     .catch(handleError(res));
 }
 
-// Upserts the given Program in the DB at the specified ID
+// Upserts the given Process in the DB at the specified ID
 export function upsert(req, res) {
   if(req.body._id) {
     Reflect.deleteProperty(req.body, '_id');
   }
-  return Program.findOneAndUpdate({_id: req.params.id}, req.body, {new: true, upsert: true, setDefaultsOnInsert: true, runValidators: true}).exec()
+  return Process.findOneAndUpdate({_id: req.params.id}, req.body, {new: true, upsert: true, setDefaultsOnInsert: true, runValidators: true}).exec()
 
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
 
-// Updates an existing Program in the DB
+// Updates an existing Process in the DB
 export function patch(req, res) {
   if(req.body._id) {
     Reflect.deleteProperty(req.body, '_id');
   }
-  return Program.findById(req.params.id).exec()
+  return Process.findById(req.params.id).exec()
     .then(handleEntityNotFound(res))
     .then(patchUpdates(req.body))
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
 
-// Deletes a Program from the DB
+// Deletes a Process from the DB
 export function destroy(req, res) {
-  return Program.findById(req.params.id).exec()
+  return Process.findById(req.params.id).exec()
     .then(handleEntityNotFound(res))
     .then(removeEntity(res))
     .catch(handleError(res));

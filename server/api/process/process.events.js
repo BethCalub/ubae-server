@@ -1,14 +1,14 @@
 /**
- * Dept model events
+ * Process model events
  */
 
 'use strict';
 
 import {EventEmitter} from 'events';
-var DeptEvents = new EventEmitter();
+var ProcessEvents = new EventEmitter();
 
 // Set max event listeners (0 == unlimited)
-DeptEvents.setMaxListeners(0);
+ProcessEvents.setMaxListeners(0);
 
 // Model events
 var events = {
@@ -17,19 +17,19 @@ var events = {
 };
 
 // Register the event emitter to the model events
-function registerEvents(Dept) {
+function registerEvents(Process) {
   for(var e in events) {
     let event = events[e];
-    Dept.post(e, emitEvent(event));
+    Process.post(e, emitEvent(event));
   }
 }
 
 function emitEvent(event) {
   return function(doc) {
-    DeptEvents.emit(event + ':' + doc._id, doc);
-    DeptEvents.emit(event, doc);
+    ProcessEvents.emit(event + ':' + doc._id, doc);
+    ProcessEvents.emit(event, doc);
   };
 }
 
 export {registerEvents};
-export default DeptEvents;
+export default ProcessEvents;
