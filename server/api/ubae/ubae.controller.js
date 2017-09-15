@@ -59,6 +59,7 @@ export function nlp(req, res) {
       classifier: ubae.classifier,
       tags: ubae.keywords,
       stemmed: ubae.stemmed.toString().split(','),
+      regex: ubae.regex.toString(),
       help: ubae.help
     });
   } else {

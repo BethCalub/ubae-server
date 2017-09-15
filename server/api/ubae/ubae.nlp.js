@@ -18,6 +18,7 @@ exports.getQuery = function(input) {
     classifier: 'unavailable',
     keywords: stopper.keywordSearch(input),
     stemmed: stemmer.toRegexArrayStemmed(input),
+    regex: new RegExp(stopper.keywordSearch(input).join('|'), 'i'),
     help: linear.helpSearch(input),
     helpCmd: linear.listSearch(input, mod.commandList)
   };

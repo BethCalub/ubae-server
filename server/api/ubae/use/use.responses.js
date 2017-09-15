@@ -38,7 +38,7 @@ exports.response = function(req, res, userInput, ubae) {
   return Response.find({
     active: true,
     tags: {
-      $all: ubae.stemmed
+      $all: ubae.regex
     }
   })
   .select('message')

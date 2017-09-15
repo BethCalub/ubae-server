@@ -6,7 +6,7 @@
 
 var response = [{
   message: 'Hello There! :)',
-  tags: ['hi']
+  tags: ['hi', 'Uy', 'Pssst', 'Yo', 'Huy', 'Hoy', 'Oy']
 }, {
   message: 'Hi! :)',
   tags: ['hello']
@@ -15,10 +15,10 @@ var response = [{
   tags: ['Hey']
 }, {
   message: 'Good morning to you too! Have a nice day! :)',
-  tags: ['Good', 'Morning']
+  tags: ['Good', 'Morning', 'Magandang', 'Umaga', 'Naimbag', 'Agsapa']
 }, {
   message: 'Good Afternoon! How may I help you? :)',
-  tags: ['Good', 'Afternoon', 'noon']
+  tags: ['Good', 'Afternoon', 'noon', 'Magandang', 'Hapon']
 }, {
   message: 'Good Night! Sweet Dreams :)',
   tags: ['Good', 'Night', 'sleep']
@@ -33,19 +33,25 @@ var response = [{
   tags: ['Nice', 'Meet', 'Meeting', 'You']
 }, {
   message: 'Hey! My name is UBAE! :)',
-  tags: ['Your', 'Name']
+  tags: ['Your', 'Name', 'Pangalan']
 }, {
   message: 'Good Bye! It was nice talking to you! :)',
-  tags: ['Good', 'Bye']
+  tags: ['Good', 'Bye', 'Paalam']
 }, {
   message: 'Good Evening! How may I help you?',
-  tags: ['Good', 'Evening', 'Eve']
+  tags: ['Good', 'Evening', 'Eve', 'Magandang', 'Gabi']
 }, {
   message: 'Ooooops! Sorry! I have a boyfriend :)',
-  tags: ['Love', 'You', 'Youre', 'Mine']
+  tags: ['Love', 'You', 'Youre', 'Mine', 'Mahal', 'Kita']
 }, {
   message: 'Im fine thank you! :)',
   tags: ['Kamusta', 'Are', 'You', 'Feeling']
+}, {
+  message: 'Drugs take you to hell, disguised as heaven. Say no to drugs! :)',
+  tags: ['Drugs', 'Marijuana', 'Shabu', 'Cocaine', 'Ecstacy', 'Crack', 'Weed', 'Grass', 'Pot', 'Heroin', 'Meth']
+}, {
+  message: 'A single cigarette contains over 4,800 chemicals, 69 of which are known to cause cancer. Stop Smoking!',
+  tags: ['Smoke', 'Cigarette', 'Yosi', 'Cigar']
 }];
 
 exports.response = response;
