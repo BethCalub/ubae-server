@@ -709,7 +709,7 @@ var information = [{
   name: 'Press releases and advertisements',
   info: 'Publications of advertisements, newspapers, magazines, and websites.',
   type: '',
-  message: 'Publications of advertisements, newspapers, magazines, and websites.',
+  message: 'This service provides the publications of advertisements, newspapers, magazines and websites.',
   tags: ['Press', 'Releases', 'Advertisements', 'Newspapers', 'Magazines', 'Service']
 }, {
   name: 'Yearbook and Graduation materials',
@@ -757,13 +757,13 @@ var information = [{
   name: 'Alumni and other IDs',
   info: 'Printing of Alumni and other IDs. Reqruirements: Alumni- clearance form',
   type: '',
-  message: 'Printing of Alumni and other IDs. Reqruirements: Alumni- clearance form',
+  message: 'MIS Office provides the service of printing Alumni and other IDs\'',
   tags: ['Alumni', 'Other', 'ID', 'Service', 'Requiremets', 'MIS']
 }, {
   name: 'Wi-Fi account',
   info: 'Creation of Wi-Fi account Requirements: Valid ID',
   type: '',
-  message: 'Creation of Wi-Fi account Requirements: Valid ID',
+  message: 'MIS Office provides the service of WiFi account creation.',
   tags: ['Creation', 'Create', 'WiFi', 'Account', 'Service', 'Requiremets', 'MIS']
 }, {
   name: 'Readmissions',
