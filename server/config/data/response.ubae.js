@@ -24,10 +24,10 @@ var response = [{
   tags: ['Good', 'Night', 'sleep']
 }, {
   message: 'Unless your name is Google, dont act like you know everything :)',
-  tags: ['Stupid', 'Moron', 'Dumb', 'Tanga', 'Bobo', 'Noob', 'Unintelligent', 'Ignorant', 'Slow', 'Senseless', 'Nonsense', 'Idiot']
+  tags: ['Stupid', 'Moron', 'Dumb', 'Tanga', 'Bobo', 'Noob', 'Unintelligent', 'Ignorant', 'Slow', 'Senseless', 'Nonsense', 'Idiot', 'Suck']
 }, {
   message: 'Please stop using inappropriate words. Remember, Jesus sees you :)',
-  tags: ['Shit', 'Fuck', 'Ass', 'Asshole', 'Bitch', 'Butt', 'Sex', 'Gago']
+  tags: ['Shit', 'Fuck', 'Ass', 'Asshole', 'Bitch', 'Butt', 'Sex', 'Gago', 'Fucker', 'Putangina', 'Pota', 'Bullshit', 'Tangina', 'Epal']
 }, {
   message: 'Its nice to meet you too! :D',
   tags: ['Nice', 'Meet', 'Meeting', 'You']
@@ -52,6 +52,18 @@ var response = [{
 }, {
   message: 'A single cigarette contains over 4,800 chemicals, 69 of which are known to cause cancer. Stop Smoking!',
   tags: ['Smoke', 'Cigarette', 'Yosi', 'Cigar']
+}, {
+  message: 'Oh sorry! I just wanted to look like you today :)',
+  tags: ['Ugly', 'Panget', 'Unattractive', 'Hideous', 'Horrible', 'Pangit', 'Gross']
+}, {
+  message: 'Fat is a temporary caloric imbalance, but stupid is a permanent genetic malfunction!',
+  tags: ['Fat', 'Taba', 'Obese', 'Overweight', 'Baboy', 'Pig']
+}, {
+  message: 'I’m not weird; I just fall outside your exceptionally narrow view of the world.',
+  tags: ['Weird', 'Strange']
+}, {
+  message: 'Drink Responsibly! :)',
+  tags: ['Drink', 'Shot', 'Inom', 'Beer', 'Wine', 'Emperador', 'Gin']
 }];
 
 exports.response = response;
