@@ -24,10 +24,10 @@ var response = [{
   tags: ['Good', 'Night', 'sleep']
 }, {
   message: 'Unless your name is Google, dont act like you know everything :)',
-  tags: ['Stupid', 'Moron', 'Dumb', 'Tanga', 'Bobo', 'Noob', 'Unintelligent', 'Ignorant', 'Slow', 'Senseless', 'Nonsense', 'Idiot', 'Suck']
+  tags: ['Stupid', 'Moron', 'Dumb', 'Tanga', 'Bobo', 'Noob', 'Unintelligent', 'Ignorant', 'Slow', 'Senseless', 'Nonsense', 'Idiot', 'Suck', 'Tabed']
 }, {
   message: 'Please stop using inappropriate words. Remember, Jesus sees you :)',
-  tags: ['Shit', 'Fuck', 'Ass', 'Asshole', 'Bitch', 'Butt', 'Sex', 'Gago', 'Fucker', 'Putangina', 'Pota', 'Bullshit', 'Tangina', 'Epal']
+  tags: ['Shit', 'Fuck', 'Ass', 'Asshole', 'Bitch', 'Butt', 'Sex', 'Gago', 'Fucker', 'Putangina', 'Pota', 'Bullshit', 'Tangina', 'Epal', 'Kingina', 'Ukisabam', 'Ukinam']
 }, {
   message: 'Its nice to meet you too! :D',
   tags: ['Nice', 'Meet', 'Meeting', 'You']
@@ -64,6 +64,9 @@ var response = [{
 }, {
   message: 'Drink Responsibly! :)',
   tags: ['Drink', 'Shot', 'Inom', 'Beer', 'Wine', 'Emperador', 'Gin']
+}, {
+  message: 'You’re Welcome :)',
+  tags: ['Thank', 'You', 'Thanks', 'Salamat', 'Ty']
 }];
 
 exports.response = response;

@@ -16,8 +16,8 @@ var instruction = [{
     '3. You will then go to the respective deans office.'
   ],
   type: '',
-  message: 'First, you must go to the ARC extension and fill up the online form. After that, submit all your documents to the admission area for checking and for the creation of your official ID number. And lastly, go to the Dean\'s office of the course you want to take up.',
-  tags: ['Admission', 'Freshmen', 'New', 'Student', 'ARC', 'Service', 'Process']
+  message: 'For the admission of freshmen, first you must go to the ARC extension and fill up the online form. After that, submit all your documents to the admission area for checking and for the creation of your official ID number. And lastly, go to the Dean\'s office of the course you want to take up.',
+  tags: ['Admission', 'Freshmen', 'New', 'Student', 'ARC', 'Service', 'Admitted', 'Process']
 }, {
   name: 'Admission for Transferee',
   process: ['1. Go to ARC Extension to fill up form online',
@@ -25,8 +25,8 @@ var instruction = [{
     '3. You will then go to the respective deans office.'
   ],
   type: '',
-  message: 'First, you must go to the ARC extension and fill up the online form. After that, submit all your documents to the admission area for checking and for the creation of your official ID number. And lastly, go to the Dean\'s office of the course you want to take up.',
-  tags: ['Admission', 'Transferee', 'Student', 'ARC', 'Service', 'Process']
+  message: 'For the admission of transferees, first you must go to the ARC extension and fill up the online form. After that, submit all your documents to the admission area for checking and for the creation of your official ID number. And lastly, go to the Dean\'s office of the course you want to take up.',
+  tags: ['Admission', 'Transferee', 'Student', 'ARC', 'Service', 'Admitted', 'Process']
 }, {
   name: 'Enrollment for Freshmen',
   process: ['1. Go to ARC Extension to fill up form online',
@@ -36,8 +36,8 @@ var instruction = [{
     '5. Proceed to MIS for your ID and printed schedule'
   ],
   type: '',
-  message: 'First, you need to go to the ARC Extension to fill up the online form. After that, you need to submit your documents to the admission area for the checking of your documents and for the creation of your official ID number. Then you will need to proceed to the respective Dean\'s of the course you want to take up for the enrollment of subjects. For the next step, you will need to pay the required downpayment to the cashier, and lastly, go to the MIS office for the printing of your ID and schedule. ',
-  tags: ['Enrollment', 'Freshmen', 'Student', 'ARC', 'Service', 'Process']
+  message: 'For freshmen enrollment, first you need to go to the ARC Extension to fill up the online form. After that, you need to submit your documents to the admission area for the checking of your documents and for the creation of your official ID number. Then you will need to proceed to the respective Dean\'s of the course you want to take up for the enrollment of subjects. For the next step, you will need to pay the required downpayment to the cashier, and lastly, go to the MIS office for the printing of your ID and schedule. ',
+  tags: ['Enrollment', 'Freshmen', 'Freshman', 'New', 'Student', 'ARC', 'Service', 'Process']
 }, {
   name: 'Enrollment for Transferee',
   process: ['1. Go to ARC Extension to fill up form online',
@@ -47,7 +47,7 @@ var instruction = [{
     '5. Proceed to MIS for your ID and printed schedule'
   ],
   type: '',
-  message: 'First, you need to go to the ARC Extension to fill up the online form. After that, you need to submit your documents to the admission area for the checking of your documents and for the creation of your official ID number. Then you will need to proceed to the respective Dean\'s of the course you want to take up for the enrollment of subjects. For the next step, you will need to pay the required downpayment to the cashier, and lastly, go to the MIS office for the printing of your ID and schedule. ',
+  message: 'To enroll as a transferee, first you need to go to the ARC Extension to fill up the online form. After that, you need to submit your documents to the admission area for the checking of your documents and for the creation of your official ID number. Then you will need to proceed to the respective Dean\'s of the course you want to take up for the enrollment of subjects. For the next step, you will need to pay the required downpayment to the cashier, and lastly, go to the MIS office for the printing of your ID and schedule. ',
   tags: ['Enrollment', 'Transferee', 'Student', 'ARC', 'Service', 'Process']
 }, {
   name: 'Enrollment for New International Student',
@@ -69,7 +69,7 @@ var instruction = [{
     '4. Proceed to MIS for Application of ID and printing of schedule'
   ],
   type: '',
-  message: 'Kindly go to the respective Dean\'s of your department and register the subjects you prefer. Next step is you need to pay the required downpayment to the cashier. And lastly, proceed to the MIS Office for the printing of your schedule and ID. ',
+  message: 'Kindly go to the respective Dean\'s office of your department and register the subjects you prefer. Next step is you need to pay the required downpayment to the cashier. And lastly, proceed to the MIS Office for the printing of your schedule and ID. ',
   tags: ['Enrollment', 'Current', 'Old', 'Student', 'Service', 'Process']
 }, {
   name: 'Release of Student Records for Graduates',
@@ -79,8 +79,9 @@ var instruction = [{
     '4. Your record will be released after 15 days'
   ],
   type: '',
-  message: 'First, you need to get a clearance form from your Dean\'s office, the Library and AMD. Submit the clearance form to the ARC Office for checking. If there are no deficiencies, ARC will release your claim stamp. And lastly, kindly wait for 15 days for the release of your record.',
-  tags: ['Release', 'Student', 'Records', 'Graduates', 'Service', 'Process']
+  message: 'For the Realease of Student Records, first you need to get a clearance form from your Dean\'s office, the Library and AMD. Submit the clearance form to the ARC Office for checking. If there are no deficiencies, ARC will release your claim stamp. And lastly, kindly wait for 15 days for the release of your record.',
+  tags: ['Release', 'Student', 'Records', 'Graduates', 'Service', 'Transcript', 'TOR', 'Scholastic', 
+  'Course', 'Description', 'Clock', 'Hours', 'Diploma', 'Documentary', 'Stamp', 'HS', 'Form', '137', 'Copy', 'Grades', 'Process']
 }, {
   name: 'Release of Student Records for Under-Graduates',
   process: ['1. Get clearance from Dean, Library and AMD',
@@ -172,7 +173,7 @@ var instruction = [{
     '3. You will then be examined for X-ray, Dental and other required Medical Examinations'
   ],
   type: '',
-  message: 'First, get the checklist from the clinic and pay the required amount to the cashier. Then you can proceed to the Physical Examination such as X Ray, Dental and other Medical Examinations.',
+  message: 'To avail of the Physical Examination, first get the checklist from the clinic and pay the required amount to the cashier. Then you can proceed to the Physical Examination such as X Ray, Dental and other Medical Examinations.',
   tags: ['Physical', 'Examination', 'Service', 'Process']
 }, {
   name: 'Facilitation of Accident Insurance',
@@ -286,7 +287,7 @@ var instruction = [{
     '6. Tap Log in.'
   ],
   type: '',
-  message: 'First, download and install the Destiny Quest Mobile app which is available from the App Store or Google Play. Lauch the app and enter the URL: (follett.ubaguio.edu) and tap Connect. Select your school library and enter your username which is your ID Number and your password as your last name. Tap login and Enjoy.',
+  message: 'For the Follet-DLM Mobile App, first you need to download and install the Destiny Quest Mobile app which is available from the App Store or Google Play. Lauch the app and enter the URL: (follett.ubaguio.edu) and tap Connect. Select your school library and enter your username which is your ID Number and your password as your last name. Tap login and Enjoy.',
   tags: ['Follet', 'DLM', 'Mobile', 'Application', 'Service', 'Process']
 }, {
   name: 'Journals',
@@ -414,7 +415,7 @@ var instruction = [{
     '3. Go to the MIS office and present your replacement form and receipt'
   ],
   type: '',
-  message: 'First, you need to go to OSA and fill up the replacement form. Then you need to pay the required amount to the cashier. Now you can proceed to MIS and present the receipt.',
+  message: 'To replace your Student ID, first you need to go to OSA and fill up the replacement form. Then you need to pay the required amount to the cashier. Now you can proceed to MIS and present the receipt.',
   tags: ['Replacement', 'Student', 'ID', 'Service', 'Process']
 }, {
   name: 'Printing of Alumni and Other IDs',
@@ -440,7 +441,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Proceed to OSA and fill up the readmission slip. Be sure to bring your valid ID.',
-  tags: ['Readmission', 'Dropped', 'Class', 'Card', 'Service', 'Process']
+  tags: ['Readmission', 'Dropped', 'Class', 'Card', 'Readmitted', 'Service', 'Process']
 }, {
   name: 'Performing Arts',
   process: ['1. Go to student account and fill up scholarship form or yellow form',
@@ -547,7 +548,7 @@ var instruction = [{
     '*If the you have an outstanding balance, you should pay your fee first'
   ],
   type: '',
-  message: 'First, you need to submit your clearance form to the Students Accounts Section. The Office will review your account if it has deficiencies.',
+  message: 'For the issuance of clearance for the release of school credentials, first you need to submit your clearance form to the Students Accounts Section. The Office will review your account if it has deficiencies.',
   tags: ['Clearance', 'Release', 'School', 'Credentials', 'Service', 'Process']
 }, {
   name: 'Investigate Complaints, Offenses, Reports, and any Other Unusual or Suspicious Activities in the Campus',
@@ -578,6 +579,18 @@ var instruction = [{
   type: '',
   message: 'Regarding student organizations, seek for more information to your respective Dean\'s office.',
   tags: ['Student', 'Organization', 'Org', 'Government']
+}, {
+  name: 'Certificate Request to ARC for Graduates ',
+  process: '2nd Floor, D Building, Beside UB Gym',
+  type: '',
+  message: 'If you are a graduate, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. ',
+  tags: ['Certificate', 'Enrollment', 'Grades', 'Earned', 'Units', 'GWA', 'General', 'Weighted', 'Average', 'English', 'Medium', 'Instruction', 'Attendance', 'Graduate']
+}, {
+  name: 'Certificate Request to ARC for Under Graduates ',
+  process: '2nd Floor, D Building, Beside UB Gym',
+  type: '',
+  message: 'If you are an under graduate, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. ',
+  tags: ['Certificate', 'Enrollment', 'Grades', 'Earned', 'Units', 'GWA', 'General', 'Weighted', 'Average', 'English', 'Medium', 'Instruction', 'Attendance', 'Under', 'Graduate']
 }];
 
 exports.instruction = instruction;

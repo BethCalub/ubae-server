@@ -60,6 +60,7 @@ export function nlp(req, res) {
       tags: ubae.keywords,
       stemmed: ubae.stemmed.toString().split(','),
       regex: ubae.regex.toString(),
+      regexArray: ubae.regexArray.toString().split(','),
       help: ubae.help
     });
   } else {

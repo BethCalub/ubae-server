@@ -35,7 +35,7 @@ function createFeedback(_in, cmd, mod, tag, ubaeresponse = '') {
 }
 
 exports.response = function(req, res, userInput, ubae) {
-  return Response.find({
+  return Response.findOne({
     active: true,
     tags: {
       $all: ubae.regex
@@ -45,23 +45,14 @@ exports.response = function(req, res, userInput, ubae) {
   .exec(function(err, story) {
     var msg = '';
     if(err) throw err;
-    var length = story.length;
-    if(story.length > 0) {
-      if(story.length > 1) {
-        msg = 'I found ' + story.length +
-          ' entries. For now let\'s try to make it more specific. :)';
-        return res.send({
-          user: ubaeInput(userInput, ubae),
-          result: ubaeResponse(msg, story, length),
-        });
-      } else {
-        msg = story[0].message;
-        return res.send({
-          user: ubaeInput(userInput, ubae),
-          result: ubaeResponse(msg, story, length),
-        });
-      }
-    } else {
+    var length = 1;
+    try {
+      msg = story.message;
+      return res.send({
+        user: ubaeInput(userInput, ubae),
+        result: ubaeResponse(msg, story, length),
+      });
+    } catch(error) {
       msg = 'Sorry! :( but I can\'t find anything related';
       createFeedback(userInput, ubae.command, ubae.classifier, ubae.keywords, msg);
       return res.send({

@@ -48,7 +48,7 @@ function generateResults(err, story, userInput, ubae) {
       };
     } else {
       // msg = 'This is what I have found. :)';
-      msg = 'This is the process for ' + story[0].name + '. :)';
+      msg = story[0].message;
       return {
         user: ubaeInput(userInput, ubae),
         result: ubaeResponse(msg, story, length),

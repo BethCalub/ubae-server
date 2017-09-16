@@ -26,10 +26,10 @@ export default function seedDatabaseIfNeeded() {
           .catch(err => console.log('error populating Locations', err));
       });
     
-    Feedbacks.find({}).remove()
-      .then(() => {
-        console.log('finished deleting Feedbacks');
-      });
+    // Feedbacks.find({}).remove()
+    //   .then(() => {
+    //     console.log('finished deleting Feedbacks');
+    //   });
 
     Instructions.find({}).remove()
       .then(() => {

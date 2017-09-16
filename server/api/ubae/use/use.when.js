@@ -65,8 +65,9 @@ function generateResults(err, story, userInput, ubae) {
 
 exports.when = function(req, res, userInput, ubae) {
   return Event.find({
+    active: true,
     tags: {
-      $all: ubae.keywords
+      $all: ubae.regexArray
     }
   }).exec(function(err, story) {
     return res.send(generateResults(err, story, userInput, ubae));
