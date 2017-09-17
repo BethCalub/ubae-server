@@ -14,7 +14,7 @@ export class FeedbackComponent {
     this.showNotif = false;
 
     this.tableName = 'Feedbacks';
-    this.tableEntries = ['#', 'Inquiry', 'Command', 'Modifier', 'Tags', 'Response', 'Date', 'Time', 'Resolved'];
+    this.tableEntries = ['#', 'Inquiry', 'Command', 'Tags', 'Response', 'Date', 'Time', 'Resolved'];
 
     $scope.$on('$destroy', function() {
       socket.unsyncUpdates('feedback');

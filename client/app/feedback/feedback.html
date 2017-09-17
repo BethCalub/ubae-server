@@ -39,7 +39,6 @@
           <td style="width: 20px">{{$index + 1}}</td>
           <td><a href="#">{{response.userinput}}</a></td>
           <td>{{response.command | uppercase}}</td>
-          <td>{{response.modifier | uppercase}}</td>
           <td style="width: 35%">
             <ul>
               <li ng-repeat="tags in response.keywords">
@@ -51,7 +50,7 @@
           </td>
           <td>{{response.response}}</td>
           <td>{{response.timestamp | date: 'shortDate'}}</td>
-          <td>{{response.timestamp | date: 'hh:mm:ss a'}}</td>
+          <td>{{response.timestamp | date: 'hh:mm:ssa'}}</td>
           <td>{{response.resolved}}</td>
           <!-- <td>
             <button type="button" class="close" ng-click="eventCtrl.deleteEvent(response._id)"
