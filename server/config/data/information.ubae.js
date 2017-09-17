@@ -1005,6 +1005,48 @@ var information = [{
   type: '',
   message: 'The Courses offered in SLAS are Graduate Programs: Master in Public Administration and Master of Arts in English. Baccalaureate Programs: Bachelor of Arts in Broadcasting, Bachelor of Arts in English, Bachelor of Arts in Mass Communication, Bachelor of Arts in Political Science, Bachelor of Arts in Psychology and Bachelor of Arts in Music. Special Programs: Extension classes in Music(10 hrs) and Short Courses in Photopgraphy and Digital Arts.',
   tags: ['Offered', 'Available', 'Courses', 'Programs', 'SLAHS', 'School', 'Liberal', 'Arts', 'Human', 'Sciences']
+}, {
+  name: 'Certificates',
+  info: 'Certificate of Enrolment, Certificate of Grades, Certificate of Earned Units, Certificate of English Medium of Instruction, Certificate of Attendance in the University of Baguio, Others- as needed/required by an accrediting agency. Requirements: Clearance form',
+  type: '',
+  message: 'These are the offered certificates by the ARC: Certificate of Enrolment, Certificate of Grades, Certificate of Earned Units, Certificate of English Medium of Instruction, Certificate of Attendance in the University of Baguio, Others- as needed/required by an accrediting agency. Requirements: Clearance form',
+  tags: ['Requirements', 'Certificate', 'Enrolment', 'Grades', 'Earned', 'Units', 'English', 'Medium', 'Instruction', 'Attendance', 'Others', 'Offered', 'Available', 'ARC']
+}, {
+  name: 'Honor Graduate College Entrance Scholarships',
+  info: 'Valedictorian - 100% on tuition and miscellaneous, Salutatorian - 70% on tuition and miscellaneous, Honorable - Mention 25% on tuition and miscllaneous for one year. Requirement: Certification attesting their status',
+  type: '',
+  message: 'Honor Graduate College Entrance Scholarships are available to incoming freshmen who are: Valedictorian - 100% on tuition and miscellaneous, Salutatorian - 70% on tuition and miscellaneous, Honorable Mention - 25% on tuition and miscellaneous for one year. Requirement: Certification attesting their status',
+  tags: ['Requirements', 'Honor', 'Entrance', 'Scholarship', 'Valedictorian', 'Salutatorian', 'Freshmen', 'Available', 'Offered']
+}, {
+  name: 'UB Science High Graduate College Entrance Scholarships',
+  info: 'UB Science High Graduate - 100% on tuition and miscellaneous for one year',
+  type: '',
+  message: 'UB Science High Graduate College Entrance Scholarships are available to incoming freshmen who are: UB Science High Graduate - 100% on tuition and miscellaneous for one year',
+  tags: ['Science', 'Highschool', 'UB', 'Entrance', 'Scholarship', 'Available', 'Offered', 'available']
+}, {
+  name: 'College Entrance Scholarships',
+  info: '95 and above - 100% on tuition and miscellaneous for one semester, 90 to 94.99 - 75% on tuition and miscellaneous for one semester, 85 to 89.99 - 50% on tuition and miscllaneous for one semester. Requirement: Certification attesting their status, for Ub highschool graduate: application form from Vice president for Academic Affairs',
+  type: '',
+  message: 'College Entrance Scholarships are available to incoming freshmen who are UB highschool or Public school within baguio or la trinidad graduates whose grades are: 95 and above - 100% on tuition and miscellaneous for one semester, 90 to 94.99 - 75% on tuition and miscellaneous for one semester, 85 to 89.99 - 50% on tuition and miscllaneous for one semester. Requirement: Certification attesting their status, for Ub highschool graduate: application form from Vice president for Academic Affairs',
+  tags: ['College', 'Entrance', 'Scholarship', 'UB', 'Highschool', 'Public', 'School', 'Baguio', 'Latrinidad', 'offered', 'available']
+}, {
+  name: 'Science, Technology and Engineering Program(STE) College Entrance Scholarships',
+  info: 'For Baguio city and La trinidad graduates - 100% on tuition and miscellaneous for one semester, For graduates outside Baguio and La Trinidad - 50% on tuition and miscllaneous for one semester. Requirement: Certification attesting their status',
+  type: '',
+  message: 'Science, Technology and Engineering Program(STE) College Entrance Scholarships are available to incoming freshmen who are graduates of Science, Technology and Engineering Program: For Baguio city and La trinidad graduates - 100% on tuition and miscellaneous for one semester, For graduates outside Baguio and La Trinidad - 50% on tuition and miscllaneous for one semester. Requirement: Certification attesting their status',
+  tags: ['College', 'Entrance', 'Scholarship', 'Science', 'Technologdy', 'Engineering', 'Program', 'Graduates', 'offered', 'available']
+}, {
+  name: 'Other College Entrance Scholarships',
+  info: 'ESE program, High School Student Publication Scholarship (Editor-in-chief/Associate Editor-in-Chief), Best in Englis/Math/Science, Sibling discount, CAT/PMT Corps Commander, High School Student, Government Scholarship(Student Government President/ Student Government Vice President), UB Star examination. Requirements: Certification Attesting their status',
+  type: '',
+  message: 'These are the other offered College Entrance Scholarships: ESE program, High School Student Publication Scholarship (Editor-in-chief/Associate Editor-in-Chief), Best in Englis/Math/Science, Sibling discount, CAT/PMT Corps Commander, High School Student, Government Scholarship(Student Government President/ Student Government Vice President), UB Star examination. Requirements: Certification Attesting their status',
+  tags: ['College', 'Entrance', 'Scholarship', 'Science', 'Technologdy', 'Engineering', 'Program', 'Graduates', 'High', 'School', 'Student', 'Publication', 'Editor', 'Best', 'English', 'Math', 'Science', 'CAT', 'PMT', 'Corps', 'Commander', 'Government', 'President', 'Vice', 'STAR', 'offered', 'available']
+}, {
+  name: 'Service grants',
+  info: 'Student Assitant/ Marshall, UB Employee Dependents, Athletes under the Athletics Department, UB Models, Miss UB Pageant winners, UB Color Guards Scholarship. Requirements: application letter, endorsement letter(if applicable), certificate of employment(if applicable), Official Transcipt of Records',
+  type: '',
+  message: 'These are the offered Service Grant Scholarships: Student Assitant/ Marshall, UB Employee Dependents, UB Models, Miss UB Pageant winners, UB Color Guards Scholarship. Requirements: application letter, endorsement letter(if applicable), certificate of employment(if applicable), Official Transcipt of Records',
+  tags: ['Service', 'Grant', 'Scholarship', 'offered', 'available', 'Student', 'Assistant', 'Marshall', 'UB', 'Employee', 'Dependents', 'Model', 'Miss', 'Pagent', 'Winner', 'Guards', 'Color']
 }];
 
 exports.information = information;

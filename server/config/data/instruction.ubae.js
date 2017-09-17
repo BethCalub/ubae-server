@@ -80,8 +80,9 @@ var instruction = [{
   ],
   type: '',
   message: 'For the Realease of Student Records, first you need to get a clearance form from your Dean\'s office, the Library and AMD. Submit the clearance form to the ARC Office for checking. If there are no deficiencies, ARC will release your claim stamp. And lastly, kindly wait for 15 days for the release of your record.',
-  tags: ['Release', 'Student', 'Records', 'Already', 'Graduates', 'Service', 'Transcript', 'TOR', 'Scholastic', 
-  'Course', 'Description', 'Clock', 'Hours', 'Diploma', 'Documentary', 'Stamp', 'HS', 'Form', '137', 'Copy', 'Grades', 'Process']
+  tags: ['Release', 'Student', 'Records', 'Already', 'Graduates', 'Service', 'Transcript', 'TOR', 'Scholastic',
+    'Course', 'Description', 'Clock', 'Hours', 'Diploma', 'Documentary', 'Stamp', 'HS', 'Form', '137', 'Copy', 'Grades', 'Process'
+  ]
 }, {
   name: 'Release of Student Records for Under-Graduates',
   process: ['1. Get clearance from Dean, Library and AMD',
@@ -501,7 +502,7 @@ var instruction = [{
   type: '',
   message: 'For Grammar Check, go to the RNDC and login to the logbook and send a Manuscript to the RNDC email.',
   tags: ['Grammar', 'Check', 'Avail', 'Use', 'Service', 'Process']
-},, {
+}, , {
   name: 'Grammarly',
   process: ['1. Go to the RNDC Office and login to the log book',
     '2. Send Manuscript to RNDC email.'
@@ -541,8 +542,7 @@ var instruction = [{
   tags: ['Assessment', 'Fee', 'Accounts', 'Service', 'get', 'Process']
 }, {
   name: 'Issuance of Promissory Note',
-  process: ['1. Fill Up the form from the Student Accounts Section'
-  ],
+  process: ['1. Fill Up the form from the Student Accounts Section'],
   type: '',
   message: 'Go to the Students Accounts Section and fill up the form.',
   tags: ['Promissory', 'Note', 'Request', 'Service', 'Process']
