@@ -15,9 +15,10 @@ exports.getQuery = function(input) {
     command: linear.commandSearch(input, mod.commandList),
     classifier: 'unavailable',
     keywords: stopper.keywordSearch(input),
-    stemmed: stemmer.toRegexArrayStemmed(input),
+    stemmed: stemmer.toRegexArray(stopper.keywordSearch(input)),
+    porter: stemmer.toRegexArrayStemmed(input),
+    lancaster: stemmer.toRegexArrayLStemmed(input),
     regex: new RegExp('^' + stopper.keywordSearch(input).join('|^'), 'i'),
-    regexArray: stemmer.toRegexArray(stopper.keywordSearch(input)),
     help: linear.helpSearch(input),
     helpCmd: linear.listSearch(input, mod.commandList)
   };

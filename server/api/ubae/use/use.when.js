@@ -67,7 +67,7 @@ exports.when = function(req, res, userInput, ubae) {
   return Event.find({
     active: true,
     tags: {
-      $all: ubae.regexArray
+      $all: ubae.stemmed
     }
   }).select('name event type message')
   .exec(function(err, story) {
