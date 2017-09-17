@@ -24,6 +24,8 @@ export function use(req, res) {
           return UbaeSearch.searchWhere(req, res, userInput, ubae);
         case 'how':
           return UbaeSearch.searchHow(req, res, userInput, ubae);
+        case 'which':
+          return UbaeSearch.searchWhich(req, res, userInput, ubae);
         default:
           return UbaeSearch.searchResponse(req, res, userInput, ubae);
         }

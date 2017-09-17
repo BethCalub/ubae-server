@@ -68,7 +68,8 @@ exports.how = function(req, res, userInput, ubae) {
     tags: {
       $all: ubae.stemmed
     }
-  }).exec(function(err, story) {
+  }).select('name process type message')
+  .exec(function(err, story) {
     return res.send(generateResults(err, story, userInput, ubae));
   });
 };

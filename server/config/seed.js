@@ -7,11 +7,9 @@
 import User from '../api/user/user.model';
 import Locations from '../api/location/location.model';
 import Feedbacks from '../api/feedback/feedback.model';
-// import Departments from '../api/department/department.model';
-// import Programs from '../api/program/program.model';
-// import Services from '../api/service/service.model';
 import Instructions from '../api/instruction/instruction.model';
 import Informations from '../api/information/information.model';
+import Providers from '../api/provider/provider.model';
 import Events from '../api/event/event.model';
 import Responses from '../api/response/response.model';
 import config from './environment/';
@@ -37,6 +35,13 @@ export default function seedDatabaseIfNeeded() {
           .then(() => console.log('finished populating Instructions'))
           .catch(err => console.log('error populating Instructions', err));
       });
+
+    Providers.find({}).remove()
+      .then(() => {
+        Providers.create(UbaeData.providers)
+          .then(() => console.log('finished populating Providers'))
+          .catch(err => console.log('error populating Providers', err));
+      });  
 
     Responses.find({}).remove()
       .then(() => {

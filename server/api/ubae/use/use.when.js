@@ -69,7 +69,8 @@ exports.when = function(req, res, userInput, ubae) {
     tags: {
       $all: ubae.regexArray
     }
-  }).exec(function(err, story) {
+  }).select('name event type message')
+  .exec(function(err, story) {
     return res.send(generateResults(err, story, userInput, ubae));
   });
 };
