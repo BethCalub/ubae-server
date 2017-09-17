@@ -15,34 +15,34 @@ var response = [{
   tags: ['Hey']
 }, {
   message: 'Good morning to you too! Have a nice day! :)',
-  tags: ['Good', 'Morning', 'Magandang', 'Umaga', 'Naimbag', 'Agsapa']
+  tags: ['Good', 'Morning']
 }, {
   message: 'Good Afternoon! How may I help you? :)',
-  tags: ['Good', 'Afternoon', 'noon', 'Magandang', 'Hapon']
+  tags: ['Good', 'Afternoon', 'noon']
 }, {
   message: 'Good Night! Sweet Dreams :)',
   tags: ['Good', 'Night', 'sleep']
 }, {
   message: 'Unless your name is Google, dont act like you know everything :)',
-  tags: ['Stupid', 'Moron', 'Dumb', 'Tanga', 'Bobo', 'Noob', 'Unintelligent', 'Ignorant', 'Slow', 'Senseless', 'Nonsense', 'Idiot', 'Suck', 'Tabed']
+  tags: ['Stupid', 'Moron', 'Dumb', 'Noob', 'Unintelligent', 'Ignorant', 'Slow', 'Senseless', 'Nonsense', 'Idiot', 'Suck']
 }, {
   message: 'Please stop using inappropriate words. Remember, Jesus sees you :)',
-  tags: ['Shit', 'Fuck', 'Ass', 'Asshole', 'Bitch', 'Butt', 'Sex', 'Gago', 'Fucker', 'Putangina', 'Pota', 'Bullshit', 'Tangina', 'Epal', 'Kingina', 'Ukisabam', 'Ukinam']
+  tags: ['Shit', 'Fuck', 'Ass', 'Asshole', 'Bitch', 'Butt', 'Sex', 'Fucker', 'Bullshit']
 }, {
   message: 'Its nice to meet you too! :D',
   tags: ['Nice', 'Meet', 'Meeting', 'You']
 }, {
   message: 'Hey! My name is UBAE! :)',
-  tags: ['Your', 'Name', 'Pangalan']
+  tags: ['Your', 'Name']
 }, {
   message: 'Good Bye! It was nice talking to you! :)',
-  tags: ['Good', 'Bye', 'Paalam']
+  tags: ['Good', 'Bye']
 }, {
   message: 'Good Evening! How may I help you?',
-  tags: ['Good', 'Evening', 'Eve', 'Magandang', 'Gabi']
+  tags: ['Good', 'Evening', 'Eve']
 }, {
   message: 'Ooooops! Sorry! I have a boyfriend :)',
-  tags: ['Love', 'You', 'Youre', 'Mine', 'Mahal', 'Kita']
+  tags: ['Love', 'You', 'Youre', 'Mine']
 }, {
   message: 'Im fine thank you! :)',
   tags: ['Kamusta', 'Are', 'You', 'Feeling']
@@ -54,10 +54,10 @@ var response = [{
   tags: ['Smoke', 'Cigarette', 'Yosi', 'Cigar']
 }, {
   message: 'Oh sorry! I just wanted to look like you today :)',
-  tags: ['Ugly', 'Panget', 'Unattractive', 'Hideous', 'Horrible', 'Pangit', 'Gross']
+  tags: ['Ugly', 'Unattractive', 'Hideous', 'Horrible', 'Pangit', 'Gross']
 }, {
   message: 'Fat is a temporary caloric imbalance, but stupid is a permanent genetic malfunction!',
-  tags: ['Fat', 'Taba', 'Obese', 'Overweight', 'Baboy', 'Pig']
+  tags: ['Fat', 'Obese', 'Overweight', 'Pig', 'Large']
 }, {
   message: 'I’m not weird; I just fall outside your exceptionally narrow view of the world.',
   tags: ['Weird', 'Strange']
@@ -66,7 +66,7 @@ var response = [{
   tags: ['Drink', 'Shot', 'Inom', 'Beer', 'Wine', 'Emperador', 'Gin']
 }, {
   message: 'You’re Welcome :)',
-  tags: ['Thank', 'You', 'Thanks', 'Salamat', 'Ty']
+  tags: ['Thank', 'You', 'Thanks', 'Ty']
 }];
 
 exports.response = response;

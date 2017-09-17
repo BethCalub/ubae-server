@@ -29,6 +29,7 @@ var provider = [{
     'Master',
     'offered',
     'offers',
+    'Available',
     'School',
     'Department',
     'Courses',
@@ -79,6 +80,7 @@ var provider = [{
     'Philosophy',
     'offered',
     'offers',
+    'Available',
     'School',
     'Department',
     'Courses',
@@ -113,6 +115,7 @@ var provider = [{
     'major',
     'offered',
     'offers',
+    'Available',
     'School',
     'Department',
     'Courses',
@@ -152,6 +155,7 @@ var provider = [{
     'major',
     'offered',
     'offers',
+    'Available',
     'School',
     'Department',
     'Courses',
@@ -183,6 +187,7 @@ var provider = [{
     'major',
     'offered',
     'offers',
+    'Available',
     'School',
     'Department',
     'Courses',
@@ -226,6 +231,7 @@ var provider = [{
     'Master',
     'offered',
     'offers',
+    'Available',
     'School',
     'Department',
     'Courses',
@@ -260,6 +266,7 @@ var provider = [{
     'Science',
     'offered',
     'offers',
+    'Available',
     'School',
     'Department',
     'Courses',
@@ -283,6 +290,7 @@ var provider = [{
     'Master',
     'offered',
     'offers',
+    'Available',
     'School',
     'Department',
     'Courses',
@@ -300,7 +308,7 @@ var provider = [{
   offer: ['Bachelor of Laws and Letters'],
   type: '',
   message: 'It is offered by the School of Law',
-  tags: ['Bachelor', 'LLB', 'Laws', 'Letters', 'offered', 'courses', 'programs', 'offers', 'school', 'department'],
+  tags: ['Bachelor', 'LLB', 'Laws', 'Letters', 'offered', 'courses', 'programs', 'offers', 'Available', 'school', 'department'],
 }, {
   name: 'School of Nursing',
   offer: ['Bachelor of Science in Nursing', 'Certificate in Health Care Services'],
@@ -311,6 +319,7 @@ var provider = [{
     'Science',
     'offered',
     'offers',
+    'Available',
     'School',
     'Department',
     'Department',
@@ -345,6 +354,7 @@ var provider = [{
     'Philosophy',
     'offered',
     'offers',
+    'Available',
     'School',
     'Department',
     'Department',
@@ -392,6 +402,7 @@ var provider = [{
     'Undergraduates',
     'Offered',
     'Offers',
+    'Available',
     'Office',
     'Services'
   ]
@@ -400,7 +411,7 @@ var provider = [{
   offer: ['Athletic Scholarship', 'Sports Equipment'],
   type: '',
   message: 'It is offered by the Athletics Office',
-  tags: ['Atheltic', 'Scholarship', 'Lending', 'Sports', 'Equipment', 'Offered', 'Services', 'Offers', 'Office']
+  tags: ['Atheltic', 'Scholarship', 'Lending', 'Sports', 'Equipment', 'Offered', 'Services', 'Offers', 'Available', 'Office']
 }, {
   name: 'Center for Counseling and Student Development',
   offer: ['Student development facilitation and counseling services',
@@ -431,6 +442,7 @@ var provider = [{
     'Placement',
     'Offered',
     'offers',
+    'Available',
     'Office',
     'Services'
   ]
@@ -483,6 +495,7 @@ var provider = [{
     'International',
     'Offered',
     'offers',
+    'Available',
     'Office',
     'Services'
   ]
@@ -497,6 +510,7 @@ var provider = [{
     'Volunteer',
     'Offered',
     'offers',
+    'Available',
     'Office',
     'Services'
   ]
@@ -505,7 +519,7 @@ var provider = [{
   offer: ['Assists the UBAFI in issuing the membership identification cards of its members.', 'Gives copies of PRC Board Syllabi for STE Students'],
   type: '',
   message: 'It is offered by the Linkages, Alumni, Review Center',
-  tags: ['UBAFI', 'Alumni', 'ID', 'Board', 'STE', 'Syllabi', 'Offered', 'Services', 'Offers', 'Office'],
+  tags: ['UBAFI', 'Alumni', 'ID', 'Board', 'STE', 'Syllabi', 'Offered', 'Services', 'Offers', 'Available', 'Office'],
 }, {
   name: 'UB Library',
   offer: ['Follet-DLM ',
@@ -538,6 +552,7 @@ var provider = [{
     'Room',
     'Offered',
     'offers',
+    'Available',
     'Office',
     'Services'
   ],
@@ -564,6 +579,7 @@ var provider = [{
     'Website',
     'Offered',
     'offers',
+    'Available',
     'Office',
     'Services'
   ],
@@ -598,6 +614,7 @@ var provider = [{
     'Account',
     'Offered',
     'offers',
+    'Available',
     'Office',
     'Services'
   ],
@@ -647,6 +664,7 @@ var provider = [{
     'Computers',
     'Offered',
     'offers',
+    'Available',
     'Office',
     'Services'
   ],
@@ -670,6 +688,7 @@ var provider = [{
     'Credentials',
     'Offered',
     'offers',
+    'Available',
     'Office',
     'Services'
   ],
@@ -694,6 +713,7 @@ var provider = [{
     'Activities',
     'Offered',
     'offers',
+    'Available',
     'Office',
     'Services'
   ],
