@@ -1125,6 +1125,42 @@ var information = [{
   type: '',
   message: 'The Services Offered by the Linkages, Alumni and Review Center are the Processing of International On The Job Training (IOJT) applicants and exchange scholars, Assisting of the UBAFI in issuing the membership identification cards of its members, and Giving of copies of PRC Board Syllabi for STE Students.',
   tags: ['Services', 'Offered', 'Available', 'LARC', 'Linkages', 'Alumni', 'Review', 'Center']
+}, {
+  name: 'University Academic Scholar',
+  info: 'Deans List / Academic Scholars',
+  type: '',
+  message: 'Deans List / Academic Scholars are offered to students',
+  tags: ['University', 'Academic', 'Scholarship', 'offered', 'available', 'Student', 'Deans', 'List', 'DL']
+}, {
+  name: 'Military / Police Scholarship',
+  info: 'UB DILG Uniformed Personnel Scholarship, UB NBI Scholarship, AFP Scholarship, USVA Scholarship. Requirements: Application form from sas',
+  type: '',
+  message: 'These are the scholarships under Military / Police Scholarship: UB DILG Uniformed Personnel Scholarship, UB NBI Scholarship, AFP Scholarship, USVA Scholarship. Requirements: Application form from sas',
+  tags: ['Military', 'Police', 'Scholarship', 'offered', 'available', 'Student', 'UB', 'DILG', 'Uniformed', 'NBI', 'AFP', 'USVA']
+}, {
+  name: 'University level IV scholarship',
+  info: 'Weighted average: 95 - 99, Tuition waiver: 100%, Misc. fee Waiver: 40%',
+  type: '',
+  message: 'A University level IV scholarship must have a Weighted average of 95 - 99 and is granted a tuition waiver of 100% and Misc. fee Waiver of 40%',
+  tags: ['University', 'Level', 'Scholarship', 'offered', 'available', 'Student', 'IV', 'Type']
+}, {
+  name: 'University level III scholarship',
+  info: 'Weighted average: 93 - 94.99, Tuition waiver: 75%, Misc. fee Waiver: 30%',
+  type: '',
+  message: 'A University level III scholarship must have a Weighted average of 93 - 94.99 and is granted a tuition waiver of 75% and Misc. fee Waiver of 30%',
+  tags: ['University', 'Level', 'Scholarship', 'offered', 'available', 'Student', 'III', 'Type']
+}, {
+  name: 'University level II scholarship',
+  info: 'Weighted average: 90 - 92.99, Tuition waiver: 50%, Misc. fee Waiver: 20%',
+  type: '',
+  message: 'A University level II scholarship must have a Weighted average of 90 - 92.99 and is granted a tuition waiver of 50% and Misc. fee Waiver of 20%',
+  tags: ['University', 'Level', 'Scholarship', 'offered', 'available', 'Student', 'II', 'Type']
+}, {
+  name: 'University level I scholarship',
+  info: 'Weighted average: 87 - 89.99, Tuition waiver: 25%, Misc. fee Waiver: 10%',
+  type: '',
+  message: 'A University level II scholarship must have a Weighted average of 87 - 89.99 and is granted a tuition waiver of 25% and Misc. fee Waiver of 10%',
+  tags: ['University', 'Level', 'Scholarship', 'offered', 'available', 'Student', 'I', 'Type']
 }];
 
 exports.information = information;
