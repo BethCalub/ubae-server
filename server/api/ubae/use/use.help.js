@@ -33,7 +33,7 @@ exports.help = function(req, res, userInput, ubae) {
     });
   default:
     return res.send({
-      result: ubaeResponse('To inquire for information related to the University. Your questions must start with WHAT, WHEN, WHERE, HOW, or WHICH.')
+      result: ubaeResponse('To inquire information regarding the processes, requirements, events and locations in the University, please enter your question starting with WHAT, WHEN, WHERE, HOW or WHICH. You can also ask help for each commands by typing \'help <command>\'. Thank you! :)')
     });
   }
 };
