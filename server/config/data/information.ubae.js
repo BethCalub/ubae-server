@@ -32,67 +32,67 @@ var information = [{
   info: 'The School of Business Administration and Accountancy aims to graduate responsible and conscientious accounting and business professionals who are respected members of the community',
   type: '',
   message: 'The School of Business Administration and Accountancy aims to graduate responsible and conscientious accounting and business professionals who are respected members of the community',
-  tags: ['SBAA', 'Department', 'Accounting', 'Accountancy', 'Business', 'Administration', 'School', 'Meaning', 'Description']
+  tags: ['SBAA', 'Department', 'College', 'Accounting', 'Accountancy', 'Business', 'Administration', 'School', 'Meaning', 'Description']
 }, {
   name: 'School of Criminal Justice and Public Safety',
   info: 'The School of Criminal Justice and Public Safety, in its dynamic atmosphere for learning, endeavors to train future Criminologists and Forensic Scientists who embody the ideals of patriotism, justice, truth, integrity and service.',
   type: '',
   message: 'The School of Criminal Justice and Public Safety, in its dynamic atmosphere for learning, endeavors to train future Criminologists and Forensic Scientists who embody the ideals of patriotism, justice, truth, integrity and service.',
-  tags: ['SCJPS', 'Department', 'crim', 'police', 'Criminal', 'Justice', 'Public', 'Safety', 'School', 'Meaning', 'Description']
+  tags: ['SCJPS', 'Department', 'College', 'crim', 'police', 'Criminal', 'Justice', 'Public', 'Safety', 'School', 'Meaning', 'Description']
 }, {
   name: 'School of Engineering and Architecture',
   info: 'The School of Engineering and Architecture, in a dynamic and relevant academic environment, is committed to develop internationally-competitive experts in their field of specialization.',
   type: '',
   message: 'The School of Engineering and Architecture, in a dynamic and relevant academic environment, is committed to develop internationally-competitive experts in their field of specialization.',
-  tags: ['SEA', 'Department', 'Engineering', 'Engineer', 'Architecture', 'Arki', 'School', 'Meaning', 'Description']
+  tags: ['SEA', 'Department', 'College', 'Engineering', 'Engineer', 'Architecture', 'Arki', 'School', 'Meaning', 'Description']
 }, {
   name: 'School of International Hospitality and Tourism Management',
   info: 'The School of International Hospitality and Tourism Management commits itself to train worldwide experts in the industry.',
   type: '',
   message: 'The School of International Hospitality and Tourism Management commits itself to train worldwide experts in the industry.',
-  tags: ['SIHTM', 'Department', 'Tourism', 'HRM', 'International', 'Hospitality', 'Tourism', 'Management', 'School', 'Meaning', 'Description']
+  tags: ['SIHTM', 'Department', 'College', 'Tourism', 'HRM', 'International', 'Hospitality', 'Tourism', 'Management', 'School', 'Meaning', 'Description']
 }, {
   name: 'School of Information Technology',
   info: 'The School of Information Technology envisions itself as a leading educator that develops students to become competent, innovative, and morally upright information technology specialists',
   type: '',
   message: 'The School of Information Technology envisions itself as a leading educator that develops students to become competent, innovative, and morally upright information technology specialists',
-  tags: ['SIT', 'IT', 'Information', 'Technology', 'CS', 'ComSci', 'CompSci', 'COE', 'Department', 'School', 'Meaning', 'Description']
+  tags: ['SIT', 'IT', 'Information', 'Technology', 'CS', 'ComSci', 'CompSci', 'COE', 'Department', 'College', 'School', 'Meaning', 'Description']
 }, {
   name: 'School of Liberal Arts and Human Sciences',
   info: 'The School of Liberal Arts and Human Sciences provides its students with total education apt to their chosen career.',
   type: '',
   message: 'The School of Liberal Arts and Human Sciences provides its students with total education apt to their chosen career.',
-  tags: ['SLAHS', 'Department', 'Liberal', 'Arts', 'Human', 'Sciences', 'School', 'Meaning', 'Description']
+  tags: ['SLAHS', 'Department', 'College', 'Liberal', 'Arts', 'Human', 'Sciences', 'School', 'Meaning', 'Description']
 }, {
   name: 'School of Natural Sciences',
   info: 'The School of Natural Sciences is a dynamic and value oriented community committed to the advancement of the modern health caresystem.',
   type: '',
   message: 'The School of Natural Sciences is a dynamic and value oriented community committed to the advancement of the modern health caresystem.',
-  tags: ['SNS', 'Department', 'SNS', 'Natural', 'Sciences', 'School', 'Meaning', 'Description']
+  tags: ['SNS', 'Department', 'College', 'SNS', 'Natural', 'Sciences', 'School', 'Meaning', 'Description']
 }, {
   name: 'School of Dentistry',
   info: 'The School of Dentistry is committed in providing excellent dental education to produce competitive and socially responsible dentists.',
   type: '',
   message: 'The School of Dentistry is committed in providing excellent dental education to produce competitive and socially responsible dentists.',
-  tags: ['SOD', 'Department', 'SOD', 'Dentist', 'Dentistry', 'School', 'Meaning', 'Description']
+  tags: ['SOD', 'Department', 'College', 'SOD', 'Dentist', 'Dentistry', 'School', 'Meaning', 'Description']
 }, {
   name: 'School of Law',
   info: 'The University of Baguio School of Law endows advocates of law to advance the promotion of justice through adequate quality Legal Education.',
   type: '',
   message: 'The University of Baguio School of Law endows advocates of law to advance the promotion of justice through adequate quality Legal Education.',
-  tags: ['SOL', 'Department', 'SOL', 'Law', 'Lawyer', 'School', 'Meaning', 'Description']
+  tags: ['SOL', 'Department', 'College', 'SOL', 'Law', 'Lawyer', 'School', 'Meaning', 'Description']
 }, {
   name: 'School of Nursing',
   info: 'The School of Nursing commits itself to the development of exceptionally competent and value-driven health professionals.',
   type: '',
   message: 'The School of Nursing commits itself to the development of exceptionally competent and value-driven health professionals.',
-  tags: ['SON', 'Department', 'SON', 'Nursing', 'Nurse', 'School', 'Meaning', 'Description']
+  tags: ['SON', 'Department', 'College', 'SON', 'Nursing', 'Nurse', 'School', 'Meaning', 'Description']
 }, {
   name: 'School of Teacher Education',
   info: 'The School of Teacher Education envisions to develop teachers inbued with the Christian philosophy of education, appreciation and understanding of the role of the teacher in human development, social progress, citizenship training, and commitment to the teaching profession.',
   type: '',
   message: 'The School of Teacher Education envisions to develop teachers inbued with the Christian philosophy of education, appreciation and understanding of the role of the teacher in human development, social progress, citizenship training, and commitment to the teaching profession.',
-  tags: ['STE', 'Department', 'STE', 'Educ', 'Education', 'Teacher', 'School', 'Meaning', 'Description']
+  tags: ['STE', 'Department', 'College', 'STE', 'Educ', 'Education', 'Teacher', 'School', 'Meaning', 'Description']
 }, {
   name: 'Admissions and Records Center',
   info: 'The ARC, as the record keeper and the show-window of the University of Baguio, is the central repository of student records that allows the efficient and timely access to and releasing of accurate documents.',
@@ -1047,6 +1047,84 @@ var information = [{
   type: '',
   message: 'These are the offered Service Grant Scholarships: Student Assitant/ Marshall, UB Employee Dependents, UB Models, Miss UB Pageant winners, UB Color Guards Scholarship. Requirements: application letter, endorsement letter(if applicable), certificate of employment(if applicable), Official Transcipt of Records',
   tags: ['Service', 'Grant', 'Scholarship', 'offered', 'available', 'Student', 'Assistant', 'Marshall', 'UB', 'Employee', 'Dependents', 'Model', 'Miss', 'Pagent', 'Winner', 'Guards', 'Color']
+}, {
+  name: 'Services Offered by the Library',
+  info: 'The services offered by the Library are the Library Sections, Follet-DLM Mobile Application, Journals, New Library Databases/E-Journals, Clearance signing, Library Orientation, Computers for internet surfing in the library, and Discussion rooms.',
+  type: '',
+  message: 'The services offered by the Library are the Library Sections, Follet-DLM Mobile Application, Journals, New Library Databases/E-Journals, Clearance signing, Library Orientation, Computers for internet surfing in the library, and Discussion rooms.',
+  tags: ['Services', 'Offered', 'Available', 'Library', 'Lib', 'Main', 'Extension', 'Centennial']
+}, {
+  name: 'Services Offered by R&DC',
+  info: 'The services offered by the Research and Development Center are Format Editing, Statistics Assistance, Poster Preparation, Publication of Research findings (Catalyst), Presentation of Research findings, Tool Validation, Grammar Check, Spell Check, Plagiarism Test, and Use of Computers.',
+  type: '',
+  message: 'The services offered by the Research and Development Center are Format Editing, Statistics Assistance, Poster Preparation, Publication of Research findings (Catalyst), Presentation of Research findings, Tool Validation, Grammar Check, Spell Check, Plagiarism Test, and Use of Computers.',
+  tags: ['Services', 'Offered', 'Available', 'Research', 'Development', 'Center', 'R&DC', 'RnDC']
+}, {
+  name: 'Services Offered by the Clinic',
+  info: 'The services offered by the Clinic are Free tooth extraction, Minor Surgery, Physical Examination for OJTs, Practicum, competitions and clinical exposure, Facilitation of Accident Insurance, Radiology and Medtech/Clinical Laboratory Services, Vaccinations(Hep B; Influenza Vaccine/AH1N1 vaccine; Cervical Cancer), Consultations and X-ray.',
+  type: '',
+  message: 'The services offered by the Clinic are Free tooth extraction, Minor Surgery, Physical Examination for OJTs, Practicum, competitions and clinical exposure, Facilitation of Accident Insurance, Radiology and Medtech/Clinical Laboratory Services, Vaccinations(Hep B; Influenza Vaccine/AH1N1 vaccine; Cervical Cancer), Consultations and X-ray.',
+  tags: ['Services', 'Offered', 'Available', 'Clinic', 'Clinical', 'Laboratory']
+}, {
+  name: 'Services Offered by the Security Department',
+  info: 'The services offered by the Security Department are Investigate complaints, offenses, reports, and any other unusual or suspicious activities in the campus; Lost & Found; They can be contacted in case of emergency.',
+  type: '',
+  message: 'The services offered by the Security Department are Investigate complaints, offenses, reports, and any other unusual or suspicious activities in the campus; Lost & Found; They can be contacted in case of emergency.',
+  tags: ['Services', 'Offered', 'Available', 'Security', 'Department']
+}, {
+  name: 'Services Offered by ECOS',
+  info: 'The Service of ECOS is the UBCARES Program.',
+  type: '',
+  message: 'The Service of ECOS is the UBCARES Program.',
+  tags: ['Services', 'Offered', 'Available', 'ECOS', 'Extension', 'Community', 'Outreach', 'Services']
+}, {
+  name: 'Services Offered by SAS',
+  info: 'The Services that Student Accounts Section offer is that they are In-charge of issuance of assessment of school fees/accounts inquiry, Responsible for the issuance of examination permits, and Responsible for the issuance of clearance for the release of school credentials.',
+  type: '',
+  message: 'The Services that Student Accounts Section offer is that they are In-charge of issuance of assessment of school fees/accounts inquiry, Responsible for the issuance of examination permits, and Responsible for the issuance of clearance for the release of school credentials.',
+  tags: ['Services', 'Offered', 'Available', 'SAS', 'Student', 'Accounts', 'Section']
+}, {
+  name: 'Services Offered by MAPS',
+  info: 'The Services that Media Affairs and Publications Office offers are Press releases and advertisements, Website content development, Yearbook and Graduation materials, and Social Media content development.',
+  type: '',
+  message: 'The Services that Media Affairs and Publications Office offers are Press releases and advertisements, Website content development, Yearbook and Graduation materials, and Social Media content development.',
+  tags: ['Services', 'Offered', 'Available', 'MAPS', 'Media', 'Affairs', 'Publications', 'Office']
+}, {
+  name: 'Services offered by ARC',
+  info: 'The Services offered by the Admissions and Records Center are Admission, Enrollment, Release of Student Records and Certification.',
+  type: '',
+  message: 'The Services offered by the Admissions and Records Center are Admission, Enrollment, Release of Student Records and Certification.',
+  tags: ['Services', 'Offered', 'Available', 'Admissions', 'Records', 'Center', 'ARC']
+}, {
+  name: 'Services Offered by MIS',
+  info: 'The Services that Management Information Systems provides are Virus scanning and removal for flash drives and portable hard disk, Assessment of PC/laptop, Installation of open-source/free software, Printing and validation of student ID, Printing of alumni and other IDs, Creation of Wi-Fi account, and creating and maintaining of Wifi Areas.',
+  type: '',
+  message: 'The Services that Management Information Systems provides are Virus scanning and removal for flash drives and portable hard disk, Assessment of PC/laptop, Installation of open-source/free software, Printing and validation of student ID, Printing of alumni and other IDs, Creation of Wi-Fi account, and creating and maintaining of Wifi Areas.',
+  tags: ['Services', 'Offered', 'Available', 'MIS', 'Management', 'Information', 'System']
+}, {
+  name: 'Services Offered by CCSD',
+  info: 'The Services Offered by the Center for Counseling and Student Development are Student development facilitation and counseling services, Psychological testing service (Personality Test, Interest, Aptitude, Mental Ability and Battery Test), and Career and placement services.',
+  type: '',
+  message: 'The Services Offered by the Center for Counseling and Student Development are Student development facilitation and counseling services, Psychological testing service (Personality Test, Interest, Aptitude, Mental Ability and Battery Test), and Career and placement services.',
+  tags: ['Services', 'Offered', 'Available', 'CCSD', 'Center', 'Couseling', 'Student', 'Development']
+}, {
+  name: 'Services Offered by OSA',
+  info: 'The Services Offered by the Office of Student Affairs are Readmissions (Getting of Dropped Class Cards) and in charge of the Application for Performing Arts Scholarships.',
+  type: '',
+  message: 'The Services Offered by the Office of Student Affairs are Readmissions (Getting of Dropped Class Cards) and in charge of the Application for Performing Arts Scholarships.',
+  tags: ['Services', 'Offered', 'Available', 'OSA', 'Office', 'Student', 'Affairs']
+}, {
+  name: 'Services Offered by the Athletics Office',
+  info: 'The Services Offered by the Athletics Office are Assisting of students who are qualified for athletic scholarship and Lending of sports equipment.',
+  type: '',
+  message: 'The Services Offered by the Athletics Office are Assisting of students who are qualified for athletic scholarship and Lending of sports equipment.',
+  tags: ['Services', 'Offered', 'Available', 'Athletics', 'Office', 'Athlete']
+}, {
+  name: 'Services Offered by LARC',
+  info: 'The Services Offered by the Linkages, Alumni and Review Center are the Processing of International On The Job Training (IOJT) applicants and exchange scholars, Assisting of the UBAFI in issuing the membership identification cards of its members, and Giving of copies of PRC Board Syllabi for STE Students.',
+  type: '',
+  message: 'The Services Offered by the Linkages, Alumni and Review Center are the Processing of International On The Job Training (IOJT) applicants and exchange scholars, Assisting of the UBAFI in issuing the membership identification cards of its members, and Giving of copies of PRC Board Syllabi for STE Students.',
+  tags: ['Services', 'Offered', 'Available', 'LARC', 'Linkages', 'Alumni', 'Review', 'Center']
 }];
 
 exports.information = information;

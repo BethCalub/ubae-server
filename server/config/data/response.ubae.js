@@ -27,7 +27,7 @@ var response = [{
   tags: ['Stupid', 'Moron', 'Dumb', 'Noob', 'Unintelligent', 'Ignorant', 'Slow', 'Senseless', 'Nonsense', 'Idiot', 'Suck']
 }, {
   message: 'Please stop using inappropriate words. Remember, Jesus sees you :)',
-  tags: ['Shit', 'Fuck', 'Ass', 'Asshole', 'Bitch', 'Butt', 'Sex', 'Fucker', 'Bullshit']
+  tags: ['Shit', 'Fuck', 'Ass', 'Asshole', 'Bitch', 'Butt', 'Sex', 'Fucker', 'Bullshit', 'Tits', 'Boobs', 'Boobies', 'Titties', 'Nudes', 'Pakyu', 'Shet', 'Pakshet', 'Dick', 'Vagina', 'Pussy']
 }, {
   message: 'Its nice to meet you too! :D',
   tags: ['Nice', 'Meet', 'Meeting', 'You']

@@ -26,8 +26,11 @@ var location = [{
   location: 'A Building, 8th Floor, Room A801',
   type: '',
   message: 'The SCJPS Dean\'s Office is located at the 8th Floor of A Building, Room A801.',
-  tags: ['SCJPS', 'Dean', 'Office',
+  tags: ['SCJPS', 
+    'Dean', 
+    'Office',
     'school',
+    'college',
     'criminal',
     'justice',
     'public',
@@ -43,6 +46,7 @@ var location = [{
   message: 'The SOD Dean\'s Office is located at the 3rd Floor of B Building, Room B301.',
   tags: ['SOD', 'Dean', 'Office',
     'school',
+    'college',
     'dentistry',
     'location',
     'department',
@@ -55,6 +59,7 @@ var location = [{
   message: 'The SEA Dean\'s Office is located at the 2nd Basement Floor of H Building, Room HB202.',
   tags: ['SEA', 'Dean', 'Office',
     'school',
+    'college',
     'engineering',
     'architecture',
     'location',
@@ -68,6 +73,7 @@ var location = [{
   message: 'The SIT Dean\'s Office is located at the 2nd Floor of F Building, Room F201.',
   tags: ['SIT', 'Dean', 'Office',
     'school',
+    'college',
     'information',
     'technology',
     'location',
@@ -81,6 +87,7 @@ var location = [{
   message: 'The SIHTM Dean\'s Office is located at the A Floor of A Building.',
   tags: ['SIHTM', 'Dean', 'Office',
     'school',
+    'college',
     'international',
     'hospitality',
     'tourism',
@@ -95,6 +102,7 @@ var location = [{
   message: 'The SOL Dean\'s Office is located at the 1st Floor of F Building, Room F104.',
   tags: ['SOL', 'Dean', 'Office',
     'school',
+    'college',
     'law',
     'location',
     'department',
@@ -107,6 +115,7 @@ var location = [{
   message: 'The SLAHS Dean\'s Office is located at the 2nd Floor of H Building, Room H201.',
   tags: ['SLAHS', 'Dean', 'Office',
     'school',
+    'college',
     'liberal',
     'arts',
     'human',
@@ -122,6 +131,7 @@ var location = [{
   message: 'The SNS Dean\'s Office is located at the 5th Floor of B Building, Room B501.',
   tags: ['SNS Dean', 'Dean', 'Office',
     'school',
+    'college',
     'natural',
     'science',
     'location',
@@ -135,6 +145,7 @@ var location = [{
   message: 'The SON Dean\'s Office is located at the 3rd Floor of A Building, Room A301.',
   tags: ['SON', 'Dean', 'Office',
     'school',
+    'college',
     'nursing',
     'location',
     'department',
@@ -147,6 +158,7 @@ var location = [{
   message: 'The STE Dean\'s Office is located at the 5th Floor of H Building, Room H501.',
   tags: ['STE', 'Dean', 'Office',
     'school',
+    'college',
     'teacher',
     'education',
     'location',
@@ -232,6 +244,12 @@ var location = [{
   message: 'The Centennial Library is located at the 6th Floor of H Building.',
   tags: ['Centennial', 'Library', 'location']
 }, {
+  name: 'Centennial Hall ',
+  location: 'Beside the H Building',
+  type: '',
+  message: 'The Centennial Hall is located beside the H Building.',
+  tags: ['Centennial', 'Hall', 'location']
+}, {
   name: 'Extension Library ',
   location: 'F Building, 3rd Floor',
   type: '',
@@ -242,7 +260,7 @@ var location = [{
   location: 'D Building, 2nd Floor',
   type: '',
   message: 'The Security Office is located at the 2nd floor of D Building beside the UB Cardinals Gym.',
-  tags: ['Security', 'Office', 'location']
+  tags: ['Campus', 'Security', 'Office', 'Report', 'Complaints', 'Assistance', 'location']
 }, {
   name: 'Rooms in the 1st Floor of F Bulding ',
   location: 'F Bulding, 1st Floor',
@@ -786,13 +804,13 @@ var location = [{
   location: 'Clinic',
   type: '',
   message: 'You can process your Medical Certificate in the University Clinic. ',
-  tags: ['Medical', 'Certificate', 'Get', 'process']
+  tags: ['Medical', 'Certificate', 'Get', 'Request', 'process']
 }, {
   name: 'Where to report complaints ',
   location: 'Security Office',
   type: '',
   message: 'You can report your complaints for suspicious and unusual activities in the Security Office which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['complaints', 'offenses', 'report', 'suspicious', 'crimes']
+  tags: ['complaints', 'offenses', 'report', 'Request', 'suspicious', 'crimes']
 }, {
   name: 'Where is the lost and found ',
   location: 'Security Office',
@@ -810,13 +828,13 @@ var location = [{
   location: 'Students Accounts Section, Room F103, 1st Floor F Building',
   type: '',
   message: 'You can process your assessment of fees or inquire about your account at the Student Accounts Section which is located at the 1st Floor of F Building Room F103. ',
-  tags: ['Assessment', 'Fees', 'Account', 'Get', 'Inquiry', 'Process']
+  tags: ['Assessment', 'Fees', 'Account', 'Get', 'Inquiry', 'Request', 'Process']
 }, {
   name: 'Where to process Promissory Note ',
   location: 'Students Accounts Section, Room F103, 1st Floor F Building',
   type: '',
   message: 'You can process your Promissory Note or inquire about your account at the Student Accounts Section which is located at the 1st Floor of F Building Room F103. ',
-  tags: ['Promissory', 'Note', 'Get', 'Process']
+  tags: ['Promissory', 'Note', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Examination Permit ',
   location: 'Students Accounts Section, Room F103, 1st Floor F Building',
@@ -828,49 +846,49 @@ var location = [{
   location: 'Students Accounts Section, Room F103, 1st Floor F Building',
   type: '',
   message: 'You can get your clearance for School Credentials at the Student Accounts Section which is located at the 1st Floor of F Building Room F103. ',
-  tags: ['Clearance', 'School', 'Credentials', 'Get', 'Process']
+  tags: ['Clearance', 'School', 'Credentials', 'Request', 'Get', 'Process']
 }, {
   name: 'Where to Process Press Releases and Advertisements ',
   location: 'MAPS Office, Room F205, 2nd Floor F Building',
   type: '',
   message: 'You can process your Press Releases and Advertisements at the MAPS Office which is located at the 2nd Floor of F Building Room F205. ',
-  tags: ['Press', 'Release', 'Advertisements', 'Process']
+  tags: ['Press', 'Release', 'Advertisements', 'Request', 'Process']
 }, {
   name: 'Where to Process Yearbook and Graduation Materials ',
   location: 'MAPS Office, Room F205, 2nd Floor F Building',
   type: '',
   message: 'You can process your yearbook and other graduation materials at the MAPS Office which is located at the 2nd Floor of F Building Room F205. ',
-  tags: ['Yearbook', 'Graduation', 'Materials', 'Get', 'Process']
+  tags: ['Yearbook', 'Graduation', 'Materials', 'Request', 'Get', 'Process']
 }, {
   name: 'Where to process Social Media Content Development ',
   location: 'MAPS Office, Room F205, 2nd Floor F Building',
   type: '',
   message: 'You can process the Social Media Content Development at the MAPS Office which is located at the 2nd Floor of F Building Room F205. ',
-  tags: ['Social', 'Media', 'Content', 'Development', 'Process']
+  tags: ['Social', 'Media', 'Content', 'Development', 'Request', 'Process']
 }, {
   name: 'Where to process Website Content Development ',
   location: 'MAPS Office, Room F205, 2nd Floor F Building',
   type: '',
   message: 'You can process the Website Content Development at the MAPS Office which is located at the 2nd Floor of F Building Room F205. ',
-  tags: ['Website', 'Content', 'Development', 'Process']
+  tags: ['Website', 'Content', 'Development', 'Request', 'Process']
 }, {
   name: 'Where to process Transcript of Records ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Transcript of Records at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Transcript', 'Records', 'TOR', 'Get', 'Process']
+  tags: ['Transcript', 'Records', 'TOR', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Scholastic Records ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Scholastic Records at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Scholastic', 'Records', 'Get', 'Process']
+  tags: ['Scholastic', 'Records', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Course Description ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Course Description at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Course', 'Description', 'Get', 'Process']
+  tags: ['Course', 'Description', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Permit to Cross Enroll ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
@@ -882,115 +900,115 @@ var location = [{
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Clock Hours at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Clock', 'Hours', 'Get', 'Process']
+  tags: ['Clock', 'Hours', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Certificate of Good Moral Character ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Clock Hours at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Certificate', 'Good', 'Moral', 'Character', 'Get', 'Process']
+  tags: ['Certificate', 'Good', 'Moral', 'Character', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Diploma(Documentary Stamp Included) ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Diploma (Documentary Stamp Included) at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Diploma', 'Documentary', 'Stamp', 'Get', 'Process']
+  tags: ['Diploma', 'Documentary', 'Stamp', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Certificate of Enrollment ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Certificate of Enrollment at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Certificate', 'Enrollment', 'Get', 'Process']
+  tags: ['Certificate', 'Enrollment', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Certificate of General Weighted Average (GWA) ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Certificate of General Weighted Average (GWA) at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Certificate', 'GWA', 'General', 'Weighted', 'Average', 'Get', 'Process']
+  tags: ['Certificate', 'GWA', 'General', 'Weighted', 'Average', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Certificate of English as Medium Instruction ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Certificate of English as Medium Instruction at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Certificate', 'English', 'Medium', 'Instruction', 'Get', 'Process']
+  tags: ['Certificate', 'English', 'Medium', 'Instruction', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Certificate of Graduation ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Certificate of Graduation at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Certificate', 'Graduation', 'Get', 'Process']
+  tags: ['Certificate', 'Graduation', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Certificate of Multiple Attendance ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Certificate of Multiple Attendance at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Certificate', 'Multiple', 'Attendance', 'Get', 'Process']
+  tags: ['Certificate', 'Multiple', 'Attendance', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process HS Form 137 ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your HS Form 137 at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['HS', 'Form', '137', 'Get', 'Process']
+  tags: ['HS', 'Form', '137', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Change of Name ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Change of Name at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Change', 'Name', 'Request', 'Process']
+  tags: ['Change', 'Name', 'Request', 'Request', 'Process']
 }, {
   name: 'Where to process Copy of Schedule ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Copy of Schedule at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Copy', 'Schedule', 'Get', 'Process']
+  tags: ['Copy', 'Schedule', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Copy of Grades ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Copy of Grades at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Copy', 'Grades', 'Get', 'Process']
+  tags: ['Copy', 'Grades', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Certificate of Grades ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Certificate of Grades at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Certificate', 'Grades', 'Get', 'Process']
+  tags: ['Certificate', 'Grades', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Certificate of Earned Units ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Certificate of Earned Units at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Certificate', 'Earned', 'Units', 'Get', 'Process']
+  tags: ['Certificate', 'Earned', 'Units', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Certificate needed/required by Accrediting Agency ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can request your required by the Accrediting Agency at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Certificate', 'Accrediting', 'Agency', 'Get', 'Process']
+  tags: ['Certificate', 'Accrediting', 'Agency', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to ask for USB or Hard Disk Virus Removal ',
   location: 'MIS Office, 4th Floor of F Building, Room F403 ',
   type: '',
   message: 'You can bring your Flash Drive or Hard Disk for Virus Removal at the 4th Floor of F Building, Room F403. ',
-  tags: ['Flash', 'Drive', 'Virus', 'Removal', 'USB', 'Avail', 'Service']
+  tags: ['Flash', 'Drive', 'Virus', 'Removal', 'USB', 'Avail', 'Request', 'Service']
 }, {
   name: 'Where to ask for Assessment of PC or Laptop ',
   location: 'MIS Office, 4th Floor of F Building, Room F403 ',
   type: '',
   message: 'You can bring your PC or Laptop for assessment at the 4th Floor of F Building, Room F403. ',
-  tags: ['PC', 'Personal', 'Computer', 'Laptop', 'Assessment', 'Avail', 'Process']
+  tags: ['PC', 'Personal', 'Computer', 'Laptop', 'Assessment', 'Avail', 'Request', 'Process']
 }, {
   name: 'Where to ask for installation of Open Source/Free Software ',
   location: 'MIS Office, 4th Floor of F Building, Room F403 ',
   type: '',
   message: 'You can ask for installation of Open Source / Free Software at the 4th Floor of F Building, Room F403. ',
-  tags: ['Installation', 'Free', 'Open', 'Source', 'Avail', 'Software', 'Process']
+  tags: ['Installation', 'Free', 'Open', 'Source', 'Avail', 'Software', 'Request', 'Process']
 }, {
   name: 'Where to print and validate Student ID ',
   location: 'MIS Office, 4th Floor of F Building, Room F403 ',
   type: '',
   message: 'You can print and validate your ID at the 4th Floor of F Building, Room F403. ',
-  tags: ['Print', 'Validate', 'Student', 'ID', 'Process']
+  tags: ['Print', 'Validate', 'Student', 'ID', 'Request', 'Process']
 }, {
   name: 'Where to print Alumni ID ',
   location: 'MIS Office, 4th Floor of F Building, Room F403 ',
@@ -1002,7 +1020,7 @@ var location = [{
   location: 'MIS Office, 4th Floor of F Building, Room F403 ',
   type: '',
   message: 'You can ask for the creation of your WiFi account at the 4th Floor of F Building, Room F403. ',
-  tags: ['Creation', 'WiFi', 'Account', 'Process']
+  tags: ['Creation', 'WiFi', 'Account', 'Request', 'Process']
 }, {
   name: 'Where can students access the WiFi ',
   location: 'UB Gym, FB Food Court, Science High Hallway, AA and AC Floors of SIHTM Hallway, SCJPS Hallway, SBAA Hallway, STE Hallway, SIT WiFi Area and the Main, Extension and Centennial Library ',
@@ -1045,12 +1063,6 @@ var location = [{
   type: '',
   message: 'You can ask for a copy of the Student handbook at the Office of Student Affairs which is located at the 1st Floor of F Building or at your Deans Office. ',
   tags: ['Handbook', 'Ask', 'Copy']
-}, {
-  name: 'Where to ask for Athletic Scholarship ',
-  location: 'D Building, 2nd Floor, Room D201',
-  type: '',
-  message: 'You can inquire about the athletic scholarship at the Athletics Office which is located at the 2nd Floor of D Building, Room D201. ',
-  tags: ['Scholarship', 'Athletic', 'Process', 'Table Tennis', 'Lawn', 'Badminton', 'Wushu', 'Judo', 'Taekwondo', 'Arnis', 'Boxing', 'Baseball', 'Softball', 'Volleyball', 'Basketball', 'Sports']
 }, {
   name: 'Where to borrow Sports Equipments ',
   location: 'D Building, 2nd Floor, Room D201',
@@ -1106,167 +1118,65 @@ var location = [{
   message: 'If you\'re a current student, please proceed to your Dean\'s Office for your enrollment. ',
   tags: ['Enrollment', 'Current', 'Old', 'Student', 'Service', 'Process']
 }, {
-  name: 'Allied Medical Sciences Library Section ',
-  location: 'Main Library',
-  type: '',
-  message: 'The Allied Medical Sciences Library Section can be found in the Main Library which is located at the 4th Floor of A Building. ',
-  tags: ['Allied', 'Medical', 'Sciences', 'Library', 'Section']
-}, {
-  name: 'Criminology and Forensic Science Library Section ',
-  location: 'Main Library',
-  type: '',
-  message: 'The Criminology and Forensic Science Library Section can be found in the Main Library which is located at the 4th Floor of A Building. ',
-  tags: ['Criminology', 'Forensic', 'Science', 'Library', 'Section']
-}, {
-  name: 'Filipiniana and General Reference Library Section ',
-  location: 'Main Library',
-  type: '',
-  message: 'The Filipiniana and General Reference Library Section can be found in the Main Library which is located at the 4th Floor of A Building. ',
-  tags: ['Filipiniana', 'General Reference', 'Library', 'Section']
-}, {
-  name: 'Periodicals Library Section ',
-  location: 'Main Library',
-  type: '',
-  message: 'The Periodicals Library Section can be found in the Main Library which is located at the 4th Floor of A Building. ',
-  tags: ['Periodicals', 'Library', 'Section']
-}, {
-  name: 'General Collections Library Section ',
-  location: 'Main Library',
-  type: '',
-  message: 'General Collections Library Section can be found in the Main Library which is located at the 4th Floor of A Building. ',
-  tags: ['General', 'Collections', 'Library', 'Section']
-}, {
-  name: 'Law Library Section ',
-  location: 'Library Extension',
-  type: '',
-  message: 'The Law Library Section can be found in the Library Extension which is located at the 3rd Floor of F Building. ',
-  tags: ['Law', 'Library', 'Section']
-}, {
-  name: 'Information Technology Library Section ',
-  location: 'Library Extension',
-  type: '',
-  message: 'The Information Technology Library Section can be found in the Library Extension which is located at the 3rd Floor of F Building. ',
-  tags: ['IT', 'Information', 'Technology', 'Library', 'Section']
-}, {
-  name: 'CD Library Section ',
-  location: 'Library Extension',
-  type: '',
-  message: 'The CD Library Section can be found in the Library Extension which is located at the 3rd Floor of F Building. ',
-  tags: ['CD', 'Library', 'Section']
-}, {
-  name: 'Relegation Library Section ',
-  location: 'Library Extension',
-  type: '',
-  message: 'The Relegation Library Section can be found in the Library Extension which is located at the 3rd Floor of F Building. ',
-  tags: ['Relegation', 'Library', 'Section']
-}, {
-  name: 'Fiction Library Section ',
-  location: 'Library Extension',
-  type: '',
-  message: 'The Fiction Library Section can be found in the Library Extension which is located at the 3rd Floor of F Building. ',
-  tags: ['Fiction', 'Library', 'Section']
-}, {
-  name: 'Technical Library Section ',
-  location: 'Library Extension',
-  type: '',
-  message: 'The Technical Library Section can be found in the Library Extension which is located at the 3rd Floor of F Building. ',
-  tags: ['Technical', 'Library', 'Section']
-}, {
-  name: 'Business Administration and Accountancy Library Section ',
-  location: 'Centennial Library',
-  type: '',
-  message: 'The Business Administration and Accountancy Library Section can be found in the Centennial Library which is located at the 6th Floor of H Building. ',
-  tags: ['Business', 'Administration', 'Accountancy', 'Library', 'Section']
-}, {
-  name: 'Education Library Section ',
-  location: 'Centennial Library',
-  type: '',
-  message: 'The Education Library Section can be found in the Centennial Library which is located at the 6th Floor of H Building. ',
-  tags: ['Education', 'Library', 'Section']
-}, {
-  name: 'Engineering Library Section ',
-  location: 'Centennial Library',
-  type: '',
-  message: 'Engineering Library Section can be found in the Centennial Library which is located at the 6th Floor of H Building. ',
-  tags: ['Engineering', 'Library', 'Section']
-}, {
-  name: 'Liberal Arts and Human Sciences Library Section ',
-  location: 'Centennial Library',
-  type: '',
-  message: 'The Liberal Arts and Human Sciences Library Section can be found in the Centennial Library which is located at the 6th Floor of H Building. ',
-  tags: ['Liberal', 'Arts', 'Human', 'Sciences', 'Library', 'Section']
-}, {
-  name: 'Theses and Dissertions Library Section ',
-  location: 'Centennial Library',
-  type: '',
-  message: 'The Theses and Dissertions Library Section can be found in the Centennial Library which is located at the 6th Floor of H Building. ',
-  tags: ['Theses', 'Dissertions', 'Library', 'Section']
-}, {
-  name: 'Graduate School Library Section ',
-  location: 'Centennial Library',
-  type: '',
-  message: 'The Graduate School Library Section can be found in the Centennial Library which is located at the 6th Floor of H Building. ',
-  tags: ['Graduate', 'School', 'Library', 'Section']
-}, {
   name: 'Format Editing ',
   location: 'RNDC, F building, 2nd Floor, Room F208',
   type: '',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
-  tags: ['Format', 'Editing', 'Use', 'Avail', 'Service']
+  tags: ['Format', 'Editing', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'Statistics Assistance, Statistic Package for Social Sciences ',
   location: 'RNDC, F building, 2nd Floor, Room F208',
   type: '',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
-  tags: ['Statistics', 'Assistance', 'Package', 'Social', 'Sciences', 'Use', 'Avail', 'Service']
+  tags: ['Statistics', 'Assistance', 'Package', 'Social', 'Sciences', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'Poster Preparation ',
   location: 'RNDC, F building, 2nd Floor, Room F208',
   type: '',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
-  tags: ['Poster', 'Preparation', 'Use', 'Avail', 'Service']
+  tags: ['Poster', 'Preparation', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'Publication of Research Findings (Catalyst) ',
   location: 'RNDC, F building, 2nd Floor, Room F208',
   type: '',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
-  tags: ['Publication', 'Research', 'Findings', 'Catalyst', 'Use', 'Avail', 'Service']
+  tags: ['Publication', 'Research', 'Findings', 'Catalyst', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'Presentation of Research Findings ',
   location: 'RNDC, F building, 2nd Floor, Room F208',
   type: '',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
-  tags: ['Presentation', 'Research', 'Findings', 'Use', 'Avail', 'Service']
+  tags: ['Presentation', 'Research', 'Findings', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'Tool Validation ',
   location: 'RNDC, F building, 2nd Floor, Room F208',
   type: '',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
-  tags: ['Tool', 'Validation', 'Use', 'Avail', 'Service']
+  tags: ['Tool', 'Validation', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'Grammar Check ',
   location: 'RNDC, F building, 2nd Floor, Room F208',
   type: '',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
-  tags: ['Grammar', 'Check', 'Use', 'Avail', 'Service']
+  tags: ['Grammar', 'Check', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'Grammarly ',
   location: 'RNDC, F building, 2nd Floor, Room F208',
   type: '',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
-  tags: ['Grammarly', 'Use', 'Avail', 'Service']
+  tags: ['Grammarly', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'Plagiarism Test ',
   location: 'RNDC, F building, 2nd Floor, Room F208',
   type: '',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
-  tags: ['Plagiarism', 'Test', 'Use', 'Avail', 'Service']
+  tags: ['Plagiarism', 'Test', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'Spell Check ',
   location: 'RNDC, F building, 2nd Floor, Room F208',
   type: '',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
-  tags: ['Spell', 'Check', 'Use', 'Avail', 'Service']
+  tags: ['Spell', 'Check', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'UB Gym ',
   location: 'D Building',
@@ -1279,6 +1189,42 @@ var location = [{
   type: '',
   message: 'The Cashier is located at the 1st Floor of F Building in front of OSA. ',
   tags: ['Cashier', 'Location']
+}, {
+  name: 'Where to pay Tuition Fee ',
+  location: 'F Building, 1st Floor',
+  type: '',
+  message: 'You can pay your tuition fee at the Cashier which is located at the 1st Floor of F Building in front of OSA. ',
+  tags: ['Payment', 'Pay', 'Tuition', 'Fee', 'Location']
+}, {
+  name: 'Where is the Dental Clinic ',
+  location: 'F Building, 1st Floor, Room F105 ',
+  type: '',
+  message: 'The dental clinic is located at the 1st Floor of F Building, Room F105. ',
+  tags: ['Dental', 'Dentist', 'Clinic', 'Location']
+}, {
+  name: 'Where to Print Schedule ',
+  location: 'F Building, 4th Floor, Room F403 ',
+  type: '',
+  message: 'You can print your schedule at the MIS Office which is located at the 4th Floor of F Building, Room F403. ',
+  tags: ['Printing', 'Print', 'Schedule', 'Location']
+}, {
+  name: 'Where is the Medical/Medtech Clinical Lab ',
+  location: 'F Building, 1st Floor, Room F102 ',
+  type: '',
+  message: 'The Medtech Clinical Lab is located at the 1st Floor of F Building, Room F102. ',
+  tags: ['Medtech', 'Clinic', 'Laboratory', 'Location']
+}, {
+  name: 'Where to request a copy of PRC Board Syllabi for STE Students ',
+  location: 'A Building, 2nd Floor, Room A205 ',
+  type: '',
+  message: 'You can request for a copy of the PRC Board Syllabi at the LARC Office which is located at the 2nd Floor of A Building, Room A205. ',
+  tags: ['PRC', 'Board', 'Syllabi', 'Copy', 'Request', 'Location']
+}, {
+  name: 'Where to apply for scholarships ',
+  location: 'F Building, 1st Floor, Room F103 ',
+  type: '',
+  message: 'Please prodeed to the Student Accounts Section which is located at the 1st Floor of F Building, Room F103 for further assistance. ',
+  tags: ['Application', 'Scholarship', 'Apply', 'Location']
 }];
 
 exports.location = location;

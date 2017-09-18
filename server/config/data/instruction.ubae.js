@@ -79,27 +79,10 @@ var instruction = [{
     '4. Your record will be released after 15 days'
   ],
   type: '',
-  message: 'For the Realease of Student Records, first you need to get a clearance form from your Dean\'s office, the Library and AMD. Submit the clearance form to the ARC Office for checking. If there are no deficiencies, ARC will release your claim stamp. And lastly, kindly wait for 15 days for the release of your record.',
-  tags: ['Release', 'Student', 'Records', 'Already', 'Graduates', 'Service', 'Transcript', 'TOR', 'Scholastic',
-    'Course', 'Description', 'Clock', 'Hours', 'Diploma', 'Documentary', 'Stamp', 'HS', 'Form', '137', 'Copy', 'Grades', 'Process'
+  message: 'For the Release of Student Records, first you need to get a clearance form from your Dean\'s office, the Library and AMD. Submit the clearance form to the ARC Office for checking. If there are no deficiencies, ARC will release your claim stamp. And lastly, kindly wait for 15 days for the release of your record. Please take note that if you\'re an under-graduate, you need to pay a certain amount to the cashier first.',
+  tags: ['Release', 'Request', 'Student', 'Records', 'Already', 'Graduates', 'Service', 'Transcript', 'TOR', 'Scholastic',
+    'Course', 'Description', 'Clock', 'Hours', 'Diploma', 'Documentary', 'Stamp', 'HS', 'Form', '137', 'Copy', 'Grades', 'Schedule', 'Process'
   ]
-}, {
-  name: 'Release of Student Records for Under-Graduates',
-  process: ['1. Get clearance from Dean, Library and AMD',
-    '2. Pay required amount at the Cashier',
-    '3. Submit clearance to ARC for checking'
-  ],
-  type: '',
-  message: 'Get a clearance form your Dean, the Library and the AMD. After that, you need to pay the required amount to the cashier. Lastly, present your clearance to the ARC for checking.',
-  tags: ['Release', 'Student', 'Records', 'Undergraduates', 'Service', 'Process']
-}, {
-  name: 'Athletic Scholarship',
-  process: ['1. Just go to the athletics office/ walk-in',
-    '2. No requirement needed, just join training everytime and we will check if you are fit for the scholarship'
-  ],
-  type: '',
-  message: 'Just go to the athletics office and join the training. We will check if you are fit for the scholarship. ',
-  tags: ['Athletic', 'Scholarship', 'Service', 'Process', 'Application', 'Apply', 'Avail']
 }, {
   name: 'Lending of Sports Equipment',
   process: ['1. Just go to the athletics office/ walk-in',
@@ -107,7 +90,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Just go to the athletics office and present your valid ID.',
-  tags: ['Lending', 'Sports', 'Equipment', 'Borrow', 'Service', 'Process']
+  tags: ['Lending', 'Sports', 'Equipment', 'Borrow', 'Request', 'Service', 'Process']
 }, {
   name: 'Student Development Facilitation and Counseling Services',
   process: ['Students can just go to the office walk-in or should be reffered by the dean, instructor, Faculty, Parents, or other University Personnel'],
@@ -207,7 +190,7 @@ var instruction = [{
   message: 'Go to the clinic and request for an X-Ray. Kindly pay the required amount to the cashier and proceed to the X-Ray Laboratory.',
   tags: ['X', 'Ray', 'Avail', 'Use', 'Service', 'Process']
 }, {
-  name: 'Consultation',
+  name: 'Consultation/Check Up',
   process: ['1. Proceed to the clinic student assistant and present your valid ID.',
     '2. Fill up your patients card if your a new patient',
     '3. Verbalize your complaints or reason for consultation to the Nurse.',
@@ -222,7 +205,7 @@ var instruction = [{
   process: ['1. Consult the University Doctor'],
   type: '',
   message: 'Please consult the doctor for this concern. If you were sent home by the Doctor, that is the only time you can be given a Medical Certificate.',
-  tags: ['Medical', 'Certificate', 'Service', 'Process']
+  tags: ['Medical', 'Request', 'Certificate', 'Service', 'Process']
 }, {
   name: 'Physical/Medical Examination for local OJT/ Practicum (SIHTM)',
   process: ['1. Proceed to the Baguio Health Department for the initial medical examination',
@@ -271,13 +254,13 @@ var instruction = [{
   process: ['1. Signing clearance form for Alumni ID'],
   type: '',
   message: 'Go to the LARC office and get your clearance form signed for the Alumni ID. ',
-  tags: ['UBAFI', 'Alumni', 'ID', 'Service', 'Get', 'avail', 'Process']
+  tags: ['UBAFI', 'Alumni', 'Request', 'ID', 'Service', 'Get', 'avail', 'Process']
 }, {
   name: 'Gives copies of PRC Board Syllabi for STE Students',
   process: ['1. Just go to the Review Center or Print copy from website'],
   type: '',
   message: 'Please go to the LARC office to get a copy of PRC Board Syllabi for STE Students',
-  tags: ['Copy', 'PRC', 'Board', 'Syllabi', 'STE', 'Students', 'avail', 'get']
+  tags: ['Copy', 'PRC', 'Board', 'Syllabi', 'STE', 'Students', 'Request', 'avail', 'get']
 }, {
   name: 'Follet-DLM Mobile Application',
   process: ['1. Download and install Destiny Quest mobile app from the app store or Google Play.',
@@ -313,11 +296,11 @@ var instruction = [{
   message: 'For gale group, type in URL www.infotrac.galegroup.com/itweb/phubagu , the password is discover. For Worldbook online, the username and password will depend on your department. SBAA username: ubstud2016sbaa pw: alibangbang / SIHTM username: ubstud2016sihtm pw: cabellero / SIT username: ubstud2016sit pw: ubstud2016sit / GRADSCHL username: ubstud2016gradsc pw: tigerlily. For DOST-STARBOOKS, go to www.starbooks.ph, the username is universityofbaguio and the password is 123456.',
   tags: ['New', 'Library', 'Databases', 'Ejournals', 'Service', 'Process', 'Worldbook', 'Starbooks']
 }, {
-  name: 'Clearance Signing',
+  name: 'Library Clearance Signing',
   process: ['Proceed to the Library with valid ID'],
   type: '',
-  message: 'Kindly proceed to the library with your valid ID for clearance signing.',
-  tags: ['Library', 'Clearance', 'Signing', 'Service', 'Process']
+  message: 'Kindly proceed to the Centennial Library with your valid ID for clearance signing.',
+  tags: ['Library', 'Clearance', 'Request', 'Signing', 'Service', 'Request', 'Process']
 }, {
   name: 'Library Orientation',
   process: ['1. Just go to the Centennial Library for Library Orientation Request'],
@@ -344,13 +327,13 @@ var instruction = [{
   ],
   type: '',
   message: 'If you want your advertisements to be published, kindly go to the MAPS Office and fill up the Ad Requisition Form and ask your Dean and VP for Administration to sign it. If it is already signed, come back to the MAPS Office with the signed form.',
-  tags: ['Press', 'Releases', 'Advertisements', 'Ads', 'Avail', 'Use', 'Service', 'Process']
+  tags: ['Press', 'Releases', 'Advertisements', 'Ads', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Yearbook and Graduation Materials',
   process: ['1. Fill up and submit the form to the MAPS Office'],
   type: '',
   message: 'Kindly go to the MAPS Office and fill up the required form. ',
-  tags: ['Yearbook', 'Graduation', 'Materials', 'avail', 'Service', 'Process']
+  tags: ['Yearbook', 'Graduation', 'Materials', 'avail', 'Request', 'Service', 'Process']
 }, {
   name: 'Social Media Content Development',
   process: ['1. Go to MAPS Office and fill up the Ad Requisition Form',
@@ -359,7 +342,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Kindly go to the MAPS Office and fill up the Ad Requisition Form. Ask for your Dean and the VP for Administration sign the form. If it is signed, go back to the MAPS Office.',
-  tags: ['Social', 'Media', 'Content', 'Development', 'Avail', 'Use', 'Service', 'Process']
+  tags: ['Social', 'Media', 'Content', 'Development', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Website Content Development',
   process: ['1. Go to MAPS Office and fill up the Ad Requisition Form',
@@ -368,7 +351,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Kindly go to the MAPS Office and fill up the Ad Requisition Form. Ask for your Dean and the VP for Administration sign the form. If it is signed, go back to the MAPS Office.',
-  tags: ['Website', 'Content', 'Development', 'Avail', 'Use', 'Service', 'Process']
+  tags: ['Website', 'Content', 'Development', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Virus Scanning and Removal for Flash Drives and Portable Hard Disk',
   process: ['1. Go to the MIS office',
@@ -376,7 +359,7 @@ var instruction = [{
   ],
   type: '',
   message: 'If your USB or Portable Hard Disk gets virused, go to the MIS Office with your valid ID. They will scan your device and remove the virus.',
-  tags: ['Virus', 'Scanning', 'Removal', 'Flash', 'Drive', 'Portable', 'Hard', 'Disk', 'Avail', 'Use', 'Service', 'Process']
+  tags: ['Virus', 'Scanning', 'Removal', 'Flash', 'Drive', 'Portable', 'Hard', 'Disk', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Assessment of PC or Laptop',
   process: ['1. Go to the MIS office',
@@ -384,7 +367,7 @@ var instruction = [{
   ],
   type: '',
   message: 'If you want your PC or Laptop to be assessed, go to the MIS Office with your valid ID and your unit. Take note that MIS will only assess your unit and not repair it.',
-  tags: ['Assessment', 'PC', 'Personal', 'Computer', 'Laptop', 'Avail', 'Use', 'Service', 'Process']
+  tags: ['Assessment', 'PC', 'Personal', 'Computer', 'Laptop', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Installation of Open-Source or Free Software',
   process: ['1. Go to the MIS office',
@@ -434,7 +417,7 @@ var instruction = [{
   ],
   type: '',
   message: 'If you want to have your own Wi Fi account, go to the MIS Office and present your valid ID and ask them to create an account for you.',
-  tags: ['WiFi', 'Account', 'Create', 'Avail', 'Use', 'Service', 'Process']
+  tags: ['WiFi', 'Account', 'Create', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Readmissions',
   process: ['1. Go to the office of student affairs',
@@ -450,7 +433,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Go to the Students Accounts Section and fill up the yellow form. Proceed to OSA and the office director will be the one to process your application.',
-  tags: ['Performing', 'Arts', 'Graces', 'Voices', 'Chamber', 'Orchestra', 'Plug', 'Play', 'Band', 'UBBUK', 'Ethnic', 'Dance', 'Group', 'Process', 'Application', 'Scholarship', 'Service', 'Process']
+  tags: ['Performing', 'Arts', 'Graces', 'Voices', 'Chamber', 'Orchestra', 'Plug', 'Play', 'Band', 'UBBUK', 'Ethnic', 'Dance', 'Group', 'Process', 'Application', 'Apply', 'Scholarship', 'Service', 'Process']
 }, {
   name: 'Format Editing',
   process: ['1. Go to the RNDC office',
@@ -459,7 +442,7 @@ var instruction = [{
   ],
   type: '',
   message: 'For Format Editing, go to the RNDC and submit a copy of your study or manuscript. Be sure to sign the log book.',
-  tags: ['Format', 'Editing', 'Avail', 'Use', 'Service', 'Process']
+  tags: ['Format', 'Editing', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Statistic Package for Social Sciences',
   process: ['1. Go to the RNDC Office and get referral slip.',
@@ -468,7 +451,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Go to the RNDC and get a referral slip. Submit a copy of your study and manuscript and the office will be the one to reffer you to a statistician.',
-  tags: ['Statistic', 'Package', 'Social', 'Sciences', 'SPSS', 'Avail', 'Use', 'Service', 'Process']
+  tags: ['Statistics', 'Assistance', 'Package', 'Social', 'Sciences', 'SPSS', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Poster Preparation',
   process: ['1. Give a request letter with the poster size, font, color, text and other information about your poster.',
@@ -476,7 +459,7 @@ var instruction = [{
   ],
   type: '',
   message: 'For Poster Preparation, sumbit a request letter to RNDC with the poster size, font, color. text and other information about your poster.',
-  tags: ['Poster', 'Preparation', 'Avail', 'Use', 'Service', 'Process']
+  tags: ['Poster', 'Preparation', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Publication of Research Findings (Catalyst)',
   process: ['1. Submit Full manuscript to RNDC.',
@@ -487,13 +470,13 @@ var instruction = [{
   ],
   type: '',
   message: 'Submit your full manuscript and ethics clearance to RNDC and sign the consent to publish and transfer of copyright. Your research will undergo tool validation verification. If your study in quantitative, you will be reffered to a statistician.',
-  tags: ['Publication', 'Research', 'Findings', 'Catalyst', 'Avail', 'Use', 'Service', 'Process']
+  tags: ['Publication', 'Research', 'Findings', 'Catalyst', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Tool Validation',
   process: ['1. Go to the RNDC Office and submit requirements'],
   type: '',
   message: 'Go to RNDC and submit all the requirements for Tool Validation.',
-  tags: ['Tool', 'Validation', 'Avail', 'Use', 'Service', 'Process']
+  tags: ['Tool', 'Validation', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Grammar Check',
   process: ['1. Go to the RNDC Office and login to the log book',
@@ -501,7 +484,7 @@ var instruction = [{
   ],
   type: '',
   message: 'For Grammar Check, go to the RNDC and login to the logbook and send a Manuscript to the RNDC email.',
-  tags: ['Grammar', 'Check', 'Avail', 'Use', 'Service', 'Process']
+  tags: ['Grammar', 'Check', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, , {
   name: 'Grammarly',
   process: ['1. Go to the RNDC Office and login to the log book',
@@ -509,7 +492,7 @@ var instruction = [{
   ],
   type: '',
   message: 'For using Grammarly, go to the RNDC and login to the logbook and send a Manuscript to the RNDC email.',
-  tags: ['Grammarly', 'Avail', 'Use', 'Service', 'Process']
+  tags: ['Grammarly', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Plagiarism Test',
   process: ['1. Go to the RNDC Office and login to the log book',
@@ -517,7 +500,7 @@ var instruction = [{
   ],
   type: '',
   message: 'For Plagiarism Test, go to the RNDC and login to the logbook and send a Manuscript to the RNDC email.',
-  tags: ['Plagiarism', 'Test', 'Service', 'Avail', 'Use', 'Process']
+  tags: ['Plagiarism', 'Test', 'Service', 'Avail', 'Use', 'Request', 'Process']
 }, {
   name: 'Spell Check',
   process: ['1. Go to the RNDC Office and login to the log book',
@@ -525,13 +508,13 @@ var instruction = [{
   ],
   type: '',
   message: 'For Spell Check, go to the RNDC and login to the logbook and send a Manuscript to the RNDC email.',
-  tags: ['Spell', 'Check', 'Service', 'Avail', 'Use', 'Process']
+  tags: ['Spell', 'Check', 'Service', 'Avail', 'Use', 'Request', 'Process']
 }, {
   name: 'Use of computers',
   process: ['1. Go to the RNDC Office and login to the log book'],
   type: '',
   message: 'If you need to use a computer, you can use one from the RNDC just login to the logbook. Be sure to bring a valid ID.',
-  tags: ['Computer', 'Service', 'Avail', 'Use', 'Process']
+  tags: ['Computer', 'Service', 'Avail', 'Use', 'Request', 'Process']
 }, {
   name: 'In-charge of issuance of Assessment of School Fees/Accounts Inquiry',
   process: ['1. Go to the the designated assessment windows',
@@ -573,7 +556,7 @@ var instruction = [{
   ],
   type: '',
   message: 'If you have certain complaints in school regarding security, you can go to the Security Office so they can investigate regarding your complaints.',
-  tags: ['Offenses', 'Report', 'Suspicious', 'Investigation', 'Service', 'Process']
+  tags: ['Offenses', 'Report', 'Suspicious', 'Campus', 'Security', 'Assistance', 'Investigation', 'Service', 'Process']
 }, {
   name: 'Lost & Found',
   process: ['1. Bring the Item to the Security Office or give the item to the marshalls'],
@@ -587,7 +570,7 @@ var instruction = [{
   ],
   type: '',
   message: 'In case of emergency, you can contact our Security Office using these numbers: 442-4915 or local no. 234/309.',
-  tags: ['Security', 'Contact', 'Emergency', 'Service', 'Process']
+  tags: ['Security', 'Contact', 'Emergency', 'Request', 'Service', 'Process']
 }, {
   name: 'Student Organization',
   process: ['Seek for information on your respective Dean\'s Office'],
@@ -595,89 +578,148 @@ var instruction = [{
   message: 'Regarding student organizations, seek for more information to your respective Dean\'s office.',
   tags: ['Student', 'Organization', 'Org', 'Government']
 }, {
-  name: 'Certificate of Enrollment for Graduates ',
+  name: 'Certificate of Enrollment ',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
-  message: 'To process your Certificate of Enrollment, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. ',
-  tags: ['Certificate', 'Enrollment', 'Get', 'Process']
+  message: 'To process your Certificate of Enrollment, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
+  tags: ['Certificate', 'Enrollment', 'Request', 'Get', 'Process']
 }, {
-  name: ' Certificate of General Weighted Average for Graduates  ',
+  name: ' Certificate of General Weighted Average ',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
-  message: 'To process your Certificate of General Weighted Average, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. ',
-  tags: ['General', 'Weighted', 'Average', 'GWA', 'Get', 'Process']
+  message: 'To process your Certificate of General Weighted Average, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
+  tags: ['General', 'Weighted', 'Average', 'GWA', 'Get', 'Request', 'Process']
 }, {
-  name: 'Certificate of English as Medium Instruction for Graduates  ',
+  name: 'Certificate of English as Medium Instruction  ',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
-  message: 'To process your Certificate of English as Medium Instruction, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. ',
-  tags: ['Certificate', 'English', 'Medium', 'Instruction', 'Get', 'Process']
+  message: 'To process your Certificate of English as Medium Instruction, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
+  tags: ['Certificate', 'English', 'Medium', 'Instruction', 'Get', 'Request', 'Process']
 }, {
-  name: 'Certificate of Multiple Attendance for Graduates  ',
+  name: 'Certificate of Multiple Attendance',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
-  message: 'To process your Certificate of Multiple Attendance, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. ',
-  tags: ['Certificate', 'Multiple', 'Attendance', 'Get', 'Process']
+  message: 'To process your Certificate of Multiple Attendance, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
+  tags: ['Certificate', 'Multiple', 'Attendance', 'Get', 'Request', 'Process']
 }, {
-  name: 'Certificate of Grades for Graduates  ',
+  name: 'Certificate of Grades',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
-  message: 'To process your Certificate of Grades, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. ',
-  tags: ['Certificate', 'Grades', 'Get', 'Process']
+  message: 'To process your Certificate of Grades, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
+  tags: ['Certificate', 'Grades', 'Request', 'Get', 'Process']
 }, {
-  name: 'Certificate of Earned Units for Graduates  ',
+  name: 'Certificate of Earned Units',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
-  message: 'To process your Certificate of Earned Units, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. ',
-  tags: ['Certificate', 'Earned', 'Units', 'Get', 'Process']
+  message: 'To process your Certificate of Earned Units, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
+  tags: ['Certificate', 'Earned', 'Units', 'Request', 'Get', 'Process']
 }, {
-  name: 'Certificate of Good Moral Character for Graduates  ',
+  name: 'Certificate of Good Moral Character ',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
-  message: 'To process your Certificate of Good Moral Character, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. ',
-  tags: ['Certificate', 'Good', 'Moral', 'Character', 'Get', 'Process']
+  message: 'To process your Certificate of Good Moral Character, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
+  tags: ['Certificate', 'Good', 'Moral', 'Character', 'Get', 'Request', 'Process']
 }, {
-  name: 'Certificate of Enrollment for Under Graduates ',
-  process: '2nd Floor, D Building, Beside UB Gym',
+  name: 'Entrance Scholarships ',
+  process: 'Submit requirements at the Office of Student Affairs ',
   type: '',
-  message: 'To process your Certificate of Enrollment as an Under Graduate, first you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to pay the required amount to the cashier then to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. ',
-  tags: ['Certificate', 'Enrollment', 'undergrad', 'Under', 'Graduate', 'Get', 'Process']
+  message: 'For this type of scholarship, the applicants are required to submit to the Office of Student Affairs a certification attesting to their status under the category being applied for. Please take note that if the applicants are graduates of UB Science High School and UB High School Honor Section, please secure an application form at the Office of the Vice President for Academic Affairs. ',
+  tags: ['Entrance', 'Scholarship', 'Application', 'Apply', 'Science', 'High', 'School', 'Honor', 'Valedictorian', 'Salutatorian', 'Honorable', 'Mention', 'Section']
 }, {
-  name: 'Certificate of General Weighted Average for Under Graduates  ',
-  process: '2nd Floor, D Building, Beside UB Gym',
+  name: 'Service Grants Scholarship ',
+  process: 'Go to the Office to the office concerned ',
   type: '',
-  message: 'To process your Certificate of General Weighted Average as an Under Graduate, first you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to pay the required amount to the cashier then to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. ',
-  tags: ['Certificate', 'General', 'Weighted', 'Average', 'GWA', 'undergrad', 'Under', 'Graduate', 'Get', 'Process']
+  message: 'Procede to the office concerned and follow application procedures. For Student Assistants / Marshalls, proceed to the Human Resource Management Center. For Athletic Scholarship, proceed to the Athletics Office. For Performing arts such as VOICES, GRACES, Band and Orchestra, proceed to the Office of Students Affairs. ',
+  tags: ['Student', 'Assistant', 'Marshall', 'Athlete', 'Athletics', 'Performing', 'Arts', 'VOICES', 'Chorale', 'GRACES', 'Dance', 'Troupe', 'Band', 'Orchestra', 'Scholarship', 'Application', 'Apply']
 }, {
-  name: 'Certificate of English as Medium Instruction for Under Graduates  ',
-  process: '2nd Floor, D Building, Beside UB Gym',
+  name: 'UB Alumni Graduate Program (Non-UB employee) Scholarship ',
+  process: 'Submit requirements to the ARC ',
   type: '',
-  message: 'To process your Certificate of English as Medium Instruction as an Under Graduate, first you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to pay the required amount to the cashier then to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. ',
-  tags: ['Certificate', 'English', 'Medium', 'Instruction', 'Get', 'undergrad', 'Under', 'Graduate', 'Process']
+  message: 'For this type of scholarship, please submit an application letter, endorsement letter from your superior that indicates the number of maximum units you\'re allowed to enroll, certificate of employment (if applicable), Official Transcript of Records, Service Record (if applicable), photocopy of employment ID and Certificate of Good Moral Character to the ARC. ',
+  tags: ['Graduate ', 'Program ', 'Alumni', 'Scholarship', 'Application', 'Apply']
 }, {
-  name: 'Certificate of Multiple Attendance for Under Graduates ',
-  process: '2nd Floor, D Building, Beside UB Gym',
+  name: 'Government Grant Scholarship ',
+  process: 'Visit the concerned agencies\' regional offices ',
   type: '',
-  message: 'To process your Certificate of Multiple Attendance as an Under Graduate, first you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to pay the required amount to the cashier then to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. ',
-  tags: ['Certificate', 'Multiple', 'Attendance', 'Get', 'undergrad', 'Under', 'Graduate', 'Process']
+  message: 'Applicants for government scholarship grants should visit the concerned agencies\' respective regional offices. ',
+  tags: ['Government',
+   'Grant', 
+   'Scholarship', 
+   'Application', 
+   'Apply', 
+   'Study', 
+   'Now', 
+   'Pay', 
+   'Later', 
+   'SNPLP', 
+   'Private', 
+   'Education', 
+   'Student', 
+   'Financial', 
+   'Assistance', 
+   'PESFA', 
+   'Regional', 
+   'Program',
+   'RSP', 
+   'National', 
+   'NSP', 
+   'Special', 
+   'Indigenous', 
+   'Ethnic', 
+   'People', 
+   'SPIEP', 
+   'Congressional', 
+   'District', 
+   'Tulong', 
+   'Dunog',
+   'Full', 
+   'Merit', 
+   'State', 
+   'SSP', 
+   'Half', 
+   'Philippine', 
+   'Veterans', 
+   'Administration', 
+   'PVAO', 
+   'Overseas', 
+   'Workers', 
+   'Welfare', 
+   'Agency', 
+   'OWWA']
 }, {
-  name: 'Certificate of Grades for Under Graduates ',
-  process: '2nd Floor, D Building, Beside UB Gym',
+  name: 'Military/Police Scholarships ',
+  process: 'Get an application for at the Students Accounts Office ',
   type: '',
-  message: 'To process your Certificate of Grades as an Under Graduate, first you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to pay the required amount to the cashier then to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. ',
-  tags: ['Certificate', 'Grades', 'undergrad', 'Get', 'Under', 'Graduate', 'Process']
+  message: 'Please proceed to the Student Accounts Section and ask for an application form for Military/Police Scholarship.  ',
+  tags: ['Apply', 'Application', 'DILG', 'Uniformed', 'Personel', 'Scholarship', 'NBI', 'AFP', 'USVA']
 }, {
-  name: 'Certificate of Earned Units for Under Graduates ',
-  process: '2nd Floor, D Building, Beside UB Gym',
+  name: 'BSESE and Jollibee SEEDS scholar ',
+  process: ' ',
   type: '',
-  message: 'To process your Certificate of Earned Units as an Under Graduate, first you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to pay the required amount to the cashier then to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. ',
-  tags: ['Certificate', 'Earned', 'Units', 'Get', 'undergrad', 'Under', 'Graduate', 'Process']
+  message: 'Please proceed to the office of the Vice President for Academic Affairs and ask for the application form for scholarship. ',
+  tags: ['Scholarship', 'Apply', 'Application', 'BSESE', 'Bachelor', 'Science', 'Environmental', 'Sanitary', 'Engineering', 'Jollibee', 'SEEDS']
 }, {
-  name: 'Certificate Good Moral Character for Under Graduates ',
-  process: '2nd Floor, D Building, Beside UB Gym',
+  name: 'Change Name ',
+  process: 'Proceed to the ARC ',
   type: '',
-  message: 'To process your Certificate of Good Moral Character as an Under Graduate, first you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to pay the required amount to the cashier then to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. ',
-  tags: ['Certificate', 'Good', 'Moral', 'Character', 'Get', 'undergrad', 'Under', 'Graduate', 'Process']
+  message: 'If you changed your name, please proceed to the ARC in order for them to update your profile. ',
+  tags: ['Change', 'Name', 'Request', 'Service']
+}, {
+  name: 'Presentation of Research Findings',
+  process: ['1. Go to the RNDC office',
+    '2. Submit a copy of your study or a copy of manuscript.',
+    '3. Go to the RNDC Office and login to the log book'
+  ],
+  type: '',
+  message: 'For Presentation of Research Findings, go to the RNDC and submit a copy of your study or manuscript. Be sure to sign the log book.',
+  tags: ['Presentation', 'Research', 'Findings', 'Use', 'Request', 'Service', 'Process']
+}, {
+  name: 'Printing of Schedule',
+  process: ['Proceed to the MIS office'
+  ],
+  type: '',
+  message: 'For printing of schedule, be sure to pay the required amount first to the cashier and show the receipt to the MIS Office.',
+  tags: ['Printing', 'Print', 'Schedule', 'Request', 'Service', 'Process']
 }];
 
 exports.instruction = instruction;
