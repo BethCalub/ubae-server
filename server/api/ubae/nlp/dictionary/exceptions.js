@@ -2,5 +2,9 @@
 
 exports.exceptions = [
   'day',
-  'library'
+  'library',
+  'pay',
+  'copy',
+  'elementary',
+  'apply'
 ];

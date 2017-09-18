@@ -233,25 +233,25 @@ var location = [{
   tags: ['LARC', 'Linkages', 'Alumni', 'Review', 'Center', 'Office', 'location', 'A205']
 }, {
   name: 'Main Library ',
-  location: 'A Building, 4th Floor',
+  location: 'A Building, 4th Floor, Library Sections: Allied Medical Sciences, Criminology and Forensic Science, Filipiniana and General Reference, Periodicals, General Collections and Senior High School.',
   type: '',
   message: 'The Main Library is located at the 4th Floor of A Building.',
   tags: ['Main', 'Library', 'location']
 }, {
   name: 'Centennial Library ',
-  location: 'H Building, 6th Floor',
+  location: 'H Building, 6th Floor ',
   type: '',
   message: 'The Centennial Library is located at the 6th Floor of H Building.',
   tags: ['Centennial', 'Library', 'location']
 }, {
   name: 'Centennial Hall ',
-  location: 'Beside the H Building',
+  location: 'Beside the H Building, Library Sections: Business Administration and Accountancy, Education, Engineering, Liberal Arts and Human Sciences, Theses and Dissertions and Graduate School ',
   type: '',
   message: 'The Centennial Hall is located beside the H Building.',
   tags: ['Centennial', 'Hall', 'location']
 }, {
   name: 'Extension Library ',
-  location: 'F Building, 3rd Floor',
+  location: 'F Building, 3rd Floor, Library Sections: Law, CD, IT, Relegation, Fiction and Technical ',
   type: '',
   message: 'The Extension Library is located at the 3rd floor of F Building.',
   tags: ['Extension', 'Library', 'location']
@@ -1104,7 +1104,7 @@ var location = [{
   location: 'D Building, 2nd Floor, Beside the UB Gym',
   type: '',
   message: 'If you\'re a new student or a transferee, please proceed to the ARC which is located at the 2nd floor of D Building beside the UB Gym. ',
-  tags: ['Enrollment', 'Transferee', 'Freshmen', 'New', 'Student', 'Service', 'Process']
+  tags: ['Enrollment', 'Transferee', 'Freshmen', 'Freshman', 'New', 'Student', 'Service', 'Process']
 }, {
   name: 'Enrollment for International Students ',
   location: 'D Building, 2nd Floor, Beside the UB Gym',
@@ -1194,7 +1194,7 @@ var location = [{
   location: 'F Building, 1st Floor',
   type: '',
   message: 'You can pay your tuition fee at the Cashier which is located at the 1st Floor of F Building in front of OSA. ',
-  tags: ['Payment', 'Pay', 'Tuition', 'Fee', 'Location']
+  tags: ['Payment', 'Tuition', 'Fee', 'Location']
 }, {
   name: 'Where is the Dental Clinic ',
   location: 'F Building, 1st Floor, Room F105 ',
@@ -1225,6 +1225,18 @@ var location = [{
   type: '',
   message: 'Please prodeed to the Student Accounts Section which is located at the 1st Floor of F Building, Room F103 for further assistance. ',
   tags: ['Application', 'Scholarship', 'Apply', 'Location']
+}, {
+  name: 'IOJT/OJT ',
+  location: 'Dean\'s Office, LARC A205 ',
+  type: '',
+  message: 'Please proceed to your Dean\'s Office in order for them to evaluate your current status if you are qualified to enroll for OJT. If your concern is about the International OJT, please proceed to the LARC Office which is located at the 2nd Floor of A Building, Room A205. ',
+  tags: ['OJT', 'IOJT', 'International', 'Job', 'Training', 'Process', 'Apply', 'Application']
+}, {
+  name: 'Grades ',
+  location: 'aims.ubaguio.edu/aims/students , Dean\'s Office ',
+  type: '',
+  message: 'To see your grades, please visit the student portal aims.ubaguio.edu/aims/students. For printed grades, please visit your Dean\'s Office. ',
+  tags: ['Grades', 'Printed', 'See', 'Process']
 }];
 
 exports.location = location;

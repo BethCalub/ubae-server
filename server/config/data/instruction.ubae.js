@@ -17,7 +17,7 @@ var instruction = [{
   ],
   type: '',
   message: 'For the admission of freshmen, first you must go to the ARC extension and fill up the online form. After that, submit all your documents to the admission area for checking and for the creation of your official ID number. And lastly, go to the Dean\'s office of the course you want to take up.',
-  tags: ['Admission', 'Freshmen', 'New', 'Student', 'ARC', 'Service', 'Admitted', 'Process']
+  tags: ['Admission', 'Freshmen', 'Freshman', 'New', 'Student', 'ARC', 'Service', 'Admitted', 'Process']
 }, {
   name: 'Admission for Transferee',
   process: ['1. Go to ARC Extension to fill up form online',
@@ -720,6 +720,27 @@ var instruction = [{
   type: '',
   message: 'For printing of schedule, be sure to pay the required amount first to the cashier and show the receipt to the MIS Office.',
   tags: ['Printing', 'Print', 'Schedule', 'Request', 'Service', 'Process']
+}, {
+  name: 'OJT/IOJT',
+  process: ['Dean\'s Office, LARC A205'
+  ],
+  type: '',
+  message: 'Please proceed to your Dean\'s Office in order for them to evaluate your current status if you are qualified to enroll for OJT. If your concern is about the International OJT, please proceed to the LARC Office which is located at the 2nd Floor of A Building, Room A205. ',
+  tags: ['OJT', 'IOJT', 'International', 'Job', 'Training', 'Process', 'Apply', 'Application']
+}, {
+  name: 'Tuition Fee',
+  process: ['Fill Up the Pink Form, Pay to the cashier '
+  ],
+  type: '',
+  message: 'Please fill up the pink form which is available at the cashier. Fall in line and wait for your turn to pay. ',
+  tags: ['Payment', 'Tuition', 'Fee', 'Process', 'Service']
+}, {
+  name: 'See Grades',
+  process: ['Fill Up the Pink Form, Pay to the cashier '
+  ],
+  type: 'login to aims.ubaguio.edu/aims/students',
+  message: 'Please login to the student portal aims.ubaguio.edu/aims/students and click grades. ',
+  tags: ['Grades', 'See']
 }];
 
 exports.instruction = instruction;
