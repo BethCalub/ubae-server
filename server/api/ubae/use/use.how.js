@@ -55,7 +55,7 @@ function generateResults(err, story, userInput, ubae) {
       };
     }
   } else {
-    msg = 'Sorry! :( but I can\'t find anything related';
+    msg = 'Sorry! :( I can\'t find anything related';
     createFeedback(userInput, ubae.command, ubae.classifier, ubae.keywords, msg);
     return {
       result: ubaeResponse(msg, story, length)

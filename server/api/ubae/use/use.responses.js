@@ -53,8 +53,8 @@ exports.response = function(req, res, userInput, ubae) {
         result: ubaeResponse(msg, story, length),
       });
     } catch(error) {
-      msg = 'Sorry! :( but I can\'t find anything related';
-      createFeedback(userInput, ubae.command, ubae.classifier, ubae.keywords, msg);
+      msg = 'Sorry! :( I don\'t have a response for that yet';
+      // createFeedback(userInput, ubae.command, ubae.classifier, ubae.keywords, msg);
       return res.send({
         result: ubaeResponse(msg, story, length)
       });
