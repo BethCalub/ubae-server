@@ -29,9 +29,9 @@ exports.information = information;
 
 var information = [{
   name: 'School of Business Administration and Accountancy',
-  info: 'The School of Business Administration and Accountancy aims to graduate responsible and conscientious accounting and business professionals who are respected members of the community',
+  info: 'The School of Business Administration and Accountancy aims to graduate responsible and conscientious accounting and business professionals who are respected members of the community.',
   type: '',
-  message: 'The School of Business Administration and Accountancy aims to graduate responsible and conscientious accounting and business professionals who are respected members of the community',
+  message: 'The School of Business Administration and Accountancy aims to graduate responsible and conscientious accounting and business professionals who are respected members of the community.',
   tags: ['SBAA', 'Department', 'College', 'Accounting', 'Accountancy', 'Business', 'Administration', 'School', 'Meaning', 'Description']
 }, {
   name: 'School of Criminal Justice and Public Safety',
@@ -53,9 +53,9 @@ var information = [{
   tags: ['SIHTM', 'Department', 'College', 'Tourism', 'HRM', 'International', 'Hospitality', 'Tourism', 'Management', 'School', 'Meaning', 'Description']
 }, {
   name: 'School of Information Technology',
-  info: 'The School of Information Technology envisions itself as a leading educator that develops students to become competent, innovative, and morally upright information technology specialists',
+  info: 'The School of Information Technology envisions itself as a leading educator that develops students to become competent, innovative, and morally upright information technology specialists.',
   type: '',
-  message: 'The School of Information Technology envisions itself as a leading educator that develops students to become competent, innovative, and morally upright information technology specialists',
+  message: 'The School of Information Technology envisions itself as a leading educator that develops students to become competent, innovative, and morally upright information technology specialists.',
   tags: ['SIT', 'IT', 'Information', 'Technology', 'CS', 'ComSci', 'CompSci', 'COE', 'Department', 'College', 'School', 'Meaning', 'Description']
 }, {
   name: 'School of Liberal Arts and Human Sciences',

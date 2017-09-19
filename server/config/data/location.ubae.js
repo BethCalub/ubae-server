@@ -1237,6 +1237,12 @@ var location = [{
   type: '',
   message: 'To see your grades, please visit the student portal aims.ubaguio.edu/aims/students. For printed grades, please visit your Dean\'s Office. ',
   tags: ['Grades', 'Printed', 'See', 'Process']
+}, {
+  name: 'X Ray ',
+  location: 'F building, 1st Floor ',
+  type: '',
+  message: 'The X-Ray Laboratory is located at the 1st floor of F building. ',
+  tags: ['XRAY', 'Laboratory', 'Location', 'Ray']
 }];
 
 exports.location = location;
