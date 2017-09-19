@@ -1,5 +1,7 @@
 'use strict';
 
+import helpMsg from '../../../config/data/help.ubae';
+
 function ubaeResponse(message, story, entries) {
   return {
     _entries: entries,
@@ -13,27 +15,27 @@ exports.help = function(req, res, userInput, ubae) {
   switch (ubae.helpCmd) {
   case 'what':
     return res.send({
-      result: ubaeResponse('To search for details, follow this guide: "WHAT [SERVICES, COURSES, REQUIREMENTS] [KEYWORD]". The arrangement of words is not important except for the WHAT command word.')
+      result: ubaeResponse(helpMsg.help.what)
     });
   case 'when':
     return res.send({
-      result: ubaeResponse('To search for an event, follow this guide: "WHEN [KEYWORD]". The arrangement of words is not important except for the WHEN command word.')
+      result: ubaeResponse(helpMsg.help.when)
     });
   case 'where':
     return res.send({
-      result: ubaeResponse('To search for a location, follow this guide: "WHERE [DEPARTMENT, OFFICE] [KEYWORD]". The arrangement of words is not important except for the WHERE command word.')
+      result: ubaeResponse(helpMsg.help.where)
     });
   case 'how':
     return res.send({
-      result: ubaeResponse('To search instructions for a process, follow this guide: "HOW [KEYWORD]". The arrangement of words is not important except for the HOW command word.')
+      result: ubaeResponse(helpMsg.help.how)
     });
   case 'which':
     return res.send({
-      result: ubaeResponse('To search for a office that provide such services, follow this guide: "WHICH  [DEPARTMENT, OFFICE] [KEYWORD]". The arrangement of words is not important except for the WHICH command word.')
+      result: ubaeResponse(helpMsg.help.which)
     });
   default:
     return res.send({
-      result: ubaeResponse('To inquire information regarding the processes, requirements, events and locations in the University, please enter your question starting with WHAT, WHEN, WHERE, HOW or WHICH. You can also ask help for each commands by typing \'help <command>\'. Thank you! :)')
+      result: ubaeResponse(helpMsg.help.default)
     });
   }
 };
