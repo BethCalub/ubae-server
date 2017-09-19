@@ -2,6 +2,7 @@
 
 import Response from '../../response/response.model';
 import Feedback from '../../feedback/feedback.model';
+import messages from '../../../config/data/message.ubae';
 
 function ubaeInput(userInput, ubae) {
   return {
@@ -53,7 +54,7 @@ exports.response = function(req, res, userInput, ubae) {
         result: ubaeResponse(msg, story, length),
       });
     } catch(error) {
-      msg = 'Sorry! :( I don\'t have a response for that yet';
+      msg = messages.noResult.responses;
       // createFeedback(userInput, ubae.command, ubae.classifier, ubae.keywords, msg);
       return res.send({
         result: ubaeResponse(msg, story, length)

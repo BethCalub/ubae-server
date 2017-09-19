@@ -32,7 +32,7 @@ export function use(req, res) {
       } else {
         return res.send({
           result: {
-            _say: 'Sorry! \nBut I cannot find any keywords on your inquiry. Please try again. :)',
+            _say: 'Sorry! I cannot find any keywords on your inquiry. Please try again. :)',
             _t: Date.now()
           }
         });
@@ -43,7 +43,7 @@ export function use(req, res) {
   } else {
     return res.send({
       result: {
-        _say: 'Sorry! \nBut I cannot search anything from an empty inquiry. Please try again. :)',
+        _say: 'Sorry! I cannot search anything from an empty inquiry. Please try again. :)',
         _t: Date.now()
       }
     });
@@ -69,7 +69,7 @@ export function nlp(req, res) {
   } else {
     return res.send({
       result: {
-        _say: 'Sorry! \nBut I cannot search anything from an empty inquiry. Please try again. :)',
+        _say: 'Sorry! I cannot search anything from an empty inquiry. Please try again. :)',
         _t: Date.now()
       }
     });

@@ -1,6 +1,6 @@
 'use strict';
 
-import helpMsg from '../../../config/data/help.ubae';
+import messages from '../../../config/data/message.ubae';
 
 function ubaeResponse(message, story, entries) {
   return {
@@ -15,27 +15,27 @@ exports.help = function(req, res, userInput, ubae) {
   switch (ubae.helpCmd) {
   case 'what':
     return res.send({
-      result: ubaeResponse(helpMsg.help.what)
+      result: ubaeResponse(messages.help.what)
     });
   case 'when':
     return res.send({
-      result: ubaeResponse(helpMsg.help.when)
+      result: ubaeResponse(messages.help.when)
     });
   case 'where':
     return res.send({
-      result: ubaeResponse(helpMsg.help.where)
+      result: ubaeResponse(messages.help.where)
     });
   case 'how':
     return res.send({
-      result: ubaeResponse(helpMsg.help.how)
+      result: ubaeResponse(messages.help.how)
     });
   case 'which':
     return res.send({
-      result: ubaeResponse(helpMsg.help.which)
+      result: ubaeResponse(messages.help.which)
     });
   default:
     return res.send({
-      result: ubaeResponse(helpMsg.help.default)
+      result: ubaeResponse(messages.help.default)
     });
   }
 };

@@ -2,6 +2,7 @@
 
 import Provider from '../../provider/provider.model';
 import Feedback from '../../feedback/feedback.model';
+import messages from '../../../config/data/message.ubae';
 
 function ubaeResponse(message, story, entries) {
   return {
@@ -55,7 +56,7 @@ function generateResults(err, story, userInput, ubae) {
       };
     }
   } else {
-    msg = 'Sorry! :( I can\'t find anything related';
+    msg = messages.noResult.which;
     createFeedback(userInput, ubae.command, ubae.classifier, ubae.keywords, msg);
     return {
       result: ubaeResponse(msg, story, length)
