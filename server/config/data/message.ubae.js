@@ -8,6 +8,8 @@ var help = {
 };
 
 var noResult = {
+  noKeyword: 'Sorry! I cannot find any keywords on your inquiry. Type \'help\' to ask for assistance. Please try again. :)',
+  noInquiry: 'Sorry! I cannot search anything from an empty inquiry. Type \'help\' to ask for assistance. Please try again. :)',
   default: 'Sorry! :( I can\'t find anything related',
   what: 'Sorry! :( I can\'t find anything related. Type \'help what\' to ask for assistance',
   when: 'Sorry! :( I can\'t find anything related. Type \'help when\' to ask for assistance',

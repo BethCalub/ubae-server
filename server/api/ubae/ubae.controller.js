@@ -7,6 +7,7 @@
 
 import UbaeNLP from './ubae.nlp';
 import UbaeSearch from './ubae.use';
+import messages from '../../config/data/message.ubae';
 
 // UBAE SEARCH ENGINE
 export function use(req, res) {
@@ -32,7 +33,7 @@ export function use(req, res) {
       } else {
         return res.send({
           result: {
-            _say: 'Sorry! I cannot find any keywords on your inquiry. Please try again. :)',
+            _say: messages.noResult.noKeyword,
             _t: Date.now()
           }
         });
@@ -43,7 +44,7 @@ export function use(req, res) {
   } else {
     return res.send({
       result: {
-        _say: 'Sorry! I cannot search anything from an empty inquiry. Please try again. :)',
+        _say: messages.noResult.noInquiry,
         _t: Date.now()
       }
     });
