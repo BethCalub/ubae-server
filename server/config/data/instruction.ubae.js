@@ -17,7 +17,7 @@ var instruction = [{
   ],
   type: '',
   message: 'For the admission of freshmen, first you must go to the ARC extension and fill up the online form. After that, submit all your documents to the admission area for checking and for the creation of your official ID number. And lastly, go to the Dean\'s office of the course you want to take up.',
-  tags: ['Admission', 'Freshmen', 'Freshman', 'New', 'Student', 'ARC', 'Service', 'Admitted', 'Process', 'am']
+  tags: ['Admission', 'Freshmen', 'Freshman', 'New', 'Student', 'ARC', 'Service', 'Admitted', 'Process']
 }, {
   name: 'Admission for Transferee',
   process: ['1. Go to ARC Extension to fill up form online',
@@ -26,7 +26,7 @@ var instruction = [{
   ],
   type: '',
   message: 'For the admission of transferees, first you must go to the ARC extension and fill up the online form. After that, submit all your documents to the admission area for checking and for the creation of your official ID number. And lastly, go to the Dean\'s office of the course you want to take up.',
-  tags: ['Admission', 'Transferee', 'Student', 'ARC', 'Service', 'Admitted', 'Process', 'am']
+  tags: ['Admission', 'Transferee', 'Student', 'ARC', 'Service', 'Admitted', 'Process']
 }, {
   name: 'Enrollment for Freshmen',
   process: ['1. Go to ARC Extension to fill up form online',
@@ -37,7 +37,7 @@ var instruction = [{
   ],
   type: '',
   message: 'For freshmen enrollment, first you need to go to the ARC Extension to fill up the online form. After that, you need to submit your documents to the admission area for the checking of your documents and for the creation of your official ID number. Then you will need to proceed to the respective Dean\'s of the course you want to take up for the enrollment of subjects. For the next step, you will need to pay the required downpayment to the cashier, and lastly, go to the MIS office for the printing of your ID and schedule. ',
-  tags: ['Enrollment', 'Freshmen', 'Freshman', 'New', 'Student', 'ARC', 'Service', 'Process', 'am']
+  tags: ['Enrollment', 'Freshmen', 'Freshman', 'New', 'Student', 'ARC', 'Service', 'Process']
 }, {
   name: 'Enrollment for Transferee',
   process: ['1. Go to ARC Extension to fill up form online',
@@ -48,7 +48,7 @@ var instruction = [{
   ],
   type: '',
   message: 'To enroll as a transferee, first you need to go to the ARC Extension to fill up the online form. After that, you need to submit your documents to the admission area for the checking of your documents and for the creation of your official ID number. Then you will need to proceed to the respective Dean\'s of the course you want to take up for the enrollment of subjects. For the next step, you will need to pay the required downpayment to the cashier, and lastly, go to the MIS office for the printing of your ID and schedule. ',
-  tags: ['Enrollment', 'Transferee', 'Student', 'ARC', 'Service', 'Process', 'am']
+  tags: ['Enrollment', 'Transferee', 'Student', 'ARC', 'Service', 'Process']
 }, {
   name: 'Enrollment for New International Student',
   process: ['1. Go to School Deans Office for approval of CRO Form 14',
@@ -60,7 +60,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Kindly go to the Dean\'s office of the course you would like to take up for the approval of your CRO Form 14. After it is approved, go to the ARC Extension and fill up the online form. Then go to the door C of the ARC Office and present your Student Visa, Passport and Authenticated School Records. After that, go back to the Dean\'s office for the enrollment of subjects. Then go to the cashier to pay the required downpayment. And lastly, go to the MIS Office for the printing of your schedule and ID',
-  tags: ['Enrollment', 'International', 'Foreign', 'Student', 'Service', 'Process', 'am']
+  tags: ['Enrollment', 'International', 'Foreign', 'Student', 'Service', 'Process']
 }, {
   name: 'Enrollment for Current Student',
   process: ['1. Go to the deans office and register your preffered subjects',
@@ -70,7 +70,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Kindly go to the respective Dean\'s office of your department and register the subjects you prefer. Next step is you need to pay the required downpayment to the cashier. And lastly, proceed to the MIS Office for the printing of your schedule and ID validation. ',
-  tags: ['Enrollment', 'Current', 'Old', 'Student', 'Service', 'Process', 'am']
+  tags: ['Enrollment', 'Current', 'Old', 'Student', 'Service', 'Process']
 }, {
   name: 'Release of Student Records for Graduates',
   process: ['1. Get clearance from Dean, Library and AMD',
@@ -90,49 +90,49 @@ var instruction = [{
   ],
   type: '',
   message: 'Just go to the athletics office and present your valid ID.',
-  tags: ['Lending', 'Sports', 'Equipment', 'Borrow', 'Request', 'Service', 'Process', 'am']
+  tags: ['Lending', 'Sports', 'Equipment', 'Borrow', 'Request', 'Service', 'Process']
 }, {
   name: 'Student Development Facilitation and Counseling Services',
   process: ['Students can just go to the office walk-in or should be reffered by the dean, instructor, Faculty, Parents, or other University Personnel'],
   type: '',
   message: 'Kindly go to the CCSD office for them to assist your concern.',
-  tags: ['Student', 'Development', 'Facilitation', 'Avail', 'Use', 'Counseling', 'Service', 'Process', 'am']
+  tags: ['Student', 'Development', 'Facilitation', 'Avail', 'Use', 'Counseling', 'Service', 'Process']
 }, {
   name: 'Psychological Testing Service',
   process: ['1. Just go to the office/walk-in'],
   type: '',
   message: 'Kindly go to the CCSD office for them to assist your concern regarding Psychological Testing.',
-  tags: ['Psychological', 'Testing', 'Avail', 'Use', 'Service', 'Process', 'am']
+  tags: ['Psychological', 'Testing', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'Personality Test',
   process: ['1. Just go to the office/walk-in'],
   type: '',
   message: 'Kindly go to the CCSD office for them to assist your concern regarding Personality Test.',
-  tags: ['Personality', 'Test', 'Avail', 'Use', 'Service', 'Process', 'am']
+  tags: ['Personality', 'Test', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'Interest Test',
   process: ['1. Just go to the office/walk-in'],
   type: '',
   message: 'Kindly go to the CCSD office for them to assist your concern regarding Interest Test.',
-  tags: ['Interest', 'Test', 'Avail', 'Use', 'Service', 'Process', 'am']
+  tags: ['Interest', 'Test', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'Aptitude Test',
   process: ['1. Just go to the office/walk-in'],
   type: '',
   message: 'Kindly go to the CCSD office for them to assist your concern regarding Aptitude Test.',
-  tags: ['Aptitude', 'Mental', 'Ability', 'Test', 'Avail', 'Use', 'Service', 'Process', 'am']
+  tags: ['Aptitude', 'Mental', 'Ability', 'Test', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'Battery Test',
   process: ['1. Just go to the office/walk-in'],
   type: '',
   message: 'Kindly go to the CCSD office for them to assist your concern regarding Battery Test.',
-  tags: ['Battery', 'Test', 'Service', 'Avail', 'Use', 'Process', 'am']
+  tags: ['Battery', 'Test', 'Service', 'Avail', 'Use', 'Process']
 }, {
   name: 'Career and Placement Services',
   process: ['1. Just go to the office/walk-in'],
   type: '',
   message: 'Please proceed directly to the CCSD office, but you should be reffered by your dean or instructor.',
-  tags: ['Career', 'Placement', 'Service', 'Avail', 'Use', 'Process', 'am']
+  tags: ['Career', 'Placement', 'Service', 'Avail', 'Use', 'Process']
 }, {
   name: 'Free Tooth Extraction',
   process: ['1. Go to the Clinic and consult the Dentist.',
@@ -140,7 +140,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Go to the Clinic and consult the dentist. You will be scheduled for your tooth extraction',
-  tags: ['Tooth', 'Removal', 'Extraction', 'Avail', 'Use', 'Service', 'Process', 'am']
+  tags: ['Tooth', 'Removal', 'Extraction', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'Minor Surgery',
   process: ['1. Go to the Clinic and see the doctor.',
@@ -149,7 +149,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Kindly go to the clinic and see the doctor. The procedure will be explained there and you will be scheduled for the surgery. Dont forget to pay the required amount to the cashier.',
-  tags: ['Minor', 'Surgery', 'Suturing', 'Excision', 'Circumcision', 'Avail', 'Use', 'Service', 'Process', 'am']
+  tags: ['Minor', 'Surgery', 'Suturing', 'Excision', 'Circumcision', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'Physical Examination',
   process: ['1. Get checklist from the Clinic.',
@@ -158,7 +158,7 @@ var instruction = [{
   ],
   type: '',
   message: 'To avail of the Physical Examination, first get the checklist from the clinic and pay the required amount to the cashier. Then you can proceed to the Physical Examination such as X Ray, Dental and other Medical Examinations.',
-  tags: ['Physical', 'Examination', 'Avail', 'Use', 'Service', 'Process', 'am']
+  tags: ['Physical', 'Examination', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'Facilitation of Accident Insurance',
   process: ['1. Get all the receipts incurred in the hospital.',
@@ -166,7 +166,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Get all the receipts incurred in the hospital and show it to the University clinic.',
-  tags: ['Facilitation', 'Accident', 'Insurance', 'Avail', 'Use', 'Service', 'Process', 'am']
+  tags: ['Facilitation', 'Accident', 'Insurance', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'Radiology and Medtech/Clinical Laboratory Services',
   process: ['1. Go to the Clinic to get request',
@@ -174,13 +174,13 @@ var instruction = [{
   ],
   type: '',
   message: 'Kindly give your request to the clinic and be scheduled for this service. ',
-  tags: ['Radiology', 'Medtech', 'Clinical', 'Laboratory', 'Avail', 'Use', 'Service', 'Process', 'am']
+  tags: ['Radiology', 'Medtech', 'Clinical', 'Laboratory', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'Vaccinations',
   process: ['1. Go to the Clinic and present your Valid ID.'],
   type: '',
   message: 'Kindly proceed to the clinic and present your valid ID',
-  tags: ['Vaccination', 'HepB', 'Influenza', 'AH1N1', 'Cervical', 'Cancer', 'Avail', 'Use', 'Service', 'Process', 'am']
+  tags: ['Vaccination', 'HepB', 'Influenza', 'AH1N1', 'Cervical', 'Cancer', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'X-Ray',
   process: ['1. Go to the clinic to ask request.',
@@ -188,7 +188,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Go to the clinic and request for an X-Ray. Kindly pay the required amount to the cashier and proceed to the X-Ray Laboratory.',
-  tags: ['X', 'Ray', 'Avail', 'Use', 'Service', 'Process', 'am']
+  tags: ['X', 'Ray', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'Consultation/Check Up',
   process: ['1. Proceed to the clinic student assistant and present your valid ID.',
@@ -199,7 +199,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Kindly proceed to the clinic and present you valid ID. If you\'re a new patient, please fill up the Patients Card. State your complaints to the nurse and have your vital signs checked. After that, proceed to the physician for the check-up. Lastly, get your medicine from the nurse. Get Well Soon!',
-  tags: ['Check', 'Up', 'Consultation', 'Avail', 'Use', 'Service', 'Process', 'am']
+  tags: ['Check', 'Up', 'Consultation', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'Medical Certificate',
   process: ['1. Consult the University Doctor'],
@@ -216,7 +216,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Kindly proceed to the Baguio Health Department for the initial medical examination. Collect all the results and the MD will asess you.',
-  tags: ['Physical', 'Medical', 'Examination', 'am', 'Local', 'Practicum', 'OJT', 'SIHTM', 'Avail', 'Use', 'Service', 'Process']
+  tags: ['Physical', 'Medical', 'Examination', 'Local', 'Practicum', 'OJT', 'SIHTM', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'Physical/Medical Examination for local OJT/ Practicum (Non-SIHTM Students)',
   process: ['1. Proceed to the clinic to obtain your checklist and undergo the procedures.',
@@ -226,7 +226,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Get a checklist from the clinic before undergoing the procedures. Collate the results and then the MD will asess you.',
-  tags: ['Physical', 'am', 'Medical', 'Examination', 'Local', 'OJT', 'Practicum', 'Avail', 'Use', 'Service', 'Process']
+  tags: ['Physical', 'Medical', 'Examination', 'Local', 'OJT', 'Practicum', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'Physical/Medical Examination for International OJT',
   process: ['1. Present the endorsement letter to the Medical Clinic Staff to obtain a Physical Exam Checklist.',
@@ -236,31 +236,31 @@ var instruction = [{
   ],
   type: '',
   message: 'Present the endorsement letter to the medical clinic staff to obtain a Physical Exam Checklist. Undergo the different examinations from the checklist. Collate the results and give it to the student assistant. Lastly, proceed to the MD for the Physical Examination and issuancd of your certificate.',
-  tags: ['Physical', 'Medical', 'Examination', 'am', 'International', 'IOJT', 'Avail', 'Use', 'Service', 'Process']
+  tags: ['Physical', 'Medical', 'Examination', 'International', 'IOJT', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'UBCARES Program',
   process: ['Just go to the ECOS Office for application'],
   type: '',
   message: 'If you want to volunteer for the outreach, kindly go to the ECOS office for the application.',
-  tags: ['UBCARES', 'program', 'Outreach', 'Volunteer', 'Service', 'Process', 'am']
+  tags: ['UBCARES', 'program', 'Outreach', 'Volunteer', 'Service', 'Process']
 }, {
   name: 'Processes International On The Job Training (IOJT) applicants and exchange scholars',
   process: ['1. Give approval sheet/form from dean and consent from parent'],
   type: '',
   message: 'Kindly get an approval from your dean and consent from your parents and submit it to the LARC Office.',
-  tags: ['IOJT', 'International', 'Job', 'Training', 'Avail', 'Application', 'Apply', 'Use', 'Service', 'Process', 'am']
+  tags: ['IOJT', 'International', 'Job', 'Training', 'Avail', 'Application', 'Apply', 'Use', 'Service', 'Process']
 }, {
   name: 'Assists the UBAFI in issuing the membership identification cards of its members.',
   process: ['1. Signing clearance form for Alumni ID'],
   type: '',
   message: 'Go to the LARC office and get your clearance form signed for the Alumni ID. ',
-  tags: ['UBAFI', 'Alumni', 'Request', 'ID', 'Service', 'Get', 'avail', 'Process', 'am']
+  tags: ['UBAFI', 'Alumni', 'Request', 'ID', 'Service', 'Get', 'avail', 'Process']
 }, {
   name: 'Gives copies of PRC Board Syllabi for STE Students',
   process: ['1. Just go to the Review Center or Print copy from website'],
   type: '',
   message: 'Please go to the LARC office to get a copy of PRC Board Syllabi for STE Students',
-  tags: ['Copy', 'PRC', 'Board', 'Syllabi', 'STE', 'Students', 'Request', 'avail', 'get', 'am']
+  tags: ['Copy', 'PRC', 'Board', 'Syllabi', 'STE', 'Students', 'Request', 'avail', 'get']
 }, {
   name: 'Follet-DLM Mobile Application',
   process: ['1. Download and install Destiny Quest mobile app from the app store or Google Play.',
@@ -272,13 +272,13 @@ var instruction = [{
   ],
   type: '',
   message: 'For the Follet-DLM Mobile App, first you need to download and install the Destiny Quest Mobile app which is available from the App Store or Google Play. Lauch the app and enter the URL: (follett.ubaguio.edu) and tap Connect. Select your school library and enter your username which is your ID Number and your password as your last name. Tap login and Enjoy.',
-  tags: ['Follet', 'DLM', 'Mobile', 'Application', 'Download', 'Service', 'Process', 'am']
+  tags: ['Follet', 'DLM', 'Mobile', 'Application', 'Download', 'Service', 'Process']
 }, {
   name: 'Journals',
   process: ['Proceed to the library with a valid ID'],
   type: '',
   message: 'Kindly proceed to the library with a valid ID to read available journals.',
-  tags: ['Journals', 'Books', 'Magazines', 'Newspapers', 'Service', 'Process', 'am']
+  tags: ['Journals', 'Books', 'Magazines', 'Newspapers', 'Service', 'Process']
 }, {
   name: 'New Library Databases/E-Journals',
   process: ['A. For gale group',
@@ -300,25 +300,25 @@ var instruction = [{
   process: ['Proceed to the Library with valid ID'],
   type: '',
   message: 'Kindly proceed to the Centennial Library with your valid ID for clearance signing.',
-  tags: ['Library', 'Clearance', 'Request', 'Signing', 'Service', 'Request', 'Process', 'am']
+  tags: ['Library', 'Clearance', 'Request', 'Signing', 'Service', 'Request', 'Process']
 }, {
   name: 'Library Orientation',
   process: ['1. Just go to the Centennial Library for Library Orientation Request'],
   type: '',
   message: 'Please proceed to the Centennial Library to request a Library Orientation. Be sure to bring your valid ID.',
-  tags: ['Library', 'Orientation', 'Service', 'Process', 'am']
+  tags: ['Library', 'Orientation', 'Service', 'Process']
 }, {
   name: 'Computers for Internet Surfing in the Library',
   process: ['Proceed to the library with a valid ID'],
   type: '',
   message: 'Kindly proceed to the library with a valid ID to use the computers for internet surfing.',
-  tags: ['Computer', 'Internet', 'Surfing', 'use', 'Library', 'Service', 'Process', 'am']
+  tags: ['Computer', 'Internet', 'Surfing', 'use', 'Library', 'Service', 'Process']
 }, {
   name: 'Discussion Rooms',
   process: ['1. Fill up Discussion Room Reservation Form'],
   type: '',
   message: 'Please proceed to the library and fill up the Discussion Room Reservation Form.',
-  tags: ['Discussion', 'Rooms', 'Library', 'use', 'Service', 'Process', 'am']
+  tags: ['Discussion', 'Rooms', 'Library', 'use', 'Service', 'Process']
 }, {
   name: 'Press Releases and Advertisements',
   process: ['1. Go to MAPS Office and fill up the Ad Requisition Form',
@@ -327,13 +327,13 @@ var instruction = [{
   ],
   type: '',
   message: 'If you want your advertisements to be published, kindly go to the MAPS Office and fill up the Ad Requisition Form and ask your Dean and VP for Administration to sign it. If it is already signed, come back to the MAPS Office with the signed form.',
-  tags: ['Press', 'Releases', 'Advertisements', 'Ads', 'Avail', 'Use', 'Request', 'Service', 'Process', 'am']
+  tags: ['Press', 'Releases', 'Advertisements', 'Ads', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Yearbook and Graduation Materials',
   process: ['1. Fill up and submit the form to the MAPS Office'],
   type: '',
   message: 'Kindly go to the MAPS Office and fill up the required form. ',
-  tags: ['Yearbook', 'Graduation', 'Materials', 'avail', 'Request', 'Service', 'Process', 'am']
+  tags: ['Yearbook', 'Graduation', 'Materials', 'avail', 'Request', 'Service', 'Process']
 }, {
   name: 'Social Media Content Development',
   process: ['1. Go to MAPS Office and fill up the Ad Requisition Form',
@@ -342,7 +342,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Kindly go to the MAPS Office and fill up the Ad Requisition Form. Ask for your Dean and the VP for Administration sign the form. If it is signed, go back to the MAPS Office.',
-  tags: ['Social', 'Media', 'Content', 'Development', 'Avail', 'Use', 'Request', 'Service', 'Process', 'am']
+  tags: ['Social', 'Media', 'Content', 'Development', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Website Content Development',
   process: ['1. Go to MAPS Office and fill up the Ad Requisition Form',
@@ -351,7 +351,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Kindly go to the MAPS Office and fill up the Ad Requisition Form. Ask for your Dean and the VP for Administration sign the form. If it is signed, go back to the MAPS Office.',
-  tags: ['Website', 'Content', 'Development', 'Avail', 'Use', 'Request', 'Service', 'Process', 'am']
+  tags: ['Website', 'Content', 'Development', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Virus Scanning and Removal for Flash Drives and Portable Hard Disk',
   process: ['1. Go to the MIS office',
@@ -359,7 +359,7 @@ var instruction = [{
   ],
   type: '',
   message: 'If your USB or Portable Hard Disk gets virused, go to the MIS Office with your valid ID. They will scan your device and remove the virus.',
-  tags: ['Virus', 'Scanning', 'Removal', 'am', 'Flash', 'Drive', 'Portable', 'Hard', 'Disk', 'Avail', 'Use', 'Request', 'Service', 'Process']
+  tags: ['Virus', 'Scanning', 'Removal', 'Flash', 'Drive', 'Portable', 'Hard', 'Disk', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Assessment of PC or Laptop',
   process: ['1. Go to the MIS office',
@@ -367,7 +367,7 @@ var instruction = [{
   ],
   type: '',
   message: 'If you want your PC or Laptop to be assessed, go to the MIS Office with your valid ID and your unit. Take note that MIS will only assess your unit and not repair it.',
-  tags: ['Assessment', 'PC', 'am', 'Personal', 'Computer', 'Laptop', 'Avail', 'Use', 'Request', 'Service', 'Process']
+  tags: ['Assessment', 'PC', 'Personal', 'Computer', 'Laptop', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Installation of Open-Source or Free Software',
   process: ['1. Go to the MIS office',
@@ -375,7 +375,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Proceed to the MIS Office and present your valid ID. Bring your device or flash drive for the installer. Please take note that only open-source and free softwares are the only ones you can avail.',
-  tags: ['Installation', 'am', 'Open', 'Source', 'Free', 'Software', 'Avail', 'Use', 'Service', 'Process']
+  tags: ['Installation', 'Open', 'Source', 'Free', 'Software', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'Printing and Validation of Student ID',
   process: ['1A. Go to the MIS office and present your receipt',
@@ -391,7 +391,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Go to the MIS Office and present your official receipt.',
-  tags: ['Printing', 'am', 'Validation', 'Student', 'ID', 'Service', 'Process']
+  tags: ['Printing', 'Validation', 'Student', 'ID', 'Service', 'Process']
 }, {
   name: 'Replacement of Student ID',
   process: ['1. Fill up replacement form from student affairs',
@@ -400,7 +400,7 @@ var instruction = [{
   ],
   type: '',
   message: 'To replace your Student ID, first you need to go to OSA and fill up the replacement form. Then you need to pay the required amount to the cashier. Now you can proceed to MIS and present the receipt.',
-  tags: ['Replacement', 'am', 'Student', 'ID', 'Service', 'Process']
+  tags: ['Replacement', 'Student', 'ID', 'Service', 'Process']
 }, {
   name: 'Printing of Alumni and Other IDs',
   process: ['1. Go to the MIS office and present your clearance form',
@@ -409,7 +409,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Proceed to the MIS Office and present your clearance form. They will ask for your signature and have your ID processed.',
-  tags: ['Alumni', 'Other', 'am', 'ID', 'Service', 'Process']
+  tags: ['Alumni', 'Other', 'ID', 'Service', 'Process']
 }, {
   name: 'Creation of Wi-Fi Account',
   process: ['1. Go to the MIS office and request for an account',
@@ -417,7 +417,7 @@ var instruction = [{
   ],
   type: '',
   message: 'If you want to have your own Wi Fi account, go to the MIS Office and present your valid ID and ask them to create an account for you.',
-  tags: ['WiFi', 'Account', 'Create', 'am', 'Avail', 'Use', 'Request', 'Service', 'Process']
+  tags: ['WiFi', 'Account', 'Create', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Readmissions',
   process: ['1. Go to the office of student affairs',
@@ -425,7 +425,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Proceed to OSA and fill up the readmission slip. Be sure to bring your valid ID.',
-  tags: ['Readmission', 'Readmitted', 'am', 'claim', 'Dropped', 'Class', 'Card', 'Readmitted', 'classcard', 'Service', 'Process']
+  tags: ['Readmission', 'Readmitted', 'claim', 'Dropped', 'Class', 'Card', 'Readmitted', 'classcard', 'Service', 'Process']
 }, {
   name: 'Performing Arts',
   process: ['1. Go to student account and fill up scholarship form or yellow form',
@@ -433,7 +433,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Go to the Students Accounts Section and fill up the yellow form. Proceed to OSA and the office director will be the one to process your application.',
-  tags: ['Performing', 'Arts', 'am', 'Graces', 'Voices', 'Chamber', 'Orchestra', 'Plug', 'Play', 'Band', 'UBBUK', 'Ethnic', 'Dance', 'Group', 'Process', 'Application', 'Apply', 'Scholarship', 'Service', 'Process']
+  tags: ['Performing', 'Arts', 'Graces', 'Voices', 'Chamber', 'Orchestra', 'Plug', 'Play', 'Band', 'UBBUK', 'Ethnic', 'Dance', 'Group', 'Process', 'Application', 'Apply', 'Scholarship', 'Service', 'Process']
 }, {
   name: 'Format Editing',
   process: ['1. Go to the RNDC office',
@@ -442,7 +442,7 @@ var instruction = [{
   ],
   type: '',
   message: 'For Format Editing, go to the RNDC and submit a copy of your study or manuscript. Be sure to sign the log book.',
-  tags: ['Format', 'Editing', 'Avail', 'Use', 'am', 'Request', 'Service', 'Process']
+  tags: ['Format', 'Editing', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Statistic Package for Social Sciences',
   process: ['1. Go to the RNDC Office and get referral slip.',
@@ -451,7 +451,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Go to the RNDC and get a referral slip. Submit a copy of your study and manuscript and the office will be the one to reffer you to a statistician.',
-  tags: ['Statistics', 'Assistance', 'Package', 'am', 'Social', 'Sciences', 'SPSS', 'Avail', 'Use', 'Request', 'Service', 'Process']
+  tags: ['Statistics', 'Assistance', 'Package', 'Social', 'Sciences', 'SPSS', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Poster Preparation',
   process: ['1. Give a request letter with the poster size, font, color, text and other information about your poster.',
@@ -459,7 +459,7 @@ var instruction = [{
   ],
   type: '',
   message: 'For Poster Preparation, sumbit a request letter to RNDC with the poster size, font, color. text and other information about your poster.',
-  tags: ['Poster', 'Preparation', 'Avail', 'Use', 'am', 'Request', 'Service', 'Process']
+  tags: ['Poster', 'Preparation', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Publication of Research Findings (Catalyst)',
   process: ['1. Submit Full manuscript to RNDC.',
@@ -470,13 +470,13 @@ var instruction = [{
   ],
   type: '',
   message: 'Submit your full manuscript and ethics clearance to RNDC and sign the consent to publish and transfer of copyright. Your research will undergo tool validation verification. If your study in quantitative, you will be reffered to a statistician.',
-  tags: ['Publication', 'Research', 'Findings', 'am', 'Catalyst', 'Avail', 'Use', 'Request', 'Service', 'Process']
+  tags: ['Publication', 'Research', 'Findings', 'Catalyst', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Tool Validation',
   process: ['1. Go to the RNDC Office and submit requirements'],
   type: '',
   message: 'Go to RNDC and submit all the requirements for Tool Validation.',
-  tags: ['Tool', 'Validation', 'Avail', 'Use', 'Request', 'am', 'Service', 'Process']
+  tags: ['Tool', 'Validation', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Grammar Check',
   process: ['1. Go to the RNDC Office and login to the log book',
@@ -484,7 +484,7 @@ var instruction = [{
   ],
   type: '',
   message: 'For Grammar Check, go to the RNDC and login to the logbook and send a Manuscript to the RNDC email.',
-  tags: ['Grammar', 'Check', 'Avail', 'Use', 'Request', 'am', 'Service', 'Process']
+  tags: ['Grammar', 'Check', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, , {
   name: 'Grammarly',
   process: ['1. Go to the RNDC Office and login to the log book',
@@ -492,7 +492,7 @@ var instruction = [{
   ],
   type: '',
   message: 'For using Grammarly, go to the RNDC and login to the logbook and send a Manuscript to the RNDC email.',
-  tags: ['Grammarly', 'Avail', 'Use', 'Request', 'am', 'Service', 'Process']
+  tags: ['Grammarly', 'Avail', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Plagiarism Test',
   process: ['1. Go to the RNDC Office and login to the log book',
@@ -500,7 +500,7 @@ var instruction = [{
   ],
   type: '',
   message: 'For Plagiarism Test, go to the RNDC and login to the logbook and send a Manuscript to the RNDC email.',
-  tags: ['Plagiarism', 'Test', 'Service', 'Avail', 'Use', 'am', 'Request', 'Process']
+  tags: ['Plagiarism', 'Test', 'Service', 'Avail', 'Use', 'Request', 'Process']
 }, {
   name: 'Spell Check',
   process: ['1. Go to the RNDC Office and login to the log book',
@@ -508,13 +508,13 @@ var instruction = [{
   ],
   type: '',
   message: 'For Spell Check, go to the RNDC and login to the logbook and send a Manuscript to the RNDC email.',
-  tags: ['Spell', 'Check', 'Service', 'Avail', 'Use', 'am', 'Request', 'Process']
+  tags: ['Spell', 'Check', 'Service', 'Avail', 'Use', 'Request', 'Process']
 }, {
   name: 'Use of computers',
   process: ['1. Go to the RNDC Office and login to the log book'],
   type: '',
   message: 'If you need to use a computer, you can use one from the RNDC just login to the logbook. Be sure to bring a valid ID.',
-  tags: ['Computer', 'Service', 'Avail', 'Use', 'Request', 'am', 'Process']
+  tags: ['Computer', 'Service', 'Avail', 'Use', 'Request', 'Process']
 }, {
   name: 'In-charge of issuance of Assessment of School Fees/Accounts Inquiry',
   process: ['1. Go to the the designated assessment windows',
@@ -522,13 +522,13 @@ var instruction = [{
   ],
   type: '',
   message: 'Go to the Students Accounts Section for assessment of school fees or accounts inquiry. Be sure to bring your valid ID.',
-  tags: ['Assessment', 'Fee', 'Accounts', 'Service', 'get', 'am', 'Process']
+  tags: ['Assessment', 'Fee', 'Accounts', 'Service', 'get', 'Process']
 }, {
   name: 'Issuance of Promissory Note',
   process: ['1. Fill Up the form from the Student Accounts Section'],
   type: '',
   message: 'Go to the Students Accounts Section and fill up the form.',
-  tags: ['Promissory', 'Note', 'Request', 'Service', 'am', 'Process']
+  tags: ['Promissory', 'Note', 'Request', 'Service', 'Process']
 }, {
   name: 'Issuance of Examination Permits',
   process: ['1. Secure their assessment of fees',
@@ -537,7 +537,7 @@ var instruction = [{
   ],
   type: '',
   message: 'To claim your examination permit, go to the Students Accounts Section with your Assessment of Fees and receipt for your tuition fee.',
-  tags: ['Examination', 'Permit', 'Service', 'get', 'am', 'Process']
+  tags: ['Examination', 'Permit', 'Service', 'get', 'Process']
 }, {
   name: 'Issuance of Clearance for the Release of School Credentials',
   process: ['1. Submit clearance form to the Student Accounts Section',
@@ -547,7 +547,7 @@ var instruction = [{
   ],
   type: '',
   message: 'For the issuance of clearance for the release of school credentials, first you need to submit your clearance form to the Students Accounts Section. The Office will review your account if it has deficiencies.',
-  tags: ['Clearance', 'Release', 'School', 'Credentials', 'Service', 'am', 'get', 'Process']
+  tags: ['Clearance', 'Release', 'School', 'Credentials', 'Service', 'get', 'Process']
 }, {
   name: 'Investigate Complaints, Offenses, Reports, and any Other Unusual or Suspicious Activities in the Campus',
   process: ['1. Before the students are brought to the OSA, they will first conduct an investigation with the parties involved.',
@@ -556,13 +556,13 @@ var instruction = [{
   ],
   type: '',
   message: 'If you have certain complaints in school regarding security, you can go to the Security Office so they can investigate regarding your complaints.',
-  tags: ['Offenses', 'Report', 'Suspicious', 'Campus', 'Security', 'am', 'Assistance', 'Investigation', 'Service', 'Process']
+  tags: ['Offenses', 'Report', 'Suspicious', 'Campus', 'Security', 'Assistance', 'Investigation', 'Service', 'Process']
 }, {
   name: 'Lost & Found',
   process: ['1. Bring the Item to the Security Office or give the item to the marshalls'],
   type: '',
   message: 'If you found a lost item, you can give it to the Security Office and report it as Lost and Found. Or if you lost something, you can try to ask if someone honest found your belonging.',
-  tags: ['Lost', 'Found', 'Service', 'Use', 'Avail', 'Item', 'am', 'Process']
+  tags: ['Lost', 'Found', 'Service', 'Use', 'Avail', 'Item', 'Process']
 }, {
   name: 'Security Contact',
   process: ['1. Dial 442-4915 or local no. 234/309',
@@ -570,141 +570,142 @@ var instruction = [{
   ],
   type: '',
   message: 'In case of emergency, you can contact our Security Office using these numbers: 442-4915 or local no. 234/309.',
-  tags: ['Security', 'Contact', 'call', 'Emergency', 'Request', 'am', 'Service', 'Process']
+  tags: ['Security', 'Contact', 'call', 'Emergency', 'Request', 'Service', 'Process']
 }, {
   name: 'Student Organization',
   process: ['Seek for information on your respective Dean\'s Office'],
   type: '',
   message: 'Regarding student organizations, seek for more information to your respective Dean\'s office.',
-  tags: ['Student', 'Organization', 'Org', 'am', 'Government']
+  tags: ['Student', 'Organization', 'Org', 'Government']
 }, {
   name: 'Certificate of Enrollment ',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
   message: 'To process your Certificate of Enrollment, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
-  tags: ['Certificate', 'Enrollment', 'Request', 'Get', 'am', 'Process']
+  tags: ['Certificate', 'Enrollment', 'Request', 'Get', 'Process']
 }, {
   name: ' Certificate of General Weighted Average ',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
   message: 'To process your Certificate of General Weighted Average, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
-  tags: ['General', 'Weighted', 'Average', 'GWA', 'Get', 'am', 'Request', 'Process']
+  tags: ['General', 'Weighted', 'Average', 'GWA', 'Get', 'Request', 'Process']
 }, {
   name: 'Certificate of English as Medium Instruction  ',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
   message: 'To process your Certificate of English as Medium Instruction, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
-  tags: ['Certificate', 'English', 'Medium', 'Instruction', 'am', 'Get', 'Request', 'Process']
+  tags: ['Certificate', 'English', 'Medium', 'Instruction', 'Get', 'Request', 'Process']
 }, {
   name: 'Certificate of Multiple Attendance',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
   message: 'To process your Certificate of Multiple Attendance, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
-  tags: ['Certificate', 'Multiple', 'Attendance', 'Get', 'Request', 'am', 'Process']
+  tags: ['Certificate', 'Multiple', 'Attendance', 'Get', 'Request', 'Process']
 }, {
   name: 'Certificate of Grades',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
   message: 'To process your Certificate of Grades, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
-  tags: ['Certificate', 'Grades', 'Request', 'Get', 'am', 'Process']
+  tags: ['Certificate', 'Grades', 'Request', 'Get', 'Process']
 }, {
   name: 'Certificate of Earned Units',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
   message: 'To process your Certificate of Earned Units, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
-  tags: ['Certificate', 'Earned', 'Units', 'Request', 'Get', 'am', 'Process']
+  tags: ['Certificate', 'Earned', 'Units', 'Request', 'Get', 'Process']
 }, {
   name: 'Certificate of Good Moral Character ',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
   message: 'To process your Certificate of Good Moral Character, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
-  tags: ['Certificate', 'Good', 'Moral', 'Character', 'Get', 'am', 'Request', 'Process']
+  tags: ['Certificate', 'Good', 'Moral', 'Character', 'Get', 'Request', 'Process']
 }, {
   name: 'Entrance Scholarships ',
   process: 'Submit requirements at the Office of Student Affairs ',
   type: '',
   message: 'For this type of scholarship, the applicants are required to submit to the Office of Student Affairs a certification attesting to their status under the category being applied for. Please take note that if the applicants are graduates of UB Science High School and UB High School Honor Section, please secure an application form at the Office of the Vice President for Academic Affairs. ',
-  tags: ['Entrance', 'Scholarship', 'Application', 'Apply', 'am', 'Science', 'High', 'School', 'Honor', 'Valedictorian', 'Salutatorian', 'Honorable', 'Mention', 'Student', 'Section']
+  tags: ['Entrance', 'Scholarship', 'Application', 'Apply', 'Science', 'High', 'School', 'Honor', 'Valedictorian', 'Salutatorian', 'Honorable', 'Mention', 'Student', 'Section']
 }, {
   name: 'Service Grants Scholarship ',
   process: 'Go to the Office to the office concerned ',
   type: '',
   message: 'Procede to the office concerned and follow application procedures. For Student Assistants / Marshalls, proceed to the Human Resource Management Center. For Athletic Scholarship, proceed to the Athletics Office. For Performing arts such as VOICES, GRACES, Band and Orchestra, proceed to the Office of Students Affairs. ',
-  tags: ['Student', 'Assistant', 'Marshall', 'Athlete', 'Athletics', 'am', 'Performing', 'Arts', 'VOICES', 'Chorale', 'GRACES', 'Dance', 'Troupe', 'Band', 'Orchestra', 'Scholarship', 'Application', 'Apply']
+  tags: ['Student', 'Assistant', 'Marshall', 'Athlete', 'Athletics', 'Performing', 'Arts', 'VOICES', 'Chorale', 'GRACES', 'Dance', 'Troupe', 'Band', 'Orchestra', 'Scholarship', 'Application', 'Apply']
 }, {
   name: 'UB Alumni Graduate Program (Non-UB employee) Scholarship ',
   process: 'Submit requirements to the ARC ',
   type: '',
   message: 'For this type of scholarship, please submit an application letter, endorsement letter from your superior that indicates the number of maximum units you\'re allowed to enroll, certificate of employment (if applicable), Official Transcript of Records, Service Record (if applicable), photocopy of employment ID and Certificate of Good Moral Character to the ARC. ',
-  tags: ['Graduate ', 'Program ', 'Alumni', 'Scholarship', 'Application', 'am', 'Apply']
+  tags: ['Graduate ', 'Program ', 'Alumni', 'Scholarship', 'Application', 'Apply']
 }, {
   name: 'Government Grant Scholarship ',
   process: 'Visit the concerned agencies\' regional offices ',
   type: '',
   message: 'Applicants for government scholarship grants should visit the concerned agencies\' respective regional offices. ',
   tags: ['Government',
-   'Grant', 
-   'Scholarship', 
-   'Application', 
-   'Apply', 
-   'Study', 
-   'Now', 
-   'Pay', 
-   'Later', 
-   'SNPLP', 
-   'Private', 
-   'Education', 
-   'Student', 
-   'Financial', 
-   'Assistance', 
-   'PESFA', 
-   'Regional', 
-   'Program',
-   'RSP', 
-   'National', 
-   'NSP', 
-   'Special', 
-   'Indigenous', 
-   'Ethnic', 
-   'People', 
-   'SPIEP', 
-   'Congressional', 
-   'District', 
-   'Tulong', 
-   'Dunog',
-   'Full', 
-   'Merit', 
-   'State', 
-   'SSP', 
-   'Half', 
-   'Philippine', 
-   'Veterans', 
-   'Administration', 
-   'PVAO', 
-   'Overseas', 
-   'Workers', 
-   'Welfare', 
-   'Agency',
-   'am', 
-   'OWWA']
+    'Grant',
+    'Scholarship',
+    'Application',
+    'Apply',
+    'Study',
+    'Now',
+    'Pay',
+    'Later',
+    'SNPLP',
+    'Private',
+    'Education',
+    'Student',
+    'Financial',
+    'Assistance',
+    'PESFA',
+    'Regional',
+    'Program',
+    'RSP',
+    'National',
+    'NSP',
+    'Special',
+    'Indigenous',
+    'Ethnic',
+    'People',
+    'SPIEP',
+    'Congressional',
+    'District',
+    'Tulong',
+    'Dunog',
+    'Full',
+    'Merit',
+    'State',
+    'SSP',
+    'Half',
+    'Philippine',
+    'Veterans',
+    'Administration',
+    'PVAO',
+    'Overseas',
+    'Workers',
+    'Welfare',
+    'Agency',
+
+    'OWWA'
+  ]
 }, {
   name: 'Military/Police Scholarships ',
-  process: 'Get an application for at the Students Accounts Office ',
+  process: 'Get an application form at the Students Accounts Office ',
   type: '',
   message: 'Please proceed to the Student Accounts Section and ask for an application form for Military/Police Scholarship.  ',
-  tags: ['Apply', 'am', 'Application', 'DILG', 'Uniformed', 'Personel', 'Scholarship', 'NBI', 'AFP', 'USVA']
+  tags: ['Apply', 'Application', 'DILG', 'Uniformed', 'Personel', 'Scholarship', 'NBI', 'AFP', 'USVA']
 }, {
   name: 'BSESE and Jollibee SEEDS scholar ',
   process: ' ',
   type: '',
   message: 'Please proceed to the office of the Vice President for Academic Affairs and ask for the application form for scholarship. ',
-  tags: ['Scholarship', 'am', 'Apply', 'Application', 'BSESE', 'Bachelor', 'Science', 'Environmental', 'Sanitary', 'Engineering', 'Jollibee', 'SEEDS']
+  tags: ['Scholarship', 'Apply', 'Application', 'BSESE', 'Bachelor', 'Science', 'Environmental', 'Sanitary', 'Engineering', 'Jollibee', 'SEEDS']
 }, {
   name: 'Change Name ',
   process: 'Proceed to the ARC ',
   type: '',
   message: 'If you changed your name, please proceed to the ARC in order for them to update your profile. ',
-  tags: ['Change', 'Name', 'am', 'Request', 'Service']
+  tags: ['Change', 'Name', 'Request', 'Service']
 }, {
   name: 'Presentation of Research Findings',
   process: ['1. Go to the RNDC office',
@@ -713,35 +714,31 @@ var instruction = [{
   ],
   type: '',
   message: 'For Presentation of Research Findings, go to the RNDC and submit a copy of your study or manuscript. Be sure to sign the log book.',
-  tags: ['Presentation', 'Research', 'am', 'Findings', 'Use', 'Request', 'Service', 'Process']
+  tags: ['Presentation', 'Research', 'Findings', 'Use', 'Request', 'Service', 'Process']
 }, {
   name: 'Printing of Schedule',
-  process: ['Proceed to the MIS office'
-  ],
+  process: ['Proceed to the MIS office'],
   type: '',
   message: 'For printing of schedule, be sure to pay the required amount first to the cashier and show the receipt to the MIS Office.',
-  tags: ['Printing', 'Print', 'Schedule', 'am', 'Request', 'Service', 'Process']
+  tags: ['Printing', 'Print', 'Schedule', 'Request', 'Service', 'Process']
 }, {
   name: 'OJT/IOJT',
-  process: ['Dean\'s Office, LARC A205'
-  ],
+  process: ['Dean\'s Office, LARC A205'],
   type: '',
   message: 'Please proceed to your Dean\'s Office in order for them to evaluate your current status if you are qualified to enroll for OJT. If your concern is about the International OJT, please proceed to the LARC Office which is located at the 2nd Floor of A Building, Room A205. ',
-  tags: ['OJT', 'IOJT', 'International', 'am', 'Job', 'Training', 'Process', 'Apply', 'Application']
+  tags: ['OJT', 'IOJT', 'International', 'Job', 'Training', 'Process', 'Apply', 'Application']
 }, {
   name: 'Tuition Fee',
-  process: ['Fill Up the Pink Form, Pay to the cashier '
-  ],
+  process: ['Fill Up the Pink Form, Pay to the cashier '],
   type: '',
   message: 'Please fill up the pink form which is available at the cashier. Fall in line and wait for your turn to pay. ',
-  tags: ['Payment', 'Tuition', 'Fee', 'am', 'Process', 'Service']
+  tags: ['Payment', 'Tuition', 'Fee', 'Process', 'Service']
 }, {
   name: 'See Grades',
-  process: ['Fill Up the Pink Form, Pay to the cashier '
-  ],
+  process: ['Fill Up the Pink Form, Pay to the cashier '],
   type: 'login to aims.ubaguio.edu/aims/students',
   message: 'Please login to the student portal aims.ubaguio.edu/aims/students and click grades. ',
-  tags: ['Grades', 'am', 'See']
+  tags: ['Grades', 'See']
 }];
 
 exports.instruction = instruction;
