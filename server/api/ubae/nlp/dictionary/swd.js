@@ -22,6 +22,7 @@ exports.sw = [
   'always',
   'among',
   'an',
+  'am',
   'and',
   'another',
   'any',
