@@ -6,5 +6,8 @@ exports.exceptions = [
   'pay',
   'copy',
   'elementary',
-  'apply'
+  'apply',
+  'ray',
+  'xray',
+  'laboratory'
 ];

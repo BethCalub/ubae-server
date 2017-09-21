@@ -254,7 +254,7 @@ var instruction = [{
   process: ['1. Signing clearance form for Alumni ID'],
   type: '',
   message: 'Go to the LARC office and get your clearance form signed for the Alumni ID. ',
-  tags: ['UBAFI', 'Alumni', 'Request', 'ID', 'Service', 'Get', 'avail', 'Process']
+  tags: ['Alumni', 'Request', 'ID', 'Service', 'Get', 'avail', 'Process']
 }, {
   name: 'Gives copies of PRC Board Syllabi for STE Students',
   process: ['1. Just go to the Review Center or Print copy from website'],

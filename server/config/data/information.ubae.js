@@ -173,165 +173,165 @@ var information = [{
   tags: ['Security', 'Office', 'Meaning', 'Description']
 }, {
   name: 'Master in Business Administration (MBA)',
-  info: 'A 2 Year Course, Masters Degree, for Graduate Students, offered in SBAA department',
+  info: 'A 2 Year Course, Master\'s Degree, for Graduate Students, offered in SBAA department',
   type: '',
-  message: 'Master in Business Administration (MBA) is a 2 year Masters Degree course for Graduate Students offered in the SBAA department',
+  message: 'Master in Business Administration (MBA) is a 2 year Master\'s Degree course for Graduate Students offered in the SBAA department.',
   tags: ['MBA', 'BA', 'MA', 'Master', 'Business', 'Administration', 'Program', 'SBAA', 'Available']
 }, {
   name: 'Bachelor of Science in Accountancy (BS-AC)',
-  info: 'A 5 Year Course, Bachelors Degree, must take Licensure Examination for Certified Public Accountants after graduation, offered in SBAA department',
+  info: 'A 5 Year Course, Bachelor\'s Degree, must take Licensure Examination for Certified Public Accountants after graduation, offered in SBAA department.',
   type: '',
-  message: 'Bachelor of Science in Accountancy (BS-AC) is a 5 year Bachelors Degree course offered in the SBAA department. After graduation Licensure Examination for Certified Public Accountants must be taken',
+  message: 'Bachelor of Science in Accountancy (BS-AC) is a 5 year Bachelor\'s Degree course offered in the SBAA department. After graduation Licensure Examination for Certified Public Accountants must be taken',
   tags: ['BS', 'AC', 'BSAC', 'Bachelor', 'Science', 'Accountancy', 'Course', 'Program', 'SBAA', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Business Administration, major in Financial Management (BSBA-FM)',
-  info: 'A 4 Year Course, Bachelors Degree, offered in SBAA department',
+  info: 'A 4 Year Course, Bachelor\'s Degree, offered in SBAA department.',
   type: '',
-  message: 'Bachelor of Science in Business Administration, major in Financial Management (BSBA-FM) is a 4 year Bachelors Degree course offered in the SBAA department',
+  message: 'Bachelor of Science in Business Administration, major in Financial Management (BSBA-FM) is a 4 year Bachelor\'s Degree course offered in the SBAA department.',
   tags: ['BS', 'BAFM', 'BSBAFM', 'FinMan', 'Bachelor', 'Science', 'Financial', 'Management', 'Program', 'Course', 'SBAA', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Business Administration, major in Marketing Management (BSBA-MM)',
-  info: '4 Year Course, Bachelors Degree, offered in SBAA department',
+  info: '4 Year Course, Bachelor\'s Degree, offered in SBAA department.',
   type: '',
-  message: 'Bachelor of Science in Business Administration, major in Marketing Management (BSBA-MM) is a 4 year Bachelors Degree course offered in the SBAA department',
+  message: 'Bachelor of Science in Business Administration, major in Marketing Management (BSBA-MM) is a 4 year Bachelor\'s Degree course offered in the SBAA department.',
   tags: ['BS', 'BAMM', 'BSBAMM', 'Bachelor', 'Science', 'Marketing', 'Management', 'Program', 'Course', 'SBAA', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Business Administration, major in Operations Management (BSBA-OM)',
-  info: '4 Year Course, Bachelors Degree, offered in SBAA department',
+  info: '4 Year Course, Bachelor\'s Degree, offered in SBAA department.',
   type: '',
-  message: 'Bachelor of Science in Business Administration, major in Operations Management (BSBA-OM) is a 4 year Bachelors Degree course offered in the SBAA department',
+  message: 'Bachelor of Science in Business Administration, major in Operations Management (BSBA-OM) is a 4 year Bachelor\'s Degree course offered in the SBAA department.',
   tags: ['BS', 'BAOM', 'BSBAOM', 'Bachelor', 'Science', 'Operations', 'Management', 'Program', 'Course', 'SBAA', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Business Administration, major in Human Resource Development Management (BSBA-HRDM)',
-  info: '4 Year Course, Bachelors Degree, offered in SBAA department',
+  info: '4 Year Course, Bachelor\'s Degree, offered in SBAA department.',
   type: 'Baccaluarate',
-  message: 'Bachelor of Science in Business Administration, major in Human Resource Development Management (BSBA-HRDM) is a 4 year Bachelors Degree course offered in the SBAA department',
+  message: 'Bachelor of Science in Business Administration, major in Human Resource Development Management (BSBA-HRDM) is a 4 year Bachelor\'s Degree course offered in the SBAA department.',
   tags: ['BS', 'BAHRDM', 'BSBAHRDM', 'Bachelor', 'Science', 'Human', 'Resource', 'Development', 'Management', 'Program', 'Course', 'SBAA', 'Baccalaureate', 'Available']
 }, {
   name: 'Associate in Accounting Technology (AAT)',
-  info: '3 Year Ladderized Program, offered in SBAA department',
+  info: '3 Year Ladderized Program, offered in SBAA department.',
   type: '',
-  message: 'Associate in Accounting Technology is a 3 Year Ladderized Program in the SBAA department',
+  message: 'Associate in Accounting Technology is a 3 Year Ladderized Program in the SBAA department.',
   tags: ['AAT', 'Associate', 'Accounting', 'Technology', 'Program', 'Course', 'SBAA', 'Available']
 }, {
   name: 'Certificate in Accounting Technology (CAT)',
-  info: '2 Year Ladderized Program, offered in SBAA department',
+  info: '2 Year Ladderized Program, offered in SBAA department.',
   type: '',
-  message: 'Certificate in Accounting Technology (CAT) is a 2 Year Ladderized Program in the SBAA department',
+  message: 'Certificate in Accounting Technology (CAT) is a 2 Year Ladderized Program in the SBAA department.',
   tags: ['CAT', 'Certificate', 'Accounting', 'Technology', 'Program', 'Course', 'SBAA', 'Available']
 }, {
   name: 'Doctor of Philosophy in Criminal Justice with Specialization in Criminology (PHD-CJSC)',
-  info: '3 Year course, must be a Graduate of BS-CRIM or BFSci, Doctorate Degree, offered in SCJPS department',
+  info: '3 Year course, must be a Graduate of BS-CRIM or BFSci, Doctorate Degree, offered in SCJPS department.',
   type: '',
-  message: 'Doctor of Philosophy in Criminal Justice with Specialization in Criminology (PHD-CJSC) is a 3 year course for BS-Crim or BFSci graduate offered in the SCJPS department',
+  message: 'Doctor of Philosophy in Criminal Justice with Specialization in Criminology (PHD-CJSC) is a 3 year course for BS-Crim or BFSci graduate offered in the SCJPS department.',
   tags: ['PHD', 'CJSC', 'PHDCJSC', 'Doctor', 'Philosophy', 'Criminal', 'Justice', 'Specialization', 'Criminology', 'Program', 'Course', 'SCJPS', 'Available']
 }, {
   name: 'Master of Science in Criminal Justice with Specialization in Criminology (MS-CJSC)',
-  info: '2 Years course, must be a Graduate of BS-CRIM or BFSci, Masters Degree, offered in the SCJPS department',
+  info: '2 Years course, must be a Graduate of BS-CRIM or BFSci, Master\'s Degree, offered in the SCJPS department.',
   type: '',
-  message: 'Master of Science in Criminal Justice with Specialization in Criminology (MS-CJSC) is a 2 year course for BS-CRIM or BFSci graduates offered in the SCJPS department',
+  message: 'Master of Science in Criminal Justice with Specialization in Criminology (MS-CJSC) is a 2 year course for BS-CRIM or BFSci graduates offered in the SCJPS department.',
   tags: ['MA', 'SCJSC', 'MSCJSC', 'Master', 'Science', 'Criminal', 'Justice', 'Specialization', 'Criminology', 'Program', 'Course', 'SCJPS', 'Available']
 }, {
   name: 'Bachelor of Science in Criminology (BS-CRIM)',
-  info: '4 year course, must take Licensure Examination for Criminologists after graduation, Bachelors Degree, offered in SCJPS department',
+  info: '4 year course, must take Licensure Examination for Criminologists after graduation, Bachelor\'s Degree, offered in SCJPS department.',
   type: '',
-  message: 'Bachelor of Science in Criminology (BS-CRIM) is a 4 year Bachelors Degree course offered in the SCJPS department. After graduation Licensure Examination for Criminologists must be taken. ',
+  message: 'Bachelor of Science in Criminology (BS-CRIM) is a 4 year Bachelor\'s Degree course offered in the SCJPS department. After graduation Licensure Examination for Criminologists must be taken. ',
   tags: ['BS', 'BSCRIM', 'crim', 'Bachelor', 'Science', 'Criminology', 'Program', 'Course', 'SCJPS', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Forensic Science (BFSci)',
-  info: '4 Year course, Bachelors Degree, offered in SCJPS department',
+  info: '4 Year course, Bachelor\'s Degree, offered in SCJPS department.',
   type: '',
-  message: 'Bachelor of Science in Forensic Science (BFSci) is a 4 year Bachelors Degree course offered in the SCJPS Department',
+  message: 'Bachelor of Science in Forensic Science (BFSci) is a 4 year Bachelor\'s Degree course offered in the SCJPS department.',
   tags: ['BFSci', 'BS', 'FSCI', 'Bachelor', 'Science', 'Forensic', 'Program', 'Course', 'SCJPS', 'Baccalaureate', 'Available']
 }, {
   name: 'Master in Dental Education (MDE)',
-  info: '2 Years course, must be a Graduate of Doctor of Dental Medicine, Masters Degree, offered in SOD department',
+  info: '2 Years course, must be a Graduate of Doctor of Dental Medicine, Master\'s Degree, offered in SOD department.',
   type: '',
-  message: 'Master in Dental Education (MDE) is a 2 year Masters Degree course for Graduates of Doctor of Dental Medicine',
+  message: 'Master in Dental Education (MDE) is a 2 year Master\'s Degree course for Graduates of Doctor of Dental Medicine',
   tags: ['MA', 'DE', 'MDE', 'Master', 'Dental', 'Education', 'Program', 'Course', 'SOD', 'Baccalaureate', 'Available']
 }, {
   name: 'Doctor of Dental Medicine (DM)',
-  info: '4 Year course, must take Liscensure Examination for Dentists after graduation, must be a Graduate of Pre-Dentistry ,Bachelors Degree',
+  info: '4 Year course, must take Liscensure Examination for Dentists after graduation, must be a Graduate of Pre-Dentistry ,Bachelor\'s Degree',
   type: '',
-  message: 'Doctor of Dental Medicine (DM) is a 4 year Bachelors Degree course for graduates of Pre-Dentistry offered in the SOD department',
+  message: 'Doctor of Dental Medicine (DM) is a 4 year Bachelor\'s Degree course for graduates of Pre-Dentistry offered in the SOD department.',
   tags: ['DM', 'Doctor', 'Dental', 'Medicine', 'Program', 'Course', 'SOD', 'Baccalaureate', 'Available']
 }, {
   name: 'Pre-Dentistry',
-  info: '2 Year course, Short Course, offered in SOD department',
+  info: '2 Year course, Short Course, offered in SOD department.',
   type: '',
-  message: 'Pre-Dentistry is a 2 Year Short Course offered in the SOD department',
+  message: 'Pre-Dentistry is a 2 Year Short Course offered in the SOD department.',
   tags: ['Pre', 'Den', 'Dentistry', 'Program', 'Course', 'SOD', 'Available']
 }, {
   name: 'Bachelor of Science in Architecture (BS-ARCH)',
-  info: '5 Year course, must take Licensure Examination for Architects after graduation, Bachelors Degree, offered in SEA department',
+  info: '5 Year course, must take Licensure Examination for Architects after graduation, Bachelor\'s Degree, offered in SEA department.',
   type: '',
-  message: 'Bachelor of Science in Architecture (BS-ARCH) is a 5 Year Bachelors Degree course offered in the SEA department. After graduation Licensure Examination for Architects must be taken',
+  message: 'Bachelor of Science in Architecture (BS-ARCH) is a 5 Year Bachelor\'s Degree course offered in the SEA department. After graduation Licensure Examination for Architects must be taken',
   tags: ['BSARCH', 'BS', 'ARCH', 'Bachelor', 'Science', 'Architecture', 'Program', 'Course', 'SEA', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Civil Engineering (BS-CE)',
-  info: '5 Year course, must take Licensure Examination for Civil Engineers after graduation, Bachelors Degree, offered in SEA department',
+  info: '5 Year course, must take Licensure Examination for Civil Engineers after graduation, Bachelor\'s Degree, offered in SEA department.',
   type: '',
-  message: 'Bachelor of Science in Civil Engineering (BS-CE) is a 5 year Bachelors Degree course offered in the SEA department. After graduation Licensure Examination for Civil Engineers must be taken',
+  message: 'Bachelor of Science in Civil Engineering (BS-CE) is a 5 year Bachelor\'s Degree course offered in the SEA department. After graduation Licensure Examination for Civil Engineers must be taken',
   tags: ['BSCE', 'BS', 'CE', 'Bachelor', 'Science', 'Civil', 'Engineering', 'Program', 'Course', 'SEA', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Electronics and Communications Engineering (BS-ECE)',
-  info: '5 Year course, must take Licensure Examination for Electronics and Communications Engineers after graduation, Bachelors Degree, offered in SEA department',
+  info: '5 Year course, must take Licensure Examination for Electronics and Communications Engineers after graduation, Bachelor\'s Degree, offered in SEA department.',
   type: '',
-  message: 'Bachelor of Science in Electronics and Communications Engineering (BS-ECE) is a 5 year Bachelors Degree course offered in the SEA department. After graduation Licensure Examination for Electronics and Communications must be taken',
+  message: 'Bachelor of Science in Electronics and Communications Engineering (BS-ECE) is a 5 year Bachelor\'s Degree course offered in the SEA department. After graduation Licensure Examination for Electronics and Communications must be taken',
   tags: ['BSECE', 'BS', 'ECE', 'Bachelor', 'Science', 'Electronics', 'Communications', 'Engineering', 'Program', 'Course', 'SEA', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Environmental and Sanitary Engineering (BS-ESE)',
-  info: '5 Year course, must take Licensure Examination for Sanitary Engineers after graduation, Bachelors Degree, offered in SEA department',
+  info: '5 Year course, must take Licensure Examination for Sanitary Engineers after graduation, Bachelor\'s Degree, offered in SEA department.',
   type: '',
-  message: 'Bachelor of Science in Environmental and Sanitary Engineering (BS-ESE) is a 5 year Bachelors degree course offered in the SEA department. After graduation Licensure Examination for Sanitary Engineers must be taken',
+  message: 'Bachelor of Science in Environmental and Sanitary Engineering (BS-ESE) is a 5 year Bachelor\'s degree course offered in the SEA department. After graduation Licensure Examination for Sanitary Engineers must be taken',
   tags: ['BSESE', 'BS', 'ESE', 'Bachelor', 'Science', 'Environmental', 'Sanitary', 'Engineering', 'Program', 'Course', 'SEA', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Industrial Technology, major in Mechatronics (BSIT-MECHA)',
-  info: '4 year course, Bachelors Degree, offered in SEA department',
+  info: '4 year course, Bachelor\'s Degree, offered in SEA department.',
   type: '',
-  message: 'Bachelor of Science in Industrial Technology, major in Mechatronics (BSIT-MECHA) is a 4 Year Bachelors Degree course offered in the SEA department',
+  message: 'Bachelor of Science in Industrial Technology, major in Mechatronics (BSIT-MECHA) is a 4 Year Bachelor\'s Degree course offered in the SEA department.',
   tags: ['BSIT-MECHA', 'BS', 'IT', 'Mecha', 'Bachelor', 'Science', 'Industrial', 'Technology', 'Mechatronics', 'Program', 'Course', 'SEA', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Computer Engineering (BS-CPE)',
-  info: '4 year course, Bachelors Degree, offered in SIT department',
+  info: '4 year course, Bachelor\'s Degree, offered in SIT department.',
   type: '',
-  message: 'Bachelor of Science in Computer Engineering (BS-CPE) is a 4 year Bachelors Degree course offered in the SIT department',
+  message: 'Bachelor of Science in Computer Engineering (BS-CPE) is a 4 year Bachelor\'s Degree course offered in the SIT department.',
   tags: ['BSCPE', 'BS', 'CPE', 'Bachelor', 'Science', 'Computer', 'Engineering', 'Program', 'Course', 'SIT', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Computer Science (BS-CS)',
-  info: '4 year course, Bachelors Degree, offered in SIT department',
+  info: '4 year course, Bachelor\'s Degree, offered in SIT department.',
   type: '',
-  message: 'Bachelor of Science in Computer Science (BS-CS) is a 4 year Bachelors Degree course offered in the SIT department',
+  message: 'Bachelor of Science in Computer Science (BS-CS) is a 4 year Bachelor\'s Degree course offered in the SIT department.',
   tags: ['BSCS', 'BS', 'CS', 'ComSci', 'Bachelor', 'Science', 'Computer', 'Program', 'Course', 'SIT', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Information Technology (BS-IT)',
-  info: '4 year course, Bachelors Degree, offered in SIT department',
+  info: '4 year course, Bachelor\'s Degree, offered in SIT department.',
   type: '',
-  message: 'Bachelor of Science in Information Technology (BS-IT) is a 4 year Bachelors Degree course offered in the SIT department',
+  message: 'Bachelor of Science in Information Technology (BS-IT) is a 4 year Bachelor\'s Degree course offered in the SIT department.',
   tags: ['BSIT', 'BS', 'IT', 'Bachelor', 'Science', 'Information', 'Technology', 'Program', 'Course', 'SIT', 'Baccalaureate', 'Available']
 }, {
   name: 'Cisco Certified Entry Level (CCENT)',
-  info: '108 hours, Short Course, offered in SIT department',
+  info: '108 hours, Short Course, offered in SIT department.',
   type: '',
-  message: 'Cisco Certified Entry Level (CCENT) is a Short Course offered in the SIT department',
+  message: 'Cisco Certified Entry Level (CCENT) is a Short Course offered in the SIT department.',
   tags: ['CC', 'ENT', 'CCENT', 'Cisco', 'Certified', 'Entry', 'Level', 'Program', 'Short', 'Course', 'SIT', 'Available']
 }, {
   name: 'Cisco Certified Network Associate (CCNA)',
-  info: '216 hours, Short Course, offered in SIT department',
+  info: '216 hours, Short Course, offered in SIT department.',
   type: '',
-  message: 'Cisco Certified Network Associate (CCNA) is a Short Course offered in the SIT department',
+  message: 'Cisco Certified Network Associate (CCNA) is a Short Course offered in the SIT department.',
   tags: ['CC', 'NA', 'CCNA', 'Cisco', 'Certified', 'Network', 'Associate', 'Program', 'Course', 'SIT', 'Available']
 }, {
   name: 'Bachelor of Science in Hotel and Restaurant Management (BS-HRM)',
-  info: '4 year course, Bachelors Degree, offered in SIHTM department',
+  info: '4 year course, Bachelor\'s Degree, offered in SIHTM department.',
   type: '',
-  message: 'Bachelor of Science in Hotel and Restaurant Management (BS-HRM) is a 4 year Bachelors Degree course offered in the SIHTM department',
+  message: 'Bachelor of Science in Hotel and Restaurant Management (BS-HRM) is a 4 year Bachelor\'s Degree course offered in the SIHTM department.',
   tags: ['BSHRM', 'BS', 'HRM', 'Bachelor', 'Science', 'Hotel', 'Restaurant', 'Program', 'Course', 'SIHTM', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Tourism Management (BS-TM)',
-  info: '4 year course, Bachelors Degree, offered in SIHTM',
+  info: '4 year course, Bachelor\'s Degree, offered in SIHTM',
   type: '',
-  message: 'Bachelor of Science in Tourism Management (BS-TM) is a 4 year Bachelors Degree course offered in the SIHTM department',
+  message: 'Bachelor of Science in Tourism Management (BS-TM) is a 4 year Bachelor\'s Degree course offered in the SIHTM department.',
   tags: ['BSTM', 'BS', 'TM', 'Bachelor', 'Science', 'Tourism', 'Management', 'Program', 'Course', 'SIHTM', 'Baccalaureate', 'Available']
 }, {
   name: 'Associate in Arts in Hotel and Restaurant Management (AA-HRM)',
@@ -341,147 +341,147 @@ var information = [{
   tags: ['AAHRM', 'AA', 'HRM', 'Associate', 'Arts', 'Hotel', 'Restaurant', 'Management', 'Program', 'Course', 'SIHTM', 'Available']
 }, {
   name: 'Bachelor of Laws and Letters (LLB)',
-  info: '4 year course, Bachelors Degree, must take BAR examination after graduation, offered in SOL department',
+  info: '4 year course, Bachelor\'s Degree, must take BAR examination after graduation, offered in SOL department.',
   type: '',
-  message: 'Bachelor of Laws and Letters (LLB) is a 4 year Bachelors Degree course offered in the SOL department',
+  message: 'Bachelor of Laws and Letters (LLB) is a 4 year Bachelor\'s Degree course offered in the SOL department.',
   tags: ['LLB', 'Bachelor', 'Laws', 'Letters', 'Program', 'Course', 'SOL', 'Baccalaureate', 'Available']
 }, {
   name: 'Master in Public Administration (MPA)',
-  info: '2 year course, Masters Degree, must be a graduate of Bachelor of Arts in Broadcasting or Bachelor of Arts in Mass Communication in order to take, offered in SLAHS department',
+  info: '2 year course, Master\'s Degree, must be a graduate of Bachelor of Arts in Broadcasting or Bachelor of Arts in Mass Communication in order to take, offered in SLAHS department.',
   type: '',
-  message: 'Master in Public Administration (MPA) is a 2 year Masters Degree course for graduates of Bachelor of Arts in Broadcasting or Bachelor of Arts in Mass Communication offered in the SLAHS department',
+  message: 'Master in Public Administration (MPA) is a 2 year Master\'s Degree course for graduates of Bachelor of Arts in Broadcasting or Bachelor of Arts in Mass Communication offered in the SLAHS department.',
   tags: ['MA', 'PA', 'MPA', 'Master', 'Public', 'Administration', 'Program', 'Course', 'SLAHS', 'Available']
 }, {
   name: 'Master of Arts in English (MAEng)',
-  info: '2 year course, Masters Degree, must be a Graduate of Bachelor of Arts in English in order to take, offered in SLAHS department',
+  info: '2 year course, Master\'s Degree, must be a Graduate of Bachelor of Arts in English in order to take, offered in SLAHS department.',
   type: '',
-  message: 'Master of Arts in English (MAEng) is a 2 year Masters Degree course for Graduate of Bachelor of Arts in English offered in SLAHS department',
+  message: 'Master of Arts in English (MAEng) is a 2 year Master\'s Degree course for Graduate of Bachelor of Arts in English offered in SLAHS department.',
   tags: ['MA', 'Eng', 'MAEng', 'Master', 'Arts', 'English', 'Program', 'Course', 'SLAHS', 'Available']
 }, {
   name: 'Bachelor of Arts in Broadcasting (BA-Broad)',
-  info: '4 year course, Bachelors Degree, offered in SLAHS',
+  info: '4 year course, Bachelor\'s Degree, offered in SLAHS',
   type: '',
-  message: 'Bachelor of Arts in Broadcasting (BA-Broad) is a 4 year Bachelors Degree course offered in the SLAHS department',
+  message: 'Bachelor of Arts in Broadcasting (BA-Broad) is a 4 year Bachelor\'s Degree course offered in the SLAHS department.',
   tags: ['BABroad', 'BA', 'Broad', 'Bachelor', 'Arts', 'Broadcasting', 'Program', 'Course', 'SLAHS', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Arts in English (BA-Eng)',
-  info: '4 year course, Bachelors Degree, offered in SLAHS',
+  info: '4 year course, Bachelor\'s Degree, offered in SLAHS',
   type: '',
-  message: 'Bachelor of Arts in English (BA-Eng) is a 4 year Bachelors Degree course offered in the SLAHS department',
+  message: 'Bachelor of Arts in English (BA-Eng) is a 4 year Bachelor\'s Degree course offered in the SLAHS department.',
   tags: ['BAEng', 'BA', 'Eng', 'Bachelor', 'Arts', 'English', 'Program', 'Course', 'SLAHS', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Arts in Mass Communication (BA-Comm)',
-  info: '4 year course, Bachelors Degree, offered in SLAHS',
+  info: '4 year course, Bachelor\'s Degree, offered in SLAHS',
   type: '',
-  message: 'Bachelor of Arts in Mass Communication (BA-Comm) is a 4 year Bachelors Degree course offered in the SLAHS department',
+  message: 'Bachelor of Arts in Mass Communication (BA-Comm) is a 4 year Bachelor\'s Degree course offered in the SLAHS department.',
   tags: ['BAComm', 'BA', 'Mass', 'Comm', 'Bachelor', 'Arts', 'Mass', 'Communication', 'Program', 'Course', 'SLAHS', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Arts in Political Science(BA-PolSci)',
-  info: '4 year course, Bachelors Degree, offered in SLAHS',
+  info: '4 year course, Bachelor\'s Degree, offered in SLAHS',
   type: '',
-  message: 'Bachelor of Arts in Political Science(BA-PolSci) is a 4 year Bachelors Degree course offered in the SLAHS department',
+  message: 'Bachelor of Arts in Political Science(BA-PolSci) is a 4 year Bachelor\'s Degree course offered in the SLAHS department.',
   tags: ['BAPolSci', 'BA', 'PolSci', 'Bachelor', 'Arts', 'Political', 'Science', 'Program', 'Course', 'SLAHS', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Psychology (BS-Psych)',
-  info: '4 year course, Bachelors Degree, offered in SLAHS department',
+  info: '4 year course, Bachelor\'s Degree, offered in SLAHS department.',
   type: '',
-  message: 'Bachelor of Science in Psychology (BS-Psych) is a 4 year Bachelors Degree Course offered in the SLAHS department',
+  message: 'Bachelor of Science in Psychology (BS-Psych) is a 4 year Bachelor\'s Degree Course offered in the SLAHS department.',
   tags: ['BSPsych', 'BS', 'Psych', 'Bachelor', 'Science', 'Psychology', 'Program', 'Course', 'SLAHS', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Arts in Music (BA-Music)',
-  info: '4 year course, Bachelors Degree, offered in SLAHS',
+  info: '4 year course, Bachelor\'s Degree, offered in SLAHS',
   type: '',
-  message: 'Bachelor of Arts in Music (BA-Music) is a 4 year Bachelors Degree course offered in the SLAHS department',
+  message: 'Bachelor of Arts in Music (BA-Music) is a 4 year Bachelor\'s Degree course offered in the SLAHS department.',
   tags: ['BAMusic', 'BA', 'Bachelor', 'Arts', 'Music', 'Program', 'Course', 'SLAHS', 'Baccalaureate', 'Available']
 }, {
   name: 'Extension Classes in Music',
   info: '10 hours, Special Program, offered in SLAHS',
   type: '',
-  message: 'Extension Classes in Music is a 10 Hour Special Program offered in the SLAHS department',
+  message: 'Extension Classes in Music is a 10 Hour Special Program offered in the SLAHS department.',
   tags: ['Extension', 'Classes', 'Music', 'SLAHS']
 }, {
   name: 'Bachelor of Science in Physical Therapy (BS-PT)',
-  info: '5 year course, Bachelors Degree, must take Licensure Examination for Physical Therapists after graduation, offered in SNS department',
+  info: '5 year course, Bachelor\'s Degree, must take Licensure Examination for Physical Therapists after graduation, offered in SNS department.',
   type: '',
   message: 'Bachelor of Science in Physical Therapy (BS-PT) is a 5 year Bachelor Degree course offered in the SNS department. After graduation Licensure Examination for Physical Therapists must be taken',
   tags: ['BSPT', 'BS', 'PT', 'Bachelor', 'Science', 'Physical', 'Therapy', 'SNS', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Medical Laboratory Science (BMLS)',
-  info: '4 year course, Bachelors Degree, must take Licensure Examination for Medical Technologists after graduation, offered in SNS department',
+  info: '4 year course, Bachelor\'s Degree, must take Licensure Examination for Medical Technologists after graduation, offered in SNS department.',
   type: '',
-  message: 'Bachelor of Medical Laboratory Science (BMLS) is a 4 year Bachelors Degree course offered in the SNS department. After graduation Licensure Examination for Medical Technologists must be taken',
+  message: 'Bachelor of Medical Laboratory Science (BMLS) is a 4 year Bachelor\'s Degree course offered in the SNS department. After graduation Licensure Examination for Medical Technologists must be taken',
   tags: ['BMLS', 'BM', 'LS', 'Bachelor', 'Science', 'Medical', 'Laboratory', 'Program', 'Course', 'SNS', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Nursing (BSN)',
-  info: '4 year course, Bachelors Degree, must take Licensure Examination for Nurses after graduation, offered in SON department',
+  info: '4 year course, Bachelor\'s Degree, must take Licensure Examination for Nurses after graduation, offered in SON department.',
   type: '',
-  message: 'Bachelor of Science in Nursing (BSN) is a 4 year Bachelors Degree course offered in the SON department. After graduation Licensure Examination for Nurses after graduation must be taken',
+  message: 'Bachelor of Science in Nursing (BSN) is a 4 year Bachelor\'s Degree course offered in the SON department. After graduation Licensure Examination for Nurses after graduation must be taken',
   tags: ['BSN', 'BS', 'N', 'Bachelor', 'Science', 'Nursing', 'Program', 'Course', 'SON', 'Baccalaureate', 'Available']
 }, {
   name: 'Certificate in Health Care Services [Nursing Assistant]',
   info: '1 Year Short Course, offered in SON',
   type: '',
-  message: 'Certificate in Health Care Services [Nursing Assistant] is a 1 Year Short Course offered in the SON department',
+  message: 'Certificate in Health Care Services [Nursing Assistant] is a 1 Year Short Course offered in the SON department.',
   tags: ['HCS', 'Health', 'Care', 'Services', 'Program', 'Course', 'SON', 'Available']
 }, {
   name: 'Doctor of Philosophy in Development Education (Ph.DevEd)',
-  info: '3 year course, Doctorate Degree, must be a Graduate of Bachelor of Elementary Education or Bachelor of Secondary Education, offered in STE department',
+  info: '3 year course, Doctorate Degree, must be a Graduate of Bachelor of Elementary Education or Bachelor of Secondary Education, offered in STE department.',
   type: '',
-  message: 'Doctor of Philosophy in Development Education (Ph.DevEd) is a 3 year Doctorate Degree course for Graduates of Bachelor of Elementary Education or Bachelor of Secondary Education offered in the STE department',
+  message: 'Doctor of Philosophy in Development Education (Ph.DevEd) is a 3 year Doctorate Degree course for Graduates of Bachelor of Elementary Education or Bachelor of Secondary Education offered in the STE department.',
   tags: ['PHDevEd', 'PHD', 'evED', 'Doctor', 'Philosophy', 'Development', 'Education', 'Program', 'Course', 'STE', 'Available']
 }, {
   name: 'Doctor of Education',
-  info: '3 year course, Doctorate Degree, must be a Graduate of Bachelor of Elementary Education or Bachelor of Secondary Education, offered in STE department',
+  info: '3 year course, Doctorate Degree, must be a Graduate of Bachelor of Elementary Education or Bachelor of Secondary Education, offered in STE department.',
   type: '',
-  message: 'Doctor of Education is a 3 year Doctorate Degree course for Graduate of Bachelor of Elementary Education or Bachelor of Secondary Education offered in the STE department',
+  message: 'Doctor of Education is a 3 year Doctorate Degree course for Graduate of Bachelor of Elementary Education or Bachelor of Secondary Education offered in the STE department.',
   tags: ['EDD', 'Doctor', 'Education', 'Program', 'Course', 'STE', 'Available']
 }, {
   name: 'Master of Arts in Education',
-  info: '2 year course, Masters Degree, must be a Graduate of Bachelor of Elementary Education or Bachelor of Secondary Education, offered in STE department',
+  info: '2 year course, Master\'s Degree, must be a Graduate of Bachelor of Elementary Education or Bachelor of Secondary Education, offered in STE department.',
   type: '',
-  message: 'Master of Arts in Education is a 2 Year course for Graduate of Bachelor of Elementary Education or Bachelor of Secondary Education offered in the STE department',
+  message: 'Master of Arts in Education is a 2 Year course for Graduate of Bachelor of Elementary Education or Bachelor of Secondary Education offered in the STE department.',
   tags: ['MAEd', 'MA', 'ED', 'Master', 'Arts', 'Education', 'Program', 'Course', 'STE', 'Available']
 }, {
   name: 'Bachelor of Elementary Education, major in General Education (BEEd-GenEd)',
-  info: '4 year course, Bachelors Degree, offered in STE department',
+  info: '4 year course, Bachelor\'s Degree, offered in STE department.',
   type: '',
   message: '4 Years',
   tags: ['BEEdGenEd', 'BE', 'Ed', 'Gen', 'GenEd', 'Bachelor', 'Elementary', 'Education', 'Major', 'General', 'Education', 'Program', 'Course', 'STE', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Elementary Education, major in Special Education (BEEd-SpEd)',
-  info: '4 year course, Bachelors Degree, offered in STE department',
+  info: '4 year course, Bachelor\'s Degree, offered in STE department.',
   type: '',
-  message: 'Bachelor of Elementary Education, major in Special Education (BEEd-SpEd) is a 4 year Bachelors Degree course offered in the STE department',
+  message: 'Bachelor of Elementary Education, major in Special Education (BEEd-SpEd) is a 4 year Bachelor\'s Degree course offered in the STE department.',
   tags: ['BEEdSpEd', 'BE', 'Sp', 'Ed', 'SpEd', 'Bachelor', 'Elementary', 'Special', 'Education', 'Program', 'Course', 'STE', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Secondary Education (BSED)',
-  info: '4 year course, Bachelors Degree, must take Licensure Examination for Teachers, offered in STE',
+  info: '4 year course, Bachelor\'s Degree, must take Licensure Examination for Teachers, offered in STE',
   type: '',
-  message: 'Bachelor of Secondary Education (BSED) is a 4 Year Bachelors Degree course offered in the STE department. After Graduation Licensure Examination for Teachers must be taken',
+  message: 'Bachelor of Secondary Education (BSED) is a 4 Year Bachelor\'s Degree course offered in the STE department. After Graduation Licensure Examination for Teachers must be taken.',
   tags: ['BSED', 'BS', 'ED', 'Bachelor', 'Secondary', 'Education', 'Program', 'Course', 'STE', 'Baccalaureate', 'Available']
 }, {
   name: 'Admission for freshmen',
-  info: 'The admission is the process through which students enter tertiary education in the university. Requirements: Form 138, NSO Birth Certificate, Good Moral Character',
+  info: 'The admission is the process through which students enter tertiary education in the university. Requirements: Form 138, NSO Birth Certificate, Good Moral Character.',
   type: '',
-  message: 'The admission is the process through which students enter tertiary education in the university. Requirements: Form 138, NSO Birth Certificate, Good Moral Character',
+  message: 'The admission is the process through which students enter tertiary education in the university. Requirements: Form 138, NSO Birth Certificate, Good Moral Character.',
   tags: ['Admission', 'Freshmen', 'New', 'Student', 'Service', 'Requirements', 'ARC', 'Available']
 }, {
   name: 'Admission for Transferee',
   info: 'The admission is the message through which students enter tertiary education in the university. Requirements: Transfer Credential, NSO Birth Certificate, Good Moral Character',
   type: '',
-  message: 'The admission is the message through which students enter tertiary education in the university. Requirements: Transfer Credential, NSO Birth Certificate, Good Moral Character',
+  message: 'The admission is the message through which students enter tertiary education in the university. Requirements: Transfer Credential, NSO Birth Certificate, Good Moral Character.',
   tags: ['Admission', 'Transferee', 'Transfer', 'Student', 'Service', 'Requirements', 'ARC', 'Available']
 }, {
   name: 'Enrollment for Freshmen',
   info: 'Enrolling freshmen to the university. Requirements: Form 138, NSO Birth Certificate, Good Moral Character',
   type: '',
-  message: 'Enrolling freshmen to the university. Requirements: Form 138, NSO Birth Certificate, Good Moral Character',
+  message: 'Enrolling freshmen to the university. Requirements: Form 138, NSO Birth Certificate, Good Moral Character.',
   tags: ['Enrollment', 'Enroll', 'Freshmen', 'Student', 'New', 'Service', 'Requirements', 'ARC', 'Available']
 }, {
   name: 'Enrollment for Transferee',
   info: 'Enrolling transferee to the university. Requirements: Transfer Credential, NSO Birth Certificate, Good Moral Character',
   type: '',
-  message: 'Enrolling transferee to the university. Requirements: Transfer Credential, NSO Birth Certificate, Good Moral Character',
+  message: 'Enrolling transferee to the university. Requirements: Transfer Credential, NSO Birth Certificate, Good Moral Character.',
   tags: ['Enrollment', 'Enroll', 'Transferee', 'Student', 'Transfer', 'Service', 'Requirements', 'ARC', 'Available']
 }, {
   name: 'Enrollment for New International Student',
@@ -1129,7 +1129,7 @@ var information = [{
   name: 'University Academic Scholar',
   info: 'Deans List / Academic Scholars',
   type: '',
-  message: 'Deans List / Academic Scholars are offered to students',
+  message: 'Dean\'s List / Academic Scholars are offered to students.',
   tags: ['University', 'Academic', 'Scholarship', 'offered', 'available', 'Student', 'Deans', 'List', 'DL']
 }, {
   name: 'Military / Police Scholarship',
@@ -1141,25 +1141,25 @@ var information = [{
   name: 'University level IV scholarship',
   info: 'Weighted average: 95 - 99, Tuition waiver: 100%, Misc. fee Waiver: 40%',
   type: '',
-  message: 'A University level IV scholarship must have a Weighted average of 95 - 99 and is granted a tuition waiver of 100% and Misc. fee Waiver of 40%',
+  message: 'A University level IV scholarship must have a Weighted average of 95 - 99 and is granted a tuition waiver of 100% and Misc. fee Waiver of 40%.',
   tags: ['University', 'Level', 'Scholarship', 'offered', 'available', 'Student', 'IV', 'Type']
 }, {
   name: 'University level III scholarship',
   info: 'Weighted average: 93 - 94.99, Tuition waiver: 75%, Misc. fee Waiver: 30%',
   type: '',
-  message: 'A University level III scholarship must have a Weighted average of 93 - 94.99 and is granted a tuition waiver of 75% and Misc. fee Waiver of 30%',
+  message: 'A University level III scholarship must have a Weighted average of 93 - 94.99 and is granted a tuition waiver of 75% and Misc. fee Waiver of 30%.',
   tags: ['University', 'Level', 'Scholarship', 'offered', 'available', 'Student', 'III', 'Type']
 }, {
   name: 'University level II scholarship',
   info: 'Weighted average: 90 - 92.99, Tuition waiver: 50%, Misc. fee Waiver: 20%',
   type: '',
-  message: 'A University level II scholarship must have a Weighted average of 90 - 92.99 and is granted a tuition waiver of 50% and Misc. fee Waiver of 20%',
+  message: 'A University level II scholarship must have a Weighted average of 90 - 92.99 and is granted a tuition waiver of 50% and Misc. fee Waiver of 20%.',
   tags: ['University', 'Level', 'Scholarship', 'offered', 'available', 'Student', 'II', 'Type']
 }, {
   name: 'University level I scholarship',
   info: 'Weighted average: 87 - 89.99, Tuition waiver: 25%, Misc. fee Waiver: 10%',
   type: '',
-  message: 'A University level II scholarship must have a Weighted average of 87 - 89.99 and is granted a tuition waiver of 25% and Misc. fee Waiver of 10%',
+  message: 'A University level II scholarship must have a Weighted average of 87 - 89.99 and is granted a tuition waiver of 25% and Misc. fee Waiver of 10%.',
   tags: ['University', 'Level', 'Scholarship', 'offered', 'available', 'Student', 'I', 'Type']
 }];
 
