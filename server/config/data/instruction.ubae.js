@@ -59,7 +59,7 @@ var instruction = [{
     '6. Proceed to MIS for your ID and printed schedule'
   ],
   type: '',
-  message: 'Kindly go to the Dean\'s office of the course you would like to take up for the approval of your CRO Form 14. After it is approved, go to the ARC Extension and fill up the online form. Then go to the door C of the ARC Office and present your Student Visa, Passport and Authenticated School Records. After that, go back to the Dean\'s office for the enrollment of subjects. Then go to the cashier to pay the required downpayment. And lastly, go to the MIS Office for the printing of your schedule and ID',
+  message: 'Kindly go to the Dean\'s office of the course you would like to take up for the approval of your CRO Form 14. After it is approved, go to the ARC Extension and fill up the online form. Then go to the door C of the ARC Office and present your Student Visa, Passport and Authenticated School Records. After that, go back to the Dean\'s office for the enrollment of subjects. Then go to the cashier to pay the required downpayment. And lastly, go to the MIS Office for the printing of your schedule and ID. ',
   tags: ['Enrollment', 'International', 'Foreign', 'Student', 'Service', 'Process']
 }, {
   name: 'Enrollment for Current Student',
@@ -79,7 +79,7 @@ var instruction = [{
     '4. Your record will be released after 15 days'
   ],
   type: '',
-  message: 'For the Release of Student Records, first you need to get a clearance form from your Dean\'s office, the Library and AMD. Submit the clearance form to the ARC Office for checking. If there are no deficiencies, ARC will release your claim stamp. And lastly, kindly wait for 15 days for the release of your record. Please take note that if you\'re an under-graduate, you need to pay a certain amount to the cashier first.',
+  message: 'For the Release of Student Records, first you need to get a clearance form from your Dean\'s office, the Library and AMD. Submit the clearance form to the ARC Office for checking. If there are no deficiencies, ARC will release your claim stamp. And lastly, kindly wait for 15 days for the release of your record. Please take note that if you\'re an under-graduate, you need to pay a certain amount to the cashier first. ',
   tags: ['Release', 'Request', 'Student', 'Records', 'Already', 'Graduates', 'Service', 'Transcript', 'TOR', 'Scholastic',
     'Course', 'Description', 'Clock', 'Hours', 'Diploma', 'Documentary', 'Stamp', 'HS', 'Form', '137', 'Copy', 'Grades', 'Schedule', 'Process'
   ]
@@ -139,7 +139,7 @@ var instruction = [{
     '2. You will then be scheduled for your tooth extraction.'
   ],
   type: '',
-  message: 'Go to the Clinic and consult the dentist. You will be scheduled for your tooth extraction',
+  message: 'Go to the Clinic and consult the dentist. You will be scheduled for your tooth extraction. ',
   tags: ['Tooth', 'Removal', 'Extraction', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'Minor Surgery',
@@ -179,7 +179,7 @@ var instruction = [{
   name: 'Vaccinations',
   process: ['1. Go to the Clinic and present your Valid ID.'],
   type: '',
-  message: 'Kindly proceed to the clinic and present your valid ID',
+  message: 'Kindly proceed to the clinic and present your valid ID. ',
   tags: ['Vaccination', 'HepB', 'Influenza', 'AH1N1', 'Cervical', 'Cancer', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'X-Ray',
@@ -259,7 +259,7 @@ var instruction = [{
   name: 'Gives copies of PRC Board Syllabi for STE Students',
   process: ['1. Just go to the Review Center or Print copy from website'],
   type: '',
-  message: 'Please go to the LARC office to get a copy of PRC Board Syllabi for STE Students',
+  message: 'Please go to the LARC office to get a copy of PRC Board Syllabi for STE Students. ',
   tags: ['Copy', 'PRC', 'Board', 'Syllabi', 'STE', 'Students', 'Request', 'avail', 'get']
 }, {
   name: 'Follet-DLM Mobile Application',
@@ -714,7 +714,7 @@ var instruction = [{
   ],
   type: '',
   message: 'For Presentation of Research Findings, go to the RNDC and submit a copy of your study or manuscript. Be sure to sign the log book.',
-  tags: ['Presentation', 'Research', 'Findings', 'Use', 'Request', 'Service', 'Process']
+  tags: ['Presentation', 'Research', 'Findings', 'Use', 'Request', 'Service', 'Process', 'avail']
 }, {
   name: 'Printing of Schedule',
   process: ['Proceed to the MIS office'],
@@ -732,7 +732,7 @@ var instruction = [{
   process: ['Fill Up the Pink Form, Pay to the cashier '],
   type: '',
   message: 'Please fill up the pink form which is available at the cashier. Fall in line and wait for your turn to pay. ',
-  tags: ['Payment', 'Tuition', 'Fee', 'Process', 'Service']
+  tags: ['Payment', 'Tuition', 'Fee', 'Process', 'Service', 'paid']
 }, {
   name: 'See Grades',
   process: ['Fill Up the Pink Form, Pay to the cashier '],

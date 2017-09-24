@@ -218,7 +218,7 @@ var location = [{
   location: 'D Building, 2nd Floor',
   type: '',
   message: 'The Admission and Records Center Office is located at the 2nd Floor of D Building beside the UB Gym.',
-  tags: ['ARC', 'Admission', 'Records', 'Center', 'location', 'Office']
+  tags: ['ARC', 'Admission', 'Records', 'Center', 'location', 'Office', 'registrar']
 }, {
   name: 'Extension and Community Outreach Services ',
   location: 'D Building, 1st Floor',
@@ -229,7 +229,7 @@ var location = [{
   name: 'Linkages, Alumni and Review Center ',
   location: 'A Building, 2nd Floor, Room A205',
   type: '',
-  message: 'The Linkages, Alumni and Review Center is located at the 2nd Floor of A Bulding, Room A205',
+  message: 'The Linkages, Alumni and Review Center is located at the 2nd Floor of A Bulding, Room A205. ',
   tags: ['LARC', 'Linkages', 'Alumni', 'Review', 'Center', 'Office', 'location', 'A205']
 }, {
   name: 'Main Library ',
@@ -238,14 +238,14 @@ var location = [{
   message: 'The Main Library is located at the 4th Floor of A Building.',
   tags: ['Main', 'Library', 'location']
 }, {
-  name: 'Centennial Library ',
+  name: 'Centennial Library, Library Sections: Business Administration and Accountancy, Education, Engineering, Liberal Arts and Human Sciences, Theses and Dissertions and Graduate School ',
   location: 'H Building, 6th Floor ',
   type: '',
   message: 'The Centennial Library is located at the 6th Floor of H Building.',
   tags: ['Centennial', 'Library', 'location']
 }, {
   name: 'Centennial Hall ',
-  location: 'Beside the H Building, Library Sections: Business Administration and Accountancy, Education, Engineering, Liberal Arts and Human Sciences, Theses and Dissertions and Graduate School ',
+  location: 'Beside the H Building ',
   type: '',
   message: 'The Centennial Hall is located beside the H Building.',
   tags: ['Centennial', 'Hall', 'location']
@@ -800,13 +800,13 @@ var location = [{
   location: 'Security Office',
   type: '',
   message: 'You can report your complaints for suspicious and unusual activities in the Security Office which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['complaints', 'offenses', 'report', 'Request', 'suspicious', 'crimes']
+  tags: ['complaints', 'offenses', 'report', 'Request', 'suspicious', 'crimes', 'bully', 'incident', 'accident']
 }, {
   name: 'Where is the lost and found ',
   location: 'Security Office',
   type: '',
   message: 'You can try to find your missing items or surrender lost items at the Security Office which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['lost', 'found']
+  tags: ['lost', 'found', 'report', 'items']
 }, {
   name: 'Where to volunteer for the outreach ',
   location: 'ECOS',
@@ -986,7 +986,7 @@ var location = [{
   location: 'MIS Office, 4th Floor of F Building, Room F403 ',
   type: '',
   message: 'You can bring your PC or Laptop for assessment at the 4th Floor of F Building, Room F403. ',
-  tags: ['PC', 'Personal', 'Computer', 'Laptop', 'Assessment', 'Avail', 'Request', 'Process']
+  tags: ['PC', 'Personal', 'Computer', 'Laptop', 'Assessment', 'Avail', 'Request', 'Process', 'Service']
 }, {
   name: 'Where to ask for installation of Open Source/Free Software ',
   location: 'MIS Office, 4th Floor of F Building, Room F403 ',
@@ -1015,7 +1015,7 @@ var location = [{
   name: 'Where can students access the WiFi ',
   location: 'UB Gym, FB Food Court, Science High Hallway, AA and AC Floors of SIHTM Hallway, SCJPS Hallway, SBAA Hallway, STE Hallway, SIT WiFi Area and the Main, Extension and Centennial Library ',
   type: '',
-  message: 'You can access the WiFi in these areas: UB Gym, FB Food Court, Science High Hallway, AA and AC Floors of SIHTM Hallway, SCJPS Hallway, SBAA Hallway, STE Hallway, SIT WiFi Area and the Main, Extension and Centennial Library. Be Sure You have an account to have an access. ',
+  message: 'You can access the WiFi in these areas: UB Gym, FB Food Court, Science High Hallway, AA and AC Floors of SIHTM Hallway, SCJPS Hallway, SBAA Hallway, STE Hallway, SIT WiFi Area and the Main, Extension and Centennial Library. Be Sure to have an account to gain access of the WiFi. ',
   tags: ['WiFi', 'Area', 'Access']
 }, {
   name: 'Where students can use the Student Development Facilitation and Counseling Service ',
@@ -1351,7 +1351,7 @@ var location = [{
   name: 'Hydraulics Lab ',
   location: 'H Building, 2nd Basement,  Room HB302 ',
   type: '',
-  message: 'The Hydraulics Lab is located at the 3rd Basement of H Building, Room HB302 ',
+  message: 'The Hydraulics Lab is located at the 3rd Basement of H Building, Room HB302. ',
   tags: ['Location', 'Hydraulics', 'Laboratory', 'HB302']
 }, {
   name: 'ESE Laboratory ',
@@ -1558,11 +1558,23 @@ var location = [{
   message: 'The Hot and Cold Kitchen is located A Building Floor D. ',
   tags: ['Location', 'Hot', 'Cold', 'Kitchen']
 }, {
-  name: 'SIT Dean\'s Office ',
+  name: 'SIT Faculty Office ',
   location: 'F Building, 2nd Floor, F201 ',
   type: '',
-  message: 'The SIT Dean\'s Office is located at the 2nd Floor of F Building, Room F201. ',
+  message: 'The SIT Faculty Office is located at the 2nd Floor of F Building, Room F201. ',
   tags: ['Location', 'SIT', 'School', 'Information', 'Technology', 'Faculty', 'Room', 'F201']
+}, {
+  name: 'FOODCOURT ',
+  location: 'F Building, A Building ',
+  type: '',
+  message: 'There are Food Courts located at the F building and A Building. ',
+  tags: ['Location', 'Food', 'Court', 'Foodcourt']
+}, {
+  name: 'UB SQUARE ',
+  location: 'F Building ',
+  type: '',
+  message: 'The UB Square is located at the F Building below the cashier. ',
+  tags: ['Location', 'UB', 'Square']
 }];
 
 exports.location = location;

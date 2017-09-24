@@ -15,13 +15,13 @@ var response = [{
   tags: ['Hey']
 }, {
   message: 'Good morning to you too! Have a nice day! :)',
-  tags: ['Good', 'Morning']
+  tags: ['Morning']
 }, {
   message: 'Good Afternoon! How may I help you? :)',
-  tags: ['Good', 'Afternoon', 'noon']
+  tags: ['Afternoon', 'noon']
 }, {
   message: 'Good Night! Sweet Dreams :)',
-  tags: ['Good', 'Night', 'sleep']
+  tags: ['Night', 'sleep']
 }, {
   message: 'Unless your name is Google, dont act like you know everything :)',
   tags: ['Stupid', 'Moron', 'Dumb', 'Noob', 'Unintelligent', 'Ignorant', 'Slow', 'Senseless', 'Nonsense', 'Idiot', 'Suck']
@@ -30,22 +30,22 @@ var response = [{
   tags: ['Shit', 'Fuck', 'Ass', 'Asshole', 'Bitch', 'Butt', 'Sex', 'Fucker', 'Bullshit', 'Tits', 'Boobs', 'Boobies', 'Titties', 'Nudes', 'Pakyu', 'Shet', 'Pakshet', 'Dick', 'Vagina', 'Pussy']
 }, {
   message: 'Its nice to meet you too! :D',
-  tags: ['Nice', 'Meet', 'Meeting', 'You']
+  tags: ['Nice', 'Meet', 'Meeting']
 }, {
   message: 'Hey! My name is UBAE! :)',
   tags: ['Your', 'Name']
 }, {
   message: 'Good Bye! It was nice talking to you! :)',
-  tags: ['Good', 'Bye']
+  tags: ['Bye']
 }, {
   message: 'Good Evening! How may I help you?',
-  tags: ['Good', 'Evening', 'Eve']
+  tags: ['Evening', 'Eve']
 }, {
   message: 'Ooooops! Sorry! I have a boyfriend :)',
-  tags: ['Love', 'You', 'Youre', 'Mine']
+  tags: ['Love']
 }, {
   message: 'Im fine thank you! :)',
-  tags: ['Kamusta', 'Are', 'You', 'Feeling']
+  tags: ['Kamusta', 'Feeling']
 }, {
   message: 'Drugs take you to hell, disguised as heaven. Say no to drugs! :)',
   tags: ['Drugs', 'Marijuana', 'Shabu', 'Cocaine', 'Ecstacy', 'Crack', 'Weed', 'Grass', 'Pot', 'Heroin', 'Meth']
@@ -66,7 +66,7 @@ var response = [{
   tags: ['Drink', 'Shot', 'Inom', 'Beer', 'Wine', 'Emperador', 'Gin']
 }, {
   message: 'You’re Welcome :)',
-  tags: ['Thank', 'You', 'Thanks', 'Ty']
+  tags: ['Thank', 'Thanks', 'Ty']
 }];
 
 exports.response = response;

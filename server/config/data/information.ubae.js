@@ -487,7 +487,7 @@ var information = [{
   name: 'Enrollment for New International Student',
   info: 'Enrollment of International Student to the university. Requirements: Student Visa and Passport, Authenticated School Records, CRO Form 14',
   type: '',
-  message: 'Enrollment of International Student to the university. Requirements: Student Visa and Passport, Authenticated School Records, CRO Form 14',
+  message: 'Enrollment of International Student to the university. Requirements: Student Visa and Passport, Authenticated School Records, CRO Form 14.',
   tags: ['International', 'Enroll', 'Enrollment', 'Student', 'Service', 'Requirements', 'ARC', 'Available']
 }, {
   name: 'Enrollment for Current Student',
@@ -499,19 +499,19 @@ var information = [{
   name: 'Release of Student Records for Graduates',
   info: 'Releasing documents of graduate students. Requirements: Clearance form',
   type: '',
-  message: 'Releasing documents of graduate students. Requirements: Clearance form',
+  message: 'Releasing documents of graduate students. Requirements: Clearance form.',
   tags: ['Release', 'Records', 'Documents', 'Graduates', 'Student', 'Service', 'Requirements', 'ARC', 'Available']
 }, {
   name: 'Release of Student Records for Under-Graduates',
   info: 'Releasing documents of under-graduate students Requirements: Clearance form',
   type: '',
-  message: 'Releasing documents of under-graduate students Requirements: Clearance form',
+  message: 'Releasing documents of under-graduate students Requirements: Clearance form.',
   tags: ['Release', 'Records', 'Documents', 'Undergraduate', 'Under-graduate', 'Service', 'Requirements', 'ARC', 'Available']
 }, {
   name: 'Athletic Scholarship',
   info: 'Assists students who are qualified for athletic scholarship. Requirements: None',
   type: '',
-  message: 'Assists students who are qualified for athletic scholarship. Requirements: None',
+  message: 'Assists students who are qualified for athletic scholarship. Requirements: None.',
   tags: ['Atheltic', 'Scholarship', 'Service', 'Requirements', 'Available']
 }, {
   name: 'Sports Equipment',
@@ -523,49 +523,49 @@ var information = [{
   name: 'Student development facilitation and counseling services',
   info: 'We are your family and we are ready to help you overcome your obstacles in life. Requirement: Students can just go to the office/ walk-in but should be reffered by the dean, instructor, Faculty, Parents, or other University Personnel',
   type: '',
-  message: 'We are your family and we are ready to help you overcome your obstacles in life. Requirement: Students can just go to the office/ walk-in but should be reffered by the dean, instructor, Faculty, Parents, or other University Personnel',
+  message: 'We are your family and we are ready to help you overcome your obstacles in life. Requirement: Students can just go to the office/ walk-in but should be reffered by the dean, instructor, Faculty, Parents, or other University Personnel.',
   tags: ['Student', 'Development', 'Facilitation', 'Counseling', 'Services', 'Requirements', 'CCSD', 'Available']
 }, {
   name: 'Psychological Testing Service',
   info: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
   type: '',
-  message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean.',
   tags: ['Psychological', 'Test', 'Testing', 'Service', 'CCSD', 'Requirements', 'Available']
 }, {
   name: 'Personality Test',
   info: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
   type: '',
-  message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean.',
   tags: ['Personality', 'Testing', 'Service', 'Test', 'Requirements', 'CCSD', 'Available']
 }, {
   name: 'Interest Test',
   info: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
   type: '',
-  message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean.',
   tags: ['Interest', 'Testing', 'Service', 'Test', 'Requirements', 'CCSD', 'Available']
 }, {
   name: 'Aptitude Test',
   info: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
   type: '',
-  message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean.',
   tags: ['Aptitude', 'Testing', 'Service', 'Test', 'Requirements', 'CCSD', 'Available']
 }, {
   name: 'Mental Ability',
   info: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
   type: '',
-  message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean.',
   tags: ['Mental', 'Ability', 'Testing', 'Service', 'Test', 'Requirements', 'CCSD', 'Available']
 }, {
   name: 'Battery Test',
   info: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
   type: '',
-  message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean.',
   tags: ['Battery', 'Testing', 'Service', 'Test', 'Requirements', 'CCSD', 'Available']
 }, {
   name: 'Career and placement services',
   info: 'Career and placement services for graduating students. Requirements: Should be recommended by the instructor or dean',
   type: '',
-  message: 'Career and placement services for graduating students. Requirements: Should be recommended by the instructor or dean',
+  message: 'Career and placement services for graduating students. Requirements: Should be recommended by the instructor or dean.',
   tags: ['service', 'Career', 'Placement', 'Requirements', 'CCSD', 'Available']
 }, {
   name: 'Tooth extraction',
@@ -577,31 +577,31 @@ var information = [{
   name: 'Minor Surgery',
   info: 'Minor Sugery available for UB Students and Employees. Minor surgeries includes Suturing, Excision, and Circumcision. Requirements: Valid ID',
   type: '',
-  message: 'Minor Sugery available for UB Students and Employees. Minor surgeries includes Suturing, Excision, and Circumcision. Requirements: Valid ID',
+  message: 'Minor Sugery available for UB Students and Employees. Minor surgeries includes Suturing, Excision, and Circumcision. Requirements: Valid ID.',
   tags: ['Minor', 'Surgery', 'Suturing', 'Excision', 'Circumcision', 'Service', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'Physical Examination',
   info: 'Physical Examination for OJTs, Practicum, Competitions and Clinical exposure. Requirements: Checklist from Clinic, Valid ID',
   type: '',
-  message: 'Physical Examination for OJTs, Practicum, Competitions and Clinical exposure. Requirements: Checklist from Clinic, Valid ID',
+  message: 'Physical Examination for OJTs, Practicum, Competitions and Clinical exposure. Requirements: Checklist from Clinic, Valid ID.',
   tags: ['Physical', 'Examination', 'Service', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'Facilitation of Accident Insurance',
   info: 'If a student or employee had an accident inside the campus, the university will be the one to pay all the hospital bills. Requirements: Receipts',
   type: '',
-  message: 'If a student or employee had an accident inside the campus, the university will be the one to pay all the hospital bills. Requirements: Receipts',
+  message: 'If a student or employee had an accident inside the campus, the university will be the one to pay all the hospital bills. Requirements: Receipts.',
   tags: ['Facilitation', 'Accident', 'Insurance', 'Service', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'Radiology and Medtech/Clinical Laboratory Services',
   info: 'Radiology and Medtech/Clinical Laboratory Services available for UB Students and Employees. Requirements: Valid ID',
   type: '',
-  message: 'Radiology and Medtech/Clinical Laboratory Services available for UB Students and Employees. Requirements: Valid ID',
+  message: 'Radiology and Medtech/Clinical Laboratory Services available for UB Students and Employees. Requirements: Valid ID.',
   tags: ['Radiology', 'Service', 'Medtech', 'Laboratory', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'Vaccinations',
   info: 'Vaccinations(Hep B; Influenza Vaccine/AH1N1 vaccine; Cervical Cancer; Anti-Pneumonia) available for UB Students, employees and UB Partner Communities. Requirements: Valid ID',
   type: '',
-  message: 'Vaccinations(Hep B; Influenza Vaccine/AH1N1 vaccine; Cervical Cancer; Anti-Pneumonia) available for UB Students, employees and UB Partner Communities. Requirements: Valid ID',
+  message: 'Vaccinations(Hep B; Influenza Vaccine/AH1N1 vaccine; Cervical Cancer; Anti-Pneumonia) available for UB Students, employees and UB Partner Communities. Requirements: Valid ID.',
   tags: ['Vaccinations', 'Vaccine', 'Service', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'X-ray',
@@ -613,7 +613,7 @@ var information = [{
   name: 'Consultation',
   info: 'Consultation or chekup available for UB Students and Employees. Requirements: Valid ID',
   type: '',
-  message: 'Consultation or chekup available for UB Students and Employees. Requirements: Valid ID',
+  message: 'Consultation or chekup available for UB Students and Employees. Requirements: Valid ID.',
   tags: ['Consultation', 'Check', 'Up', 'Check-up', 'Consult', 'Service', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'Medical Certificate',
@@ -625,37 +625,37 @@ var information = [{
   name: 'Physical/Medical Examination for local OJT/ Practicum (SIHTM)',
   info: 'Physical/Medical Examination for local OJT/ Practicum available for SIHTM students. Requirements: Results from initial Medical Examination',
   type: '',
-  message: 'Physical/Medical Examination for local OJT/ Practicum available for SIHTM students. Requirements: Results from initial Medical Examination',
+  message: 'Physical/Medical Examination for local OJT/ Practicum available for SIHTM students. Requirements: Results from initial Medical Examination.',
   tags: ['Physical', 'Examination', 'Exam', 'OJT', 'SIHTM', 'Medical', 'Service', 'IHTM', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'Physical/Medical Examination for local OJT/ Practicum (Non-SIHTM Students)',
   info: 'Physical/Medical Examination for local OJT/ Practicum available for UB Students. Requirements: Checklist from the Clinic',
   type: '',
-  message: 'Physical/Medical Examination for local OJT/ Practicum available for UB Students. Requirements: Checklist from the Clinic',
+  message: 'Physical/Medical Examination for local OJT/ Practicum available for UB Students. Requirements: Checklist from the Clinic.',
   tags: ['Physical', 'Examination', 'Exam', 'OJT', 'Medical', 'Service', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'Physical/Medical Examination for International OJT',
   info: 'Physical/Medical Examination for International OJT available for UB Students. Requirements: Endorsement Letter',
   type: '',
-  message: 'Physical/Medical Examination for International OJT available for UB Students. Requirements: Endorsement Letter',
+  message: 'Physical/Medical Examination for International OJT available for UB Students. Requirements: Endorsement Letter.',
   tags: ['International', 'Physical', 'Examination', 'Exam', 'OJT', 'Medical', 'Service', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'UBCARES Program',
   info: 'The Community Advancement through Responsive Extension Services (CARES) Program. Requirements: Form from ECOS office, parents consent form/waiver',
   type: '',
-  message: 'The Community Advancement through Responsive Extension Services (CARES) Program. Requirements: Form from ECOS office, parents consent form/waiver',
+  message: 'The Community Advancement through Responsive Extension Services (CARES) Program. Requirements: Form from ECOS office, parents consent form/waiver.',
   tags: ['UBCARES', 'Program', 'Outreach', 'Volunteer', 'Service', 'ECOS', 'Requirements', 'Available']
 }, {
   name: 'Processees International On The Job Training (IOJT) applicants and exchange scholars',
   info: 'Requirement: None',
   type: '',
-  message: 'Processees International On The Job Training (IOJT) applicants and exchange scholars Requirement: None',
+  message: 'Processees International On The Job Training (IOJT) applicants and exchange scholars Requirement: None.',
   tags: ['IOJT', 'International', 'Job', 'Training', 'OJT', 'Abroad', 'Service', 'Exhcange', 'Scholars', 'LARC', 'Requirements', 'Available']
 }, {
   name: 'Assists the UBAFI in issuing the membership identification cards of its members.',
   info: 'Requirement: None',
   type: '',
-  message: 'Assists the UBAFI in issuing the membership identification cards of its members. Requirement: None',
+  message: 'Assists the UBAFI in issuing the membership identification cards of its members. Requirement: None.',
   tags: ['UBAFI', 'Alumni', 'ID', 'Service', 'LARC', 'Requirements', 'Available']
 }, {
   name: 'Gives copies of PRC Board Syllabi for STE Students',
@@ -667,43 +667,43 @@ var information = [{
   name: 'Follet-DLM ',
   info: 'Follet-DLM is a Mobile Application. Requirement: Internet, Web Browser',
   type: '',
-  message: 'Follet-DLM is a Mobile Application. Requirement: Internet, Web Browser',
+  message: 'Follet-DLM is a Mobile Application. Requirement: Internet, Web Browser.',
   tags: ['Follet', 'Mobile', 'Application', 'Library', 'Available']
 }, {
   name: 'Journals',
   info: 'There are journals available in the library. Requirements: Valid ID',
   type: '',
-  message: 'There are journals available in the library. Requirements: Valid ID',
+  message: 'There are journals available in the library. Requirements: Valid ID.',
   tags: ['Journal', 'Books', 'Magazines', 'Newspaper', 'Service', 'Requirement', 'Library', 'Available']
 }, {
   name: 'New Library Databases/E-Journals',
   info: 'Online resources available for students. Requirements: None',
   type: ['None'],
-  message: 'Online resources available for students. Requirements: None',
+  message: 'Online resources available for students. Requirements: None.',
   tags: ['E-Journal', 'Online', 'Journals', 'Service', 'Requirement', 'Library', 'Available']
 }, {
   name: 'Clearance signing',
   info: 'Clearance signing for releasing of records. Requirement: Valid ID',
   type: ['Valid ID'],
-  message: 'Clearance signing for releasing of records. Requirement: Valid ID',
+  message: 'Clearance signing for releasing of records. Requirement: Valid ID.',
   tags: ['Clearance', 'Signing', 'Service', 'Requirement', 'Library', 'Available']
 }, {
   name: 'Library Orientation',
   info: 'A tour on the library. Requirement: Valid ID',
   type: ['Valid ID'],
-  message: 'A tour on the library. Requirement: Valid ID',
+  message: 'A tour on the library. Requirement: Valid ID.',
   tags: ['Library', 'Tour', 'Orientation', 'Service', 'Requirement', 'Available']
 }, {
   name: 'Computers for internet surfing in the library',
   info: 'Availing of students and employees to use computers with internet and also free wifi. Requirements: None',
   type: '',
-  message: 'Availing of students and employees to use computers with internet and also free wifi. Requirements: None',
+  message: 'Availing of students and employees to use computers with internet and also free wifi. Requirements: None.',
   tags: ['Library', 'Computer', 'WiFi', 'Service', 'Requirement', 'Available']
 }, {
   name: 'Discussion rooms',
   info: 'Availing of the discussion room. Requirement: None',
   type: '',
-  message: 'Availing of the discussion room. Requirement: None',
+  message: 'Availing of the discussion room. Requirement: None.',
   tags: ['Library', 'Discussion', 'Room', 'Service', 'Requirement', 'Available']
 }, {
   name: 'Press releases and advertisements',
@@ -715,37 +715,37 @@ var information = [{
   name: 'Yearbook and Graduation materials',
   info: 'Yearbooks are optional for Students if they want to avail it or not. Requirements: Ad Requisition Form from MAPS',
   type: '',
-  message: 'Yearbooks are optional for Students if they want to avail it or not. Requirements: Ad Requisition Form from MAPS',
+  message: 'Yearbooks are optional for Students if they want to avail it or not. Requirements: Ad Requisition Form from MAPS.',
   tags: ['Materials', 'Yearbook', 'Graduation', 'Service', 'Requirements', 'MAPS', 'Available']
 }, {
   name: 'Social Media Content Development',
   info: 'Social Media Content Development for students and employees. Requirements: Ad Requisition Form from MAPS',
   type: '',
-  message: 'Social Media Content Development for students and employees. Requirements: Ad Requisition Form from MAPS',
+  message: 'Social Media Content Development for students and employees. Requirements: Ad Requisition Form from MAPS.',
   tags: ['Social', 'Media', 'Content', 'Development', 'Service', 'Requirements', 'MAPS', 'Available']
 }, {
   name: 'Website Content Development',
   info: 'Website Content Development for students and employees who wants to be featured in the ubaguio.edu website.Requirements: Ad Requisition Form from MAPS',
   type: '',
-  message: 'Website Content Development for students and employees who wants to be featured in the ubaguio.edu website.Requirements: Ad Requisition Form from MAPS',
+  message: 'Website Content Development for students and employees who wants to be featured in the ubaguio.edu website.Requirements: Ad Requisition Form from MAPS.',
   tags: ['Website', 'Content', 'Development', 'Service', 'Requirements', 'MAPS', 'Available']
 }, {
   name: 'Virus scanning and removal for flash drives and portable hard disk',
   info: 'Reqruirements: Valid ID',
   type: '',
-  message: 'Virus scanning and removal for flash drives and portable hard disk. Reqruirements: Valid ID',
+  message: 'Virus scanning and removal for flash drives and portable hard disk. Reqruirements: Valid ID.',
   tags: ['USB', 'Virus', 'Scanning', 'Flashdrive', 'Service', 'Requiremets', 'MIS', 'Available']
 }, {
   name: 'Assessment of PC or Laptop',
-  info: 'The office only checks the problem of your laptop or PC, but they dont do repairing. Requirement: Valid ID',
+  info: 'The office only checks the problem of your laptop or PC, but they dont do repairing. Requirement: Valid ID.',
   type: '',
-  message: 'The office only checks the problem of your laptop or PC, but they dont do repairing. Requirement: Valid ID',
+  message: 'The office only checks the problem of your laptop or PC, but they dont do repairing. Requirement: Valid ID.',
   tags: ['PC', 'Laptop', 'Assesment', 'Checking', 'Service', 'Available']
 }, {
   name: 'Installation of open-source or free software',
-  info: 'The office gives students open source softwares. Requirements: Valid ID',
+  info: 'The office gives students open source softwares. Requirements: Valid ID.',
   type: '',
-  message: 'The office gives students open source softwares. Requirements: Valid ID',
+  message: 'The office gives students open source softwares. Requirements: Valid ID.',
   tags: ['Software', 'Installation', 'Service', 'Requiremets', 'MIS', 'Available']
 }, {
   name: 'Student ID',
@@ -757,7 +757,7 @@ var information = [{
   name: 'Alumni and other IDs',
   info: 'Printing of Alumni and other IDs. Reqruirements: Alumni- clearance form',
   type: '',
-  message: 'MIS Office provides the service of printing Alumni and other IDs\'',
+  message: 'MIS Office provides the service of printing Alumni and other IDs\'.',
   tags: ['Alumni', 'Other', 'ID', 'Service', 'Requiremets', 'MIS', 'Available']
 }, {
   name: 'Wi-Fi account',
@@ -769,37 +769,37 @@ var information = [{
   name: 'Readmissions',
   info: 'Getting dropped class cards. Requirement: Valid ID',
   type: '',
-  message: 'Getting dropped class cards. Requirement: Valid ID',
+  message: 'Getting dropped class cards. Requirement: Valid ID.',
   tags: ['Class', 'Card', 'Readmission', 'Service', 'Requirements', 'OSA', 'Available']
 }, {
   name: 'Performing Arts',
   info: 'For students who wants to apply for performing arts scholarship. Requirements: None',
   type: '',
-  message: 'For students who wants to apply for performing arts scholarship. Requirements: None',
+  message: 'For students who wants to apply for performing arts scholarship. Requirements: None.',
   tags: ['Performing', 'Arts', 'Scholarship', 'Service', 'Requirements', 'OSA', 'Available']
 }, {
   name: 'Format Editing',
   info: 'Formatting students documents with APA Format. Requirement: A copy of Manuscript, Valid ID',
   type: '',
-  message: 'Formatting students documents with APA Format. Requirement: A copy of Manuscript, Valid ID',
+  message: 'Formatting students documents with APA Format. Requirement: A copy of Manuscript, Valid ID.',
   tags: ['Format', 'Editing', 'APA', 'Service', 'Requirements', 'RNDC', 'Available']
 }, {
   name: 'Statistic Package for Social Sciences',
-  info: 'SPSS is one of the most popular statistical packages which can perform highly complex data manipulation and analysis with simple instructions. Requirement: Your study or copy of manuscript., Valid ID',
+  info: 'SPSS is one of the most popular statistical packages which can perform highly complex data manipulation and analysis with simple instructions. Requirement: Your study or copy of manuscript, Valid ID.',
   type: '',
-  message: 'SPSS is one of the most popular statistical packages which can perform highly complex data manipulation and analysis with simple instructions. Requirement: Your study or copy of manuscript., Valid ID',
+  message: 'SPSS is one of the most popular statistical packages which can perform highly complex data manipulation and analysis with simple instructions. Requirement: Your study or copy of manuscript, Valid ID.',
   tags: ['Statistic', 'Package', 'Social', 'Sciences', 'SPSS', 'Assistance', 'Service', 'Requirements', 'RNDC', 'Available']
 }, {
   name: 'Poster Preparation',
   info: 'Preparing poster. Requirement: Request Letter',
   type: '',
-  message: 'Preparing poster. Requirement: Request Letter',
+  message: 'Preparing poster. Requirement: Request Letter.',
   tags: ['Poster', 'Preparation', 'Service', 'Requirements', 'RNDC', 'Available']
 }, {
   name: 'Publication of Research findings (Catalyst)',
   info: 'Requirement: Full manuscript, Ethics Clearance, Letter of Acceptance',
   type: '',
-  message: 'Publication of Research findings (Catalyst) Requirement: Full manuscript, Ethics Clearance, Letter of Acceptance',
+  message: 'Publication of Research findings (Catalyst) Requirement: Full manuscript, Ethics Clearance, Letter of Acceptance.',
   tags: ['Publication', 'Research', 'Findings', 'Catalyst', 'Service', 'Requirements', 'RNDC', 'Available']
 }, {
   name: 'Tool Validation',
@@ -811,31 +811,31 @@ var information = [{
   name: 'Grammar Check',
   info: 'Allows students to use Grammarly to check the grammar of their documents or files. Requirement: Valid ID',
   type: '',
-  message: 'Allows students to use Grammarly to check the grammar of their documents or files. Requirement: Valid ID',
+  message: 'Allows students to use Grammarly to check the grammar of their documents or files. Requirement: Valid ID.',
   tags: ['Grammar', 'Check', 'Service', 'Requirements', 'RNDC', 'Available']
 }, {
   name: 'Plagiarism Test',
   info: 'Allows students to use Grammarly to check the plagiarism of their documents or files. Requirement: Valid ID',
   type: '',
-  message: 'Allows students to use Grammarly to check the plagiarism of their documents or files. Requirement: Valid ID',
+  message: 'Allows students to use Grammarly to check the plagiarism of their documents or files. Requirement: Valid ID.',
   tags: ['Plagiarism', 'Test', 'Service', 'Requirements', 'RNDC', 'Available']
 }, {
   name: 'Spell Check',
   info: 'Allows students to use Grammarly to check the spelling of their documents or files. Requirement: Valid ID',
   type: '',
-  message: 'Allows students to use Grammarly to check the spelling of their documents or files. Requirement: Valid ID',
+  message: 'Allows students to use Grammarly to check the spelling of their documents or files. Requirement: Valid ID.',
   tags: ['Spell', 'Spelling', 'Check', 'Service', 'Requirements', 'RNDC', 'Available']
 }, {
   name: 'Use of computers',
   info: 'Allows students to use the office computer. Requirement: Valid ID',
   type: '',
-  message: 'Allows students to use the office computer. Requirement: Valid ID',
+  message: 'Allows students to use the office computer. Requirement: Valid ID.',
   tags: ['Computers', 'RNDC', 'Service', 'Requirements', 'RNDC', 'Available']
 }, {
   name: 'In-charge of issuance of assessment of school fees/accounts inquiry',
   info: 'The assessment is automatically generated in the student’s portal, but they can also have the printed assessment if they go to the specific windows here that prints the assessment. Requirements: Valid ID',
   type: '',
-  message: 'The assessment is automatically generated in the student’s portal, but they can also have the printed assessment if they go to the specific windows here that prints the assessment. Requirements: Valid ID',
+  message: 'The assessment is automatically generated in the student’s portal, but they can also have the printed assessment if they go to the specific windows here that prints the assessment. Requirements: Valid ID.',
   tags: ['Assessment', 'Fees', 'Account', 'Inquiry', 'Service', 'Requirements', 'SAS', 'Available']
 }, {
   name: 'Issuance of examination permits',
@@ -847,19 +847,19 @@ var information = [{
   name: 'Issuance of Clearance for the release of school credentials',
   info: 'Before the ARC releases the student’s credentials, the clearance form must be cleared by all offices and the students accounts office will be the last one to sign because they will oversee if the student paid all his/her tuition fee and other fees. Requirements: Signed Clearance Form',
   type: '',
-  message: 'Before the ARC releases the student’s credentials, the clearance form must be cleared by all offices and the students accounts office will be the last one to sign because they will oversee if the student paid all his/her tuition fee and other fees. Requirements: Signed Clearance Form',
+  message: 'Before the ARC releases the student’s credentials, the clearance form must be cleared by all offices and the students accounts office will be the last one to sign because they will oversee if the student paid all his/her tuition fee and other fees. Requirements: Signed Clearance Form.',
   tags: ['Clearance', 'Release', 'School', 'Credentials', 'Service', 'Requirements', 'SAS', 'Available']
 }, {
   name: 'Investigate complaints, offenses, reports, and any other unusual or suspicious activities in the campus',
   info: 'The Security Department conducts investigation of various crimes or offenses that happened inside the school campus. Requirement: None',
   type: '',
-  message: 'The Security Department conducts investigation of various crimes or offenses that happened inside the school campus. Requirement: None',
+  message: 'The Security Department conducts investigation of various crimes or offenses that happened inside the school campus. Requirement: None.',
   tags: ['Complaints', 'Offenses', 'Reports', 'Suspicious', 'Activities', 'Service', 'Requirements', 'Security', 'Available']
 }, {
   name: 'Lost & Found',
   info: 'Students bring Lost Items to the Security Office for safe-keeping, and returning the lost items to the respective owner. Requirements: Lost Item',
   type: '',
-  message: 'Students bring Lost Items to the Security Office for safe-keeping, and returning the lost items to the respective owner. Requirements: Lost Item',
+  message: 'Students bring Lost Items to the Security Office for safe-keeping, and returning the lost items to the respective owner. Requirements: Lost Item.',
   tags: ['Lost', 'Found', 'Items', 'Service', 'Requirements', 'Security', 'Available']
 }, {
   name: 'Security Contact',
@@ -871,7 +871,7 @@ var information = [{
   name: 'University of Baguio Assistive Extension',
   info: 'University of Baguio Assistive Extension (UBAE) is an information chatbot catered to answer the questions of the students concerning the university',
   type: '',
-  message: 'University of Baguio Assistive Extension (UBAE) is an information chatbot catered to answer the questions of the students concerning the university',
+  message: 'University of Baguio Assistive Extension (UBAE) is an information chatbot catered to answer the questions of the students concerning the university.',
   tags: ['UBAE']
 }, {
   name: 'Requirement for Enrollment of New Student',
@@ -929,9 +929,9 @@ var information = [{
   tags: ['Requirements', 'Req', 'Spelling', 'Check']
 }, {
   name: 'Requirements for ID Replacement',
-  info: 'The Requirements for ID Replacement are Receipt of ID Replacement Payment, and Replacement Form from Student Affairs. (If on 3rd loss, please provide an affidavit of loss, replacement form and receipt of payment)',
+  info: 'The Requirements for ID Replacement are Receipt of ID Replacement Payment, and Replacement Form from Student Affairs. (If on 3rd loss, please provide an affidavit of loss, replacement form and receipt of payment.)',
   type: '',
-  message: 'The Requirements for ID Replacement are Receipt of ID Replacement Payment, and Replacement Form from Student Affairs. (If on 3rd loss, please provide an affidavit of loss, replacement form and receipt of payment)',
+  message: 'The Requirements for ID Replacement are Receipt of ID Replacement Payment, and Replacement Form from Student Affairs. (If on 3rd loss, please provide an affidavit of loss, replacement form and receipt of payment.)',
   tags: ['Requirement', 'Req', 'ID', 'Replacement', 'Identification', 'Card', 'Replace']
 }, {
   name: 'Requirements for ID Validation',
@@ -962,60 +962,60 @@ var information = [{
   info: 'The courses offered in SBAA are Baccalaureate Programs: Bachelor or Science in Accountancy, Bachelor of Science in Business Administration (major in Financial Management; Marketing Management; Operations Management and Human Resource Development Mangement). Ladderized Programs(under Bachelor od Science in Accountancy): Associate in Accounting Technology and Certificate in Accounting Technology.',
   type: '',
   message: 'The courses offered in SBAA are Baccalaureate Programs: Bachelor or Science in Accountancy, Bachelor of Science in Business Administration (major in Financial Management; Marketing Management; Operations Management and Human Resource Development Mangement). Ladderized Programs(under Bachelor od Science in Accountancy): Associate in Accounting Technology and Certificate in Accounting Technology.',
-  tags: ['Offered', 'Available', 'Courses', 'Programs', 'SBAA', 'School', 'Business', 'Administration', 'Accountancy']
+  tags: ['Offered', 'Available', 'Courses', 'Programs', 'SBAA', 'School', 'Business', 'Administration', 'Accountancy', 'Department', 'College']
 }, {
   name: 'Courses Offered in SCJPS',
   info: 'The Courses offered in SCJPS are Graduate Programs: Doctor of Philosophy in Criminology and Master of Science in Criminology. Baccalaureate Programs: Bachelor of Science in Criminology and Bachelor of Science in Forensic Science.',
   type: '',
   message: 'The Courses offered in SCJPS are Graduate Programs: Doctor of Philosophy in Criminology and Master of Science in Criminology. Baccalaureate Programs: Bachelor of Science in Criminology and Bachelor of Science in Forensic Science.',
-  tags: ['Offered', 'Available', 'Courses', 'Programs', 'SCJPS', 'School', 'Criminal', 'Justice', 'Public', 'Safety']
+  tags: ['Offered', 'Available', 'Courses', 'Programs', 'SCJPS', 'School', 'Criminal', 'Justice', 'Public', 'Safety', 'Department', 'College']
 }, {
   name: 'Courses Offered in SOD',
   info: 'The Courses offered in SOD are Graduate Program: Master in Dental Education. Baccalaureate Programs: Doctor of Dental Medicine (6 years: 2 years Pre-Dentistry; 4 years Doctor of Dental Medicine) and Pre-Dentistry (2 years).',
   type: '',
   message: 'The Courses offered in SOD are Graduate Program: Master in Dental Education. Baccalaureate Programs: Doctor of Dental Medicine (6 years: 2 years Pre-Dentistry; 4 years Doctor of Dental Medicine) and Pre-Dentistry (2 years).',
-  tags: ['Offered', 'Available', 'Courses', 'Programs', 'SOD', 'School', 'Dentistry']
+  tags: ['Offered', 'Available', 'Courses', 'Programs', 'SOD', 'School', 'Dentistry', 'Department', 'College']
 }, {
   name: 'Courses Offered in SEA',
   info: 'The Courses offered in SEA are Baccalaureate Programs: Bachelor of Science in Architecture, Bachelor of Science in Civil Engineering, Bachelor of Science in Electronics and Communications Engineering, Bachelor of Science in Environmental and Sanitary Engineering and Bachelor of Science in Industrial Technology, major in Mechatronics.',
   type: '',
   message: 'The Courses offered in SEA are Baccalaureate Programs: Bachelor of Science in Architecture, Bachelor of Science in Civil Engineering, Bachelor of Science in Electronics and Communications Engineering, Bachelor of Science in Environmental and Sanitary Engineering and Bachelor of Science in Industrial Technology, major in Mechatronics.',
-  tags: ['Offered', 'Available', 'Courses', 'Programs', 'SEA', 'School', 'Engineering', 'Architecture']
+  tags: ['Offered', 'Available', 'Courses', 'Programs', 'SEA', 'School', 'Engineering', 'Architecture', 'Department', 'College']
 }, {
   name: 'Courses Offered in SIT',
   info: 'The Courses offered in SIT are Bachelor of Science in Computer Engineering, Bachelor of Science in Computer Science, Bachelor of Science in Information Technology, Associate in Computer Technology with Specialization in: Multimedia and Web Design; Computer and Network Servicing.',
   type: '',
   message: 'The Courses offered in SIT are Bachelor of Science in Computer Engineering, Bachelor of Science in Computer Science, Bachelor of Science in Information Technology, Associate in Computer Technology with Specialization in: Multimedia and Web Design; Computer and Network Servicing.',
-  tags: ['Offered', 'Available', 'Courses', 'Programs', 'SIT', 'School', 'Information', 'Technology']
+  tags: ['Offered', 'Available', 'Courses', 'Programs', 'SIT', 'School', 'Information', 'Technology', 'Department', 'College']
 }, {
   name: 'Courses Offered in SIHTM',
   info: 'The Courses offered in SIHTM are Bachelor of Science in Hotel and Restaurant Management and Bachelor of Science in Tourism. Ladderized Courses: Associate in Arts in Hotel and Restaurant Management and Associate in Hotel and Restaurant Management.',
   type: '',
   message: 'The Courses offered in SIHTM are Bachelor of Science in Hotel and Restaurant Management and Bachelor of Science in Tourism. Ladderized Courses: Associate in Arts in Hotel and Restaurant Management and Associate in Hotel and Restaurant Management.',
-  tags: ['Offered', 'Available', 'Courses', 'Programs', 'SIHTM', 'School', 'International', 'Hospitality', 'Tourism', 'Management']
+  tags: ['Offered', 'Available', 'Courses', 'Programs', 'SIHTM', 'School', 'International', 'Hospitality', 'Tourism', 'Management', 'Department', 'College']
 }, {
   name: 'Courses Offered in SOL',
   info: 'The Courses offered in SOL is Bachelor of Laws and Letters.',
   type: '',
   message: 'The Courses offered in SOL is Bachelor of Laws and Letters.',
-  tags: ['Offered', 'Available', 'Courses', 'Programs', 'SOL', 'School', 'Law']
+  tags: ['Offered', 'Available', 'Courses', 'Programs', 'SOL', 'School', 'Law', 'Department', 'College']
 }, {
-  name: 'Courses Offered in SLAS',
-  info: 'The Courses offered in SLAS are Graduate Programs: Master in Public Administration and Master of Arts in English. Baccalaureate Programs: Bachelor of Arts in Broadcasting, Bachelor of Arts in English, Bachelor of Arts in Mass Communication, Bachelor of Arts in Political Science, Bachelor of Arts in Psychology and Bachelor of Arts in Music. Special Programs: Extension classes in Music(10 hrs) and Short Courses in Photopgraphy and Digital Arts.',
+  name: 'Courses Offered in SLAHS',
+  info: 'The Courses offered in SLAHS are Graduate Programs: Master in Public Administration and Master of Arts in English. Baccalaureate Programs: Bachelor of Arts in Broadcasting, Bachelor of Arts in English, Bachelor of Arts in Mass Communication, Bachelor of Arts in Political Science, Bachelor of Arts in Psychology and Bachelor of Arts in Music. Special Programs: Extension classes in Music(10 hrs) and Short Courses in Photopgraphy and Digital Arts.',
   type: '',
-  message: 'The Courses offered in SLAS are Graduate Programs: Master in Public Administration and Master of Arts in English. Baccalaureate Programs: Bachelor of Arts in Broadcasting, Bachelor of Arts in English, Bachelor of Arts in Mass Communication, Bachelor of Arts in Political Science, Bachelor of Arts in Psychology and Bachelor of Arts in Music. Special Programs: Extension classes in Music(10 hrs) and Short Courses in Photopgraphy and Digital Arts.',
-  tags: ['Offered', 'Available', 'Courses', 'Programs', 'SLAHS', 'School', 'Liberal', 'Arts', 'Human', 'Sciences']
+  message: 'The Courses offered in SLAHS are Graduate Programs: Master in Public Administration and Master of Arts in English. Baccalaureate Programs: Bachelor of Arts in Broadcasting, Bachelor of Arts in English, Bachelor of Arts in Mass Communication, Bachelor of Arts in Political Science, Bachelor of Arts in Psychology and Bachelor of Arts in Music. Special Programs: Extension classes in Music(10 hrs) and Short Courses in Photopgraphy and Digital Arts.',
+  tags: ['Offered', 'Available', 'Courses', 'Programs', 'SLAHS', 'School', 'Liberal', 'Arts', 'Human', 'Sciences', 'Department', 'College']
 }, {
   name: 'Certificates',
   info: 'Certificate of Enrolment, Certificate of Grades, Certificate of Earned Units, Certificate of English Medium of Instruction, Certificate of Attendance in the University of Baguio, Others- as needed/required by an accrediting agency. Requirements: Clearance form',
   type: '',
-  message: 'These are the offered certificates by the ARC: Certificate of Enrolment, Certificate of Grades, Certificate of Earned Units, Certificate of English Medium of Instruction, Certificate of Attendance in the University of Baguio, Others- as needed/required by an accrediting agency. Requirements: Clearance form',
+  message: 'These are the offered certificates by the ARC: Certificate of Enrolment, Certificate of Grades, Certificate of Earned Units, Certificate of English Medium of Instruction, Certificate of Attendance in the University of Baguio, Others- as needed/required by an accrediting agency. Requirements: Clearance form.',
   tags: ['Requirements', 'Certificate', 'Enrolment', 'Grades', 'Earned', 'Units', 'English', 'Medium', 'Instruction', 'Attendance', 'Others', 'Offered', 'Available', 'ARC']
 }, {
   name: 'Honor Graduate College Entrance Scholarships',
   info: 'Valedictorian - 100% on tuition and miscellaneous, Salutatorian - 70% on tuition and miscellaneous, Honorable - Mention 25% on tuition and miscllaneous for one year. Requirement: Certification attesting their status',
   type: '',
-  message: 'Honor Graduate College Entrance Scholarships are available to incoming freshmen who are: Valedictorian - 100% on tuition and miscellaneous, Salutatorian - 70% on tuition and miscellaneous, Honorable Mention - 25% on tuition and miscellaneous for one year. Requirement: Certification attesting their status',
+  message: 'Honor Graduate College Entrance Scholarships are available to incoming freshmen who are: Valedictorian - 100% on tuition and miscellaneous, Salutatorian - 70% on tuition and miscellaneous, Honorable Mention - 25% on tuition and miscellaneous for one year. Requirement: Certification attesting their status.',
   tags: ['Requirements', 'Honor', 'Entrance', 'Scholarship', 'Valedictorian', 'Salutatorian', 'Freshmen', 'Available', 'Offered']
 }, {
   name: 'UB Science High Graduate College Entrance Scholarships',
@@ -1027,25 +1027,25 @@ var information = [{
   name: 'College Entrance Scholarships',
   info: '95 and above - 100% on tuition and miscellaneous for one semester, 90 to 94.99 - 75% on tuition and miscellaneous for one semester, 85 to 89.99 - 50% on tuition and miscllaneous for one semester. Requirement: Certification attesting their status, for Ub highschool graduate: application form from Vice president for Academic Affairs',
   type: '',
-  message: 'College Entrance Scholarships are available to incoming freshmen who are UB highschool or Public school within baguio or la trinidad graduates whose grades are: 95 and above - 100% on tuition and miscellaneous for one semester, 90 to 94.99 - 75% on tuition and miscellaneous for one semester, 85 to 89.99 - 50% on tuition and miscllaneous for one semester. Requirement: Certification attesting their status, for Ub highschool graduate: application form from Vice president for Academic Affairs',
+  message: 'College Entrance Scholarships are available to incoming freshmen who are UB highschool or Public school within baguio or la trinidad graduates whose grades are: 95 and above - 100% on tuition and miscellaneous for one semester, 90 to 94.99 - 75% on tuition and miscellaneous for one semester, 85 to 89.99 - 50% on tuition and miscllaneous for one semester. Requirement: Certification attesting their status, for Ub highschool graduate: application form from Vice president for Academic Affairs.',
   tags: ['College', 'Entrance', 'Scholarship', 'UB', 'Highschool', 'Public', 'School', 'Baguio', 'Latrinidad', 'offered', 'available']
 }, {
   name: 'Science, Technology and Engineering Program(STE) College Entrance Scholarships',
   info: 'For Baguio city and La trinidad graduates - 100% on tuition and miscellaneous for one semester, For graduates outside Baguio and La Trinidad - 50% on tuition and miscllaneous for one semester. Requirement: Certification attesting their status',
   type: '',
-  message: 'Science, Technology and Engineering Program(STE) College Entrance Scholarships are available to incoming freshmen who are graduates of Science, Technology and Engineering Program: For Baguio city and La trinidad graduates - 100% on tuition and miscellaneous for one semester, For graduates outside Baguio and La Trinidad - 50% on tuition and miscllaneous for one semester. Requirement: Certification attesting their status',
+  message: 'Science, Technology and Engineering Program(STE) College Entrance Scholarships are available to incoming freshmen who are graduates of Science, Technology and Engineering Program: For Baguio city and La trinidad graduates - 100% on tuition and miscellaneous for one semester, For graduates outside Baguio and La Trinidad - 50% on tuition and miscllaneous for one semester. Requirement: Certification attesting their status.',
   tags: ['College', 'Entrance', 'Scholarship', 'Science', 'Technologdy', 'Engineering', 'Program', 'Graduates', 'offered', 'available']
 }, {
   name: 'Other College Entrance Scholarships',
   info: 'ESE program, High School Student Publication Scholarship (Editor-in-chief/Associate Editor-in-Chief), Best in Englis/Math/Science, Sibling discount, CAT/PMT Corps Commander, High School Student, Government Scholarship(Student Government President/ Student Government Vice President), UB Star examination. Requirements: Certification Attesting their status',
   type: '',
-  message: 'These are the other offered College Entrance Scholarships: ESE program, High School Student Publication Scholarship (Editor-in-chief/Associate Editor-in-Chief), Best in Englis/Math/Science, Sibling discount, CAT/PMT Corps Commander, High School Student, Government Scholarship(Student Government President/ Student Government Vice President), UB Star examination. Requirements: Certification Attesting their status',
+  message: 'These are the other offered College Entrance Scholarships: ESE program, High School Student Publication Scholarship (Editor-in-chief/Associate Editor-in-Chief), Best in Englis/Math/Science, Sibling discount, CAT/PMT Corps Commander, High School Student, Government Scholarship(Student Government President/ Student Government Vice President), UB Star examination. Requirements: Certification Attesting their status.',
   tags: ['College', 'Entrance', 'Scholarship', 'Science', 'Technologdy', 'Engineering', 'Program', 'Graduates', 'High', 'School', 'Student', 'Publication', 'Editor', 'Best', 'English', 'Math', 'Science', 'CAT', 'PMT', 'Corps', 'Commander', 'Government', 'President', 'Vice', 'STAR', 'offered', 'available']
 }, {
   name: 'Service grants',
   info: 'Student Assitant/ Marshall, UB Employee Dependents, Athletes under the Athletics Department, UB Models, Miss UB Pageant winners, UB Color Guards Scholarship. Requirements: application letter, endorsement letter(if applicable), certificate of employment(if applicable), Official Transcipt of Records',
   type: '',
-  message: 'These are the offered Service Grant Scholarships: Student Assitant/ Marshall, UB Employee Dependents, UB Models, Miss UB Pageant winners, UB Color Guards Scholarship. Requirements: application letter, endorsement letter(if applicable), certificate of employment(if applicable), Official Transcipt of Records',
+  message: 'These are the offered Service Grant Scholarships: Student Assitant/ Marshall, UB Employee Dependents, UB Models, Miss UB Pageant winners, UB Color Guards Scholarship. Requirements: application letter, endorsement letter(if applicable), certificate of employment(if applicable), Official Transcipt of Records.',
   tags: ['Service', 'Grant', 'Scholarship', 'offered', 'available', 'Student', 'Assistant', 'Marshall', 'UB', 'Employee', 'Dependents', 'Model', 'Miss', 'Pagent', 'Winner', 'Guards', 'Color']
 }, {
   name: 'Services Offered by the Library',
@@ -1135,7 +1135,7 @@ var information = [{
   name: 'Military / Police Scholarship',
   info: 'UB DILG Uniformed Personnel Scholarship, UB NBI Scholarship, AFP Scholarship, USVA Scholarship. Requirements: Application form from sas',
   type: '',
-  message: 'These are the scholarships under Military / Police Scholarship: UB DILG Uniformed Personnel Scholarship, UB NBI Scholarship, AFP Scholarship, USVA Scholarship. Requirements: Application form from sas',
+  message: 'These are the scholarships under Military / Police Scholarship: UB DILG Uniformed Personnel Scholarship, UB NBI Scholarship, AFP Scholarship, USVA Scholarship. Requirements: Application form from sas.',
   tags: ['Military', 'Police', 'Scholarship', 'offered', 'available', 'Student', 'UB', 'DILG', 'Uniformed', 'NBI', 'AFP', 'USVA']
 }, {
   name: 'University level IV scholarship',
@@ -1161,6 +1161,12 @@ var information = [{
   type: '',
   message: 'A University level II scholarship must have a Weighted average of 87 - 89.99 and is granted a tuition waiver of 25% and Misc. fee Waiver of 10%.',
   tags: ['University', 'Level', 'Scholarship', 'offered', 'available', 'Student', 'I', 'Type']
+}, {
+  name: 'Sports Offered by the Athletics Office',
+  info: 'Table tennis, Lawn tennis, Badminton, Wushu, Judo, Taekwondo, Arnis, Boxing, Baseball, Softball, Volleyball, and Basketball. All sports are for men and women',
+  type: '',
+  message: 'The Sports that the Athletics Office offers are Table tennis, Lawn tennis, Badminton, Wushu, Judo, Taekwondo, Arnis, Boxing, Baseball, Softball, Volleyball, and Basketball. All sports are for men and women.',
+  tags: ['Athletics', 'Office', 'Sports', 'Available', 'Offered', 'Athletic', 'Scholarship', 'Varsity']
 }];
 
 exports.information = information;
