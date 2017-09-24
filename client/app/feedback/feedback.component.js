@@ -13,8 +13,27 @@ export class FeedbackComponent {
     this.link = '/api/feedbacks';
     this.showNotif = false;
 
-    this.tableName = 'Feedbacks';
-    this.tableEntries = ['#', 'Inquiry', 'Command', 'Tags', 'Response', 'Date', 'Time', 'Resolved'];
+    this.commandType = '';
+
+    this.cmdSelect = {
+      'All Commands': '',
+      What: 'WHAT',
+      When: 'WHEN',
+      Where: 'WHERE',
+      How: 'HOW',
+      Which: 'WHICH'
+    };
+
+    this.resolvedType = '';
+
+    this.resolvedSelect = {
+      'All Entries': '',
+      Resolved: 'true',
+      Unresolved: 'false',
+    };
+
+    this.tableName = 'Feedback';
+    this.tableEntries = ['#', 'User Inquiry', 'Command', 'Tags', 'Date', 'Time', 'Resolved'];
 
     $scope.$on('$destroy', function() {
       socket.unsyncUpdates('feedback');
@@ -23,6 +42,16 @@ export class FeedbackComponent {
 
   $onInit() {
     this.getEntries();
+  }
+
+  setNotif(_msg, response, _alert) {
+    this.showNotif = true;
+    return {
+      message: _msg,
+      code: response.status,
+      status: response.statusText,
+      alert: _alert
+    };
   }
 
   // GET ALL ENTRIES
@@ -34,6 +63,30 @@ export class FeedbackComponent {
     }, err => {
       this.error = err.statusText;
     });
+  }
+
+  archiveEntry(_id) {
+    this.$http.put(this.link + '/' + _id, {
+      resolved: true
+    })
+    .then(response => {
+      this.eventStatus = this.setNotif('Updated Successfully!', response, 'alert-success');
+    }, err => {
+      this.eventStatus = this.setNotif('Updating Failed!', err, 'alert-danger');
+    });
+    this.getEntries();
+  }
+
+  // DELETE ENTRY
+  deleteEntry(_id) {
+    this.$http.delete(this.link + '/' + _id)
+    .then(response => {
+      this.eventStatus = this.setNotif('Deleted Successfully!', response, 'alert-success');
+      this.resetResponse();
+    }, err => {
+      this.eventStatus = this.setNotif('Deleting Failed!', err, 'alert-danger');
+    });
+    this.resetResponse();
   }
 
 }

@@ -1,4 +1,4 @@
-<div class="topnav" ng-show="$ctrl.isLoggedIn()">
+<div class="subnav" ng-show="$ctrl.isLoggedIn()">
   <!-- <a><img src="../../assets/images/ubae.svg" class="nav-brand"></a> -->
   <a ng-repeat="item in $ctrl.menu" ui-sref-active="active" ui-sref="{{item.state}}">{{item.title}}</a>
   <a ng-show="$ctrl.isAdmin()" ui-sref-active="active" ui-sref="admin">Accounts</a>
