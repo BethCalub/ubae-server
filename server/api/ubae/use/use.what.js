@@ -22,17 +22,24 @@ function ubaeInput(userInput, ubae) {
   };
 }
 
-function createFeedback(_in, cmd, mod, tag, ubaeresponse = '') {
-  Feedback.create({
-    userinput: _in,
-    command: cmd,
-    modifier: mod,
-    keywords: tag,
-    response: ubaeresponse,
-    timestamp: Date.now()
-  })
-  .then(() => console.log('Successfully added feedback.'))
-  .catch(err => console.log('Failed adding feedback.', err));
+function createFeedback(_in, cmd, tag) {
+  Feedback.find({
+    keywords: {
+      $all: tag
+    }
+  }).exec(function(err, data) {
+    if(err) throw err;
+    if(data.length < 1) {
+      Feedback.create({
+        userinput: _in,
+        command: cmd,
+        keywords: tag,
+        timestamp: Date.now()
+      })
+      .then(() => console.log('Successfully added feedback.'))
+      .catch(err => console.log('Failed adding feedback.', err));
+    }
+  });
 }
 
 function generateResults(err, story, userInput, ubae) {
@@ -57,7 +64,7 @@ function generateResults(err, story, userInput, ubae) {
     }
   } else {
     msg = messages.noResult.what;
-    createFeedback(userInput, ubae.command, ubae.classifier, ubae.keywords, msg);
+    createFeedback(userInput, ubae.command, ubae.keywords);
     return {
       result: ubaeResponse(msg, story, length)
     };

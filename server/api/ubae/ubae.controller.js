@@ -15,7 +15,7 @@ export function use(req, res) {
   if(userInput) {
     var ubae = UbaeNLP.getQuery(userInput);
     if(!ubae.help) {
-      if(ubae.keywords.length >= 0) {
+      if(ubae.keywords.length > 0) {
         switch (ubae.command) {
         case 'what':
           return UbaeSearch.searchWhat(req, res, userInput, ubae);
