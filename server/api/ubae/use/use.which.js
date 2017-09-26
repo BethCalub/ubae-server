@@ -72,13 +72,22 @@ function generateResults(err, story, userInput, ubae) {
 }
 
 exports.which = function(req, res, userInput, ubae) {
-  return Provider.find({
-    active: true,
-    tags: {
-      $all: ubae.stemmed
-    }
-  }).select('name offer type message')
-  .exec(function(err, story) {
-    return res.send(generateResults(err, story, userInput, ubae));
-  });
+  if(!ubae.foulwords) {
+    return Provider.find({
+      active: true,
+      tags: {
+        $all: ubae.stemmed
+      }
+    }).select('name offer type message')
+    .exec(function(err, story) {
+      return res.send(generateResults(err, story, userInput, ubae));
+    });
+  } else {
+    return res.send({
+      result: {
+        _say: messages.noResult.foulInquiry,
+        _t: Date.now()
+      }
+    });
+  }
 };

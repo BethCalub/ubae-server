@@ -72,12 +72,21 @@ function generateResults(err, story, userInput, ubae) {
 }
 
 exports.how = function(req, res, userInput, ubae) {
-  return Instruction.find({
-    tags: {
-      $all: ubae.stemmed
-    }
-  }).select('name process type message')
-  .exec(function(err, story) {
-    return res.send(generateResults(err, story, userInput, ubae));
-  });
+  if(!ubae.foulwords) {
+    return Instruction.find({
+      tags: {
+        $all: ubae.stemmed
+      }
+    }).select('name process type message')
+    .exec(function(err, story) {
+      return res.send(generateResults(err, story, userInput, ubae));
+    });
+  } else {
+    return res.send({
+      result: {
+        _say: messages.noResult.foulInquiry,
+        _t: Date.now()
+      }
+    });
+  }
 };

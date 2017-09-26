@@ -72,13 +72,22 @@ function generateResults(err, story, userInput, ubae) {
 }
 
 exports.where = function(req, res, userInput, ubae) {
-  return Location.find({
-    active: true,
-    tags: {
-      $all: ubae.stemmed
-    }
-  }).select('name location type message')
-  .exec(function(err, story) {
-    return res.send(generateResults(err, story, userInput, ubae));
-  });
+  if(!ubae.foulwords) {
+    return Location.find({
+      active: true,
+      tags: {
+        $all: ubae.stemmed
+      }
+    }).select('name location type message')
+    .exec(function(err, story) {
+      return res.send(generateResults(err, story, userInput, ubae));
+    });
+  } else {
+    return res.send({
+      result: {
+        _say: messages.noResult.foulInquiry,
+        _t: Date.now()
+      }
+    });
+  }
 };
