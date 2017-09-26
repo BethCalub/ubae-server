@@ -1,26 +1,26 @@
+<div class="well well-lg">
+    <h1>Locations</h1>
+    <div>
+      <p>The location table contains the different locations in the University such as offices, departments and other notable places. This table consists of data which answers WHERE questions.</p>
+      <ul>
+        <li>The variable 'name' includes the name of the location.</li>
+        <li>The variable 'location' includes the building name, floor, and room.</li>
+        <li>The 'message' variable contains the sentence form of 'location' which will serve as UBAEs reply. Try to make it witty as possible as to emulate more human-like thinking.</li>
+        <li>The variable 'tags' contains keywords that will be detected to determine which data UBAE will use as a response to the inquiry. Try to add more tags which are possible keywords.</li>
+      </ul>
+    </div>
+  </div>
+
 <div class="container-fluid" id="response">
-  <!-- <div class="alert {{eventCtrl.eventStatus.alert}}" ng-show="eventCtrl.showNotif">
-    <button type="button" class="close" ng-click="eventCtrl.dismissNotif()" aria-hidden="true">&times;</button>
-    <strong>{{eventCtrl.eventStatus.status}}</strong> {{eventCtrl.eventStatus.message}}
-  </div> -->
   <div class="row">
     <div class="col-sm-9">
       <h4>{{locationCtrl.tableName}} Entries:</h4>
     </div>
-    <!-- <div class="col-sm-2">
-        <div class="form-group">
-        <select
-        ng-model="eventCtrl.filterType" name="response" 
-        ng-options="x for x in eventCtrl.typeSelect"
-        class="form-control input-sm" required="required">
-      </select>
-        </div>
-    </div> -->
     <div class="col-sm-3">
       <div class="form-group">
         <label class="sr-only" for="search">Search</label>
         <input type="text" class="form-control input-sm" id="search" ng-model="locationCtrl.searchResponses" uib-tooltip="Search for information contained in the {{locationCtrl.tableName}} database. This will filter out the information as you type."
-          tooltip-placement="bottom" placeholder="Search {{locationCtrl.tableName}}">
+          tooltip-placement="bottom" placeholder="Search {{locationCtrl.tableName}} Tags">
       </div>
     </div>
   </div>
@@ -30,7 +30,7 @@
       <thead>
         <tr>
           <th ng-repeat="headers in locationCtrl.tableEntries">{{headers}}</th>
-          <!-- <th></th> -->
+          <th></th>
         </tr>
       </thead>
       <tbody>
@@ -38,9 +38,8 @@
         filter: { tags: locationCtrl.searchResponses }">
           <td style="width: 20px">{{$index + 1}}</td>
           <td><a href="#">{{response.name}}</a></td>
-          <td>{{response.building}}</td>
-          <td>{{response.floor}}</td>
-          <td>{{response.room}}</td>
+          <td>{{response.location}}</td>
+          <td>{{response.message}}</td>
           <td style="width: 35%">
             <ul>
               <li ng-repeat="tags in response.tags">
@@ -50,14 +49,21 @@
               </li>
             </ul>
           </td>
-          <!-- <td>
-            <button type="button" class="close" ng-click="eventCtrl.deleteEvent(response._id)"
+          <td>
+            <button type="button" class="close" ng-click="locationCtrl.deleteEvent(response._id)"
               uib-tooltip="WARNING!!! This action will delete this entry."
               tooltip-placement="left">&times;</button>
-          </td> -->
+          </td>
         </tr>
       </tbody>
     </table>
   </div>
   <hr>
 </div>
+
+<statusbar 
+  table-name="{{locationCtrl.tableName}}" 
+  table-entries="{{(locationCtrl.entryList | filter: 
+  { tags: locationCtrl.searchResponses,
+    resolved: feedbackCtrl.resolvedType}).length}}" 
+  action-message="{{locationCtrl.eventStatus}}"></statusbar>

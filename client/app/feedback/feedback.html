@@ -101,3 +101,11 @@
   </div>
   <hr>
 </div>
+
+<statusbar 
+  table-name="{{feedbackCtrl.tableName}}" 
+  table-entries="{{(feedbackCtrl.entryList | filter: 
+  {command: feedbackCtrl.commandType,
+    keywords: feedbackCtrl.searchResponses,
+    resolved: feedbackCtrl.resolvedType}).length}}" 
+  action-message="{{feedbackCtrl.eventStatus}}"></statusbar>

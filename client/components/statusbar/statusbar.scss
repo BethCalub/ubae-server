@@ -1,0 +1,38 @@
+.flexbox-statusbar {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: space-between;
+}
+
+#statusbar {
+  @extend .flexbox-statusbar;
+  position: fixed;
+  background-color: #ddd;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30px;
+  padding: 0 15px;
+  .left-status {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+  }
+  .right-status {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    .status-message {
+      color: #1C972A;
+    }
+  }
+}
+
+
+
+
+

@@ -41,7 +41,15 @@ export class FeedbackComponent {
   }
 
   $onInit() {
-    this.getEntries();
+    this.$http.get(this.link)
+    .then(response => {
+      this.entryList = response.data;
+      this.socket.syncUpdates('feedback', this.entryList);
+      this.eventStatus = 'Data Loaded Succesfully';
+    }, err => {
+      this.eventStatus = 'Loading Failed';
+      this.error = err.statusText;
+    });
   }
 
   setNotif(_msg, response, _alert) {
@@ -65,14 +73,15 @@ export class FeedbackComponent {
     });
   }
 
+  // ARCHIVE ENTRY
   archiveEntry(_id) {
     this.$http.put(this.link + '/' + _id, {
       resolved: true
     })
     .then(response => {
-      this.eventStatus = this.setNotif('Updated Successfully!', response, 'alert-success');
+      this.eventStatus = 'Archived Succesfully';
     }, err => {
-      this.eventStatus = this.setNotif('Updating Failed!', err, 'alert-danger');
+      this.eventStatus = 'Archiving Failed';
     });
     this.getEntries();
   }
@@ -81,11 +90,12 @@ export class FeedbackComponent {
   deleteEntry(_id) {
     this.$http.delete(this.link + '/' + _id)
     .then(response => {
-      this.eventStatus = this.setNotif('Deleted Successfully!', response, 'alert-success');
+      this.eventStatus = 'Entry Deleted Successfully';
       this.resetResponse();
     }, err => {
-      this.eventStatus = this.setNotif('Deleting Failed!', err, 'alert-danger');
+      this.eventStatus = 'Deleting Failed';
     });
+    this.getEntries();
     this.resetResponse();
   }
 

@@ -8,7 +8,25 @@ export class NavbarComponent {
     title: 'Home',
     state: 'main'
   }, {
-    title: 'Feedbacks',
+    title: 'Information',
+    state: 'information'
+  }, {
+    title: 'Event',
+    state: 'event'
+  }, {
+    title: 'Location',
+    state: 'location'
+  }, {
+    title: 'Instruction',
+    state: 'instruction'
+  }, {
+    title: 'Provider',
+    state: 'provider'
+  }, {
+    title: 'Response',
+    state: 'response'
+  }, {
+    title: 'Feedback',
     state: 'feedback'
   }];
 

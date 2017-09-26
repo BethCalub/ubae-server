@@ -13,10 +13,9 @@ export class LocationComponent {
     this.$http = $http;
     this.socket = socket;
     this.link = '/api/locations';
-    this.showNotif = false;
 
     this.tableName = 'Locations';
-    this.tableEntries = ['#', 'Location', 'Building', 'Floor', 'Room', 'Tags'];
+    this.tableEntries = ['#', 'Name', 'Location', 'Message', 'Tags'];
 
     $scope.$on('$destroy', function() {
       socket.unsyncUpdates('location');
@@ -24,7 +23,14 @@ export class LocationComponent {
   }
 
   $onInit() {
-    this.getEntries();
+    this.$http.get(this.link)
+    .then(response => {
+      this.entryList = response.data;
+      this.socket.syncUpdates('location', this.entryList);
+      this.eventStatus = 'Data Successfully Loaded';
+    }, err => {
+      this.error = err.statusText;
+    });
   }
 
   // GET ALL ENTRIES
@@ -36,6 +42,32 @@ export class LocationComponent {
     }, err => {
       this.error = err.statusText;
     });
+  }
+
+  // ARCHIVE ENTRY
+  archiveEntry(_id) {
+    this.$http.put(this.link + '/' + _id, {
+      resolved: true
+    })
+    .then(response => {
+      this.eventStatus = 'Archived Succesfully';
+    }, err => {
+      this.eventStatus = 'Archiving Failed';
+    });
+    this.getEntries();
+  }
+
+  // DELETE ENTRY
+  deleteEntry(_id) {
+    this.$http.delete(this.link + '/' + _id)
+    .then(response => {
+      this.eventStatus = 'Entry Deleted Successfully';
+      this.resetResponse();
+    }, err => {
+      this.eventStatus = 'Deleting Failed';
+    });
+    this.getEntries();
+    this.resetResponse();
   }
 
 }

@@ -1,3 +1,17 @@
+<div class="well well-lg">
+  <h1>Responses</h1>
+  <div>
+    <p>The response table contains conversational messages which can handle users who want to use the UBAE for fun.</p>
+    <ul>
+      <li>The variable 'message' contains UBAEs reply. Try to make it witty as possible as to emulate more human-like thinking
+        which can handle sarcastic inquiries.</li>
+      <li>The variable 'tags' contains keywords that will be detected to determine which data UBAE will use as a response to
+        users message. Try to add more tags which are possible keywords.</li>
+    </ul>
+  </div>
+</div>
+
+
 <div class="container-fluid" id="response">
   <div class="alert {{responseCtrl.eventStatus.alert}}" ng-show="responseCtrl.showNotif">
     <button type="button" class="close" ng-click="responseCtrl.dismissNotif()" aria-hidden="true">&times;</button>
@@ -8,21 +22,17 @@
       <h4>{{responseCtrl.tableName}} Entries:</h4>
     </div>
     <div class="col-sm-2">
-        <div class="form-group">
-        <select
-        ng-model="responseCtrl.filterType" name="response" 
-        ng-options="x for x in responseCtrl.typeSelect"
-        class="form-control input-sm" required="required">
+      <div class="form-group">
+        <select ng-model="responseCtrl.filterType" name="response" ng-options="x for x in responseCtrl.typeSelect" class="form-control input-sm"
+          required="required">
       </select>
-        </div>
+      </div>
     </div>
     <div class="col-sm-3">
-        <div class="form-group">
-      <label class="sr-only" for="search">Search</label>
-      <input type="text" class="form-control input-sm" id="search" ng-model="responseCtrl.searchResponses" 
-        uib-tooltip="Search for information contained in the {{responseCtrl.tableName}} database. This will filter out the information as you type."
-        tooltip-placement="bottom"
-        placeholder="Search {{responseCtrl.tableName}}">
+      <div class="form-group">
+        <label class="sr-only" for="search">Search</label>
+        <input type="text" class="form-control input-sm" id="search" ng-model="responseCtrl.searchResponses" uib-tooltip="Search for information contained in the {{responseCtrl.tableName}} database. This will filter out the information as you type."
+          tooltip-placement="bottom" placeholder="Search {{responseCtrl.tableName}}">
       </div>
     </div>
   </div>
@@ -41,27 +51,23 @@
         <tr ng-repeat="response in responseCtrl.responseList | orderBy: 'type' | 
         filter: { type : responseCtrl.filterType, tags : responseCtrl.searchResponses}">
           <td style="width: 20px">{{$index + 1}}</td>
-          <td style="width: 35%">     
-            <ul>  
+          <td style="width: 35%">
+            <ul>
               <li ng-repeat="tags in response.tags">
-                <span class="label label-danger" 
-                uib-tooltip="{{tags}}" 
-                tooltip-placement="top">
+                <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
                   {{tags}}
                 </span>
               </li>
             </ul>
           </td>
           <td class="flex-response">
-            <a href="" ng-click="responseCtrl.getResponse(response._id)" 
-            uib-tooltip="Select to edit this entry. Please take note that you can only edit the keywords for every entry."
-            tooltip-placement="bottom">
+            <a href="" ng-click="responseCtrl.getResponse(response._id)" uib-tooltip="Select to edit this entry. Please take note that you can only edit the keywords for every entry."
+              tooltip-placement="bottom">
               "{{response.message}}"</a>
           </td>
           <td>
-            <button type="button" class="close" ng-click="responseCtrl.deleteResponse(response._id)" 
-            uib-tooltip="WARNING!!! This action will delete this entry."
-            tooltip-placement="left">&times;</button></td>
+            <button type="button" class="close" ng-click="responseCtrl.deleteResponse(response._id)" uib-tooltip="WARNING!!! This action will delete this entry."
+              tooltip-placement="left">&times;</button></td>
         </tr>
       </tbody>
     </table>
@@ -70,15 +76,14 @@
 </div>
 
 <div class="container" id="response">
-<div class="row">
+  <div class="row">
     <div class="col-sm-4">
-        <h4>Create/Update {{responseCtrl.tableName}}</h4>
+      <h4>Create/Update {{responseCtrl.tableName}}</h4>
     </div>
     <div class="col-sm-offset-6 col-sm-2" style="text-align: right">
-        <a class="btn btn-link" ng-click="responseCtrl.resetResponse()"
-        uib-tooltip="This will reset the form. WARNING: Any changes made will be discarded." 
+      <a class="btn btn-link" ng-click="responseCtrl.resetResponse()" uib-tooltip="This will reset the form. WARNING: Any changes made will be discarded."
         tooltip-placement="top-right"><sub>Reset Form</sub></a>
-      </div>
+    </div>
   </div>
 
   <div class="row" ng-hide="isCollapsed">
@@ -86,23 +91,16 @@
       <div class="col-sm-4">
         <div class="form-group">
           <label for="tags">Respond to:</label>
-          <input type="text" id="tags" name="tags" class="form-control" 
-            uib-tooltip="TIP: Separate your keywords using a comma ','. 
-              Example: Keyword1, Keyword2, Keyword3" 
-            tooltip-placement="bottom-left" 
-            ng-model="responseCtrl.tags" 
-            placeholder="Keywords to respond to" required>
+          <input type="text" id="tags" name="tags" class="form-control" uib-tooltip="TIP: Separate your keywords using a comma ','. 
+              Example: Keyword1, Keyword2, Keyword3" tooltip-placement="bottom-left" ng-model="responseCtrl.tags" placeholder="Keywords to respond to"
+            required>
         </div>
       </div>
       <div class="col-sm-6">
         <div class="form-group">
           <label for="message">Response</label>
-          <input type="text" id="message" name="message" class="form-control" 
-
-            uib-tooltip="TIP: Enter a message that will be used by UBAE when a keyword is detected. 
-              Example: keyword: 'Hi' then the response will be 'Hello'" 
-            tooltip-placement="bottom left"  
-            ng-model="responseCtrl.message"
+          <input type="text" id="message" name="message" class="form-control" uib-tooltip="TIP: Enter a message that will be used by UBAE when a keyword is detected. 
+              Example: keyword: 'Hi' then the response will be 'Hello'" tooltip-placement="bottom left" ng-model="responseCtrl.message"
             placeholder="What will UBAE say" required>
         </div>
       </div>
@@ -119,9 +117,7 @@
       <div class="col-sm-2">
         <div class="form-group">
           <label class="control-label">&nbsp;</label>
-          <button type="button" class="btn btn-block btn-danger"
-            ng-disabled="responseForm.$invalid" 
-            ng-click="responseCtrl.saveResponse()">
+          <button type="button" class="btn btn-block btn-danger" ng-disabled="responseForm.$invalid" ng-click="responseCtrl.saveResponse()">
               Save Entry
           </button>
         </div>
