@@ -59,6 +59,7 @@ export function nlp(req, res) {
     return res.send({
       input: ubae._in,
       command: ubae.command,
+      foulword: ubae.foulwords,
       classifier: ubae.classifier,
       tags: ubae.keywords,
       stemmed: ubae.stemmed.toString().split(','),

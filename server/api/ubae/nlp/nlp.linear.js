@@ -9,11 +9,29 @@ exports.listSearch = function(input, list) {
     var cur = list[y];
     for(var x = 0; x < input.length; x++) {
       var currentUserInput = input[x];
-      if(cur === currentUserInput) {
+      if(cur.toUpperCase() === currentUserInput) {
         return cur.toLowerCase();
       }
     }
   }
+};
+
+exports.foulSearch = function(input, list) {
+  var foul = false;
+  input = input.toUpperCase()
+    .replace(/[^\w\s]|_/g, '')
+    .replace(/\s+/g, ' ')
+    .split(' ');
+  for(var y = 0; y < list.length; y++) {
+    var cur = list[y];
+    for(var x = 0; x < input.length; x++) {
+      var currentUserInput = input[x];
+      if(cur.toUpperCase() === currentUserInput) {
+        foul = true;
+      }
+    }
+  }
+  return foul;
 };
 
 exports.helpSearch = function(input) {
