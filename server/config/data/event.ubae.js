@@ -10,22 +10,6 @@
 // }
 
 var event = [{
-  name: 'Grand Alumni Homecoming and General Assembly',
-  event: 'Attire: International, Registration Fee: P200, Location: UB Cardinals Gym, 8:00am-5:00pm, September 17, 2017',
-  startDate: Date.parse('Sept 17, 2017'),
-  endDate: Date.parse('Sept 17, 2017'),
-  type: '',
-  message: 'Grand Alumni Homecoming and General Assembly will be held on the 17th of September 2017 at the UB Cardinals Gym. The event would start at 8:00am until 5:00pm. Please take note that you should be in your International attire and that there is a P200 registration fee.',
-  tags: ['UBAFI', 'Grand', 'Alumni', 'Homecoming', 'General', 'Assembly'],
-}, {
-  name: 'SIT NIGHT ELECTRONIC DANCE FEST',
-  event: 'SIT Got Talent Season 3, Spoken Poetry, Your Face Sound Familiar, Location: UB Gym, September 19, 2017, 12:00pm-7:00pm',
-  startDate: Date.parse('Sept 17, 2017'),
-  endDate: Date.parse('Sept 17, 2017'),
-  type: '',
-  message: 'The SIT Night will be held at the UB Gym on the 19th of September 2017. The event will start at 12:00pm until 7:00pm. This event would include exciting activities such as SIT Got talent Season 3, Spoken Poetry and Your Face Sound Familiar. See you there!',
-  tags: ['SIT', 'Day', 'Night', 'Electronic', 'Dance', 'Fest'],
-}, {
   name: 'Midterm Examinations 1st Sem SY 2017-2018',
   event: 'Midterm Examinations 1st Sem, October 17-20, 2017 SY 2017-2018',
   startDate: Date.parse('Oct 17, 2017'),
@@ -126,6 +110,15 @@ var event = [{
   type: '',
   message: 'The Semestral Break for the 2nd semester will be on May 14, 2018 until June 4, 2018 SY 2017-2018. Enjoy!',
   tags: ['Semestral', 'Break', 'SY1718', '2nd', 'second', 'semester'],
+  active: false
+}, {
+  name: 'UB Foundation Day',
+  event: 'August 8, 1948',
+  startDate: Date.parse('Aug 8, 1948'),
+  endDate: Date.parse('Aug 8, 1948'),
+  type: '',
+  message: 'On August 8, 1948, a school named Baguio Technical and Commercial Institute was born.',
+  tags: ['University', 'Baguio', 'Born', 'Foundation', 'Establish', 'Day', 'Technical', 'Tech', 'Commercial', 'Institute'],
   active: false
 }];
 

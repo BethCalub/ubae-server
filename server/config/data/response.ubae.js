@@ -24,7 +24,7 @@ var response = [{
   tags: ['Night', 'sleep']
 }, {
   message: 'Unless your name is Google, dont act like you know everything :)',
-  tags: ['Stupid', 'Moron', 'Dumb', 'Noob', 'Unintelligent', 'Ignorant', 'Slow', 'Senseless', 'Nonsense', 'Idiot', 'Suck']
+  tags: ['Stupid', 'Moron', 'Dumb', 'Noob', 'Unintelligent', 'Ignorant', 'Slow', 'Senseless', 'Nonsense', 'Idiot', 'Suck', 'ungas']
 }, {
   message: 'Please stop using inappropriate words. Remember, Jesus sees you :)',
   tags: ['Shit', 'Fuck', 'Ass', 'Asshole', 'Bitch', 'Butt', 'Sex', 'Fucker', 'Bullshit', 'Tits', 'Boobs', 'Boobies', 'Titties', 'Nudes', 'Pakyu', 'Shet', 'Pakshet', 'Dick', 'Vagina', 'Pussy']

@@ -284,8 +284,7 @@ var location = [{
   location: 'F Bulding, 2nd Floor',
   type: '',
   message: 'It is located at the 2nd Floor of F Building.',
-  tags: ['F202',
-    'F203',
+  tags: ['F203',
     'F204',
     'F207',
     'F209',
@@ -806,7 +805,7 @@ var location = [{
   location: 'Security Office',
   type: '',
   message: 'You can try to find your missing items or surrender lost items at the Security Office which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['lost', 'found', 'report', 'items']
+  tags: ['lost', 'found', 'report', 'items', 'missing']
 }, {
   name: 'Where to volunteer for the outreach ',
   location: 'ECOS',
@@ -878,7 +877,7 @@ var location = [{
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Course Description at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Course', 'Description', 'Get', 'Request', 'Process']
+  tags: ['Course', 'Description', 'Get', 'Request', 'Process', 'copy']
 }, {
   name: 'Where to process Permit to Cross Enroll ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
@@ -1202,7 +1201,7 @@ var location = [{
   location: 'F Building, 1st Floor, Room F102 ',
   type: '',
   message: 'The Medtech Clinical Lab is located at the 1st Floor of F Building, Room F102. ',
-  tags: ['Medtech', 'Clinic', 'Laboratory', 'Location', 'Lab']
+  tags: ['Medtech', 'Clinic', 'Laboratory', 'Location', 'Lab', 'Medical']
 }, {
   name: 'Where to request a copy of PRC Board Syllabi for STE Students ',
   location: 'A Building, 2nd Floor, Room A205 ',
@@ -1250,7 +1249,7 @@ var location = [{
   location: 'F building, 2nd Floor in front of the UBAFI Office ',
   type: '',
   message: 'The University of Baguio Faculty and Education Workers Union (UBFEWU) is located at the 2nd floor of F building in front of the UBAFI Office. ',
-  tags: ['University', 'Baguio', 'Faculty', 'Education', 'Workers', 'Union', 'UBFEWU', 'Office']
+  tags: ['University', 'Baguio', 'Faculty', 'Education', 'Workers', 'Union', 'UBFEWU', 'Office', 'Office']
 }, {
   name: 'Physical Therapy Center ',
   location: 'D Building, 2nd Floor ',
@@ -1364,7 +1363,7 @@ var location = [{
   location: 'H Building, 2nd Basement, Room HB201 ',
   type: '',
   message: 'The Engineering Faculty Room is located at the 2nd Basement of H Building, Room HB201. ',
-  tags: ['Location', 'Engineering', 'Faculty', 'Room', 'HB201']
+  tags: ['Location', 'Engineering', 'Faculty', 'Room', 'HB201', 'Office', 'Department', 'College']
 }, {
   name: 'Masscom Laboratory ',
   location: 'H Building, 2nd Floor ',
@@ -1388,7 +1387,7 @@ var location = [{
   location: 'H Building, 2nd Floor, H209 ',
   type: '',
   message: 'The SLAHS Faculty Room is located at the 2nd Floor of H Building, Room H209. ',
-  tags: ['Location', 'SLAHS', 'School', 'Human', 'Liberal', 'Arts', 'Faculty', 'Room', 'H209']
+  tags: ['Location', 'SLAHS', 'School', 'Human', 'Liberal', 'Arts', 'Faculty', 'Room', 'H209', 'Office', 'Department', 'college']
 }, {
   name: 'Psychology Laboratory ',
   location: 'H Building, 2nd Floor, Room H203 ',
@@ -1400,13 +1399,13 @@ var location = [{
   location: 'H Building, 3rd Floor, Room H310 ',
   type: '',
   message: 'The SBAA Faculty Room is located at the 3rd Floor of H Building, Room H310. ',
-  tags: ['Location', 'SBAA', 'BAA', 'School', 'Business', 'Administration', 'Faculty', 'Room']
+  tags: ['Location', 'SBAA', 'BAA', 'School', 'Business', 'Administration', 'Faculty', 'Room', 'Office', 'Department', 'College']
 }, {
   name: 'CTE/STE Faculty Room ',
   location: 'H Building, 5th Floor, Room H501 ',
   type: '',
   message: 'The CTE Faculty Room is located at the 5th Floor of H Building, Room H501. ',
-  tags: ['Location', 'CTE', 'STE', 'Faculty', 'Room', 'School', 'College', 'Teacher', 'Education']
+  tags: ['Location', 'CTE', 'STE', 'Faculty', 'Room', 'School', 'College', 'Teacher', 'Education', 'Office', 'department']
 }, {
   name: 'Music Room ',
   location: 'H Building, 5th Floor, Room H506 ',
@@ -1424,7 +1423,7 @@ var location = [{
   location: 'B Building, 3rd Floor, In front of the General Laboratory Room ',
   type: '',
   message: 'The SOD Faculty Room is located at the 3rd Floor of B Building. ',
-  tags: ['SOD', 'School', 'Dentistry', 'Faculty', 'Room', 'Location']
+  tags: ['SOD', 'School', 'Dentistry', 'Faculty', 'Room', 'Location', 'Office', 'Department', 'College']
 }, {
   name: 'SAMS Learning Center ',
   location: 'B Building, 4th Floor, Room B401 ',
@@ -1436,7 +1435,7 @@ var location = [{
   location: 'B Building, 5th Floor, B509 ',
   type: '',
   message: 'The NATSCI Faculty Room is located at the 5th Floor of B Building, Room B509. ',
-  tags: ['NATSCI', 'School', 'Natural', 'Sciences', 'Faculty', 'Room', 'B509', 'Location']
+  tags: ['NATSCI', 'School', 'Natural', 'Sciences', 'Faculty', 'Room', 'B509', 'Location', 'Office', 'Department', 'College']
 }, {
   name: 'Chemistry Laboratory ',
   location: 'B Building, 6th Floor, Rooms B604 and B607 ',
@@ -1478,13 +1477,13 @@ var location = [{
   location: 'A Building, 9th Floor, Room A907 ',
   type: '',
   message: 'The Architecture Faculty Room is located at the 9th Floor of A Building, Room A907. ',
-  tags: ['Location', 'Architecture', 'Faculty', 'Room', 'A907']
+  tags: ['Location', 'Architecture', 'Faculty', 'Room', 'A907', 'Office', 'Department', 'College']
 }, {
   name: 'SCJPS Faculty Room ',
   location: 'A Building, 8th Floor, In front of the Dean\'s Office ',
   type: '',
   message: 'The SCJPS Faculty Room is located at the 8th Floor of A Building in front of the Dean\'s Office. ',
-  tags: ['Location', 'SCJPS', 'School', 'Criminal', 'Justice', 'Public', 'Safety', 'Faculty', 'Room']
+  tags: ['Location', 'SCJPS', 'School', 'Criminal', 'Justice', 'Public', 'Safety', 'Faculty', 'Room', 'Office', 'Department', 'College']
 }, {
   name: 'MOOT Court Room ',
   location: 'A Building, 8th Floor ',
@@ -1508,7 +1507,7 @@ var location = [{
   location: 'A Building, 3rd Floor, Room A302 ',
   type: '',
   message: 'The SON Faculty Room is located at the 3rd Floor of A Building, Room A302. ',
-  tags: ['Location', 'SON', 'School', 'Nursing', 'Faculty', 'Room', 'A302']
+  tags: ['Location', 'SON', 'School', 'Nursing', 'Faculty', 'Room', 'A302', 'Office', 'Department', 'College']
 }, {
   name: 'Office of the President ',
   location: 'A Building, 2nd Floor ',
@@ -1544,7 +1543,7 @@ var location = [{
   location: 'A Building, Floor A ',
   type: '',
   message: 'The SIHTM Faculty Room is located at the A Floor of A Building. ',
-  tags: ['Location', 'SIHTM', 'School', 'International', 'Hotel', 'Tourism', 'Management', 'Faculty', 'Room']
+  tags: ['Location', 'SIHTM', 'School', 'International', 'Hotel', 'Tourism', 'Management', 'Faculty', 'Room', 'Office', 'Department', 'College']
 }, {
   name: 'Front Office and Travel Agency Room ',
   location: 'A Building, Floor B ',
@@ -1559,10 +1558,10 @@ var location = [{
   tags: ['Location', 'Hot', 'Cold', 'Kitchen']
 }, {
   name: 'SIT Faculty Office ',
-  location: 'F Building, 2nd Floor, F201 ',
+  location: 'F Building, 2nd Floor, F202 ',
   type: '',
-  message: 'The SIT Faculty Office is located at the 2nd Floor of F Building, Room F201. ',
-  tags: ['Location', 'SIT', 'School', 'Information', 'Technology', 'Faculty', 'Room', 'F201']
+  message: 'The SIT Faculty Office is located at the 2nd Floor of F Building, Room F202. ',
+  tags: ['Location', 'SIT', 'School', 'Information', 'Technology', 'Faculty', 'Room', 'F202', 'Office', 'Department', 'College']
 }, {
   name: 'FOODCOURT ',
   location: 'F Building, A Building ',
@@ -1575,6 +1574,12 @@ var location = [{
   type: '',
   message: 'The UB Square is located at the F Building below the cashier. ',
   tags: ['Location', 'UB', 'Square']
+}, {
+  name: 'Borrow Books ',
+  location: 'Main, Extension, Centennial Library ',
+  type: '',
+  message: 'You can borrow or read books at the Main, Extension or Centennial Library. ',
+  tags: ['Borrow', 'Read', 'Books', 'Location']
 }];
 
 exports.location = location;

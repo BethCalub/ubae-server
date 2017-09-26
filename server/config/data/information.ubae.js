@@ -961,49 +961,49 @@ var information = [{
   name: 'Courses Offered in SBAA',
   info: 'The courses offered in SBAA are Baccalaureate Programs: Bachelor or Science in Accountancy, Bachelor of Science in Business Administration (major in Financial Management; Marketing Management; Operations Management and Human Resource Development Mangement). Ladderized Programs(under Bachelor od Science in Accountancy): Associate in Accounting Technology and Certificate in Accounting Technology.',
   type: '',
-  message: 'The courses offered in SBAA are Baccalaureate Programs: Bachelor or Science in Accountancy, Bachelor of Science in Business Administration (major in Financial Management; Marketing Management; Operations Management and Human Resource Development Mangement). Ladderized Programs(under Bachelor od Science in Accountancy): Associate in Accounting Technology and Certificate in Accounting Technology.',
+  message: 'The courses offered in SBAA are Baccalaureate Programs: Bachelor or Science in Accountancy(BSAC), Bachelor of Science in Business Administration (major in Financial Management; Marketing Management; Operations Management and Human Resource Development Mangement)(BSBA-FM,BSBA-MM,BSBA-OM BSBA-HRDM). Ladderized Programs(under Bachelor od Science in Accountancy): Associate in Accounting Technology(AAT) and Certificate in Accounting Technology.(CAT)',
   tags: ['Offered', 'Available', 'Courses', 'Programs', 'SBAA', 'School', 'Business', 'Administration', 'Accountancy', 'Department', 'College']
 }, {
   name: 'Courses Offered in SCJPS',
   info: 'The Courses offered in SCJPS are Graduate Programs: Doctor of Philosophy in Criminology and Master of Science in Criminology. Baccalaureate Programs: Bachelor of Science in Criminology and Bachelor of Science in Forensic Science.',
   type: '',
-  message: 'The Courses offered in SCJPS are Graduate Programs: Doctor of Philosophy in Criminology and Master of Science in Criminology. Baccalaureate Programs: Bachelor of Science in Criminology and Bachelor of Science in Forensic Science.',
+  message: 'The Courses offered in SCJPS are Graduate Programs: Doctor of Philosophy in Criminology(PHDCJSC) and Master of Science in Criminology(MSCJSC). Baccalaureate Programs: Bachelor of Science in Criminology(BSCRIM) and Bachelor of Science in Forensic Science(BSFSci).',
   tags: ['Offered', 'Available', 'Courses', 'Programs', 'SCJPS', 'School', 'Criminal', 'Justice', 'Public', 'Safety', 'Department', 'College']
 }, {
   name: 'Courses Offered in SOD',
   info: 'The Courses offered in SOD are Graduate Program: Master in Dental Education. Baccalaureate Programs: Doctor of Dental Medicine (6 years: 2 years Pre-Dentistry; 4 years Doctor of Dental Medicine) and Pre-Dentistry (2 years).',
   type: '',
-  message: 'The Courses offered in SOD are Graduate Program: Master in Dental Education. Baccalaureate Programs: Doctor of Dental Medicine (6 years: 2 years Pre-Dentistry; 4 years Doctor of Dental Medicine) and Pre-Dentistry (2 years).',
+  message: 'The Courses offered in SOD are Graduate Program: Master in Dental Education(MDE). Baccalaureate Programs: Doctor of Dental Medicine(DM) (6 years: 2 years Pre-Dentistry; 4 years Doctor of Dental Medicine) and Pre-Dentistry(Pre-Den) (2 years).',
   tags: ['Offered', 'Available', 'Courses', 'Programs', 'SOD', 'School', 'Dentistry', 'Department', 'College']
 }, {
   name: 'Courses Offered in SEA',
   info: 'The Courses offered in SEA are Baccalaureate Programs: Bachelor of Science in Architecture, Bachelor of Science in Civil Engineering, Bachelor of Science in Electronics and Communications Engineering, Bachelor of Science in Environmental and Sanitary Engineering and Bachelor of Science in Industrial Technology, major in Mechatronics.',
   type: '',
-  message: 'The Courses offered in SEA are Baccalaureate Programs: Bachelor of Science in Architecture, Bachelor of Science in Civil Engineering, Bachelor of Science in Electronics and Communications Engineering, Bachelor of Science in Environmental and Sanitary Engineering and Bachelor of Science in Industrial Technology, major in Mechatronics.',
+  message: 'The Courses offered in SEA are Baccalaureate Programs: Bachelor of Science in Architecture(BSARCh), Bachelor of Science in Civil Engineering(BSCE), Bachelor of Science in Electronics and Communications Engineering(BSECE), Bachelor of Science in Environmental and Sanitary Engineering(BSESE) and Bachelor of Science in Industrial Technology, major in Mechatronics(BSIT-Mecha).',
   tags: ['Offered', 'Available', 'Courses', 'Programs', 'SEA', 'School', 'Engineering', 'Architecture', 'Department', 'College']
 }, {
   name: 'Courses Offered in SIT',
   info: 'The Courses offered in SIT are Bachelor of Science in Computer Engineering, Bachelor of Science in Computer Science, Bachelor of Science in Information Technology, Associate in Computer Technology with Specialization in: Multimedia and Web Design; Computer and Network Servicing.',
   type: '',
-  message: 'The Courses offered in SIT are Bachelor of Science in Computer Engineering, Bachelor of Science in Computer Science, Bachelor of Science in Information Technology, Associate in Computer Technology with Specialization in: Multimedia and Web Design; Computer and Network Servicing.',
+  message: 'The Courses offered in SIT are Bachelor of Science in Computer Engineering(BSCS), Bachelor of Science in Computer Science(BSCpE), Bachelor of Science in Information Technology(BSIT), Associate in Computer Technology with Specialization in: Multimedia and Web Design(ACT-MWD); Computer and Network Servicing(ACT-CNS).',
   tags: ['Offered', 'Available', 'Courses', 'Programs', 'SIT', 'School', 'Information', 'Technology', 'Department', 'College']
 }, {
   name: 'Courses Offered in SIHTM',
   info: 'The Courses offered in SIHTM are Bachelor of Science in Hotel and Restaurant Management and Bachelor of Science in Tourism. Ladderized Courses: Associate in Arts in Hotel and Restaurant Management and Associate in Hotel and Restaurant Management.',
   type: '',
-  message: 'The Courses offered in SIHTM are Bachelor of Science in Hotel and Restaurant Management and Bachelor of Science in Tourism. Ladderized Courses: Associate in Arts in Hotel and Restaurant Management and Associate in Hotel and Restaurant Management.',
+  message: 'The Courses offered in SIHTM are Bachelor of Science in Hotel and Restaurant Management(BSHRM) and Bachelor of Science in Tourism(BSTM). Ladderized Courses: Associate in Arts in Hotel and Restaurant Management(AAHRM) and Associate in Hotel and Restaurant Management(AHRM).',
   tags: ['Offered', 'Available', 'Courses', 'Programs', 'SIHTM', 'School', 'International', 'Hospitality', 'Tourism', 'Management', 'Department', 'College']
 }, {
   name: 'Courses Offered in SOL',
   info: 'The Courses offered in SOL is Bachelor of Laws and Letters.',
   type: '',
-  message: 'The Courses offered in SOL is Bachelor of Laws and Letters.',
+  message: 'The Courses offered in SOL is Bachelor of Laws and Letters(LLB).',
   tags: ['Offered', 'Available', 'Courses', 'Programs', 'SOL', 'School', 'Law', 'Department', 'College']
 }, {
   name: 'Courses Offered in SLAHS',
   info: 'The Courses offered in SLAHS are Graduate Programs: Master in Public Administration and Master of Arts in English. Baccalaureate Programs: Bachelor of Arts in Broadcasting, Bachelor of Arts in English, Bachelor of Arts in Mass Communication, Bachelor of Arts in Political Science, Bachelor of Arts in Psychology and Bachelor of Arts in Music. Special Programs: Extension classes in Music(10 hrs) and Short Courses in Photopgraphy and Digital Arts.',
   type: '',
-  message: 'The Courses offered in SLAHS are Graduate Programs: Master in Public Administration and Master of Arts in English. Baccalaureate Programs: Bachelor of Arts in Broadcasting, Bachelor of Arts in English, Bachelor of Arts in Mass Communication, Bachelor of Arts in Political Science, Bachelor of Arts in Psychology and Bachelor of Arts in Music. Special Programs: Extension classes in Music(10 hrs) and Short Courses in Photopgraphy and Digital Arts.',
+  message: 'The Courses offered in SLAHS are Graduate Programs: Master in Public Administration(MPA) and Master of Arts in English(MAEng). Baccalaureate Programs: Bachelor of Arts in Broadcasting(BABroad), Bachelor of Arts in English(BAEng), Bachelor of Arts in Mass Communication(BAComm), Bachelor of Arts in Political Science(BAPolSci), Bachelor of Arts in Psychology(BSPsych) and Bachelor of Arts in Music(BAMusic). Special Programs: Extension classes in Music(10 hrs) and Short Courses in Photopgraphy and Digital Arts.',
   tags: ['Offered', 'Available', 'Courses', 'Programs', 'SLAHS', 'School', 'Liberal', 'Arts', 'Human', 'Sciences', 'Department', 'College']
 }, {
   name: 'Certificates',
@@ -1052,37 +1052,37 @@ var information = [{
   info: 'The services offered by the Library are the Library Sections, Follet-DLM Mobile Application, Journals, New Library Databases/E-Journals, Clearance signing, Library Orientation, Computers for internet surfing in the library, and Discussion rooms.',
   type: '',
   message: 'The services offered by the Library are the Library Sections, Follet-DLM Mobile Application, Journals, New Library Databases/E-Journals, Clearance signing, Library Orientation, Computers for internet surfing in the library, and Discussion rooms.',
-  tags: ['Services', 'Offered', 'Available', 'Library', 'Lib', 'Main', 'Extension', 'Centennial']
+  tags: ['Services', 'Offered', 'Available', 'Library', 'Lib', 'Main', 'Extension', 'Centennial', 'Office']
 }, {
   name: 'Services Offered by R&DC',
   info: 'The services offered by the Research and Development Center are Format Editing, Statistics Assistance, Poster Preparation, Publication of Research findings (Catalyst), Presentation of Research findings, Tool Validation, Grammar Check, Spell Check, Plagiarism Test, and Use of Computers.',
   type: '',
   message: 'The services offered by the Research and Development Center are Format Editing, Statistics Assistance, Poster Preparation, Publication of Research findings (Catalyst), Presentation of Research findings, Tool Validation, Grammar Check, Spell Check, Plagiarism Test, and Use of Computers.',
-  tags: ['Services', 'Offered', 'Available', 'Research', 'Development', 'Center', 'R&DC', 'RnDC']
+  tags: ['Services', 'Offered', 'Available', 'Research', 'Development', 'Center', 'R&DC', 'RnDC', 'Office']
 }, {
   name: 'Services Offered by the Clinic',
   info: 'The services offered by the Clinic are Free tooth extraction, Minor Surgery, Physical Examination for OJTs, Practicum, competitions and clinical exposure, Facilitation of Accident Insurance, Radiology and Medtech/Clinical Laboratory Services, Vaccinations(Hep B; Influenza Vaccine/AH1N1 vaccine; Cervical Cancer), Consultations and X-ray.',
   type: '',
   message: 'The services offered by the Clinic are Free tooth extraction, Minor Surgery, Physical Examination for OJTs, Practicum, competitions and clinical exposure, Facilitation of Accident Insurance, Radiology and Medtech/Clinical Laboratory Services, Vaccinations(Hep B; Influenza Vaccine/AH1N1 vaccine; Cervical Cancer), Consultations and X-ray.',
-  tags: ['Services', 'Offered', 'Available', 'Clinic', 'Clinical', 'Laboratory']
+  tags: ['Services', 'Offered', 'Available', 'Clinic', 'Clinical', 'Laboratory', 'Office']
 }, {
   name: 'Services Offered by the Security Department',
   info: 'The services offered by the Security Department are Investigate complaints, offenses, reports, and any other unusual or suspicious activities in the campus; Lost & Found; They can be contacted in case of emergency.',
   type: '',
   message: 'The services offered by the Security Department are Investigate complaints, offenses, reports, and any other unusual or suspicious activities in the campus; Lost & Found; They can be contacted in case of emergency.',
-  tags: ['Services', 'Offered', 'Available', 'Security', 'Department']
+  tags: ['Services', 'Offered', 'Available', 'Security', 'Department', 'Office']
 }, {
   name: 'Services Offered by ECOS',
   info: 'The Service of ECOS is the UBCARES Program.',
   type: '',
   message: 'The Service of ECOS is the UBCARES Program.',
-  tags: ['Services', 'Offered', 'Available', 'ECOS', 'Extension', 'Community', 'Outreach', 'Services']
+  tags: ['Services', 'Offered', 'Available', 'ECOS', 'Extension', 'Community', 'Outreach', 'Office']
 }, {
   name: 'Services Offered by SAS',
   info: 'The Services that Student Accounts Section offer is that they are In-charge of issuance of assessment of school fees/accounts inquiry, Responsible for the issuance of examination permits, and Responsible for the issuance of clearance for the release of school credentials.',
   type: '',
   message: 'The Services that Student Accounts Section offer is that they are In-charge of issuance of assessment of school fees/accounts inquiry, Responsible for the issuance of examination permits, and Responsible for the issuance of clearance for the release of school credentials.',
-  tags: ['Services', 'Offered', 'Available', 'SAS', 'Student', 'Accounts', 'Section']
+  tags: ['Services', 'Offered', 'Available', 'SAS', 'Student', 'Accounts', 'Section', 'Office']
 }, {
   name: 'Services Offered by MAPS',
   info: 'The Services that Media Affairs and Publications Office offers are Press releases and advertisements, Website content development, Yearbook and Graduation materials, and Social Media content development.',
@@ -1094,37 +1094,37 @@ var information = [{
   info: 'The Services offered by the Admissions and Records Center are Admission, Enrollment, Release of Student Records and Certification.',
   type: '',
   message: 'The Services offered by the Admissions and Records Center are Admission, Enrollment, Release of Student Records and Certification.',
-  tags: ['Services', 'Offered', 'Available', 'Admissions', 'Records', 'Center', 'ARC']
+  tags: ['Services', 'Offered', 'Available', 'Admissions', 'Records', 'Center', 'ARC', 'Office']
 }, {
   name: 'Services Offered by MIS',
   info: 'The Services that Management Information Systems provides are Virus scanning and removal for flash drives and portable hard disk, Assessment of PC/laptop, Installation of open-source/free software, Printing and validation of student ID, Printing of alumni and other IDs, Creation of Wi-Fi account, and creating and maintaining of Wifi Areas.',
   type: '',
   message: 'The Services that Management Information Systems provides are Virus scanning and removal for flash drives and portable hard disk, Assessment of PC/laptop, Installation of open-source/free software, Printing and validation of student ID, Printing of alumni and other IDs, Creation of Wi-Fi account, and creating and maintaining of Wifi Areas.',
-  tags: ['Services', 'Offered', 'Available', 'MIS', 'Management', 'Information', 'System']
+  tags: ['Services', 'Offered', 'Available', 'MIS', 'Management', 'Information', 'System', 'Office']
 }, {
   name: 'Services Offered by CCSD',
   info: 'The Services Offered by the Center for Counseling and Student Development are Student development facilitation and counseling services, Psychological testing service (Personality Test, Interest, Aptitude, Mental Ability and Battery Test), and Career and placement services.',
   type: '',
   message: 'The Services Offered by the Center for Counseling and Student Development are Student development facilitation and counseling services, Psychological testing service (Personality Test, Interest, Aptitude, Mental Ability and Battery Test), and Career and placement services.',
-  tags: ['Services', 'Offered', 'Available', 'CCSD', 'Center', 'Couseling', 'Student', 'Development']
+  tags: ['Services', 'Offered', 'Available', 'CCSD', 'Center', 'Couseling', 'Student', 'Development', 'Office']
 }, {
   name: 'Services Offered by OSA',
   info: 'The Services Offered by the Office of Student Affairs are Readmissions (Getting of Dropped Class Cards) and in charge of the Application for Performing Arts Scholarships.',
   type: '',
   message: 'The Services Offered by the Office of Student Affairs are Readmissions (Getting of Dropped Class Cards) and in charge of the Application for Performing Arts Scholarships.',
-  tags: ['Services', 'Offered', 'Available', 'OSA', 'Office', 'Student', 'Affairs']
+  tags: ['Services', 'Offered', 'Available', 'OSA', 'Office', 'Student', 'Affairs', 'Office']
 }, {
   name: 'Services Offered by the Athletics Office',
   info: 'The Services Offered by the Athletics Office are Assisting of students who are qualified for athletic scholarship and Lending of sports equipment.',
   type: '',
   message: 'The Services Offered by the Athletics Office are Assisting of students who are qualified for athletic scholarship and Lending of sports equipment.',
-  tags: ['Services', 'Offered', 'Available', 'Athletics', 'Office', 'Athlete']
+  tags: ['Services', 'Offered', 'Available', 'Athletics', 'Office', 'Athlete', 'Office']
 }, {
   name: 'Services Offered by LARC',
   info: 'The Services Offered by the Linkages, Alumni and Review Center are the Processing of International On The Job Training (IOJT) applicants and exchange scholars, Assisting of the UBAFI in issuing the membership identification cards of its members, and Giving of copies of PRC Board Syllabi for STE Students.',
   type: '',
   message: 'The Services Offered by the Linkages, Alumni and Review Center are the Processing of International On The Job Training (IOJT) applicants and exchange scholars, Assisting of the UBAFI in issuing the membership identification cards of its members, and Giving of copies of PRC Board Syllabi for STE Students.',
-  tags: ['Services', 'Offered', 'Available', 'LARC', 'Linkages', 'Alumni', 'Review', 'Center']
+  tags: ['Services', 'Offered', 'Available', 'LARC', 'Linkages', 'Alumni', 'Review', 'Center', 'Office']
 }, {
   name: 'University Academic Scholar',
   info: 'Deans List / Academic Scholars',
@@ -1167,6 +1167,54 @@ var information = [{
   type: '',
   message: 'The Sports that the Athletics Office offers are Table tennis, Lawn tennis, Badminton, Wushu, Judo, Taekwondo, Arnis, Boxing, Baseball, Softball, Volleyball, and Basketball. All sports are for men and women.',
   tags: ['Athletics', 'Office', 'Sports', 'Available', 'Offered', 'Athletic', 'Scholarship', 'Varsity']
+}, {
+  name: 'Departments in UB',
+  info: 'SIT, SEA, SLAHS, SAMS, SIHTM, SON, STE, SBAA, SCJPS, and SOD',
+  type: '',
+  message: 'The College Departments that the University has are the School of Information Technology, School of Engineering and Architecture, School of Liberal Arts and Human Sciences, School of International Hospitality and Tourism Management, School of Nursing, School of Teacher Education, School of Business Administration and Accountancy, School of Criminal Justice and Public Safety, and School of Dentistry.',
+  tags: ['Departments', 'Colleges', 'University', 'Baguio', 'UB', 'Offered', 'Available', 'Schools']
+}, {
+  name: 'Major Offenses A',
+  info: 'Offenses Against Campus Peace Order, Security and Safety',
+  type: '',
+  message: 'The first Major Offenses in the Student Handbook includes Offenses against Campus Peace Order, Security and Safety. A student could be reprimanded, suspended or excluded depending on the offense committed. ',
+  tags: ['Offense', 'Rules', 'Major', 'Campus', 'Peace', 'Order', 'Security', 'Safety', 'Punishment', 'School']
+}, {
+  name: 'Major Offenses B',
+  info: 'Offenses Against Public Decency, Good Customs and Morals',
+  type: '',
+  message: 'The second Major Offenses in the Student Handbook includes Offenses against Public Decency, Good Customs and Morals. A student could be reprimanded, suspended or excluded depending on the offense committed. ',
+  tags: ['Offense', 'Rules', 'Major', 'Public', 'Decency', 'Good', 'Customs', 'Morals', 'Punishment', 'School']
+}, {
+  name: 'Major Offenses C',
+  info: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Officials, Personnel, Faculty Members and Students',
+  type: '',
+  message: 'The third Major Offenses in the Student Handbook includes Offenses Detrimental to the Property Rights and Interests of the University, Administrative Officials, Personnel, Faculty Members and Students. A student could be reprimanded, suspended or excluded depending on the offense committed. ',
+  tags: ['Offense', 'Rules', 'Major', 'Detrimental', 'Property', 'Rights', 'Interests', 'University', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Punishment', 'School']
+}, {
+  name: 'Major Offenses D',
+  info: 'Offenses Against the Inviolability of School Records and Official Papers or Documents',
+  type: '',
+  message: 'The fourth Major Offenses in the Student Handbook includes Offenses Against the Inviolability of School Records and Official Papers or Documents. A student could be reprimanded, suspended or excluded depending on the offense committed. ',
+  tags: ['Offense', 'Rules', 'Major', 'Against', 'Inviolability', 'Records', 'Official', 'Papers', 'Documents', 'Punishment', 'school']
+}, {
+  name: 'Administrative Sanctions',
+  info: 'Warning, Reprimand, Censure, Suspension, Exclusion, Expulsion',
+  type: '',
+  message: 'The different Administrative Sanctions includes Warning, Reprimand, Censure, Suspension, Exclusion and Expulsion. ',
+  tags: ['Administrative', 'Sanctions', 'Punishment', 'Offense', 'school', 'Student', 'Committed']
+}, {
+  name: 'UB LOYALTY SONG LYRICS',
+  info: 'Lyrics of the UB Loyalty Song',
+  type: '',
+  message: 'UB dear our Alma Mater, Nest of Love and care all free, Pride of our mountain city, Dear to us you\'ll ever be. And thy fame which we all share, Binds us now and ever will, To thy banner of red and white, And thy uniform of gray, Loved by forever be, With the wisdom God has sown, We will win more fame for thee. ',
+  tags: ['Loyalty', 'Song', 'Lyrics']
+}, {
+  name: 'UB Student Credo',
+  info: 'UB Student Credo',
+  type: '',
+  message: 'I belive in man because I believe in God. I believe in the fundamental equality of men as children of God. I believe in the ability of education to bring full splendor all the mental, physical, and spiritual powers of man. I believe in the values of philosophy that in the realm of the mind and spirit lies the road to unity and peace. I believe in democracy, in the ultimate capacity of the common man to think his problems through. I believe in science, in its conquest over the elements and its tremendous possibilities for the future. I believe in the arts, in their power to free men from the enslavement of ignorance. I believe in the profound value of religion that basically all human problems are moral problems. I believe in the Lord Jesus Christ, in His redeeming sacrifice and in His dynamic and vital conception of life. I believe in the credo cut boldly and enduringly into stone above portals of my Alma Mater, University of Baguio. Our Native Land, The Master of Science. The Contemplation of the Beautiful.',
+  tags: ['Student', 'Credo']
 }];
 
 exports.information = information;

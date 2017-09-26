@@ -9,5 +9,7 @@ exports.exceptions = [
   'apply',
   'ray',
   'xray',
-  'laboratory'
+  'laboratory',
+  'faculty',
+  'loyalty'
 ];

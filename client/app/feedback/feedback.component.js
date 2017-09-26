@@ -24,7 +24,7 @@ export class FeedbackComponent {
       Which: 'WHICH'
     };
 
-    this.resolvedType = '';
+    this.resolvedType = 'false';
 
     this.resolvedSelect = {
       'All Entries': '',
