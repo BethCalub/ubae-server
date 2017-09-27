@@ -15,19 +15,19 @@ var response = [{
   tags: ['Hey']
 }, {
   message: 'Good morning to you too! Have a nice day! :)',
-  tags: ['Morning']
+  tags: ['Morning', 'good', 'magandang', 'umaga']
 }, {
   message: 'Good Afternoon! How may I help you? :)',
-  tags: ['Afternoon', 'noon']
+  tags: ['Afternoon', 'noon', 'magandang', 'hapon']
 }, {
   message: 'Good Night! Sweet Dreams :)',
-  tags: ['Night', 'sleep']
+  tags: ['Night', 'sleep', 'good']
 }, {
   message: 'Unless your name is Google, dont act like you know everything :)',
-  tags: ['Stupid', 'Moron', 'Dumb', 'Noob', 'Unintelligent', 'Ignorant', 'Slow', 'Senseless', 'Nonsense', 'Idiot', 'Suck', 'ungas']
+  tags: ['Stupid', 'Moron', 'Dumb', 'Noob', 'Unintelligent', 'Ignorant', 'Slow', 'Senseless', 'Nonsense', 'Idiot', 'Suck', 'ungas', 'tanga', 'bobo']
 }, {
   message: 'Please stop using inappropriate words. Remember, Jesus sees you :)',
-  tags: ['Shit', 'Fuck', 'Ass', 'Asshole', 'Bitch', 'Butt', 'Sex', 'Fucker', 'Bullshit', 'Tits', 'Boobs', 'Boobies', 'Titties', 'Nudes', 'Pakyu', 'Shet', 'Pakshet', 'Dick', 'Vagina', 'Pussy']
+  tags: ['Shit', 'Fuck', 'Ass', 'Asshole', 'Bitch', 'Butt', 'Sex', 'Fucker', 'Bullshit', 'Tits', 'Boobs', 'Boobies', 'Titties', 'Nudes', 'Pakyu', 'Shet', 'Pakshet', 'Dick', 'Vagina', 'Pussy', 'sapnu', 'puas']
 }, {
   message: 'Its nice to meet you too! :D',
   tags: ['Nice', 'Meet', 'Meeting']
@@ -36,10 +36,10 @@ var response = [{
   tags: ['Your', 'Name']
 }, {
   message: 'Good Bye! It was nice talking to you! :)',
-  tags: ['Bye']
+  tags: ['Bye', 'good']
 }, {
   message: 'Good Evening! How may I help you?',
-  tags: ['Evening', 'Eve']
+  tags: ['Evening', 'Eve', 'good']
 }, {
   message: 'Ooooops! Sorry! I have a boyfriend :)',
   tags: ['Love']
@@ -48,16 +48,16 @@ var response = [{
   tags: ['Kamusta', 'Feeling']
 }, {
   message: 'Drugs take you to hell, disguised as heaven. Say no to drugs! :)',
-  tags: ['Drugs', 'Marijuana', 'Shabu', 'Cocaine', 'Ecstacy', 'Crack', 'Weed', 'Grass', 'Pot', 'Heroin', 'Meth']
+  tags: ['Drugs', 'Marijuana', 'Shabu', 'Cocaine', 'Ecstacy', 'Crack', 'Weed', 'Grass', 'Pot', 'Heroin', 'Meth', 'coca', 'yeyo', 'damo']
 }, {
   message: 'A single cigarette contains over 4,800 chemicals, 69 of which are known to cause cancer. Stop Smoking!',
   tags: ['Smoke', 'Cigarette', 'Yosi', 'Cigar']
 }, {
   message: 'Oh sorry! I just wanted to look like you today :)',
-  tags: ['Ugly', 'Unattractive', 'Hideous', 'Horrible', 'Pangit', 'Gross']
+  tags: ['Ugly', 'Unattractive', 'Hideous', 'Horrible', 'Pangit', 'Gross', 'panget']
 }, {
   message: 'Fat is a temporary caloric imbalance, but stupid is a permanent genetic malfunction!',
-  tags: ['Fat', 'Obese', 'Overweight', 'Pig', 'Large']
+  tags: ['Fat', 'Obese', 'Overweight', 'Pig', 'Large', 'tabachoy', 'taba', 'mataba', 'baboy']
 }, {
   message: 'I’m not weird; I just fall outside your exceptionally narrow view of the world.',
   tags: ['Weird', 'Strange']
@@ -66,7 +66,7 @@ var response = [{
   tags: ['Drink', 'Shot', 'Inom', 'Beer', 'Wine', 'Emperador', 'Gin']
 }, {
   message: 'You’re Welcome :)',
-  tags: ['Thank', 'Thanks', 'Ty']
+  tags: ['Thank', 'Thanks', 'Ty', 'salamat', 'matsala']
 }];
 
 exports.response = response;
