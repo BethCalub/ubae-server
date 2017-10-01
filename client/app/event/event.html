@@ -1,67 +1,122 @@
-<div class="well well-lg">
-  <h1>Events</h1>
+<div id="main-sideform">
+    <form role="form">
+      <h3>{{eventCtrl.dataInfo.name}}</h3>
+      <h5>
+        <span ng-show="eventCtrl.entryID != ''">Update Entry</span>
+        <span ng-show="eventCtrl.entryID == ''">Add Entry</span>
+      </h5>
+      <hr>
+  
+      <div class="form-group">
+        <label for="name">Event Details</label>
+        <input type="text" ng-model="eventCtrl.name" class="form-control" id="name" placeholder="Name" required="required">
+      </div>
+  
+      <div class="form-group">
+        <!-- <label for="info">Info</label> -->
+        <!-- <input type="text" class="form-control" id="" placeholder="Information"> -->
+        <textarea name="info" ng-model="eventCtrl.details" id="info" placeholder="Information" class="form-control" rows="3" style="resize: none;"
+          required="required"></textarea>
+      </div>
+
+      <div class="form-group">
+        <!-- <label for="startDate">Start Date</label> -->
+        <input type="text" ng-model="eventCtrl.startDate" class="form-control" id="startDate" placeholder="Start Date" required="required">
+      </div>
+
+      <div class="form-group">
+        <!-- <label for="endDate">End Date</label> -->
+        <input type="text" ng-model="eventCtrl.endDate" class="form-control" id="endDate" placeholder="End Date" required="required">
+      </div>
+  
+      <div class="form-group">
+        <label for="message">Message</label>
+        <!-- <input type="text" class="form-control" id="" placeholder="Message"> -->
+        <textarea name="message" ng-model="eventCtrl.message" id="message" placeholder="Message" class="form-control" rows="3" style="resize: none;" required="required"></textarea>
+      </div>
+  
+      <div class="form-group">
+        <label for="tags">Tags</label>
+        <textarea name="message" ng-model="eventCtrl.tags" id="tags" placeholder="Tags" class="form-control" rows="2" style="resize: none;" required="required"></textarea>
+      </div>
+  
+      <button type="submit" ng-click="eventCtrl.saveEntry()" class="btn btn-block btn-default">Submit</button>
+      <button type="submit" ng-click="eventCtrl.resetForm()" class="btn btn-block btn-default">Reset</button>
+    </form>
+  
+</div>
+
+<div id="main-entries">
+
+<div uib-alert style="background-color: #EEEEEE;" ng-show="eventCtrl.dataInfo.show" close="eventCtrl.closeDataInfo()">
   <div>
-    <p>The event table contains events which are included in the school calendar. This table consists of data which answers
-      WHEN questions.</p>
+    <h1>{{eventCtrl.dataInfo.name}}</h1>
+    <p>{{eventCtrl.dataInfo.info}}</p>
     <ul>
-      <li>The variable 'name' includes the event name.</li>
-      <li>The variable 'event' includes information and description of the event.</li>
-      <li>The 'message' variable contains the sentence form of 'event' which will serve as UBAEs reply. Try to make it witty
-        as possible as to emulate more human-like thinking.</li>
-      <li>The variable 'tags' contains keywords that will be detected to determine which data UBAE will use as a response to
-        the inquiry. Try to add more tags which are possible keywords.</li>
+      <li ng-repeat="entry in eventCtrl.dataInfo.guide">{{entry}}</li>
     </ul>
   </div>
 </div>
 
-
 <div class="container-fluid" id="response">
-  <div class="alert {{eventCtrl.eventStatus.alert}}" ng-show="eventCtrl.showNotif">
-    <button type="button" class="close" ng-click="eventCtrl.dismissNotif()" aria-hidden="true">&times;</button>
-    <strong>{{eventCtrl.eventStatus.status}}</strong> {{eventCtrl.eventStatus.message}}
-  </div>
   <div class="row">
-    <div class="col-sm-9">
-      <h4>{{(eventCtrl.entryList | filter: { tags: eventCtrl.searchTags}).length}} Event Entries:</h4>
+    <div class="col-sm-7">
+      <h4>{{(eventCtrl.entryList | filter: { tags: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected }).length}}
+        {{eventCtrl.dataInfo.name}} Entries:</h4>
+    </div>
+    <div class="col-sm-2">
+      <div class="form-group">
+        <select ng-model="eventCtrl.filter.archive.selected" name="response" ng-options="x for (x, y) in eventCtrl.filter.archive.options"
+          class="form-control input-sm" required="required">
+            </select>
+      </div>
     </div>
     <div class="col-sm-3">
       <div class="form-group">
         <label class="sr-only" for="search">Search</label>
         <input type="text" class="form-control input-sm" id="search" ng-model="eventCtrl.searchTags" uib-tooltip="Search for information contained in the {{eventCtrl.tableName}} database. This will filter out the information as you type."
-          tooltip-placement="bottom" placeholder="Search {{eventCtrl.tableName}} Tags">
+          tooltip-placement="bottom" placeholder="Search {{eventCtrl.dataInfo.name}} Tags">
       </div>
     </div>
   </div>
+
   <hr>
+
   <div class="row list">
     <table class="table table-condensed table-hover fixed">
       <thead>
         <tr>
-          <th ng-repeat="headers in eventCtrl.tableEntries">{{headers}}</th>
+          <th ng-repeat="headers in eventCtrl.dataInfo.table">{{headers}}</th>
+          <th></th>
           <th></th>
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="response in eventCtrl.entryList | 
-        filter: { tags: eventCtrl.searchTags }">
+        <tr ng-repeat="entries in eventCtrl.entryList | 
+          filter: { tags: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected }">
           <td style="width: 20px">{{$index + 1}}</td>
-          <td><a ng-click="eventCtrl.getEvent(response._id)">{{response.name}}</a></td>
-          <td>{{response.event}}</td>
-          <td>{{response.message}}</td>
-          <td>{{response.startDate | date: "shortDate"}}</td>
-          <td>{{response.endDate | date: "shortDate"}}</td>
+          <td><a href="" ng-click="eventCtrl.getEntry(entries._id)">{{entries.name}}</a></td>
+          <td>{{entries.event}}</td>
+          <td>{{entries.startDate | date: "shortDate"}}</td>
+          <td>{{entries.endDate | date: "shortDate"}}</td>
+          <td>{{entries.message}}</td>
           <td style="width: 35%">
             <ul>
-              <li ng-repeat="tags in response.tags">
+              <li ng-repeat="tags in entries.tags">
                 <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
-                  {{tags}}
-                </span>
+                    {{tags}}
+                  </span>
               </li>
             </ul>
           </td>
           <td>
-            <button type="button" class="close" ng-click="eventCtrl.deleteEvent(response._id)" uib-tooltip="WARNING!!! This action will delete this entry."
-              tooltip-placement="left">&times;</button>
+            <button type="button" ng-show="entries.active == false" class="close" ng-click="eventCtrl.unarchiveEntry(entries._id)" uib-tooltip="WARNING!!! This action will restore this entry to the active list."
+            tooltip-placement="left">restore</button></td>
+          <td>
+            <button type="button" ng-show="entries.active == true" class="close" ng-click="eventCtrl.archiveEntry(entries._id)" uib-tooltip="WARNING!!! This action will archive this entry."
+              tooltip-placement="left">archive</button>
+            <button type="button" ng-show="entries.active == false" class="close" ng-click="eventCtrl.deleteEntry(entries._id)" uib-tooltip="WARNING!!! This action will delete this entry."
+              tooltip-placement="left">delete</button>
           </td>
         </tr>
       </tbody>
@@ -70,5 +125,9 @@
   <hr>
 </div>
 
-<statusbar table-name="Event" table-entries="{{(eventCtrl.entryList | filter: 
-  { tags: eventCtrl.searchTags}).length}}" action-message="{{eventCtrl.eventStatus}}"></statusbar>
+<statusbar 
+  style="margin-left: 300px;"
+  table-name="{{eventCtrl.dataInfo.name}}" 
+  table-entries="{{(eventCtrl.entryList | filter: { tags: eventCtrl.searchTags, active: eventCtrl.archived }).length}}" 
+  action-message="{{eventCtrl.eventStatus}}"></statusbar>
+</div>

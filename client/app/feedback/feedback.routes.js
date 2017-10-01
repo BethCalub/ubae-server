@@ -4,7 +4,7 @@ export default function($stateProvider) {
   'ngInject';
   $stateProvider
     .state('feedback', {
-      url: '/feedback',
+      url: '/',
       template: '<feedback></feedback>',
       authenticate: true
     });

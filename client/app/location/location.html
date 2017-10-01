@@ -1,59 +1,110 @@
-<div class="well well-lg">
-    <h1>Locations</h1>
-    <div>
-      <p>The location table contains the different locations in the University such as offices, departments and other notable places. This table consists of data which answers WHERE questions.</p>
-      <ul>
-        <li>The variable 'name' includes the name of the location.</li>
-        <li>The variable 'location' includes the building name, floor, and room.</li>
-        <li>The 'message' variable contains the sentence form of 'location' which will serve as UBAEs reply. Try to make it witty as possible as to emulate more human-like thinking.</li>
-        <li>The variable 'tags' contains keywords that will be detected to determine which data UBAE will use as a response to the inquiry. Try to add more tags which are possible keywords.</li>
-      </ul>
-    </div>
+<div id="main-sideform">
+    <form role="form">
+      <h3>{{locationCtrl.dataInfo.name}}</h3>
+      <h5>
+        <span ng-show="locationCtrl.entryID != ''">Update Entry</span>
+        <span ng-show="locationCtrl.entryID == ''">Add Entry</span>
+      </h5>
+      <hr>
+  
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" ng-model="locationCtrl.name" class="form-control" id="name" placeholder="Name" required="required">
+      </div>
+  
+      <div class="form-group">
+        <label for="info">Info</label>
+        <!-- <input type="text" class="form-control" id="" placeholder="Information"> -->
+        <textarea name="info" ng-model="locationCtrl.details" id="info" placeholder="Information" class="form-control" rows="4" style="resize: none;"
+          required="required"></textarea>
+      </div>
+  
+      <div class="form-group">
+        <label for="message">Message</label>
+        <!-- <input type="text" class="form-control" id="" placeholder="Message"> -->
+        <textarea name="message" ng-model="locationCtrl.message" id="message" placeholder="Message" class="form-control" rows="4" style="resize: none;" required="required"></textarea>
+      </div>
+  
+      <div class="form-group">
+        <label for="tags">Tags</label>
+        <textarea name="message" ng-model="locationCtrl.tags" id="tags" placeholder="Tags" class="form-control" rows="4" style="resize: none;" required="required"></textarea>
+      </div>
+  
+      <button type="submit" ng-click="locationCtrl.saveEntry()" class="btn btn-block btn-default">Submit</button>
+      <button type="submit" ng-click="locationCtrl.resetForm()" class="btn btn-block btn-default">Reset</button>
+    </form>
+  
+</div>
+
+<div id="main-entries">
+
+<div uib-alert style="background-color: #EEEEEE;" ng-show="locationCtrl.dataInfo.show" close="locationCtrl.closeDataInfo()">
+  <div>
+    <h1>{{locationCtrl.dataInfo.name}}</h1>
+    <p>{{locationCtrl.dataInfo.info}}</p>
+    <ul>
+      <li ng-repeat="entry in locationCtrl.dataInfo.guide">{{entry}}</li>
+    </ul>
   </div>
+</div>
 
 <div class="container-fluid" id="response">
   <div class="row">
-    <div class="col-sm-9">
-      <h4>{{(locationCtrl.entryList | filter: 
-          { tags: locationCtrl.searchResponses}).length}} Location Entries:</h4>
+    <div class="col-sm-7">
+      <h4>{{(locationCtrl.entryList | filter: { tags: locationCtrl.searchTags, active: locationCtrl.filter.archive.selected }).length}}
+        {{locationCtrl.dataInfo.name}} Entries:</h4>
+    </div>
+    <div class="col-sm-2">
+      <div class="form-group">
+        <select ng-model="locationCtrl.filter.archive.selected" name="response" ng-options="x for (x, y) in locationCtrl.filter.archive.options"
+          class="form-control input-sm" required="required">
+            </select>
+      </div>
     </div>
     <div class="col-sm-3">
       <div class="form-group">
         <label class="sr-only" for="search">Search</label>
-        <input type="text" class="form-control input-sm" id="search" ng-model="locationCtrl.searchResponses" uib-tooltip="Search for information contained in the {{locationCtrl.tableName}} database. This will filter out the information as you type."
-          tooltip-placement="bottom" placeholder="Search {{locationCtrl.tableName}} Tags">
+        <input type="text" class="form-control input-sm" id="search" ng-model="locationCtrl.searchTags" uib-tooltip="Search for information contained in the {{locationCtrl.tableName}} database. This will filter out the information as you type."
+          tooltip-placement="bottom" placeholder="Search {{locationCtrl.dataInfo.name}} Tags">
       </div>
     </div>
   </div>
+
   <hr>
+
   <div class="row list">
     <table class="table table-condensed table-hover fixed">
       <thead>
         <tr>
-          <th ng-repeat="headers in locationCtrl.tableEntries">{{headers}}</th>
+          <th ng-repeat="headers in locationCtrl.dataInfo.table">{{headers}}</th>
+          <th></th>
           <th></th>
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="response in locationCtrl.entryList | 
-        filter: { tags: locationCtrl.searchResponses }">
+        <tr ng-repeat="entries in locationCtrl.entryList | 
+          filter: { tags: locationCtrl.searchTags, active: locationCtrl.filter.archive.selected }">
           <td style="width: 20px">{{$index + 1}}</td>
-          <td><a href="#">{{response.name}}</a></td>
-          <td>{{response.location}}</td>
-          <td>{{response.message}}</td>
+          <td><a href="" ng-click="locationCtrl.getEntry(entries._id)">{{entries.name}}</a></td>
+          <td>{{entries.details}}</td>
+          <td>{{entries.message}}</td>
           <td style="width: 35%">
             <ul>
-              <li ng-repeat="tags in response.tags">
+              <li ng-repeat="tags in entries.tags">
                 <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
-                  {{tags}}
-                </span>
+                    {{tags}}
+                  </span>
               </li>
             </ul>
           </td>
           <td>
-            <button type="button" class="close" ng-click="locationCtrl.deleteEvent(response._id)"
-              uib-tooltip="WARNING!!! This action will delete this entry."
-              tooltip-placement="left">&times;</button>
+            <button type="button" ng-show="entries.active == false" class="close" ng-click="locationCtrl.unarchiveEntry(entries._id)" uib-tooltip="WARNING!!! This action will restore this entry to the active list."
+            tooltip-placement="left">restore</button></td>
+          <td>
+            <button type="button" ng-show="entries.active == true" class="close" ng-click="locationCtrl.archiveEntry(entries._id)" uib-tooltip="WARNING!!! This action will archive this entry."
+              tooltip-placement="left">archive</button>
+            <button type="button" ng-show="entries.active == false" class="close" ng-click="locationCtrl.deleteEntry(entries._id)" uib-tooltip="WARNING!!! This action will delete this entry."
+              tooltip-placement="left">delete</button>
           </td>
         </tr>
       </tbody>
@@ -63,7 +114,8 @@
 </div>
 
 <statusbar 
-  table-name="Location" 
-  table-entries="{{(locationCtrl.entryList | filter: 
-  { tags: locationCtrl.searchResponses}).length}}" 
+  style="margin-left: 300px;"
+  table-name="{{locationCtrl.dataInfo.name}}" 
+  table-entries="{{(locationCtrl.entryList | filter: { tags: locationCtrl.searchTags, active: locationCtrl.archived }).length}}" 
   action-message="{{locationCtrl.eventStatus}}"></statusbar>
+</div>

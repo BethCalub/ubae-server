@@ -1,102 +1,96 @@
 <div id="main-sideform">
-    <form action="" role="form">
-      <h3>Information</h3>
-      <h5>Add/Edit Entry</h5>
+    <form role="form">
+      <h3>{{informationCtrl.dataInfo.name}}</h3>
+      <h5>
+        <span ng-show="informationCtrl.entryID != ''">Update Entry</span>
+        <span ng-show="informationCtrl.entryID == ''">Add Entry</span>
+      </h5>
       <hr>
   
       <div class="form-group">
         <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" placeholder="Name">
+        <input type="text" ng-model="informationCtrl.name" class="form-control" id="name" placeholder="Name" required="required">
       </div>
   
       <div class="form-group">
         <label for="info">Info</label>
         <!-- <input type="text" class="form-control" id="" placeholder="Information"> -->
-        <textarea name="info" id="info" placeholder="Information" class="form-control" rows="4" style="resize: none;"
+        <textarea name="info" ng-model="informationCtrl.details" id="info" placeholder="Information" class="form-control" rows="4" style="resize: none;"
           required="required"></textarea>
       </div>
   
       <div class="form-group">
         <label for="message">Message</label>
         <!-- <input type="text" class="form-control" id="" placeholder="Message"> -->
-        <textarea name="message" id="message" placeholder="Message" class="form-control" rows="4" style="resize: none;" required="required"></textarea>
+        <textarea name="message" ng-model="informationCtrl.message" id="message" placeholder="Message" class="form-control" rows="4" style="resize: none;" required="required"></textarea>
       </div>
   
       <div class="form-group">
         <label for="tags">Tags</label>
-        <input type="text" class="form-control" id="tags" placeholder="Tags">
+        <textarea name="message" ng-model="informationCtrl.tags" id="tags" placeholder="Tags" class="form-control" rows="4" style="resize: none;" required="required"></textarea>
       </div>
   
-      <button type="submit" class="btn btn-block btn-default">Submit</button>
+      <button type="submit" ng-click="informationCtrl.saveEntry()" class="btn btn-block btn-default">Submit</button>
+      <button type="submit" ng-click="informationCtrl.resetForm()" class="btn btn-block btn-default">Reset</button>
     </form>
   
 </div>
 
 <div id="main-entries">
 
-<div uib-alert style="background-color: #EEEEEE;" ng-hide="informationCtrl.tableInfo" close="informationCtrl.closeAlert()">
+<div uib-alert style="background-color: #EEEEEE;" ng-show="informationCtrl.dataInfo.show" close="informationCtrl.closeDataInfo()">
   <div>
-    <h1>Information</h1>
-    <p>The information table consists of data which is answerable by WHAT questions. This table contains information about the
-      University, its departments and its courses offered, offices and services offered, requirements, scholarships, and
-      their description.</p>
+    <h1>{{informationCtrl.dataInfo.name}}</h1>
+    <p>{{informationCtrl.dataInfo.info}}</p>
     <ul>
-      <li>The variable 'name' includes office names, department names, programs offered, services offered and scholarships.</li>
-      <li>The variable 'info' contains the description of data.</li>
-      <li>The 'message' variable contains the sentence form of 'info' which will serve as UBAEs reply. Try to make it witty as
-        possible as to emulate more human-like thinking.</li>
-      <li>The variable 'tags' contains keywords that will be detected to determine which data UBAE will use as a response to
-        the inquiry. Try to add more tags which are possible keywords.</li>
+      <li ng-repeat="entry in informationCtrl.dataInfo.guide">{{entry}}</li>
     </ul>
   </div>
 </div>
 
 <div class="container-fluid" id="response">
-  <div class="alert {{informationCtrl.eventStatus.alert}}" ng-show="informationCtrl.showNotif">
-    <button type="button" class="close" ng-click="informationCtrl.dismissNotif()" aria-hidden="true">&times;</button>
-    <strong>{{informationCtrl.eventStatus.status}}</strong> {{informationCtrl.eventStatus.message}}
-  </div>
   <div class="row">
     <div class="col-sm-7">
-      <h4>{{(informationCtrl.entryList | filter: { tags: informationCtrl.searchTags, active: informationCtrl.archived }).length}} Information Entries:</h4>
+      <h4>{{(informationCtrl.entryList | filter: { tags: informationCtrl.searchTags, active: informationCtrl.filter.archive.selected }).length}}
+        {{informationCtrl.dataInfo.name}} Entries:</h4>
     </div>
     <div class="col-sm-2">
-            <div class="form-group">
-            <select
-            ng-model="informationCtrl.archived" name="response" 
-            ng-options="x for (x, y) in informationCtrl.archiveType"
-            class="form-control input-sm" required="required">
-          </select>
-            </div>
+      <div class="form-group">
+        <select ng-model="informationCtrl.filter.archive.selected" name="response" ng-options="x for (x, y) in informationCtrl.filter.archive.options"
+          class="form-control input-sm" required="required">
+            </select>
       </div>
+    </div>
     <div class="col-sm-3">
       <div class="form-group">
         <label class="sr-only" for="search">Search</label>
         <input type="text" class="form-control input-sm" id="search" ng-model="informationCtrl.searchTags" uib-tooltip="Search for information contained in the {{informationCtrl.tableName}} database. This will filter out the information as you type."
-          tooltip-placement="bottom" placeholder="Search {{informationCtrl.tableName}} Tags">
+          tooltip-placement="bottom" placeholder="Search {{informationCtrl.dataInfo.name}} Tags">
       </div>
     </div>
   </div>
+
   <hr>
 
   <div class="row list">
     <table class="table table-condensed table-hover fixed">
       <thead>
         <tr>
-          <th ng-repeat="headers in informationCtrl.tableEntries">{{headers}}</th>
+          <th ng-repeat="headers in informationCtrl.dataInfo.table">{{headers}}</th>
+          <th></th>
           <th></th>
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="response in informationCtrl.entryList | 
-          filter: { tags: informationCtrl.searchTags, active: informationCtrl.archived }">
+        <tr ng-repeat="entries in informationCtrl.entryList | 
+          filter: { tags: informationCtrl.searchTags, active: informationCtrl.filter.archive.selected }">
           <td style="width: 20px">{{$index + 1}}</td>
-          <td><a ng-click="informationCtrl.getEvent(response._id)">{{response.name}}</a></td>
-          <td>{{response.info}}</td>
-          <td>{{response.message}}</td>
+          <td><a href="" ng-click="informationCtrl.getEntry(entries._id)">{{entries.name}}</a></td>
+          <td>{{entries.info}}</td>
+          <td>{{entries.message}}</td>
           <td style="width: 35%">
             <ul>
-              <li ng-repeat="tags in response.tags">
+              <li ng-repeat="tags in entries.tags">
                 <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
                     {{tags}}
                   </span>
@@ -104,8 +98,13 @@
             </ul>
           </td>
           <td>
-            <button type="button" class="close" ng-click="informationCtrl.deleteEntry(response._id)" uib-tooltip="WARNING!!! This action will delete this entry."
-              tooltip-placement="left">&times;</button>
+            <button type="button" ng-show="entries.active == false" class="close" ng-click="informationCtrl.unarchiveEntry(entries._id)" uib-tooltip="WARNING!!! This action will restore this entry to the active list."
+            tooltip-placement="left">restore</button></td>
+          <td>
+            <button type="button" ng-show="entries.active == true" class="close" ng-click="informationCtrl.archiveEntry(entries._id)" uib-tooltip="WARNING!!! This action will archive this entry."
+              tooltip-placement="left">archive</button>
+            <button type="button" ng-show="entries.active == false" class="close" ng-click="informationCtrl.deleteEntry(entries._id)" uib-tooltip="WARNING!!! This action will delete this entry."
+              tooltip-placement="left">delete</button>
           </td>
         </tr>
       </tbody>
@@ -116,7 +115,7 @@
 
 <statusbar 
   style="margin-left: 300px;"
-  table-name="Information" 
+  table-name="{{informationCtrl.dataInfo.name}}" 
   table-entries="{{(informationCtrl.entryList | filter: { tags: informationCtrl.searchTags, active: informationCtrl.archived }).length}}" 
   action-message="{{informationCtrl.eventStatus}}"></statusbar>
 </div>
