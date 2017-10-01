@@ -9,7 +9,7 @@ exports.keywordSearch = function(input) {
   var stopWord;
   var regexStr;
   var regex;
-  var cleansedString = input.replace(/[^\w\s]|_/g, '').replace(/\s+/g, ' ');
+  var cleansedString = input.replace(/[^\w\s]|_/g, ' ').replace(/\s+/g, ' ');
   var stopWords = swd.sw;
   var words = cleansedString.match(/[^\s]+|\s+[^\s+]$/g);
   for(var i = 0; i < words.length; i++) {

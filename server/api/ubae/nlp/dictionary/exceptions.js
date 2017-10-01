@@ -11,5 +11,6 @@ exports.exceptions = [
   'xray',
   'laboratory',
   'faculty',
-  'loyalty'
+  'loyalty',
+  'bully'
 ];

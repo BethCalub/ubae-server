@@ -1190,289 +1190,289 @@ var information = [{
   info: 'Instigating, inciting, provoking, leading, or taking part in illegal and/ or violent demonstrations or activities, or giving active support thereto in any form or manner whether ﬁnancial, physical, or material.',
   type: '',
   message: '1st Offense sanction will be exclusion so please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Instigating', 'Inciting', 'Provoking', 'Leading', 'Taking', 'Part', 'Illegal', 'Violent', 'Demonstrations', 'Activities', 'Giving', 'Support', 'Form', 'Manner', 'Whether' ,'Financial', 'Physical', 'Material', 'Commit']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - B',
   info: 'Leading or otherwise taking part in any activity which disrupts University functions or which adversely affects classroom instruction, whether such activity is or is not accompanied by violence, such as disconnecting or tampering with electrical connections, switches, generators, motors, air conditioners, fans, light and ﬁre alarms; giving false alarms, shouting; banging doors, walls, tables, desks, chairs and other acts of rowdiness and disturbances.',
   type: '',
   message: '1st Offense sanction is Reprimand with Warning of Suspension, 2nd Offense is Suspension with Warning of Exclusion and 3rd Offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Leading', 'Otherwise', 'Taking', 'Part', 'Activity', 'Disrupts', 'Functions', 'Adversely', 'Affects', 'Classroom', 'Instruction', 'Whether', 'Accompanied', 'Violence', 'Disconnecting', 'Tampering', 'Electrical', 'Connections', 'Switches', 'Generators', 'Motors', 'Aircon', 'Air', 'Conditioners', 'Fans', 'Light', 'Fire', 'Alarms', 'Shouting', 'Banging', 'Doors', 'Walls', 'Tables', 'Desks', 'Chairs', 'Acts', 'Rowdiness', 'Disturbances', 'Commit']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - C',
   info: 'Carrying explosives, ﬁrearms, knives, or other deadly weapons of whatever kind within university premises.',
   type: '',
   message: '1st Offense sanction is Suspension / Conﬁscation of said weapons and 2nd Offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Carrying', 'Explosives', 'Firearms', 'Knives', 'Deadly', 'Weapons', 'Premises', 'Commit']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - D',
   info: 'Detonating explosives or ﬁreworks within the University premises and its immediate vicinity.',
   type: '',
   message: '1st Offense sanction will be Exclusion or Expulsion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Detonating', 'Explosives', 'Fireworks', 'Premises', 'Immediate', 'Vicinity', 'Commit']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - E',
   info: 'Assaulting, engaging in a physical altercation, or committing physical abuse upon any person in authority, faculty members, personnel, and/or fellow students.',
   type: '',
   message: '1st Offense sanction is Suspension with Warning of Exclusion and 2nd Offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Assaulting', 'Engaging', 'Physical', 'Altercation', 'Commiting', 'Abuse', 'Person', 'Authority', 'Faculty', 'Members', 'Personnel', 'Fellow', 'Students']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - F',
   info: 'Insulting, challenging or committing any act of gross disrespect directed against any person in authority, faculty members, personnel, and/or fellow students or threatening to do any of the aforementioned acts.',
   type: '',
   message: '1st Offense sanction is Severe Censure with Warning of Suspension, 2nd offense is Suspension with Warning of Exclusion and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Insulting', 'Challenging', 'Commiting', 'Gross', 'Disrespect', 'Acts', 'Directed', 'Person', 'Authority', 'Faculty', 'Members', 'Personnel', 'Fellow', 'Students', 'Threatening', 'Aforementioned', 'Commit']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - G',
   info: 'Resorting to vindictive acts, personal insults, defamation,  black propaganda or malicious imputations, oral or written, including the use of internet, text messages and the like in order to discredit or ridicule university ofﬁcials, personnel, faculty members, or fellow students.',
   type: '',
   message: '1st Offense sanction is Suspension with Warning of Exclusion and 2nd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Resorting', 'Vindictive', 'Acts', 'Personal', 'Insults', 'Defamation', 'Black', 'Propaganda', 'Malicious', 'Imputations', 'Oral', 'Written', 'Including', 'Internet', 'Text', 'Messages', 'Like', 'Discredit', 'Ridicule', 'Officials', 'Personnel', 'Faculty', 'Members', 'Fellow', 'Students', 'Commit']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - H',
   info: 'Gross disobedience to or disregard of lawful order, authority of any faculty member or university ofﬁcial.',
   type: '',
   message: '1st Offense sanction is Suspension with Warning of Exclusion and 2nd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Commit', 'Gross', 'Disobedience', 'Disregard', 'Lawful', 'Authority', 'Faculty', 'Member', 'Official']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - I',
   info: 'Preventing in any manner, University ofﬁcials, faculty members, and/or fellow students from performing their duties or exercising their rights.',
   type: '',
   message: '1st Offense sanction is Censure with Warning of Suspension, 2nd offense is Suspension with Warning of Exclusion, and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Commit', 'Preventing', 'Manner', 'Officials', 'Faculty', 'Members', 'Fellow', 'Students', 'Perform', 'Duty', 'Exercise', 'Rights']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - J',
   info: 'Involvement in fraternity or gang ﬁght / brawl.',
   type: '',
   message: '1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Involvement', 'Fraternity', 'Gang', 'Fight', 'Brawl', 'Bang', 'Commit']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - A',
   info: 'Gambling, maintaining or participating in any game of chance within the University.',
   type: '',
   message: '1st Offense sanction is Warning/ Reprimand, 2nd offense is Suspension and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals', 'Gambling', 'Maintaining', 'Participating', 'Game', 'Chance', 'Commit']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - B',
   info: 'Indecent exposure, gross immorality and other acts constituting scandalous and reprehensible conduct.',
   type: '',
   message: '1st Offense sanction is Suspension with Warning of Exclusion and 2nd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals', 'Indecent', 'Exposure', 'Gross', 'Immorality', 'Acts', 'Constituting', 'Scandalous', 'Reprehensible', 'Conduct', 'Commit']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - C',
   info: 'Cheating or any dishonest behavior in but not limited to examinations, quizzes, seatworks, assignments and role plays.',
   type: '',
   message: '1st Offense sanction is Suspension/ no credit in the activity and 2nd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals', 'Cheating', 'Dishonest', 'Behavior', 'Limited', 'Examinations', 'Quizes', 'Assignments', 'Role', 'Plays', 'Commit']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - D',
   info: 'Bribery or effecting any change in grades without proper authority.',
   type: '',
   message: '1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals', 'Bribery', 'Effecting', 'Change', 'Grades', 'Proper', 'Authority', 'Commit']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - E',
   info: 'Extortion or Blackmail.',
   type: '',
   message: '1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals', 'Extortion', 'Blackmail', 'Commit']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - F',
   info: 'Entering university premises under the inﬂuence of liquor or being in a state of drunkenness.',
   type: '',
   message: '1st Offense sanction is Reprimand/ censure with Warning of Suspension, 2nd offense is Reprimand/ censure with Warning of Suspension and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals', 'Entering', 'Premises', 'Under', 'Influence', 'Liquor', 'Being', 'State', 'Drunkness', 'Commit']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - G',
   info: 'Smoking within university premises.',
   type: '',
   message: '1st Offense sanction is Censure with Warning of Suspension, 2nd offense is Censure with Warning of Suspension and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals']
+  tags: ['Smoking', 'School', 'Campus', 'Premises', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - H',
   info: 'Illegal possession, use and/ or distribution of prohibited drugs.',
   type: '',
   message: '1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals', 'Illegal', 'Possession', 'Distribution', 'Prohibited', 'Drugs', 'Marijuana', 'Shabu', 'Meth', 'Cocaine', 'Commit']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - I',
   info: 'Sexual harassment and/or acts of lasciviousness.',
   type: '',
   message: '1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals', 'Sexual', 'Harassment', 'Acts', 'Lasciviousness', 'Rape', 'Commit']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - J',
   info: 'Selling of goods and services by student inside the classroom.',
   type: '',
   message: '1st Offense sanction is Warning, 2nd offense is reprimand and 3rd offense will be suspension. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals', 'Selling', 'Goods', 'Services', 'Student', 'Inside', 'Classroom']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - A',
   info: 'Solicitation of money, donations, or contributions without the prior approval of the University or the Commission on Education.',
   type: '',
   message: '1st Offense sanction is Warning/ Reprimand and Reimbursement of the Collected Amount, 2nd offense is Suspension with Warning of Exclusion and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Solicitation', 'Money', 'Donations', 'Contributions', 'Prior', 'Approval', 'Commission', 'Education', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - B',
   info: 'Misappropriation and/ or malversation of funds belonging to the University or any recognized student organization; failure to submit necessary documents appertaining to ﬁnancial necessities within the prescribed period.',
   type: '',
   message: '1st Offense sanction is Suspension/ reimbursement of the unnacounted funds and 2nd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Misappropriation', 'Malversation', 'Funds', 'Belonging', 'Recognized', 'Organization', 'Failure', 'Submit', 'Necessary', 'Documents', 'Appertaining', 'Financial', 'Necessities', 'Prescribed', 'Period', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - C',
   info: 'Payment of tuition and other fees to persons other than the cashiers/tellers or those authorized to receive them.',
   type: '',
   message: '1st Offense sanction is Reprimand with Warning of Suspension, 2nd offense is Suspension with Warning of Exclusion and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Payment', 'Tuition', 'Other', 'Fees', 'Person', 'People', 'Other', 'Cashiers', 'Tellers', 'Authorized', 'Unauthorized', 'Receive', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - D',
   info: 'Taking examinations or attending classes without having duly enrolled therein or without the required permit.',
   type: '',
   message: '1st Offense sanction is Reprimand with Warning of Suspension, 2nd offense is Suspension with Warning of Exclusion and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Taking', 'Examinations', 'Attending', 'Classes', 'Enrolled', 'Required', 'Permit', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - E',
   info: 'Claiming, using or utilization of the name of the University of Baguio without proper authorization and recognition.',
   type: '',
   message: '1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Claiming', 'Using', 'Utilization', 'Name', 'Baguio', 'Proper', 'Authorization', 'Recognition', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - F',
   info: 'Illegal access or possession of information , documents, or ﬁles of the academic community for use, alteration, corruption, stealing, destroying or any act to that effect.',
   type: '',
   message: '1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Illegal', 'Access', 'Possession', 'Information', 'Documents', 'File', 'Academic', 'Community', 'Use', 'Alteration', 'Corruption', 'Stealing', 'Destroying', 'Any', 'Effect', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - G',
   info: 'Use of university premises and/or facilities without prior authorization.',
   type: '',
   message: '1st Offense sanction is Warning/ Reprimand, 2nd offense is Suspension with Warning of Exclusion and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Use', 'Premises', 'Prior', 'Authorization', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - H',
   info: 'Unauthorized distribution within university premises of leaﬂets, handbills or other printed materials whose authorship is not clear or speciﬁcally stated; posting of but not limited to announcements, notices, advertisements, and offers within university premises without securing permit or authorization to do so.',
   type: '',
   message: '1st Offense sanction is Warning/ Reprimand, 2nd offense is Suspension with Warning of Exclusion and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Unauthorized', 'Distribution', 'Premises', 'Leaflets', 'Handbills', 'Other', 'Printed', 'Materials', 'Authorship', 'Clear', 'Specifically', 'Stated', 'Posting', 'Limited', 'Announcements', 'Notices', 'Advertisements', 'Offers', 'Securing', 'Permit', 'Authorization', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - I',
   info: 'Acts of vandalism such as defacing and/or writing on walls, paintings, doors, desks, tables, chairs, etc.; tearing of books, notices or circulars; destruction of window panes, toilet bowls, fans, laboratory equipment, water foundations, air conditioners, clocks and other university equipment and furnishings.',
   type: '',
   message: '1st Offense sanction is Suspension with Warning of Exclusion and 2nd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Commit', 'Vandalism', 'Acts', 'Defacing', 'Write', 'Walls', 'Painting', 'Door', 'Desk', 'Table', 'Chair', 'Tearing', 'Book', 'Notice', 'Circular', 'Destruction', 'Window', 'Panes', 'Toilet', 'Bowls', 'Fans', 'Laboratory', 'Equipment', 'Water', 'Foundation', 'Aircon', 'Airconditioner', 'Clock', 'Furniture', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - J',
   info: 'Robbery, thievery and acts of malicious mischief involving university property or that of the members of the academic community, including university guests and callers.',
   type: '',
   message: '1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Robbery', 'Thievery', 'Acts', 'Malicious', 'Mischief', 'Involving', 'Property', 'Academic', 'Community', 'Including', 'Guests', 'Callers', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - K',
   info: 'Borrowing money from a fellow student and not paying it back.',
   type: '',
   message: '1st Offense sanction is Reprimand and Payment of Borrowed Money, 2nd offense is Suspension and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Borrowing', 'Money', 'Fellow', 'Pay', 'Back', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - L',
   info: 'Borrowing valuable things such as cellular phones, electronic gadgets, etc. and failing to return the same.',
   type: '',
   message: '1st Offense sanction is Reprimand and Payment of Borrowed Item, 2nd offense is Suspension and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Borrow', 'Valuable', 'Things', 'Cellphone', 'Electronic', 'Gadget', 'Item', 'Fail', 'Return', 'Give', 'Back', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - M',
   info: 'Using, copying words or ideas from someone else’s work and arrogating as one’s own; implicit or explicit failure to cite sources of a quotation; paraphrasing most of the words or ideas of a source without giving credit to the author; passing on faulty information about the source of an idea; or any form of act that constitutes plagiarism.',
   type: '',
   message: '1st Offense sanction will be Exclusion / Withdrawal of Degree. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Using', 'Copying', 'Words', 'Ideas', 'Arrogating', 'Own', 'Implicit', 'Failure', 'Cite', 'Source', 'Quotation', 'Paraphrasing', 'Giving', 'Credit', 'Author', 'Passing', 'Faulty', 'Information', 'Acts', 'Plagiarism', 'Commit']
 }, {
   name: 'Offenses Against the Inviolability of School Records and Ofﬁcial Papers or Documents - A ',
   info: 'Destroying, tampering with or falsifying school records, permits or forms and knowingly using the same.',
   type: '',
   message: '1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Inviolability', 'School', 'Records', 'Official', 'Papers', 'Documents']
+  tags: ['University', 'Major', 'Against', 'Offenses', 'Inviolability', 'School', 'Records', 'Official', 'Papers', 'Documents', 'Destroying', 'Tampering', 'Falsifying', 'Permit', 'Forms', 'Knowingly', 'Same', 'Commit']
 }, {
-  name: 'Offenses Against the Inviolability of School Records and Ofﬁcial Papers or Documents - A ',
+  name: 'Offenses Against the Inviolability of School Records and Ofﬁcial Papers or Documents - B ',
   info: 'Lending, borrowing, tampering with/and or forging of certiﬁcates of matriculation, ID’s, class cards, clearances, or other documents; or otherwise committing, allowing or abetting acts of impersonation and/or misrepresentation for the purpose of entering university premises, enrolling, securing permits or taking of examinations.',
   type: '',
   message: '1st Offense sanction is Suspension with Warning of Exclusion and 2nd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Major', 'Against', 'Offenses', 'Inviolability', 'School', 'Records', 'Official', 'Papers', 'Documents']
+  tags: ['University', 'Major', 'Against', 'Offenses', 'Inviolability', 'School', 'Records', 'Official', 'Papers', 'Documents', 'Lending', 'Borrowing', 'Tampering', 'Forging', 'Certificate', 'Forms', 'Matriculation', 'Class', 'Card', 'Clearance', 'Commit', 'Allow', 'Abetting', 'Acts', 'Impersonation', 'Purpose', 'Entering', 'Premises', 'Enrolling', 'Securing', 'Permits', 'Taking', 'Examination']
 }, {
   name: 'Minor Offense - A ',
   info: 'Failure or refusal to wear the required ID and/or prescribed school uniform.',
   type: '',
   message: '1st Offense sanction is Warning, 2nd offense is Reprimand with Warning of Suspension and 3rd offense will be Suspension. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Minor', 'Against', 'Offenses']
+  tags: ['University', 'Minor', 'Against', 'Offenses', 'School', 'Commit', 'Failure', 'Refusal', 'Adhere', 'Wear', 'Student', 'ID', 'Proper', 'Prescribed', 'Required', 'Uniform']
 }, {
   name: 'Minor Offense - B ',
   info: 'Cross-dressing or failure or refusal to adhere to the university dress code.',
   type: '',
   message: '1st Offense sanction is Warning, 2nd offense is Reprimand with Warning of Suspension and 3rd offense will be Suspension. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Minor', 'Against', 'Offenses']
+  tags: ['University', 'Minor', 'Against', 'Offenses', 'School', 'Commit', 'Cross', 'Dress', 'Failure', 'Refusal', 'Proper', 'Code']
 }, {
   name: 'Minor Offense - C ',
   info: 'Spitting on ﬂoors and walls, including spitting mom-a or betel nut.',
   type: '',
   message: '1st Offense sanction is Warning / Reprimand, 2nd offense is Reprimand with Warning of Exclusion and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Minor', 'Against', 'Offenses']
+  tags: ['University', 'Minor', 'Against', 'Offenses', 'School', 'Commit', 'Spit', 'Floor', 'Wall', 'Momma', 'Betel', 'Nut']
 }, {
   name: 'Minor Offense - D ',
   info: 'Contrived disruption or disturbance of class or related activity through irrelevant questions or constant interruptions without just cause.',
   type: '',
   message: '1st Offense sanction is Warning, 2nd offense is Reprimand with Warning of Suspension and 3rd offense will be Suspension. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Minor', 'Against', 'Offenses']
+  tags: ['University', 'Minor', 'Against', 'Offenses', 'School', 'Commit', 'Contrived', 'Disruption', 'Disturbance', 'Class', 'Related', 'Activity', 'Irreleval', 'Questions', 'Interruptions']
 }, {
   name: 'Minor Offense - E ',
-  info: 'Clogging of toilet bowls, urinals and lavatories or causing spillage of waste or stinking matter.',
+  info: 'Clogging of toilet bowls, urinals and labatories or causing spillage of waste or stinking matter.',
   type: '',
   message: '1st Offense sanction is Warning / Reprimand, 2nd offense is Reprimand with Warning of Exclusion and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Minor', 'Against', 'Offenses']
+  tags: ['University', 'Minor', 'Against', 'Offenses', 'School', 'Commit', 'Clogging', 'Toilet', 'Bowls', 'Urinals', 'Laboratories', 'Spillage', 'Waste', 'Stink', 'Matter']
 }, {
   name: 'Minor Offense - F ',
   info: 'Littering within university premises; throwing of trash outside school windows.',
   type: '',
   message: '1st Offense sanction is Warning, 2nd offense is Reprimand with Warning of Suspension and 3rd offense will be Suspension. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Minor', 'Against', 'Offenses']
+  tags: ['University', 'Minor', 'Against', 'Offenses', 'School', 'Commit', 'Littering', 'Premises', 'Throwing', 'Trash', 'Window']
 }, {
   name: 'Minor Offense - G ',
-  info: 'Using cellular phone, audio player, and the like while the class.',
+  info: 'Using cellular phone, audio player, and the like while the class is going on.',
   type: '',
   message: '1st Offense sanction is Warning, 2nd offense is Reprimand with Warning of Suspension and 3rd offense will be Suspension. Please follow the University Rules and Regulations.',
-  tags: ['University', 'Minor', 'Against', 'Offenses']
+  tags: ['University', 'Minor', 'Against', 'Offenses', 'School', 'Commit', 'Using', 'Cellphone', 'Gadget', 'Audio', 'Player', 'Earphone', 'Headset', 'Class', 'Ongoing']
 }, {
   name: 'Administrative Sanction - Warning ',
-  info: 'Warning',
+  info: 'A notice to the student that continuation or repetition of speciﬁed conduct may be a cause for other disciplinary action. ',
   type: '',
   message: 'It is a notice to the student that continuation or repetition of speciﬁed conduct may be a cause for other disciplinary action. ',
-  tags: ['University', 'Administrative', 'Sanction', 'Warning', 'Punishment']
+  tags: ['University', 'Administrative', 'Sanction', 'Warning', 'Punishment', 'Offense', 'Commit']
 }, {
   name: 'Administrative Sanction - Reprimand ',
-  info: 'Reprimand',
+  info: 'A severe form of formal rebuke by a person in authority. ',
   type: '',
   message: 'It is a severe form of formal rebuke by a person in authority. ',
-  tags: ['University', 'Administrative', 'Sanction', 'Reprimand', 'Punishment']
+  tags: ['University', 'Administrative', 'Sanction', 'Reprimand', 'Punishment', 'Offense', 'Commit']
 }, {
   name: 'Administrative Sanction - Censure ',
-  info: 'Censure',
+  info: 'An oral or written reprimand for violation of speciﬁed regulation(s). ',
   type: '',
   message: 'This may either be an oral or written reprimand for violation of speciﬁed regulation(s). ',
   tags: ['University', 'Administrative', 'Sanction', 'Censure', 'Punishment']
 }, {
   name: 'Administrative Sanction - Suspension ',
-  info: 'Censure',
+  info: 'As a penalty imposed for an offense committed, a student may be barred for a certain period from a particular class or from the University. A school may suspend an erring student during the school year or term for a maximum period not exceeding twenty percent (20%) of the prescribed school days.  The decision of the school on every case involving the penalty of suspension which exceeds twenty percent (20%) of the prescribed school days for a school year or term shall be forwarded to the CHED Regional Ofﬁce within ten (10) days from the termination of the investigation of its case for its information.',
   type: '',
-  message: 'As a penalty imposed for an offense committed, a student may be barred for a certain period from a particular class or from the University. A school may suspend an erring student during the school year or term for a maximum period not exceeding twenty percent (20%) of the prescribed school days.  The decision of the school on every case involving the penalty of suspension which exceeds twenty percent (20%) of the prescribed school days for a school year or term shall be forwarded to the CHED Regional Ofﬁce within ten (10) days from the termination of the investigation of its case for its information.',
-  tags: ['University', 'Administrative', 'Sanction', 'Suspension', 'Punishment']
+  message: 'As a penalty imposed for an offense committed, a student may be barred for a certain period from a particular class or from the University. A school may suspend an erring student during the school year or term for a maximum period not exceeding twenty percent (20%) of the prescribed school days.  The decision of the school on every case involving the penalty of suspension which exceeds twenty percent (20%) of the prescribed school days for a school year or term shall be forwarded to the CHED Regional Ofﬁce within ten (10) days from the termination of the investigation of its case for its information. ',
+  tags: ['University', 'Administrative', 'Sanction', 'Suspension', 'Punishment', 'Offense', 'Commit']
 }, {
   name: 'Administrative Sanction - Exclusion ',
-  info: 'Exclusion',
+  info: 'A disciplinary measure which allows an erring student to ﬁnish the semester or term but is thereafter excluded from returning to the University, or where the penalty for exclusion cannot for any reason, be extraneous, or otherwise, is enforced. ',
   type: '',
   message: 'This is a disciplinary measure, which allows an erring student to ﬁnish the semester or term but is thereafter excluded from returning to the University, or where the penalty for exclusion cannot for any reason, be extraneous, or otherwise, is enforced. ',
-  tags: ['University', 'Administrative', 'Sanction', 'Exclusion', 'Punishment']
+  tags: ['University', 'Administrative', 'Sanction', 'Exclusion', 'Punishment', 'Offense', 'Commit']
 }, {
   name: 'Administrative Sanction - Expulsion ',
-  info: 'Expulsion',
+  info: 'The outright barring of the erring student from the University. As distinguished from exclusion, it is imposed and implemented during the semester or term when the offense was committed. Expulsion is an extreme penalty on an erring pupil or student consisting of his exclusion from admission to any public or private school in the Philippines and which requires the prior approval of the Commission on Higher Education.  The penalty may be imposed for acts or offenses constituting gross misconduct, dishonesty, hazing, carrying deadly weapons, immorality, selling and/or possession of prohibited drugs or marijuana, drug dependency, drunkenness, hooliganism, vandalism, and other serious offenses such as assaulting a pupil or student or school personnel, instigating or leading illegal strikes or similar concerted activities resulting in the stoppage of classes, preventing or threatening any pupil or student or school personnel from entering the school premises or attending classes or discharging their duties, forging or tampering with school records, forms and documents. ',
   type: '',
-  message: 'This is the outright barring of the erring student from the University.  As distinguished from exclusion, it is imposed and implemented during the semester or term when the offense was committed. Expulsion is an extreme penalty on an erring pupil or student consisting of his exclusion from admission to any public or private school in the Philippines and which requires the prior approval of the Commission on Higher Education.  The penalty may be imposed for acts or offenses constituting gross misconduct, dishonesty, hazing, carrying deadly weapons, immorality, selling and/or possession of prohibited drugs or marijuana, drug dependency, drunkenness, hooliganism, vandalism, and other serious offenses such as assaulting a pupil or student or school personnel, instigating or leading illegal strikes or similar concerted activities resulting in the stoppage of classes, preventing or threatening any pupil or student or school personnel from entering the school premises or attending classes or discharging their duties, forging or tampering with school records, forms and documents. ',
-  tags: ['University', 'Administrative', 'Sanction', 'Expulsion', 'Punishment']
+  message: 'This is the outright barring of the erring student from the University. As distinguished from exclusion, it is imposed and implemented during the semester or term when the offense was committed. Expulsion is an extreme penalty on an erring pupil or student consisting of his exclusion from admission to any public or private school in the Philippines and which requires the prior approval of the Commission on Higher Education.  The penalty may be imposed for acts or offenses constituting gross misconduct, dishonesty, hazing, carrying deadly weapons, immorality, selling and/or possession of prohibited drugs or marijuana, drug dependency, drunkenness, hooliganism, vandalism, and other serious offenses such as assaulting a pupil or student or school personnel, instigating or leading illegal strikes or similar concerted activities resulting in the stoppage of classes, preventing or threatening any pupil or student or school personnel from entering the school premises or attending classes or discharging their duties, forging or tampering with school records, forms and documents. ',
+  tags: ['University', 'Administrative', 'Sanction', 'Expulsion', 'Punishment', 'Offense', 'Commit']
 }];
 
 exports.information = information;
