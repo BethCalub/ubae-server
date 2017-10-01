@@ -1,7 +1,7 @@
 'use strict';
 
 import angular from 'angular';
-// import ngAnimate from 'angular-animate';
+import ngAnimate from 'angular-animate';
 import ngCookies from 'angular-cookies';
 import ngResource from 'angular-resource';
 import ngSanitize from 'angular-sanitize';
@@ -37,10 +37,11 @@ import LocationComponent from './location/location.component';
 import InformationComponent from './information/information.component';
 import InstructionComponent from './instruction/instruction.component';
 import ProviderComponent from './provider/provider.component';
+import DevelopmentComponent from './development/development.component';
 
 import './app.scss';
 
-angular.module('ubaeApiApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
+angular.module('ubaeApiApp', [ngAnimate, ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
   uiBootstrap, _Auth, account, admin, 'validation.match', ubae, modal, navbar, sidenav, footer, main, constants,
   socket, util, statusbar,
   ResponseComponent,
@@ -49,7 +50,8 @@ angular.module('ubaeApiApp', [ngCookies, ngResource, ngSanitize, 'btford.socket-
   LocationComponent,
   InformationComponent,
   InstructionComponent,
-  ProviderComponent
+  ProviderComponent,
+  DevelopmentComponent
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {

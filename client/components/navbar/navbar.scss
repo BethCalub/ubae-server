@@ -4,8 +4,11 @@ $nav-height: 40px;
 /* Add a background color to the top navigation */
 
 .subnav {
+  position:fixed;
   background-color: $nav-color;
   overflow: hidden;
+  z-index: 9999;
+  width: 100%;
 }
 
 /* Style the links inside the navigation bar */

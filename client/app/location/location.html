@@ -14,7 +14,8 @@
 <div class="container-fluid" id="response">
   <div class="row">
     <div class="col-sm-9">
-      <h4>{{locationCtrl.tableName}} Entries:</h4>
+      <h4>{{(locationCtrl.entryList | filter: 
+          { tags: locationCtrl.searchResponses}).length}} Location Entries:</h4>
     </div>
     <div class="col-sm-3">
       <div class="form-group">
@@ -62,8 +63,7 @@
 </div>
 
 <statusbar 
-  table-name="{{locationCtrl.tableName}}" 
+  table-name="Location" 
   table-entries="{{(locationCtrl.entryList | filter: 
-  { tags: locationCtrl.searchResponses,
-    resolved: feedbackCtrl.resolvedType}).length}}" 
+  { tags: locationCtrl.searchResponses}).length}}" 
   action-message="{{locationCtrl.eventStatus}}"></statusbar>

@@ -22,22 +22,13 @@
   </div>
   <div class="row">
     <div class="col-sm-9">
-      <h4>{{eventCtrl.tableName}} Entries:</h4>
+      <h4>{{(eventCtrl.entryList | filter: { tags: eventCtrl.searchTags}).length}} Event Entries:</h4>
     </div>
-    <!-- <div class="col-sm-2">
-        <div class="form-group">
-        <select
-        ng-model="eventCtrl.filterType" name="response" 
-        ng-options="x for x in eventCtrl.typeSelect"
-        class="form-control input-sm" required="required">
-      </select>
-        </div>
-    </div> -->
     <div class="col-sm-3">
       <div class="form-group">
         <label class="sr-only" for="search">Search</label>
-        <input type="text" class="form-control input-sm" id="search" ng-model="eventCtrl.searchResponses" uib-tooltip="Search for information contained in the {{eventCtrl.tableName}} database. This will filter out the information as you type."
-          tooltip-placement="bottom" placeholder="Search {{eventCtrl.tableName}}">
+        <input type="text" class="form-control input-sm" id="search" ng-model="eventCtrl.searchTags" uib-tooltip="Search for information contained in the {{eventCtrl.tableName}} database. This will filter out the information as you type."
+          tooltip-placement="bottom" placeholder="Search {{eventCtrl.tableName}} Tags">
       </div>
     </div>
   </div>
@@ -51,14 +42,14 @@
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="response in eventCtrl.eventList | 
-        filter: { tags: eventCtrl.searchResponses }">
+        <tr ng-repeat="response in eventCtrl.entryList | 
+        filter: { tags: eventCtrl.searchTags }">
           <td style="width: 20px">{{$index + 1}}</td>
           <td><a ng-click="eventCtrl.getEvent(response._id)">{{response.name}}</a></td>
-          <td>{{response.info}}</td>
-          <td>{{response.location}}</td>
-          <td>{{response.startDate | date: "shortDate"}} to {{response.endDate | date: "shortDate"}}</td>
-          <!-- <td>{{response.startTime | date: "shortTime"}} to {{response.endTime | date: "shortTime"}}</td> -->
+          <td>{{response.event}}</td>
+          <td>{{response.message}}</td>
+          <td>{{response.startDate | date: "shortDate"}}</td>
+          <td>{{response.endDate | date: "shortDate"}}</td>
           <td style="width: 35%">
             <ul>
               <li ng-repeat="tags in response.tags">
@@ -69,8 +60,7 @@
             </ul>
           </td>
           <td>
-            <button type="button" class="close" ng-click="eventCtrl.deleteEvent(response._id)"
-              uib-tooltip="WARNING!!! This action will delete this entry."
+            <button type="button" class="close" ng-click="eventCtrl.deleteEvent(response._id)" uib-tooltip="WARNING!!! This action will delete this entry."
               tooltip-placement="left">&times;</button>
           </td>
         </tr>
@@ -79,3 +69,6 @@
   </div>
   <hr>
 </div>
+
+<statusbar table-name="Event" table-entries="{{(eventCtrl.entryList | filter: 
+  { tags: eventCtrl.searchTags}).length}}" action-message="{{eventCtrl.eventStatus}}"></statusbar>

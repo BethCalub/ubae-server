@@ -6,9 +6,31 @@ const uiRouter = require('angular-ui-router');
 import routes from './instruction.routes';
 
 export class InstructionComponent {
+  entryList = [];
+  
   /*@ngInject*/
-  constructor() {
-    this.message = 'Hello';
+  constructor($http, $scope, socket) {
+    this.$http = $http;
+    this.socket = socket;
+    this.link = '/api/instructions';
+
+    this.tableName = 'Information';
+    this.tableEntries = ['#', 'Process', 'Instruction', 'Message', 'Tags'];
+
+    $scope.$on('$destroy', function() {
+      socket.unsyncUpdates('event');
+    });
+  }
+
+  $onInit() {
+    this.$http.get(this.link)
+    .then(response => {
+      this.entryList = response.data;
+      this.socket.syncUpdates('information', this.entryList);
+      this.eventStatus = 'Data Successfully Loaded';
+    }, err => {
+      this.error = err.statusText;
+    });
   }
 }
 

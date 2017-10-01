@@ -9,10 +9,10 @@ $fa-font-path: '/assets/fonts/font-awesome/';
  * App-wide Styles
  */
 
-//  .main {
-//    padding-top:120px;
-//    margin: 0 25px;
-//  }
+ .main {
+  //  padding-top: 80px;
+   margin: 0 10px;
+ }
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -25,15 +25,15 @@ $fa-font-path: '/assets/fonts/font-awesome/';
 /* inject:scss */
 @import 'account/login/login';
 @import 'admin/admin';
-@import 'department/department';
-@import 'dept/dept';
+@import 'development/development';
 @import 'event/event';
 @import 'feedback/feedback';
+@import 'information/information';
+@import 'instruction/instruction';
 @import 'location/location';
 @import 'main/main';
-@import 'program/program';
+@import 'provider/provider';
 @import 'response/response';
-@import 'service/service';
 @import 'ubae/ubae';
 @import '../components/footer/footer';
 @import '../components/modal/modal';
