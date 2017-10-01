@@ -4,7 +4,7 @@ const uiRouter = require('angular-ui-router');
 import routes from './development.routes';
 
 export class DevelopmentComponent {
-       3
+
   /*@ngInject*/
   constructor($http, $scope, socket) {
     this.$http = $http;

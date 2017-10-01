@@ -82,13 +82,11 @@ export function show(req, res) {
 
 // Creates a new Development in the DB
 export function create(req, res) {
-  var keywords = JSON.stringify(req.body.tags);
-  console.log(keywords);
   return Development.create({
     name: req.body.name,
     details: req.body.details,
     message: req.body.message,
-    tags: UbaeNLP.keywordSearch(keywords)
+    tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags))
   })
     .then(respondWithResult(res, 201))
     .catch(handleError(res));
@@ -96,7 +94,6 @@ export function create(req, res) {
 
 // Upserts the given Development in the DB at the specified ID
 export function upsert(req, res) {
-  var keywords = JSON.stringify(req.body.tags);
   if(req.body._id) {
     Reflect.deleteProperty(req.body, '_id');
   }
@@ -110,7 +107,6 @@ export function upsert(req, res) {
 
 // Upserts the given Development in the DB at the specified ID
 export function patch(req, res) {
-  var keywords = JSON.stringify(req.body.tags);
   if(req.body._id) {
     Reflect.deleteProperty(req.body, '_id');
   }
@@ -119,7 +115,7 @@ export function patch(req, res) {
       name: req.body.name,
       details: req.body.details,
       message: req.body.message,
-      tags: UbaeNLP.keywordSearch(keywords)
+      tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags))
     },
     {new: true, upsert: true, setDefaultsOnInsert: true, runValidators: true}).exec()
 
