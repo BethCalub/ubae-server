@@ -99,12 +99,12 @@
           </td>
           <td>
             <button type="button" ng-show="entries.active == false" class="close" ng-click="instructionCtrl.unarchiveEntry(entries._id)" uib-tooltip="WARNING!!! This action will restore this entry to the active list."
-            tooltip-placement="left">restore</button></td>
+            tooltip-placement="left">R</button></td>
           <td>
             <button type="button" ng-show="entries.active == true" class="close" ng-click="instructionCtrl.archiveEntry(entries._id)" uib-tooltip="WARNING!!! This action will archive this entry."
-              tooltip-placement="left">archive</button>
+              tooltip-placement="left">A</button>
             <button type="button" ng-show="entries.active == false" class="close" ng-click="instructionCtrl.deleteEntry(entries._id)" uib-tooltip="WARNING!!! This action will delete this entry."
-              tooltip-placement="left">delete</button>
+              tooltip-placement="left">D</button>
           </td>
         </tr>
       </tbody>

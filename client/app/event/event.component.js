@@ -128,8 +128,8 @@ export class EventComponent {
       this.entryID = response.data._id;
       this.name = response.data.name;
       this.details = response.data.event;
-      this.startDate = response.data.startDate;
-      this.endDate = response.data.endDate;
+      this.startDate = new Date(response.data.startDate);
+      this.endDate = new Date(response.data.endDate);
       this.message = response.data.message;
       this.tags = response.data.tags;
       this.eventStatus = this.status.select.success;

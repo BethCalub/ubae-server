@@ -4,7 +4,7 @@ export default function routes($stateProvider) {
   'ngInject';
 
   $stateProvider.state('main', {
-    url: '/main',
+    url: '/',
     template: '<main></main>',
     authenticate: true
   });
