@@ -188,7 +188,7 @@ var information = [{
   info: 'A 4 Year Course, Bachelor\'s Degree, offered in SBAA department.',
   type: '',
   message: 'Bachelor of Science in Business Administration, major in Financial Management (BSBA-FM) is a 4 year Bachelor\'s Degree course offered in the SBAA department.',
-  tags: ['BS', 'BAFM', 'BSBAFM', 'FinMan', 'Bachelor', 'Science', 'Financial', 'Management', 'Program', 'Course', 'SBAA', 'Baccalaureate', 'Available']
+  tags: ['BS', 'BAFM', 'BSBAFM', 'FinMan', 'Bachelor', 'Science', 'Financial', 'Management', 'Program', 'Course', 'SBAA', 'Baccalaureate', 'Available', 'Department']
 }, {
   name: 'Bachelor of Science in Business Administration, major in Marketing Management (BSBA-MM)',
   info: '4 Year Course, Bachelor\'s Degree, offered in SBAA department.',

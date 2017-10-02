@@ -800,7 +800,7 @@ var location = [{
   location: 'Security Office',
   type: '',
   message: 'You can report your complaints for suspicious and unusual activities in the Security Office which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['complaints', 'offenses', 'report', 'Request', 'suspicious', 'crimes', 'bully', 'incident', 'accident', 'file']
+  tags: ['complaints', 'offenses', 'report', 'Request', 'suspicious', 'crimes', 'bully', 'incident', 'accident', 'file', 'bullies']
 }, {
   name: 'Where is the lost and found ',
   location: 'Security Office',
@@ -866,7 +866,7 @@ var location = [{
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Transcript of Records at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Transcript', 'Records', 'TOR', 'Get', 'Request', 'Process']
+  tags: ['Transcript', 'Records', 'TOR', 'Get', 'Request', 'Process', 'OTR', 'Official']
 }, {
   name: 'Where to process Scholastic Records ',
   location: 'Admissions and Records Center, 2nd Floor D Building',

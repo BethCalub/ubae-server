@@ -80,7 +80,7 @@ var instruction = [{
   ],
   type: '',
   message: 'For the Release of Student Records, first you need to get a clearance form from your Dean\'s office, the Library and AMD. Submit the clearance form to the ARC Office for checking. If there are no deficiencies, ARC will release your claim stamp. And lastly, kindly wait for 15 days for the release of your record. Please take note that if you\'re an under-graduate, you need to pay a certain amount to the cashier first. ',
-  tags: ['Release', 'Request', 'Student', 'Records', 'avail', 'Already', 'Graduates', 'Service', 'Transcript', 'TOR', 'Scholastic',
+  tags: ['Release', 'Request', 'Student', 'Records', 'avail', 'Already', 'Graduates', 'Service', 'Transcript', 'TOR', 'OTR', 'Scholastic',
     'Course', 'Description', 'Clock', 'Hours', 'Diploma', 'Documentary', 'Stamp', 'HS', 'Form', '137', 'Copy', 'Grades', 'Schedule', 'Process'
   ]
 }, {
@@ -556,7 +556,7 @@ var instruction = [{
   ],
   type: '',
   message: 'If you have certain complaints in school regarding security, you can go to the Security Office so they can investigate regarding your complaints.',
-  tags: ['Offenses', 'Report', 'Suspicious', 'Campus', 'Security', 'Assistance', 'Investigation', 'Service', 'Process', 'complaints', 'bully', 'file', 'bully']
+  tags: ['Offenses', 'Report', 'Suspicious', 'Campus', 'Security', 'Assistance', 'Investigation', 'Service', 'Process', 'complaints', 'bullies', 'file', 'bully']
 }, {
   name: 'Lost & Found',
   process: ['1. Bring the Item to the Security Office or give the item to the marshalls'],
@@ -735,8 +735,8 @@ var instruction = [{
   tags: ['Payment', 'Tuition', 'Fee', 'Process', 'Service', 'paid']
 }, {
   name: 'See Grades',
-  process: ['Fill Up the Pink Form, Pay to the cashier '],
-  type: 'login to aims.ubaguio.edu/aims/students',
+  process: ['login to aims.ubaguio.edu/aims/students '],
+  type: '',
   message: 'Please login to the student portal aims.ubaguio.edu/aims/students and click grades. ',
   tags: ['Grades', 'See', 'View']
 }, {
@@ -1003,6 +1003,12 @@ var instruction = [{
     'BSED',
     'Secondary'
   ]
+}, {
+  name: 'Cross Enroll',
+  process: ['1. Students enrolled in other institutions of learning may be admitted in the University of Baguio on a case-to-case basis and only upon submission of permit from the Registrar and the Dean of the school in which they are principally enrolled. 2. The permit shall state the subject and the total number of units which they are allowed to cross-enroll in other institutions of learning. 3. Graduating students may cross-enroll in other institutions of learning provided that the cross-enrolled subject is not offered in the University of Baguio and provided further that the student who wishes to cross-enroll secures a permit from the Registrar of the University of Baguio and signed by the dean. '],
+  type: '',
+  message: 'Please submit a Permit from your Dean and Registrar that states the subject and total number of units your are allowed to take. ',
+  tags: ['Cross', 'Enroll', 'University', 'Institution']
 }];
 
 exports.instruction = instruction;
