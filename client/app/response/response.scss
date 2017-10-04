@@ -28,7 +28,9 @@
 	// 	background-color: paleturquoise;
 	// }
 	ul {
-		@extend .flex-response;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
     list-style-type: none;
     margin: 0;
 		padding: 0;

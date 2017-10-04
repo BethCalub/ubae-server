@@ -6,10 +6,14 @@ import routes from './information.routes';
 export class InformationComponent {
 
   /*@ngInject*/
-  constructor($http, $scope, socket) {
+  constructor($http, $scope, socket, $sce) {
     this.$http = $http;
     this.socket = socket;
     this.entryID = '';
+
+    //pager
+    this.totalItems = 0;
+    this.currentPage = 1;
 
     //connection to the server
     this.endpoint = {
@@ -17,13 +21,19 @@ export class InformationComponent {
       socket: 'information'
     };
 
+    this.htmlPopover = $sce.trustAsHtml('<h4>Are you sure you want to delete this entry?</h4>'+
+    '<div class="btn-group">'+
+    '<a class="btn btn-danger" href="#" ng-click="informationCtrl.archiveEntry(entries._id) role="button">Delete</a>'+
+    '<a class="btn btn-default" href="#" role="button">Cancel</a>'+
+    '</div>');
+
     //data information
     this.dataInfo = {
       name: 'Information',
       info: 'The information table consists of data which is answerable by WHAT questions. This table contains information about the University, its departments and its courses offered, offices and services offered, requirements, scholarships, and their description.',
       guide: ['The variable \'name\' includes office names, department names, programs offered, services offered and scholarships.', 'The variable \'info\' contains the description of data.', 'The \'message\' variable contains the sentence form of \'info\' which will serve as UBAEs reply. Try to make it witty as possible as to emulate more human-like thinking.', 'The variable \'tags\' contains keywords that will be detected to determine which data UBAE will use as a response to the inquiry. Try to add more tags which are possible keywords.'],
       show: true,
-      table: ['#', 'Name', 'Details', 'Message', 'Tags']
+      table: ['#', 'Name', 'Message', 'Tags']
     };
 
     //data filters
@@ -127,6 +137,7 @@ export class InformationComponent {
       this.tags = response.data.tags;
       this.eventStatus = this.status.select.success;
       console.log(response.statusText);
+      this.isCollapsed = true;
     }, err => {
       this.eventStatus = this.status.select.error;
       console.log(err.statusText);

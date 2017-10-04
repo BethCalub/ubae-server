@@ -1,5 +1,5 @@
 <div id="main-sideform">
-    <form role="form">
+    <form role="form" name="eventForm" novalidate>
       <h3>{{eventCtrl.dataInfo.name}}</h3>
       <h5>
         <span ng-show="eventCtrl.entryID != ''">Update Entry</span>
@@ -9,38 +9,47 @@
   
       <div class="form-group">
         <label for="name">Event Details</label>
-        <input type="text" ng-model="eventCtrl.name" class="form-control" id="name" placeholder="Name" required="required">
+        <input type="text" ng-model="eventCtrl.name" class="form-control" name="name" id="name" placeholder="Name" required="required">
+        <span style="color: crimson;" ng-show="eventForm.name.$touched && eventForm.name.$invalid">Name is required.</span>
       </div>
+
   
       <div class="form-group">
         <!-- <label for="info">Info</label> -->
         <!-- <input type="text" class="form-control" id="" placeholder="Information"> -->
         <textarea name="info" ng-model="eventCtrl.details" id="info" placeholder="Information" class="form-control" rows="3" style="resize: none;"
           required="required"></textarea>
+        <span style="color: crimson;" ng-show="eventForm.info.$touched && eventForm.info.$invalid">Info about the entry is required.</span>
       </div>
 
       <div class="form-group">
         <!-- <label for="startDate">Start Date</label> -->
-        <input type="text" ng-model="eventCtrl.startDate" uib-datepicker-popup="{{'yyyy/MM/dd'}}" class="form-control" id="startDate" placeholder="Start Date" required="required">
+        <input type="text" name="startDate" ng-model="eventCtrl.startDate" uib-datepicker-popup="{{'MM/dd/yyyy'}}" class="form-control" id="startDate" placeholder="Start Date Ex. 04/20/2017" required="required">
+        <span style="color: crimson;" ng-show="eventForm.startDate.$touched && eventForm.startDate.$invalid">Enter a valid date. Follow the format.</span>
       </div>
 
       <div class="form-group">
         <!-- <label for="endDate">End Date</label> -->
-        <input type="text" ng-model="eventCtrl.endDate" uib-datepicker-popup="{{'yyyy/MM/dd'}}" class="form-control" id="endDate" placeholder="End Date" required="required">
+        <input type="text" name="endDate" ng-model="eventCtrl.endDate" uib-datepicker-popup="{{'MM/dd/yyyy'}}" class="form-control" id="endDate" placeholder="End Date Ex. 04/20/2017" required="required">
+        <span style="color: crimson;" ng-show="eventForm.endDate.$touched && eventForm.endDate.$invalid">Enter a valid date. Follow the format.</span>
       </div>
+
+      <span ng-show="eventCtrl.startDate > eventCtrl.endDate">The end date must be later than the start date.</span>
   
       <div class="form-group">
         <label for="message">Message</label>
         <!-- <input type="text" class="form-control" id="" placeholder="Message"> -->
         <textarea name="message" ng-model="eventCtrl.message" id="message" placeholder="Message" class="form-control" rows="3" style="resize: none;" required="required"></textarea>
+        <span style="color: crimson;" ng-show="eventForm.message.$touched && eventForm.message.$invalid">Message is required.</span>
       </div>
   
       <div class="form-group">
         <label for="tags">Tags</label>
-        <textarea name="message" ng-model="eventCtrl.tags" id="tags" placeholder="Tags" class="form-control" rows="2" style="resize: none;" required="required"></textarea>
+        <textarea name="tags" ng-model="eventCtrl.tags" id="tags" placeholder="Tags" class="form-control" rows="2" style="resize: none;" required="required"></textarea>
+        <span style="color: crimson;" ng-show="eventForm.tags.$touched && eventForm.tags.$invalid">Tags is required.</span>
       </div>
   
-      <button type="submit" ng-click="eventCtrl.saveEntry()" class="btn btn-block btn-default">Submit</button>
+      <button type="submit" ng-click="eventCtrl.saveEntry()" ng-disabled="eventForm.$invalid" class="btn btn-block btn-default">Submit</button>
       <button type="submit" ng-click="eventCtrl.resetForm()" class="btn btn-block btn-default">Reset</button>
     </form>
   
@@ -65,11 +74,11 @@
         {{eventCtrl.dataInfo.name}} Entries:</h4>
     </div>
     <div class="col-sm-2">
-      <div class="form-group">
+      <!-- <div class="form-group">
         <select ng-model="eventCtrl.filter.archive.selected" name="response" ng-options="x for (x, y) in eventCtrl.filter.archive.options"
           class="form-control input-sm" required="required">
             </select>
-      </div>
+      </div> -->
     </div>
     <div class="col-sm-3">
       <div class="form-group">
@@ -83,44 +92,102 @@
   <hr>
 
   <div class="row list">
-    <table class="table table-condensed table-hover fixed">
-      <thead>
-        <tr>
-          <th ng-repeat="headers in eventCtrl.dataInfo.table">{{headers}}</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr ng-repeat="entries in eventCtrl.entryList | 
-          filter: { tags: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected }">
-          <td style="width: 20px">{{$index + 1}}</td>
-          <td><a href="" ng-click="eventCtrl.getEntry(entries._id)">{{entries.name}}</a></td>
-          <td>{{entries.event}}</td>
-          <td>{{entries.startDate | date: "shortDate"}}</td>
-          <td>{{entries.endDate | date: "shortDate"}}</td>
-          <td>{{entries.message}}</td>
-          <td style="width: 35%">
-            <ul>
-              <li ng-repeat="tags in entries.tags">
-                <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
-                    {{tags}}
-                  </span>
-              </li>
-            </ul>
-          </td>
-          <td>
-            <button type="button" ng-show="entries.active == false" class="close" ng-click="eventCtrl.unarchiveEntry(entries._id)" uib-tooltip="WARNING!!! This action will restore this entry to the active list."
-            tooltip-placement="left">R</button></td>
-          <td>
-            <button type="button" ng-show="entries.active == true" class="close" ng-click="eventCtrl.archiveEntry(entries._id)" uib-tooltip="WARNING!!! This action will archive this entry."
-              tooltip-placement="left">A</button>
-            <button type="button" ng-show="entries.active == false" class="close" ng-click="eventCtrl.deleteEntry(entries._id)" uib-tooltip="WARNING!!! This action will delete this entry."
-              tooltip-placement="left">D</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+
+      <uib-tabset active="active">
+          <uib-tab index="0" heading="Active" ng-click="eventCtrl.filter.archive.selected = 'true'">
+              <table class="table table-condensed table-hover fixed">
+                  <thead>
+                    <tr>
+                      <th ng-repeat="headers in eventCtrl.dataInfo.table">{{headers}}</th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-repeat="entries in eventCtrl.entryList | 
+                      filter: { tags: eventCtrl.searchTags, active: 'true' }">
+                      <td style="width: 20px">{{$index + 1}}</td>
+                      <td><a href="" ng-click="eventCtrl.getEntry(entries._id)"
+                        uib-popover="{{entries.event}}"
+                        popover-title="{{entries.name}}"
+                        popover-trigger="'mouseenter'"
+                        type="button">{{entries.name}}</a></td>
+                      <!-- <td>{{entries.event}}</td> -->
+                      <td>{{entries.startDate | date: "shortDate"}}</td>
+                      <td>{{entries.endDate | date: "shortDate"}}</td>
+                      <td>{{entries.message}}</td>
+                      <td style="width: 35%">
+                        <ul>
+                          <li ng-repeat="tags in entries.tags">
+                            <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
+                                {{tags}}
+                              </span>
+                          </li>
+                        </ul>
+                      </td>
+                      <td>
+                        <button type="button" ng-show="entries.active == false" class="close" ng-click="eventCtrl.unarchiveEntry(entries._id)" uib-tooltip="WARNING!!! This action will restore this entry to the active list."
+                        tooltip-placement="left">R</button></td>
+                      <td>
+                        <button type="button" ng-show="entries.active == true" class="close" ng-click="eventCtrl.archiveEntry(entries._id)" uib-tooltip="WARNING!!! This action will archive this entry."
+                          tooltip-placement="left">A</button>
+                        <button type="button" ng-show="entries.active == false" class="close" ng-click="eventCtrl.deleteEntry(entries._id)" uib-tooltip="WARNING!!! This action will delete this entry."
+                          tooltip-placement="left">D</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+          </uib-tab>
+          <uib-tab index="1" heading="Archived" 
+            ng-click="eventCtrl.filter.archive.selected = 'false'" select="eventCtrl.alertMe('This table contains archived data that you can restore.')">
+            <table class="table table-condensed table-hover fixed">
+                <thead>
+                  <tr>
+                    <th ng-repeat="headers in eventCtrl.dataInfo.table">{{headers}}</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="entries in eventCtrl.entryList | 
+                    filter: { tags: eventCtrl.searchTags, active: 'false' }">
+                    <td style="width: 20px">{{$index + 1}}</td>
+                    <td><a href="" ng-click="eventCtrl.getEntry(entries._id)"
+                      uib-popover="{{entries.event}}"
+                      popover-title="{{entries.name}}"
+                      popover-trigger="'mouseenter'"
+                      type="button">{{entries.name}}</a></td>
+                    <!-- <td>{{entries.event}}</td> -->
+                    <td>{{entries.startDate | date: "shortDate"}}</td>
+                    <td>{{entries.endDate | date: "shortDate"}}</td>
+                    <td>{{entries.message}}</td>
+                    <td style="width: 35%">
+                      <ul>
+                        <li ng-repeat="tags in entries.tags">
+                          <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
+                              {{tags}}
+                            </span>
+                        </li>
+                      </ul>
+                    </td>
+                    <td>
+                      <button type="button" ng-show="entries.active == false" class="close" ng-click="eventCtrl.unarchiveEntry(entries._id)" uib-tooltip="WARNING!!! This action will restore this entry to the active list."
+                      tooltip-placement="left">R</button></td>
+                    <td>
+                      <button type="button" ng-show="entries.active == true" class="close" ng-click="eventCtrl.archiveEntry(entries._id)" uib-tooltip="WARNING!!! This action will archive this entry."
+                        tooltip-placement="left">A</button>
+                      <button type="button" ng-show="entries.active == false" class="close" ng-click="eventCtrl.deleteEntry(entries._id)" uib-tooltip="WARNING!!! This action will delete this entry."
+                        tooltip-placement="left">D</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+          </uib-tab>
+        </uib-tabset>
+
+
+    
   </div>
   <hr>
 </div>
@@ -128,6 +195,6 @@
 <statusbar 
   style="margin-left: 300px;"
   table-name="{{eventCtrl.dataInfo.name}}" 
-  table-entries="{{(eventCtrl.entryList | filter: { tags: eventCtrl.searchTags, active: eventCtrl.archived }).length}}" 
+  table-entries="{{(eventCtrl.entryList | filter: { tags: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected }).length}}" 
   action-message="{{eventCtrl.eventStatus}}"></statusbar>
 </div>

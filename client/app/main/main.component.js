@@ -3,58 +3,35 @@ import uiRouter from 'angular-ui-router';
 import routing from './main.routes';
 
 export class MainController {
-  awesomeThings = [];
-  newThing = '';
-
   /*@ngInject*/
-  constructor($http, $scope, socket) {
+  constructor($http, $scope, socket, $window) {
     this.$http = $http;
     this.socket = socket;
-    this.animationsEnabled = true;
 
-    $scope.$on('$destroy', function() {
-      socket.unsyncUpdates('dept');
-    });
+    this.totalItems = 64;
+    this.currentPage = 4;
+
+    this.isCollapsed = true;
+
+    this.tabs = [
+      { title: 'Dynamic Title 1', content: 'Dynamic content 1' },
+      { title: 'Dynamic Title 2', content: 'Dynamic content 2', disabled: true }
+    ];
+
+    this.alertMe = function(message) {
+      setTimeout(function() {
+        $window.alert(message);
+      });
+    };
+  
+    this.model = {
+      name: 'Tabs'
+    };
   }
 
   $onInit() {
-    this.$http.get('/api/depts')
-      .then(response => {
-        this.awesomeThings = response.data;
-        this.socket.syncUpdates('dept', this.awesomeThings);
-      });
-  }
 
-  addThing() {
-    if(this.newThing) {
-      this.$http.post('/api/depts', {
-        department: this.newThing
-      });
-      this.newThing = '';
-    }
   }
-
-  deleteThing(thing) {
-    this.$http.delete(`/api/depts/${thing._id}`);
-  }
-
-  // uibModal.open({
-  //   templateUrl: 'main.html',
-  //   controller: 'MainController',
-  //   animation: true,
-  //   size: 'lg|sm',
-  //   resolve: {
-  //     items: function () {
-  //       return scope.items;
-  //     }
-  //   }
-  // }).result
-  // .then(function (selectedItem) {
-    
-  // })
-  // .catch(function () {
-  //   // Modal dismissed.
-  // });
 }
 
 export default angular.module('ubaeApiApp.main', [uiRouter])

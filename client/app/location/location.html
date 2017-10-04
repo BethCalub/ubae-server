@@ -85,8 +85,12 @@
         <tr ng-repeat="entries in locationCtrl.entryList | 
           filter: { tags: locationCtrl.searchTags, active: locationCtrl.filter.archive.selected }">
           <td style="width: 20px">{{$index + 1}}</td>
-          <td><a href="" ng-click="locationCtrl.getEntry(entries._id)">{{entries.name}}</a></td>
-          <td>{{entries.details}}</td>
+          <td><a href="" ng-click="locationCtrl.getEntry(entries._id)"
+            uib-popover="{{entries.location}}"
+            popover-title="{{entries.name}}"
+            popover-trigger="'mouseenter'"
+            type="button">{{entries.name}}</a></td>
+          <td>{{entries.location}}</td>
           <td>{{entries.message}}</td>
           <td style="width: 35%">
             <ul>
