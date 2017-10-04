@@ -248,7 +248,6 @@ var provider = [{
     'Communication',
     'BAPolSci',
     'Political',
-    'Science',
     'BSPsych',
     'Psychology',
     'BAMusic',
@@ -323,7 +322,6 @@ var provider = [{
     'Available',
     'School',
     'Department',
-    'Department',
     'Courses',
     'Programs',
     'BSN',
@@ -351,13 +349,13 @@ var provider = [{
     'major',
     'Bachelor',
     'Master',
+    'Arts',
     'Doctor',
     'Philosophy',
     'offered',
     'offers',
     'Available',
     'School',
-    'Department',
     'Department',
     'Courses',
     'Education',
@@ -395,7 +393,6 @@ var provider = [{
     'Enroll',
     'International',
     'Current',
-    'Current',
     'Release',
     'Documents',
     'Records',
@@ -405,7 +402,6 @@ var provider = [{
     'Offers',
     'Available',
     'Office',
-    'Process',
     'Services'
   ]
 }, {
@@ -445,8 +441,7 @@ var provider = [{
     'Offered',
     'offers',
     'Available',
-    'Office',
-    'Services'
+    'Office'
   ]
 }, {
   name: 'University Clinic',
@@ -489,7 +484,6 @@ var provider = [{
     'Consult',
     'Medical',
     'Certificate',
-    'Examination',
     'Exam',
     'OJT',
     'SIHTM',
@@ -739,7 +733,6 @@ var provider = [{
     'Offer',
     'Available',
     'Service',
-    'Give',
     'Diploma',
     'Transcript',
     'Record',
@@ -770,7 +763,7 @@ var provider = [{
     'Moral',
     'Earned',
     'Units',
-    'TOR'   
+    'TOR'
   ],
 }];
 

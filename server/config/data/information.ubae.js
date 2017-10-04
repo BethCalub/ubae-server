@@ -50,7 +50,7 @@ var information = [{
   info: 'The School of International Hospitality and Tourism Management commits itself to train worldwide experts in the industry.',
   type: '',
   message: 'The School of International Hospitality and Tourism Management commits itself to train worldwide experts in the industry.',
-  tags: ['SIHTM', 'Department', 'College', 'Tourism', 'HRM', 'International', 'Hospitality', 'Tourism', 'Management', 'School', 'Meaning', 'Description']
+  tags: ['SIHTM', 'Department', 'College', 'HRM', 'International', 'Hospitality', 'Tourism', 'Management', 'School', 'Meaning', 'Description']
 }, {
   name: 'School of Information Technology',
   info: 'The School of Information Technology envisions itself as a leading educator that develops students to become competent, innovative, and morally upright information technology specialists.',
@@ -68,31 +68,31 @@ var information = [{
   info: 'The School of Natural Sciences is a dynamic and value oriented community committed to the advancement of the modern health caresystem.',
   type: '',
   message: 'The School of Natural Sciences is a dynamic and value oriented community committed to the advancement of the modern health caresystem.',
-  tags: ['SNS', 'Department', 'College', 'SNS', 'Natural', 'Sciences', 'School', 'Meaning', 'Description']
+  tags: ['SNS', 'Department', 'College', 'Natural', 'Sciences', 'School', 'Meaning', 'Description']
 }, {
   name: 'School of Dentistry',
   info: 'The School of Dentistry is committed in providing excellent dental education to produce competitive and socially responsible dentists.',
   type: '',
   message: 'The School of Dentistry is committed in providing excellent dental education to produce competitive and socially responsible dentists.',
-  tags: ['SOD', 'Department', 'College', 'SOD', 'Dentist', 'Dentistry', 'School', 'Meaning', 'Description']
+  tags: ['SOD', 'Department', 'College', 'Dentist', 'Dentistry', 'School', 'Meaning', 'Description']
 }, {
   name: 'School of Law',
   info: 'The University of Baguio School of Law endows advocates of law to advance the promotion of justice through adequate quality Legal Education.',
   type: '',
   message: 'The University of Baguio School of Law endows advocates of law to advance the promotion of justice through adequate quality Legal Education.',
-  tags: ['SOL', 'Department', 'College', 'SOL', 'Law', 'Lawyer', 'School', 'Meaning', 'Description']
+  tags: ['SOL', 'Department', 'College', 'Law', 'Lawyer', 'School', 'Meaning', 'Description']
 }, {
   name: 'School of Nursing',
   info: 'The School of Nursing commits itself to the development of exceptionally competent and value-driven health professionals.',
   type: '',
   message: 'The School of Nursing commits itself to the development of exceptionally competent and value-driven health professionals.',
-  tags: ['SON', 'Department', 'College', 'SON', 'Nursing', 'Nurse', 'School', 'Meaning', 'Description']
+  tags: ['SON', 'Department', 'College', 'Nursing', 'Nurse', 'School', 'Meaning', 'Description']
 }, {
   name: 'School of Teacher Education',
   info: 'The School of Teacher Education envisions to develop teachers inbued with the Christian philosophy of education, appreciation and understanding of the role of the teacher in human development, social progress, citizenship training, and commitment to the teaching profession.',
   type: '',
   message: 'The School of Teacher Education envisions to develop teachers inbued with the Christian philosophy of education, appreciation and understanding of the role of the teacher in human development, social progress, citizenship training, and commitment to the teaching profession.',
-  tags: ['STE', 'Department', 'College', 'STE', 'Educ', 'Education', 'Teacher', 'School', 'Meaning', 'Description']
+  tags: ['STE', 'Department', 'College', 'Educ', 'Education', 'Teacher', 'School', 'Meaning', 'Description']
 }, {
   name: 'Admissions and Records Center',
   info: 'The ARC, as the record keeper and the show-window of the University of Baguio, is the central repository of student records that allows the efficient and timely access to and releasing of accurate documents.',
@@ -188,7 +188,7 @@ var information = [{
   info: 'A 4 Year Course, Bachelor\'s Degree, offered in SBAA department.',
   type: '',
   message: 'Bachelor of Science in Business Administration, major in Financial Management (BSBA-FM) is a 4 year Bachelor\'s Degree course offered in the SBAA department.',
-  tags: ['BS', 'BAFM', 'BSBAFM', 'FinMan', 'Bachelor', 'Science', 'Financial', 'Management', 'Program', 'Course', 'SBAA', 'Baccalaureate', 'Available', 'Department']
+  tags: ['BS', 'BAFM', 'BSBAFM', 'FinMan', 'Bachelor', 'Science', 'Financial', 'Management', 'Program', 'Course', 'SBAA', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Business Administration, major in Marketing Management (BSBA-MM)',
   info: '4 Year Course, Bachelor\'s Degree, offered in SBAA department.',
@@ -374,7 +374,7 @@ var information = [{
   info: '4 year course, Bachelor\'s Degree, offered in SLAHS',
   type: '',
   message: 'Bachelor of Arts in Mass Communication (BA-Comm) is a 4 year Bachelor\'s Degree course offered in the SLAHS department.',
-  tags: ['BAComm', 'BA', 'Mass', 'Comm', 'Bachelor', 'Arts', 'Mass', 'Communication', 'Program', 'Course', 'SLAHS', 'Baccalaureate', 'Available']
+  tags: ['BAComm', 'BA', 'Mass', 'Comm', 'Bachelor', 'Arts', 'Communication', 'Program', 'Course', 'SLAHS', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Arts in Political Science(BA-PolSci)',
   info: '4 year course, Bachelor\'s Degree, offered in SLAHS',
@@ -445,8 +445,8 @@ var information = [{
   name: 'Bachelor of Elementary Education, major in General Education (BEEd-GenEd)',
   info: '4 year course, Bachelor\'s Degree, offered in STE department.',
   type: '',
-  message: '4 Years',
-  tags: ['BEEdGenEd', 'BE', 'Ed', 'Gen', 'GenEd', 'Bachelor', 'Elementary', 'Education', 'Major', 'General', 'Education', 'Program', 'Course', 'STE', 'Baccalaureate', 'Available']
+  message: 'Bachelor of Elementary Education, major in General Education (BEEd-GenEd) is a 4 Year Bachelor\'s Degree course offered in the STE department. ',
+  tags: ['BEEdGenEd', 'BE', 'Ed', 'Gen', 'GenEd', 'Bachelor', 'Elementary', 'Major', 'General', 'Education', 'Program', 'Course', 'STE', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Elementary Education, major in Special Education (BEEd-SpEd)',
   info: '4 year course, Bachelor\'s Degree, offered in STE department.',
@@ -830,7 +830,7 @@ var information = [{
   info: 'Allows students to use the office computer. Requirement: Valid ID',
   type: '',
   message: 'Allows students to use the office computer. Requirement: Valid ID.',
-  tags: ['Computers', 'RNDC', 'Service', 'Requirements', 'RNDC', 'Available']
+  tags: ['Computers', 'RNDC', 'Service', 'Requirements', 'Available']
 }, {
   name: 'In-charge of issuance of assessment of school fees/accounts inquiry',
   info: 'The assessment is automatically generated in the student’s portal, but they can also have the printed assessment if they go to the specific windows here that prints the assessment. Requirements: Valid ID',
@@ -1022,7 +1022,7 @@ var information = [{
   info: 'UB Science High Graduate - 100% on tuition and miscellaneous for one year',
   type: '',
   message: 'UB Science High Graduate College Entrance Scholarships are available to incoming freshmen who are: UB Science High Graduate - 100% on tuition and miscellaneous for one year',
-  tags: ['Science', 'Highschool', 'UB', 'Entrance', 'Scholarship', 'Available', 'Offered', 'available']
+  tags: ['Science', 'Highschool', 'UB', 'Entrance', 'Scholarship', 'Offered', 'available']
 }, {
   name: 'College Entrance Scholarships',
   info: '95 and above - 100% on tuition and miscellaneous for one semester, 90 to 94.99 - 75% on tuition and miscellaneous for one semester, 85 to 89.99 - 50% on tuition and miscllaneous for one semester. Requirement: Certification attesting their status, for Ub highschool graduate: application form from Vice president for Academic Affairs',
@@ -1040,7 +1040,7 @@ var information = [{
   info: 'ESE program, High School Student Publication Scholarship (Editor-in-chief/Associate Editor-in-Chief), Best in Englis/Math/Science, Sibling discount, CAT/PMT Corps Commander, High School Student, Government Scholarship(Student Government President/ Student Government Vice President), UB Star examination. Requirements: Certification Attesting their status',
   type: '',
   message: 'These are the other offered College Entrance Scholarships: ESE program, High School Student Publication Scholarship (Editor-in-chief/Associate Editor-in-Chief), Best in Englis/Math/Science, Sibling discount, CAT/PMT Corps Commander, High School Student, Government Scholarship(Student Government President/ Student Government Vice President), UB Star examination. Requirements: Certification Attesting their status.',
-  tags: ['College', 'Entrance', 'Scholarship', 'Science', 'Technologdy', 'Engineering', 'Program', 'Graduates', 'High', 'School', 'Student', 'Publication', 'Editor', 'Best', 'English', 'Math', 'Science', 'CAT', 'PMT', 'Corps', 'Commander', 'Government', 'President', 'Vice', 'STAR', 'offered', 'available']
+  tags: ['College', 'Entrance', 'Scholarship', 'Technologdy', 'Engineering', 'Program', 'Graduates', 'High', 'School', 'Student', 'Publication', 'Editor', 'Best', 'English', 'Math', 'Science', 'CAT', 'PMT', 'Corps', 'Commander', 'Government', 'President', 'Vice', 'STAR', 'offered', 'available']
 }, {
   name: 'Service grants',
   info: 'Student Assitant/ Marshall, UB Employee Dependents, Athletes under the Athletics Department, UB Models, Miss UB Pageant winners, UB Color Guards Scholarship. Requirements: application letter, endorsement letter(if applicable), certificate of employment(if applicable), Official Transcipt of Records',
@@ -1112,13 +1112,13 @@ var information = [{
   info: 'The Services Offered by the Office of Student Affairs are Readmissions (Getting of Dropped Class Cards) and in charge of the Application for Performing Arts Scholarships.',
   type: '',
   message: 'The Services Offered by the Office of Student Affairs are Readmissions (Getting of Dropped Class Cards) and in charge of the Application for Performing Arts Scholarships.',
-  tags: ['Services', 'Offered', 'Available', 'OSA', 'Office', 'Student', 'Affairs', 'Office']
+  tags: ['Services', 'Offered', 'Available', 'OSA', 'Student', 'Affairs', 'Office']
 }, {
   name: 'Services Offered by the Athletics Office',
   info: 'The Services Offered by the Athletics Office are Assisting of students who are qualified for athletic scholarship and Lending of sports equipment.',
   type: '',
   message: 'The Services Offered by the Athletics Office are Assisting of students who are qualified for athletic scholarship and Lending of sports equipment.',
-  tags: ['Services', 'Offered', 'Available', 'Athletics', 'Office', 'Athlete', 'Office']
+  tags: ['Services', 'Offered', 'Available', 'Athletics', 'Office', 'Athlete']
 }, {
   name: 'Services Offered by LARC',
   info: 'The Services Offered by the Linkages, Alumni and Review Center are the Processing of International On The Job Training (IOJT) applicants and exchange scholars, Assisting of the UBAFI in issuing the membership identification cards of its members, and Giving of copies of PRC Board Syllabi for STE Students.',
@@ -1190,7 +1190,7 @@ var information = [{
   info: 'Instigating, inciting, provoking, leading, or taking part in illegal and/ or violent demonstrations or activities, or giving active support thereto in any form or manner whether ﬁnancial, physical, or material.',
   type: '',
   message: '1st Offense sanction will be exclusion so please follow the University Rules and Regulations.',
-  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Instigating', 'Inciting', 'Provoking', 'Leading', 'Taking', 'Part', 'Illegal', 'Violent', 'Demonstrations', 'Activities', 'Giving', 'Support', 'Form', 'Manner', 'Whether' ,'Financial', 'Physical', 'Material', 'Commit']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Instigating', 'Inciting', 'Provoking', 'Leading', 'Taking', 'Part', 'Illegal', 'Violent', 'Demonstrations', 'Activities', 'Giving', 'Support', 'Form', 'Manner', 'Whether', 'Financial', 'Physical', 'Material', 'Commit']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - B',
   info: 'Leading or otherwise taking part in any activity which disrupts University functions or which adversely affects classroom instruction, whether such activity is or is not accompanied by violence, such as disconnecting or tampering with electrical connections, switches, generators, motors, air conditioners, fans, light and ﬁre alarms; giving false alarms, shouting; banging doors, walls, tables, desks, chairs and other acts of rowdiness and disturbances.',
@@ -1322,7 +1322,7 @@ var information = [{
   info: 'Payment of tuition and other fees to persons other than the cashiers/tellers or those authorized to receive them.',
   type: '',
   message: '1st Offense sanction is Reprimand with Warning of Suspension, 2nd offense is Suspension with Warning of Exclusion and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Payment', 'Tuition', 'Other', 'Fees', 'Person', 'People', 'Other', 'Cashiers', 'Tellers', 'Authorized', 'Unauthorized', 'Receive', 'Commit']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Payment', 'Tuition', 'Other', 'Fees', 'Person', 'People', 'Cashiers', 'Tellers', 'Authorized', 'Unauthorized', 'Receive', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - D',
   info: 'Taking examinations or attending classes without having duly enrolled therein or without the required permit.',
@@ -1358,13 +1358,13 @@ var information = [{
   info: 'Acts of vandalism such as defacing and/or writing on walls, paintings, doors, desks, tables, chairs, etc.; tearing of books, notices or circulars; destruction of window panes, toilet bowls, fans, laboratory equipment, water foundations, air conditioners, clocks and other university equipment and furnishings.',
   type: '',
   message: '1st Offense sanction is Suspension with Warning of Exclusion and 2nd offense will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Commit', 'Vandalism', 'Acts', 'Defacing', 'Write', 'Walls', 'Painting', 'Door', 'Desk', 'Table', 'Chair', 'Tearing', 'Book', 'Notice', 'Circular', 'Destruction', 'Window', 'Panes', 'Toilet', 'Bowls', 'Fans', 'Laboratory', 'Equipment', 'Water', 'Foundation', 'Aircon', 'Airconditioner', 'Clock', 'Furniture', 'Commit']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Commit', 'Vandalism', 'Acts', 'Defacing', 'Write', 'Walls', 'Painting', 'Door', 'Desk', 'Table', 'Chair', 'Tearing', 'Book', 'Notice', 'Circular', 'Destruction', 'Window', 'Panes', 'Toilet', 'Bowls', 'Fans', 'Laboratory', 'Equipment', 'Water', 'Foundation', 'Aircon', 'Airconditioner', 'Clock', 'Furniture']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - J',
   info: 'Robbery, thievery and acts of malicious mischief involving university property or that of the members of the academic community, including university guests and callers.',
   type: '',
   message: '1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
-  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Robbery', 'Thievery', 'Acts', 'Malicious', 'Mischief', 'Involving', 'Property', 'Academic', 'Community', 'Including', 'Guests', 'Callers', 'Commit']
+  tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Robbery', 'Thievery', 'Acts', 'Malicious', 'Mischief', 'Involving', 'Property', 'Academic', 'Community', 'Including', 'Guests', 'Callers', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - K',
   info: 'Borrowing money from a fellow student and not paying it back.',

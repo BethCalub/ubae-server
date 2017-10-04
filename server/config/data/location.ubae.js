@@ -800,7 +800,7 @@ var location = [{
   location: 'Security Office',
   type: '',
   message: 'You can report your complaints for suspicious and unusual activities in the Security Office which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['complaints', 'offenses', 'report', 'Request', 'suspicious', 'crimes', 'bully', 'incident', 'accident', 'file', 'bullies']
+  tags: ['complaints', 'offenses', 'report', 'Request', 'suspicious', 'crimes', 'bully', 'incident', 'accident', 'file']
 }, {
   name: 'Where is the lost and found ',
   location: 'Security Office',
@@ -866,7 +866,7 @@ var location = [{
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Transcript of Records at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Transcript', 'Records', 'TOR', 'Get', 'Request', 'Process', 'OTR', 'Official']
+  tags: ['Transcript', 'Records', 'TOR', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Scholastic Records ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
@@ -944,7 +944,7 @@ var location = [{
   location: 'Admissions and Records Center, 2nd Floor D Building',
   type: '',
   message: 'You can process your Change of Name at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
-  tags: ['Change', 'Name', 'Request', 'Request', 'Process']
+  tags: ['Change', 'Name', 'Request', 'Process']
 }, {
   name: 'Where to process Copy of Schedule ',
   location: 'Admissions and Records Center, 2nd Floor D Building',
@@ -1250,7 +1250,7 @@ var location = [{
   location: 'F building, 2nd Floor in front of the UBAFI Office ',
   type: '',
   message: 'The University of Baguio Faculty and Education Workers Union (UBFEWU) is located at the 2nd floor of F building in front of the UBAFI Office. ',
-  tags: ['University', 'Baguio', 'Faculty', 'Education', 'Workers', 'Union', 'UBFEWU', 'Office', 'Office']
+  tags: ['University', 'Baguio', 'Faculty', 'Education', 'Workers', 'Union', 'UBFEWU', 'Office']
 }, {
   name: 'Physical Therapy Center ',
   location: 'D Building, 2nd Floor ',
@@ -1418,7 +1418,7 @@ var location = [{
   location: 'B Building, Ground Floor, Room BC01 ',
   type: '',
   message: 'The Swimming Pool is located at the ground Floor of B Building, Room BC01. ',
-  tags: ['Location', 'Swimming', 'Pool', 'BC01', 'Location']
+  tags: ['Location', 'Swimming', 'Pool', 'BC01']
 }, {
   name: 'SOD Faculty Room ',
   location: 'B Building, 3rd Floor, In front of the General Laboratory Room ',
@@ -1748,12 +1748,8 @@ var location = [{
     'business',
     'administration',
     'accountancy',
-    'location',
-    'department',
-    'Building',
     'BA',
     'MBA',
-    'BA',
     'MA',
     'Master',
     'BSAC',
@@ -1880,8 +1876,6 @@ var location = [{
     'Course',
     'BSCS',
     'BSIT',
-    'Program',
-    'Course',
     'Enrollment'
   ]
 }, {
@@ -1913,35 +1907,16 @@ var location = [{
   location: 'H Building, 2nd Floor',
   type: '',
   message: 'You can enroll that at the SLAHS Department which is located at the 2nd Floor of H Building.',
-  tags: ['SLAHS',
-    'school',
-    'college',
-    'liberal',
-    'arts',
-    'human',
-    'science',
-    'MPA',
-    'Master',
-    'Public',
-    'Administration',
-    'Program',
-    'Course',
-    'MAEng',
-    'Arts',
-    'English',
-    'BABroad',
-    'Bachelor',
-    'Broadcasting',
-    'BAEng',
-    'BAComm',
-    'Mass',
-    'Communication',
-    'Masscom',
-    'mascom',
-    'BAPolSci',
-    'PolSci',
-    'Political',
-    'Science',
+  tags: [
+    'SLAHS', 'school', 'college',
+    'liberal', 'human', 'science',
+    'MPA', 'Master', 'Public',
+    'Administration', 'Program', 'Course',
+    'MAEng', 'Arts', 'English',
+    'BABroad', 'Bachelor', 'Broadcasting',
+    'BAEng', 'BAComm', 'Mass',
+    'Communication', 'Masscom', 'mascom',
+    'BAPolSci', 'PolSci', 'Political',
     'BSPsych',
     'Psychology',
     'BAMusic',
@@ -2015,7 +1990,6 @@ var location = [{
     'Major',
     'General',
     'BEEdSpEd',
-    'Elementary',
     'Special',
     'BSED',
     'Secondary',

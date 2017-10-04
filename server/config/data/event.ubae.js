@@ -56,7 +56,7 @@ var event = [{
   endDate: Date.parse('Jan 6, 2018'),
   type: '',
   message: 'The enrollment for the 2nd Semester will start on the 11th and will end on the 16th of December 2017. We will take a short break and resume the enrollment on the 3rd until the 6th of January 2018. SY 2017-2018.',
-  tags: ['Second', 'Semester', 'Enrollment', 'SY1718', '2nd', 'second', 'semester'],
+  tags: ['Second', 'Semester', 'Enrollment', 'SY1718', '2nd'],
 }, {
   name: 'First Grading Examinations for the 2nd Semester SY 2017-2018',
   event: 'First Grading Examinations for the 2nd Sem, Feb 12-15, 2018 SY 2017-2018',

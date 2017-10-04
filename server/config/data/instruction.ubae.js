@@ -300,7 +300,7 @@ var instruction = [{
   process: ['Proceed to the Library with valid ID'],
   type: '',
   message: 'Kindly proceed to the Centennial Library with your valid ID for clearance signing.',
-  tags: ['Library', 'Clearance', 'Request', 'Signing', 'Service', 'Request', 'Process']
+  tags: ['Library', 'Clearance', 'Request', 'Signing', 'Service', 'Process']
 }, {
   name: 'Library Orientation',
   process: ['1. Just go to the Centennial Library for Library Orientation Request'],
@@ -425,7 +425,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Proceed to OSA and fill up the readmission slip. Be sure to bring your valid ID.',
-  tags: ['Readmission', 'Readmitted', 'claim', 'Dropped', 'Class', 'Card', 'Readmitted', 'classcard', 'Service', 'Process']
+  tags: ['Readmission', 'Readmitted', 'claim', 'Dropped', 'Class', 'Card', 'classcard', 'Service', 'Process']
 }, {
   name: 'Performing Arts',
   process: ['1. Go to student account and fill up scholarship form or yellow form',
@@ -433,7 +433,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Go to the Students Accounts Section and fill up the yellow form. Proceed to OSA and the office director will be the one to process your application.',
-  tags: ['Performing', 'Arts', 'Graces', 'Voices', 'Chamber', 'Orchestra', 'Plug', 'Play', 'Band', 'UBBUK', 'Ethnic', 'Dance', 'Group', 'Process', 'Application', 'Apply', 'Scholarship', 'Service', 'Process']
+  tags: ['Performing', 'Arts', 'Graces', 'Voices', 'Chamber', 'Orchestra', 'Plug', 'Play', 'Band', 'UBBUK', 'Ethnic', 'Dance', 'Group', 'Application', 'Apply', 'Scholarship', 'Service', 'Process']
 }, {
   name: 'Format Editing',
   process: ['1. Go to the RNDC office',
@@ -527,8 +527,8 @@ var instruction = [{
   name: 'Issuance of Promissory Note',
   process: ['1. Fill Up the form from the Student Accounts Section'],
   type: '',
-  message: 'Go to the Students Accounts Section and fill up the form.',
-  tags: ['Promissory', 'Note', 'Request', 'Service', 'Process']
+  message: 'Go to the Students Accounts Section and fill up the form that will be given to you.',
+  tags: ['Promissory', 'Note', 'Request', 'Service', 'Process', 'Temporary', 'Permit', 'Get', 'Avail']
 }, {
   name: 'Issuance of Examination Permits',
   process: ['1. Secure their assessment of fees',
@@ -897,25 +897,13 @@ var instruction = [{
   process: ['1. Go to the SLAHS dean\'s office for assistance'],
   type: '',
   message: 'Please go to the SLAHS dean\'s office to ask for assistance on how to enroll in their department',
-  tags: ['Enrollment',
-    'SLAHS',
-    'school',
-    'college',
-    'liberal',
-    'arts',
-    'human',
-    'sciences',
-    'MPA',
-    'Master',
-    'Public',
-    'Administration',
-    'Program',
-    'Course',
-    'MAEng',
-    'Arts',
-    'English',
-    'BABroad',
-    'Bachelor',
+  tags: [
+    'Enrollment', 'SLAHS', 'school', 
+    'college', 'liberal', 'arts',
+    'human', 'sciences', 'MPA', 
+    'Master', 'Public', 'Administration', 
+    'Program', 'Course', 'MAEng',
+    'English', 'BABroad', 'Bachelor',
     'Broadcasting',
     'BAEng',
     'BAComm',
@@ -994,7 +982,6 @@ var instruction = [{
     'Arts',
     'BEEdGenEd',
     'Bachelor',
-    'Elementary',
     'Major',
     'General',
     'BEEdSpEd',
