@@ -5,6 +5,7 @@ export default function($stateProvider) {
   $stateProvider
     .state('instruction', {
       url: '/instruction',
-      template: '<instruction></instruction>'
+      template: '<instruction></instruction>',
+      authenticate: true
     });
 }
