@@ -62,7 +62,7 @@
             </thead>
             <tbody>
               <tr ng-repeat="entries in informationCtrl.entryList |
-                        filter: { tags: informationCtrl.searchTags, active: true }">
+                        filter: { tags: informationCtrl.searchTags, active: true } | limitTo: 10:0*10">
                 <td style="width: 20px">{{$index + 1}}</td>
                 <td style="width: 200px"><a href="" ng-click="informationCtrl.getEntry(entries._id)" uib-popover="{{entries.info}}" popover-title="{{entries.name}}"
                     popover-trigger="'mouseenter'" popover-placement="top-left" type="button">{{entries.name}}</a></td>

@@ -1,43 +1,23 @@
-<div id="main-sideform">
-    <form role="form">
-      <h3>{{instructionCtrl.dataInfo.name}}</h3>
-      <h5>
-        <span ng-show="instructionCtrl.entryID != ''">Update Entry</span>
-        <span ng-show="instructionCtrl.entryID == ''">Add Entry</span>
-      </h5>
-      <hr>
-  
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" ng-model="instructionCtrl.name" class="form-control" id="name" placeholder="Name" required="required">
-      </div>
-  
-      <div class="form-group">
-        <label for="info">Info</label>
-        <!-- <input type="text" class="form-control" id="" placeholder="Information"> -->
-        <textarea name="info" ng-model="instructionCtrl.details" id="info" placeholder="Information" class="form-control" rows="4" style="resize: none;"
-          required="required"></textarea>
-      </div>
-  
-      <div class="form-group">
-        <label for="message">Message</label>
-        <!-- <input type="text" class="form-control" id="" placeholder="Message"> -->
-        <textarea name="message" ng-model="instructionCtrl.message" id="message" placeholder="Message" class="form-control" rows="4" style="resize: none;" required="required"></textarea>
-      </div>
-  
-      <div class="form-group">
-        <label for="tags">Tags</label>
-        <textarea name="message" ng-model="instructionCtrl.tags" id="tags" placeholder="Tags" class="form-control" rows="4" style="resize: none;" required="required"></textarea>
-      </div>
-  
-      <button type="submit" ng-click="instructionCtrl.saveEntry()" class="btn btn-block btn-default">Submit</button>
-      <button type="submit" ng-click="instructionCtrl.resetForm()" class="btn btn-block btn-default">Reset</button>
-    </form>
-  
+<div  class="confirm" ng-init="instructionCtrl.confirm = true" ng-hide="instructionCtrl.confirm">
+  <h1 style="font-size: 120px;"><span class="glyphicon glyphicon-warning-sign"></span></h1>
+  <h3 class="animateMe">Are you sure you want to {{instructionCtrl.confirmationName}} this entry?</h3>
+  <h5 class="animateMe">This action cannot be undone.</h5>
+  <br>
+  <div class="btn-group">
+      <a ng-if="instructionCtrl.confirmationName == 'archive'" 
+      ng-click="instructionCtrl.archiveEntry(instructionCtrl.confirmationId); instructionCtrl.confirm = true" 
+      class="btn btn-danger">Yes I'm Sure!</a>
+      <a ng-if="instructionCtrl.confirmationName == 'delete'" 
+      ng-click="instructionCtrl.deleteEntry(instructionCtrl.confirmationId); instructionCtrl.confirm = true" 
+      class="btn btn-danger">Yes I'm Sure!</a>
+      <a ng-if="instructionCtrl.confirmationName == 'restore'" 
+      ng-click="instructionCtrl.unarchiveEntry(instructionCtrl.confirmationId); instructionCtrl.confirm = true" 
+      class="btn btn-danger">Yes I'm Sure!</a>
+      <a ng-click="instructionCtrl.confirm = true" class="btn btn-default">Close</a>
+    </div>
 </div>
 
-<div id="main-entries">
-
+<div id="main">
 <div uib-alert style="background-color: #EEEEEE;" ng-show="instructionCtrl.dataInfo.show" close="instructionCtrl.closeDataInfo()">
   <div>
     <h1>{{instructionCtrl.dataInfo.name}}</h1>
@@ -47,19 +27,17 @@
     </ul>
   </div>
 </div>
-
-<div class="container-fluid" id="response">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-sm-7">
-      <h4>{{(instructionCtrl.entryList | filter: { tags: instructionCtrl.searchTags, active: instructionCtrl.filter.archive.selected }).length}}
-        {{instructionCtrl.dataInfo.name}} Entries:</h4>
+    <div class="col-sm-6">
+      <h4>{{(instructionCtrl.entryList | filter: { tags: instructionCtrl.searchTags, active: instructionCtrl.filter.archive.selected
+        }).length}} {{instructionCtrl.dataInfo.name}} Entries: 
+        <a ng-click="instructionCtrl.isCollapsed = !instructionCtrl.isCollapsed; instructionCtrl.resetForm()"
+        uib-popover="This action will open the create form." popover-popup-delay="500"
+        popover-trigger="'mouseenter'" popover-placement="right" class="btn btn-link" style="text-decoration: none;" href="">Create New</a></h4>
     </div>
-    <div class="col-sm-2">
-      <div class="form-group">
-        <select ng-model="instructionCtrl.filter.archive.selected" name="response" ng-options="x for (x, y) in instructionCtrl.filter.archive.options"
-          class="form-control input-sm" required="required">
-            </select>
-      </div>
+    <div class="col-sm-3">
+
     </div>
     <div class="col-sm-3">
       <div class="form-group">
@@ -69,53 +47,147 @@
       </div>
     </div>
   </div>
+  <div class="row">
+    <uib-tabset active="active">
+      <uib-tab index="0" ng-click="instructionCtrl.filter.archive.selected = 'true'">
+        <uib-tab-heading>
+          Active <span class="badge">{{(instructionCtrl.entryList | filter: { active: 'true' }).length}}</span>
+        </uib-tab-heading>
+        <table class="table table-condensed table-hover fixed">
+          <thead>
+            <tr>
+              <th ng-repeat="headers in instructionCtrl.dataInfo.table">{{headers}}</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="entries in instructionCtrl.entryList |
+                      filter: { tags: instructionCtrl.searchTags, active: true }">
+              <td style="width: 20px">{{$index + 1}}</td>
+              <td style="width: 200px"><a href="" ng-click="instructionCtrl.getEntry(entries._id)" uib-popover="{{entries.process}}" popover-title="{{entries.name}}"
+                  popover-trigger="'mouseenter'" popover-placement="top-left" type="button">{{entries.name}}</a></td>
+              <!-- <td>{{entries.info}}</td> -->
+              <td>{{entries.message}}</td>
+              <td style="width: 35%">
+                <ul class="tags">
+                  <li ng-repeat="tags in entries.tags">
+                    <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
+                      {{tags}}
+                    </span>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <button type="button" ng-show="entries.active == true" class="close" ng-click="instructionCtrl.confirm = false; instructionCtrl.confirmationId = entries._id; instructionCtrl.confirmationName = 'archive'"
+                  uib-tooltip="WARNING!!! This action will archive this entry." tooltip-placement="left">A</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </uib-tab>
+      <uib-tab index="1" ng-click="instructionCtrl.filter.archive.selected = 'false'" select="instructionCtrl.alertMe('This table contains archived data that you can restore.')">
+        <uib-tab-heading>
+          Archived <span class="badge">{{(instructionCtrl.entryList | filter: { active: 'false' }).length}}</span>
+        </uib-tab-heading>
 
-  <hr>
-
-  <div class="row list">
-    <table class="table table-condensed table-hover fixed">
-      <thead>
-        <tr>
-          <th ng-repeat="headers in instructionCtrl.dataInfo.table">{{headers}}</th>
-          <th></th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr ng-repeat="entries in instructionCtrl.entryList | 
-          filter: { tags: instructionCtrl.searchTags, active: instructionCtrl.filter.archive.selected }">
-          <td style="width: 20px">{{$index + 1}}</td>
-          <td><a href="" ng-click="instructionCtrl.getEntry(entries._id)">{{entries.name}}</a></td>
-          <td><p ng-repeat="steps in entries.process">{{steps}}</p></td>
-          <td>{{entries.message}}</td>
-          <td style="width: 35%">
-            <ul>
-              <li ng-repeat="tags in entries.tags">
-                <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
-                    {{tags}}
-                  </span>
-              </li>
-            </ul>
-          </td>
-          <td>
-            <button type="button" ng-show="entries.active == false" class="close" ng-click="instructionCtrl.unarchiveEntry(entries._id)" uib-tooltip="WARNING!!! This action will restore this entry to the active list."
-            tooltip-placement="left">R</button></td>
-          <td>
-            <button type="button" ng-show="entries.active == true" class="close" ng-click="instructionCtrl.archiveEntry(entries._id)" uib-tooltip="WARNING!!! This action will archive this entry."
-              tooltip-placement="left">A</button>
-            <button type="button" ng-show="entries.active == false" class="close" ng-click="instructionCtrl.deleteEntry(entries._id)" uib-tooltip="WARNING!!! This action will delete this entry."
-              tooltip-placement="left">D</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+        <table class="table table-condensed table-hover fixed">
+          <thead>
+            <tr>
+              <th ng-repeat="headers in instructionCtrl.dataInfo.table">{{headers}}</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="entries in instructionCtrl.entryList |
+                      filter: { tags: instructionCtrl.searchTags, active: false }">
+              <td style="width: 20px">{{$index + 1}}</td>
+              <td style="width: 200px"><a href="" ng-click="instructionCtrl.getEntry(entries._id)" uib-popover="{{entries.process}}" popover-title="{{entries.name}}"
+                  popover-trigger="'mouseenter'" type="button">{{entries.name}}</a></td>
+              <!-- <td>{{entries.info}}</td> -->
+              <td>{{entries.message}}</td>
+              <td style="width: 35%">
+                <ul class="tags">
+                  <li ng-repeat="tags in entries.tags">
+                    <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
+                                {{tags}}
+                              </span>
+                  </li>
+                </ul>
+              </td>
+              <td>
+                <button type="button" ng-show="entries.active == false" class="close" ng-click="instructionCtrl.confirm = false; instructionCtrl.confirmationId = entries._id; instructionCtrl.confirmationName = 'restore'"
+                  uib-tooltip="WARNING!!! This action will restore this entry to the active list." tooltip-placement="left">R</button></td>
+              <td>
+                <button type="button" ng-show="entries.active == false" class="close" ng-click="instructionCtrl.confirm = false; instructionCtrl.confirmationId = entries._id; instructionCtrl.confirmationName = 'delete'"
+                  uib-tooltip="WARNING!!! This action will delete this entry." tooltip-placement="left">D</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </uib-tab>
+    </uib-tabset>
   </div>
-  <hr>
+</div>
 </div>
 
-<statusbar 
-  style="margin-left: 300px;"
-  table-name="{{instructionCtrl.dataInfo.name}}" 
-  table-entries="{{(instructionCtrl.entryList | filter: { tags: instructionCtrl.searchTags, active: instructionCtrl.archived }).length}}" 
-  action-message="{{instructionCtrl.eventStatus}}"></statusbar>
+<div ng-init="instructionCtrl.isCollapsed = false" ng-show="instructionCtrl.isCollapsed">
+<div class="bottom-form">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-11 input">
+        <h4 style="color:white;">
+            <span ng-show="instructionCtrl.entryID != ''">Edit Existing Entry</span>
+            <span ng-show="instructionCtrl.entryID == ''">Create New Entry</span>
+        </h4>
+      </div>
+      <div class="col-xs-1 input">
+        <button type="button" uib-popover="This action will reset and close this window." popover-trigger="'mouseenter'" popover-popup-delay="500"
+          popover-placement="left" ng-click="instructionCtrl.isCollapsed = !instructionCtrl.isCollapsed; instructionCtrl.resetForm()" style="color: white;" class="close">&times;</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 input">
+        <div class="input-group">
+          <div class="input-group-addon">Name</div>
+          <input type="text" ng-model="instructionCtrl.name" class="form-control" popover-title="Name" uib-popover="The variable 'name' includes office names, department names, programs offered, services offered and scholarships"
+            popover-popup-delay="500" popover-trigger="'mouseenter'" popover-placement="bottom-left" placeholder="Entry Name">
+        </div>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4 input">
+        <label for="details" style="color:white;">Details</label>
+        <textarea name="details" ng-model="instructionCtrl.details" id="input${1/(\w+)/\u\1/g}" popover-title="Details" uib-popover="The variable 'details' contains the description of data." popover-popup-delay="500"
+          popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Information" rows="3" style="resize: none;"
+          required="required"></textarea>
+      </div>
+      <div class="col-sm-4 input">
+        <label for="message" style="color:white;">Message</label>
+        <textarea name="message" ng-model="instructionCtrl.message" id="input${1/(\w+)/\u\1/g}" popover-title="Message" uib-popover="The 'message' variable contains the sentence form of 'info' which will serve as UBAEs reply. Try to make it witty as possible as to emulate more human-like thinking." popover-popup-delay="500"
+          popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Message" rows="3" style="resize: none;"
+          required="required"></textarea>
+      </div>
+      <div class="col-sm-4 input">
+        <label for="tags" style="color:white;">Keywords</label>
+        <textarea name="tags" ng-model="instructionCtrl.tags" id="input${1/(\w+)/\u\1/g}" popover-title="Keywords" uib-popover="The variable 'tags' contains keywords that will be detected to determine which data UBAE will use as a response to the inquiry. Try to add more tags which are possible keywords." popover-popup-delay="500"
+          popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Keywords" rows="3" style="resize: none;"
+          required="required"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-offset-8 col-sm-4 input">
+        <div class="btn-group btn-group-justified">
+          <a ng-click="instructionCtrl.saveEntry()" class="btn btn-danger">Save</a>
+          <a ng-click="instructionCtrl.resetForm()" class="btn btn-default">Reset</a>
+          <a ng-click="instructionCtrl.isCollapsed = !instructionCtrl.isCollapsed; instructionCtrl.resetForm()" class="btn btn-default">Close</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+</div>
+
+<statusbar table-name="{{instructionCtrl.dataInfo.name}}" table-entries="{{(instructionCtrl.entryList | filter: { tags: instructionCtrl.searchTags, active: instructionCtrl.filter.archive.selected }).length}}"
+action-message="{{instructionCtrl.eventStatus}}"></statusbar>

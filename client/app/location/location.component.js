@@ -130,6 +130,7 @@ export class LocationComponent {
       this.tags = response.data.tags;
       this.eventStatus = this.status.select.success;
       console.log(response.statusText);
+      this.isCollapsed = true;
     }, err => {
       this.eventStatus = this.status.select.error;
       console.log(err.statusText);
