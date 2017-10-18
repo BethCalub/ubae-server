@@ -22,10 +22,10 @@
       <div class="col-md-12">
         <ul class="breadcrumb">
           <li>
-            <a ui-sref="main">UBAE</a>
+            <a ui-sref="main">Home</a>
           </li>
-          <li>
-            <a class="active">Event</a>
+          <li class="active">
+            Event
           </li>
         </ul>
       </div>
@@ -54,7 +54,8 @@
           <div class="form-group">
             <label class="control-label" for="name">Name</label>
             <input type="text" name="name" ng-model="eventCtrl.name" class="form-control" popover-title="Name" uib-popover="The variable 'name' includes office names, department names, programs offered, services offered and scholarships"
-              popover-popup-delay="1500" popover-trigger="'mouseenter'" popover-placement="bottom-left" placeholder="Entry Name" required>
+              popover-popup-delay="1500" popover-trigger="'mouseenter'" popover-placement="bottom-left" placeholder="Entry Name"
+              required>
           </div>
           <div class="form-group has-error">
             <p class="help-block" ng-show="eventForm.name.$invalid && eventForm.name.$touched">
@@ -72,10 +73,10 @@
               rows="3" style="resize: none;" required></textarea>
           </div>
           <div class="form-group has-error">
-              <p class="help-block" ng-show="eventForm.details.$invalid && eventForm.details.$touched">
-                Please enter valid details for this entry.
-              </p>
-            </div>
+            <p class="help-block" ng-show="eventForm.details.$invalid && eventForm.details.$touched">
+              Please enter valid details for this entry.
+            </p>
+          </div>
         </div>
         <div class="col-md-4">
           <div class="form-group">
@@ -85,10 +86,10 @@
               style="resize: none;" required></textarea>
           </div>
           <div class="form-group has-error">
-              <p class="help-block" ng-show="eventForm.message.$invalid && eventForm.message.$touched">
-                Please enter a valid message for this entry.
-              </p>
-            </div>
+            <p class="help-block" ng-show="eventForm.message.$invalid && eventForm.message.$touched">
+              Please enter a valid message for this entry.
+            </p>
+          </div>
         </div>
         <div class="col-md-4">
           <div class="form-group">
@@ -98,10 +99,10 @@
               style="resize: none;" required></textarea>
           </div>
           <div class="form-group has-error">
-              <p class="help-block" ng-show="eventForm.tags.$invalid && eventForm.tags.$touched">
-                Please enter valid tags for this entry.
-              </p>
-            </div>
+            <p class="help-block" ng-show="eventForm.tags.$invalid && eventForm.tags.$touched">
+              Please enter valid tags for this entry.
+            </p>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -120,13 +121,13 @@
             </span>
           </div>
           <div class="form-group has-error">
-              <p class="help-block" ng-show="eventForm.startDate.$invalid && eventForm.startDate.$touched">
-                A date is required for an entry.
-              </p>
-              <p class="help-block" ng-if="eventCtrl.startDate > eventCtrl.endDate && eventForm.startDate.$touched" ng-init="eventCtrl.dateValid = false">
-                The start date must be before the end date.
-              </p>
-            </div>
+            <p class="help-block" ng-show="eventForm.startDate.$invalid && eventForm.startDate.$touched">
+              A date is required for an entry.
+            </p>
+            <p class="help-block" ng-if="eventCtrl.startDate > eventCtrl.endDate && eventForm.startDate.$touched" ng-init="eventCtrl.dateValid = false">
+              The start date must be before the end date.
+            </p>
+          </div>
         </div>
         <div class="col-md-4">
           <label class="control-label" for="endDate">End Date</label>
@@ -143,23 +144,27 @@
             </span>
           </div>
           <div class="form-group has-error">
-              <p class="help-block" ng-show="eventForm.endDate.$invalid && eventForm.endDate.$touched">
-                  A date is required for an entry.
-              </p>
-              <p class="help-block" ng-if="eventCtrl.startDate > eventCtrl.endDate && eventForm.endDate.$touched" ng-init="eventCtrl.dateValid = false">
-                The end date must be later than the start date
-              </p>
-              <!-- <p class="help-block" ng-if="eventCtrl.startDate <= eventCtrl.endDate" ng-init="eventCtrl.dateValid = true"> -->
-                &nbsp;
-              </p>
-            </div>
+            <p class="help-block" ng-show="eventForm.endDate.$invalid && eventForm.endDate.$touched">
+              A date is required for an entry.
+            </p>
+            <p class="help-block" ng-if="eventCtrl.startDate > eventCtrl.endDate && eventForm.endDate.$touched" ng-init="eventCtrl.dateValid = false">
+              The end date must be later than the start date
+            </p>
+            <p class="help-block" ng-if="eventCtrl.startDate <= eventCtrl.endDate" ng-init="eventCtrl.dateValid = true">
+              &nbsp;
+            </p>
+          </div>
         </div>
         <div class="col-md-4">
-          <label class="control-label" for="endDate">&nbsp;</label>
-          <div class="btn-group btn-group-justified">
-            <a ng-click="eventCtrl.saveEntry()" ng-hide="eventForm.$invalid || !eventCtrl.dateValid" class="btn btn-danger">Save</a>
-            <a ng-click="eventCtrl.resetForm()" class="btn btn-default">Reset</a>
+          <label class="control-label">&nbsp;<span ng-show="!eventCtrl.confirmSave">Are you sure you want to proceed?</span></label>
+          <div class="btn-group btn-group-justified" ng-init="eventCtrl.confirmSave = true" ng-show="eventCtrl.confirmSave">
+            <a ng-click="eventCtrl.confirmSave = false" ng-hide="eventForm.$invalid || !eventCtrl.dateValid" class="btn btn-danger">Save</a>
+            <a ng-click="eventCtrl.resetForm()" class="btn btn-warning">Reset</a>
             <a ng-click="eventCtrl.isCollapsed = false; eventCtrl.resetForm()" class="btn btn-default">Close</a>
+          </div>
+          <div class="btn-group btn-group-justified" ng-show="!eventCtrl.confirmSave">
+            <a ng-click="eventCtrl.saveEntry(); eventCtrl.confirmSave = true" ng-hide="eventForm.$invalid || !eventCtrl.dateValid" class="btn btn-danger">Confirm</a>
+            <a ng-click="eventCtrl.confirmSave = true" class="btn btn-default">Cancel</a>
           </div>
         </div>
       </div>
@@ -176,7 +181,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-offset-9 col-md-3">
+      <div class="col-md-offset-8 col-md-4">
         <div class="form-group">
           <!-- <label class="sr-only" for="search">Search</label> -->
           <input type="text" class="form-control input-sm" id="search" ng-model="eventCtrl.searchTags" uib-tooltip="Search for information contained in the {{eventCtrl.tableName}} database. This will filter out the information as you type."

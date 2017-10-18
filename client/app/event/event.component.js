@@ -51,7 +51,7 @@ export class EventComponent {
       'The \'message\' variable contains the sentence form of \'event\' which will serve as UBAEs reply. Try to make it witty as possible as to emulate more human-like thinking.',
       'The variable \'tags\' contains keywords that will be detected to determine which data UBAE will use as a response to the inquiry. Try to add more tags which are possible keywords.'],
       show: true,
-      table: ['#', 'Name', 'Start Date', 'End Date', 'Message', 'Tags']
+      table: ['#', 'Name', 'Start', 'End', 'Message', 'Tags']
     };
 
     //data filters
