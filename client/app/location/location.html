@@ -62,7 +62,7 @@
           </thead>
           <tbody>
             <tr ng-repeat="entries in locationCtrl.entryList |
-                      filter: { tags: locationCtrl.searchTags, active: true }">
+                      filter: { tags: locationCtrl.searchTags, active: true } | limitTo: 10:(locationCtrl.currentPage-1)*10">
               <td style="width: 20px">{{$index + 1}}</td>
               <td style="width: 200px"><a href="" ng-click="locationCtrl.getEntry(entries._id)" uib-popover="{{entries.location}}" popover-title="{{entries.name}}"
                   popover-trigger="'mouseenter'" popover-placement="top-left" type="button">{{entries.name}}</a></td>
@@ -100,7 +100,7 @@
           </thead>
           <tbody>
             <tr ng-repeat="entries in locationCtrl.entryList |
-                      filter: { tags: locationCtrl.searchTags, active: false }">
+                      filter: { tags: locationCtrl.searchTags, active: false } | limitTo: 10:(locationCtrl.currentPage-1)*10">
               <td style="width: 20px">{{$index + 1}}</td>
               <td style="width: 200px"><a href="" ng-click="locationCtrl.getEntry(entries._id)" uib-popover="{{entries.location}}" popover-title="{{entries.name}}"
                   popover-trigger="'mouseenter'" type="button">{{entries.name}}</a></td>
@@ -127,6 +127,8 @@
         </table>
       </uib-tab>
     </uib-tabset>
+    <ul class="pager" uib-pager ng-model="locationCtrl.currentPage" total-items="(locationCtrl.entryList | filter: { tags: locationCtrl.searchTags, active: locationCtrl.filter.archive.selected }).length">
+    </ul>
   </div>
 </div>
 </div>
