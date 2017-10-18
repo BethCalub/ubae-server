@@ -6,7 +6,7 @@ import angular from 'angular';
 export class NavbarComponent {
 
   menu = [{
-    title: 'Main',
+    title: 'UBAE',
     state: 'main'
   }, {
     title: 'Feedback',
