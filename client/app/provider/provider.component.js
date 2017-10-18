@@ -26,7 +26,7 @@ export class ProviderComponent {
       'The \'message\' variable contains the sentence form of \'offer\' which will serve as UBAEs reply. Try to make it witty as possible as to emulate more human-like thinking.',
       'The variable \'tags\' contains keywords that will be detected to determine which data UBAE will use as a response to the inquiry. Try to add more tags which are possible keywords.'],
       show: true,
-      table: ['#', 'Name', 'Details', 'Message', 'Tags']
+      table: ['#', 'Name', 'Message', 'Tags']
     };
 
     //data filters
