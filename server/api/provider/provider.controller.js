@@ -13,6 +13,7 @@
 import jsonpatch from 'fast-json-patch';
 import Provider from './provider.model';
 import UbaeNLP from '../ubae/nlp/nlp.stopper';
+import UbaeUtility from '../ubae/nlp/nlp.utility';
 
 function respondWithResult(res, statusCode) {
   statusCode = statusCode || 200;
@@ -84,7 +85,7 @@ export function show(req, res) {
 export function create(req, res) {
   return Provider.create({
     name: req.body.name,
-    offer: req.body.details,
+    offer: UbaeUtility.trimEntries(req.body.details),
     message: req.body.message,
     tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags))
   })
@@ -113,7 +114,7 @@ export function patch(req, res) {
   return Provider.findOneAndUpdate({_id: req.params.id},
     {
       name: req.body.name,
-      offer: req.body.details,
+      offer: UbaeUtility.trimEntries(JSON.stringify(req.body.details)),
       message: req.body.message,
       tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags))
     },
