@@ -17,6 +17,31 @@ export class EventComponent {
       socket: 'event'
     };
 
+    this.altInputFormats = ['M!/d!/yyyy'];
+    this.startDatePicker = {
+      isDatepickerOpen: false,
+      datepickerOptions: {
+        datepickerMode: 'day',
+        showWeeks: true,
+        startingDay: 0, // (0=Sunday, ..., 6=Saturday)
+        minDate: new Date(Date.now()), // must be JS Date
+        maxDate: null, // must be JS Date
+        initDate: null // must be JS Date
+      }
+    };
+
+    this.endDatePicker = {
+      isDatepickerOpen: false,
+      datepickerOptions: {
+        datepickerMode: 'day',
+        showWeeks: true,
+        startingDay: 0, // (0=Sunday, ..., 6=Saturday)
+        minDate: new Date(Date.now()), // must be JS Date
+        maxDate: null, // must be JS Date
+        initDate: null // must be JS Date
+      }
+    };
+
     //data information
     this.dataInfo = {
       name: 'Event',

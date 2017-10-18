@@ -1,72 +1,227 @@
-<div  class="confirm" ng-init="eventCtrl.confirm = true" ng-hide="eventCtrl.confirm">
-  <h1 style="font-size: 120px;"><span class="glyphicon glyphicon-warning-sign"></span></h1>
+<div class="confirm" ng-init="eventCtrl.confirm = true" ng-hide="eventCtrl.confirm">
+  <h1 style="font-size: 120px;">
+    <span class="glyphicon glyphicon-warning-sign"></span>
+  </h1>
   <h3 class="animateMe">Are you sure you want to {{eventCtrl.confirmationName}} this entry?</h3>
   <h5 class="animateMe">This action cannot be undone.</h5>
   <br>
   <div class="btn-group">
-      <a ng-if="eventCtrl.confirmationName == 'archive'" 
-      ng-click="eventCtrl.archiveEntry(eventCtrl.confirmationId); eventCtrl.confirm = true" 
+    <a ng-if="eventCtrl.confirmationName == 'archive'" ng-click="eventCtrl.archiveEntry(eventCtrl.confirmationId); eventCtrl.confirm = true"
       class="btn btn-danger">Yes I'm Sure!</a>
-      <a ng-if="eventCtrl.confirmationName == 'delete'" 
-      ng-click="eventCtrl.deleteEntry(eventCtrl.confirmationId); eventCtrl.confirm = true" 
+    <a ng-if="eventCtrl.confirmationName == 'delete'" ng-click="eventCtrl.deleteEntry(eventCtrl.confirmationId); eventCtrl.confirm = true"
       class="btn btn-danger">Yes I'm Sure!</a>
-      <a ng-if="eventCtrl.confirmationName == 'restore'" 
-      ng-click="eventCtrl.unarchiveEntry(eventCtrl.confirmationId); eventCtrl.confirm = true" 
+    <a ng-if="eventCtrl.confirmationName == 'restore'" ng-click="eventCtrl.unarchiveEntry(eventCtrl.confirmationId); eventCtrl.confirm = true"
       class="btn btn-danger">Yes I'm Sure!</a>
-      <a ng-click="eventCtrl.confirm = true" class="btn btn-default">Close</a>
-    </div>
-</div>
-
-<div id="main">
-<div uib-alert style="background-color: #EEEEEE;" ng-show="eventCtrl.dataInfo.show" close="eventCtrl.closeDataInfo()">
-  <div>
-    <h1>{{eventCtrl.dataInfo.name}}</h1>
-    <p>{{eventCtrl.dataInfo.info}}</p>
-    <ul>
-      <li ng-repeat="entry in eventCtrl.dataInfo.guide">{{entry}}</li>
-    </ul>
+    <a ng-click="eventCtrl.confirm = true" class="btn btn-default">Close</a>
   </div>
 </div>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-6">
-      <h4>{{(eventCtrl.entryList | filter: { tags: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected
-        }).length}} {{eventCtrl.dataInfo.name}} Entries: 
-        <a ng-click="eventCtrl.isCollapsed = !eventCtrl.isCollapsed; eventCtrl.resetForm()"
-        uib-popover="This action will open the create form." popover-popup-delay="500"
-        popover-trigger="'mouseenter'" popover-placement="right" class="btn btn-link" style="text-decoration: none;" href="">Create New</a></h4>
-    </div>
-    <div class="col-sm-3">
 
+<div class="section" style="padding: 50px 0;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="breadcrumb">
+          <li>
+            <a ui-sref="main">UBAE</a>
+          </li>
+          <li>
+            <a class="active">Event</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="col-sm-3">
-      <div class="form-group">
-        <label class="sr-only" for="search">Search</label>
-        <input type="text" class="form-control input-sm" id="search" ng-model="eventCtrl.searchTags" uib-tooltip="Search for information contained in the {{eventCtrl.tableName}} database. This will filter out the information as you type."
-          tooltip-placement="bottom" placeholder="Search {{eventCtrl.dataInfo.name}} Tags">
+    <div class="row">
+      <div class="col-md-12">
+        <div uib-alert style="background-color: #EEEEEE;" ng-show="eventCtrl.dataInfo.show" close="eventCtrl.closeDataInfo()">
+          <h1>{{eventCtrl.dataInfo.name}}</h1>
+          <p>{{eventCtrl.dataInfo.info}}</p>
+          <ul>
+            <li ng-repeat="entry in eventCtrl.dataInfo.guide">{{entry}}</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-  <div class="row">
-    <uib-tabset active="active">
-      <uib-tab index="0" ng-click="eventCtrl.filter.archive.selected = 'true'">
-        <uib-tab-heading>
-          Active <span class="badge">{{(eventCtrl.entryList | filter: { active: 'true' }).length}}</span>
-        </uib-tab-heading>
+  <div class="container-fluid" uib-collapse="!eventCtrl.isCollapsed">
+    <form role="form" name="eventForm" novalidate>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Add/Edit Entry</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <label class="control-label" for="name">Name</label>
+            <input type="text" name="name" ng-model="eventCtrl.name" class="form-control" popover-title="Name" uib-popover="The variable 'name' includes office names, department names, programs offered, services offered and scholarships"
+              popover-popup-delay="1500" popover-trigger="'mouseenter'" popover-placement="bottom-left" placeholder="Entry Name" required>
+          </div>
+          <div class="form-group has-error">
+            <p class="help-block" ng-show="eventForm.name.$invalid && eventForm.name.$touched">
+              Please enter a valid name.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="form-group">
+            <label class="control-label" for="details">Details</label>
+            <textarea name="details" ng-model="eventCtrl.details" id="input${1/(\w+)/\u\1/g}" popover-title="Details" uib-popover="The variable 'details' contains the description of data."
+              popover-popup-delay="1500" popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Information"
+              rows="3" style="resize: none;" required></textarea>
+          </div>
+          <div class="form-group has-error">
+              <p class="help-block" ng-show="eventForm.details.$invalid && eventForm.details.$touched">
+                Please enter valid details for this entry.
+              </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label class="control-label" for="message">Message</label>
+            <textarea name="message" ng-model="eventCtrl.message" id="input${1/(\w+)/\u\1/g}" popover-title="Message" uib-popover="The 'message' variable contains the sentence form of 'info' which will serve as UBAEs reply. Try to make it witty as possible as to emulate more human-like thinking."
+              popover-popup-delay="1500" popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Message" rows="3"
+              style="resize: none;" required></textarea>
+          </div>
+          <div class="form-group has-error">
+              <p class="help-block" ng-show="eventForm.message.$invalid && eventForm.message.$touched">
+                Please enter a valid message for this entry.
+              </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <label class="control-label" for="tags">Tags</label>
+            <textarea name="tags" ng-model="eventCtrl.tags" id="input${1/(\w+)/\u\1/g}" popover-title="Keywords" uib-popover="The variable 'tags' contains keywords that will be detected to determine which data UBAE will use as a response to the inquiry. Try to add more tags which are possible keywords."
+              popover-popup-delay="1500" popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Keywords" rows="3"
+              style="resize: none;" required></textarea>
+          </div>
+          <div class="form-group has-error">
+              <p class="help-block" ng-show="eventForm.tags.$invalid && eventForm.tags.$touched">
+                Please enter valid tags for this entry.
+              </p>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <label class="control-label" for="startDate">Start Date</label>
+          <div class="input-group">
+            <input type="text" name="startDate" class="form-control" uib-datepicker-popup="longDate" datepicker-options="eventCtrl.startDatePicker.datepickerOptions"
+              placeholder="Start Date Ex. 04/20/2017" ng-model="eventCtrl.startDate" is-open="eventCtrl.startDatePicker.isDatepickerOpen"
+              ng-required="true" close-text="Close" alt-input-formats="eventCtrl.altInputFormats" popover-title="Start Date"
+              uib-popover="The variable 'name' includes office names, department names, programs offered, services offered and scholarships"
+              popover-popup-delay="1500" popover-trigger="'mouseenter'" popover-placement="top-left" />
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default" ng-click="eventCtrl.startDatePicker.isDatepickerOpen = !eventCtrl.startDatePicker.isDatepickerOpen">
+                <i class="glyphicon glyphicon-calendar"></i>
+              </button>
+            </span>
+          </div>
+          <div class="form-group has-error">
+              <p class="help-block" ng-show="eventForm.startDate.$invalid && eventForm.startDate.$touched">
+                A date is required for an entry.
+              </p>
+              <p class="help-block" ng-if="eventCtrl.startDate > eventCtrl.endDate && eventForm.startDate.$touched" ng-init="eventCtrl.dateValid = false">
+                The start date must be before the end date.
+              </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <label class="control-label" for="endDate">End Date</label>
+          <div class="input-group">
+            <input type="text" name="endDate" class="form-control" uib-datepicker-popup="longDate" datepicker-options="eventCtrl.endDatePicker.datepickerOptions"
+              placeholder="Start Date Ex. 04/20/2017" ng-model="eventCtrl.endDate" is-open="eventCtrl.endDatePicker.isDatepickerOpen"
+              ng-required="true" close-text="Close" alt-input-formats="eventCtrl.altInputFormats" popover-title="End Date"
+              uib-popover="The variable 'name' includes office names, department names, programs offered, services offered and scholarships"
+              popover-popup-delay="1500" popover-trigger="'mouseenter'" popover-placement="top-left" />
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default" ng-click="eventCtrl.endDatePicker.isDatepickerOpen = !eventCtrl.endDatePicker.isDatepickerOpen">
+                <i class="glyphicon glyphicon-calendar"></i>
+              </button>
+            </span>
+          </div>
+          <div class="form-group has-error">
+              <p class="help-block" ng-show="eventForm.endDate.$invalid && eventForm.endDate.$touched">
+                  A date is required for an entry.
+              </p>
+              <p class="help-block" ng-if="eventCtrl.startDate > eventCtrl.endDate && eventForm.endDate.$touched" ng-init="eventCtrl.dateValid = false">
+                The end date must be later than the start date
+              </p>
+              <!-- <p class="help-block" ng-if="eventCtrl.startDate <= eventCtrl.endDate" ng-init="eventCtrl.dateValid = true"> -->
+                &nbsp;
+              </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+          <label class="control-label" for="endDate">&nbsp;</label>
+          <div class="btn-group btn-group-justified">
+            <a ng-click="eventCtrl.saveEntry()" ng-hide="eventForm.$invalid || !eventCtrl.dateValid" class="btn btn-danger">Save</a>
+            <a ng-click="eventCtrl.resetForm()" class="btn btn-default">Reset</a>
+            <a ng-click="eventCtrl.isCollapsed = false; eventCtrl.resetForm()" class="btn btn-default">Close</a>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h4>{{(eventCtrl.entryList | filter: { tags: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected }).length}}
+          {{eventCtrl.dataInfo.name}} Entries:
+          <a ng-click="eventCtrl.isCollapsed = true; eventCtrl.resetForm()" uib-popover="This action will open the create form." popover-popup-delay="1500"
+            popover-trigger="'mouseenter'" popover-placement="right" class="btn btn-link" style="text-decoration: none;" href="">Create New</a>
+        </h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-offset-9 col-md-3">
+        <div class="form-group">
+          <!-- <label class="sr-only" for="search">Search</label> -->
+          <input type="text" class="form-control input-sm" id="search" ng-model="eventCtrl.searchTags" uib-tooltip="Search for information contained in the {{eventCtrl.tableName}} database. This will filter out the information as you type."
+            tooltip-placement="bottom" placeholder="Search {{eventCtrl.dataInfo.name}} Tags">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <uib-tabset active="eventCtrl.active">
+          <uib-tab index="0" ng-click="eventCtrl.filter.archive.selected = 'true'">
+            <uib-tab-heading>
+              Active
+              <span class="badge">{{(eventCtrl.entryList | filter: { active: 'true' }).length}}</span>
+            </uib-tab-heading>
+
+          </uib-tab>
+          <uib-tab index="1" ng-click="eventCtrl.filter.archive.selected = 'false'" select="eventCtrl.alertMe('This table contains archived data that you can restore.')">
+            <uib-tab-heading>
+              Archived
+              <span class="badge">{{(eventCtrl.entryList | filter: { active: 'false' }).length}}</span>
+            </uib-tab-heading>
+          </uib-tab>
+        </uib-tabset>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
         <table class="table table-condensed table-hover fixed">
           <thead>
             <tr>
               <th ng-repeat="headers in eventCtrl.dataInfo.table">{{headers}}</th>
-              <th></th>
+              <th ng-if="eventCtrl.filter.archive.selected == 'true'"></th>
+              <th ng-if="eventCtrl.filter.archive.selected == 'false'"></th>
+              <th ng-if="eventCtrl.filter.archive.selected == 'false'"></th>
             </tr>
           </thead>
           <tbody>
             <tr ng-repeat="entries in eventCtrl.entryList |
-                      filter: { tags: eventCtrl.searchTags, active: true }">
+                filter: { tags: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected } | limitTo: 10:(eventCtrl.currentPage-1)*10">
               <td style="width: 20px">{{$index + 1}}</td>
-              <td style="width: 200px"><a href="" ng-click="eventCtrl.getEntry(entries._id)" uib-popover="{{entries.event}}" popover-title="{{entries.name}}"
-                  popover-trigger="'mouseenter'" popover-placement="top-left" type="button">{{entries.name}}</a></td>
-              <!-- <td>{{entries.info}}</td> -->
+              <td style="width: 20%">
+                <a href="" ng-click="eventCtrl.getEntry(entries._id)" uib-popover="{{entries.event}}" popover-title="{{entries.name}}" popover-trigger="'mouseenter'"
+                  popover-placement="top-left" type="button">{{entries.name}}</a>
+              </td>
               <td>{{entries.startDate | date: "shortDate"}}</td>
               <td>{{entries.endDate | date: "shortDate"}}</td>
               <td>{{entries.message}}</td>
@@ -79,133 +234,31 @@
                   </li>
                 </ul>
               </td>
-              <td>
-                <button type="button" ng-show="entries.active == true" class="close" ng-click="eventCtrl.confirm = false; eventCtrl.confirmationId = entries._id; eventCtrl.confirmationName = 'archive'"
+              <td ng-show="entries.active == true">
+                <button type="button" class="close" ng-click="eventCtrl.confirm = false; eventCtrl.confirmationId = entries._id; eventCtrl.confirmationName = 'archive'"
                   uib-tooltip="WARNING!!! This action will archive this entry." tooltip-placement="left">A</button>
               </td>
-            </tr>
-          </tbody>
-        </table>
-      </uib-tab>
-      <uib-tab index="1" ng-click="eventCtrl.filter.archive.selected = 'false'" select="eventCtrl.alertMe('This table contains archived data that you can restore.')">
-        <uib-tab-heading>
-          Archived <span class="badge">{{(eventCtrl.entryList | filter: { active: 'false' }).length}}</span>
-        </uib-tab-heading>
-
-        <table class="table table-condensed table-hover fixed">
-          <thead>
-            <tr>
-              <th ng-repeat="headers in eventCtrl.dataInfo.table">{{headers}}</th>
-              <th></th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr ng-repeat="entries in eventCtrl.entryList |
-                      filter: { tags: eventCtrl.searchTags, active: false }">
-              <td style="width: 20px">{{$index + 1}}</td>
-              <td style="width: 200px"><a href="" ng-click="eventCtrl.getEntry(entries._id)" uib-popover="{{entries.event}}" popover-title="{{entries.name}}"
-                  popover-trigger="'mouseenter'" type="button">{{entries.name}}</a></td>
-              <!-- <td>{{entries.info}}</td> -->
-              <td>{{entries.startDate | date: "shortDate"}}</td>
-              <td>{{entries.endDate | date: "shortDate"}}</td>
-              <td>{{entries.message}}</td>
-              <td style="width: 35%">
-                <ul class="tags">
-                  <li ng-repeat="tags in entries.tags">
-                    <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
-                                {{tags}}
-                              </span>
-                  </li>
-                </ul>
+              <td ng-show="entries.active == false">
+                <button type="button" class="close" ng-click="eventCtrl.confirm = false; eventCtrl.confirmationId = entries._id; eventCtrl.confirmationName = 'restore'"
+                  uib-tooltip="WARNING!!! This action will restore this entry to the active list." tooltip-placement="left">R</button>
               </td>
-              <td>
-                <button type="button" ng-show="entries.active == false" class="close" ng-click="eventCtrl.confirm = false; eventCtrl.confirmationId = entries._id; eventCtrl.confirmationName = 'restore'"
-                  uib-tooltip="WARNING!!! This action will restore this entry to the active list." tooltip-placement="left">R</button></td>
-              <td>
-                <button type="button" ng-show="entries.active == false" class="close" ng-click="eventCtrl.confirm = false; eventCtrl.confirmationId = entries._id; eventCtrl.confirmationName = 'delete'"
+              <td ng-show="entries.active == false">
+                <button type="button" class="close" ng-click="eventCtrl.confirm = false; eventCtrl.confirmationId = entries._id; eventCtrl.confirmationName = 'delete'"
                   uib-tooltip="WARNING!!! This action will delete this entry." tooltip-placement="left">D</button>
               </td>
             </tr>
           </tbody>
         </table>
-      </uib-tab>
-    </uib-tabset>
-  </div>
-</div>
-</div>
-
-<div ng-init="eventCtrl.isCollapsed = false" ng-show="eventCtrl.isCollapsed">
-<div class="bottom-form">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-11 input">
-        <h4 style="color:white;">
-            <span ng-show="eventCtrl.entryID != ''">Edit Existing Entry</span>
-            <span ng-show="eventCtrl.entryID == ''">Create New Entry</span>
-        </h4>
-      </div>
-      <div class="col-xs-1 input">
-        <button type="button" uib-popover="This action will reset and close this window." popover-trigger="'mouseenter'" popover-popup-delay="500"
-          popover-placement="left" ng-click="eventCtrl.isCollapsed = !eventCtrl.isCollapsed; eventCtrl.resetForm()" style="color: white;" class="close">&times;</button>
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 input">
-        <div class="input-group">
-          <div class="input-group-addon">Name</div>
-          <input type="text" ng-model="eventCtrl.name" class="form-control" popover-title="Name" uib-popover="The variable 'name' includes office names, department names, programs offered, services offered and scholarships"
-            popover-popup-delay="500" popover-trigger="'mouseenter'" popover-placement="bottom-left" placeholder="Entry Name">
-        </div>
-
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4 input">
-        <label for="details" style="color:white;">Details</label>
-        <textarea name="details" ng-model="eventCtrl.details" id="input${1/(\w+)/\u\1/g}" popover-title="Details" uib-popover="The variable 'details' contains the description of data." popover-popup-delay="500"
-          popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Information" rows="3" style="resize: none;"
-          required="required"></textarea>
-      </div>
-      <div class="col-sm-4 input">
-        <label for="message" style="color:white;">Message</label>
-        <textarea name="message" ng-model="eventCtrl.message" id="input${1/(\w+)/\u\1/g}" popover-title="Message" uib-popover="The 'message' variable contains the sentence form of 'info' which will serve as UBAEs reply. Try to make it witty as possible as to emulate more human-like thinking." popover-popup-delay="500"
-          popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Message" rows="3" style="resize: none;"
-          required="required"></textarea>
-      </div>
-      <div class="col-sm-4 input">
-        <label for="tags" style="color:white;">Keywords</label>
-        <textarea name="tags" ng-model="eventCtrl.tags" id="input${1/(\w+)/\u\1/g}" popover-title="Keywords" uib-popover="The variable 'tags' contains keywords that will be detected to determine which data UBAE will use as a response to the inquiry. Try to add more tags which are possible keywords." popover-popup-delay="500"
-          popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Keywords" rows="3" style="resize: none;"
-          required="required"></textarea>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4 input">
-          <div class="input-group">
-              <div class="input-group-addon">Start Date</div>
-              <input type="text" uib-datepicker-popup="{{'MM/dd/yyyy'}}" id="startDate" placeholder="Start Date Ex. 04/20/2017" ng-model="eventCtrl.startDate" class="form-control" popover-title="Start Date" uib-popover="The variable 'name' includes office names, department names, programs offered, services offered and scholarships"
-                popover-popup-delay="500" popover-trigger="'mouseenter'" popover-placement="top-left">
-            </div>
-      </div>
-      <div class="col-sm-4 input">
-          <div class="input-group">
-              <div class="input-group-addon">End Date</div>
-              <input type="text" uib-datepicker-popup="{{'MM/dd/yyyy'}}" id="startDate" placeholder="Start Date Ex. 04/20/2017" ng-model="eventCtrl.endDate" class="form-control" popover-title="End Date" uib-popover="The variable 'name' includes office names, department names, programs offered, services offered and scholarships"
-                popover-popup-delay="500" popover-trigger="'mouseenter'" popover-placement="top-left">
-            </div>
-      </div>
-      <div class="col-sm-4 input">
-        <div class="btn-group btn-group-justified">
-          <a ng-click="eventCtrl.saveEntry()" class="btn btn-danger">Save</a>
-          <a ng-click="eventCtrl.resetForm()" class="btn btn-default">Reset</a>
-          <a ng-click="eventCtrl.isCollapsed = !eventCtrl.isCollapsed; eventCtrl.resetForm()" class="btn btn-default">Close</a>
-        </div>
+      <div class="col-md-12 text-center">
+        <ul uib-pagination total-items="(eventCtrl.entryList | filter: { tags: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected }).length"
+          ng-model="eventCtrl.currentPage" max-size="5" class="pagination-sm" boundary-links="true" force-ellipses="true"></ul>
       </div>
     </div>
   </div>
-</div>
 </div>
 
 <statusbar table-name="{{eventCtrl.dataInfo.name}}" table-entries="{{(eventCtrl.entryList | filter: { tags: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected }).length}}"
-action-message="{{eventCtrl.eventStatus}}"></statusbar>
+  action-message="{{eventCtrl.eventStatus}}"></statusbar>
