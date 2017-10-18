@@ -1473,6 +1473,84 @@ var information = [{
   type: '',
   message: 'This is the outright barring of the erring student from the University. As distinguished from exclusion, it is imposed and implemented during the semester or term when the offense was committed. Expulsion is an extreme penalty on an erring pupil or student consisting of his exclusion from admission to any public or private school in the Philippines and which requires the prior approval of the Commission on Higher Education.  The penalty may be imposed for acts or offenses constituting gross misconduct, dishonesty, hazing, carrying deadly weapons, immorality, selling and/or possession of prohibited drugs or marijuana, drug dependency, drunkenness, hooliganism, vandalism, and other serious offenses such as assaulting a pupil or student or school personnel, instigating or leading illegal strikes or similar concerted activities resulting in the stoppage of classes, preventing or threatening any pupil or student or school personnel from entering the school premises or attending classes or discharging their duties, forging or tampering with school records, forms and documents. ',
   tags: ['University', 'Administrative', 'Sanction', 'Expulsion', 'Punishment', 'Offense', 'Commit']
+}, {
+  name: 'University of Baguio Vision ',
+  info: 'In pursuit of perfection, the University of Baguio is committed to provide balanced quality education by nurturing academic excellence, relevant social skills and ethical values in a fun-learning environment.',
+  type: '',
+  message: 'In pursuit of perfection, the University of Baguio is committed to provide balanced quality education by nurturing academic excellence, relevant social skills and ethical values in a fun-learning environment.',
+  tags: ['University', 'Baguio', 'Vision']
+}, {
+  name: 'University of Baguio Mission ',
+  info: 'The University of Baguio commits itself to the development of a graduate who possesses: 1. Christian values, 2. academic excellence and professional competence, 3. social awareness and involvement, 4. sense of responsibility and accountability, 5. dynamic Filipinism 6. consciousness for personal health and physical well-being, and 7. deep concern for the environment',
+  type: '',
+  message: 'The University of Baguio commits itself to the development of a graduate who possesses: 1. Christian values, 2. academic excellence and professional competence, 3. social awareness and involvement, 4. sense of responsibility and accountability, 5. dynamic Filipinism 6. consciousness for personal health and physical well-being, and 7. deep concern for the environment',
+  tags: ['University', 'Baguio', 'Mission']
+}, {
+  name: 'School of Business Administration and Accountancy Mission',
+  info: 'The School of Business Administration and Accountancy aims to graduate responsible and conscientious accounting and business professionals who are respected members of the community.',
+  type: '',
+  message: 'The School of Business Administration and Accountancy aims to graduate responsible and conscientious accounting and business professionals who are respected members of the community.',
+  tags: ['SBAA', 'Department', 'College', 'Accounting', 'Accountancy', 'Business', 'Administration', 'School', 'mission']
+}, {
+  name: 'School of Criminal Justice and Public Safety Mission',
+  info: 'The School of Criminal Justice and Public Safety, in its dynamic atmosphere for learning, endeavors to train future Criminologists and Forensic Scientists who embody the ideals of patriotism, justice, truth, integrity and service.',
+  type: '',
+  message: 'The School of Criminal Justice and Public Safety, in its dynamic atmosphere for learning, endeavors to train future Criminologists and Forensic Scientists who embody the ideals of patriotism, justice, truth, integrity and service.',
+  tags: ['SCJPS', 'Department', 'College', 'crim', 'police', 'Criminal', 'Justice', 'Public', 'Safety', 'School', 'mission']
+}, {
+  name: 'School of Engineering and Architecture Mission',
+  info: 'The School of Engineering and Architecture, in a dynamic and relevant academic environment, is committed to develop internationally-competitive experts in their field of specialization.',
+  type: '',
+  message: 'The School of Engineering and Architecture, in a dynamic and relevant academic environment, is committed to develop internationally-competitive experts in their field of specialization.',
+  tags: ['SEA', 'Department', 'College', 'Engineering', 'Engineer', 'Architecture', 'Arki', 'School', 'mission']
+}, {
+  name: 'School of International Hospitality and Tourism Management Mission',
+  info: 'The School of International Hospitality and Tourism Management commits itself to train worldwide experts in the industry.',
+  type: '',
+  message: 'The School of International Hospitality and Tourism Management commits itself to train worldwide experts in the industry.',
+  tags: ['SIHTM', 'Department', 'College', 'HRM', 'International', 'Hospitality', 'Tourism', 'Management', 'School', 'mission']
+}, {
+  name: 'School of Information Technology Mission',
+  info: 'The School of Information Technology envisions itself as a leading educator that develops students to become competent, innovative, and morally upright information technology specialists.',
+  type: '',
+  message: 'The School of Information Technology envisions itself as a leading educator that develops students to become competent, innovative, and morally upright information technology specialists.',
+  tags: ['SIT', 'IT', 'Information', 'Technology', 'CS', 'ComSci', 'CompSci', 'COE', 'Department', 'College', 'School', 'mission']
+}, {
+  name: 'School of Liberal Arts and Human Sciences Mission',
+  info: 'The School of Liberal Arts and Human Sciences provides its students with total education apt to their chosen career.',
+  type: '',
+  message: 'The School of Liberal Arts and Human Sciences provides its students with total education apt to their chosen career.',
+  tags: ['SLAHS', 'Department', 'College', 'Liberal', 'Arts', 'Human', 'Sciences', 'School', 'mission']
+}, {
+  name: 'School of Natural Sciences Mission',
+  info: 'The School of Natural Sciences is a dynamic and value oriented community committed to the advancement of the modern health caresystem.',
+  type: '',
+  message: 'The School of Natural Sciences is a dynamic and value oriented community committed to the advancement of the modern health caresystem.',
+  tags: ['SNS', 'Department', 'College', 'Natural', 'Sciences', 'School', 'mission']
+}, {
+  name: 'School of Dentistry Mission',
+  info: 'The School of Dentistry is committed in providing excellent dental education to produce competitive and socially responsible dentists.',
+  type: '',
+  message: 'The School of Dentistry is committed in providing excellent dental education to produce competitive and socially responsible dentists.',
+  tags: ['SOD', 'Department', 'College', 'Dentist', 'Dentistry', 'School', 'mission']
+}, {
+  name: 'School of Law Mission',
+  info: 'The University of Baguio School of Law endows advocates of law to advance the promotion of justice through adequate quality Legal Education.',
+  type: '',
+  message: 'The University of Baguio School of Law endows advocates of law to advance the promotion of justice through adequate quality Legal Education.',
+  tags: ['SOL', 'Department', 'College', 'Law', 'Lawyer', 'School', 'mission']
+}, {
+  name: 'School of Nursing Mission',
+  info: 'The School of Nursing commits itself to the development of exceptionally competent and value-driven health professionals.',
+  type: '',
+  message: 'The School of Nursing commits itself to the development of exceptionally competent and value-driven health professionals.',
+  tags: ['SON', 'Department', 'College', 'Nursing', 'Nurse', 'School', 'mission']
+}, {
+  name: 'School of Teacher Education Mission',
+  info: 'The School of Teacher Education envisions to develop teachers inbued with the Christian philosophy of education, appreciation and understanding of the role of the teacher in human development, social progress, citizenship training, and commitment to the teaching profession.',
+  type: '',
+  message: 'The School of Teacher Education envisions to develop teachers inbued with the Christian philosophy of education, appreciation and understanding of the role of the teacher in human development, social progress, citizenship training, and commitment to the teaching profession.',
+  tags: ['STE', 'Department', 'College', 'Educ', 'Education', 'Teacher', 'School', 'mission']
 }];
 
 exports.information = information;
