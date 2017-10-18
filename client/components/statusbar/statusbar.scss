@@ -9,13 +9,13 @@
 #statusbar {
   @extend .flexbox-statusbar;
   position: fixed;
-  background-color: rgba(70, 70, 70, 1);
+  background-color: rgba(70, 70, 70, .95);
   color: white;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 30px;
-  padding: 0 15px;
+  // height: 30px;
+  padding: 3px 15px;
   z-index: 1000;
   .left-status {
     display: flex;
