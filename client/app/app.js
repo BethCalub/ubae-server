@@ -20,7 +20,6 @@ import _Auth from '../components/auth/auth.module';
 import account from './account';
 import admin from './admin';
 import navbar from '../components/navbar/navbar.component';
-import sidenav from '../components/sidenav/sidenav.directive';
 import statusbar from '../components/statusbar/statusbar.directive';
 import modal from '../components/modal/modal.service';
 import footer from '../components/footer/footer.component';
@@ -29,7 +28,6 @@ import constants from './app.constants';
 import util from '../components/util/util.module';
 import socket from '../components/socket/socket.service';
 import ubae from './ubae/ubae.component';
-
 import ResponseComponent from './response/response.component';
 import EventComponent from './event/event.component';
 import FeedbackComponent from './feedback/feedback.component';
@@ -42,7 +40,7 @@ import DevelopmentComponent from './development/development.component';
 import './app.scss';
 
 angular.module('ubaeApiApp', [ngAnimate, ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
-  uiBootstrap, _Auth, account, admin, 'validation.match', ubae, modal, navbar, sidenav, footer, main, constants,
+  uiBootstrap, _Auth, account, admin, 'validation.match', ubae, modal, navbar, footer, main, constants,
   socket, util, statusbar,
   ResponseComponent,
   EventComponent,
