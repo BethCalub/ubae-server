@@ -1,20 +1,19 @@
-<div  class="confirm" ng-init="informationCtrl.confirm = true" ng-hide="informationCtrl.confirm">
-    <h1 style="font-size: 120px;"><span class="glyphicon glyphicon-warning-sign"></span></h1>
-    <h3 class="animateMe">Are you sure you want to {{informationCtrl.confirmationName}} this entry?</h3>
-    <h5 class="animateMe">This action cannot be undone.</h5>
-    <br>
-    <div class="btn-group">
-        <a ng-if="informationCtrl.confirmationName == 'archive'" 
-        ng-click="informationCtrl.archiveEntry(informationCtrl.confirmationId); informationCtrl.confirm = true" 
-        class="btn btn-danger">Yes I'm Sure!</a>
-        <a ng-if="informationCtrl.confirmationName == 'delete'" 
-        ng-click="informationCtrl.deleteEntry(informationCtrl.confirmationId); informationCtrl.confirm = true" 
-        class="btn btn-danger">Yes I'm Sure!</a>
-        <a ng-if="informationCtrl.confirmationName == 'restore'" 
-        ng-click="informationCtrl.unarchiveEntry(informationCtrl.confirmationId); informationCtrl.confirm = true" 
-        class="btn btn-danger">Yes I'm Sure!</a>
-        <a ng-click="informationCtrl.confirm = true" class="btn btn-default">Close</a>
-      </div>
+<div class="confirm" ng-init="informationCtrl.confirm = true" ng-hide="informationCtrl.confirm">
+  <h1 style="font-size: 120px;">
+    <span class="glyphicon glyphicon-warning-sign"></span>
+  </h1>
+  <h3 class="animateMe">Are you sure you want to {{informationCtrl.confirmationName}} this entry?</h3>
+  <h5 class="animateMe">This action cannot be undone.</h5>
+  <br>
+  <div class="btn-group">
+    <a ng-if="informationCtrl.confirmationName == 'archive'" ng-click="informationCtrl.archiveEntry(informationCtrl.confirmationId); informationCtrl.confirm = true"
+      class="btn btn-danger">Yes I'm Sure!</a>
+    <a ng-if="informationCtrl.confirmationName == 'delete'" ng-click="informationCtrl.deleteEntry(informationCtrl.confirmationId); informationCtrl.confirm = true"
+      class="btn btn-danger">Yes I'm Sure!</a>
+    <a ng-if="informationCtrl.confirmationName == 'restore'" ng-click="informationCtrl.unarchiveEntry(informationCtrl.confirmationId); informationCtrl.confirm = true"
+      class="btn btn-danger">Yes I'm Sure!</a>
+    <a ng-click="informationCtrl.confirm = true" class="btn btn-default">Close</a>
+  </div>
 </div>
 
 <div id="main">
@@ -29,19 +28,20 @@
   </div>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-sm-5">
         <h4>{{(informationCtrl.entryList | filter: { tags: informationCtrl.searchTags, active: informationCtrl.filter.archive.selected
-          }).length}} {{informationCtrl.dataInfo.name}} Entries: 
-          <a ng-click="informationCtrl.isCollapsed = !informationCtrl.isCollapsed; informationCtrl.resetForm()"
-          uib-popover="This action will open the create form." popover-popup-delay="500"
-          popover-trigger="'mouseenter'" popover-placement="right" class="btn btn-link" style="text-decoration: none;" href="">Create New</a></h4>
+          }).length}} {{informationCtrl.dataInfo.name}} Entries:
+          <a ng-click="informationCtrl.isCollapsed = !informationCtrl.isCollapsed; informationCtrl.resetForm()" uib-popover="This action will open the create form."
+            popover-popup-delay="500" popover-trigger="'mouseenter'" popover-placement="right" class="btn btn-link" style="text-decoration: none;"
+            href="">Create New</a>
+        </h4>
       </div>
-      <div class="col-sm-3">
+      <div class="col-sm-4">
 
       </div>
       <div class="col-sm-3">
         <div class="form-group">
-          <label class="sr-only" for="search">Search</label>
+          <label for="search">Search Entries</label>
           <input type="text" class="form-control input-sm" id="search" ng-model="informationCtrl.searchTags" uib-tooltip="Search for information contained in the {{informationCtrl.tableName}} database. This will filter out the information as you type."
             tooltip-placement="bottom" placeholder="Search {{informationCtrl.dataInfo.name}} Tags">
         </div>
@@ -51,8 +51,10 @@
       <uib-tabset active="active">
         <uib-tab index="0" ng-click="informationCtrl.filter.archive.selected = 'true'">
           <uib-tab-heading>
-            Active <span class="badge">{{(informationCtrl.entryList | filter: { active: 'true' }).length}}</span>
+            Active
+            <span class="badge">{{(informationCtrl.entryList | filter: { active: 'true' }).length}}</span>
           </uib-tab-heading>
+
           <table class="table table-condensed table-hover fixed">
             <thead>
               <tr>
@@ -62,10 +64,12 @@
             </thead>
             <tbody>
               <tr ng-repeat="entries in informationCtrl.entryList |
-                        filter: { tags: informationCtrl.searchTags, active: true } | limitTo: 10:0*10">
+                        filter: { tags: informationCtrl.searchTags, active: true } | limitTo: 10:(informationCtrl.currentPage-1)*10">
                 <td style="width: 20px">{{$index + 1}}</td>
-                <td style="width: 200px"><a href="" ng-click="informationCtrl.getEntry(entries._id)" uib-popover="{{entries.info}}" popover-title="{{entries.name}}"
-                    popover-trigger="'mouseenter'" popover-placement="top-left" type="button">{{entries.name}}</a></td>
+                <td style="width: 200px">
+                  <a href="" ng-click="informationCtrl.getEntry(entries._id)" uib-popover="{{entries.info}}" popover-title="{{entries.name}}"
+                    popover-trigger="'mouseenter'" popover-placement="top-left" type="button">{{entries.name}}</a>
+                </td>
                 <!-- <td>{{entries.info}}</td> -->
                 <td>{{entries.message}}</td>
                 <td style="width: 35%">
@@ -87,7 +91,8 @@
         </uib-tab>
         <uib-tab index="1" ng-click="informationCtrl.filter.archive.selected = 'false'" select="informationCtrl.alertMe('This table contains archived data that you can restore.')">
           <uib-tab-heading>
-            Archived <span class="badge">{{(informationCtrl.entryList | filter: { active: 'false' }).length}}</span>
+            Archived
+            <span class="badge">{{(informationCtrl.entryList | filter: { active: 'false' }).length}}</span>
           </uib-tab-heading>
 
           <table class="table table-condensed table-hover fixed">
@@ -100,24 +105,27 @@
             </thead>
             <tbody>
               <tr ng-repeat="entries in informationCtrl.entryList |
-                        filter: { tags: informationCtrl.searchTags, active: false }">
+                        filter: { tags: informationCtrl.searchTags, active: false } | limitTo: 10:(informationCtrl.currentPage-1)*10">
                 <td style="width: 20px">{{$index + 1}}</td>
-                <td style="width: 200px"><a href="" ng-click="informationCtrl.getEntry(entries._id)" uib-popover="{{entries.info}}" popover-title="{{entries.name}}"
-                    popover-trigger="'mouseenter'" type="button">{{entries.name}}</a></td>
+                <td style="width: 200px">
+                  <a href="" ng-click="informationCtrl.getEntry(entries._id)" uib-popover="{{entries.info}}" popover-title="{{entries.name}}"
+                    popover-trigger="'mouseenter'" type="button">{{entries.name}}</a>
+                </td>
                 <!-- <td>{{entries.info}}</td> -->
                 <td>{{entries.message}}</td>
                 <td style="width: 35%">
                   <ul class="tags">
                     <li ng-repeat="tags in entries.tags">
                       <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
-                                  {{tags}}
-                                </span>
+                        {{tags}}
+                      </span>
                     </li>
                   </ul>
                 </td>
                 <td>
                   <button type="button" ng-show="entries.active == false" class="close" ng-click="informationCtrl.confirm = false; informationCtrl.confirmationId = entries._id; informationCtrl.confirmationName = 'restore'"
-                    uib-tooltip="WARNING!!! This action will restore this entry to the active list." tooltip-placement="left">R</button></td>
+                    uib-tooltip="WARNING!!! This action will restore this entry to the active list." tooltip-placement="left">R</button>
+                </td>
                 <td>
                   <button type="button" ng-show="entries.active == false" class="close" ng-click="informationCtrl.confirm = false; informationCtrl.confirmationId = entries._id; informationCtrl.confirmationName = 'delete'"
                     uib-tooltip="WARNING!!! This action will delete this entry." tooltip-placement="left">D</button>
@@ -127,6 +135,9 @@
           </table>
         </uib-tab>
       </uib-tabset>
+
+      <ul class="pager" uib-pager ng-model="informationCtrl.currentPage" total-items="(informationCtrl.entryList | filter: { tags: informationCtrl.searchTags, active: informationCtrl.filter.archive.selected }).length">
+      </ul>
     </div>
   </div>
 </div>
@@ -137,13 +148,14 @@
       <div class="row">
         <div class="col-xs-11 input">
           <h4 style="color:white;">
-              <span ng-show="informationCtrl.entryID != ''">Edit Existing Entry</span>
-              <span ng-show="informationCtrl.entryID == ''">Create New Entry</span>
+            <span ng-show="informationCtrl.entryID != ''">Edit Existing Entry</span>
+            <span ng-show="informationCtrl.entryID == ''">Create New Entry</span>
           </h4>
         </div>
         <div class="col-xs-1 input">
           <button type="button" uib-popover="This action will reset and close this window." popover-trigger="'mouseenter'" popover-popup-delay="500"
-            popover-placement="left" ng-click="informationCtrl.isCollapsed = !informationCtrl.isCollapsed; informationCtrl.resetForm()" style="color: white;" class="close">&times;</button>
+            popover-placement="left" ng-click="informationCtrl.isCollapsed = !informationCtrl.isCollapsed; informationCtrl.resetForm()"
+            style="color: white;" class="close">&times;</button>
         </div>
       </div>
       <div class="row">
@@ -159,21 +171,21 @@
       <div class="row">
         <div class="col-sm-4 input">
           <label for="details" style="color:white;">Details</label>
-          <textarea name="details" ng-model="informationCtrl.details" id="input${1/(\w+)/\u\1/g}" popover-title="Details" uib-popover="The variable 'details' contains the description of data." popover-popup-delay="500"
-            popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Information" rows="3" style="resize: none;"
-            required="required"></textarea>
+          <textarea name="details" ng-model="informationCtrl.details" id="input${1/(\w+)/\u\1/g}" popover-title="Details" uib-popover="The variable 'details' contains the description of data."
+            popover-popup-delay="500" popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Information" rows="3"
+            style="resize: none;" required="required"></textarea>
         </div>
         <div class="col-sm-4 input">
           <label for="message" style="color:white;">Message</label>
-          <textarea name="message" ng-model="informationCtrl.message" id="input${1/(\w+)/\u\1/g}" popover-title="Message" uib-popover="The 'message' variable contains the sentence form of 'info' which will serve as UBAEs reply. Try to make it witty as possible as to emulate more human-like thinking." popover-popup-delay="500"
-            popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Message" rows="3" style="resize: none;"
-            required="required"></textarea>
+          <textarea name="message" ng-model="informationCtrl.message" id="input${1/(\w+)/\u\1/g}" popover-title="Message" uib-popover="The 'message' variable contains the sentence form of 'info' which will serve as UBAEs reply. Try to make it witty as possible as to emulate more human-like thinking."
+            popover-popup-delay="500" popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Message" rows="3"
+            style="resize: none;" required="required"></textarea>
         </div>
         <div class="col-sm-4 input">
           <label for="tags" style="color:white;">Keywords</label>
-          <textarea name="tags" ng-model="informationCtrl.tags" id="input${1/(\w+)/\u\1/g}" popover-title="Keywords" uib-popover="The variable 'tags' contains keywords that will be detected to determine which data UBAE will use as a response to the inquiry. Try to add more tags which are possible keywords." popover-popup-delay="500"
-            popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Keywords" rows="3" style="resize: none;"
-            required="required"></textarea>
+          <textarea name="tags" ng-model="informationCtrl.tags" id="input${1/(\w+)/\u\1/g}" popover-title="Keywords" uib-popover="The variable 'tags' contains keywords that will be detected to determine which data UBAE will use as a response to the inquiry. Try to add more tags which are possible keywords."
+            popover-popup-delay="500" popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Keywords" rows="3"
+            style="resize: none;" required="required"></textarea>
         </div>
       </div>
       <div class="row">
