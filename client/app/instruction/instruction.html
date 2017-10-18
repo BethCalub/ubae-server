@@ -62,7 +62,7 @@
           </thead>
           <tbody>
             <tr ng-repeat="entries in instructionCtrl.entryList |
-                      filter: { tags: instructionCtrl.searchTags, active: true }">
+                      filter: { tags: instructionCtrl.searchTags, active: true } | limitTo: 10:(instructionCtrl.currentPage-1)*10">
               <td style="width: 20px">{{$index + 1}}</td>
               <td style="width: 200px"><a href="" ng-click="instructionCtrl.getEntry(entries._id)" uib-popover="{{entries.process}}" popover-title="{{entries.name}}"
                   popover-trigger="'mouseenter'" popover-placement="top-left" type="button">{{entries.name}}</a></td>
@@ -100,7 +100,7 @@
           </thead>
           <tbody>
             <tr ng-repeat="entries in instructionCtrl.entryList |
-                      filter: { tags: instructionCtrl.searchTags, active: false }">
+                      filter: { tags: instructionCtrl.searchTags, active: false } | limitTo: 10:(instructionCtrl.currentPage-1)*10">
               <td style="width: 20px">{{$index + 1}}</td>
               <td style="width: 200px"><a href="" ng-click="instructionCtrl.getEntry(entries._id)" uib-popover="{{entries.process}}" popover-title="{{entries.name}}"
                   popover-trigger="'mouseenter'" type="button">{{entries.name}}</a></td>
@@ -127,6 +127,11 @@
         </table>
       </uib-tab>
     </uib-tabset>
+    <!-- <ul class="pager" uib-pager ng-model="instructionCtrl.currentPage" total-items="(instructionCtrl.entryList | filter: { tags: instructionCtrl.searchTags, active: instructionCtrl.filter.archive.selected }).length"> -->
+<div style="text-align: center;">
+    <ul uib-pagination total-items="(instructionCtrl.entryList | filter: { tags: instructionCtrl.searchTags, active: instructionCtrl.filter.archive.selected }).length" ng-model="instructionCtrl.currentPage" max-size="5" class="pagination-sm" boundary-links="true" force-ellipses="true"></ul>
+</style>
+    </ul>
   </div>
 </div>
 </div>
