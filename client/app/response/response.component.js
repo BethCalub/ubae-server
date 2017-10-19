@@ -6,10 +6,14 @@ import routes from './response.routes';
 export class ResponseComponent {
 
   /*@ngInject*/
-  constructor($http, $scope, socket) {
+  constructor($http, $scope, socket, $anchorScroll, $location) {
     this.$http = $http;
     this.socket = socket;
     this.entryID = '';
+
+    this.$anchorScroll = $anchorScroll;
+    this.$location = $location;
+    this.$anchorScroll.yOffset = 60;
 
     //connection to the server
     this.endpoint = {
@@ -74,6 +78,11 @@ export class ResponseComponent {
     $scope.$on('$destroy', function() {
       socket.unsyncUpdates(this.endpoint.socket);
     });
+  }
+
+  scrollTo(_id) {
+    this.$location.hash(_id);
+    this.$anchorScroll();
   }
 
   closeDataInfo() {

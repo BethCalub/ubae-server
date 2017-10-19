@@ -4,12 +4,12 @@ import routing from './main.routes';
 
 export class MainController {
   /*@ngInject*/
-  constructor($http, $scope, socket, $window, $uibModal, $log, $document) {
+  constructor($http, $scope, socket, $window, $anchorScroll, $location) {
     this.$http = $http;
     this.socket = socket;
-    this.$uibModal = $uibModal;
-    this.$document = $document;
-    this.$log = $log;
+    this.$anchorScroll = $anchorScroll;
+    this.$location = $location;
+    this.$window = $window;
 
     this.startDate = '';
     this.altInputFormats = ['M!/d!/yyyy'];
@@ -51,6 +51,11 @@ export class MainController {
         $window.alert(message);
       });
     };
+  }
+
+  scrollTo(_id) {
+    this.$location.hash(_id);
+    this.$anchorScroll();
   }
 
   $onInit() {

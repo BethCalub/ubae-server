@@ -6,26 +6,20 @@ import routes from './information.routes';
 export class InformationComponent {
 
   /*@ngInject*/
-  constructor($http, $scope, socket, $sce) {
+  constructor($http, $scope, socket, $anchorScroll, $location) {
     this.$http = $http;
     this.socket = socket;
     this.entryID = '';
 
-    //pager
-    this.totalItems = 0;
-    this.currentPage = 1;
+    this.$anchorScroll = $anchorScroll;
+    this.$location = $location;
+    this.$anchorScroll.yOffset = 60;
 
     //connection to the server
     this.endpoint = {
       link: '/api/informations',
       socket: 'information'
     };
-
-    this.htmlPopover = $sce.trustAsHtml('<h4>Are you sure you want to delete this entry?</h4>'+
-    '<div class="btn-group">'+
-    '<a class="btn btn-danger" href="#" ng-click="informationCtrl.archiveEntry(entries._id) role="button">Delete</a>'+
-    '<a class="btn btn-default" href="#" role="button">Cancel</a>'+
-    '</div>');
 
     //data information
     this.dataInfo = {
@@ -83,6 +77,11 @@ export class InformationComponent {
     $scope.$on('$destroy', function() {
       socket.unsyncUpdates(this.endpoint.socket);
     });
+  }
+
+  scrollTo(_id) {
+    this.$location.hash(_id);
+    this.$anchorScroll();
   }
 
   closeDataInfo() {

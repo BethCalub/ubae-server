@@ -6,10 +6,14 @@ import routes from './event.routes';
 export class EventComponent {
 
   /*@ngInject*/
-  constructor($http, $scope, socket) {
+  constructor($http, $scope, socket, $anchorScroll, $location) {
     this.$http = $http;
     this.socket = socket;
     this.entryID = '';
+
+    this.$anchorScroll = $anchorScroll;
+    this.$location = $location;
+    this.$anchorScroll.yOffset = 60;
 
     //connection to the server
     this.endpoint = {
@@ -103,6 +107,11 @@ export class EventComponent {
     });
   }
 
+  scrollTo(_id) {
+    this.$location.hash(_id);
+    this.$anchorScroll();
+  }
+
   closeDataInfo() {
     this.dataInfo.show = false;
   }
@@ -160,6 +169,7 @@ export class EventComponent {
       this.eventStatus = this.status.select.success;
       console.log(response.statusText);
       this.isCollapsed = true;
+      this.scrollTo('eventForm');
     }, err => {
       this.eventStatus = this.status.select.error;
       console.log(err.statusText);

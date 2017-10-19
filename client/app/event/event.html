@@ -42,7 +42,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid" uib-collapse="!eventCtrl.isCollapsed">
+  <div class="container-fluid" id="eventForm" uib-collapse="!eventCtrl.isCollapsed">
     <form role="form" name="eventForm" novalidate>
       <div class="row">
         <div class="col-md-12">
@@ -172,12 +172,12 @@
       </div>
     </form>
   </div>
-  <div class="container-fluid">
+  <div class="container-fluid" id="info">
     <div class="row">
       <div class="col-md-12">
         <h4>{{(eventCtrl.entryList | filter: { name: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected }).length}}
           {{eventCtrl.dataInfo.name}} Entries:
-          <a ng-click="eventCtrl.isCollapsed = true; eventCtrl.resetForm()" uib-popover="This action will open the create form." popover-popup-delay="1500"
+          <a ng-click="eventCtrl.isCollapsed = true; eventCtrl.resetForm(); eventCtrl.scrollTo('eventForm')" uib-popover="This action will open the create form." popover-popup-delay="1500"
             popover-trigger="'mouseenter'" popover-placement="right" class="btn btn-link" style="text-decoration: none;" href="">Create New</a>
         </h4>
       </div>
@@ -269,7 +269,7 @@
     </div>
     <div class="row">
       <div class="col-md-12 text-center">
-        <ul uib-pagination total-items="(eventCtrl.entryList | filter: { name: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected }).length"
+        <ul ng-click="eventCtrl.scrollTo('info')" uib-pagination total-items="(eventCtrl.entryList | filter: { name: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected }).length"
           ng-model="eventCtrl.currentPage" max-size="5" class="pagination-sm" boundary-links="true" force-ellipses="true"></ul>
       </div>
     </div>

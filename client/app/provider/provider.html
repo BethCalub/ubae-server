@@ -42,7 +42,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid" uib-collapse="!providerCtrl.isCollapsed">
+    <div class="container-fluid" id="providerForm" uib-collapse="!providerCtrl.isCollapsed">
       <form role="form" name="providerForm" novalidate>
         <div class="row">
           <div class="col-md-12">
@@ -123,12 +123,12 @@
         </div>
       </form>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" id="info">
       <div class="row">
         <div class="col-md-12">
           <h4>{{(providerCtrl.entryList | filter: { name: providerCtrl.searchTags, active: providerCtrl.filter.archive.selected }).length}}
             {{providerCtrl.dataInfo.name}} Entries:
-            <a ng-click="providerCtrl.isCollapsed = true; providerCtrl.resetForm()" uib-popover="This action will open the create form." popover-popup-delay="1500"
+            <a ng-click="providerCtrl.isCollapsed = true; providerCtrl.resetForm(); providerCtrl.scrollTo('providerForm');" uib-popover="This action will open the create form." popover-popup-delay="1500"
               popover-trigger="'mouseenter'" popover-placement="right" class="btn btn-link" style="text-decoration: none;" href="">Create New</a>
           </h4>
         </div>
@@ -199,7 +199,7 @@
           <br>
           <div class="col-md-12 text-right">
             <div class="btn-group" ng-if="providerCtrl.filter.archive.selected == 'true'">
-              <a ng-click="providerCtrl.getEntry(entries._id)" uib-tooltip="Edit {{entries.name}} Entry" tooltip-placement="top-right" class="btn btn-default">
+              <a ng-click="providerCtrl.getEntry(entries._id); providerCtrl.scrollTo('providerForm');" uib-tooltip="Edit {{entries.name}} Entry" tooltip-placement="top-right" class="btn btn-default">
                 <i class="fa fa-fw fa-edit"></i>Edit</a>
               <a ng-click="providerCtrl.confirm = false; providerCtrl.confirmationId = entries._id; providerCtrl.confirmationName = 'archive'" uib-tooltip="WARNING!!! This action will archive this entry."
                 tooltip-placement="top-right" class="btn btn-default">
@@ -219,7 +219,7 @@
       </div>
       <div class="row">
         <div class="col-md-12 text-center">
-          <ul uib-pagination total-items="(providerCtrl.entryList | filter: { name: providerCtrl.searchTags, active: providerCtrl.filter.archive.selected }).length"
+          <ul ng-click="providerCtrl.scrollTo('info');" uib-pagination total-items="(providerCtrl.entryList | filter: { name: providerCtrl.searchTags, active: providerCtrl.filter.archive.selected }).length"
             ng-model="providerCtrl.currentPage" max-size="5" class="pagination-sm" boundary-links="true" force-ellipses="true"></ul>
         </div>
       </div>
