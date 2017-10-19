@@ -27,7 +27,7 @@ export class FeedbackComponent {
     this.resolvedType = 'false';
 
     this.resolvedSelect = {
-      'All Entries': '',
+      // 'All Entries': '',
       Resolved: 'true',
       Unresolved: 'false',
     };

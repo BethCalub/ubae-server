@@ -1,195 +1,231 @@
-<div  class="confirm" ng-init="locationCtrl.confirm = true" ng-hide="locationCtrl.confirm">
-  <h1 style="font-size: 120px;"><span class="glyphicon glyphicon-warning-sign"></span></h1>
-  <h3 class="animateMe">Are you sure you want to {{locationCtrl.confirmationName}} this entry?</h3>
-  <h5 class="animateMe">This action cannot be undone.</h5>
-  <br>
-  <div class="btn-group">
-      <a ng-if="locationCtrl.confirmationName == 'archive'" 
-      ng-click="locationCtrl.archiveEntry(locationCtrl.confirmationId); locationCtrl.confirm = true" 
-      class="btn btn-danger">Yes I'm Sure!</a>
-      <a ng-if="locationCtrl.confirmationName == 'delete'" 
-      ng-click="locationCtrl.deleteEntry(locationCtrl.confirmationId); locationCtrl.confirm = true" 
-      class="btn btn-danger">Yes I'm Sure!</a>
-      <a ng-if="locationCtrl.confirmationName == 'restore'" 
-      ng-click="locationCtrl.unarchiveEntry(locationCtrl.confirmationId); locationCtrl.confirm = true" 
-      class="btn btn-danger">Yes I'm Sure!</a>
+<div class="confirm" ng-init="locationCtrl.confirm = true" ng-hide="locationCtrl.confirm">
+    <h1 style="font-size: 120px;">
+      <span class="glyphicon glyphicon-warning-sign"></span>
+    </h1>
+    <h3 class="animateMe">Are you sure you want to {{locationCtrl.confirmationName}} this entry?</h3>
+    <h5 class="animateMe">This action cannot be undone.</h5>
+    <br>
+    <div class="btn-group">
+      <a ng-if="locationCtrl.confirmationName == 'archive'" ng-click="locationCtrl.archiveEntry(locationCtrl.confirmationId); locationCtrl.confirm = true"
+        class="btn btn-danger">Yes I'm Sure!</a>
+      <a ng-if="locationCtrl.confirmationName == 'delete'" ng-click="locationCtrl.deleteEntry(locationCtrl.confirmationId); locationCtrl.confirm = true"
+        class="btn btn-danger">Yes I'm Sure!</a>
+      <a ng-if="locationCtrl.confirmationName == 'restore'" ng-click="locationCtrl.unarchiveEntry(locationCtrl.confirmationId); locationCtrl.confirm = true"
+        class="btn btn-danger">Yes I'm Sure!</a>
       <a ng-click="locationCtrl.confirm = true" class="btn btn-default">Close</a>
     </div>
-</div>
-
-<div id="main">
-<div uib-alert style="background-color: #EEEEEE;" ng-show="locationCtrl.dataInfo.show" close="locationCtrl.closeDataInfo()">
-  <div>
-    <h1>{{locationCtrl.dataInfo.name}}</h1>
-    <p>{{locationCtrl.dataInfo.info}}</p>
-    <ul>
-      <li ng-repeat="entry in locationCtrl.dataInfo.guide">{{entry}}</li>
-    </ul>
   </div>
-</div>
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-sm-6">
-      <h4>{{(locationCtrl.entryList | filter: { tags: locationCtrl.searchTags, active: locationCtrl.filter.archive.selected
-        }).length}} {{locationCtrl.dataInfo.name}} Entries: 
-        <a ng-click="locationCtrl.isCollapsed = !locationCtrl.isCollapsed; locationCtrl.resetForm()"
-        uib-popover="This action will open the create form." popover-popup-delay="500"
-        popover-trigger="'mouseenter'" popover-placement="right" class="btn btn-link" style="text-decoration: none;" href="">Create New</a></h4>
-    </div>
-    <div class="col-sm-3">
-
-    </div>
-    <div class="col-sm-3">
-      <div class="form-group">
-        <label class="sr-only" for="search">Search</label>
-        <input type="text" class="form-control input-sm" id="search" ng-model="locationCtrl.searchTags" uib-tooltip="Search for information contained in the {{locationCtrl.tableName}} database. This will filter out the information as you type."
-          tooltip-placement="bottom" placeholder="Search {{locationCtrl.dataInfo.name}} Tags">
-      </div>
-    </div>
-  </div>
-  <div class="row">
-    <uib-tabset active="active">
-      <uib-tab index="0" ng-click="locationCtrl.filter.archive.selected = 'true'">
-        <uib-tab-heading>
-          Active <span class="badge">{{(locationCtrl.entryList | filter: { active: 'true' }).length}}</span>
-        </uib-tab-heading>
-        <table class="table table-condensed table-hover fixed">
-          <thead>
-            <tr>
-              <th ng-repeat="headers in locationCtrl.dataInfo.table">{{headers}}</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr ng-repeat="entries in locationCtrl.entryList |
-                      filter: { tags: locationCtrl.searchTags, active: true } | limitTo: 10:(locationCtrl.currentPage-1)*10">
-              <td style="width: 20px">{{$index + 1}}</td>
-              <td style="width: 200px"><a href="" ng-click="locationCtrl.getEntry(entries._id)" uib-popover="{{entries.location}}" popover-title="{{entries.name}}"
-                  popover-trigger="'mouseenter'" popover-placement="top-left" type="button">{{entries.name}}</a></td>
-              <!-- <td>{{entries.info}}</td> -->
-              <td>{{entries.message}}</td>
-              <td style="width: 35%">
-                <ul class="tags">
-                  <li ng-repeat="tags in entries.tags">
-                    <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
-                      {{tags}}
-                    </span>
-                  </li>
-                </ul>
-              </td>
-              <td>
-                <button type="button" ng-show="entries.active == true" class="close" ng-click="locationCtrl.confirm = false; locationCtrl.confirmationId = entries._id; locationCtrl.confirmationName = 'archive'"
-                  uib-tooltip="WARNING!!! This action will archive this entry." tooltip-placement="left">A</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </uib-tab>
-      <uib-tab index="1" ng-click="locationCtrl.filter.archive.selected = 'false'" select="locationCtrl.alertMe('This table contains archived data that you can restore.')">
-        <uib-tab-heading>
-          Archived <span class="badge">{{(locationCtrl.entryList | filter: { active: 'false' }).length}}</span>
-        </uib-tab-heading>
-
-        <table class="table table-condensed table-hover fixed">
-          <thead>
-            <tr>
-              <th ng-repeat="headers in locationCtrl.dataInfo.table">{{headers}}</th>
-              <th></th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr ng-repeat="entries in locationCtrl.entryList |
-                      filter: { tags: locationCtrl.searchTags, active: false } | limitTo: 10:(locationCtrl.currentPage-1)*10">
-              <td style="width: 20px">{{$index + 1}}</td>
-              <td style="width: 200px"><a href="" ng-click="locationCtrl.getEntry(entries._id)" uib-popover="{{entries.location}}" popover-title="{{entries.name}}"
-                  popover-trigger="'mouseenter'" type="button">{{entries.name}}</a></td>
-              <!-- <td>{{entries.info}}</td> -->
-              <td>{{entries.message}}</td>
-              <td style="width: 35%">
-                <ul class="tags">
-                  <li ng-repeat="tags in entries.tags">
-                    <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
-                                {{tags}}
-                              </span>
-                  </li>
-                </ul>
-              </td>
-              <td>
-                <button type="button" ng-show="entries.active == false" class="close" ng-click="locationCtrl.confirm = false; locationCtrl.confirmationId = entries._id; locationCtrl.confirmationName = 'restore'"
-                  uib-tooltip="WARNING!!! This action will restore this entry to the active list." tooltip-placement="left">R</button></td>
-              <td>
-                <button type="button" ng-show="entries.active == false" class="close" ng-click="locationCtrl.confirm = false; locationCtrl.confirmationId = entries._id; locationCtrl.confirmationName = 'delete'"
-                  uib-tooltip="WARNING!!! This action will delete this entry." tooltip-placement="left">D</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </uib-tab>
-    </uib-tabset>
-    <ul class="pager" uib-pager ng-model="locationCtrl.currentPage" total-items="(locationCtrl.entryList | filter: { tags: locationCtrl.searchTags, active: locationCtrl.filter.archive.selected }).length">
-    </ul>
-  </div>
-</div>
-</div>
-
-<div ng-init="locationCtrl.isCollapsed = false" ng-show="locationCtrl.isCollapsed">
-<div class="bottom-form">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-11 input">
-        <h4 style="color:white;">
-            <span ng-show="locationCtrl.entryID != ''">Edit Existing Entry</span>
-            <span ng-show="locationCtrl.entryID == ''">Create New Entry</span>
-        </h4>
-      </div>
-      <div class="col-xs-1 input">
-        <button type="button" uib-popover="This action will reset and close this window." popover-trigger="'mouseenter'" popover-popup-delay="500"
-          popover-placement="left" ng-click="locationCtrl.isCollapsed = !locationCtrl.isCollapsed; locationCtrl.resetForm()" style="color: white;" class="close">&times;</button>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-12 input">
-        <div class="input-group">
-          <div class="input-group-addon">Name</div>
-          <input type="text" ng-model="locationCtrl.name" class="form-control" popover-title="Name" uib-popover="The variable 'name' includes office names, department names, programs offered, services offered and scholarships"
-            popover-popup-delay="500" popover-trigger="'mouseenter'" popover-placement="bottom-left" placeholder="Entry Name">
+  
+  <div class="section" style="padding: 50px 0;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="breadcrumb">
+            <li>
+              <a ui-sref="main">Home</a>
+            </li>
+            <li class="active">
+              {{locationCtrl.dataInfo.name}}
+            </li>
+          </ul>
         </div>
-
       </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-4 input">
-        <label for="details" style="color:white;">Details</label>
-        <textarea name="details" ng-model="locationCtrl.details" id="input${1/(\w+)/\u\1/g}" popover-title="Details" uib-popover="The variable 'details' contains the description of data." popover-popup-delay="500"
-          popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Information" rows="3" style="resize: none;"
-          required="required"></textarea>
-      </div>
-      <div class="col-sm-4 input">
-        <label for="message" style="color:white;">Message</label>
-        <textarea name="message" ng-model="locationCtrl.message" id="input${1/(\w+)/\u\1/g}" popover-title="Message" uib-popover="The 'message' variable contains the sentence form of 'info' which will serve as UBAEs reply. Try to make it witty as possible as to emulate more human-like thinking." popover-popup-delay="500"
-          popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Message" rows="3" style="resize: none;"
-          required="required"></textarea>
-      </div>
-      <div class="col-sm-4 input">
-        <label for="tags" style="color:white;">Keywords</label>
-        <textarea name="tags" ng-model="locationCtrl.tags" id="input${1/(\w+)/\u\1/g}" popover-title="Keywords" uib-popover="The variable 'tags' contains keywords that will be detected to determine which data UBAE will use as a response to the inquiry. Try to add more tags which are possible keywords." popover-popup-delay="500"
-          popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Keywords" rows="3" style="resize: none;"
-          required="required"></textarea>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-offset-8 col-sm-4 input">
-        <div class="btn-group btn-group-justified">
-          <a ng-click="locationCtrl.saveEntry()" class="btn btn-danger">Save</a>
-          <a ng-click="locationCtrl.resetForm()" class="btn btn-default">Reset</a>
-          <a ng-click="locationCtrl.isCollapsed = !locationCtrl.isCollapsed; locationCtrl.resetForm()" class="btn btn-default">Close</a>
+      <div class="row">
+        <div class="col-md-12">
+          <div uib-alert style="background-color: #EEEEEE;" ng-show="locationCtrl.dataInfo.show" close="locationCtrl.closeDataInfo()">
+            <h1>{{locationCtrl.dataInfo.name}}</h1>
+            <p>{{locationCtrl.dataInfo.info}}</p>
+            <ul>
+              <li ng-repeat="entry in locationCtrl.dataInfo.guide">{{entry}}</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
+    <div class="container-fluid" uib-collapse="!locationCtrl.isCollapsed">
+      <form role="form" name="locationForm" novalidate>
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Add/Edit Entry</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label class="control-label" for="name">Name</label>
+              <input type="text" name="name" ng-model="locationCtrl.name" class="form-control" popover-title="Name" uib-popover="The variable 'name' includes office names, department names, programs offered, services offered and scholarships"
+                popover-popup-delay="1500" popover-trigger="'mouseenter'" popover-placement="bottom-left" placeholder="Entry Name"
+                required>
+            </div>
+            <div class="form-group has-error">
+              <p class="help-block" ng-show="locationForm.name.$invalid && locationForm.name.$touched">
+                Please enter a valid name.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="control-label" for="details">Details</label>
+              <textarea name="details" ng-model="locationCtrl.details" id="input${1/(\w+)/\u\1/g}" popover-title="Details" uib-popover="The variable 'details' contains the description of data."
+                popover-popup-delay="1500" popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Information"
+                rows="3" style="resize: none;" required></textarea>
+            </div>
+            <div class="form-group has-error">
+              <p class="help-block" ng-show="locationForm.details.$invalid && locationForm.details.$touched">
+                Please enter valid details for this entry.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="control-label" for="message">Message</label>
+              <textarea name="message" ng-model="locationCtrl.message" id="input${1/(\w+)/\u\1/g}" popover-title="Message" uib-popover="The 'message' variable contains the sentence form of 'info' which will serve as UBAEs reply. Try to make it witty as possible as to emulate more human-like thinking."
+                popover-popup-delay="1500" popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Message" rows="3"
+                style="resize: none;" required></textarea>
+            </div>
+            <div class="form-group has-error">
+              <p class="help-block" ng-show="locationForm.message.$invalid && locationForm.message.$touched">
+                Please enter a valid message for this entry.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label class="control-label" for="tags">Tags</label>
+              <textarea name="tags" ng-model="locationCtrl.tags" id="input${1/(\w+)/\u\1/g}" popover-title="Keywords" uib-popover="The variable 'tags' contains keywords that will be detected to determine which data UBAE will use as a response to the inquiry. Try to add more tags which are possible keywords."
+                popover-popup-delay="1500" popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Keywords" rows="3"
+                style="resize: none;" required></textarea>
+            </div>
+            <div class="form-group has-error">
+              <p class="help-block" ng-show="locationForm.tags.$invalid && locationForm.tags.$touched">
+                Please enter valid tags for this entry.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-offset-8 col-md-4">
+            <label class="control-label">&nbsp;
+              <span ng-show="!locationCtrl.confirmSave">Are you sure you want to proceed?</span>
+            </label>
+            <div class="btn-group btn-group-justified" ng-init="locationCtrl.confirmSave = true" ng-show="locationCtrl.confirmSave">
+              <a ng-click="locationCtrl.confirmSave = false" ng-hide="locationForm.$invalid" class="btn btn-danger">Save</a>
+              <a ng-click="locationCtrl.resetForm()" class="btn btn-warning">Reset</a>
+              <a ng-click="locationCtrl.isCollapsed = false; locationCtrl.resetForm()" class="btn btn-default">Close</a>
+            </div>
+            <div class="btn-group btn-group-justified" ng-show="!locationCtrl.confirmSave">
+              <a ng-click="locationCtrl.saveEntry(); locationCtrl.confirmSave = true" ng-hide="locationForm.$invalid" class="btn btn-danger">Confirm</a>
+              <a ng-click="locationCtrl.confirmSave = true" class="btn btn-default">Cancel</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h4>{{(locationCtrl.entryList | filter: { name: locationCtrl.searchTags, active: locationCtrl.filter.archive.selected }).length}}
+            {{locationCtrl.dataInfo.name}} Entries:
+            <a ng-click="locationCtrl.isCollapsed = true; locationCtrl.resetForm()" uib-popover="This action will open the create form." popover-popup-delay="1500"
+              popover-trigger="'mouseenter'" popover-placement="right" class="btn btn-link" style="text-decoration: none;" href="">Create New</a>
+          </h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-offset-8 col-md-4">
+          <div class="form-group">
+            <!-- <label class="sr-only" for="search">Search</label> -->
+            <input type="text" class="form-control input-sm" id="search" ng-model="locationCtrl.searchTags" uib-tooltip="Search for information contained in the {{locationCtrl.tableName}} database. This will filter out the information as you type."
+              tooltip-placement="bottom" placeholder="Search {{locationCtrl.dataInfo.name}}">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <uib-tabset active="locationCtrl.active">
+            <uib-tab index="0" ng-click="locationCtrl.filter.archive.selected = 'true'">
+              <uib-tab-heading>
+                Active
+                <span class="badge">{{(locationCtrl.entryList | filter: { active: 'true' }).length}}</span>
+              </uib-tab-heading>
+            </uib-tab>
+            <uib-tab index="1" ng-click="locationCtrl.filter.archive.selected = 'false'" select="locationCtrl.alertMe('This table contains archived data that you can restore.')">
+              <uib-tab-heading>
+                Archived
+                <span class="badge">{{(locationCtrl.entryList | filter: { active: 'false' }).length}}</span>
+              </uib-tab-heading>
+            </uib-tab>
+          </uib-tabset>
+        </div>
+      </div>
+      <div class="info" ng-repeat="entries in locationCtrl.entryList |
+            filter: { name: locationCtrl.searchTags, active: locationCtrl.filter.archive.selected } | limitTo: 10:(locationCtrl.currentPage-1)*10">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>{{$index + 1}}. {{entries.name}}
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+              <h4>
+                <i class="fa fa-fw fa-info-circle"></i>Details</h4>
+              <p>{{entries.location}}</p>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h4>
+              <i class="fa fa-fw fa-envelope"></i>Message</h4>
+            <p>{{entries.message}}</p>
+          </div>
+          <div class="col-md-6">
+            <h4>
+              <i class="fa fa-fw fa-tags"></i>Keywords</h4>
+            <p>
+              <ul class="tags">
+                <li ng-repeat="tags in entries.tags">
+                  <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
+                    {{tags}}
+                  </span>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <br>
+          <div class="col-md-12 text-right">
+            <div class="btn-group" ng-if="locationCtrl.filter.archive.selected == 'true'">
+              <a ng-click="locationCtrl.getEntry(entries._id)" uib-tooltip="Edit {{entries.name}} Entry" tooltip-placement="top-right" class="btn btn-default">
+                <i class="fa fa-fw fa-edit"></i>Edit</a>
+              <a ng-click="locationCtrl.confirm = false; locationCtrl.confirmationId = entries._id; locationCtrl.confirmationName = 'archive'" uib-tooltip="WARNING!!! This action will archive this entry."
+                tooltip-placement="top-right" class="btn btn-default">
+                <i class="fa fa-fw fa-archive"></i>Archive</a>
+            </div>
+            <div class="btn-group" ng-if="locationCtrl.filter.archive.selected == 'false'">
+              <a ng-click="locationCtrl.confirm = false; locationCtrl.confirmationId = entries._id; locationCtrl.confirmationName = 'restore'" uib-tooltip="WARNING!!! This action will restore this entry to the active list."
+                tooltip-placement="top-right" class="btn btn-default" draggable="true">
+                <i class="fa fa-fw fa-rotate-left"></i>Restore</a>
+              <a ng-click="locationCtrl.confirm = false; locationCtrl.confirmationId = entries._id; locationCtrl.confirmationName = 'delete'" uib-tooltip="WARNING!!! This action will delete this entry."
+                tooltip-placement="top-right" class="btn btn-danger">
+                <i class="fa fa-fw fa-trash"></i>Delete</a>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <ul uib-pagination total-items="(locationCtrl.entryList | filter: { name: locationCtrl.searchTags, active: locationCtrl.filter.archive.selected }).length"
+            ng-model="locationCtrl.currentPage" max-size="5" class="pagination-sm" boundary-links="true" force-ellipses="true"></ul>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-</div>
-
-<statusbar table-name="{{locationCtrl.dataInfo.name}}" table-entries="{{(locationCtrl.entryList | filter: { tags: locationCtrl.searchTags, active: locationCtrl.filter.archive.selected }).length}}"
-action-message="{{locationCtrl.eventStatus}}"></statusbar>
+  
+  <statusbar table-name="{{locationCtrl.dataInfo.name}}" table-entries="{{(locationCtrl.entryList | filter: { name: locationCtrl.searchTags, active: locationCtrl.filter.archive.selected }).length}}"
+    action-message="{{locationCtrl.eventStatus}}"></statusbar>
+  

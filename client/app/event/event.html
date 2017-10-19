@@ -25,7 +25,7 @@
             <a ui-sref="main">Home</a>
           </li>
           <li class="active">
-            Event
+            {{eventCtrl.dataInfo.name}}
           </li>
         </ul>
       </div>
@@ -175,7 +175,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
-        <h4>{{(eventCtrl.entryList | filter: { tags: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected }).length}}
+        <h4>{{(eventCtrl.entryList | filter: { name: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected }).length}}
           {{eventCtrl.dataInfo.name}} Entries:
           <a ng-click="eventCtrl.isCollapsed = true; eventCtrl.resetForm()" uib-popover="This action will open the create form." popover-popup-delay="1500"
             popover-trigger="'mouseenter'" popover-placement="right" class="btn btn-link" style="text-decoration: none;" href="">Create New</a>
@@ -187,7 +187,7 @@
         <div class="form-group">
           <!-- <label class="sr-only" for="search">Search</label> -->
           <input type="text" class="form-control input-sm" id="search" ng-model="eventCtrl.searchTags" uib-tooltip="Search for information contained in the {{eventCtrl.tableName}} database. This will filter out the information as you type."
-            tooltip-placement="bottom" placeholder="Search {{eventCtrl.dataInfo.name}} Tags">
+            tooltip-placement="bottom" placeholder="Search {{eventCtrl.dataInfo.name}}">
         </div>
       </div>
     </div>
@@ -210,7 +210,7 @@
       </div>
     </div>
     <div class="info" ng-repeat="entries in eventCtrl.entryList |
-          filter: { tags: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected } | limitTo: 10:(eventCtrl.currentPage-1)*10">
+          filter: { name: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected } | limitTo: 10:(eventCtrl.currentPage-1)*10">
       <div class="row">
         <div class="col-md-12">
           <h3>{{$index + 1}}. {{entries.name}}
@@ -218,6 +218,13 @@
           <h5>{{entries.startDate | date: "mediumDate"}} to {{entries.endDate | date: "mediumDate"}}</h5>
         </div>
       </div>
+      <div class="row">
+          <div class="col-md-12">
+            <h4>
+              <i class="fa fa-fw fa-info-circle"></i>Details</h4>
+            <p>{{entries.event}}</p>
+          </div>
+        </div>
       <div class="row">
         <div class="col-md-6">
           <h4>
@@ -262,12 +269,12 @@
     </div>
     <div class="row">
       <div class="col-md-12 text-center">
-        <ul uib-pagination total-items="(eventCtrl.entryList | filter: { tags: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected }).length"
+        <ul uib-pagination total-items="(eventCtrl.entryList | filter: { name: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected }).length"
           ng-model="eventCtrl.currentPage" max-size="5" class="pagination-sm" boundary-links="true" force-ellipses="true"></ul>
       </div>
     </div>
   </div>
 </div>
 
-<statusbar table-name="{{eventCtrl.dataInfo.name}}" table-entries="{{(eventCtrl.entryList | filter: { tags: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected }).length}}"
+<statusbar table-name="{{eventCtrl.dataInfo.name}}" table-entries="{{(eventCtrl.entryList | filter: { name: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected }).length}}"
   action-message="{{eventCtrl.eventStatus}}"></statusbar>
