@@ -156,7 +156,9 @@
           </div>
         </div>
         <div class="col-md-4">
-          <label class="control-label">&nbsp;<span ng-show="!eventCtrl.confirmSave">Are you sure you want to proceed?</span></label>
+          <label class="control-label">&nbsp;
+            <span ng-show="!eventCtrl.confirmSave">Are you sure you want to proceed?</span>
+          </label>
           <div class="btn-group btn-group-justified" ng-init="eventCtrl.confirmSave = true" ng-show="eventCtrl.confirmSave">
             <a ng-click="eventCtrl.confirmSave = false" ng-hide="eventForm.$invalid || !eventCtrl.dateValid" class="btn btn-danger">Save</a>
             <a ng-click="eventCtrl.resetForm()" class="btn btn-warning">Reset</a>
@@ -197,7 +199,6 @@
               Active
               <span class="badge">{{(eventCtrl.entryList | filter: { active: 'true' }).length}}</span>
             </uib-tab-heading>
-
           </uib-tab>
           <uib-tab index="1" ng-click="eventCtrl.filter.archive.selected = 'false'" select="eventCtrl.alertMe('This table contains archived data that you can restore.')">
             <uib-tab-heading>
@@ -208,52 +209,55 @@
         </uib-tabset>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <table class="table table-condensed table-hover fixed">
-          <thead>
-            <tr>
-              <th ng-repeat="headers in eventCtrl.dataInfo.table">{{headers}}</th>
-              <th ng-if="eventCtrl.filter.archive.selected == 'true'"></th>
-              <th ng-if="eventCtrl.filter.archive.selected == 'false'"></th>
-              <th ng-if="eventCtrl.filter.archive.selected == 'false'"></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr ng-repeat="entries in eventCtrl.entryList |
-                filter: { tags: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected } | limitTo: 10:(eventCtrl.currentPage-1)*10">
-              <td style="width: 20px">{{$index + 1}}</td>
-              <td style="width: 20%">
-                <a href="" ng-click="eventCtrl.getEntry(entries._id)" uib-popover="{{entries.event}}" popover-title="{{entries.name}}" popover-trigger="'mouseenter'"
-                  popover-placement="top-left" type="button">{{entries.name}}</a>
-              </td>
-              <td>{{entries.startDate | date: "shortDate"}}</td>
-              <td>{{entries.endDate | date: "shortDate"}}</td>
-              <td>{{entries.message}}</td>
-              <td style="width: 35%">
-                <ul class="tags">
-                  <li ng-repeat="tags in entries.tags">
-                    <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
-                      {{tags}}
-                    </span>
-                  </li>
-                </ul>
-              </td>
-              <td ng-show="entries.active == true">
-                <button type="button" class="close" ng-click="eventCtrl.confirm = false; eventCtrl.confirmationId = entries._id; eventCtrl.confirmationName = 'archive'"
-                  uib-tooltip="WARNING!!! This action will archive this entry." tooltip-placement="left">A</button>
-              </td>
-              <td ng-show="entries.active == false">
-                <button type="button" class="close" ng-click="eventCtrl.confirm = false; eventCtrl.confirmationId = entries._id; eventCtrl.confirmationName = 'restore'"
-                  uib-tooltip="WARNING!!! This action will restore this entry to the active list." tooltip-placement="left">R</button>
-              </td>
-              <td ng-show="entries.active == false">
-                <button type="button" class="close" ng-click="eventCtrl.confirm = false; eventCtrl.confirmationId = entries._id; eventCtrl.confirmationName = 'delete'"
-                  uib-tooltip="WARNING!!! This action will delete this entry." tooltip-placement="left">D</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+    <div class="info" ng-repeat="entries in eventCtrl.entryList |
+          filter: { tags: eventCtrl.searchTags, active: eventCtrl.filter.archive.selected } | limitTo: 10:(eventCtrl.currentPage-1)*10">
+      <div class="row">
+        <div class="col-md-12">
+          <h3>{{$index + 1}}. {{entries.name}}
+          </h3>
+          <h5>{{entries.startDate | date: "mediumDate"}} to {{entries.endDate | date: "mediumDate"}}</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h4>
+            <i class="fa fa-fw fa-envelope"></i>Message</h4>
+          <p>{{entries.message}}</p>
+        </div>
+        <div class="col-md-6">
+          <h4>
+            <i class="fa fa-fw fa-tags"></i>Keywords</h4>
+          <p>
+            <ul class="tags">
+              <li ng-repeat="tags in entries.tags">
+                <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
+                  {{tags}}
+                </span>
+              </li>
+            </ul>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <br>
+        <div class="col-md-12 text-right">
+          <div class="btn-group" ng-if="eventCtrl.filter.archive.selected == 'true'">
+            <a ng-click="eventCtrl.getEntry(entries._id)" uib-tooltip="Edit {{entries.name}} Entry" tooltip-placement="top-right" class="btn btn-default">
+              <i class="fa fa-fw fa-edit"></i>Edit</a>
+            <a ng-click="eventCtrl.confirm = false; eventCtrl.confirmationId = entries._id; eventCtrl.confirmationName = 'archive'" uib-tooltip="WARNING!!! This action will archive this entry."
+              tooltip-placement="top-right" class="btn btn-default">
+              <i class="fa fa-fw fa-archive"></i>Archive</a>
+          </div>
+          <div class="btn-group" ng-if="eventCtrl.filter.archive.selected == 'false'">
+            <a ng-click="eventCtrl.confirm = false; eventCtrl.confirmationId = entries._id; eventCtrl.confirmationName = 'restore'" uib-tooltip="WARNING!!! This action will restore this entry to the active list."
+              tooltip-placement="top-right" class="btn btn-default" draggable="true">
+              <i class="fa fa-fw fa-rotate-left"></i>Restore</a>
+            <a ng-click="eventCtrl.confirm = false; eventCtrl.confirmationId = entries._id; eventCtrl.confirmationName = 'delete'" uib-tooltip="WARNING!!! This action will delete this entry."
+              tooltip-placement="top-right" class="btn btn-danger">
+              <i class="fa fa-fw fa-trash"></i>Delete</a>
+          </div>
+          <hr>
+        </div>
       </div>
     </div>
     <div class="row">

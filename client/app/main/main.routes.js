@@ -8,7 +8,7 @@ export default function routes($stateProvider) {
     template: '<main></main>',
     authenticate: true
   }).state('alt', {
-    url: '/',
-    template: '<main></main>'
+    url: '/alt',
+    template: require('./alt.html')
   });
 }
