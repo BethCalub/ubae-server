@@ -7,5 +7,8 @@ export default function routes($stateProvider) {
     url: '/',
     template: '<main></main>',
     authenticate: true
+  }).state('alt', {
+    url: '/',
+    template: '<main></main>'
   });
 }
