@@ -898,10 +898,10 @@ var instruction = [{
   type: '',
   message: 'Please go to the SLAHS dean\'s office to ask for assistance on how to enroll in their department',
   tags: [
-    'Enrollment', 'SLAHS', 'school', 
+    'Enrollment', 'SLAHS', 'school',
     'college', 'liberal', 'arts',
-    'human', 'sciences', 'MPA', 
-    'Master', 'Public', 'Administration', 
+    'human', 'sciences', 'MPA',
+    'Master', 'Public', 'Administration',
     'Program', 'Course', 'MAEng',
     'English', 'BABroad', 'Bachelor',
     'Broadcasting',
@@ -992,7 +992,10 @@ var instruction = [{
   ]
 }, {
   name: 'Cross Enroll',
-  process: ['1. Students enrolled in other institutions of learning may be admitted in the University of Baguio on a case-to-case basis and only upon submission of permit from the Registrar and the Dean of the school in which they are principally enrolled. 2. The permit shall state the subject and the total number of units which they are allowed to cross-enroll in other institutions of learning. 3. Graduating students may cross-enroll in other institutions of learning provided that the cross-enrolled subject is not offered in the University of Baguio and provided further that the student who wishes to cross-enroll secures a permit from the Registrar of the University of Baguio and signed by the dean. '],
+  process: ['1. Students enrolled in other institutions of learning may be admitted in the University of Baguio on a case-to-case basis and only upon submission of permit from the Registrar and the Dean of the school in which they are principally enrolled.',
+    '2. The permit shall state the subject and the total number of units which they are allowed to cross-enroll in other institutions of learning.',
+    '3. Graduating students may cross-enroll in other institutions of learning provided that the cross-enrolled subject is not offered in the University of Baguio and provided further that the student who wishes to cross-enroll secures a permit from the Registrar of the University of Baguio and signed by the dean.'
+  ],
   type: '',
   message: 'Please submit a Permit from your Dean and Registrar that states the subject and total number of units your are allowed to take. ',
   tags: ['Cross', 'Enroll', 'University', 'Institution']
