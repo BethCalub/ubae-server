@@ -1,41 +1,222 @@
-
-<!-- <div id="dash">
-  <div class="row">
-    <div class="col-md-6">
-      <div style="background-color:aqua; height: 100vh;">Hello</div>
+<div class="section" style="padding: 60px 0;" id="topDiv">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Administrator Dashboard</h1>
+      </div>
     </div>
-    <div class="col-md-6">
+    <hr>
+  <!-- </div>
+  <div class="container"> -->
+    <div class="row">
+      <div class="col-md-6">
+        <a ui-sref="feedback">
+          <img src="http://via.placeholder.com/800x400" class="center-block img-responsive">
+        </a>
+      </div>
+      <div class="col-md-6">
+        <h2>Feedback<a ui-sref="feedback" class="btn btn-link">View Entries</a></h2>
+        <h4>Unanswerable User Inqueries</h4>
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <th>Resolved</th>
+              <th>Unresolved</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{($ctrl.feedbackEntries | filter: {resolved: 'true'}).length }}</td>
+              <td>{{($ctrl.feedbackEntries | filter: {resolved: 'false'}).length }}</td>
+              <td>{{$ctrl.feedbackEntries.length}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>This table contains all the inquiries that UBAE cannot answer. The purpose of the information contained in this table
+          is to assist in maintaining the UBAE chatbot core information.</p>
+        <br>
+      </div>
+    </div>
+    <hr>
+  <!-- </div>
+  <div class="container"> -->
+    <div class="row">
       <div class="col-md-4">
-        <div style="background-color:red">Hello</div>
+        <a ui-sref="information">
+          <img src="http://via.placeholder.com/800x400" class="center-block img-responsive">
+        </a>
+        <h2>Information
+          <a ui-sref="information" class="btn btn-link">View Entries</a>
+        </h2>
+        <h4>What Command Inquiries</h4>
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <th>Active</th>
+              <th>Archived</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{($ctrl.informationEntries | filter: {active: 'true'}).length }}</td>
+              <td>{{($ctrl.informationEntries | filter: {active: 'false'}).length }}</td>
+              <td>{{$ctrl.informationEntries.length}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>The information table consists of data which is answerable by WHAT questions. This table contains information about
+          the University, its departments and its courses offered, offices and services offered, requirements, scholarships,
+          and their description.</p>
+          <br>
       </div>
       <div class="col-md-4">
-        <div style="background-color:red">Hello</div>
+        <a ui-sref="instruction">
+          <img src="http://via.placeholder.com/800x400" class="center-block img-responsive">
+        </a>
+        <h2>Instruction
+          <a ui-sref="instruction" class="btn btn-link">View Entries</a>
+        </h2>
+        <h4>How Command Inquiries</h4>
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <th>Active</th>
+              <th>Archived</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{($ctrl.instructionEntries | filter: {active: 'true'}).length }}</td>
+              <td>{{($ctrl.instructionEntries | filter: {active: 'false'}).length }}</td>
+              <td>{{$ctrl.instructionEntries.length}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>The instruction table contains the services offered by the University and its processes. This table consists data
+          which answers HOW questions.</p>
+          <br>
       </div>
       <div class="col-md-4">
-        <div style="background-color:red">Hello</div>
+        <a ui-sref="location">
+          <img src="http://via.placeholder.com/800x400" class="center-block img-responsive">
+        </a>
+        <h2>Location
+          <a ui-sref="location" class="btn btn-link">View Entries</a>
+        </h2>
+        <h4>Where Command Inquiries</h4>
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <th>Active</th>
+              <th>Archived</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{($ctrl.locationEntries | filter: {active: 'true'}).length }}</td>
+              <td>{{($ctrl.locationEntries | filter: {active: 'false'}).length }}</td>
+              <td>{{$ctrl.locationEntries.length}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>The location table contains the different locations in the University such as offices, departments and other notable
+          places. This table consists of data which answers WHERE questions.</p>
+          <br>
       </div>
+    </div>
+    <br>
+  <!-- </div>
+  <div class="container"> -->
+    <div class="row">
       <div class="col-md-4">
-        <div style="background-color:red">Hello</div>
-      </div>
-      <div class="col-md-4">
-        <div style="background-color:red">Hello</div>
-      </div>
-      <div class="col-md-4">
-        <div style="background-color:red">Hello</div>
-      </div>
-      <div class="col-md-4">
-        <div style="background-color:red">Hello</div>
-      </div>
-      <div class="col-md-4">
-        <div style="background-color:red">Hello</div>
-      </div>
-      <div class="col-md-4">
-        <div style="background-color:red">Hello</div>
-      </div>
-    </div> 
+        <a ui-sref="provider">
+          <img src="http://via.placeholder.com/800x400" class="center-block img-responsive">
+        </a>
+        <h2>Provider
+          <a ui-sref="provider" class="btn btn-link">View Entries</a>
+        </h2>
+        <h4>Which Command Inquiries</h4>
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <th>Active</th>
+              <th>Archived</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{($ctrl.providerEntries | filter: {active: 'true'}).length }}</td>
+              <td>{{($ctrl.providerEntries | filter: {active: 'false'}).length }}</td>
+              <td>{{$ctrl.providerEntries.length}}</td>
+            </tr>
+          </tbody>
+        </table>
 
-    
-  </div>  
-</div> -->
-
-<sidenav></sidenav>
+        <p>The provider table contains data which includes services or programs offered by a certain office or department. This
+          table consists of data which answers WHICH questions.</p>
+          <br>
+      </div>
+      <div class="col-md-4">
+        <a ui-sref="event">
+          <img src="http://via.placeholder.com/800x400" class="center-block img-responsive">
+        </a>
+        <h2>Event
+          <a ui-sref="event" class="btn btn-link">View Entries</a>
+        </h2>
+        <h4>When Command Inquiries</h4>
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <th>Active</th>
+              <th>Archived</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{($ctrl.eventEntries | filter: {active: 'true'}).length }}</td>
+              <td>{{($ctrl.eventEntries | filter: {active: 'false'}).length }}</td>
+              <td>{{$ctrl.eventEntries.length}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>The event table contains events which are included in the school calendar. This table consists of data which answers
+          WHEN questions.</p>
+          <br>
+      </div>
+      <div class="col-md-4">
+        <a ui-sref="response">
+          <img src="http://via.placeholder.com/800x400" class="center-block img-responsive">
+        </a>
+        <h2>Response
+          <a ui-sref="response" class="btn btn-link">View Entries</a>
+        </h2>
+        <h4>No Command Inquiries</h4>
+        <table class="table table-condensed">
+          <thead>
+            <tr>
+              <th>Active</th>
+              <th>Archived</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{($ctrl.responseEntries | filter: {active: 'true'}).length }}</td>
+              <td>{{($ctrl.responseEntries | filter: {active: 'false'}).length }}</td>
+              <td>{{$ctrl.responseEntries.length}}</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>The response table contains conversational messages which can handle users who want to use the UBAE for fun.</p>
+        <br>
+      </div>
+    </div>
+    <hr>
+  </div>
+</div>

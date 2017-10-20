@@ -2,17 +2,45 @@ $icon-font-path: '/assets/fonts/bootstrap/';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
 $fa-font-path: '/assets/fonts/font-awesome/';
 @import '~font-awesome/scss/font-awesome';
-
+// @import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Lato|Open+Sans|Raleway');
 // @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,900|Roboto:300,500,700,900);
 
 /**
  * App-wide Styles
  */
 
- .main {
-   padding-top:120px;
-   margin: 0 25px;
- }
+// .main {
+//   //  padding-top: 80px;
+//   margin: 0 10px;
+// }
+
+// #main {
+//   padding-top: 50px;
+//   padding-bottom: 30px;
+// }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  h1, h2, h3, h4, h5, h6{
+    font-family: 'Lato', sans-serif;
+  }
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+   ::-webkit-scrollbar {
+    width: 3px
+  }
+   ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px #000000;
+  }
+   ::-webkit-scrollbar-thumb {
+    background-color: rgba(220, 20, 60, 1);
+    outline: 1px;
+  }
+}
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -22,21 +50,57 @@ $fa-font-path: '/assets/fonts/font-awesome/';
 }
 
 // Component styles are injected through gulp
+
 /* inject:scss */
+
 @import 'account/login/login';
+
+@import 'account/settings/settings';
+
+@import 'account/signup/signup';
+
 @import 'admin/admin';
-@import 'department/department';
-@import 'dept/dept';
+
+@import 'components/animation';
+
+@import 'components/background';
+
+@import 'components/bottomform';
+
+@import 'components/confirmation';
+
+@import 'components/dashboard';
+
+@import 'components/sideform';
+
+@import 'components/tagsView';
+
+@import 'development/development';
+
 @import 'event/event';
+
 @import 'feedback/feedback';
+
+@import 'information/information';
+
+@import 'instruction/instruction';
+
 @import 'location/location';
+
 @import 'main/main';
-@import 'program/program';
+
+@import 'provider/provider';
+
 @import 'response/response';
-@import 'service/service';
+
 @import 'ubae/ubae';
+
 @import '../components/footer/footer';
+
 @import '../components/modal/modal';
+
 @import '../components/navbar/navbar';
-@import '../components/sidenav/sidenav';
+
+@import '../components/statusbar/statusbar';
+
 /* endinject */

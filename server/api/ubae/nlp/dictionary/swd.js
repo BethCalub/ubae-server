@@ -1,5 +1,6 @@
 'use strict';
 exports.sw = [
+  'ub',
   'how',
   'what',
   'when',

@@ -1,0 +1,26 @@
+.feedback-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#feedback {
+  // @extend .feedback-container;
+}
+
+.feedback-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.row.match-my-cols {
+  overflow: hidden; 
+}
+
+.row.match-my-cols [class*="col-"]{
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}

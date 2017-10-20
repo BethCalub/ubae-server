@@ -3,58 +3,132 @@ import uiRouter from 'angular-ui-router';
 import routing from './main.routes';
 
 export class MainController {
-  awesomeThings = [];
-  newThing = '';
-
   /*@ngInject*/
-  constructor($http, $scope, socket) {
+  constructor($http, $scope, socket, $window, $anchorScroll, $location) {
     this.$http = $http;
     this.socket = socket;
-    this.animationsEnabled = true;
+    this.$anchorScroll = $anchorScroll;
+    this.$location = $location;
+    this.$window = $window;
 
-    $scope.$on('$destroy', function() {
-      socket.unsyncUpdates('dept');
-    });
+    this.startDate = '';
+    this.altInputFormats = ['M!/d!/yyyy'];
+    this.startDatePicker = {
+      isDatepickerOpen: false,
+      datepickerOptions: {
+        datepickerMode: 'day',
+        showWeeks: true,
+        startingDay: 0, // (0=Sunday, ..., 6=Saturday)
+        minDate: new Date(Date.now()), // must be JS Date
+        maxDate: null, // must be JS Date
+        initDate: null // must be JS Date
+      }
+    };
+    this.endDate = '';
+    this.endDatePicker = {
+      isDatepickerOpen: false,
+      datepickerOptions: {
+        datepickerMode: 'day',
+        showWeeks: true,
+        startingDay: 0, // (0=Sunday, ..., 6=Saturday)
+        minDate: new Date(Date.now()), // must be JS Date
+        maxDate: null, // must be JS Date
+        initDate: null // must be JS Date
+      }
+    };
+
+    this.locations = '/api/locations';
+    this.events = '/api/events';
+    this.informations = '/api/informations';
+    this.providers = '/api/providers';
+    this.instructions = '/api/instructions';
+    this.responses = '/api/responses';
+    this.feedbacks = '/api/feedbacks';
+    this.items = ['item1', 'item2', 'item3'];
+
+    this.alertMe = function(message) {
+      setTimeout(function() {
+        $window.alert(message);
+      });
+    };
+  }
+
+  scrollTo(_id) {
+    this.$location.hash(_id);
+    this.$anchorScroll();
   }
 
   $onInit() {
-    this.$http.get('/api/depts')
-      .then(response => {
-        this.awesomeThings = response.data;
-        this.socket.syncUpdates('dept', this.awesomeThings);
-      });
-  }
+    this.$http.get(this.locations)
+    .then(response => {
+      this.locationEntries = response.data;
+      this.eventStatus = 'Locations Loaded';
+      console.log(response.statusText);
+    }, err => {
+      this.eventStatus = 'Cannot Load Data';
+      console.log(err.statusText);
+    });
 
-  addThing() {
-    if(this.newThing) {
-      this.$http.post('/api/depts', {
-        department: this.newThing
-      });
-      this.newThing = '';
-    }
-  }
+    this.$http.get(this.events)
+    .then(response => {
+      this.eventEntries = response.data;
+      this.eventStatus = 'Locations Loaded';
+      console.log(response.statusText);
+    }, err => {
+      this.eventStatus = 'Cannot Load Data';
+      console.log(err.statusText);
+    });
 
-  deleteThing(thing) {
-    this.$http.delete(`/api/depts/${thing._id}`);
-  }
+    this.$http.get(this.informations)
+    .then(response => {
+      this.informationEntries = response.data;
+      this.eventStatus = 'Locations Loaded';
+      console.log(response.statusText);
+    }, err => {
+      this.eventStatus = 'Cannot Load Data';
+      console.log(err.statusText);
+    });
 
-  // uibModal.open({
-  //   templateUrl: 'main.html',
-  //   controller: 'MainController',
-  //   animation: true,
-  //   size: 'lg|sm',
-  //   resolve: {
-  //     items: function () {
-  //       return scope.items;
-  //     }
-  //   }
-  // }).result
-  // .then(function (selectedItem) {
-    
-  // })
-  // .catch(function () {
-  //   // Modal dismissed.
-  // });
+    this.$http.get(this.providers)
+    .then(response => {
+      this.providerEntries = response.data;
+      this.eventStatus = 'Locations Loaded';
+      console.log(response.statusText);
+    }, err => {
+      this.eventStatus = 'Cannot Load Data';
+      console.log(err.statusText);
+    });
+
+    this.$http.get(this.instructions)
+    .then(response => {
+      this.instructionEntries = response.data;
+      this.eventStatus = 'Locations Loaded';
+      console.log(response.statusText);
+    }, err => {
+      this.eventStatus = 'Cannot Load Data';
+      console.log(err.statusText);
+    });
+
+    this.$http.get(this.responses)
+    .then(response => {
+      this.responseEntries = response.data;
+      this.eventStatus = 'Locations Loaded';
+      console.log(response.statusText);
+    }, err => {
+      this.eventStatus = 'Cannot Load Data';
+      console.log(err.statusText);
+    });
+
+    this.$http.get(this.feedbacks)
+    .then(response => {
+      this.feedbackEntries = response.data;
+      this.eventStatus = 'Locations Loaded';
+      console.log(response.statusText);
+    }, err => {
+      this.eventStatus = 'Cannot Load Data';
+      console.log(err.statusText);
+    });
+  }
 }
 
 export default angular.module('ubaeApiApp.main', [uiRouter])

@@ -1,45 +1,70 @@
-<div class="container">
-  <row>
-      <div class="col-xs-9">
-          <h4>Accounts Entries:</h4>
+<div class="section" style="padding: 60px 0;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="breadcrumb">
+          <li>
+            <a ui-sref="main">Home</a>
+          </li>
+          <li class="active">
+            Accounts
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="well well-lg">
+          <h1>Administrator Accounts</h1>
+          <div>
+            <p>This table contains functions for account management.</p>
+            <ul>
+              <li>The administrator can view the accounts username, email address and access level.</li>
+            </ul>
+          </div>
         </div>
-      <div class="col-xs-3">
-          <input type="text" class="form-control input-sm" id="search" 
-            ng-model="admin.searchAccounts" 
-            uib-tooltip="Search for information contained in the Accounts database. 
-              This will filter out the information as you type."
-            tooltip-placement="left" tooltip-is-open="isTooltipOpen" tooltip-trigger="click" tooltip-animation="false" tooltip-popup-delay="1000" tooltip-popup-close-delay="1000"
-            placeholder="Search Accounts">
-        </div>
-  </row>
-  <row>
-      <table class="table table-condensed table-hover">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <h4>{{admin.users.length}} Account Entries:&nbsp;
+          <a ui-sref="signup">Create Administrator</a>
+        </h4>
+      </div>
+      <div class="col-md-4">
+        <input type="text" class="form-control input-sm" id="search" ng-model="admin.searchAccounts" uib-tooltip="Search for information contained in the Accounts database. 
+                      This will filter out the information as you type." tooltip-placement="left" tooltip-is-open="isTooltipOpen"
+          tooltip-trigger="click" tooltip-animation="false" tooltip-popup-delay="1000" tooltip-popup-close-delay="1000" placeholder="Search Users">
+      </div>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-condensed table-striped table-hover">
           <thead>
             <tr>
-              <th>#</th>
-              <th>User Name</th>
+              <th style="width: 20px">#</th>
+              <th>Name</th>
               <th>Email</th>
               <th>Access</th>
               <th></th>
             </tr>
           </thead>
           <tbody>
-            <tr ng-repeat="user in admin.users | filter: admin.searchAccounts">
-             <td>{{$index + 1 }}</td>
-             <td>{{user.name}}</td>
-             <td>{{user.email}}</td>
-             <td>{{user.role}}</td>
+            <tr ng-repeat="user in admin.users | filter: { name: admin.searchAccounts}">
+              <td>{{$index + 1 }}</td>
+              <td>{{user.name}}</td>
+              <td>{{user.email}}</td>
+              <td>{{user.role}}</td>
               <td>
-                <button type="button" class="close" 
-                  ng-click="admin.delete(user)" 
-                  uib-tooltip="WARNING!!! This action will PERMANENTLY delete this account."
+                <button type="button" class="close" ng-hide="admin.getCurrentUser().name == user.name" ng-click="admin.delete(user)" uib-tooltip="WARNING!!! This action will PERMANENTLY delete this account."
                   tooltip-placement="left">&times;
-              </button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-  </row>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
-
-

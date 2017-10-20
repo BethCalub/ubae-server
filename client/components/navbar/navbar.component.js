@@ -4,12 +4,32 @@
 import angular from 'angular';
 
 export class NavbarComponent {
-  menu = [{
-    title: 'Feedbacks',
-    state: 'feedback'
-  }];
 
-  isCollapsed = true;
+  menu = [{
+    title: 'Home',
+    state: 'main'
+  }, {
+    title: 'Feedback',
+    state: 'feedback'
+  }, {
+    title: 'Information',
+    state: 'information'
+  }, {
+    title: 'Event',
+    state: 'event'
+  }, {
+    title: 'Location',
+    state: 'location'
+  }, {
+    title: 'Instruction',
+    state: 'instruction'
+  }, {
+    title: 'Provider',
+    state: 'provider'
+  }, {
+    title: 'Response',
+    state: 'response'
+  }];
 
   constructor(Auth) {
     'ngInject';
@@ -17,6 +37,8 @@ export class NavbarComponent {
     this.isLoggedIn = Auth.isLoggedInSync;
     this.isAdmin = Auth.isAdminSync;
     this.getCurrentUser = Auth.getCurrentUserSync;
+
+    this.isCollapsed = true;
   }
 
   closeNav() {

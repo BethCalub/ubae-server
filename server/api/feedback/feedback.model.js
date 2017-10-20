@@ -9,7 +9,7 @@ var FeedbackSchema = new mongoose.Schema({
     type: String
   },
   command: String,
-  modifier: String,
+
   keywords: [{
     type: String,
     lowercase: true
@@ -18,15 +18,12 @@ var FeedbackSchema = new mongoose.Schema({
     type: Date,
     default: Date.now()
   },
-  response: String,
+
   resolved: {
     type: Boolean,
     default: false
   },
-  result: {
-    type: Boolean,
-    default: true
-  },
+
   archive: {
     type: Boolean,
     default: false

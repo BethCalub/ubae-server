@@ -13,8 +13,27 @@ export class FeedbackComponent {
     this.link = '/api/feedbacks';
     this.showNotif = false;
 
-    this.tableName = 'Feedbacks';
-    this.tableEntries = ['#', 'Inquiry', 'Command', 'Tags', 'Response', 'Date', 'Time', 'Resolved'];
+    this.commandType = '';
+
+    this.cmdSelect = {
+      'All Commands': '',
+      What: 'WHAT',
+      When: 'WHEN',
+      Where: 'WHERE',
+      How: 'HOW',
+      Which: 'WHICH'
+    };
+
+    this.resolvedType = 'false';
+
+    this.resolvedSelect = {
+      // 'All Entries': '',
+      Resolved: 'true',
+      Unresolved: 'false',
+    };
+
+    this.tableName = 'Feedback';
+    this.tableEntries = ['#', 'User Inquiry', 'Command', 'Tags', 'Date', 'Time', 'Resolved'];
 
     $scope.$on('$destroy', function() {
       socket.unsyncUpdates('feedback');
@@ -22,7 +41,25 @@ export class FeedbackComponent {
   }
 
   $onInit() {
-    this.getEntries();
+    this.$http.get(this.link)
+    .then(response => {
+      this.entryList = response.data;
+      this.socket.syncUpdates('feedback', this.entryList);
+      this.eventStatus = 'Data Loaded Succesfully';
+    }, err => {
+      this.eventStatus = 'Loading Failed';
+      this.error = err.statusText;
+    });
+  }
+
+  setNotif(_msg, response, _alert) {
+    this.showNotif = true;
+    return {
+      message: _msg,
+      code: response.status,
+      status: response.statusText,
+      alert: _alert
+    };
   }
 
   // GET ALL ENTRIES
@@ -34,6 +71,32 @@ export class FeedbackComponent {
     }, err => {
       this.error = err.statusText;
     });
+  }
+
+  // ARCHIVE ENTRY
+  archiveEntry(_id) {
+    this.$http.put(this.link + '/' + _id, {
+      resolved: true
+    })
+    .then(response => {
+      this.eventStatus = 'Archived Succesfully';
+    }, err => {
+      this.eventStatus = 'Archiving Failed';
+    });
+    this.getEntries();
+  }
+
+  // DELETE ENTRY
+  deleteEntry(_id) {
+    this.$http.delete(this.link + '/' + _id)
+    .then(response => {
+      this.eventStatus = 'Entry Deleted Successfully';
+      this.resetResponse();
+    }, err => {
+      this.eventStatus = 'Deleting Failed';
+    });
+    this.getEntries();
+    this.resetResponse();
   }
 
 }

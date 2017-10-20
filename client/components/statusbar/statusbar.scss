@@ -1,0 +1,40 @@
+.flexbox-statusbar {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: space-between;
+}
+
+#statusbar {
+  @extend .flexbox-statusbar;
+  position: fixed;
+  background-color: rgba(70, 70, 70, .95);
+  color: white;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // height: 30px;
+  padding: 3px 15px;
+  z-index: 1000;
+  .left-status {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+  }
+  .right-status {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: center;
+    .status-message {
+      color: white;
+    }
+  }
+}
+
+
+
+
+

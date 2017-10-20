@@ -15,7 +15,7 @@ export function use(req, res) {
   if(userInput) {
     var ubae = UbaeNLP.getQuery(userInput);
     if(!ubae.help) {
-      if(ubae.keywords.length >= 0) {
+      if(ubae.keywords.length > 0) {
         switch (ubae.command) {
         case 'what':
           return UbaeSearch.searchWhat(req, res, userInput, ubae);
@@ -59,6 +59,7 @@ export function nlp(req, res) {
     return res.send({
       input: ubae._in,
       command: ubae.command,
+      foulword: ubae.foulwords,
       classifier: ubae.classifier,
       tags: ubae.keywords,
       stemmed: ubae.stemmed.toString().split(','),

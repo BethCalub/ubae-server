@@ -1,65 +1,125 @@
-<div class="container-fluid" id="response">
-  <!-- <div class="alert {{eventCtrl.eventStatus.alert}}" ng-show="eventCtrl.showNotif">
-    <button type="button" class="close" ng-click="eventCtrl.dismissNotif()" aria-hidden="true">&times;</button>
-    <strong>{{eventCtrl.eventStatus.status}}</strong> {{eventCtrl.eventStatus.message}}
-  </div> -->
-  <div class="row">
-    <div class="col-sm-9">
-      <h4>{{feedbackCtrl.tableName}} Entries:</h4>
-    </div>
-    <!-- <div class="col-sm-2">
-        <div class="form-group">
-        <select
-        ng-model="eventCtrl.filterType" name="response" 
-        ng-options="x for x in eventCtrl.typeSelect"
-        class="form-control input-sm" required="required">
-      </select>
+<div class="section" style="padding: 60px 0;">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="well well-lg">
+          <h1>Feedback</h1>
+          <p>This table contains all the inquiries that UBAE cannot answer. The purpose of the information contained in this
+            table is to assist in maintaining the UBAE chatbot core information.</p>
+          <ul>
+            <li>This table would only serve as a basis for new data needed to be added or updated in the database.</li>
+          </ul>
         </div>
-    </div> -->
-    <div class="col-sm-3">
-      <div class="form-group">
-        <label class="sr-only" for="search">Search</label>
-        <input type="text" class="form-control input-sm" id="search" ng-model="feedbackCtrl.searchResponses" uib-tooltip="Search for information contained in the {{feedbackCtrl.tableName}} database. This will filter out the information as you type."
-          tooltip-placement="bottom" placeholder="Search {{feedbackCtrl.tableName}}">
       </div>
     </div>
+    <div class="row">
+      <div class="col-md-5">
+        <h4>{{(feedbackCtrl.entryList | filter: {command: feedbackCtrl.commandType, keywords: feedbackCtrl.searchResponses, resolved:
+          feedbackCtrl.resolvedType}).length}} {{feedbackCtrl.tableName}} Entries:</h4>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <select ng-model="feedbackCtrl.resolvedType" name="response" ng-options="x for (x, y) in feedbackCtrl.resolvedSelect" class="form-control input-sm"
+            required="required">
+          </select>
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <select ng-model="feedbackCtrl.commandType" name="response" ng-options="x for (x, y) in feedbackCtrl.cmdSelect" class="form-control input-sm"
+            required="required">
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="form-group">
+          <label class="sr-only" for="search">Search</label>
+          <input type="text" class="form-control input-sm" id="search" ng-model="feedbackCtrl.searchResponses" uib-tooltip="Search for information contained in the {{feedbackCtrl.tableName}} database. This will filter out the information as you type."
+            tooltip-placement="bottom" placeholder="Search {{feedbackCtrl.tableName}} Tags">
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-6" ng-repeat="response in feedbackCtrl.entryList | 
+        filter: { keywords: feedbackCtrl.searchResponses,
+        command: feedbackCtrl.commandType,
+        resolved: feedbackCtrl.resolvedType } | orderBy: 'type'">
+         
+         <div class="well" style="min-height: 250px;">
+            <h6>Inquiry {{$index + 1}}</h6>
+            <h6 class="text-right">{{response.timestamp | date: 'shortDate'}}, {{response.timestamp | date: 'hh:mm:ssa'}}</h6>
+            <h3>{{response.userinput}}</h3>
+            <h4 class="text-left">{{response.command | uppercase}} Command</h4>
+            <p><ul class="tags">
+                <li ng-repeat="tags in response.keywords">
+                  <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
+                    {{tags}}
+                  </span>
+                </li>
+              </ul></p>
+            <br>
+            <h5 class="text-right" ng-if="response.resolved == true">RESOLVED</h5>
+            <div class="btn-group btn-group-justified">
+              <a ng-click="feedbackCtrl.archiveEntry(response._id)" ng-if="response.resolved == false" class="btn btn-default">Resolve</a>
+              <a ng-click="feedbackCtrl.deleteEntry(response._id)" class="btn btn-danger">Delete</a>
+            </div>
+         </div>
+         
+          <hr>
+        </div>
+      </div>
+
+
+    <!-- <div class="row">
+      <div class="col-md-12">
+        <table class="table table-condensed table-hover fixed">
+          <thead>
+            <tr>
+              <th ng-repeat="headers in feedbackCtrl.tableEntries">{{headers}}</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="response in feedbackCtrl.entryList | 
+                  filter: { keywords: feedbackCtrl.searchResponses,
+                  command: feedbackCtrl.commandType,
+                  resolved: feedbackCtrl.resolvedType } | orderBy: 'type'">
+              <td style="width: 20px">{{$index + 1}}</td>
+              <td>{{response.userinput}}</td>
+              <td>{{response.command | uppercase}}</td>
+              <td style="width: 35%">
+                <ul class="tags">
+                  <li ng-repeat="tags in response.keywords">
+                    <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
+                      {{tags}}
+                    </span>
+                  </li>
+                </ul>
+              </td>
+              <td>{{response.timestamp | date: 'shortDate'}}</td>
+              <td>{{response.timestamp | date: 'hh:mm:ssa'}}</td>
+              <td>
+                <a href="" ng-click="feedbackCtrl.archiveEntry(response._id)" uib-tooltip="WARNING!!! This action will mark this entry as resolved. This cannot be undone."
+                  tooltip-placement="left" ng-if="response.resolved == false">
+                  Unresolved
+                </a>
+                <span ng-if="response.resolved == true">Resolved</span>
+              </td>
+              <td>
+                <button type="button" class="close" ng-click="feedbackCtrl.deleteEntry(response._id)" uib-tooltip="WARNING!!! This action will delete this entry."
+                  tooltip-placement="left">&times;</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div> -->
+
   </div>
-  <hr>
-  <div class="row list">
-    <table class="table table-condensed table-hover fixed">
-      <thead>
-        <tr>
-          <th ng-repeat="headers in feedbackCtrl.tableEntries">{{headers}}</th>
-          <!-- <th></th> -->
-        </tr>
-      </thead>
-      <tbody>
-        <tr ng-repeat="response in feedbackCtrl.entryList | 
-        filter: { tags: feedbackCtrl.searchResponses } | orderBy: 'type'">
-          <td style="width: 20px">{{$index + 1}}</td>
-          <td><a href="#">{{response.userinput}}</a></td>
-          <td>{{response.command | uppercase}}</td>
-          <td style="width: 35%">
-            <ul>
-              <li ng-repeat="tags in response.keywords">
-                <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
-                  {{tags}}
-                </span>
-              </li>
-            </ul>
-          </td>
-          <td>{{response.response}}</td>
-          <td>{{response.timestamp | date: 'shortDate'}}</td>
-          <td>{{response.timestamp | date: 'hh:mm:ssa'}}</td>
-          <td>{{response.resolved}}</td>
-          <!-- <td>
-            <button type="button" class="close" ng-click="eventCtrl.deleteEvent(response._id)"
-              uib-tooltip="WARNING!!! This action will delete this entry."
-              tooltip-placement="left">&times;</button>
-          </td> -->
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <hr>
 </div>
+
+<statusbar table-name="{{feedbackCtrl.tableName}}" table-entries="{{(feedbackCtrl.entryList | filter: 
+  {command: feedbackCtrl.commandType, keywords: feedbackCtrl.searchResponses,
+    resolved: feedbackCtrl.resolvedType}).length}}" action-message="{{feedbackCtrl.eventStatus}}"></statusbar>

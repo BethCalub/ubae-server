@@ -1,13 +1,48 @@
-#dash {
-  [class*="col-"] {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+#dashboard {
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  height: 100%;
+  position: fixed;
+  background-color: #EEEEEE;
+  .upper {
+    // @extend .flexbox-upper;
+    height:50%;
+    width: 100%;
+    background-color: white;
   }
-
-  .col-md-4 {
-    div {
-      width: 100vw;
-      // height: 100vh;
-    }
+  .lower {
+    // @extend .flexbox-lower;
+    height: 50%;
+    width: 100%;
+    background-color: crimson;
+  }
+  div {
+    width: 100%;
   }
 }
+
+.dash {
+  padding: 15px;
+}
+
+.btn-align {
+  text-align: left;
+  height: 200px;
+}
+
+.flexbox-upper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.flexbox-lower {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+

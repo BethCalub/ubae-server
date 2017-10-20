@@ -1,160 +1,48 @@
-$nav-color: #EEEEEE;
+$nav-color: rgba(70, 70, 70, 0.95);
+$nav-height: 40px;
 
-#nav {
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
+/* Add a background color to the top navigation */
+
+.subnav {
+  position:fixed;
   background-color: $nav-color;
-  padding: 0 50px;
-  z-index: 999;
-  position: relative;
-  .nav-brand {
-
-  }
+  overflow: hidden;
+  z-index: 9999;
+  width: 100%;
 }
 
+/* Style the links inside the navigation bar */
 
+.subnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
 
-// #ubae-header {
-//   width: 100%;
-//   position: relative;
-//   z-index: 999;
-//   .brand-img {
-//     float: none;
-//     margin: 30px auto;
-//     text-align: center;
-//     max-width: 115px;
-//   }
-//   .navbar-toggle {
-//     margin-right: 0;
-//     margin-top: 0;
-//     background: none;
-//     position: absolute;
-//     right: 20px;
-//     top: 30px;
-//     border: none;
-//     &:focus {
-//       outline: none;
-//     }
-//     .icon-bar {
-//       background-color: #999;
-//       height: 3px;
-//     }
-//     &:hover .icon-bar {
-//       background-color: crimson;
-//     }
-//   }
-//   .navbar-fixed-top .navbar-collapse {
-//     max-height: inherit;
-//     border-top: none;
-//     -webkit-box-shadow: none;
-//     -moz-box-shadow: none;
-//     box-shadow: none;
-//   }
-//   .main-nav .nav {
-//     margin-top: 25px;
-//     .nav-item {
-//       a, p {
-// 				text-align: center;
-//         font-family: 'Lato', sans-serif;
-//         font-weight: 700;
-//         text-transform: uppercase;
-//         font-size: 15px;
-//         color: #666;
-//         background: none;
-//       }
-//       &.active a {
-//         color: crimson;
-//       }
-//       a {
-//         &:hover {
-//           color: crimson;
-//         }
-//         &:focus {
-//           outline: none;
-//         }
-//       }
-//     }
-//     .dropdown-menu {
-//       -moz-background-clip: padding;
-//       -webkit-background-clip: padding-box;
-//       background-clip: padding-box;
-//       margin: 0;
-//       border: none;
-//       text-transform: none;
-//       min-width: 180px;
-//       background: #3E606F;
-//       a {
-//         padding: 8px 20px;
-//         color: #666;
-//         -webkit-opacity: 1;
-//         -moz-opacity: 1;
-//         opacity: 1;
-//         &:hover {
-//           background: #3498DB;
-//           color: #fff;
-//         }
-//       }
-//     }
-//     .open > a {
-//       background: none;
-//       &:hover, &:focus {
-//         background: none;
-//       }
-//     }
-//   }
-// }
+/* Change the color of links on hover */
+
+.subnav a:hover {
+  background-color: rgba(220, 20, 60, 0.9);
+  color: white;
+}
+
+/* Add a color to the active/current link */
+
+.subnav a.active {
+  background-color: crimson;
+  color: white
+}
 
 // /* Small Devices, Tablets */
 // @media only screen and (min-width : 768px) {	
-// 	#ubae-header .main-nav .nav .dropdown-menu {
-// 		-webkit-border-radius: 4px;
-// 		-moz-border-radius: 4px;
-// 		-ms-border-radius: 4px;
-// 		-o-border-radius: 4px;
-// 		border-radius: 4px;
-// 		-moz-background-clip: padding;
-// 		-webkit-background-clip: padding-box;
-// 		background-clip: padding-box;
-// 		margin: 0;
-// 		border: none;
-// 		text-transform: none;
-//     min-width: 180px;
-//     text-align: left;
-// 		background: #3E606F;
-// 		&:before {
-// 			content: "";
-// 			display: block;
-// 			width: 0;
-// 			height: 0;
-// 			border-left: 10px solid transparent;
-// 			border-right: 10px solid transparent;
-// 			border-bottom: 10px solid #3E606F;
-// 			position: absolute;
-// 			right: 35px;
-// 			top: -10px;
-// 		}
-// 		a {
-// 			padding: 8px 20px;
-// 			color: #fff;
-// 			-webkit-opacity: 1;
-// 			-moz-opacity: 1;
-// 			opacity: 1;
-// 			&:hover {
-// 				background: #193441;
-// 				color: #fff;
-// 			}
-// 		}
-// 	}
 // }
-
 // /* Medium Devices, Desktops */
 // @media only screen and (min-width : 992px) {
-	
 // }
-
 // /* Large Devices, Wide Screens */
 // @media only screen and (min-width : 1200px) {
-	
 // }

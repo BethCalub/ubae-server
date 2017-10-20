@@ -11,3 +11,4 @@ npm-debug.log
 coverage
 playground
 .DS_Store
+client/.DS_Store

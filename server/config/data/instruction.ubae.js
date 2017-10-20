@@ -37,7 +37,7 @@ var instruction = [{
   ],
   type: '',
   message: 'For freshmen enrollment, first you need to go to the ARC Extension to fill up the online form. After that, you need to submit your documents to the admission area for the checking of your documents and for the creation of your official ID number. Then you will need to proceed to the respective Dean\'s of the course you want to take up for the enrollment of subjects. For the next step, you will need to pay the required downpayment to the cashier, and lastly, go to the MIS office for the printing of your ID and schedule. ',
-  tags: ['Enrollment', 'Freshmen', 'Freshman', 'New', 'Student', 'ARC', 'Service', 'Process']
+  tags: ['Enrollment', 'Freshmen', 'Freshman', 'New', 'Student', 'ARC', 'Service', 'Process', 'UB', 'University', 'Baguio']
 }, {
   name: 'Enrollment for Transferee',
   process: ['1. Go to ARC Extension to fill up form online',
@@ -48,7 +48,7 @@ var instruction = [{
   ],
   type: '',
   message: 'To enroll as a transferee, first you need to go to the ARC Extension to fill up the online form. After that, you need to submit your documents to the admission area for the checking of your documents and for the creation of your official ID number. Then you will need to proceed to the respective Dean\'s of the course you want to take up for the enrollment of subjects. For the next step, you will need to pay the required downpayment to the cashier, and lastly, go to the MIS office for the printing of your ID and schedule. ',
-  tags: ['Enrollment', 'Transferee', 'Student', 'ARC', 'Service', 'Process']
+  tags: ['Enrollment', 'Transferee', 'Student', 'ARC', 'Service', 'Process', 'UB', 'University', 'Baguio']
 }, {
   name: 'Enrollment for New International Student',
   process: ['1. Go to School Deans Office for approval of CRO Form 14',
@@ -59,8 +59,8 @@ var instruction = [{
     '6. Proceed to MIS for your ID and printed schedule'
   ],
   type: '',
-  message: 'Kindly go to the Dean\'s office of the course you would like to take up for the approval of your CRO Form 14. After it is approved, go to the ARC Extension and fill up the online form. Then go to the door C of the ARC Office and present your Student Visa, Passport and Authenticated School Records. After that, go back to the Dean\'s office for the enrollment of subjects. Then go to the cashier to pay the required downpayment. And lastly, go to the MIS Office for the printing of your schedule and ID',
-  tags: ['Enrollment', 'International', 'Foreign', 'Student', 'Service', 'Process']
+  message: 'Kindly go to the Dean\'s office of the course you would like to take up for the approval of your CRO Form 14. After it is approved, go to the ARC Extension and fill up the online form. Then go to the door C of the ARC Office and present your Student Visa, Passport and Authenticated School Records. After that, go back to the Dean\'s office for the enrollment of subjects. Then go to the cashier to pay the required downpayment. And lastly, go to the MIS Office for the printing of your schedule and ID. ',
+  tags: ['Enrollment', 'International', 'Foreign', 'Student', 'Service', 'Process', 'UB', 'University', 'Baguio']
 }, {
   name: 'Enrollment for Current Student',
   process: ['1. Go to the deans office and register your preffered subjects',
@@ -70,7 +70,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Kindly go to the respective Dean\'s office of your department and register the subjects you prefer. Next step is you need to pay the required downpayment to the cashier. And lastly, proceed to the MIS Office for the printing of your schedule and ID validation. ',
-  tags: ['Enrollment', 'Current', 'Old', 'Student', 'Service', 'Process']
+  tags: ['Enrollment', 'Current', 'Old', 'Student', 'Service', 'Process', 'UB', 'University', 'Baguio']
 }, {
   name: 'Release of Student Records for Graduates',
   process: ['1. Get clearance from Dean, Library and AMD',
@@ -79,8 +79,8 @@ var instruction = [{
     '4. Your record will be released after 15 days'
   ],
   type: '',
-  message: 'For the Release of Student Records, first you need to get a clearance form from your Dean\'s office, the Library and AMD. Submit the clearance form to the ARC Office for checking. If there are no deficiencies, ARC will release your claim stamp. And lastly, kindly wait for 15 days for the release of your record. Please take note that if you\'re an under-graduate, you need to pay a certain amount to the cashier first.',
-  tags: ['Release', 'Request', 'Student', 'Records', 'Already', 'Graduates', 'Service', 'Transcript', 'TOR', 'Scholastic',
+  message: 'For the Release of Student Records, first you need to get a clearance form from your Dean\'s office, the Library and AMD. Submit the clearance form to the ARC Office for checking. If there are no deficiencies, ARC will release your claim stamp. And lastly, kindly wait for 15 days for the release of your record. Please take note that if you\'re an under-graduate, you need to pay a certain amount to the cashier first. ',
+  tags: ['Release', 'Request', 'Student', 'Records', 'avail', 'Already', 'Graduates', 'Service', 'Transcript', 'TOR', 'OTR', 'Scholastic',
     'Course', 'Description', 'Clock', 'Hours', 'Diploma', 'Documentary', 'Stamp', 'HS', 'Form', '137', 'Copy', 'Grades', 'Schedule', 'Process'
   ]
 }, {
@@ -90,7 +90,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Just go to the athletics office and present your valid ID.',
-  tags: ['Lending', 'Sports', 'Equipment', 'Borrow', 'Request', 'Service', 'Process']
+  tags: ['Lending', 'Sports', 'Equipment', 'Borrow', 'Request', 'Service', 'avail', 'Process']
 }, {
   name: 'Student Development Facilitation and Counseling Services',
   process: ['Students can just go to the office walk-in or should be reffered by the dean, instructor, Faculty, Parents, or other University Personnel'],
@@ -139,7 +139,7 @@ var instruction = [{
     '2. You will then be scheduled for your tooth extraction.'
   ],
   type: '',
-  message: 'Go to the Clinic and consult the dentist. You will be scheduled for your tooth extraction',
+  message: 'Go to the Clinic and consult the dentist. You will be scheduled for your tooth extraction. ',
   tags: ['Tooth', 'Removal', 'Extraction', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'Minor Surgery',
@@ -179,7 +179,7 @@ var instruction = [{
   name: 'Vaccinations',
   process: ['1. Go to the Clinic and present your Valid ID.'],
   type: '',
-  message: 'Kindly proceed to the clinic and present your valid ID',
+  message: 'Kindly proceed to the clinic and present your valid ID. ',
   tags: ['Vaccination', 'HepB', 'Influenza', 'AH1N1', 'Cervical', 'Cancer', 'Avail', 'Use', 'Service', 'Process']
 }, {
   name: 'X-Ray',
@@ -254,12 +254,12 @@ var instruction = [{
   process: ['1. Signing clearance form for Alumni ID'],
   type: '',
   message: 'Go to the LARC office and get your clearance form signed for the Alumni ID. ',
-  tags: ['UBAFI', 'Alumni', 'Request', 'ID', 'Service', 'Get', 'avail', 'Process']
+  tags: ['Alumni', 'Request', 'ID', 'Service', 'Get', 'avail', 'Process']
 }, {
   name: 'Gives copies of PRC Board Syllabi for STE Students',
   process: ['1. Just go to the Review Center or Print copy from website'],
   type: '',
-  message: 'Please go to the LARC office to get a copy of PRC Board Syllabi for STE Students',
+  message: 'Please go to the LARC office to get a copy of PRC Board Syllabi for STE Students. ',
   tags: ['Copy', 'PRC', 'Board', 'Syllabi', 'STE', 'Students', 'Request', 'avail', 'get']
 }, {
   name: 'Follet-DLM Mobile Application',
@@ -300,7 +300,7 @@ var instruction = [{
   process: ['Proceed to the Library with valid ID'],
   type: '',
   message: 'Kindly proceed to the Centennial Library with your valid ID for clearance signing.',
-  tags: ['Library', 'Clearance', 'Request', 'Signing', 'Service', 'Request', 'Process']
+  tags: ['Library', 'Clearance', 'Request', 'Signing', 'Service', 'Process']
 }, {
   name: 'Library Orientation',
   process: ['1. Just go to the Centennial Library for Library Orientation Request'],
@@ -425,7 +425,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Proceed to OSA and fill up the readmission slip. Be sure to bring your valid ID.',
-  tags: ['Readmission', 'Readmitted', 'claim', 'Dropped', 'Class', 'Card', 'Readmitted', 'classcard', 'Service', 'Process']
+  tags: ['Readmission', 'Readmitted', 'claim', 'Dropped', 'Class', 'Card', 'classcard', 'Service', 'Process']
 }, {
   name: 'Performing Arts',
   process: ['1. Go to student account and fill up scholarship form or yellow form',
@@ -433,7 +433,7 @@ var instruction = [{
   ],
   type: '',
   message: 'Go to the Students Accounts Section and fill up the yellow form. Proceed to OSA and the office director will be the one to process your application.',
-  tags: ['Performing', 'Arts', 'Graces', 'Voices', 'Chamber', 'Orchestra', 'Plug', 'Play', 'Band', 'UBBUK', 'Ethnic', 'Dance', 'Group', 'Process', 'Application', 'Apply', 'Scholarship', 'Service', 'Process']
+  tags: ['Performing', 'Arts', 'Graces', 'Voices', 'Chamber', 'Orchestra', 'Plug', 'Play', 'Band', 'UBBUK', 'Ethnic', 'Dance', 'Group', 'Application', 'Apply', 'Scholarship', 'Service', 'Process']
 }, {
   name: 'Format Editing',
   process: ['1. Go to the RNDC office',
@@ -527,8 +527,8 @@ var instruction = [{
   name: 'Issuance of Promissory Note',
   process: ['1. Fill Up the form from the Student Accounts Section'],
   type: '',
-  message: 'Go to the Students Accounts Section and fill up the form.',
-  tags: ['Promissory', 'Note', 'Request', 'Service', 'Process']
+  message: 'Go to the Students Accounts Section and fill up the form that will be given to you.',
+  tags: ['Promissory', 'Note', 'Request', 'Service', 'Process', 'Temporary', 'Permit', 'Get', 'Avail']
 }, {
   name: 'Issuance of Examination Permits',
   process: ['1. Secure their assessment of fees',
@@ -556,13 +556,13 @@ var instruction = [{
   ],
   type: '',
   message: 'If you have certain complaints in school regarding security, you can go to the Security Office so they can investigate regarding your complaints.',
-  tags: ['Offenses', 'Report', 'Suspicious', 'Campus', 'Security', 'Assistance', 'Investigation', 'Service', 'Process']
+  tags: ['Offenses', 'Report', 'Suspicious', 'Campus', 'Security', 'Assistance', 'Investigation', 'Service', 'Process', 'complaints', 'bullies', 'file', 'bully']
 }, {
   name: 'Lost & Found',
   process: ['1. Bring the Item to the Security Office or give the item to the marshalls'],
   type: '',
   message: 'If you found a lost item, you can give it to the Security Office and report it as Lost and Found. Or if you lost something, you can try to ask if someone honest found your belonging.',
-  tags: ['Lost', 'Found', 'Service', 'Use', 'Avail', 'Item', 'Process']
+  tags: ['Lost', 'Found', 'Service', 'missing', 'Use', 'Avail', 'Item', 'Process', 'file']
 }, {
   name: 'Security Contact',
   process: ['1. Dial 442-4915 or local no. 234/309',
@@ -582,61 +582,61 @@ var instruction = [{
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
   message: 'To process your Certificate of Enrollment, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
-  tags: ['Certificate', 'Enrollment', 'Request', 'Get', 'Process']
+  tags: ['Certificate', 'Enrollment', 'Request', 'Get', 'Process', 'avail']
 }, {
   name: ' Certificate of General Weighted Average ',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
   message: 'To process your Certificate of General Weighted Average, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
-  tags: ['General', 'Weighted', 'Average', 'GWA', 'Get', 'Request', 'Process']
+  tags: ['General', 'Weighted', 'Average', 'GWA', 'Get', 'Request', 'Process', 'avail']
 }, {
   name: 'Certificate of English as Medium Instruction  ',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
   message: 'To process your Certificate of English as Medium Instruction, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
-  tags: ['Certificate', 'English', 'Medium', 'Instruction', 'Get', 'Request', 'Process']
+  tags: ['Certificate', 'English', 'Medium', 'Instruction', 'Get', 'Request', 'Process', 'avail']
 }, {
   name: 'Certificate of Multiple Attendance',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
   message: 'To process your Certificate of Multiple Attendance, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
-  tags: ['Certificate', 'Multiple', 'Attendance', 'Get', 'Request', 'Process']
+  tags: ['Certificate', 'Multiple', 'Attendance', 'Get', 'Request', 'Process', 'avail']
 }, {
   name: 'Certificate of Grades',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
   message: 'To process your Certificate of Grades, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
-  tags: ['Certificate', 'Grades', 'Request', 'Get', 'Process']
+  tags: ['Certificate', 'Grades', 'Request', 'Get', 'Process', 'avail']
 }, {
   name: 'Certificate of Earned Units',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
   message: 'To process your Certificate of Earned Units, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
-  tags: ['Certificate', 'Earned', 'Units', 'Request', 'Get', 'Process']
+  tags: ['Certificate', 'Earned', 'Units', 'Request', 'Get', 'Process', 'avail']
 }, {
   name: 'Certificate of Good Moral Character ',
   process: '2nd Floor, D Building, Beside UB Gym',
   type: '',
   message: 'To process your Certificate of Good Moral Character, you need to get a clearance form from the Dean\'s Office, Library and AMD. After being cleared, you need to proceed to the ARC for checking. If there are no deficiencies, ARC will release your claim stamp and your record will be released after 15 days. Please take note that if you\'re and under-graduate, there is a certain amount you need to pay at the cashier first. ',
-  tags: ['Certificate', 'Good', 'Moral', 'Character', 'Get', 'Request', 'Process']
+  tags: ['Certificate', 'Good', 'Moral', 'Character', 'Get', 'Request', 'Process', 'avail']
 }, {
   name: 'Entrance Scholarships ',
   process: 'Submit requirements at the Office of Student Affairs ',
   type: '',
   message: 'For this type of scholarship, the applicants are required to submit to the Office of Student Affairs a certification attesting to their status under the category being applied for. Please take note that if the applicants are graduates of UB Science High School and UB High School Honor Section, please secure an application form at the Office of the Vice President for Academic Affairs. ',
-  tags: ['Entrance', 'Scholarship', 'Application', 'Apply', 'Science', 'High', 'School', 'Honor', 'Valedictorian', 'Salutatorian', 'Honorable', 'Mention', 'Student', 'Section']
+  tags: ['Entrance', 'Scholarship', 'Application', 'Apply', 'Science', 'High', 'School', 'Honor', 'Valedictorian', 'Salutatorian', 'Honorable', 'Mention', 'Student', 'Section', 'avail']
 }, {
   name: 'Service Grants Scholarship ',
   process: 'Go to the Office to the office concerned ',
   type: '',
   message: 'Procede to the office concerned and follow application procedures. For Student Assistants / Marshalls, proceed to the Human Resource Management Center. For Athletic Scholarship, proceed to the Athletics Office. For Performing arts such as VOICES, GRACES, Band and Orchestra, proceed to the Office of Students Affairs. ',
-  tags: ['Student', 'Assistant', 'Marshall', 'Athlete', 'Athletics', 'Performing', 'Arts', 'VOICES', 'Chorale', 'GRACES', 'Dance', 'Troupe', 'Band', 'Orchestra', 'Scholarship', 'Application', 'Apply']
+  tags: ['Student', 'Assistant', 'Marshall', 'Athlete', 'Athletics', 'Performing', 'Arts', 'VOICES', 'Chorale', 'GRACES', 'Dance', 'Troupe', 'Band', 'Orchestra', 'Scholarship', 'Application', 'Apply', 'avail']
 }, {
   name: 'UB Alumni Graduate Program (Non-UB employee) Scholarship ',
   process: 'Submit requirements to the ARC ',
   type: '',
   message: 'For this type of scholarship, please submit an application letter, endorsement letter from your superior that indicates the number of maximum units you\'re allowed to enroll, certificate of employment (if applicable), Official Transcript of Records, Service Record (if applicable), photocopy of employment ID and Certificate of Good Moral Character to the ARC. ',
-  tags: ['Graduate ', 'Program ', 'Alumni', 'Scholarship', 'Application', 'Apply']
+  tags: ['Graduate ', 'Program ', 'Alumni', 'Scholarship', 'Application', 'Apply', 'avail']
 }, {
   name: 'Government Grant Scholarship ',
   process: 'Visit the concerned agencies\' regional offices ',
@@ -647,6 +647,7 @@ var instruction = [{
     'Scholarship',
     'Application',
     'Apply',
+    'avail',
     'Study',
     'Now',
     'Pay',
@@ -685,7 +686,6 @@ var instruction = [{
     'Workers',
     'Welfare',
     'Agency',
-
     'OWWA'
   ]
 }, {
@@ -693,13 +693,13 @@ var instruction = [{
   process: 'Get an application form at the Students Accounts Office ',
   type: '',
   message: 'Please proceed to the Student Accounts Section and ask for an application form for Military/Police Scholarship.  ',
-  tags: ['Apply', 'Application', 'DILG', 'Uniformed', 'Personel', 'Scholarship', 'NBI', 'AFP', 'USVA']
+  tags: ['Apply', 'Application', 'DILG', 'Uniformed', 'Personel', 'Scholarship', 'NBI', 'AFP', 'USVA', 'avail']
 }, {
   name: 'BSESE and Jollibee SEEDS scholar ',
   process: ' ',
   type: '',
   message: 'Please proceed to the office of the Vice President for Academic Affairs and ask for the application form for scholarship. ',
-  tags: ['Scholarship', 'Apply', 'Application', 'BSESE', 'Bachelor', 'Science', 'Environmental', 'Sanitary', 'Engineering', 'Jollibee', 'SEEDS']
+  tags: ['Scholarship', 'Apply', 'Application', 'BSESE', 'Bachelor', 'Science', 'Environmental', 'Sanitary', 'Engineering', 'Jollibee', 'SEEDS', 'avail']
 }, {
   name: 'Change Name ',
   process: 'Proceed to the ARC ',
@@ -714,7 +714,7 @@ var instruction = [{
   ],
   type: '',
   message: 'For Presentation of Research Findings, go to the RNDC and submit a copy of your study or manuscript. Be sure to sign the log book.',
-  tags: ['Presentation', 'Research', 'Findings', 'Use', 'Request', 'Service', 'Process']
+  tags: ['Presentation', 'Research', 'Findings', 'Use', 'Request', 'Service', 'Process', 'avail']
 }, {
   name: 'Printing of Schedule',
   process: ['Proceed to the MIS office'],
@@ -732,13 +732,273 @@ var instruction = [{
   process: ['Fill Up the Pink Form, Pay to the cashier '],
   type: '',
   message: 'Please fill up the pink form which is available at the cashier. Fall in line and wait for your turn to pay. ',
-  tags: ['Payment', 'Tuition', 'Fee', 'Process', 'Service']
+  tags: ['Payment', 'Tuition', 'Fee', 'Process', 'Service', 'paid']
 }, {
   name: 'See Grades',
-  process: ['Fill Up the Pink Form, Pay to the cashier '],
-  type: 'login to aims.ubaguio.edu/aims/students',
+  process: ['login to aims.ubaguio.edu/aims/students '],
+  type: '',
   message: 'Please login to the student portal aims.ubaguio.edu/aims/students and click grades. ',
-  tags: ['Grades', 'See']
+  tags: ['Grades', 'See', 'View']
+}, {
+  name: 'Enrollment in SBAA',
+  process: ['1. Go to the SBAA dean\'s office for assistance'],
+  type: '',
+  message: 'Please go to the SBAA dean\'s office to ask for assistance on how to enroll in their department',
+  tags: ['Enrollment',
+    'SBAA',
+    'school',
+    'business',
+    'administration',
+    'accountancy',
+    'MBA',
+    'BA',
+    'MA',
+    'Master',
+    'BSAC',
+    'Bachelor',
+    'Science',
+    'BSBAFM',
+    'FinMan',
+    'Financial',
+    'BSBAMM',
+    'Marketing',
+    'BSBAOM',
+    'Operations',
+    'BSBAHRDM',
+    'Human',
+    'Resource',
+    'Development',
+    'AAT',
+    'Associate',
+    'Technology',
+    'Certificate',
+    'Program',
+    'Courses'
+  ]
+}, {
+  name: 'Enrollment in SCJPS',
+  process: ['1. Go to the SCJPS dean\'s office for assistance'],
+  type: '',
+  message: 'Please go to the SCJPS dean\'s office to ask for assistance on how to enroll in their department',
+  tags: ['Enrollment',
+    'SCJPS',
+    'school',
+    'college',
+    'criminal',
+    'justice',
+    'public',
+    'safety',
+    'PHDCJSC',
+    'Doctor',
+    'Philosophy',
+    'Specialization',
+    'Criminology',
+    'MSCJSC',
+    'Master',
+    'Science',
+    'BSCRIM',
+    'BFSci',
+    'Bachelor',
+    'Forensic'
+  ]
+}, {
+  name: 'Enrollment in SOD',
+  process: ['1. Go to the SOD dean\'s office for assistance'],
+  type: '',
+  message: 'Please go to the SOD dean\'s office to ask for assistance on how to enroll in their department',
+  tags: ['Enrollment',
+    'SOD',
+    'school',
+    'college',
+    'dentistry',
+    'MDE',
+    'Master',
+    'Dental',
+    'Education',
+    'Doctor',
+    'Medicine',
+    'DM',
+    'Pre',
+  ]
+}, {
+  name: 'Enrollment in SEA',
+  process: ['1. Go to the SEA dean\'s office for assistance'],
+  type: '',
+  message: 'Please go to the SEA dean\'s office to ask for assistance on how to enroll in their department',
+  tags: ['Enrollment',
+    'SEA',
+    'school',
+    'college',
+    'engineering',
+    'architecture',
+    'Bachelor',
+    'Science',
+    'BSCE',
+    'Civil',
+    'BSECE',
+    'Electronics',
+    'Communications',
+    'BSESE',
+    'Environmental',
+    'Sanitary',
+    'BSIT-MECHA',
+    'Industrial',
+    'Technology',
+    'Mechatronics'
+  ]
+}, {
+  name: 'Enrollment in SIT',
+  process: ['1. Go to the SIT dean\'s office for assistance'],
+  type: '',
+  message: 'Please go to the SIT dean\'s office to ask for assistance on how to enroll in their department',
+  tags: ['Enrollment',
+    'SIT',
+    'school',
+    'college',
+    'information',
+    'technology',
+    'BSCPE',
+    'Bachelor',
+    'Science',
+    'Computer',
+    'Engineering',
+    'Program',
+    'Course',
+    'BSCS',
+    'BSIT'
+  ]
+}, {
+  name: 'Enrollment in SIHTM',
+  process: ['1. Go to the SIHTM dean\'s office for assistance'],
+  type: '',
+  message: 'Please go to the SIHTM dean\'s office to ask for assistance on how to enroll in their department',
+  tags: ['Enrollment',
+    'SIHTM',
+    'school',
+    'college',
+    'international',
+    'hospitality',
+    'tourism',
+    'management',
+    'HRM',
+    'BSHRM',
+    'Bachelor',
+    'Science',
+    'Hotel',
+    'Restaurant',
+    'Program',
+    'Course',
+    'BSTM',
+    'AAHRM',
+
+  ]
+}, {
+  name: 'Enrollment in SLAHS',
+  process: ['1. Go to the SLAHS dean\'s office for assistance'],
+  type: '',
+  message: 'Please go to the SLAHS dean\'s office to ask for assistance on how to enroll in their department',
+  tags: [
+    'Enrollment', 'SLAHS', 'school',
+    'college', 'liberal', 'arts',
+    'human', 'sciences', 'MPA',
+    'Master', 'Public', 'Administration',
+    'Program', 'Course', 'MAEng',
+    'English', 'BABroad', 'Bachelor',
+    'Broadcasting',
+    'BAEng',
+    'BAComm',
+    'Mass',
+    'Communication',
+    'Masscom',
+    'mascom',
+    'BAPolSci',
+    'PolSci',
+    'Political',
+    'Science',
+    'BSPsych',
+    'Psychology',
+    'BAMusic',
+    'Music'
+  ]
+}, {
+  name: 'Enrollment in SNS',
+  process: ['1. Go to the SNS dean\'s office for assistance'],
+  type: '',
+  message: 'Please go to the SNS dean\'s office to ask for assistance on how to enroll in their department',
+  tags: ['Enrollment',
+    'SNS',
+    'school',
+    'college',
+    'natural',
+    'science',
+    'BSPT',
+    'PT',
+    'Bachelor',
+    'Physical',
+    'Therapy',
+    'BMLS',
+    'Medical',
+    'Laboratory',
+  ]
+}, {
+  name: 'Enrollment in SON',
+  process: ['1. Go to the SON dean\'s office for assistance'],
+  type: '',
+  message: 'Please go to the SON dean\'s office to ask for assistance on how to enroll in their department',
+  tags: ['Enrollment',
+    'SON',
+    'school',
+    'college',
+    'nursing',
+    'Bachelor',
+    'Science',
+    'Program',
+    'Course',
+    'HCS',
+    'Health',
+    'Care',
+    'Services'
+  ]
+}, {
+  name: 'Enrollment in STE',
+  process: ['1. Go to the STE dean\'s office for assistance'],
+  type: '',
+  message: 'Please go to the STE dean\'s office to ask for assistance on how to enroll in their department',
+  tags: ['Enrollment',
+    'STE',
+    'school',
+    'college',
+    'teacher',
+    'education',
+    'PHDevEd',
+    'Doctor',
+    'Philosophy',
+    'Development',
+    'Program',
+    'Course',
+    'EDD',
+    'MAEd',
+    'Master',
+    'Arts',
+    'BEEdGenEd',
+    'Bachelor',
+    'Major',
+    'General',
+    'BEEdSpEd',
+    'Elementary',
+    'Special',
+    'BSED',
+    'Secondary'
+  ]
+}, {
+  name: 'Cross Enroll',
+  process: ['1. Students enrolled in other institutions of learning may be admitted in the University of Baguio on a case-to-case basis and only upon submission of permit from the Registrar and the Dean of the school in which they are principally enrolled.',
+    '2. The permit shall state the subject and the total number of units which they are allowed to cross-enroll in other institutions of learning.',
+    '3. Graduating students may cross-enroll in other institutions of learning provided that the cross-enrolled subject is not offered in the University of Baguio and provided further that the student who wishes to cross-enroll secures a permit from the Registrar of the University of Baguio and signed by the dean.'
+  ],
+  type: '',
+  message: 'Please submit a Permit from your Dean and Registrar that states the subject and total number of units your are allowed to take. ',
+  tags: ['Cross', 'Enroll', 'University', 'Institution']
 }];
 
 exports.instruction = instruction;

@@ -12,6 +12,8 @@
 
 import jsonpatch from 'fast-json-patch';
 import Instruction from './instruction.model';
+import UbaeNLP from '../ubae/nlp/nlp.stopper';
+import UbaeUtility from '../ubae/nlp/nlp.utility';
 
 function respondWithResult(res, statusCode) {
   statusCode = statusCode || 200;
@@ -81,7 +83,12 @@ export function show(req, res) {
 
 // Creates a new Instruction in the DB
 export function create(req, res) {
-  return Instruction.create(req.body)
+  return Instruction.create({
+    name: req.body.name,
+    process: UbaeUtility.trimEntries(req.body.details),
+    message: req.body.message,
+    tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags))
+  })
     .then(respondWithResult(res, 201))
     .catch(handleError(res));
 }
@@ -91,23 +98,43 @@ export function upsert(req, res) {
   if(req.body._id) {
     Reflect.deleteProperty(req.body, '_id');
   }
-  return Instruction.findOneAndUpdate({_id: req.params.id}, req.body, {new: true, upsert: true, setDefaultsOnInsert: true, runValidators: true}).exec()
+  return Instruction.findOneAndUpdate({_id: req.params.id},
+    req.body,
+    {new: true, upsert: true, setDefaultsOnInsert: true, runValidators: true}).exec()
+
+    .then(respondWithResult(res))
+    .catch(handleError(res));
+}
+
+// Upserts the given Instruction in the DB at the specified ID
+export function patch(req, res) {
+  if(req.body._id) {
+    Reflect.deleteProperty(req.body, '_id');
+  }
+  return Instruction.findOneAndUpdate({_id: req.params.id},
+    {
+      name: req.body.name,
+      process: UbaeUtility.trimEntries(JSON.stringify(req.body.details)),
+      message: req.body.message,
+      tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags))
+    },
+    {new: true, upsert: true, setDefaultsOnInsert: true, runValidators: true}).exec()
 
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
 
 // Updates an existing Instruction in the DB
-export function patch(req, res) {
-  if(req.body._id) {
-    Reflect.deleteProperty(req.body, '_id');
-  }
-  return Instruction.findById(req.params.id).exec()
-    .then(handleEntityNotFound(res))
-    .then(patchUpdates(req.body))
-    .then(respondWithResult(res))
-    .catch(handleError(res));
-}
+// export function patch(req, res) {
+//   if(req.body._id) {
+//     Reflect.deleteProperty(req.body, '_id');
+//   }
+//   return Instruction.findById(req.params.id).exec()
+//     .then(handleEntityNotFound(res))
+//     .then(patchUpdates(req.body))
+//     .then(respondWithResult(res))
+//     .catch(handleError(res));
+// }
 
 // Deletes a Instruction from the DB
 export function destroy(req, res) {

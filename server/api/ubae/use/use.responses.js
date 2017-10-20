@@ -26,9 +26,9 @@ function createFeedback(_in, cmd, mod, tag, ubaeresponse = '') {
   Feedback.create({
     userinput: _in,
     command: cmd,
-    modifier: mod,
+
     keywords: tag,
-    response: ubaeresponse,
+
     timestamp: Date.now()
   })
   .then(() => console.log('Successfully added feedback.'))
@@ -39,7 +39,7 @@ exports.response = function(req, res, userInput, ubae) {
   return Response.findOne({
     active: true,
     tags: {
-      $all: ubae.regex
+      $all: ubae.keywords
     }
   })
   .select('message')
