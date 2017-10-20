@@ -2,8 +2,8 @@
   <h1 style="font-size: 120px;">
     <span class="glyphicon glyphicon-warning-sign"></span>
   </h1>
-  <h3 class="animateMe">Are you sure you want to {{feedbackCtrl.confirmationName}} this entry?</h3>
-  <h5 class="animateMe">This action cannot be undone.</h5>
+  <h3 class="text-center animateMe">Are you sure you want to {{feedbackCtrl.confirmationName}} this entry?</h3>
+  <h5 class="text-center animateMe">This action cannot be undone.</h5>
   <br>
   <div class="btn-group">
     <a ng-if="feedbackCtrl.confirmationName == 'archive'" ng-click="feedbackCtrl.archiveEntry(feedbackCtrl.confirmationId); feedbackCtrl.confirm = true"
@@ -78,7 +78,7 @@
         <div class="col-md-6">
           <div class="well">
             <a ng-click="feedbackCtrl.confirm = false; feedbackCtrl.confirmationId = response._id; feedbackCtrl.confirmationName = 'delete'"
-              class="close">&times;</a>
+              ng-if="response.resolved == false" class="close">&times;</a>
             <h6>Inquiry {{$index + 1}}</h6>
             <h5 class="text-right" ng-if="response.resolved == true">RESOLVED</h5>
             <h5 class="text-right">
