@@ -98,7 +98,7 @@
     <div class="container-fluid" id="info">
       <div class="row">
         <div class="col-md-12">
-          <h4>{{(responseCtrl.entryList | filter: { name: responseCtrl.searchTags, active: responseCtrl.filter.archive.selected }).length}}
+          <h4>{{(responseCtrl.entryList | filter: { message: responseCtrl.searchTags, active: responseCtrl.filter.archive.selected }).length}}
             {{responseCtrl.dataInfo.name}} Entries:
             <a ng-click="responseCtrl.isCollapsed = true; responseCtrl.resetForm(); responseCtrl.scrollTo('responseForm');" uib-popover="This action will open the create form." popover-popup-delay="1500"
               popover-trigger="'mouseenter'" popover-placement="right" class="btn btn-link" style="text-decoration: none;" href="">Create New</a>
@@ -133,10 +133,10 @@
         </div>
       </div>
       <div class="info" ng-repeat="entries in responseCtrl.entryList |
-            filter: { name: responseCtrl.searchTags, active: responseCtrl.filter.archive.selected } | limitTo: 10:(responseCtrl.currentPage-1)*10">
+            filter: { message: responseCtrl.searchTags, active: responseCtrl.filter.archive.selected } | limitTo: 10:(responseCtrl.currentPage-1)*10">
         <div class="row">
           <div class="col-md-12">
-            <h3>{{$index + 1}}.
+            <h3>Respons{{$index + 1}}
             </h3>
           </div>
         </div>
@@ -144,7 +144,7 @@
           <div class="col-md-6">
             <h4>
               <i class="fa fa-fw fa-envelope"></i>Message</h4>
-            <p>{{entries.message}}</p>
+            <h3><i class="fa fa-angle-right fa-fw fa-lg" style="color: crimson"></i>{{entries.message}}</3>
           </div>
           <div class="col-md-6">
             <h4>
@@ -191,6 +191,6 @@
     </div>
   </div>
   
-  <statusbar table-name="{{responseCtrl.dataInfo.name}}" table-entries="{{(responseCtrl.entryList | filter: { name: responseCtrl.searchTags, active: responseCtrl.filter.archive.selected }).length}}"
+  <statusbar table-name="{{responseCtrl.dataInfo.name}}" table-entries="{{(responseCtrl.entryList | filter: { message: responseCtrl.searchTags, active: responseCtrl.filter.archive.selected }).length}}"
     action-message="{{responseCtrl.eventStatus}}"></statusbar>
   

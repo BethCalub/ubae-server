@@ -1,4 +1,6 @@
-$nav-color: rgba(70, 70, 70, 0.95);
+// $nav-color: rgba(70, 70, 70, 0.95);
+$nav-color: rgba(240, 240, 240, 0.9);
+$nav-font-color: rgb(32, 32, 32);
 $nav-height: 40px;
 
 /* Add a background color to the top navigation */
@@ -9,6 +11,7 @@ $nav-height: 40px;
   overflow: hidden;
   z-index: 9999;
   width: 100%;
+  border-bottom: 1px solid rgb(226, 226, 226);
 }
 
 /* Style the links inside the navigation bar */
@@ -16,7 +19,7 @@ $nav-height: 40px;
 .subnav a {
   float: left;
   display: block;
-  color: white;
+  color: $nav-font-color;
   text-align: center;
   padding: 8px 16px;
   text-decoration: none;

@@ -1,5 +1,33 @@
+<div class="confirm" ng-init="feedbackCtrl.confirm = true" ng-hide="feedbackCtrl.confirm">
+  <h1 style="font-size: 120px;">
+    <span class="glyphicon glyphicon-warning-sign"></span>
+  </h1>
+  <h3 class="animateMe">Are you sure you want to {{feedbackCtrl.confirmationName}} this entry?</h3>
+  <h5 class="animateMe">This action cannot be undone.</h5>
+  <br>
+  <div class="btn-group">
+    <a ng-if="feedbackCtrl.confirmationName == 'archive'" ng-click="feedbackCtrl.archiveEntry(feedbackCtrl.confirmationId); feedbackCtrl.confirm = true"
+      class="btn btn-danger">Yes I'm Sure!</a>
+    <a ng-if="feedbackCtrl.confirmationName == 'delete'" ng-click="feedbackCtrl.confirm = true; feedbackCtrl.deleteEntry(feedbackCtrl.confirmationId);"
+      class="btn btn-danger">Yes I'm Sure!</a>
+    <a ng-click="feedbackCtrl.confirm = true" class="btn btn-default">Close</a>
+  </div>
+</div>
+
 <div class="section" style="padding: 60px 0;">
   <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="breadcrumb">
+          <li>
+            <a ui-sref="main">Home</a>
+          </li>
+          <li class="active">
+            {{feedbackCtrl.tableName}}
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="row">
       <div class="col-md-12">
         <div class="well well-lg">
@@ -42,81 +70,45 @@
     <hr>
 
     <div class="row">
-        <div class="col-md-6" ng-repeat="response in feedbackCtrl.entryList | 
+      <div ng-repeat="response in feedbackCtrl.entryList | 
         filter: { keywords: feedbackCtrl.searchResponses,
         command: feedbackCtrl.commandType,
-        resolved: feedbackCtrl.resolvedType } | orderBy: 'type'">
-         
-         <div class="well" style="min-height: 250px;">
+        resolved: feedbackCtrl.resolvedType } | orderBy: '-timestamp'">
+        <div class="clearfix" ng-if="$index % 2 == 0"></div>
+        <div class="col-md-6">
+          <div class="well">
+            <a ng-click="feedbackCtrl.confirm = false; feedbackCtrl.confirmationId = response._id; feedbackCtrl.confirmationName = 'delete'"
+              class="close">&times;</a>
             <h6>Inquiry {{$index + 1}}</h6>
-            <h6 class="text-right">{{response.timestamp | date: 'shortDate'}}, {{response.timestamp | date: 'hh:mm:ssa'}}</h6>
-            <h3>{{response.userinput}}</h3>
-            <h4 class="text-left">{{response.command | uppercase}} Command</h4>
-            <p><ul class="tags">
+            <h5 class="text-right" ng-if="response.resolved == true">RESOLVED</h5>
+            <h5 class="text-right">
+
+              <a ng-click="feedbackCtrl.confirm = false; feedbackCtrl.confirmationId = response._id; feedbackCtrl.confirmationName = 'archive'"
+                ng-if="response.resolved == false" href="">Mark as Resolved</a>
+            </h5>
+            <h6 class="text-right">{{response.timestamp | date: 'fullDate'}}
+              <br>{{response.timestamp | date: 'hh:mm:ssa'}}</h6>
+            <h4>
+              {{response.command | uppercase}} Command Inquiry</h4>
+            <p>
+              <i class="fa fa-angle-right fa-fw fa-lg" style="color: crimson"></i>
+              <strong>{{response.userinput}}</strong>
+            </p>
+            <h5>
+              <i class="fa fa-tags fa-fw"></i>Keywords</h5>
+            <p>
+              <ul class="tags">
                 <li ng-repeat="tags in response.keywords">
                   <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
                     {{tags}}
                   </span>
                 </li>
-              </ul></p>
-            <br>
-            <h5 class="text-right" ng-if="response.resolved == true">RESOLVED</h5>
-            <div class="btn-group btn-group-justified">
-              <a ng-click="feedbackCtrl.archiveEntry(response._id)" ng-if="response.resolved == false" class="btn btn-default">Resolve</a>
-              <a ng-click="feedbackCtrl.deleteEntry(response._id)" class="btn btn-danger">Delete</a>
-            </div>
-         </div>
-         
-          <hr>
+              </ul>
+            </p>
+          </div>
         </div>
       </div>
-
-
-    <!-- <div class="row">
-      <div class="col-md-12">
-        <table class="table table-condensed table-hover fixed">
-          <thead>
-            <tr>
-              <th ng-repeat="headers in feedbackCtrl.tableEntries">{{headers}}</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr ng-repeat="response in feedbackCtrl.entryList | 
-                  filter: { keywords: feedbackCtrl.searchResponses,
-                  command: feedbackCtrl.commandType,
-                  resolved: feedbackCtrl.resolvedType } | orderBy: 'type'">
-              <td style="width: 20px">{{$index + 1}}</td>
-              <td>{{response.userinput}}</td>
-              <td>{{response.command | uppercase}}</td>
-              <td style="width: 35%">
-                <ul class="tags">
-                  <li ng-repeat="tags in response.keywords">
-                    <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
-                      {{tags}}
-                    </span>
-                  </li>
-                </ul>
-              </td>
-              <td>{{response.timestamp | date: 'shortDate'}}</td>
-              <td>{{response.timestamp | date: 'hh:mm:ssa'}}</td>
-              <td>
-                <a href="" ng-click="feedbackCtrl.archiveEntry(response._id)" uib-tooltip="WARNING!!! This action will mark this entry as resolved. This cannot be undone."
-                  tooltip-placement="left" ng-if="response.resolved == false">
-                  Unresolved
-                </a>
-                <span ng-if="response.resolved == true">Resolved</span>
-              </td>
-              <td>
-                <button type="button" class="close" ng-click="feedbackCtrl.deleteEntry(response._id)" uib-tooltip="WARNING!!! This action will delete this entry."
-                  tooltip-placement="left">&times;</button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div> -->
-
+    </div>
   </div>
 </div>
 
