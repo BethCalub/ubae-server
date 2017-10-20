@@ -35,6 +35,7 @@ import LocationComponent from './location/location.component';
 import InformationComponent from './information/information.component';
 import InstructionComponent from './instruction/instruction.component';
 import ProviderComponent from './provider/provider.component';
+import ReportsComponent from './reports/reports.component';
 import DevelopmentComponent from './development/development.component';
 
 import './app.scss';
@@ -42,6 +43,7 @@ import './app.scss';
 angular.module('ubaeApiApp', [ngAnimate, ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
   uiBootstrap, _Auth, account, admin, 'validation.match', ubae, modal, navbar, footer, main, constants,
   socket, util, statusbar,
+  ReportsComponent,
   ResponseComponent,
   EventComponent,
   FeedbackComponent,
