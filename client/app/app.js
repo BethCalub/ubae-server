@@ -42,7 +42,7 @@ import './app.scss';
 
 angular.module('ubaeApiApp', [ngAnimate, ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
   uiBootstrap, _Auth, account, admin, 'validation.match', ubae, modal, navbar, footer, main, constants,
-  socket, util, statusbar,
+  socket, util, statusbar, ngCharts,
   ReportsComponent,
   ResponseComponent,
   EventComponent,

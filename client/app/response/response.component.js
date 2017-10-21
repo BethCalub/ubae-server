@@ -153,6 +153,7 @@ export class ResponseComponent {
         this.getEntries();
         this.eventStatus = this.status.update.success;
         console.log(response.statusText);
+        this.isCollapsed = false;
       }, err => {
         this.eventStatus = this.status.update.error;
         console.log(err.statusText);
@@ -167,6 +168,7 @@ export class ResponseComponent {
         this.resetForm();
         this.eventStatus = this.status.create.success;
         console.log(response.statusText);
+        this.isCollapsed = false;
       }, err => {
         this.eventStatus = this.status.create.error;
         console.log(err.statusText);
