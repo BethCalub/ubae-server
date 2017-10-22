@@ -2,8 +2,8 @@
     <h1 style="font-size: 120px;">
       <span class="glyphicon glyphicon-warning-sign"></span>
     </h1>
-    <h3 class="animateMe">Are you sure you want to {{locationCtrl.confirmationName}} this entry?</h3>
-    <h5 class="animateMe">This action cannot be undone.</h5>
+    <h3 class="text-center animateMe">Are you sure you want to {{locationCtrl.confirmationName}} this entry?</h3>
+    <h5 class="text-center animateMe">This action cannot be undone.</h5>
     <br>
     <div class="btn-group">
       <a ng-if="locationCtrl.confirmationName == 'archive'" ng-click="locationCtrl.archiveEntry(locationCtrl.confirmationId); locationCtrl.confirm = true"

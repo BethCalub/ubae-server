@@ -76,10 +76,11 @@ export class FeedbackComponent {
   // ARCHIVE ENTRY
   archiveEntry(_id) {
     this.$http.put(this.link + '/' + _id, {
-      resolved: true
+      resolved: true,
+      timestamp: new Date(Date.now())
     })
     .then(response => {
-      this.eventStatus = 'Archived Succesfully';
+      this.eventStatus = 'Inquery Resolved';
     }, err => {
       this.eventStatus = 'Archiving Failed';
     });
@@ -95,7 +96,7 @@ export class FeedbackComponent {
     }, err => {
       this.eventStatus = 'Deleting Failed';
     });
-    this.getEntries();
+    // this.getEntries();
     this.resetResponse();
   }
 

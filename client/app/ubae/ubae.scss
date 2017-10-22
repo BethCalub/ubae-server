@@ -3,55 +3,18 @@ $chat-base-color: rgba(255, 255, 255, 1.0);
 $chat-border-color: rgba(200, 200, 200, 1.0);
 $chat-border-style: 1px solid $chat-border-color;
 $chat-min-size: 400px;
+
 #chat {
   background-color: $chat-base-color;
   padding-top: 70px;
   position: relative;
   .chat-body {
-    ul {
-      display: flex;
-      flex-direction: column-reverse;
-      align-items: flex-start;
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      li {
-        list-style: none;
-        background-color: $chat-header-color;
-        color: white;
-        border-radius: 5px 15px 15px 15px;
-        margin: 5px 5px;
-        padding: 10px 15px;
-      }
-      position: relative;
-      bottom: 0;
+    .ubae {
+      text-align: left;
     }
-    overflow-y: auto;
-    z-index: 998;
-    height: 100%;
-  }
-  .chat-keywords {
-    position: fixed;
-    height: 40px;
-    background-color: rgba(35, 35, 35, 1.0);
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin-bottom: 50px;
-    z-index: 999;
-    button {
-      margin: 6px 0;
-      margin-left: 5px;
-      border-radius: 25px;
-      border-style: none;
-      padding: 4px 15px;
-      color: white;
-      background-color: rgba(65, 82, 90, 1.0);
-    }
-    button:hover {
-      background-color: rgba(255, 255, 255, 1.0);
-      color: $chat-header-color;
-    }
+    .user {
+      text-align: right;
+    }  
   }
   .chat-box {
     position: fixed;
@@ -62,6 +25,7 @@ $chat-min-size: 400px;
     background-color: $chat-base-color; // border-top: $chat-border-style;
     z-index: 999;
     margin: auto;
+    border-top: 1px solid black;
     input[type=text] {
       height: 100%;
       border: none;

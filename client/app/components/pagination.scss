@@ -1,0 +1,29 @@
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+  z-index: 3;
+  color: white;
+  background-color: crimson;
+  border-color: #ddd;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+  z-index: 3;
+  color: black;
+  background-color: white;
+  border-color: #ddd;
+}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+  z-index: 3;
+  color: white;
+  background-color: crimson;
+  border-color: #ddd;
+}

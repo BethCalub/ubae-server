@@ -7,9 +7,11 @@ export class MainController {
   constructor($http, $scope, socket, $window, $anchorScroll, $location) {
     this.$http = $http;
     this.socket = socket;
+    this.$window = $window;
+
     this.$anchorScroll = $anchorScroll;
     this.$location = $location;
-    this.$window = $window;
+    this.$anchorScroll.yOffset = 60;
 
     this.startDate = '';
     this.altInputFormats = ['M!/d!/yyyy'];
@@ -59,6 +61,7 @@ export class MainController {
   }
 
   $onInit() {
+    this.scrollTo('top');
     this.$http.get(this.locations)
     .then(response => {
       this.locationEntries = response.data;

@@ -1,12 +1,15 @@
 <div class="subnav" ng-show="$ctrl.isLoggedIn()">
   <!-- <a><img src="../../assets/images/ubae.svg" class="nav-brand"></a> -->
   <!-- <a ng-repeat="item in $ctrl.menu" ui-sref-active="active" ui-sref="{{item.state}}">{{item.title}}</a> -->
-  <a ui-sref-active="active" ui-sref="main">Home</a>
+  <a ui-sref-active="active" ui-sref="main"><i class="fa fa-fw fa-lg fa-home"></i></a>
   <!-- <a ng-show="$ctrl.isAdmin()" ui-sref-active="active" ui-sref="admin">Accounts</a> -->
   <a ng-hide="$ctrl.isLoggedIn()" style="float:right;" ui-sref="login" ui-sref-active="active">Login</a>
   <a ng-show="$ctrl.isLoggedIn()" style="float:right;" ui-sref="logout">Logout</a>
-  <a ng-show="$ctrl.isLoggedIn()" style="float:right;" ui-sref="settings" ui-sref-active="active"><i class="fa fa-cog" aria-hidden="true"></i></a>
-  <a ng-show="$ctrl.isLoggedIn()" style="float:right;" ui-sref="admin" ui-sref-active="active">Administrator</a>
+  <a ng-show="$ctrl.isLoggedIn()" style="float:right;" ui-sref="settings" ui-sref-active="active"><i class="fa fa-cog fa-lg" aria-hidden="true"></i></a>
+  <a ng-show="$ctrl.isLoggedIn()" style="float:right;" ui-sref="admin" ui-sref-active="active">
+    <span ng-show="$ctrl.isAdmin()"><i class="fa fa-fw fa-users hidden-lg hidden-md hidden-sm"></i><span class="hidden-xs">Administrator</span></span>
+    <span ng-if="!$ctrl.isAdmin()"><i class="fa fa-fw fa-user hidden-lg hidden-md hidden-sm"></i><span class="hidden-xs">{{ $ctrl.getCurrentUser().name }}</span></span>
+  </a>
   <!-- <a ng-show="$ctrl.isLoggedIn()" style="float:right;" ui-sref="admin" ui-sref-active="active">{{ $ctrl.getCurrentUser().name }}</a> -->
   <!-- <a ng-hide="$ctrl.isLoggedIn()" style="float:right;" ui-sref="signup" ui-sref-active="active">Sign up</a> -->
 </div>
