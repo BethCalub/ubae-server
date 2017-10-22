@@ -173,697 +173,697 @@ var information = [{
   tags: ['Security', 'Office', 'Meaning', 'Description']
 }, {
   name: 'Master in Business Administration (MBA)',
-  info: 'A 2 Year Course, Master\'s Degree, for Graduate Students, offered in SBAA department',
+  info: 'This are the details for Master in Business Administration (MBA): Duration - 2 Year Course, Degree - Master\'s , Prerequisite - Graduate Students, Offered by - SBAA department',
   type: '',
-  message: 'Master in Business Administration (MBA) is a 2 year Master\'s Degree course for Graduate Students offered in the SBAA department.',
+  message: 'Master in Business Administration (MBA) is a 2 year Degree - Master\'s  course for Graduate Students offered in the SBAA department.',
   tags: ['MBA', 'BA', 'MA', 'Master', 'Business', 'Administration', 'Program', 'SBAA', 'Available']
 }, {
   name: 'Bachelor of Science in Accountancy (BS-AC)',
-  info: 'A 5 Year Course, Bachelor\'s Degree, must take Licensure Examination for Certified Public Accountants after graduation, offered in SBAA department.',
+  info: 'This are the details for Bachelor of Science in Accountancy (BS-AC): Duration - 5 Year Course, Degree - Bachelor\'s , Requirement after graduation - Must take Licensure Examination for Certified Public Accountants, Offered by -  SBAA department.',
   type: '',
   message: 'Bachelor of Science in Accountancy (BS-AC) is a 5 year Bachelor\'s Degree course offered in the SBAA department. After graduation Licensure Examination for Certified Public Accountants must be taken',
   tags: ['BS', 'AC', 'BSAC', 'Bachelor', 'Science', 'Accountancy', 'Course', 'Program', 'SBAA', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Business Administration, major in Financial Management (BSBA-FM)',
-  info: 'A 4 Year Course, Bachelor\'s Degree, offered in SBAA department.',
+  info: 'This are the details for Bachelor of Science in Business Administration major in Financial Management (BSBA-FM): Duration - 4 Year Course, Degree - Bachelor\'s , Offered by - SBAA department.',
   type: '',
   message: 'Bachelor of Science in Business Administration, major in Financial Management (BSBA-FM) is a 4 year Bachelor\'s Degree course offered in the SBAA department.',
   tags: ['BS', 'BAFM', 'BSBAFM', 'FinMan', 'Bachelor', 'Science', 'Financial', 'Management', 'Program', 'Course', 'SBAA', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Business Administration, major in Marketing Management (BSBA-MM)',
-  info: '4 Year Course, Bachelor\'s Degree, offered in SBAA department.',
+  info: 'This are the details for Bachelor of Science in Business Administration, major in Marketing Management (BSBA-MM): Duration - 4 Year Course, Degree - Bachelor\'s , Offered by - SBAA department.',
   type: '',
   message: 'Bachelor of Science in Business Administration, major in Marketing Management (BSBA-MM) is a 4 year Bachelor\'s Degree course offered in the SBAA department.',
   tags: ['BS', 'BAMM', 'BSBAMM', 'Bachelor', 'Science', 'Marketing', 'Management', 'Program', 'Course', 'SBAA', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Business Administration, major in Operations Management (BSBA-OM)',
-  info: '4 Year Course, Bachelor\'s Degree, offered in SBAA department.',
+  info: 'This are the details for Bachelor of Science in Business Administration, major in Operations Management (BSBA-OM): Duration - 4 Year Course, Degree - Bachelor\'s , Offered by - SBAA department.',
   type: '',
   message: 'Bachelor of Science in Business Administration, major in Operations Management (BSBA-OM) is a 4 year Bachelor\'s Degree course offered in the SBAA department.',
   tags: ['BS', 'BAOM', 'BSBAOM', 'Bachelor', 'Science', 'Operations', 'Management', 'Program', 'Course', 'SBAA', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Business Administration, major in Human Resource Development Management (BSBA-HRDM)',
-  info: '4 Year Course, Bachelor\'s Degree, offered in SBAA department.',
+  info: 'This are the details for Bachelor of Science in Business Administration, major in Human Resource Development Management (BSBA-HRDM): Duration - 4 Year Course, Degree - Bachelor\'s , Offered by - SBAA department.',
   type: 'Baccaluarate',
   message: 'Bachelor of Science in Business Administration, major in Human Resource Development Management (BSBA-HRDM) is a 4 year Bachelor\'s Degree course offered in the SBAA department.',
   tags: ['BS', 'BAHRDM', 'BSBAHRDM', 'Bachelor', 'Science', 'Human', 'Resource', 'Development', 'Management', 'Program', 'Course', 'SBAA', 'Baccalaureate', 'Available']
 }, {
   name: 'Associate in Accounting Technology (AAT)',
-  info: '3 Year Ladderized Program, offered in SBAA department.',
+  info: 'This are the details for Associate in Accounting Technology (AAT): Duration - 3 Year Ladderized Program, Offered by - SBAA department.',
   type: '',
   message: 'Associate in Accounting Technology is a 3 Year Ladderized Program in the SBAA department.',
   tags: ['AAT', 'Associate', 'Accounting', 'Technology', 'Program', 'Course', 'SBAA', 'Available']
 }, {
   name: 'Certificate in Accounting Technology (CAT)',
-  info: '2 Year Ladderized Program, offered in SBAA department.',
+  info: 'This are the details for Certificate in Accounting Technology (CAT): Duration - 2 Year Ladderized Program, offered in SBAA department.',
   type: '',
   message: 'Certificate in Accounting Technology (CAT) is a 2 Year Ladderized Program in the SBAA department.',
   tags: ['CAT', 'Certificate', 'Accounting', 'Technology', 'Program', 'Course', 'SBAA', 'Available']
 }, {
   name: 'Doctor of Philosophy in Criminal Justice with Specialization in Criminology (PHD-CJSC)',
-  info: '3 Year course, must be a Graduate of BS-CRIM or BFSci, Doctorate Degree, offered in SCJPS department.',
+  info: 'This are the details for Doctor of Philosophy in Criminal Justice with Specialization in Criminology (PHD-CJSC): Duration - 3 Year course, Prerequisite: Must be a Graduate of BS-CRIM or BFSci, Degree - Doctorate, Offered by - SCJPS department.',
   type: '',
   message: 'Doctor of Philosophy in Criminal Justice with Specialization in Criminology (PHD-CJSC) is a 3 year course for BS-Crim or BFSci graduate offered in the SCJPS department.',
   tags: ['PHD', 'CJSC', 'PHDCJSC', 'Doctor', 'Philosophy', 'Criminal', 'Justice', 'Specialization', 'Criminology', 'Program', 'Course', 'SCJPS', 'Available']
 }, {
   name: 'Master of Science in Criminal Justice with Specialization in Criminology (MS-CJSC)',
-  info: '2 Years course, must be a Graduate of BS-CRIM or BFSci, Master\'s Degree, offered in the SCJPS department.',
+  info: 'This are the details for Master of Science in Criminal Justice with Specialization in Criminology (MS-CJSC): Duration - 2 Years course, Prerequisite - Must be a Graduate of BS-CRIM or BFSci, Degree - Master\'s , Offered by - the SCJPS department.',
   type: '',
   message: 'Master of Science in Criminal Justice with Specialization in Criminology (MS-CJSC) is a 2 year course for BS-CRIM or BFSci graduates offered in the SCJPS department.',
   tags: ['MA', 'SCJSC', 'MSCJSC', 'Master', 'Science', 'Criminal', 'Justice', 'Specialization', 'Criminology', 'Program', 'Course', 'SCJPS', 'Available']
 }, {
   name: 'Bachelor of Science in Criminology (BS-CRIM)',
-  info: '4 year course, must take Licensure Examination for Criminologists after graduation, Bachelor\'s Degree, offered in SCJPS department.',
+  info: 'This are the details for Bachelor of Science in Criminology (BS-CRIM): Duration - 4 year course, Requirement after graduation - Must take Licensure Examination for Criminologists, Degree - Bachelor\'s , Offered by - SCJPS department.',
   type: '',
   message: 'Bachelor of Science in Criminology (BS-CRIM) is a 4 year Bachelor\'s Degree course offered in the SCJPS department. After graduation Licensure Examination for Criminologists must be taken. ',
   tags: ['BS', 'BSCRIM', 'crim', 'Bachelor', 'Science', 'Criminology', 'Program', 'Course', 'SCJPS', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Forensic Science (BFSci)',
-  info: '4 Year course, Bachelor\'s Degree, offered in SCJPS department.',
+  info: 'This are the details for Bachelor of Science in Forensic Science (BFSci): 4 Year course, Degree - Bachelor\'s , Offered by - SCJPS department.',
   type: '',
   message: 'Bachelor of Science in Forensic Science (BFSci) is a 4 year Bachelor\'s Degree course offered in the SCJPS department.',
   tags: ['BFSci', 'BS', 'FSCI', 'Bachelor', 'Science', 'Forensic', 'Program', 'Course', 'SCJPS', 'Baccalaureate', 'Available']
 }, {
   name: 'Master in Dental Education (MDE)',
-  info: '2 Years course, must be a Graduate of Doctor of Dental Medicine, Master\'s Degree, offered in SOD department.',
+  info: 'This are the details for Master in Dental Education (MDE): Duration - 2 Years course, Prerequisite - Must be a Graduate of Doctor of Dental Medicine, Degree - Master\'s , Offered by - SOD department.',
   type: '',
   message: 'Master in Dental Education (MDE) is a 2 year Master\'s Degree course for Graduates of Doctor of Dental Medicine',
   tags: ['MA', 'DE', 'MDE', 'Master', 'Dental', 'Education', 'Program', 'Course', 'SOD', 'Baccalaureate', 'Available']
 }, {
   name: 'Doctor of Dental Medicine (DM)',
-  info: '4 Year course, must take Liscensure Examination for Dentists after graduation, must be a Graduate of Pre-Dentistry ,Bachelor\'s Degree',
+  info: 'This are the details for Doctor of Dental Medicine (DM): Duration - 4 Year course, Requirement after graduation - Must take Liscensure Examination for Dentists, Prerequisite - Must be a Graduate of Pre-Dentistry, Degree - Bachelor\'s ',
   type: '',
   message: 'Doctor of Dental Medicine (DM) is a 4 year Bachelor\'s Degree course for graduates of Pre-Dentistry offered in the SOD department.',
   tags: ['DM', 'Doctor', 'Dental', 'Medicine', 'Program', 'Course', 'SOD', 'Baccalaureate', 'Available']
 }, {
   name: 'Pre-Dentistry',
-  info: '2 Year course, Short Course, offered in SOD department.',
+  info: 'This are the details for Pre-Dentistry: Duration - 2 Year course, Degree - Short Course, Offered by - SOD department.',
   type: '',
   message: 'Pre-Dentistry is a 2 Year Short Course offered in the SOD department.',
   tags: ['Pre', 'Den', 'Dentistry', 'Program', 'Course', 'SOD', 'Available']
 }, {
   name: 'Bachelor of Science in Architecture (BS-ARCH)',
-  info: '5 Year course, must take Licensure Examination for Architects after graduation, Bachelor\'s Degree, offered in SEA department.',
+  info: 'This are the details for Bachelor of Science in Architecture (BS-ARCH): Duration - 5 Year course, Requirement after graduation - Must take Licensure Examination for Architects , Degree - Bachelor\'s , Offered by - SEA department.',
   type: '',
   message: 'Bachelor of Science in Architecture (BS-ARCH) is a 5 Year Bachelor\'s Degree course offered in the SEA department. After graduation Licensure Examination for Architects must be taken',
   tags: ['BSARCH', 'BS', 'ARCH', 'Bachelor', 'Science', 'Architecture', 'Program', 'Course', 'SEA', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Civil Engineering (BS-CE)',
-  info: '5 Year course, must take Licensure Examination for Civil Engineers after graduation, Bachelor\'s Degree, offered in SEA department.',
+  info: 'This are the details for Bachelor of Science in Civil Engineering (BS-CE): Duration - 5 Year course, Requirement after graduation - Must take Licensure Examination for Civil Engineers, Degree - Bachelor\'s , Offered by - SEA department.',
   type: '',
-  message: 'Bachelor of Science in Civil Engineering (BS-CE) is a 5 year Bachelor\'s Degree course offered in the SEA department. After graduation Licensure Examination for Civil Engineers must be taken',
+  message: 'Bachelor of Science in Civil Engineering (BS-CE) is a 5 year Degree - Bachelor\'s  course offered in the SEA department. After graduation Licensure Examination for Civil Engineers must be taken',
   tags: ['BSCE', 'BS', 'CE', 'Bachelor', 'Science', 'Civil', 'Engineering', 'Program', 'Course', 'SEA', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Electronics and Communications Engineering (BS-ECE)',
-  info: '5 Year course, must take Licensure Examination for Electronics and Communications Engineers after graduation, Bachelor\'s Degree, offered in SEA department.',
+  info: 'This are the details for Bachelor of Science in Electronics and Communications Engineering (BS-ECE): Duration - 5 Year course, Requirement after graduation - Must take Licensure Examination for Electronics and Communications Engineers, Bachelor\'s Degree, Offered by - SEA department.',
   type: '',
   message: 'Bachelor of Science in Electronics and Communications Engineering (BS-ECE) is a 5 year Bachelor\'s Degree course offered in the SEA department. After graduation Licensure Examination for Electronics and Communications must be taken',
   tags: ['BSECE', 'BS', 'ECE', 'Bachelor', 'Science', 'Electronics', 'Communications', 'Engineering', 'Program', 'Course', 'SEA', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Environmental and Sanitary Engineering (BS-ESE)',
-  info: '5 Year course, must take Licensure Examination for Sanitary Engineers after graduation, Bachelor\'s Degree, offered in SEA department.',
+  info: 'This are the details for Bachelor of Science in Environmental and Sanitary Engineering (BS-ESE): Duration - 5 Year course, Requirement after graduation -  Must take Licensure Examination for Sanitary Engineers, Degree - Bachelor\'s , Offered by - SEA department.',
   type: '',
   message: 'Bachelor of Science in Environmental and Sanitary Engineering (BS-ESE) is a 5 year Bachelor\'s degree course offered in the SEA department. After graduation Licensure Examination for Sanitary Engineers must be taken',
   tags: ['BSESE', 'BS', 'ESE', 'Bachelor', 'Science', 'Environmental', 'Sanitary', 'Engineering', 'Program', 'Course', 'SEA', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Industrial Technology, major in Mechatronics (BSIT-MECHA)',
-  info: '4 year course, Bachelor\'s Degree, offered in SEA department.',
+  info: 'This are the details for Bachelor of Science in Industrial Technology, major in Mechatronics (BSIT-MECHA): Duration - 4 year course, Degree - Bachelor\'s , Offered by - SEA department.',
   type: '',
   message: 'Bachelor of Science in Industrial Technology, major in Mechatronics (BSIT-MECHA) is a 4 Year Bachelor\'s Degree course offered in the SEA department.',
   tags: ['BSIT-MECHA', 'BS', 'IT', 'Mecha', 'Bachelor', 'Science', 'Industrial', 'Technology', 'Mechatronics', 'Program', 'Course', 'SEA', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Computer Engineering (BS-CPE)',
-  info: '4 year course, Bachelor\'s Degree, offered in SIT department.',
+  info: 'This are the details for Bachelor of Science in Computer Engineering (BS-CPE): Duration - 4 year course, Degree - Bachelor\'s , Offered by - SIT department.',
   type: '',
   message: 'Bachelor of Science in Computer Engineering (BS-CPE) is a 4 year Bachelor\'s Degree course offered in the SIT department.',
   tags: ['BSCPE', 'BS', 'CPE', 'Bachelor', 'Science', 'Computer', 'Engineering', 'Program', 'Course', 'SIT', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Computer Science (BS-CS)',
-  info: '4 year course, Bachelor\'s Degree, offered in SIT department.',
+  info: 'This are the details for Bachelor of Science in Computer Science (BS-CS): Duration - 4 year course, Degree - Bachelor\'s , Offered by - SIT department.',
   type: '',
   message: 'Bachelor of Science in Computer Science (BS-CS) is a 4 year Bachelor\'s Degree course offered in the SIT department.',
   tags: ['BSCS', 'BS', 'CS', 'ComSci', 'Bachelor', 'Science', 'Computer', 'Program', 'Course', 'SIT', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Information Technology (BS-IT)',
-  info: '4 year course, Bachelor\'s Degree, offered in SIT department.',
+  info: 'This are the details for Bachelor of Science in Information Technology (BS-IT): Duration - 4 year course, Degree - Bachelor\'s , Offered by - SIT department.',
   type: '',
   message: 'Bachelor of Science in Information Technology (BS-IT) is a 4 year Bachelor\'s Degree course offered in the SIT department.',
   tags: ['BSIT', 'BS', 'IT', 'Bachelor', 'Science', 'Information', 'Technology', 'Program', 'Course', 'SIT', 'Baccalaureate', 'Available']
 }, {
   name: 'Cisco Certified Entry Level (CCENT)',
-  info: '108 hours, Short Course, offered in SIT department.',
+  info: 'This are the details for  Cisco Certified Entry Level (CCENT): Duration - 108 hours, Degree - Short Course, Offered by - SIT department.',
   type: '',
   message: 'Cisco Certified Entry Level (CCENT) is a Short Course offered in the SIT department.',
   tags: ['CC', 'ENT', 'CCENT', 'Cisco', 'Certified', 'Entry', 'Level', 'Program', 'Short', 'Course', 'SIT', 'Available']
 }, {
   name: 'Cisco Certified Network Associate (CCNA)',
-  info: '216 hours, Short Course, offered in SIT department.',
+  info: 'This are the details for Cisco Certified Network Associate (CCNA): Duration - 216 hours, Degree - Short Course, Offered by - SIT department.',
   type: '',
   message: 'Cisco Certified Network Associate (CCNA) is a Short Course offered in the SIT department.',
   tags: ['CC', 'NA', 'CCNA', 'Cisco', 'Certified', 'Network', 'Associate', 'Program', 'Course', 'SIT', 'Available']
 }, {
   name: 'Bachelor of Science in Hotel and Restaurant Management (BS-HRM)',
-  info: '4 year course, Bachelor\'s Degree, offered in SIHTM department.',
+  info: 'This are the details for Bachelor of Science in Hotel and Restaurant Management (BS-HRM): Duration - 4 year course, Degree - Bachelor\'s , Offered by - SIHTM department.',
   type: '',
   message: 'Bachelor of Science in Hotel and Restaurant Management (BS-HRM) is a 4 year Bachelor\'s Degree course offered in the SIHTM department.',
   tags: ['BSHRM', 'BS', 'HRM', 'Bachelor', 'Science', 'Hotel', 'Restaurant', 'Program', 'Course', 'SIHTM', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Tourism Management (BS-TM)',
-  info: '4 year course, Bachelor\'s Degree, offered in SIHTM',
+  info: 'This are the details for Bachelor of Science in Tourism Management (BS-TM): Duration - 4 year course, Degree - Bachelor\'s , Offered by - SIHTM',
   type: '',
   message: 'Bachelor of Science in Tourism Management (BS-TM) is a 4 year Bachelor\'s Degree course offered in the SIHTM department.',
   tags: ['BSTM', 'BS', 'TM', 'Bachelor', 'Science', 'Tourism', 'Management', 'Program', 'Course', 'SIHTM', 'Baccalaureate', 'Available']
 }, {
   name: 'Associate in Arts in Hotel and Restaurant Management (AA-HRM)',
-  info: '2 year Ladderized Program, offered in SIHTM',
+  info: 'This are the details for Associate in Arts in Hotel and Restaurant Management (AA-HRM): Duration - 2 year Ladderized Program, Offered by - SIHTM',
   type: '',
   message: 'Associate in Arts in Hotel and Restaurant Management (AA-HRM) is a 2 year Ladderized Program offered in SIHTM',
   tags: ['AAHRM', 'AA', 'HRM', 'Associate', 'Arts', 'Hotel', 'Restaurant', 'Management', 'Program', 'Course', 'SIHTM', 'Available']
 }, {
   name: 'Bachelor of Laws and Letters (LLB)',
-  info: '4 year course, Bachelor\'s Degree, must take BAR examination after graduation, offered in SOL department.',
+  info: 'This are the details for Bachelor of Laws and Letters (LLB): Duration - 4 year course, Degree - Bachelor\'s , Requirement after graduation - must take BAR examination, Offered by - SOL department.',
   type: '',
   message: 'Bachelor of Laws and Letters (LLB) is a 4 year Bachelor\'s Degree course offered in the SOL department.',
   tags: ['LLB', 'Bachelor', 'Laws', 'Letters', 'Program', 'Course', 'SOL', 'Baccalaureate', 'Available']
 }, {
   name: 'Master in Public Administration (MPA)',
-  info: '2 year course, Master\'s Degree, must be a graduate of Bachelor of Arts in Broadcasting or Bachelor of Arts in Mass Communication in order to take, offered in SLAHS department.',
+  info: 'This are the details for Master in Public Administration (MPA): Duration - 2 year course, Degree - Master\'s , Prerequisite - Must be a graduate of Bachelor of Arts in Broadcasting or Bachelor of Arts in Mass Communication in order to take, Offered by - SLAHS department.',
   type: '',
-  message: 'Master in Public Administration (MPA) is a 2 year Master\'s Degree course for graduates of Bachelor of Arts in Broadcasting or Bachelor of Arts in Mass Communication offered in the SLAHS department.',
+  message: 'Master in Public Administration (MPA) is a 2 year Degree - Master\'s  course for graduates of Bachelor of Arts in Broadcasting or Bachelor of Arts in Mass Communication offered in the SLAHS department.',
   tags: ['MA', 'PA', 'MPA', 'Master', 'Public', 'Administration', 'Program', 'Course', 'SLAHS', 'Available']
 }, {
   name: 'Master of Arts in English (MAEng)',
-  info: '2 year course, Master\'s Degree, must be a Graduate of Bachelor of Arts in English in order to take, offered in SLAHS department.',
+  info: 'This are the details for Master of Arts in English (MAEng): Duration - 2 year course, Degree - Master\'s , Prerequisite - Must be a Graduate of Bachelor of Arts in English in order to take, Offered by - SLAHS department.',
   type: '',
-  message: 'Master of Arts in English (MAEng) is a 2 year Master\'s Degree course for Graduate of Bachelor of Arts in English offered in SLAHS department.',
+  message: 'Master of Arts in English (MAEng) is a 2 year Degree - Master\'s  course for Graduate of Bachelor of Arts in English offered in the SLAHS department.',
   tags: ['MA', 'Eng', 'MAEng', 'Master', 'Arts', 'English', 'Program', 'Course', 'SLAHS', 'Available']
 }, {
   name: 'Bachelor of Arts in Broadcasting (BA-Broad)',
-  info: '4 year course, Bachelor\'s Degree, offered in SLAHS',
+  info: 'This are the details for Bachelor of Arts in Broadcasting (BA-Broad): Duration - 4 year course, Degree - Bachelor\'s , Offered by - SLAHS',
   type: '',
   message: 'Bachelor of Arts in Broadcasting (BA-Broad) is a 4 year Bachelor\'s Degree course offered in the SLAHS department.',
   tags: ['BABroad', 'BA', 'Broad', 'Bachelor', 'Arts', 'Broadcasting', 'Program', 'Course', 'SLAHS', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Arts in English (BA-Eng)',
-  info: '4 year course, Bachelor\'s Degree, offered in SLAHS',
+  info: 'This are the details for Bachelor of Arts in English (BA-Eng): Duration - 4 year course, Degree - Bachelor\'s , Offered by - SLAHS',
   type: '',
   message: 'Bachelor of Arts in English (BA-Eng) is a 4 year Bachelor\'s Degree course offered in the SLAHS department.',
   tags: ['BAEng', 'BA', 'Eng', 'Bachelor', 'Arts', 'English', 'Program', 'Course', 'SLAHS', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Arts in Mass Communication (BA-Comm)',
-  info: '4 year course, Bachelor\'s Degree, offered in SLAHS',
+  info: 'This are the details for Bachelor of Arts in Mass Communication (BA-Comm): Duration - 4 year course, Degree - Bachelor\'s , Offered by - SLAHS',
   type: '',
   message: 'Bachelor of Arts in Mass Communication (BA-Comm) is a 4 year Bachelor\'s Degree course offered in the SLAHS department.',
   tags: ['BAComm', 'BA', 'Mass', 'Comm', 'Bachelor', 'Arts', 'Communication', 'Program', 'Course', 'SLAHS', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Arts in Political Science(BA-PolSci)',
-  info: '4 year course, Bachelor\'s Degree, offered in SLAHS',
+  info: 'This are the details for Bachelor of Arts in Political Science(BA-PolSci): Duration - 4 year course, Degree - Bachelor\'s , Offered by - SLAHS',
   type: '',
-  message: 'Bachelor of Arts in Political Science(BA-PolSci) is a 4 year Bachelor\'s Degree course offered in the SLAHS department.',
+  message: 'Bachelor of Arts in Political Science(BA-PolSci) is a 4 year Bachelor\'s Degree course Offered by - the SLAHS department.',
   tags: ['BAPolSci', 'BA', 'PolSci', 'Bachelor', 'Arts', 'Political', 'Science', 'Program', 'Course', 'SLAHS', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Psychology (BS-Psych)',
-  info: '4 year course, Bachelor\'s Degree, offered in SLAHS department.',
+  info: 'This are the details for Bachelor of Science in Psychology (BS-Psych): Duration - 4 year course, Degree - Bachelor\'s , Offered by - SLAHS department.',
   type: '',
   message: 'Bachelor of Science in Psychology (BS-Psych) is a 4 year Bachelor\'s Degree Course offered in the SLAHS department.',
   tags: ['BSPsych', 'BS', 'Psych', 'Bachelor', 'Science', 'Psychology', 'Program', 'Course', 'SLAHS', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Arts in Music (BA-Music)',
-  info: '4 year course, Bachelor\'s Degree, offered in SLAHS',
+  info: 'This are the details for Bachelor of Arts in Music (BA-Music): Duration -  4 year course, Degree - Bachelor\'s , Offered by - SLAHS',
   type: '',
   message: 'Bachelor of Arts in Music (BA-Music) is a 4 year Bachelor\'s Degree course offered in the SLAHS department.',
   tags: ['BAMusic', 'BA', 'Bachelor', 'Arts', 'Music', 'Program', 'Course', 'SLAHS', 'Baccalaureate', 'Available']
 }, {
   name: 'Extension Classes in Music',
-  info: '10 hours, Special Program, offered in SLAHS',
+  info: 'This are the details for Extension Classes in Music: Duration - 10 hours, Special Program, Offered by - SLAHS',
   type: '',
   message: 'Extension Classes in Music is a 10 Hour Special Program offered in the SLAHS department.',
   tags: ['Extension', 'Classes', 'Music', 'SLAHS']
 }, {
   name: 'Bachelor of Science in Physical Therapy (BS-PT)',
-  info: '5 year course, Bachelor\'s Degree, must take Licensure Examination for Physical Therapists after graduation, offered in SNS department.',
+  info: 'This are the details for Bachelor of Science in Physical Therapy (BS-PT): Duration - 5 year course, Degree - Bachelor\'s , Requirement after graduation - Must take Licensure Examination for Physical Therapists after graduation, Offered by - SNS department.',
   type: '',
   message: 'Bachelor of Science in Physical Therapy (BS-PT) is a 5 year Bachelor Degree course offered in the SNS department. After graduation Licensure Examination for Physical Therapists must be taken',
   tags: ['BSPT', 'BS', 'PT', 'Bachelor', 'Science', 'Physical', 'Therapy', 'SNS', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Medical Laboratory Science (BMLS)',
-  info: '4 year course, Bachelor\'s Degree, must take Licensure Examination for Medical Technologists after graduation, offered in SNS department.',
+  info: 'This are the details for Bachelor of Medical Laboratory Science (BMLS):  Duration - 4 year course, Bachelor\'s Degree, Requirement after graduation - Must take Licensure Examination for Medical Technologists after graduation, Offered by - SNS department.',
   type: '',
-  message: 'Bachelor of Medical Laboratory Science (BMLS) is a 4 year Bachelor\'s Degree course offered in the SNS department. After graduation Licensure Examination for Medical Technologists must be taken',
+  message: 'Bachelor of Medical Laboratory Science (BMLS) is a 4 year Degree - Bachelor\'s  course offered in the SNS department. After graduation Licensure Examination for Medical Technologists must be taken',
   tags: ['BMLS', 'BM', 'LS', 'Bachelor', 'Science', 'Medical', 'Laboratory', 'Program', 'Course', 'SNS', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Science in Nursing (BSN)',
-  info: '4 year course, Bachelor\'s Degree, must take Licensure Examination for Nurses after graduation, offered in SON department.',
+  info: 'This are the details for Bachelor of Science in Nursing (BSN): Duration - 4 year course, Bachelor\'s Degree, Requirement after graduation - Must take Licensure Examination for Nurses after graduation, Offered by - SON department.',
   type: '',
-  message: 'Bachelor of Science in Nursing (BSN) is a 4 year Bachelor\'s Degree course offered in the SON department. After graduation Licensure Examination for Nurses after graduation must be taken',
+  message: 'Bachelor of Science in Nursing (BSN) is a 4 year Degree - Bachelor\'s  course offered in the SON department. After graduation Licensure Examination for Nurses after graduation must be taken',
   tags: ['BSN', 'BS', 'N', 'Bachelor', 'Science', 'Nursing', 'Program', 'Course', 'SON', 'Baccalaureate', 'Available']
 }, {
   name: 'Certificate in Health Care Services [Nursing Assistant]',
-  info: '1 Year Short Course, offered in SON',
+  info: 'This are the details for Certificate in Health Care Services [Nursing Assistant]: Duration - 1 Year Short Course, Offered by - SON',
   type: '',
   message: 'Certificate in Health Care Services [Nursing Assistant] is a 1 Year Short Course offered in the SON department.',
   tags: ['HCS', 'Health', 'Care', 'Services', 'Program', 'Course', 'SON', 'Available']
 }, {
   name: 'Doctor of Philosophy in Development Education (Ph.DevEd)',
-  info: '3 year course, Doctorate Degree, must be a Graduate of Bachelor of Elementary Education or Bachelor of Secondary Education, offered in STE department.',
+  info: 'This are the details for Doctor of Philosophy in Development Education (Ph.DevEd): Duration - 3 year course, Doctorate Degree, Prerequisite - Must be a Graduate of Bachelor of Elementary Education or Bachelor of Secondary Education, Offered by - STE department.',
   type: '',
   message: 'Doctor of Philosophy in Development Education (Ph.DevEd) is a 3 year Doctorate Degree course for Graduates of Bachelor of Elementary Education or Bachelor of Secondary Education offered in the STE department.',
   tags: ['PHDevEd', 'PHD', 'evED', 'Doctor', 'Philosophy', 'Development', 'Education', 'Program', 'Course', 'STE', 'Available']
 }, {
   name: 'Doctor of Education',
-  info: '3 year course, Doctorate Degree, must be a Graduate of Bachelor of Elementary Education or Bachelor of Secondary Education, offered in STE department.',
+  info: 'This are the details for Master of Arts in Education: Duration - 3 year course, Doctorate Degree, Prerequisite - Must be a Graduate of Bachelor of Elementary Education or Bachelor of Secondary Education, Offered by - STE department.',
   type: '',
   message: 'Doctor of Education is a 3 year Doctorate Degree course for Graduate of Bachelor of Elementary Education or Bachelor of Secondary Education offered in the STE department.',
   tags: ['EDD', 'Doctor', 'Education', 'Program', 'Course', 'STE', 'Available']
 }, {
   name: 'Master of Arts in Education',
-  info: '2 year course, Master\'s Degree, must be a Graduate of Bachelor of Elementary Education or Bachelor of Secondary Education, offered in STE department.',
+  info: 'This are the details for Master of Arts in Education: Duration - 2 year course, Degree - Master\'s , Prerequisite - Must be a Graduate of Bachelor of Elementary Education or Bachelor of Secondary Education, Offered by - STE department.',
   type: '',
   message: 'Master of Arts in Education is a 2 Year course for Graduate of Bachelor of Elementary Education or Bachelor of Secondary Education offered in the STE department.',
   tags: ['MAEd', 'MA', 'ED', 'Master', 'Arts', 'Education', 'Program', 'Course', 'STE', 'Available']
 }, {
   name: 'Bachelor of Elementary Education, major in General Education (BEEd-GenEd)',
-  info: '4 year course, Bachelor\'s Degree, offered in STE department.',
+  info: 'This are the details for Bachelor of Secondary Education (BSED): Duration - 4 year course, Degree - Bachelor\'s, Offered by - STE department.',
   type: '',
   message: 'Bachelor of Elementary Education, major in General Education (BEEd-GenEd) is a 4 Year Bachelor\'s Degree course offered in the STE department. ',
   tags: ['BEEdGenEd', 'BE', 'Ed', 'Gen', 'GenEd', 'Bachelor', 'Elementary', 'Major', 'General', 'Education', 'Program', 'Course', 'STE', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Elementary Education, major in Special Education (BEEd-SpEd)',
-  info: '4 year course, Bachelor\'s Degree, offered in STE department.',
+  info: 'This are the details for Bachelor of Secondary Education (BSED): Duration - 4 year course, Degree - Bachelor\'s , Offered by - STE department.',
   type: '',
   message: 'Bachelor of Elementary Education, major in Special Education (BEEd-SpEd) is a 4 year Bachelor\'s Degree course offered in the STE department.',
   tags: ['BEEdSpEd', 'BE', 'Sp', 'Ed', 'SpEd', 'Bachelor', 'Elementary', 'Special', 'Education', 'Program', 'Course', 'STE', 'Baccalaureate', 'Available']
 }, {
   name: 'Bachelor of Secondary Education (BSED)',
-  info: '4 year course, Bachelor\'s Degree, must take Licensure Examination for Teachers, offered in STE',
+  info: 'This are the details for Bachelor of Secondary Education (BSED): Duration - 4 year course, Degree - Bachelor\'s , Requirement after graduation - Must take Licensure Examination for Teachers, Offered by - STE department',
   type: '',
-  message: 'Bachelor of Secondary Education (BSED) is a 4 Year Bachelor\'s Degree course offered in the STE department. After Graduation Licensure Examination for Teachers must be taken.',
+  message: 'Bachelor of Secondary Education (BSED) is a 4 Year Degree - Bachelor\'s  course offered in the STE department. After Graduation Licensure Examination for Teachers must be taken.',
   tags: ['BSED', 'BS', 'ED', 'Bachelor', 'Secondary', 'Education', 'Program', 'Course', 'STE', 'Baccalaureate', 'Available']
 }, {
   name: 'Admission for freshmen',
-  info: 'The admission is the process through which students enter tertiary education in the university. Requirements: Form 138, NSO Birth Certificate, Good Moral Character.',
+  info: 'This are the details for the Admission for freshmen Service: The admission is the process through which students enter tertiary education in the university. Requirements: Form 138, NSO Birth Certificate, Good Moral Character.',
   type: '',
   message: 'The admission is the process through which students enter tertiary education in the university. Requirements: Form 138, NSO Birth Certificate, Good Moral Character.',
   tags: ['Admission', 'Freshmen', 'New', 'Student', 'Service', 'Requirements', 'ARC', 'Available']
 }, {
   name: 'Admission for Transferee',
-  info: 'The admission is the message through which students enter tertiary education in the university. Requirements: Transfer Credential, NSO Birth Certificate, Good Moral Character',
+  info: 'This are the details for the Admission for Transferee Service: The admission is the message through which students enter tertiary education in the university. Requirements: Transfer Credential, NSO Birth Certificate, Good Moral Character',
   type: '',
   message: 'The admission is the message through which students enter tertiary education in the university. Requirements: Transfer Credential, NSO Birth Certificate, Good Moral Character.',
   tags: ['Admission', 'Transferee', 'Transfer', 'Student', 'Service', 'Requirements', 'ARC', 'Available']
 }, {
   name: 'Enrollment for Freshmen',
-  info: 'Enrolling freshmen to the university. Requirements: Form 138, NSO Birth Certificate, Good Moral Character',
+  info: 'This are the details for the Enrollment for Freshmen Service: Enrolling freshmen to the university. Requirements: Form 138, NSO Birth Certificate, Good Moral Character',
   type: '',
   message: 'Enrolling freshmen to the university. Requirements: Form 138, NSO Birth Certificate, Good Moral Character.',
   tags: ['Enrollment', 'Enroll', 'Freshmen', 'Student', 'New', 'Service', 'Requirements', 'ARC', 'Available']
 }, {
   name: 'Enrollment for Transferee',
-  info: 'Enrolling transferee to the university. Requirements: Transfer Credential, NSO Birth Certificate, Good Moral Character',
+  info: 'This are the details for the Enrollment for Transferee Service: Enrolling transferee to the university. Requirements: Transfer Credential, NSO Birth Certificate, Good Moral Character',
   type: '',
   message: 'Enrolling transferee to the university. Requirements: Transfer Credential, NSO Birth Certificate, Good Moral Character.',
   tags: ['Enrollment', 'Enroll', 'Transferee', 'Student', 'Transfer', 'Service', 'Requirements', 'ARC', 'Available']
 }, {
   name: 'Enrollment for New International Student',
-  info: 'Enrollment of International Student to the university. Requirements: Student Visa and Passport, Authenticated School Records, CRO Form 14',
+  info: 'This are the details for the Enrollment for New International Student Service: Enrollment of International Student to the university. Requirements: Student Visa and Passport, Authenticated School Records, CRO Form 14',
   type: '',
   message: 'Enrollment of International Student to the university. Requirements: Student Visa and Passport, Authenticated School Records, CRO Form 14.',
   tags: ['International', 'Enroll', 'Enrollment', 'Student', 'Service', 'Requirements', 'ARC', 'Available']
 }, {
   name: 'Enrollment for Current Student',
-  info: 'Enrollment of Current Students to the universirt. Requirements: Vailid ID',
+  info: 'This are the details for the Enrollment for Current Student Service: Enrollment of Current Students to the university. Requirements: Vailid ID',
   type: '',
   message: 'Enrollment of Current Students to the universirt. Requirements: Vailid ID',
   tags: ['Current', 'Enrollment', 'Enroll', 'Student', 'Service', 'Requirements', 'ARC', 'Available']
 }, {
   name: 'Release of Student Records for Graduates',
-  info: 'Releasing documents of graduate students. Requirements: Clearance form',
+  info: 'This are the details for the Release of Student Records for Graduates Service: Releasing documents of graduate students for their intended use. Requirements: Clearance form',
   type: '',
   message: 'Releasing documents of graduate students. Requirements: Clearance form.',
   tags: ['Release', 'Records', 'Documents', 'Graduates', 'Student', 'Service', 'Requirements', 'ARC', 'Available', 'Transcript']
 }, {
   name: 'Release of Student Records for Under-Graduates',
-  info: 'Releasing documents of under-graduate students Requirements: Clearance form',
+  info: 'This are the details for the Release of Student Records for Under-Graduates Service: Releasing documents of under-graduate students for their intended use. Requirements: Clearance form',
   type: '',
   message: 'Releasing documents of under-graduate students Requirements: Clearance form.',
   tags: ['Release', 'Records', 'Documents', 'Undergraduate', 'Under-graduate', 'Service', 'Requirements', 'ARC', 'Available', 'Transcript']
 }, {
   name: 'Athletic Scholarship',
-  info: 'Assists students who are qualified for athletic scholarship. Requirements: None',
+  info: 'This are the details for the Athletic Scholarship Service: Assists students who are qualified for athletic scholarship. Requirements: None',
   type: '',
   message: 'Assists students who are qualified for athletic scholarship. Requirements: None.',
   tags: ['Atheltic', 'Scholarship', 'Service', 'Requirements', 'Available']
 }, {
   name: 'Sports Equipment',
-  info: 'Lending of sports equipments. Requirements: Valid ID',
+  info: 'This are the details for the Sports Equipment Service: Lending of sports equipments for the students. Requirements: Valid ID',
   type: '',
   message: 'Lending of sports equipments. Requirements: Valid ID',
   tags: ['Lending', 'Sports', 'Equipment', 'Borrowing', 'Athletic', 'Requirements', 'Available']
 }, {
   name: 'Student development facilitation and counseling services',
-  info: 'We are your family and we are ready to help you overcome your obstacles in life. Requirement: Students can just go to the office/ walk-in but should be reffered by the dean, instructor, Faculty, Parents, or other University Personnel',
+  info: 'This are the details for the Student development facilitation and counseling services: We are your family and we are ready to help you overcome your obstacles in life. Requirement: Students can just go to the office/ walk-in but should be reffered by the dean, instructor, Faculty, Parents, or other University Personnel',
   type: '',
   message: 'We are your family and we are ready to help you overcome your obstacles in life. Requirement: Students can just go to the office/ walk-in but should be reffered by the dean, instructor, Faculty, Parents, or other University Personnel.',
   tags: ['Student', 'Development', 'Facilitation', 'Counseling', 'Services', 'Requirements', 'CCSD', 'Available']
 }, {
   name: 'Psychological Testing Service',
-  info: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  info: 'This are the details for the Psychological Testing Service: Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
   type: '',
   message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean.',
   tags: ['Psychological', 'Test', 'Testing', 'Service', 'CCSD', 'Requirements', 'Available']
 }, {
   name: 'Personality Test',
-  info: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  info: 'This are the details for the Personality Test Service: Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
   type: '',
   message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean.',
   tags: ['Personality', 'Testing', 'Service', 'Test', 'Requirements', 'CCSD', 'Available']
 }, {
   name: 'Interest Test',
-  info: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  info: 'This are the details for the Interest Test Service: Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
   type: '',
   message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean.',
   tags: ['Interest', 'Testing', 'Service', 'Test', 'Requirements', 'CCSD', 'Available']
 }, {
   name: 'Aptitude Test',
-  info: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  info: 'This are the details for the Aptitude Test Service: Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
   type: '',
   message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean.',
   tags: ['Aptitude', 'Testing', 'Service', 'Test', 'Requirements', 'CCSD', 'Available']
 }, {
   name: 'Mental Ability',
-  info: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  info: 'This are the details for the Mental Ability Service: Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
   type: '',
   message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean.',
   tags: ['Mental', 'Ability', 'Testing', 'Service', 'Test', 'Requirements', 'CCSD', 'Available']
 }, {
   name: 'Battery Test',
-  info: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
+  info: 'This are the details for the Battery Test Service: Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean',
   type: '',
   message: 'Get to know yourself better through our various tests! Requirements: Should be requested by instructors or dean.',
   tags: ['Battery', 'Testing', 'Service', 'Test', 'Requirements', 'CCSD', 'Available']
 }, {
   name: 'Career and placement services',
-  info: 'Career and placement services for graduating students. Requirements: Should be recommended by the instructor or dean',
+  info: 'This are the details for the Career and placement services: Career and placement services for graduating students. Requirements: Should be recommended by the instructor or dean',
   type: '',
   message: 'Career and placement services for graduating students. Requirements: Should be recommended by the instructor or dean.',
   tags: ['service', 'Career', 'Placement', 'Requirements', 'CCSD', 'Available']
 }, {
   name: 'Tooth extraction',
-  info: 'Free tooth extraction available for UB Students and Employees. Requirements: Valid ID',
+  info: 'This are the details for the Tooth extraction Service: Free tooth extraction available for UB Students and Employees. Requirements: Valid ID',
   type: '',
   message: 'Free tooth extraction available for UB Students and Employees. Requirements: Valid ID',
   tags: ['Free', 'Tooth', 'extraction', 'Service', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'Minor Surgery',
-  info: 'Minor Sugery available for UB Students and Employees. Minor surgeries includes Suturing, Excision, and Circumcision. Requirements: Valid ID',
+  info: 'This are the details for the Minor Surgery Service: Minor Sugery available for UB Students and Employees. Minor surgeries includes Suturing, Excision, and Circumcision. Requirements: Valid ID',
   type: '',
   message: 'Minor Sugery available for UB Students and Employees. Minor surgeries includes Suturing, Excision, and Circumcision. Requirements: Valid ID.',
   tags: ['Minor', 'Surgery', 'Suturing', 'Excision', 'Circumcision', 'Service', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'Physical Examination',
-  info: 'Physical Examination for OJTs, Practicum, Competitions and Clinical exposure. Requirements: Checklist from Clinic, Valid ID',
+  info: 'This are the details for the Physical Examination Service: Physical Examination for OJTs, Practicum, Competitions and Clinical exposure. Requirements: Checklist from Clinic, Valid ID',
   type: '',
   message: 'Physical Examination for OJTs, Practicum, Competitions and Clinical exposure. Requirements: Checklist from Clinic, Valid ID.',
   tags: ['Physical', 'Examination', 'Service', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'Facilitation of Accident Insurance',
-  info: 'If a student or employee had an accident inside the campus, the university will be the one to pay all the hospital bills. Requirements: Receipts',
+  info: 'This are the details for the Facilitation of Accident Insurance Service: If a student or employee had an accident inside the campus, the university will be the one to pay all the hospital bills. Requirements: Receipts',
   type: '',
   message: 'If a student or employee had an accident inside the campus, the university will be the one to pay all the hospital bills. Requirements: Receipts.',
   tags: ['Facilitation', 'Accident', 'Insurance', 'Service', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'Radiology and Medtech/Clinical Laboratory Services',
-  info: 'Radiology and Medtech/Clinical Laboratory Services available for UB Students and Employees. Requirements: Valid ID',
+  info: 'This are the details for the Radiology and Medtech/Clinical Laboratory Service: Radiology and Medtech/Clinical Laboratory Services available for UB Students and Employees. Requirements: Valid ID',
   type: '',
   message: 'Radiology and Medtech/Clinical Laboratory Services available for UB Students and Employees. Requirements: Valid ID.',
   tags: ['Radiology', 'Service', 'Medtech', 'Laboratory', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'Vaccinations',
-  info: 'Vaccinations(Hep B; Influenza Vaccine/AH1N1 vaccine; Cervical Cancer; Anti-Pneumonia) available for UB Students, employees and UB Partner Communities. Requirements: Valid ID',
+  info: 'This are the details for the Vaccinations Service: Vaccinations(Hep B; Influenza Vaccine/AH1N1 vaccine; Cervical Cancer; Anti-Pneumonia) available for UB Students, employees and UB Partner Communities. Requirements: Valid ID',
   type: '',
   message: 'Vaccinations(Hep B; Influenza Vaccine/AH1N1 vaccine; Cervical Cancer; Anti-Pneumonia) available for UB Students, employees and UB Partner Communities. Requirements: Valid ID.',
   tags: ['Vaccinations', 'Vaccine', 'Service', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'X-ray',
-  info: 'The University offers X-Ray service for all. Requirements: Payment Receipt',
+  info: 'This are the details for the X-ray Service: The University offers X-Ray service for all. Requirements: Payment Receipt',
   type: '',
   message: 'The University offers X-Ray service for all. Requirements: Payment Receipt',
   tags: ['X-Ray', 'Service', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'Consultation',
-  info: 'Consultation or chekup available for UB Students and Employees. Requirements: Valid ID',
+  info: 'This are the details for the Consultation Service: Consultation or chekup available for UB Students and Employees. Requirements: Valid ID',
   type: '',
   message: 'Consultation or chekup available for UB Students and Employees. Requirements: Valid ID.',
   tags: ['Consultation', 'Check', 'Up', 'Check-up', 'Consult', 'Service', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'Medical Certificate',
-  info: 'Issuing medical certificate for students who was sent home. Requirements: If seen by another Medical Doctor, present a valid Medical Certificate from the MD. If hospitalized, get a valid Medical Certificate from the Hospital.',
+  info: 'This are the details for the Medical Certificate Service: Issuing medical certificate for students who was sent home. Requirements: If seen by another Medical Doctor, present a valid Medical Certificate from the MD. If hospitalized, get a valid Medical Certificate from the Hospital.',
   type: '',
   message: 'Issuing medical certificate for students who was sent home. Requirements: If seen by another Medical Doctor, present a valid Medical Certificate from the MD. If hospitalized, get a valid Medical Certificate from the Hospital.',
   tags: ['Medical', 'Certificate', 'Clinic', 'Requirements', 'Service', 'Available']
 }, {
   name: 'Physical/Medical Examination for local OJT/ Practicum (SIHTM)',
-  info: 'Physical/Medical Examination for local OJT/ Practicum available for SIHTM students. Requirements: Results from initial Medical Examination',
+  info: 'This are the details for the Physical/Medical Examination for local OJT/ Practicum (SIHTM) Service: Physical/Medical Examination for local OJT/ Practicum available for SIHTM students. Requirements: Results from initial Medical Examination',
   type: '',
   message: 'Physical/Medical Examination for local OJT/ Practicum available for SIHTM students. Requirements: Results from initial Medical Examination.',
   tags: ['Physical', 'Examination', 'Exam', 'OJT', 'SIHTM', 'Medical', 'Service', 'IHTM', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'Physical/Medical Examination for local OJT/ Practicum (Non-SIHTM Students)',
-  info: 'Physical/Medical Examination for local OJT/ Practicum available for UB Students. Requirements: Checklist from the Clinic',
+  info: 'This are the details for the Physical/Medical Examination for local OJT/ Practicum (Non-SIHTM Students) Service: Physical/Medical Examination for local OJT/ Practicum available for UB Students. Requirements: Checklist from the Clinic',
   type: '',
   message: 'Physical/Medical Examination for local OJT/ Practicum available for UB Students. Requirements: Checklist from the Clinic.',
   tags: ['Physical', 'Examination', 'Exam', 'OJT', 'Medical', 'Service', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'Physical/Medical Examination for International OJT',
-  info: 'Physical/Medical Examination for International OJT available for UB Students. Requirements: Endorsement Letter',
+  info: 'This are the details for the Physical/Medical Examination for International OJT Service: Physical/Medical Examination for International OJT available for UB Students. Requirements: Endorsement Letter',
   type: '',
   message: 'Physical/Medical Examination for International OJT available for UB Students. Requirements: Endorsement Letter.',
   tags: ['International', 'Physical', 'Examination', 'Exam', 'OJT', 'Medical', 'Service', 'Clinic', 'Requirements', 'Available']
 }, {
   name: 'UBCARES Program',
-  info: 'The Community Advancement through Responsive Extension Services (CARES) Program. Requirements: Form from ECOS office, parents consent form/waiver',
+  info: 'This are the details for the UBCARES Program: The Community Advancement through Responsive Extension Services (CARES) Program. Requirements: Form from ECOS office, parents consent form/waiver',
   type: '',
   message: 'The Community Advancement through Responsive Extension Services (CARES) Program. Requirements: Form from ECOS office, parents consent form/waiver.',
   tags: ['UBCARES', 'Program', 'Outreach', 'Volunteer', 'Service', 'ECOS', 'Requirements', 'Available']
 }, {
-  name: 'Processees International On The Job Training (IOJT) applicants and exchange scholars',
-  info: 'Requirement: None',
+  name: 'Processing International On The Job Training (IOJT) applicants and exchange scholars',
+  info: 'This are the details for the Processing International On The Job Training (IOJT) applicants and exchange scholars Service: Processees International On The Job Training (IOJT) applicants and exchange scholars. Requirement: None',
   type: '',
   message: 'Processees International On The Job Training (IOJT) applicants and exchange scholars Requirement: None.',
   tags: ['IOJT', 'International', 'Job', 'Training', 'OJT', 'Abroad', 'Service', 'Exhcange', 'Scholars', 'LARC', 'Requirements', 'Available']
 }, {
-  name: 'Assists the UBAFI in issuing the membership identification cards of its members.',
-  info: 'Requirement: None',
+  name: 'Assisting of the UBAFI in issuing the membership identification cards of its members.',
+  info: 'This are the details for  the Assisting of the UBAFI in issuing the membership identification cards of its members Service: Assists the UBAFI in issuing the membership identification cards of its members. Requirement: None',
   type: '',
   message: 'Assists the UBAFI in issuing the membership identification cards of its members. Requirement: None.',
   tags: ['UBAFI', 'Alumni', 'ID', 'Service', 'LARC', 'Requirements', 'Available']
 }, {
-  name: 'Gives copies of PRC Board Syllabi for STE Students',
-  info: 'Requirements: None',
+  name: 'Giving of copies of PRC Board Syllabi for STE Students',
+  info: 'This are the details for the Giving of copies of PRC Board Syllabi for STE Students Service: Gives copies of PRC Board Syllabi for STE Students Requirements: None',
   type: '',
   message: 'Gives copies of PRC Board Syllabi for STE Students. Requirements: None',
   tags: ['Board', 'STE', 'Syllabi', 'Service', 'LARC', 'Requirements', 'Available']
 }, {
   name: 'Follet-DLM ',
-  info: 'Follet-DLM is a Mobile Application. Requirement: Internet, Web Browser',
+  info: 'This are the details for the Follet-DLM Service: Follet-DLM is a Mobile Application. Requirement: Internet, Web Browser',
   type: '',
   message: 'Follet-DLM is a Mobile Application. Requirement: Internet, Web Browser.',
   tags: ['Follet', 'Mobile', 'Application', 'Library', 'Available']
 }, {
   name: 'Journals',
-  info: 'There are journals available in the library. Requirements: Valid ID',
+  info: 'This are the details for the Journals Service: There are journals available in the library that can be used for assignments and research. Requirements: Valid ID',
   type: '',
   message: 'There are journals available in the library. Requirements: Valid ID.',
   tags: ['Journal', 'Books', 'Magazines', 'Newspaper', 'Service', 'Requirement', 'Library', 'Available']
 }, {
   name: 'New Library Databases/E-Journals',
-  info: 'Online resources available for students. Requirements: None',
-  type: ['None'],
+  info: 'This are the details for the New Library Databases/E-Journals Service: Online resources available for students that can be used for assignments and research. Requirements: None',
+  type: 'None',
   message: 'Online resources available for students. Requirements: None.',
   tags: ['E-Journal', 'Online', 'Journals', 'Service', 'Requirement', 'Library', 'Available']
 }, {
   name: 'Clearance signing',
-  info: 'Clearance signing for releasing of records. Requirement: Valid ID',
-  type: ['Valid ID'],
+  info: 'This are the details for the Clearance signing Service: Clearance signing for releasing of official records. Requirement: Valid ID',
+  type: 'Valid ID',
   message: 'Clearance signing for releasing of records. Requirement: Valid ID.',
   tags: ['Clearance', 'Signing', 'Service', 'Requirement', 'Library', 'Available']
 }, {
   name: 'Library Orientation',
-  info: 'A tour on the library. Requirement: Valid ID',
+  info: 'This are the details for the Library Orientation Service: A tour on the library. Requirement: Valid ID',
   type: ['Valid ID'],
   message: 'A tour on the library. Requirement: Valid ID.',
   tags: ['Library', 'Tour', 'Orientation', 'Service', 'Requirement', 'Available']
 }, {
   name: 'Computers for internet surfing in the library',
-  info: 'Availing of students and employees to use computers with internet and also free wifi. Requirements: None',
+  info: 'This are the details for the Computers for internet surfing in the library Service: Availing of students and employees to use computers with internet and also free wifi. Requirements: None',
   type: '',
   message: 'Availing of students and employees to use computers with internet and also free wifi. Requirements: None.',
   tags: ['Library', 'Computer', 'WiFi', 'Service', 'Requirement', 'Available']
 }, {
   name: 'Discussion rooms',
-  info: 'Availing of the discussion room. Requirement: None',
+  info: 'This are the details for the Discussion rooms Service: Availing of the discussion room of the university library. Requirement: None',
   type: '',
   message: 'Availing of the discussion room. Requirement: None.',
   tags: ['Library', 'Discussion', 'Room', 'Service', 'Requirement', 'Available']
 }, {
   name: 'Press releases and advertisements',
-  info: 'Publications of advertisements, newspapers, magazines, and websites.',
+  info: 'This are the details for the Press releases and advertisements Service: Publications of advertisements and press releases for the university, newspapers, magazines, and websites.',
   type: '',
   message: 'This service provides the publications of advertisements, newspapers, magazines and websites.',
   tags: ['Press', 'Releases', 'Advertisements', 'Newspapers', 'Magazines', 'Service', 'MAPS', 'Available']
 }, {
   name: 'Yearbook and Graduation materials',
-  info: 'Yearbooks are optional for Students if they want to avail it or not. Requirements: Ad Requisition Form from MAPS',
+  info: 'This are the details for the Yearbook and Graduation materials Service: Yearbooks are optional for Students if they want to avail it or not. Requirements: Ad Requisition Form from MAPS',
   type: '',
   message: 'Yearbooks are optional for Students if they want to avail it or not. Requirements: Ad Requisition Form from MAPS.',
   tags: ['Materials', 'Yearbook', 'Graduation', 'Service', 'Requirements', 'MAPS', 'Available']
 }, {
   name: 'Social Media Content Development',
-  info: 'Social Media Content Development for students and employees. Requirements: Ad Requisition Form from MAPS',
+  info: 'This are the details for the Social Media Content Development Service: Social Media Content Development for students and employees. Requirements: Ad Requisition Form from MAPS',
   type: '',
   message: 'Social Media Content Development for students and employees. Requirements: Ad Requisition Form from MAPS.',
   tags: ['Social', 'Media', 'Content', 'Development', 'Service', 'Requirements', 'MAPS', 'Available']
 }, {
   name: 'Website Content Development',
-  info: 'Website Content Development for students and employees who wants to be featured in the ubaguio.edu website.Requirements: Ad Requisition Form from MAPS',
+  info: 'This are the details for the Website Content Development Service: Website Content Development for students and employees who wants to be featured in the ubaguio.edu website.Requirements: Ad Requisition Form from MAPS',
   type: '',
   message: 'Website Content Development for students and employees who wants to be featured in the ubaguio.edu website.Requirements: Ad Requisition Form from MAPS.',
   tags: ['Website', 'Content', 'Development', 'Service', 'Requirements', 'MAPS', 'Available']
 }, {
   name: 'Virus scanning and removal for flash drives and portable hard disk',
-  info: 'Reqruirements: Valid ID',
+  info: 'This are the details for the Virus scanning and removal for flash drives and portable hard disk Service: Virus scanning and removal for flash drives and portable hard disk Reqruirements: Valid ID',
   type: '',
   message: 'Virus scanning and removal for flash drives and portable hard disk. Reqruirements: Valid ID.',
   tags: ['USB', 'Virus', 'Scanning', 'Flashdrive', 'Service', 'Requiremets', 'MIS', 'Available']
 }, {
   name: 'Assessment of PC or Laptop',
-  info: 'The office only checks the problem of your laptop or PC, but they dont do repairing. Requirement: Valid ID.',
+  info: 'This are the details for the Assessment of PC or Laptop Service: The office only checks the problem of your laptop or PC, but they dont do repairing. Requirement: Valid ID.',
   type: '',
   message: 'The office only checks the problem of your laptop or PC, but they dont do repairing. Requirement: Valid ID.',
   tags: ['PC', 'Laptop', 'Assesment', 'Checking', 'Service', 'Available']
 }, {
   name: 'Installation of open-source or free software',
-  info: 'The office gives students open source softwares. Requirements: Valid ID.',
+  info: 'This are the details for the Installation of open-source or free software Service: The office gives students open source softwares. Requirements: Valid ID.',
   type: '',
   message: 'The office gives students open source softwares. Requirements: Valid ID.',
   tags: ['Software', 'Installation', 'Service', 'Requiremets', 'MIS', 'Available']
 }, {
   name: 'Student ID',
-  info: 'Printing and validation of Student ID. Requirement: A. Freshmen- must be enrolled, receipt of enrollment, B. ID Replacement- replacement form from student affairs, receipt of id replacement payment, C. Validation- ID',
+  info: 'This are the details for the Student ID Service: Printing and validation of Student ID. Requirement: A. Freshmen- must be enrolled, receipt of enrollment, B. ID Replacement- replacement form from student affairs, receipt of id replacement payment, C. Validation- ID',
   type: '',
   message: 'Printing and validation of Student ID. Requirement: A. Freshmen- must be enrolled, receipt of enrollment, B. ID Replacement- replacement form from student affairs, receipt of id replacement payment, C. Validation- ID',
   tags: ['Student', 'ID', 'Service', 'Requiremets', 'MIS', 'Available']
 }, {
   name: 'Alumni and other IDs',
-  info: 'Printing of Alumni and other IDs. Reqruirements: Alumni- clearance form',
+  info: 'This are the details for the Alumni and other IDs Service: Printing of Alumni and other IDs. Reqruirements: Alumni- clearance form',
   type: '',
   message: 'MIS Office provides the service of printing Alumni and other IDs\'.',
   tags: ['Alumni', 'Other', 'ID', 'Service', 'Requiremets', 'MIS', 'Available']
 }, {
   name: 'Wi-Fi account',
-  info: 'Creation of Wi-Fi account Requirements: Valid ID',
+  info: 'This are the details for the Wi-Fi account Service: Creation of Wi-Fi for the student to be able to access the wifi within the university. Requirements: Valid ID',
   type: '',
   message: 'MIS Office provides the service of WiFi account creation.',
   tags: ['Creation', 'Create', 'WiFi', 'Account', 'Service', 'Requiremets', 'MIS', 'Available']
 }, {
   name: 'Readmissions',
-  info: 'Getting dropped class cards. Requirement: Valid ID',
+  info: 'This are the details for the Readmissions Service: Getting dropped class cards. Requirement: Valid ID',
   type: '',
   message: 'Getting dropped class cards. Requirement: Valid ID.',
   tags: ['Class', 'Card', 'Readmission', 'Service', 'Requirements', 'OSA', 'Available']
 }, {
   name: 'Performing Arts',
-  info: 'For students who wants to apply for performing arts scholarship. Requirements: None',
+  info: 'This are the details for the Performing Arts Service: This is for students who wants to apply for performing arts scholarship. Requirements: None',
   type: '',
   message: 'For students who wants to apply for performing arts scholarship. Requirements: None.',
   tags: ['Performing', 'Arts', 'Scholarship', 'Service', 'Requirements', 'OSA', 'Available']
 }, {
   name: 'Format Editing',
-  info: 'Formatting students documents with APA Format. Requirement: A copy of Manuscript, Valid ID',
+  info: 'This are the details for the Format Editing Service: Formatting students documents with APA Format. Requirement: A copy of Manuscript, Valid ID',
   type: '',
   message: 'Formatting students documents with APA Format. Requirement: A copy of Manuscript, Valid ID.',
   tags: ['Format', 'Editing', 'APA', 'Service', 'Requirements', 'RNDC', 'Available']
 }, {
   name: 'Statistic Package for Social Sciences',
-  info: 'SPSS is one of the most popular statistical packages which can perform highly complex data manipulation and analysis with simple instructions. Requirement: Your study or copy of manuscript, Valid ID.',
+  info: 'This are the details for the Statistic Package for Social Sciences Service: SPSS is one of the most popular statistical packages which can perform highly complex data manipulation and analysis with simple instructions. Requirement: Your study or copy of manuscript, Valid ID.',
   type: '',
   message: 'SPSS is one of the most popular statistical packages which can perform highly complex data manipulation and analysis with simple instructions. Requirement: Your study or copy of manuscript, Valid ID.',
   tags: ['Statistic', 'Package', 'Social', 'Sciences', 'SPSS', 'Assistance', 'Service', 'Requirements', 'RNDC', 'Available']
 }, {
   name: 'Poster Preparation',
-  info: 'Preparing poster. Requirement: Request Letter',
+  info: 'This are the details for the Poster Preparation Service: Preparing poster. Requirement: Request Letter',
   type: '',
   message: 'Preparing poster. Requirement: Request Letter.',
   tags: ['Poster', 'Preparation', 'Service', 'Requirements', 'RNDC', 'Available']
 }, {
   name: 'Publication of Research findings (Catalyst)',
-  info: 'Requirement: Full manuscript, Ethics Clearance, Letter of Acceptance',
+  info: 'This are the details for the Publication of Research findings (Catalyst) Service: Publication of Research findings. Requirement: Full manuscript, Ethics Clearance, Letter of Acceptance',
   type: '',
   message: 'Publication of Research findings (Catalyst) Requirement: Full manuscript, Ethics Clearance, Letter of Acceptance.',
   tags: ['Publication', 'Research', 'Findings', 'Catalyst', 'Service', 'Requirements', 'RNDC', 'Available', 'Presentation']
 }, {
   name: 'Tool Validation',
-  info: 'Requirement:Statement of the Problem, Methodology and Questionnaire signed by members of the panelist and adviser.',
+  info: 'This are the details for the Tool Validation Service: Tool Validation for your study or research. Requirement: Statement of the Problem, Methodology and Questionnaire signed by members of the panelist and adviser.',
   type: '',
   message: 'Tool Validation. Requirement:Statement of the Problem, Methodology and Questionnaire signed by members of the panelist and adviser.',
   tags: ['Tool', 'Validation', 'Service', 'Requirements', 'RNDC', 'Available']
 }, {
   name: 'Grammar Check',
-  info: 'Allows students to use Grammarly to check the grammar of their documents or files. Requirement: Valid ID',
+  info: 'This are the details for the Grammar Check Service: Allows students to use Grammarly to check the grammar of their documents or files. Requirement: Valid ID',
   type: '',
   message: 'Allows students to use Grammarly to check the grammar of their documents or files. Requirement: Valid ID.',
   tags: ['Grammar', 'Check', 'Service', 'Requirements', 'RNDC', 'Available']
 }, {
   name: 'Plagiarism Test',
-  info: 'Allows students to use Grammarly to check the plagiarism of their documents or files. Requirement: Valid ID',
+  info: 'This are the details for the Plagiarism Test Service: Allows students to use Grammarly to check the plagiarism of their documents or files. Requirement: Valid ID',
   type: '',
   message: 'Allows students to use Grammarly to check the plagiarism of their documents or files. Requirement: Valid ID.',
   tags: ['Plagiarism', 'Test', 'Service', 'Requirements', 'RNDC', 'Available']
 }, {
   name: 'Spell Check',
-  info: 'Allows students to use Grammarly to check the spelling of their documents or files. Requirement: Valid ID',
+  info: 'This are the details for the Spell Check Service: Allows students to use Grammarly to check the spelling of their documents or files. Requirement: Valid ID',
   type: '',
   message: 'Allows students to use Grammarly to check the spelling of their documents or files. Requirement: Valid ID.',
   tags: ['Spell', 'Spelling', 'Check', 'Service', 'Requirements', 'RNDC', 'Available']
 }, {
   name: 'Use of computers',
-  info: 'Allows students to use the office computer. Requirement: Valid ID',
+  info: 'This are the details for the Use of computers Service: Allows students to use the office computer. Requirement: Valid ID',
   type: '',
   message: 'Allows students to use the office computer. Requirement: Valid ID.',
   tags: ['Computers', 'RNDC', 'Service', 'Requirements', 'Available']
 }, {
   name: 'In-charge of issuance of assessment of school fees/accounts inquiry',
-  info: 'The assessment is automatically generated in the student’s portal, but they can also have the printed assessment if they go to the specific windows here that prints the assessment. Requirements: Valid ID',
+  info: 'This are the details for the In-charge of issuance of assessment of school fees/accounts inquiry Service: The assessment is automatically generated in the student’s portal, but they can also have the printed assessment if they go to the specific windows here that prints the assessment. Requirements: Valid ID',
   type: '',
   message: 'The assessment is automatically generated in the student’s portal, but they can also have the printed assessment if they go to the specific windows here that prints the assessment. Requirements: Valid ID.',
   tags: ['Assessment', 'Fees', 'Account', 'Inquiry', 'Service', 'Requirements', 'SAS', 'Available', 'Issuance']
 }, {
   name: 'Issuance of examination permits',
-  info: 'Responsible for the issuance of examination permits. Requirements: Assessment of Fee, Payment Receipt',
+  info: 'This are the details for the Issuance of examination permits Service: Responsible for the issuance of examination permits. Requirements: Assessment of Fee, Payment Receipt',
   type: '',
   message: 'Responsible for the issuance of examination permits. Requirements: Assessment of Fee, Payment Receipt',
   tags: ['Examination', 'Permit', 'Service', 'Requirements', 'SAS', 'Available']
 }, {
   name: 'Issuance of Clearance for the release of school credentials',
-  info: 'Before the ARC releases the student’s credentials, the clearance form must be cleared by all offices and the students accounts office will be the last one to sign because they will oversee if the student paid all his/her tuition fee and other fees. Requirements: Signed Clearance Form',
+  info: 'This are the details for the Issuance of Clearance for the release of school credentials Service: Before the ARC releases the student’s credentials, the clearance form must be cleared by all offices and the students accounts office will be the last one to sign because they will oversee if the student paid all his/her tuition fee and other fees. Requirements: Signed Clearance Form',
   type: '',
   message: 'Before the ARC releases the student’s credentials, the clearance form must be cleared by all offices and the students accounts office will be the last one to sign because they will oversee if the student paid all his/her tuition fee and other fees. Requirements: Signed Clearance Form.',
   tags: ['Clearance', 'Release', 'School', 'Credentials', 'Service', 'Requirements', 'SAS', 'Available']
 }, {
   name: 'Investigate complaints, offenses, reports, and any other unusual or suspicious activities in the campus',
-  info: 'The Security Department conducts investigation of various crimes or offenses that happened inside the school campus. Requirement: None',
+  info: 'This are the details for the Investigate complaints, offenses, reports, and any other unusual or suspicious activities in the campus Service: The Security Department conducts investigation of various crimes or offenses that happened inside the school campus. Requirement: None',
   type: '',
   message: 'The Security Department conducts investigation of various crimes or offenses that happened inside the school campus. Requirement: None.',
   tags: ['Complaints', 'Offenses', 'Reports', 'Suspicious', 'Activities', 'Service', 'Requirements', 'Security', 'Available', 'Campus', 'Assistance']
 }, {
   name: 'Lost & Found',
-  info: 'Students bring Lost Items to the Security Office for safe-keeping, and returning the lost items to the respective owner. Requirements: Lost Item',
+  info: 'This are the details for the Lost & Found service: Students bring Lost Items to the Security Office for safe-keeping, and returning the lost items to the respective owner. Requirements: Lost Item',
   type: '',
   message: 'Students bring Lost Items to the Security Office for safe-keeping, and returning the lost items to the respective owner. Requirements: Lost Item.',
   tags: ['Lost', 'Found', 'Items', 'Service', 'Requirements', 'Security', 'Available']
 }, {
   name: 'Security Contact',
-  info: 'Students and employees of the university can contact the security office anytime and anywhere.',
+  info: 'This are the details for the Security Contact Service: Students and employees of the university can contact the security office anytime and anywhere.',
   type: '',
   message: 'Students and employees of the university can contact the security office anytime and anywhere.',
   tags: ['Security', 'Contact', 'Emergency', 'Hotline', 'Service', 'Available']
@@ -1019,7 +1019,7 @@ var information = [{
   tags: ['Requirements', 'Honor', 'Entrance', 'Scholarship', 'Valedictorian', 'Salutatorian', 'Freshmen', 'Available', 'Offered']
 }, {
   name: 'UB Science High Graduate College Entrance Scholarships',
-  info: 'UB Science High Graduate - 100% on tuition and miscellaneous for one year',
+  info: 'UB Science High Graduate College Entrance Scholarships are available to incoming freshmen who are: UB Science High Graduate - 100% on tuition and miscellaneous for one year',
   type: '',
   message: 'UB Science High Graduate College Entrance Scholarships are available to incoming freshmen who are: UB Science High Graduate - 100% on tuition and miscellaneous for one year',
   tags: ['Science', 'Highschool', 'UB', 'Entrance', 'Scholarship', 'Offered', 'available']
@@ -1139,25 +1139,25 @@ var information = [{
   tags: ['Military', 'Police', 'Scholarship', 'offered', 'available', 'Student', 'UB', 'DILG', 'Uniformed', 'NBI', 'AFP', 'USVA']
 }, {
   name: 'University level IV scholarship',
-  info: 'Weighted average: 95 - 99, Tuition waiver: 100%, Misc. fee Waiver: 40%',
+  info: 'A University level IV scholarship must have a Weighted average of 95 - 99 and is granted a tuition waiver of 100% and Misc. fee Waiver of 40%.',
   type: '',
   message: 'A University level IV scholarship must have a Weighted average of 95 - 99 and is granted a tuition waiver of 100% and Misc. fee Waiver of 40%.',
   tags: ['University', 'Level', 'Scholarship', 'offered', 'available', 'Student', 'IV', 'Type']
 }, {
   name: 'University level III scholarship',
-  info: 'Weighted average: 93 - 94.99, Tuition waiver: 75%, Misc. fee Waiver: 30%',
+  info: 'A University level III scholarship must have a Weighted average of 93 - 94.99 and is granted a tuition waiver of 75% and Misc. fee Waiver of 30%.',
   type: '',
   message: 'A University level III scholarship must have a Weighted average of 93 - 94.99 and is granted a tuition waiver of 75% and Misc. fee Waiver of 30%.',
   tags: ['University', 'Level', 'Scholarship', 'offered', 'available', 'Student', 'III', 'Type']
 }, {
   name: 'University level II scholarship',
-  info: 'Weighted average: 90 - 92.99, Tuition waiver: 50%, Misc. fee Waiver: 20%',
+  info: 'A University level II scholarship must have a Weighted average of 90 - 92.99 and is granted a tuition waiver of 50% and Misc. fee Waiver of 20%.',
   type: '',
   message: 'A University level II scholarship must have a Weighted average of 90 - 92.99 and is granted a tuition waiver of 50% and Misc. fee Waiver of 20%.',
   tags: ['University', 'Level', 'Scholarship', 'offered', 'available', 'Student', 'II', 'Type']
 }, {
   name: 'University level I scholarship',
-  info: 'Weighted average: 87 - 89.99, Tuition waiver: 25%, Misc. fee Waiver: 10%',
+  info: 'A University level II scholarship must have a Weighted average of 87 - 89.99 and is granted a tuition waiver of 25% and Misc. fee Waiver of 10%.',
   type: '',
   message: 'A University level II scholarship must have a Weighted average of 87 - 89.99 and is granted a tuition waiver of 25% and Misc. fee Waiver of 10%.',
   tags: ['University', 'Level', 'Scholarship', 'offered', 'available', 'Student', 'I', 'Type']
@@ -1169,307 +1169,307 @@ var information = [{
   tags: ['Athletics', 'Office', 'Sports', 'Available', 'Offered', 'Athletic', 'Scholarship', 'Varsity']
 }, {
   name: 'Departments in UB',
-  info: 'SIT, SEA, SLAHS, SAMS, SIHTM, SON, STE, SBAA, SCJPS, and SOD',
+  info: 'This are the different departments in University of Baguio: SIT, SEA, SLAHS, SAMS, SIHTM, SON, STE, SBAA, SCJPS, and SOD',
   type: '',
   message: 'The College Departments that the University has are the School of Information Technology, School of Engineering and Architecture, School of Liberal Arts and Human Sciences, School of International Hospitality and Tourism Management, School of Nursing, School of Teacher Education, School of Business Administration and Accountancy, School of Criminal Justice and Public Safety, and School of Dentistry.',
   tags: ['Departments', 'Colleges', 'University', 'Baguio', 'UB', 'Offered', 'Available', 'Schools']
 }, {
   name: 'UB LOYALTY SONG LYRICS',
-  info: 'Lyrics of the UB Loyalty Song',
+  info: 'This is the University of Baguio Loyalty Song Lyrics.',
   type: '',
   message: 'UB dear our Alma Mater, Nest of Love and care all free, Pride of our mountain city, Dear to us you\'ll ever be. And thy fame which we all share, Binds us now and ever will, To thy banner of red and white, And thy uniform of gray, Loved by forever be, With the wisdom God has sown, We will win more fame for thee. ',
   tags: ['Loyalty', 'Song', 'Lyrics', 'Hymn']
 }, {
   name: 'UB Student Credo',
-  info: 'UB Student Credo',
+  info: 'This is the University of Baguio Student Credo. This are the creed of the students here in ub upon entering the university which they must firmly stand and believe. This creed is what the students must follow and uphold during their stay in the university.',
   type: '',
   message: 'I belive in man because I believe in God. I believe in the fundamental equality of men as children of God. I believe in the ability of education to bring full splendor all the mental, physical, and spiritual powers of man. I believe in the values of philosophy that in the realm of the mind and spirit lies the road to unity and peace. I believe in democracy, in the ultimate capacity of the common man to think his problems through. I believe in science, in its conquest over the elements and its tremendous possibilities for the future. I believe in the arts, in their power to free men from the enslavement of ignorance. I believe in the profound value of religion that basically all human problems are moral problems. I believe in the Lord Jesus Christ, in His redeeming sacrifice and in His dynamic and vital conception of life. I believe in the credo cut boldly and enduringly into stone above portals of my Alma Mater, University of Baguio. Our Native Land, The Master of Science. The Contemplation of the Beautiful.',
   tags: ['Student', 'Credo']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - A',
-  info: 'Instigating, inciting, provoking, leading, or taking part in illegal and/ or violent demonstrations or activities, or giving active support thereto in any form or manner whether ﬁnancial, physical, or material.',
+  info: 'This are the sanctions for Offenses Against Campus Peace Order, Security, and Safety - A. Instigating, inciting, provoking, leading, or taking part in illegal and/ or violent demonstrations or activities, or giving active support thereto in any form or manner whether ﬁnancial, physical, or material. 1st Offense sanction will be exclusion',
   type: '',
   message: '1st Offense sanction will be exclusion so please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Instigating', 'Inciting', 'Provoking', 'Leading', 'Taking', 'Part', 'Illegal', 'Violent', 'Demonstrations', 'Activities', 'Giving', 'Support', 'Form', 'Manner', 'Whether', 'Financial', 'Physical', 'Material', 'Commit']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - B',
-  info: 'Leading or otherwise taking part in any activity which disrupts University functions or which adversely affects classroom instruction, whether such activity is or is not accompanied by violence, such as disconnecting or tampering with electrical connections, switches, generators, motors, air conditioners, fans, light and ﬁre alarms; giving false alarms, shouting; banging doors, walls, tables, desks, chairs and other acts of rowdiness and disturbances.',
+  info: 'This are the sanctions for Offenses Against Campus Peace Order, Security, and Safety - B. Leading or otherwise taking part in any activity which disrupts University functions or which adversely affects classroom instruction, whether such activity is or is not accompanied by violence, such as disconnecting or tampering with electrical connections, switches, generators, motors, air conditioners, fans, light and ﬁre alarms; giving false alarms, shouting; banging doors, walls, tables, desks, chairs and other acts of rowdiness and disturbances. 1st Offense sanction is Reprimand with Warning of Suspension, 2nd Offense is Suspension with Warning of Exclusion and 3rd Offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Reprimand with Warning of Suspension, 2nd Offense is Suspension with Warning of Exclusion and 3rd Offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Leading', 'Otherwise', 'Taking', 'Part', 'Activity', 'Disrupts', 'Functions', 'Adversely', 'Affects', 'Classroom', 'Instruction', 'Whether', 'Accompanied', 'Violence', 'Disconnecting', 'Tampering', 'Electrical', 'Connections', 'Switches', 'Generators', 'Motors', 'Aircon', 'Air', 'Conditioners', 'Fans', 'Light', 'Fire', 'Alarms', 'Shouting', 'Banging', 'Doors', 'Walls', 'Tables', 'Desks', 'Chairs', 'Acts', 'Rowdiness', 'Disturbances', 'Commit']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - C',
-  info: 'Carrying explosives, ﬁrearms, knives, or other deadly weapons of whatever kind within university premises.',
+  info: 'This are the sanctions for Offenses Against Campus Peace Order, Security, and Safety - C. Carrying explosives, ﬁrearms, knives, or other deadly weapons of whatever kind within university premises. 1st Offense sanction is Suspension / Conﬁscation of said weapons and 2nd Offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Suspension / Conﬁscation of said weapons and 2nd Offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Carrying', 'Explosives', 'Firearms', 'Knives', 'Deadly', 'Weapons', 'Premises', 'Commit']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - D',
-  info: 'Detonating explosives or ﬁreworks within the University premises and its immediate vicinity.',
+  info: 'This are the sanctions for Offenses Against Campus Peace Order, Security, and Safety - D. Detonating explosives or ﬁreworks within the University premises and its immediate vicinity. 1st Offense sanction will be Exclusion or Expulsion. Please follow the University Rules and Regulations.',
   type: '',
   message: '1st Offense sanction will be Exclusion or Expulsion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Detonating', 'Explosives', 'Fireworks', 'Premises', 'Immediate', 'Vicinity', 'Commit']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - E',
-  info: 'Assaulting, engaging in a physical altercation, or committing physical abuse upon any person in authority, faculty members, personnel, and/or fellow students.',
+  info: 'This are the sanctions for Offenses Against Campus Peace Order, Security, and Safety - E. Assaulting, engaging in a physical altercation, or committing physical abuse upon any person in authority, faculty members, personnel, and/or fellow students. 1st Offense sanction is Suspension with Warning of Exclusion and 2nd Offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Suspension with Warning of Exclusion and 2nd Offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Assaulting', 'Engaging', 'Physical', 'Altercation', 'Commiting', 'Abuse', 'Person', 'Authority', 'Faculty', 'Members', 'Personnel', 'Fellow', 'Students']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - F',
-  info: 'Insulting, challenging or committing any act of gross disrespect directed against any person in authority, faculty members, personnel, and/or fellow students or threatening to do any of the aforementioned acts.',
+  info: 'This are the sanctions for Offenses Against Campus Peace Order, Security, and Safety - F. Insulting, challenging or committing any act of gross disrespect directed against any person in authority, faculty members, personnel, and/or fellow students or threatening to do any of the aforementioned acts. 1st Offense sanction is Severe Censure with Warning of Suspension, 2nd offense is Suspension with Warning of Exclusion and 3rd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Severe Censure with Warning of Suspension, 2nd offense is Suspension with Warning of Exclusion and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Insulting', 'Challenging', 'Commiting', 'Gross', 'Disrespect', 'Acts', 'Directed', 'Person', 'Authority', 'Faculty', 'Members', 'Personnel', 'Fellow', 'Students', 'Threatening', 'Aforementioned', 'Commit']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - G',
-  info: 'Resorting to vindictive acts, personal insults, defamation,  black propaganda or malicious imputations, oral or written, including the use of internet, text messages and the like in order to discredit or ridicule university ofﬁcials, personnel, faculty members, or fellow students.',
+  info: 'This are the sanctions for Offenses Against Campus Peace Order, Security, and Safety - G. Resorting to vindictive acts, personal insults, defamation,  black propaganda or malicious imputations, oral or written, including the use of internet, text messages and the like in order to discredit or ridicule university ofﬁcials, personnel, faculty members, or fellow students. 1st Offense sanction is Suspension with Warning of Exclusion and 2nd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Suspension with Warning of Exclusion and 2nd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Resorting', 'Vindictive', 'Acts', 'Personal', 'Insults', 'Defamation', 'Black', 'Propaganda', 'Malicious', 'Imputations', 'Oral', 'Written', 'Including', 'Internet', 'Text', 'Messages', 'Like', 'Discredit', 'Ridicule', 'Officials', 'Personnel', 'Faculty', 'Members', 'Fellow', 'Students', 'Commit']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - H',
-  info: 'Gross disobedience to or disregard of lawful order, authority of any faculty member or university ofﬁcial.',
+  info: 'This are the sanctions for Offenses Against Campus Peace Order, Security, and Safety - H. Gross disobedience to or disregard of lawful order, authority of any faculty member or university ofﬁcial. 1st Offense sanction is Suspension with Warning of Exclusion and 2nd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Suspension with Warning of Exclusion and 2nd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Commit', 'Gross', 'Disobedience', 'Disregard', 'Lawful', 'Authority', 'Faculty', 'Member', 'Official']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - I',
-  info: 'Preventing in any manner, University ofﬁcials, faculty members, and/or fellow students from performing their duties or exercising their rights.',
+  info: 'This are the sanctions for Offenses Against Campus Peace Order, Security, and Safety - I. Preventing in any manner, University ofﬁcials, faculty members, and/or fellow students from performing their duties or exercising their rights. 1st Offense sanction is Censure with Warning of Suspension, 2nd offense is Suspension with Warning of Exclusion, and 3rd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Censure with Warning of Suspension, 2nd offense is Suspension with Warning of Exclusion, and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Commit', 'Preventing', 'Manner', 'Officials', 'Faculty', 'Members', 'Fellow', 'Students', 'Perform', 'Duty', 'Exercise', 'Rights']
 }, {
   name: 'Offenses Against Campus Peace Order, Security, and Safety - J',
-  info: 'Involvement in fraternity or gang ﬁght / brawl.',
+  info: 'This are the sanctions for Offenses Against Campus Peace Order, Security, and Safety - J. Involvement in fraternity or gang ﬁght / brawl. 1st Offense sanction will be Exclusion.',
   type: '',
   message: '1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Peace', 'Order', 'Security', 'Safety', 'Involvement', 'Fraternity', 'Gang', 'Fight', 'Brawl', 'Bang', 'Commit']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - A',
-  info: 'Gambling, maintaining or participating in any game of chance within the University.',
+  info: 'This are the sanctions for Offenses Against Public Decency, Good Customs and Morals - A. Gambling, maintaining or participating in any game of chance within the University. 1st Offense sanction is Warning/ Reprimand, 2nd offense is Suspension and 3rd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Warning/ Reprimand, 2nd offense is Suspension and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals', 'Gambling', 'Maintaining', 'Participating', 'Game', 'Chance', 'Commit']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - B',
-  info: 'Indecent exposure, gross immorality and other acts constituting scandalous and reprehensible conduct.',
+  info: 'This are the sanctions for Offenses Against Public Decency, Good Customs and Morals - B. Indecent exposure, gross immorality and other acts constituting scandalous and reprehensible conduct. 1st Offense sanction is Suspension with Warning of Exclusion and 2nd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Suspension with Warning of Exclusion and 2nd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals', 'Indecent', 'Exposure', 'Gross', 'Immorality', 'Acts', 'Constituting', 'Scandalous', 'Reprehensible', 'Conduct', 'Commit']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - C',
-  info: 'Cheating or any dishonest behavior in but not limited to examinations, quizzes, seatworks, assignments and role plays.',
+  info: 'This are the sanctions for Offenses Against Public Decency, Good Customs and Morals - C. Cheating or any dishonest behavior in but not limited to examinations, quizzes, seatworks, assignments and role plays. 1st Offense sanction is Suspension/ no credit in the activity and 2nd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Suspension/ no credit in the activity and 2nd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals', 'Cheating', 'Dishonest', 'Behavior', 'Limited', 'Examinations', 'Quizes', 'Assignments', 'Role', 'Plays', 'Commit']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - D',
-  info: 'Bribery or effecting any change in grades without proper authority.',
+  info: 'This are the sanctions for Offenses Against Public Decency, Good Customs and Morals - D. Bribery or effecting any change in grades without proper authority. 1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
   type: '',
   message: '1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals', 'Bribery', 'Effecting', 'Change', 'Grades', 'Proper', 'Authority', 'Commit']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - E',
-  info: 'Extortion or Blackmail.',
+  info: 'This are the sanctions for Offenses Against Public Decency, Good Customs and Morals - E. Extortion or Blackmail. 1st Offense sanction will be Exclusion.',
   type: '',
   message: '1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals', 'Extortion', 'Blackmail', 'Commit']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - F',
-  info: 'Entering university premises under the inﬂuence of liquor or being in a state of drunkenness.',
+  info: 'This are the sanctions for Offenses Against Public Decency, Good Customs and Morals - F. Entering university premises under the inﬂuence of liquor or being in a state of drunkenness. 1st Offense sanction is Reprimand/ censure with Warning of Suspension, 2nd offense is Reprimand/ censure with Warning of Suspension and 3rd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Reprimand/ censure with Warning of Suspension, 2nd offense is Reprimand/ censure with Warning of Suspension and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals', 'Entering', 'Premises', 'Under', 'Influence', 'Liquor', 'Being', 'State', 'Drunkness', 'Commit']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - G',
-  info: 'Smoking within university premises.',
+  info: 'This are the sanctions for Offenses Against Public Decency, Good Customs and Morals - G. Smoking within university premises. 1st Offense sanction is Censure with Warning of Suspension, 2nd offense is Censure with Warning of Suspension and 3rd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Censure with Warning of Suspension, 2nd offense is Censure with Warning of Suspension and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['Smoking', 'School', 'Campus', 'Premises', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - H',
-  info: 'Illegal possession, use and/ or distribution of prohibited drugs.',
+  info: 'This are the sanctions for Offenses Against Public Decency, Good Customs and Morals - H Illegal possession, use and/ or distribution of prohibited drugs. 1st Offense sanction will be Exclusion.',
   type: '',
   message: '1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals', 'Illegal', 'Possession', 'Distribution', 'Prohibited', 'Drugs', 'Marijuana', 'Shabu', 'Meth', 'Cocaine', 'Commit']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - I',
-  info: 'Sexual harassment and/or acts of lasciviousness.',
+  info: 'This are the sanctions for Offenses Against Public Decency, Good Customs and Morals - I. Sexual harassment and/or acts of lasciviousness. 1st Offense sanction will be Exclusion.',
   type: '',
   message: '1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals', 'Sexual', 'Harassment', 'Acts', 'Lasciviousness', 'Rape', 'Commit']
 }, {
   name: 'Offenses Against Public Decency, Good Customs and Morals - J',
-  info: 'Selling of goods and services by student inside the classroom.',
+  info: 'This are the sanctions for Offenses Against Public Decency, Good Customs and Morals - J. Selling of goods and services by student inside the classroom. 1st Offense sanction is Warning, 2nd offense is reprimand and 3rd offense will be suspension.',
   type: '',
   message: '1st Offense sanction is Warning, 2nd offense is reprimand and 3rd offense will be suspension. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Public', 'Decency', 'Good', 'Customs', 'Morals', 'Selling', 'Goods', 'Services', 'Student', 'Inside', 'Classroom']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - A',
-  info: 'Solicitation of money, donations, or contributions without the prior approval of the University or the Commission on Education.',
+  info: 'This are the sanctions for Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - A. Solicitation of money, donations, or contributions without the prior approval of the University or the Commission on Education. 1st Offense sanction is Warning/ Reprimand and Reimbursement of the Collected Amount, 2nd offense is Suspension with Warning of Exclusion and 3rd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Warning/ Reprimand and Reimbursement of the Collected Amount, 2nd offense is Suspension with Warning of Exclusion and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Solicitation', 'Money', 'Donations', 'Contributions', 'Prior', 'Approval', 'Commission', 'Education', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - B',
-  info: 'Misappropriation and/ or malversation of funds belonging to the University or any recognized student organization; failure to submit necessary documents appertaining to ﬁnancial necessities within the prescribed period.',
+  info: 'This are the sanctions for Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - B. Misappropriation and/ or malversation of funds belonging to the University or any recognized student organization; failure to submit necessary documents appertaining to ﬁnancial necessities within the prescribed period. 1st Offense sanction is Suspension/ reimbursement of the unnacounted funds and 2nd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Suspension/ reimbursement of the unnacounted funds and 2nd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Misappropriation', 'Malversation', 'Funds', 'Belonging', 'Recognized', 'Organization', 'Failure', 'Submit', 'Necessary', 'Documents', 'Appertaining', 'Financial', 'Necessities', 'Prescribed', 'Period', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - C',
-  info: 'Payment of tuition and other fees to persons other than the cashiers/tellers or those authorized to receive them.',
+  info: 'This are the sanctions for Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - C. Payment of tuition and other fees to persons other than the cashiers/tellers or those authorized to receive them. 1st Offense sanction is Reprimand with Warning of Suspension, 2nd offense is Suspension with Warning of Exclusion and 3rd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Reprimand with Warning of Suspension, 2nd offense is Suspension with Warning of Exclusion and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Payment', 'Tuition', 'Other', 'Fees', 'Person', 'People', 'Cashiers', 'Tellers', 'Authorized', 'Unauthorized', 'Receive', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - D',
-  info: 'Taking examinations or attending classes without having duly enrolled therein or without the required permit.',
+  info: 'This are the sanctions for Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - D. Taking examinations or attending classes without having duly enrolled therein or without the required permit. 1st Offense sanction is Reprimand with Warning of Suspension, 2nd offense is Suspension with Warning of Exclusion and 3rd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Reprimand with Warning of Suspension, 2nd offense is Suspension with Warning of Exclusion and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Taking', 'Examinations', 'Attending', 'Classes', 'Enrolled', 'Required', 'Permit', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - E',
-  info: 'Claiming, using or utilization of the name of the University of Baguio without proper authorization and recognition.',
+  info: 'This are the sanctions for Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - E. Claiming, using or utilization of the name of the University of Baguio without proper authorization and recognition. 1st Offense sanction will be Exclusion.',
   type: '',
   message: '1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Claiming', 'Using', 'Utilization', 'Name', 'Baguio', 'Proper', 'Authorization', 'Recognition', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - F',
-  info: 'Illegal access or possession of information , documents, or ﬁles of the academic community for use, alteration, corruption, stealing, destroying or any act to that effect.',
+  info: 'This are the sanctions for Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - F. Illegal access or possession of information , documents, or ﬁles of the academic community for use, alteration, corruption, stealing, destroying or any act to that effect. 1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
   type: '',
   message: '1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Illegal', 'Access', 'Possession', 'Information', 'Documents', 'File', 'Academic', 'Community', 'Use', 'Alteration', 'Corruption', 'Stealing', 'Destroying', 'Any', 'Effect', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - G',
-  info: 'Use of university premises and/or facilities without prior authorization.',
+  info: 'This are the sanctions for Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - G. Use of university premises and/or facilities without prior authorization. 1st Offense sanction is Warning/ Reprimand, 2nd offense is Suspension with Warning of Exclusion and 3rd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Warning/ Reprimand, 2nd offense is Suspension with Warning of Exclusion and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Use', 'Premises', 'Prior', 'Authorization', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - H',
-  info: 'Unauthorized distribution within university premises of leaﬂets, handbills or other printed materials whose authorship is not clear or speciﬁcally stated; posting of but not limited to announcements, notices, advertisements, and offers within university premises without securing permit or authorization to do so.',
+  info: 'This are the sanctions for Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - H. Unauthorized distribution within university premises of leaﬂets, handbills or other printed materials whose authorship is not clear or speciﬁcally stated; posting of but not limited to announcements, notices, advertisements, and offers within university premises without securing permit or authorization to do so. 1st Offense sanction is Warning/ Reprimand, 2nd offense is Suspension with Warning of Exclusion and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
   type: '',
   message: '1st Offense sanction is Warning/ Reprimand, 2nd offense is Suspension with Warning of Exclusion and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Unauthorized', 'Distribution', 'Premises', 'Leaflets', 'Handbills', 'Other', 'Printed', 'Materials', 'Authorship', 'Clear', 'Specifically', 'Stated', 'Posting', 'Limited', 'Announcements', 'Notices', 'Advertisements', 'Offers', 'Securing', 'Permit', 'Authorization', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - I',
-  info: 'Acts of vandalism such as defacing and/or writing on walls, paintings, doors, desks, tables, chairs, etc.; tearing of books, notices or circulars; destruction of window panes, toilet bowls, fans, laboratory equipment, water foundations, air conditioners, clocks and other university equipment and furnishings.',
+  info: 'This are the sanctions for Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - I. Acts of vandalism such as defacing and/or writing on walls, paintings, doors, desks, tables, chairs, etc.; tearing of books, notices or circulars; destruction of window panes, toilet bowls, fans, laboratory equipment, water foundations, air conditioners, clocks and other university equipment and furnishings. 1st Offense sanction is Suspension with Warning of Exclusion and 2nd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Suspension with Warning of Exclusion and 2nd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Commit', 'Vandalism', 'Acts', 'Defacing', 'Write', 'Walls', 'Painting', 'Door', 'Desk', 'Table', 'Chair', 'Tearing', 'Book', 'Notice', 'Circular', 'Destruction', 'Window', 'Panes', 'Toilet', 'Bowls', 'Fans', 'Laboratory', 'Equipment', 'Water', 'Foundation', 'Aircon', 'Airconditioner', 'Clock', 'Furniture']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - J',
-  info: 'Robbery, thievery and acts of malicious mischief involving university property or that of the members of the academic community, including university guests and callers.',
+  info: 'This are the sanctions for Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - J. Robbery, thievery and acts of malicious mischief involving university property or that of the members of the academic community, including university guests and callers. 1st Offense sanction will be Exclusion.',
   type: '',
   message: '1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Robbery', 'Thievery', 'Acts', 'Malicious', 'Mischief', 'Involving', 'Property', 'Academic', 'Community', 'Including', 'Guests', 'Callers', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - K',
-  info: 'Borrowing money from a fellow student and not paying it back.',
+  info: 'This are the sanctions for Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - K. Borrowing money from a fellow student and not paying it back. 1st Offense sanction is Reprimand and Payment of Borrowed Money, 2nd offense is Suspension and 3rd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Reprimand and Payment of Borrowed Money, 2nd offense is Suspension and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Borrowing', 'Money', 'Fellow', 'Pay', 'Back', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - L',
-  info: 'Borrowing valuable things such as cellular phones, electronic gadgets, etc. and failing to return the same.',
+  info: 'This are the sanctions for Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - L. Borrowing valuable things such as cellular phones, electronic gadgets, etc. and failing to return the same. 1st Offense sanction is Reprimand and Payment of Borrowed Item, 2nd offense is Suspension and 3rd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Reprimand and Payment of Borrowed Item, 2nd offense is Suspension and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Borrow', 'Valuable', 'Things', 'Cellphone', 'Electronic', 'Gadget', 'Item', 'Fail', 'Return', 'Give', 'Back', 'Commit']
 }, {
   name: 'Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - M',
-  info: 'Using, copying words or ideas from someone else’s work and arrogating as one’s own; implicit or explicit failure to cite sources of a quotation; paraphrasing most of the words or ideas of a source without giving credit to the author; passing on faulty information about the source of an idea; or any form of act that constitutes plagiarism.',
+  info: 'This are the sanctions for Offenses Detrimental to the Property Rights and Interests of the University, Administrative Ofﬁcials, Personnel, Faculty Members and Students - M. Using, copying words or ideas from someone else’s work and arrogating as one’s own; implicit or explicit failure to cite sources of a quotation; paraphrasing most of the words or ideas of a source without giving credit to the author; passing on faulty information about the source of an idea; or any form of act that constitutes plagiarism. 1st Offense sanction will be Exclusion / Withdrawal of Degree.',
   type: '',
   message: '1st Offense sanction will be Exclusion / Withdrawal of Degree. Please follow the University Rules and Regulations.',
   tags: ['School', 'University', 'Major', 'Against', 'Offenses', 'Detrimental', 'Property', 'Rights', 'Interests', 'Administrative', 'Officials', 'Personnel', 'Faculty', 'Members', 'Students', 'Using', 'Copying', 'Words', 'Ideas', 'Arrogating', 'Own', 'Implicit', 'Failure', 'Cite', 'Source', 'Quotation', 'Paraphrasing', 'Giving', 'Credit', 'Author', 'Passing', 'Faulty', 'Information', 'Acts', 'Plagiarism', 'Commit']
 }, {
   name: 'Offenses Against the Inviolability of School Records and Ofﬁcial Papers or Documents - A ',
-  info: 'Destroying, tampering with or falsifying school records, permits or forms and knowingly using the same.',
+  info: 'This are the sanctions for Offenses Against the Inviolability of School Records and Ofﬁcial Papers or Documents - A. Destroying, tampering with or falsifying school records, permits or forms and knowingly using the same. 1st Offense sanction will be Exclusion.',
   type: '',
   message: '1st Offense sanction will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['University', 'Major', 'Against', 'Offenses', 'Inviolability', 'School', 'Records', 'Official', 'Papers', 'Documents', 'Destroying', 'Tampering', 'Falsifying', 'Permit', 'Forms', 'Knowingly', 'Same', 'Commit']
 }, {
   name: 'Offenses Against the Inviolability of School Records and Ofﬁcial Papers or Documents - B ',
-  info: 'Lending, borrowing, tampering with/and or forging of certiﬁcates of matriculation, ID’s, class cards, clearances, or other documents; or otherwise committing, allowing or abetting acts of impersonation and/or misrepresentation for the purpose of entering university premises, enrolling, securing permits or taking of examinations.',
+  info: 'This are the sanctions for Offenses Against the Inviolability of School Records and Ofﬁcial Papers or Documents - B. Lending, borrowing, tampering with/and or forging of certiﬁcates of matriculation, ID’s, class cards, clearances, or other documents; or otherwise committing, allowing or abetting acts of impersonation and/or misrepresentation for the purpose of entering university premises, enrolling, securing permits or taking of examinations. 1st Offense sanction is Suspension with Warning of Exclusion and 2nd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Suspension with Warning of Exclusion and 2nd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['University', 'Major', 'Against', 'Offenses', 'Inviolability', 'School', 'Records', 'Official', 'Papers', 'Documents', 'Lending', 'Borrowing', 'Tampering', 'Forging', 'Certificate', 'Forms', 'Matriculation', 'Class', 'Card', 'Clearance', 'Commit', 'Allow', 'Abetting', 'Acts', 'Impersonation', 'Purpose', 'Entering', 'Premises', 'Enrolling', 'Securing', 'Permits', 'Taking', 'Examination']
 }, {
   name: 'Minor Offense - A ',
-  info: 'Failure or refusal to wear the required ID and/or prescribed school uniform.',
+  info: 'This are the sanctions for the Minor Offense - A under Section 1. Failure or refusal to wear the required ID and/or prescribed school uniform. 1st Offense sanction is Warning, 2nd offense is Reprimand with Warning of Suspension and 3rd offense will be Suspension.',
   type: '',
   message: '1st Offense sanction is Warning, 2nd offense is Reprimand with Warning of Suspension and 3rd offense will be Suspension. Please follow the University Rules and Regulations.',
   tags: ['University', 'Minor', 'Against', 'Offenses', 'School', 'Commit', 'Failure', 'Refusal', 'Adhere', 'Wear', 'Student', 'ID', 'Proper', 'Prescribed', 'Required', 'Uniform']
 }, {
   name: 'Minor Offense - B ',
-  info: 'Cross-dressing or failure or refusal to adhere to the university dress code.',
+  info: 'This are the sanctions for the Minor Offense - B under Section 1. Cross-dressing or failure or refusal to adhere to the university dress code. 1st Offense sanction is Warning, 2nd offense is Reprimand with Warning of Suspension and 3rd offense will be Suspension.',
   type: '',
   message: '1st Offense sanction is Warning, 2nd offense is Reprimand with Warning of Suspension and 3rd offense will be Suspension. Please follow the University Rules and Regulations.',
   tags: ['University', 'Minor', 'Against', 'Offenses', 'School', 'Commit', 'Cross', 'Dress', 'Failure', 'Refusal', 'Proper', 'Code']
 }, {
   name: 'Minor Offense - C ',
-  info: 'Spitting on ﬂoors and walls, including spitting mom-a or betel nut.',
+  info: 'This are the sanctions for the Minor Offense - C under Section 1. Spitting on ﬂoors and walls, including spitting mom-a or betel nut. 1st Offense sanction is Warning / Reprimand, 2nd offense is Reprimand with Warning of Exclusion and 3rd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Warning / Reprimand, 2nd offense is Reprimand with Warning of Exclusion and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['University', 'Minor', 'Against', 'Offenses', 'School', 'Commit', 'Spit', 'Floor', 'Wall', 'Momma', 'Betel', 'Nut']
 }, {
   name: 'Minor Offense - D ',
-  info: 'Contrived disruption or disturbance of class or related activity through irrelevant questions or constant interruptions without just cause.',
+  info: 'This are the sanctions for the Minor Offense - D under Section 1. Contrived disruption or disturbance of class or related activity through irrelevant questions or constant interruptions without just cause. 1st Offense sanction is Warning, 2nd offense is Reprimand with Warning of Suspension and 3rd offense will be Suspension.',
   type: '',
   message: '1st Offense sanction is Warning, 2nd offense is Reprimand with Warning of Suspension and 3rd offense will be Suspension. Please follow the University Rules and Regulations.',
   tags: ['University', 'Minor', 'Against', 'Offenses', 'School', 'Commit', 'Contrived', 'Disruption', 'Disturbance', 'Class', 'Related', 'Activity', 'Irreleval', 'Questions', 'Interruptions']
 }, {
   name: 'Minor Offense - E ',
-  info: 'Clogging of toilet bowls, urinals and labatories or causing spillage of waste or stinking matter.',
+  info: 'This are the sanctions for the Minor Offense - E under Section 1. Clogging of toilet bowls, urinals and labatories or causing spillage of waste or stinking matter. 1st Offense sanction is Warning / Reprimand, 2nd offense is Reprimand with Warning of Exclusion and 3rd offense will be Exclusion.',
   type: '',
   message: '1st Offense sanction is Warning / Reprimand, 2nd offense is Reprimand with Warning of Exclusion and 3rd offense will be Exclusion. Please follow the University Rules and Regulations.',
   tags: ['University', 'Minor', 'Against', 'Offenses', 'School', 'Commit', 'Clogging', 'Toilet', 'Bowls', 'Urinals', 'Laboratories', 'Spillage', 'Waste', 'Stink', 'Matter']
 }, {
   name: 'Minor Offense - F ',
-  info: 'Littering within university premises; throwing of trash outside school windows.',
+  info: 'This are the sanctions for the Minor Offense - F under Section 1. Littering within university premises; throwing of trash outside school windows. 1st Offense sanction is Warning, 2nd offense is Reprimand with Warning of Suspension and 3rd offense will be Suspension.',
   type: '',
   message: '1st Offense sanction is Warning, 2nd offense is Reprimand with Warning of Suspension and 3rd offense will be Suspension. Please follow the University Rules and Regulations.',
   tags: ['University', 'Minor', 'Against', 'Offenses', 'School', 'Commit', 'Littering', 'Premises', 'Throwing', 'Trash', 'Window']
 }, {
   name: 'Minor Offense - G ',
-  info: 'Using cellular phone, audio player, and the like while the class is going on.',
+  info: 'This are the sanctions for the Minor Offense - G under Section 1. Using cellular phone, audio player, and the like while the class is going on. 1st Offense sanction is Warning, 2nd offense is Reprimand with Warning of Suspension and 3rd offense will be Suspension.',
   type: '',
   message: '1st Offense sanction is Warning, 2nd offense is Reprimand with Warning of Suspension and 3rd offense will be Suspension. Please follow the University Rules and Regulations.',
   tags: ['University', 'Minor', 'Against', 'Offenses', 'School', 'Commit', 'Using', 'Cellphone', 'Gadget', 'Audio', 'Player', 'Earphone', 'Headset', 'Class', 'Ongoing']
 }, {
   name: 'Administrative Sanction - Warning ',
-  info: 'A notice to the student that continuation or repetition of speciﬁed conduct may be a cause for other disciplinary action. ',
+  info: 'Administrative Sanction - Warning is a notice to the student that continuation or repetition of speciﬁed conduct may be a cause for other disciplinary action. It is usually sanction for first time offenders.',
   type: '',
   message: 'It is a notice to the student that continuation or repetition of speciﬁed conduct may be a cause for other disciplinary action. ',
   tags: ['University', 'Administrative', 'Sanction', 'Warning', 'Punishment', 'Offense', 'Commit']
 }, {
   name: 'Administrative Sanction - Reprimand ',
-  info: 'A severe form of formal rebuke by a person in authority. ',
+  info: 'Administrative Sanction - Reprimand is a severe form of formal rebuke by a person in authority. It is usually a sanction for the second offense and is accompanied with a warning.',
   type: '',
   message: 'It is a severe form of formal rebuke by a person in authority. ',
   tags: ['University', 'Administrative', 'Sanction', 'Reprimand', 'Punishment', 'Offense', 'Commit']
 }, {
   name: 'Administrative Sanction - Censure ',
-  info: 'An oral or written reprimand for violation of speciﬁed regulation(s). ',
+  info: 'Administrative Sanction - Censure is an oral or written reprimand for violation of speciﬁed regulation(s). ',
   type: '',
   message: 'This may either be an oral or written reprimand for violation of speciﬁed regulation(s). ',
   tags: ['University', 'Administrative', 'Sanction', 'Censure', 'Punishment']
 }, {
   name: 'Administrative Sanction - Suspension ',
-  info: 'As a penalty imposed for an offense committed, a student may be barred for a certain period from a particular class or from the University. A school may suspend an erring student during the school year or term for a maximum period not exceeding twenty percent (20%) of the prescribed school days.  The decision of the school on every case involving the penalty of suspension which exceeds twenty percent (20%) of the prescribed school days for a school year or term shall be forwarded to the CHED Regional Ofﬁce within ten (10) days from the termination of the investigation of its case for its information.',
+  info: 'Administrative Sanction - Suspension. As a penalty imposed for an offense committed, a student may be barred for a certain period from a particular class or from the University. A school may suspend an erring student during the school year or term for a maximum period not exceeding twenty percent (20%) of the prescribed school days.  The decision of the school on every case involving the penalty of suspension which exceeds twenty percent (20%) of the prescribed school days for a school year or term shall be forwarded to the CHED Regional Ofﬁce within ten (10) days from the termination of the investigation of its case for its information.',
   type: '',
   message: 'As a penalty imposed for an offense committed, a student may be barred for a certain period from a particular class or from the University. A school may suspend an erring student during the school year or term for a maximum period not exceeding twenty percent (20%) of the prescribed school days.  The decision of the school on every case involving the penalty of suspension which exceeds twenty percent (20%) of the prescribed school days for a school year or term shall be forwarded to the CHED Regional Ofﬁce within ten (10) days from the termination of the investigation of its case for its information. ',
   tags: ['University', 'Administrative', 'Sanction', 'Suspension', 'Punishment', 'Offense', 'Commit']
 }, {
   name: 'Administrative Sanction - Exclusion ',
-  info: 'A disciplinary measure which allows an erring student to ﬁnish the semester or term but is thereafter excluded from returning to the University, or where the penalty for exclusion cannot for any reason, be extraneous, or otherwise, is enforced. ',
+  info: 'Administrative Sanction - Exclusion is a disciplinary measure which allows an erring student to ﬁnish the semester or term but is thereafter excluded from returning to the University, or where the penalty for exclusion cannot for any reason, be extraneous, or otherwise, is enforced. ',
   type: '',
   message: 'This is a disciplinary measure, which allows an erring student to ﬁnish the semester or term but is thereafter excluded from returning to the University, or where the penalty for exclusion cannot for any reason, be extraneous, or otherwise, is enforced. ',
   tags: ['University', 'Administrative', 'Sanction', 'Exclusion', 'Punishment', 'Offense', 'Commit']
 }, {
   name: 'Administrative Sanction - Expulsion ',
-  info: 'The outright barring of the erring student from the University. As distinguished from exclusion, it is imposed and implemented during the semester or term when the offense was committed. Expulsion is an extreme penalty on an erring pupil or student consisting of his exclusion from admission to any public or private school in the Philippines and which requires the prior approval of the Commission on Higher Education.  The penalty may be imposed for acts or offenses constituting gross misconduct, dishonesty, hazing, carrying deadly weapons, immorality, selling and/or possession of prohibited drugs or marijuana, drug dependency, drunkenness, hooliganism, vandalism, and other serious offenses such as assaulting a pupil or student or school personnel, instigating or leading illegal strikes or similar concerted activities resulting in the stoppage of classes, preventing or threatening any pupil or student or school personnel from entering the school premises or attending classes or discharging their duties, forging or tampering with school records, forms and documents. ',
+  info: 'Administrative Sanction - Expulsion is the outright barring of the erring student from the University. As distinguished from exclusion, it is imposed and implemented during the semester or term when the offense was committed. Expulsion is an extreme penalty on an erring pupil or student consisting of his exclusion from admission to any public or private school in the Philippines and which requires the prior approval of the Commission on Higher Education.  The penalty may be imposed for acts or offenses constituting gross misconduct, dishonesty, hazing, carrying deadly weapons, immorality, selling and/or possession of prohibited drugs or marijuana, drug dependency, drunkenness, hooliganism, vandalism, and other serious offenses such as assaulting a pupil or student or school personnel, instigating or leading illegal strikes or similar concerted activities resulting in the stoppage of classes, preventing or threatening any pupil or student or school personnel from entering the school premises or attending classes or discharging their duties, forging or tampering with school records, forms and documents. ',
   type: '',
   message: 'This is the outright barring of the erring student from the University. As distinguished from exclusion, it is imposed and implemented during the semester or term when the offense was committed. Expulsion is an extreme penalty on an erring pupil or student consisting of his exclusion from admission to any public or private school in the Philippines and which requires the prior approval of the Commission on Higher Education.  The penalty may be imposed for acts or offenses constituting gross misconduct, dishonesty, hazing, carrying deadly weapons, immorality, selling and/or possession of prohibited drugs or marijuana, drug dependency, drunkenness, hooliganism, vandalism, and other serious offenses such as assaulting a pupil or student or school personnel, instigating or leading illegal strikes or similar concerted activities resulting in the stoppage of classes, preventing or threatening any pupil or student or school personnel from entering the school premises or attending classes or discharging their duties, forging or tampering with school records, forms and documents. ',
   tags: ['University', 'Administrative', 'Sanction', 'Expulsion', 'Punishment', 'Offense', 'Commit']
@@ -1487,67 +1487,67 @@ var information = [{
   tags: ['University', 'Baguio', 'Mission']
 }, {
   name: 'School of Business Administration and Accountancy Mission',
-  info: 'The School of Business Administration and Accountancy aims to graduate responsible and conscientious accounting and business professionals who are respected members of the community.',
+  info: 'This is the School of Business Administration and Accountancy Mission: The School of Business Administration and Accountancy aims to graduate responsible and conscientious accounting and business professionals who are respected members of the community.',
   type: '',
   message: 'The School of Business Administration and Accountancy aims to graduate responsible and conscientious accounting and business professionals who are respected members of the community.',
   tags: ['SBAA', 'Department', 'College', 'Accounting', 'Accountancy', 'Business', 'Administration', 'School', 'mission']
 }, {
   name: 'School of Criminal Justice and Public Safety Mission',
-  info: 'The School of Criminal Justice and Public Safety, in its dynamic atmosphere for learning, endeavors to train future Criminologists and Forensic Scientists who embody the ideals of patriotism, justice, truth, integrity and service.',
+  info: 'This is the School of Criminal Justice and Public Safety Mission: The School of Criminal Justice and Public Safety, in its dynamic atmosphere for learning, endeavors to train future Criminologists and Forensic Scientists who embody the ideals of patriotism, justice, truth, integrity and service.',
   type: '',
   message: 'The School of Criminal Justice and Public Safety, in its dynamic atmosphere for learning, endeavors to train future Criminologists and Forensic Scientists who embody the ideals of patriotism, justice, truth, integrity and service.',
   tags: ['SCJPS', 'Department', 'College', 'crim', 'police', 'Criminal', 'Justice', 'Public', 'Safety', 'School', 'mission']
 }, {
   name: 'School of Engineering and Architecture Mission',
-  info: 'The School of Engineering and Architecture, in a dynamic and relevant academic environment, is committed to develop internationally-competitive experts in their field of specialization.',
+  info: 'This is the School of Engineering and Architecture Mission: The School of Engineering and Architecture, in a dynamic and relevant academic environment, is committed to develop internationally-competitive experts in their field of specialization.',
   type: '',
   message: 'The School of Engineering and Architecture, in a dynamic and relevant academic environment, is committed to develop internationally-competitive experts in their field of specialization.',
   tags: ['SEA', 'Department', 'College', 'Engineering', 'Engineer', 'Architecture', 'Arki', 'School', 'mission']
 }, {
   name: 'School of International Hospitality and Tourism Management Mission',
-  info: 'The School of International Hospitality and Tourism Management commits itself to train worldwide experts in the industry.',
+  info: 'This is the School of International Hospitality and Tourism Management Mission: The School of International Hospitality and Tourism Management commits itself to train worldwide experts in the industry.',
   type: '',
   message: 'The School of International Hospitality and Tourism Management commits itself to train worldwide experts in the industry.',
   tags: ['SIHTM', 'Department', 'College', 'HRM', 'International', 'Hospitality', 'Tourism', 'Management', 'School', 'mission']
 }, {
   name: 'School of Information Technology Mission',
-  info: 'The School of Information Technology envisions itself as a leading educator that develops students to become competent, innovative, and morally upright information technology specialists.',
+  info: 'This is the School of Information Technology Mission: The School of Information Technology envisions itself as a leading educator that develops students to become competent, innovative, and morally upright information technology specialists.',
   type: '',
   message: 'The School of Information Technology envisions itself as a leading educator that develops students to become competent, innovative, and morally upright information technology specialists.',
   tags: ['SIT', 'IT', 'Information', 'Technology', 'CS', 'ComSci', 'CompSci', 'COE', 'Department', 'College', 'School', 'mission']
 }, {
   name: 'School of Liberal Arts and Human Sciences Mission',
-  info: 'The School of Liberal Arts and Human Sciences provides its students with total education apt to their chosen career.',
+  info: 'This is the School of Liberal Arts and Human Sciences Mission: The School of Liberal Arts and Human Sciences provides its students with total education apt to their chosen career.',
   type: '',
   message: 'The School of Liberal Arts and Human Sciences provides its students with total education apt to their chosen career.',
   tags: ['SLAHS', 'Department', 'College', 'Liberal', 'Arts', 'Human', 'Sciences', 'School', 'mission']
 }, {
   name: 'School of Natural Sciences Mission',
-  info: 'The School of Natural Sciences is a dynamic and value oriented community committed to the advancement of the modern health caresystem.',
+  info: 'This is the School of Natural Sciences Mission: The School of Natural Sciences is a dynamic and value oriented community committed to the advancement of the modern health caresystem.',
   type: '',
   message: 'The School of Natural Sciences is a dynamic and value oriented community committed to the advancement of the modern health caresystem.',
   tags: ['SNS', 'Department', 'College', 'Natural', 'Sciences', 'School', 'mission']
 }, {
   name: 'School of Dentistry Mission',
-  info: 'The School of Dentistry is committed in providing excellent dental education to produce competitive and socially responsible dentists.',
+  info: 'This is the School of Dentistry Mission: The School of Dentistry is committed in providing excellent dental education to produce competitive and socially responsible dentists.',
   type: '',
   message: 'The School of Dentistry is committed in providing excellent dental education to produce competitive and socially responsible dentists.',
   tags: ['SOD', 'Department', 'College', 'Dentist', 'Dentistry', 'School', 'mission']
 }, {
   name: 'School of Law Mission',
-  info: 'The University of Baguio School of Law endows advocates of law to advance the promotion of justice through adequate quality Legal Education.',
+  info: 'This is the School of Law Mission: The University of Baguio School of Law endows advocates of law to advance the promotion of justice through adequate quality Legal Education.',
   type: '',
   message: 'The University of Baguio School of Law endows advocates of law to advance the promotion of justice through adequate quality Legal Education.',
   tags: ['SOL', 'Department', 'College', 'Law', 'Lawyer', 'School', 'mission']
 }, {
   name: 'School of Nursing Mission',
-  info: 'The School of Nursing commits itself to the development of exceptionally competent and value-driven health professionals.',
+  info: 'This is the School of Nursing Mission: The School of Nursing commits itself to the development of exceptionally competent and value-driven health professionals.',
   type: '',
   message: 'The School of Nursing commits itself to the development of exceptionally competent and value-driven health professionals.',
   tags: ['SON', 'Department', 'College', 'Nursing', 'Nurse', 'School', 'mission']
 }, {
   name: 'School of Teacher Education Mission',
-  info: 'The School of Teacher Education envisions to develop teachers inbued with the Christian philosophy of education, appreciation and understanding of the role of the teacher in human development, social progress, citizenship training, and commitment to the teaching profession.',
+  info: 'This is the School of Teacher Education Mission: The School of Teacher Education envisions to develop teachers inbued with the Christian philosophy of education, appreciation and understanding of the role of the teacher in human development, social progress, citizenship training, and commitment to the teaching profession.',
   type: '',
   message: 'The School of Teacher Education envisions to develop teachers inbued with the Christian philosophy of education, appreciation and understanding of the role of the teacher in human development, social progress, citizenship training, and commitment to the teaching profession.',
   tags: ['STE', 'Department', 'College', 'Educ', 'Education', 'Teacher', 'School', 'mission']
