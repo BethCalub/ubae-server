@@ -4,16 +4,15 @@ const uiRouter = require('angular-ui-router');
 import routes from './response.routes';
 
 export class ResponseComponent {
-
   /*@ngInject*/
-  constructor($http, $scope, socket, $anchorScroll, $location) {
+  constructor(Auth, $http, $scope, socket, $anchorScroll, $location) {
     this.$http = $http;
     this.socket = socket;
     this.entryID = '';
-
     this.$anchorScroll = $anchorScroll;
     this.$location = $location;
     this.$anchorScroll.yOffset = 60;
+    this.currentUser = Auth.getCurrentUserSync().name;
 
     //connection to the server
     this.endpoint = {
@@ -146,7 +145,9 @@ export class ResponseComponent {
       //Update entry
       this.$http.patch(this.endpoint.link + '/' + this.entryID, {
         message: this.message,
-        tags: this.tags
+        tags: this.tags,
+        author: this.currentUser,
+        modified: new Date(Date.now())
       })
       .then(response => {
         this.resetForm();
@@ -162,7 +163,9 @@ export class ResponseComponent {
       //Create entry
       this.$http.post(this.endpoint.link, {
         message: this.message,
-        tags: this.tags
+        tags: this.tags,
+        author: this.currentUser,
+        added: new Date(Date.now())
       })
       .then(response => {
         this.resetForm();

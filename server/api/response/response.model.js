@@ -8,21 +8,30 @@ var ResponseSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  type: {
-    type: String,
-    default: 'General',
-    lowercase: true,
-    required: false
-  },
   tags: [{
     type: String,
     required: true,
     lowercase: true
   }],
+  author: {
+    type: String,
+    default: 'Team UBAE',
+    required: false
+  },
+  added: {
+    type: Date,
+    default: new Date(Date.now()),
+    required: true
+  },
+  modified: {
+    type: Date,
+    // default: new Date(Date.now()),
+    required: false
+  },
   active: {
     type: Boolean,
     default: true
-  }
+  },
 });
 
 registerEvents(ResponseSchema);

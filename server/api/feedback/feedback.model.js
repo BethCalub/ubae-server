@@ -16,14 +16,16 @@ var FeedbackSchema = new mongoose.Schema({
   }],
   timestamp: {
     type: Date,
-    default: Date.now()
+    default: new Date(Date.now())
   },
-
+  author: {
+    type: String,
+    required: false
+  },
   resolved: {
     type: Boolean,
     default: false
   },
-
   archive: {
     type: Boolean,
     default: false
