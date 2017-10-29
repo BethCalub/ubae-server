@@ -13,6 +13,7 @@
 import jsonpatch from 'fast-json-patch';
 import Information from './information.model';
 import UbaeNLP from '../ubae/nlp/nlp.stopper';
+import UbaeUtility from '../ubae/nlp/nlp.utility';
 
 function respondWithResult(res, statusCode) {
   statusCode = statusCode || 200;
@@ -67,7 +68,13 @@ function handleError(res, statusCode) {
 
 // Gets a list of Informations
 export function index(req, res) {
-  return Information.find().exec()
+  var filter = {};
+  if(req.query.type) {
+    filter = {
+      type: req.query.type
+    };
+  }
+  return Information.find(filter).exec()
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
@@ -84,8 +91,13 @@ export function show(req, res) {
 export function create(req, res) {
   return Information.create({
     name: req.body.name,
-    info: req.body.details,
+    type: req.body.type,
+    details: UbaeUtility.trimEntries(req.body.details),
     message: req.body.message,
+    startDate: req.body.startDate,
+    endDate: req.body.endDate,
+    author: req.body.author,
+    added: new Date(Date.now()),
     tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags))
   })
     .then(respondWithResult(res, 201))
@@ -113,8 +125,12 @@ export function patch(req, res) {
   return Information.findOneAndUpdate({_id: req.params.id},
     {
       name: req.body.name,
-      info: req.body.details,
+      details: UbaeUtility.trimEntries(JSON.stringify(req.body.details)),
       message: req.body.message,
+      startDate: req.body.startDate,
+      endDate: req.body.endDate,
+      author: req.body.author,
+      modified: new Date(Date.now()),
       tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags))
     },
     {new: true, upsert: true, setDefaultsOnInsert: true, runValidators: true}).exec()

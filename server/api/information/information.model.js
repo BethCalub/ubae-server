@@ -8,13 +8,14 @@ var InformationSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  info: {
+  details: [{
     type: String,
     required: true
-  },
+  }],
   type: {
     type: String,
-    required: false
+    required: true,
+    lowercase: true
   },
   message: {
     type: String,
@@ -25,6 +26,14 @@ var InformationSchema = new mongoose.Schema({
     lowercase: true,
     required: true
   }],
+  startDate: {
+    type: Date,
+    required: false
+  },
+  endDate: {
+    type: Date,
+    required: false
+  },
   author: {
     type: String,
     default: 'Team UBAE',
@@ -37,7 +46,6 @@ var InformationSchema = new mongoose.Schema({
   },
   modified: {
     type: Date,
-    // default: new Date(Date.now()),
     required: false
   },
   active: {
