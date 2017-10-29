@@ -37,8 +37,8 @@ var InformationSchema = new mongoose.Schema({
   },
   modified: {
     type: Date,
-    default: new Date(Date.now()),
-    required: true
+    // default: new Date(Date.now()),
+    required: false
   },
   active: {
     type: Boolean,
