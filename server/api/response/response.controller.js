@@ -84,7 +84,9 @@ export function show(req, res) {
 export function create(req, res) {
   return Response.create({
     message: req.body.message,
-    tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags))
+    tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags)),
+    author: req.body.author,
+    added: req.body.added
   })
     .then(respondWithResult(res, 201))
     .catch(handleError(res));
@@ -111,7 +113,9 @@ export function patch(req, res) {
   return Response.findOneAndUpdate({_id: req.params.id},
     {
       message: req.body.message,
-      tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags))
+      tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags)),
+      author: req.body.author,
+      modified: req.body.modified
     },
     {new: true, upsert: true, setDefaultsOnInsert: true, runValidators: true}).exec()
 

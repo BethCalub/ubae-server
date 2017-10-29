@@ -166,6 +166,7 @@
           <div class="col-md-12">
             <h3>{{$index + 1}}. {{entries.name}}
             </h3>
+            <h6 style="text-indent: 30px">by: {{entries.author}}</h6>
           </div>
         </div>
         <div class="row">
@@ -195,6 +196,12 @@
             </p>
           </div>
         </div>
+        <div class="row">
+            <div class="col-md-12 text-right">
+              <h6>Added: {{entries.added | date: 'longDate'}}, {{entries.added | date: 'mediumTime'}}</h6>
+              <h6 ng-show="entries.modified">Modified: {{entries.modified | date: 'longDate'}}, {{entries.modified | date: 'mediumTime'}}</h6>
+            </div>
+          </div>
         <div class="row">
           <br>
           <div class="col-md-12 text-right">
