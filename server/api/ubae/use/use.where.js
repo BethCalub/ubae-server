@@ -1,6 +1,6 @@
 'use strict';
 
-import Location from '../../location/location.model';
+import Location from '../../information/information.model';
 import Feedback from '../../feedback/feedback.model';
 import messages from '../../../config/data/message.ubae';
 
@@ -74,11 +74,12 @@ function generateResults(err, story, userInput, ubae) {
 exports.where = function(req, res, userInput, ubae) {
   if(!ubae.foulwords) {
     return Location.find({
+      type: 'where',
       active: true,
       tags: {
         $all: ubae.stemmed
       }
-    }).select('name location type message')
+    }).select('name details type message')
     .exec(function(err, story) {
       return res.send(generateResults(err, story, userInput, ubae));
     });

@@ -17,7 +17,7 @@ export class EventComponent {
 
     //connection to the server
     this.endpoint = {
-      link: '/api/events',
+      link: '/api/informations',
       socket: 'event'
     };
 
@@ -130,7 +130,7 @@ export class EventComponent {
   //onLoad
   $onInit() {
     this.eventStatus = 'Loading...';
-    this.$http.get(this.endpoint.link)
+    this.$http.get(this.endpoint.link + '?type=when')
     .then(response => {
       this.entryList = response.data;
       this.socket.syncUpdates(this.endpoint.socket, this.entryList);
@@ -144,7 +144,7 @@ export class EventComponent {
 
   //Get all table entries
   getEntries() {
-    this.$http.get(this.endpoint.link)
+    this.$http.get(this.endpoint.link + '?type=when')
     .then(response => {
       this.entryList = response.data;
       this.socket.syncUpdates(this.endpoint.socket, this.entryList);

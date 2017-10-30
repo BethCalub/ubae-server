@@ -1,6 +1,6 @@
 'use strict';
 
-import Instruction from '../../instruction/instruction.model';
+import Instruction from '../../information/information.model';
 import Feedback from '../../feedback/feedback.model';
 import messages from '../../../config/data/message.ubae';
 
@@ -74,10 +74,12 @@ function generateResults(err, story, userInput, ubae) {
 exports.how = function(req, res, userInput, ubae) {
   if(!ubae.foulwords) {
     return Instruction.find({
+      type: 'how',
+      active: true,
       tags: {
         $all: ubae.stemmed
       }
-    }).select('name process type message')
+    }).select('name details type message')
     .exec(function(err, story) {
       return res.send(generateResults(err, story, userInput, ubae));
     });

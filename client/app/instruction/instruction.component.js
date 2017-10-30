@@ -17,7 +17,7 @@ export class InstructionComponent {
 
     //connection to the server
     this.endpoint = {
-      link: '/api/instructions',
+      link: '/api/informations',
       socket: 'instruction'
     };
 
@@ -103,7 +103,7 @@ export class InstructionComponent {
   //onLoad
   $onInit() {
     this.eventStatus = 'Loading...';
-    this.$http.get(this.endpoint.link)
+    this.$http.get(this.endpoint.link + '?type=how')
     .then(response => {
       this.entryList = response.data;
       this.socket.syncUpdates(this.endpoint.socket, this.entryList);
@@ -117,7 +117,7 @@ export class InstructionComponent {
 
   //Get all table entries
   getEntries() {
-    this.$http.get(this.endpoint.link)
+    this.$http.get(this.endpoint.link + '?type=how')
     .then(response => {
       this.entryList = response.data;
       this.socket.syncUpdates(this.endpoint.socket, this.entryList);

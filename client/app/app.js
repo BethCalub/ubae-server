@@ -34,6 +34,7 @@ import FeedbackComponent from './feedback/feedback.component';
 import LocationComponent from './location/location.component';
 import InformationComponent from './information/information.component';
 import InstructionComponent from './instruction/instruction.component';
+import CreateNewComponent from './createNew/createNew.component';
 import ProviderComponent from './provider/provider.component';
 import ReportsComponent from './reports/reports.component';
 import DevelopmentComponent from './development/development.component';
@@ -51,7 +52,8 @@ angular.module('ubaeApiApp', [ngAnimate, ngCookies, ngResource, ngSanitize, 'btf
   InformationComponent,
   InstructionComponent,
   ProviderComponent,
-  DevelopmentComponent
+  DevelopmentComponent,
+  CreateNewComponent
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {

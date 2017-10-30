@@ -164,8 +164,7 @@
             filter: { name: informationCtrl.searchTags, active: informationCtrl.filter.archive.selected } | limitTo: 10:(informationCtrl.currentPage-1)*10">
         <div class="row">
           <div class="col-md-12">
-            <h3>{{$index + 1}}. {{entries.name}}
-            </h3>
+            <h3>{{$index + 1}}. {{entries.name}}</h3>
             <h6 style="text-indent: 30px">by: {{entries.author}}</h6>
           </div>
         </div>
@@ -173,7 +172,7 @@
             <div class="col-md-12">
               <h4>
                 <i class="fa fa-fw fa-info-circle"></i>Details</h4>
-              <p>{{entries.info}}</p>
+              <p ng-repeat="entry in entries.details">{{entry}}</p>
             </div>
           </div>
         <div class="row">

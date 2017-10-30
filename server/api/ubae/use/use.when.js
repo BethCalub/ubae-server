@@ -1,6 +1,6 @@
 'use strict';
 
-import Event from '../../event/event.model';
+import Event from '../../information/information.model';
 import Feedback from '../../feedback/feedback.model';
 import messages from '../../../config/data/message.ubae';
 
@@ -74,11 +74,12 @@ function generateResults(err, story, userInput, ubae) {
 exports.when = function(req, res, userInput, ubae) {
   if(!ubae.foulwords) {
     return Event.find({
+      type: 'when',
       active: true,
       tags: {
         $all: ubae.stemmed
       }
-    }).select('name event type message')
+    }).select('name details startDate endDate type message')
     .exec(function(err, story) {
       return res.send(generateResults(err, story, userInput, ubae));
     });

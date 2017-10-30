@@ -17,7 +17,7 @@ export class ProviderComponent {
 
     //connection to the server
     this.endpoint = {
-      link: '/api/providers',
+      link: '/api/informations',
       socket: 'provider'
     };
 
@@ -103,7 +103,7 @@ export class ProviderComponent {
   //onLoad
   $onInit() {
     this.eventStatus = 'Loading...';
-    this.$http.get(this.endpoint.link)
+    this.$http.get(this.endpoint.link + '?type=which')
     .then(response => {
       this.entryList = response.data;
       this.socket.syncUpdates(this.endpoint.socket, this.entryList);
@@ -117,7 +117,7 @@ export class ProviderComponent {
 
   //Get all table entries
   getEntries() {
-    this.$http.get(this.endpoint.link)
+    this.$http.get(this.endpoint.link + '?type=which')
     .then(response => {
       this.entryList = response.data;
       this.socket.syncUpdates(this.endpoint.socket, this.entryList);

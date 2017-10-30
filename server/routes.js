@@ -12,7 +12,7 @@ export default function(app) {
   app.use('/api/informations', require('./api/information'));
   app.use('/api/feedbacks', require('./api/feedback'));
   app.use('/api/responses', require('./api/response'));
-  // app.use('/api/ubae', require('./api/ubae'));
+  app.use('/api/ubae', require('./api/ubae'));
   app.use('/api/users', require('./api/user'));
 
   app.use('/auth', require('./auth').default);

@@ -1,0 +1,81 @@
+<div class="section">
+  <div class="container" style="padding-top: 60px;">
+    <div class="col-md-6">
+      <h2>Create New Entry</h2>
+      <h5 style="text-indent: 10px">{{createNewCtrl.now | date: 'fullDate'}}</h5>
+      <h6 style="text-indent: 20px">by: {{createNewCtrl.currentUser}}</h6>
+      <hr>
+      <form id="newEntry" name="newEntry" novalidate>
+        <div class="form-group" ng-class="{ 'has-success': newEntry.entryName.$valid && newEntry.entryName.$touched,
+              'has-error': newEntry.entryName.$invalid && newEntry.entryName.$touched }">
+          <label class="control-label" for="entryName">Name</label>
+          <input class="form-control" id="entryName" placeholder="Enter the name of this entry." ng-model="createNewCtrl.entryName"
+            name="entryName" type="text" required>
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-success': newEntry.type.$valid && newEntry.type.$touched,
+        'has-error': newEntry.type.$invalid && newEntry.type.$touched }">
+          <label class="control-label" for="type">Type</label>
+          <select name="type" id="type" class="form-control" ng-model="createNewCtrl.type" ng-options="x for (x, y) in createNewCtrl.typeSelect"
+            required="required">
+          </select>
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="form-group" ng-if="createNewCtrl.type === 'WHEN'" ng-class="{ 'has-success': newEntry.startDate.$valid && newEntry.startDate.$touched,
+          'has-error': newEntry.startDate.$invalid && newEntry.startDate.$touched }">
+          <label class="control-label" for="startDate">Start Date</label>
+          <div class="input-group">
+            <input type="text" id="startDate" name="startDate" class="form-control" uib-datepicker-popup="longDate" datepicker-options="createNewCtrl.startDatePicker.datepickerOptions"
+              placeholder="Start Date Ex. 04/20/2017" ng-model="createNewCtrl.startDate" is-open="createNewCtrl.startDatePicker.isDatepickerOpen"
+              ng-required="true" close-text="Close" alt-input-formats="createNewCtrl.altInputFormats" />
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default" ng-click="createNewCtrl.startDatePicker.isDatepickerOpen = !createNewCtrl.startDatePicker.isDatepickerOpen">
+                <i class="glyphicon glyphicon-calendar"></i>
+              </button>
+            </span>
+          </div>
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="form-group" ng-if="createNewCtrl.type === 'WHEN'" ng-class="{ 'has-success': newEntry.endDate.$valid && newEntry.endDate.$touched,
+          'has-error': newEntry.endDate.$invalid && newEntry.endDate.$touched }">
+          <label class="control-label" for="endDate">End Date</label>
+          <div class="input-group">
+            <input type="text" id="endDate" name="endDate" class="form-control" uib-datepicker-popup="longDate" datepicker-options="createNewCtrl.endDatePicker.datepickerOptions"
+              placeholder="Start Date Ex. 04/20/2017" ng-model="createNewCtrl.endDate" is-open="createNewCtrl.endDatePicker.isDatepickerOpen"
+              ng-required="true" close-text="Close" alt-input-formats="createNewCtrl.altInputFormats" />
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default" ng-click="createNewCtrl.endDatePicker.isDatepickerOpen = !createNewCtrl.endDatePicker.isDatepickerOpen">
+                <i class="glyphicon glyphicon-calendar"></i>
+              </button>
+            </span>
+          </div>
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-success': newEntry.details.$valid && newEntry.details.$touched, 'has-error': newEntry.details.$invalid && newEntry.details.$touched }">
+          <label class="control-label" for="details">Details</label>
+          <textarea name="details" style="resize: none;" placeholder="Enter additional information related to this entry. Separate the details using a 'comma'. Ex. Detail 1, Detail 2, Detail 3"
+            ng-model="createNewCtrl.details" id="details" class="form-control" rows="6" required></textarea>
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-success': newEntry.message.$valid && newEntry.message.$touched, 'has-error': newEntry.message.$invalid && newEntry.message.$touched }">
+          <label class="control-label" for="message">Message</label>
+          <textarea name="message" style="resize: none;" placeholder="Enter a message UBAE will use to respond when this entry is searched."
+            ng-model="createNewCtrl.message" id="message" class="form-control" rows="6" required></textarea>
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <div class="form-group" ng-class="{ 'has-success': newEntry.tags.$valid && newEntry.tags.$dirty, 'has-error': newEntry.tags.$invalid && newEntry.tags.$dirty }">
+          <label class="control-label" for="tags">Keywords</label>
+          <textarea name="tags" style="resize: none;" placeholder="Enter a tags that would allow UBAE to search this entry. Separate the tags using a 'comma'. Ex. tag 1, tag 2, tag 3"
+            ng-model="createNewCtrl.tags" id="tags" class="form-control" rows="6" required></textarea>
+          <p class="help-block">Example block-level help text here.</p>
+        </div>
+        <hr>
+        <div class="text-right">
+          <button type="submit" ng-click="createNewCtrl.createEntry(newEntry)" ng-show="newEntry.$valid" class="btn btn-danger">Submit</button>
+          <button type="submit" ng-click="createNewCtrl.resetForm()" class="btn btn-default">Reset</button>
+          <button type="submit" ui-sref="main" class="btn btn-default">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

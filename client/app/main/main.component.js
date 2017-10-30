@@ -39,11 +39,11 @@ export class MainController {
       }
     };
 
-    this.locations = '/api/locations';
-    this.events = '/api/events';
-    this.informations = '/api/informations';
-    this.providers = '/api/providers';
-    this.instructions = '/api/instructions';
+    this.locations = '/api/informations?type=where';
+    this.events = '/api/informations?type=when';
+    this.informations = '/api/informations?type=what';
+    this.providers = '/api/informations?type=which';
+    this.instructions = '/api/informations?type=how';
     this.responses = '/api/responses';
     this.feedbacks = '/api/feedbacks';
     this.items = ['item1', 'item2', 'item3'];
