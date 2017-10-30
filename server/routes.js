@@ -9,6 +9,7 @@ import path from 'path';
 
 export default function(app) {
   // Insert routes below
+  app.use('/api/ubaguio', require('./api/ubaguio'));
   app.use('/api/informations', require('./api/information'));
   app.use('/api/feedbacks', require('./api/feedback'));
   app.use('/api/responses', require('./api/response'));

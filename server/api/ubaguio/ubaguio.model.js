@@ -1,9 +1,9 @@
 'use strict';
 
 import mongoose from 'mongoose';
-import {registerEvents} from './information.events';
+import {registerEvents} from './ubaguio.events';
 
-var InformationSchema = new mongoose.Schema({
+var UbaguioSchema = new mongoose.Schema({
   name: {
     type: String,
     required: true
@@ -34,30 +34,34 @@ var InformationSchema = new mongoose.Schema({
     type: Date,
     required: false
   },
-  author: {
-    type: String,
-    default: 'Team UBAE',
-    required: true
-  },
-  added: {
-    type: Date,
-    default: new Date(Date.now()),
-    required: true
+  created: {
+    author: {
+      type: String,
+      default: 'Team UBAE',
+      required: true
+    },
+    date: {
+      type: Date,
+      default: new Date(Date.now()),
+      required: true
+    }
   },
   modified: {
-    type: Date,
-    required: false
+    author: {
+      type: String,
+      required: false
+    },
+    date: {
+      type: Date,
+      default: new Date(Date.now()),
+      required: true
+    }
   },
   active: {
     type: Boolean,
     default: true
-  },
-  searched: {
-    type: Number,
-    default: 0,
-    required: false
   }
 });
 
-registerEvents(InformationSchema);
-export default mongoose.model('Information', InformationSchema);
+registerEvents(UbaguioSchema);
+export default mongoose.model('Ubaguio', UbaguioSchema);

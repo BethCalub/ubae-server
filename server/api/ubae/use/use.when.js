@@ -42,6 +42,14 @@ function createFeedback(_in, cmd, tag) {
   });
 }
 
+function updateSearched(myID, count) {
+  Event.findOneAndUpdate({_id: myID},
+    {
+      searched: count + 1
+    },
+    {new: true, upsert: true, setDefaultsOnInsert: true, runValidators: true}).exec();
+}
+
 function generateResults(err, story, userInput, ubae) {
   var msg = '';
   if(err) throw err;
@@ -57,6 +65,7 @@ function generateResults(err, story, userInput, ubae) {
     } else {
       // msg = 'This is what I have found. :)';
       msg = story[0].message;
+      updateSearched(story[0]._id, story[0].searched);
       return {
         user: ubaeInput(userInput, ubae),
         result: ubaeResponse(msg, story, length),
@@ -79,7 +88,7 @@ exports.when = function(req, res, userInput, ubae) {
       tags: {
         $all: ubae.stemmed
       }
-    }).select('name details startDate endDate type message')
+    }).select('name details startDate endDate type message searched')
     .exec(function(err, story) {
       return res.send(generateResults(err, story, userInput, ubae));
     });
