@@ -10,7 +10,7 @@
 
 'use strict';
 
-import jsonpatch from 'fast-json-patch';
+// import jsonpatch from 'fast-json-patch';
 import Information from './information.model';
 import UbaeNLP from '../ubae/nlp/nlp.stopper';
 import UbaeUtility from '../ubae/nlp/nlp.utility';
@@ -25,18 +25,18 @@ function respondWithResult(res, statusCode) {
   };
 }
 
-function patchUpdates(patches) {
-  return function(entity) {
-    try {
-      // eslint-disable-next-line prefer-reflect
-      jsonpatch.apply(entity, patches, /*validate*/ true);
-    } catch(err) {
-      return Promise.reject(err);
-    }
+// function patchUpdates(patches) {
+//   return function(entity) {
+//     try {
+//       // eslint-disable-next-line prefer-reflect
+//       jsonpatch.apply(entity, patches, /*validate*/ true);
+//     } catch(err) {
+//       return Promise.reject(err);
+//     }
 
-    return entity.save();
-  };
-}
+//     return entity.save();
+//   };
+// }
 
 function removeEntity(res) {
   return function(entity) {
@@ -96,8 +96,10 @@ export function create(req, res) {
     message: req.body.message,
     startDate: req.body.startDate,
     endDate: req.body.endDate,
-    author: req.body.author,
-    added: new Date(Date.now()),
+    created: {
+      author: req.body.author,
+      date: new Date(Date.now())
+    },
     tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags))
   })
     .then(respondWithResult(res, 201))
@@ -129,8 +131,10 @@ export function patch(req, res) {
       message: req.body.message,
       startDate: req.body.startDate,
       endDate: req.body.endDate,
-      author: req.body.author,
-      modified: new Date(Date.now()),
+      modified: {
+        author: req.body.author,
+        date: new Date(Date.now())
+      },
       tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags))
     },
     {new: true, upsert: true, setDefaultsOnInsert: true, runValidators: true}).exec()

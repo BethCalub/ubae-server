@@ -134,7 +134,14 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-offset-8 col-md-4">
+          <div class="col-md-offset-5 col-md-3">
+              
+              <select name="" id="input${1/(\w+)/\u\1/g}" class="form-control" required="required">
+                <option value="">asdas</option>
+              </select>
+              
+            </div>
+        <div class="col-md-4">
           <div class="form-group">
             <!-- <label class="sr-only" for="search">Search</label> -->
             <input type="text" class="form-control input-sm" id="search" ng-model="informationCtrl.searchTags" uib-tooltip="Search for information contained in the {{informationCtrl.tableName}} database. This will filter out the information as you type."
@@ -164,14 +171,18 @@
             filter: { name: informationCtrl.searchTags, active: informationCtrl.filter.archive.selected } | limitTo: 10:(informationCtrl.currentPage-1)*10">
         <div class="row">
           <div class="col-md-12">
-            <h3>{{$index + 1}}. {{entries.name}}</h3>
-            <h6 style="text-indent: 30px">by: {{entries.author}}</h6>
+            <h3>{{$index + 1}}. {{entries.name}}
+            </h3>
+            <h6 style="text-indent: 15px" ng-if="entries.created.author"><strong>by: {{entries.created.author}}</strong>, 
+              <span>{{entries.created.date | date: 'mediumDate'}}, {{entries.created.date | date: 'mediumTime'}}</span>
+            </h6>
           </div>
         </div>
         <div class="row">
             <div class="col-md-12">
               <h4>
                 <i class="fa fa-fw fa-info-circle"></i>Details</h4>
+              <h5 ng-show="entries.startDate && entries.endDate">{{entries.startDate | date: "mediumDate"}} to {{entries.endDate | date: "mediumDate"}}</h5>
               <p ng-repeat="entry in entries.details">{{entry}}</p>
             </div>
           </div>
@@ -179,7 +190,7 @@
           <div class="col-md-6">
             <h4>
               <i class="fa fa-fw fa-envelope"></i>Message</h4>
-            <p>{{entries.message}}</p>
+            <p style="text-indent: 30px">{{entries.message}}</p>
           </div>
           <div class="col-md-6">
             <h4>
@@ -195,10 +206,10 @@
             </p>
           </div>
         </div>
-        <div class="row">
+        <div class="row" ng-show="entries.modified.date && entries.modified.author">
             <div class="col-md-12 text-right">
-              <h6>Added: {{entries.added | date: 'longDate'}}, {{entries.added | date: 'mediumTime'}}</h6>
-              <h6 ng-show="entries.modified">Modified: {{entries.modified | date: 'longDate'}}, {{entries.modified | date: 'mediumTime'}}</h6>
+              <h6>Modified: {{entries.modified.date | date: 'longDate'}}, {{entries.modified.date | date: 'mediumTime'}}</h6>
+              <h6 style="text-indent: 30px">by: {{entries.modified.author}}</h6>
             </div>
           </div>
         <div class="row">

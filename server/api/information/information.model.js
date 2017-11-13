@@ -34,19 +34,27 @@ var InformationSchema = new mongoose.Schema({
     type: Date,
     required: false
   },
-  author: {
-    type: String,
-    default: 'Team UBAE',
-    required: true
-  },
-  added: {
-    type: Date,
-    default: new Date(Date.now()),
-    required: true
+  created: {
+    author: {
+      type: String,
+      default: 'Team UBAE',
+      required: true
+    },
+    date: {
+      type: Date,
+      default: new Date(Date.now()),
+      required: true
+    }
   },
   modified: {
-    type: Date,
-    required: false
+    author: {
+      type: String,
+      required: false
+    },
+    date: {
+      type: Date,
+      required: false
+    }
   },
   active: {
     type: Boolean,

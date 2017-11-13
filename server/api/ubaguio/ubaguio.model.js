@@ -57,9 +57,16 @@ var UbaguioSchema = new mongoose.Schema({
       required: true
     }
   },
-  active: {
-    type: Boolean,
-    default: true
+  stats: {
+    active: {
+      type: Boolean,
+      default: true
+    },
+    searched: {
+      type: Number,
+      default: 0,
+      required: false
+    }
   }
 });
 

@@ -100,7 +100,7 @@ export class InformationComponent {
   //onLoad
   $onInit() {
     this.eventStatus = 'Loading...';
-    this.$http.get(this.endpoint.link + '?type=what')
+    this.$http.get(this.endpoint.link + '?type=')
     .then(response => {
       this.entryList = response.data;
       this.socket.syncUpdates(this.endpoint.socket, this.entryList);
@@ -114,7 +114,7 @@ export class InformationComponent {
 
   //Get all table entries
   getEntries() {
-    this.$http.get(this.endpoint.link + '?type=what')
+    this.$http.get(this.endpoint.link + '?type=')
     .then(response => {
       this.entryList = response.data;
       this.socket.syncUpdates(this.endpoint.socket, this.entryList);
