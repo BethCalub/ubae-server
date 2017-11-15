@@ -39,6 +39,10 @@ import ProviderComponent from './provider/provider.component';
 import ReportsComponent from './reports/reports.component';
 import DevelopmentComponent from './development/development.component';
 
+import MaintenanceComponent from './maintenance/maintenance.component';
+import CreateEntryController from './maintenance/createEntry/createEntry.controller';
+import EditEntryController from './maintenance/editEntry/editEntry.controller';
+
 import './app.scss';
 
 angular.module('ubaeApiApp', [ngAnimate, ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
@@ -53,7 +57,10 @@ angular.module('ubaeApiApp', [ngAnimate, ngCookies, ngResource, ngSanitize, 'btf
   InstructionComponent,
   ProviderComponent,
   DevelopmentComponent,
-  CreateNewComponent
+  CreateNewComponent,
+  MaintenanceComponent,
+  CreateEntryController,
+  EditEntryController
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
