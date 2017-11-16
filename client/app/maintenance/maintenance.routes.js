@@ -21,12 +21,12 @@ export default function($stateProvider) {
       controllerAs: 'editEntryCtrl',
       authenticate: true
     })
-    .state('successEntry', {
-      url: '/maintenance/success',
+    .state('promptSuccess', {
+      // url: '/maintenance/success',
       template: require('./prompt/success.html')
     })
-    .state('failedEntry', {
-      url: '/maintenance/failed',
+    .state('promptError', {
+      // url: '/maintenance/failed',
       template: require('./prompt/failed.html')
     });
 }

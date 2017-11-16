@@ -58,7 +58,8 @@ var InformationSchema = new mongoose.Schema({
   },
   active: {
     type: Boolean,
-    default: true
+    default: true,
+    required: true
   },
   searched: {
     type: Number,

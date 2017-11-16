@@ -2,9 +2,12 @@
 const angular = require('angular');
 
 /*@ngInject*/
-export function createEntryController(Auth, $http) {
+export function createEntryController(Auth, $http, $state) {
   this.currentUser = Auth.getCurrentUserSync().name;
   this.$http = $http;
+  this.$state = $state;
+
+  this.details = [];
 
   this.searchResult = [
     'Item 1',
@@ -46,6 +49,56 @@ export function createEntryController(Auth, $http) {
       maxDate: null, // must be JS Date
       initDate: null // must be JS Date
     }
+  };
+
+  this.addDetail = function(input) {
+    if(this.details.indexOf(input) > -1) {
+      this.detail = 'exists';
+    } else {
+      this.details.push(input);
+      this.detail = '';
+    }
+  };
+
+  this.deleteDetail = function(input) {
+    if(this.details.indexOf(input) > -1) {
+      this.details.splice(this.details.indexOf(input), 1);
+    }
+  };
+
+  this.createEntry = function() {
+    var entry = {
+      name: this.entryName,
+      type: this.type,
+      details: this.details,
+      message: this.message,
+      tags: this.tags,
+      author: this.currentUser
+    };
+
+    if(this.startDate && this.endDate) {
+      entry = {
+        name: this.entryName,
+        startDate: this.startDate,
+        endDate: this.endDate,
+        type: this.type,
+        details: this.details,
+        message: this.message,
+        tags: this.tags,
+        author: this.currentUser
+      };
+    }
+
+    this.$http.post('/api/informations/', entry)
+    .then(response => {
+      this.resetForm();
+      console.log(response.statusText);
+      this.isCollapsed = false;
+      this.$state.go('promptSuccess');
+    }, err => {
+      this.$state.go('promptError');
+      console.log(err.statusText);
+    });
   };
 
   this.resetForm = function() {

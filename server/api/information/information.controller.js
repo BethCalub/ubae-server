@@ -92,7 +92,7 @@ export function create(req, res) {
   return Information.create({
     name: req.body.name,
     type: req.body.type,
-    details: UbaeUtility.trimEntries(req.body.details),
+    details: req.body.details,
     message: req.body.message,
     startDate: req.body.startDate,
     endDate: req.body.endDate,
