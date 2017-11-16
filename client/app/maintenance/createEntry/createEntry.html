@@ -1,25 +1,14 @@
 <div class="section">
     <div class="container" style="padding-top: 60px;">
-      <div class="row" style="padding-bottom:30px;">
-        <div class="col-md-4" ng-init="" ng-hide="createEntryCtrl.stepOne">
-          <h2>
-            <strong>Step 1. </strong>Search Entry</h2>
-          <hr>
-          <div class="form-group">
-            <label class="control-label" for="search">Search Entry</label>
-            <input class="form-control" id="search" placeholder="Search Entry" ng-model="createEntryCtrl.search" name="search" type="text"
-              required>
-          </div>
-  
-          <h5 ng-if="createEntryCtrl.search">Results</h5>
-          <div ng-if="createEntryCtrl.search" class="list-group">
-              <a href="#" ng-click="createEntryCtrl.stepTwo = true" ng-repeat="x in createEntryCtrl.searchResult | filter: createEntryCtrl.search | limitTo: 10" class="list-group-item">{{x}}</a>
-          </div>
-  
+      <div class="row">
+        <div class="col-md-12">
+          <h2>New Entry</h2>
         </div>
-        <div class="col-md-8" ng-show="createEntryCtrl.stepTwo">
-          <h2>
-            <strong>Step 2. </strong>Create New Entry</h2>
+      </div>
+      <div class="row" style="padding-bottom:30px;">
+        <div class="col-md-6" ng-hide="createEntryCtrl.stepOne">
+          <h3>
+            <strong>Step 1. </strong>Fill in necessary information.</h3>
           <hr>
           <form id="newEntry" name="newEntry" novalidate>
             <div class="form-group" ng-class="{ 'has-success': newEntry.entryName.$valid && newEntry.entryName.$touched,
@@ -101,8 +90,8 @@
   
   
         <div class="col-md-12" ng-show="createEntryCtrl.stepThree">
-          <h2>
-            <strong>Step 3. </strong>Verify Entry</h2>
+          <h3>
+            <strong>Step 2. </strong>Verify and confirm all the information.</h3>
           <hr>
               <div>
                   <h4>{{createEntryCtrl.entryName}}</h4>
