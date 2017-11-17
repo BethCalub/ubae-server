@@ -51,22 +51,40 @@ export function createEntryController(Auth, $http, $state) {
     }
   };
 
+  this.setEndDateMin = function() {
+    this.endDatePicker.datepickerOptions.minDate = new Date(this.startDate);
+  };
+
+  this.setStartDateMax = function() {
+    this.startDatePicker.datepickerOptions.maxDate = new Date(this.endDate);
+  };
+
   this.addDetail = function(input) {
-    if(this.details.indexOf(input) > -1) {
-      this.detail = 'exists';
+    if(input) {
+      if(this.details.indexOf(input) > -1) {
+        this.detailError = 'Detail already existing.';
+        this.detailClass = 'text-warning';
+        this.detail = '';
+      } else {
+        this.details.push(input);
+        this.detailError = 'Successfully added!';
+        this.detailClass = 'text-success';
+        this.detail = '';
+      }
     } else {
-      this.details.push(input);
+      this.detailError = 'Cannot add empty detail.';
+      this.detailClass = 'text-danger';
       this.detail = '';
     }
   };
 
-  this.deleteDetail = function(input) {
-    if(this.details.indexOf(input) > -1) {
+  this.deleteDetail = function (input) {
+    if (this.details.indexOf(input) > -1) {
       this.details.splice(this.details.indexOf(input), 1);
     }
   };
 
-  this.createEntry = function() {
+  this.createEntry = function () {
     var entry = {
       name: this.entryName,
       type: this.type,
@@ -76,7 +94,7 @@ export function createEntryController(Auth, $http, $state) {
       author: this.currentUser
     };
 
-    if(this.startDate && this.endDate) {
+    if (this.startDate && this.endDate) {
       entry = {
         name: this.entryName,
         startDate: this.startDate,
@@ -90,18 +108,18 @@ export function createEntryController(Auth, $http, $state) {
     }
 
     this.$http.post('/api/informations/', entry)
-    .then(response => {
-      this.resetForm();
-      console.log(response.statusText);
-      this.isCollapsed = false;
-      this.$state.go('promptSuccess');
-    }, err => {
-      this.$state.go('promptError');
-      console.log(err.statusText);
-    });
+      .then(response => {
+        this.resetForm();
+        console.log(response.statusText);
+        this.isCollapsed = false;
+        this.$state.go('promptSuccess');
+      }, err => {
+        this.$state.go('promptError');
+        console.log(err.statusText);
+      });
   };
 
-  this.resetForm = function() {
+  this.resetForm = function () {
     this.entryName = '';
     this.startDate = '';
     this.endDate = '';

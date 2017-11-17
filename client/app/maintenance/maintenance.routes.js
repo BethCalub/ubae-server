@@ -8,14 +8,14 @@ export default function($stateProvider) {
       template: '<maintenance></maintenance>'
     })
     .state('createEntry', {
-      url: '/maintenance/create',
+      // url: '/maintenance/create',
       template: require('./createEntry/createEntry.html'),
       controller: 'CreateEntryController',
       controllerAs: 'createEntryCtrl',
       authenticate: true
     })
     .state('editEntry', {
-      url: '/maintenance/edit',
+      // url: '/maintenance/edit',
       template: require('./editEntry/editEntry.html'),
       controller: 'EditEntryController',
       controllerAs: 'editEntryCtrl',
