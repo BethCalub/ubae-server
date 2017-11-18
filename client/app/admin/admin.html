@@ -6,8 +6,7 @@
   <h5 class="text-center animateMe">This action cannot be undone.</h5>
   <br>
   <div class="btn-group">
-    <a ng-if="admin.confirmationName == 'delete'" ng-click="admin.delete(admin.confirmationId); admin.confirm = true"
-      class="btn btn-danger">Yes I'm Sure!</a>
+    <a ng-if="admin.confirmationName == 'delete'" ng-click="admin.delete(admin.confirmationId); admin.confirm = true" class="btn btn-danger">Yes I'm Sure!</a>
     <a ng-click="admin.confirm = true" class="btn btn-default">Close</a>
   </div>
 </div>
@@ -17,19 +16,15 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
-        <ul class="breadcrumb">
-          <li>
-            <a ui-sref="main">Home</a>
-          </li>
-          <li class="active">
-            Accounts
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
         <div class="well well-lg">
+          <ul class="breadcrumb">
+            <li>
+              <a ui-sref="main">Home</a>
+            </li>
+            <li class="active">
+              Accounts
+            </li>
+          </ul>
           <h1>Administrator Accounts</h1>
           <div>
             <p>This table contains functions for account management.</p>
@@ -70,10 +65,13 @@
               <td>{{$index + 1 }}</td>
               <td>{{user.name}}</td>
               <td>{{user.email}}</td>
-              <td><span ng-if="user.role == 'admin'">System Administrator</span><span ng-if="user.role == ''">Administrator</span></td>
               <td>
-                <button type="button" class="close" ng-hide="admin.getCurrentUser().name == user.name" ng-click="admin.confirm = false; admin.confirmationId = user; admin.confirmationName = 'delete'" uib-tooltip="WARNING!!! This action will PERMANENTLY delete this account."
-                  tooltip-placement="left">&times;
+                <span ng-if="user.role == 'admin'">System Administrator</span>
+                <span ng-if="user.role == ''">Administrator</span>
+              </td>
+              <td>
+                <button type="button" class="close" ng-hide="admin.getCurrentUser().name == user.name" ng-click="admin.confirm = false; admin.confirmationId = user; admin.confirmationName = 'delete'"
+                  uib-tooltip="WARNING!!! This action will PERMANENTLY delete this account." tooltip-placement="left">&times;
                 </button>
               </td>
             </tr>

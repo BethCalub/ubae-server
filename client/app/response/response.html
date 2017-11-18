@@ -20,19 +20,15 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
-        <ul class="breadcrumb">
-          <li>
-            <a ui-sref="main">Home</a>
-          </li>
-          <li class="active">
-            {{responseCtrl.dataInfo.name}}
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
         <div uib-alert style="background-color: #EEEEEE;" ng-show="responseCtrl.dataInfo.show" close="responseCtrl.closeDataInfo()">
+            <ul class="breadcrumb" style="background-color: transparent;">
+                <li>
+                  <a ui-sref="main">Home</a>
+                </li>
+                <li class="active">
+                  {{responseCtrl.dataInfo.name}}
+                </li>
+              </ul>
           <h1>{{responseCtrl.dataInfo.name}}</h1>
           <p>{{responseCtrl.dataInfo.info}}</p>
           <ul>

@@ -127,7 +127,7 @@ export function patch(req, res) {
   return Information.findOneAndUpdate({_id: req.params.id},
     {
       name: req.body.name,
-      details: UbaeUtility.trimEntries(JSON.stringify(req.body.details)),
+      details: req.body.details,
       message: req.body.message,
       startDate: req.body.startDate,
       endDate: req.body.endDate,

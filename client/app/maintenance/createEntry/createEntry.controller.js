@@ -114,7 +114,6 @@ export function createEntryController(Auth, $http, $state) {
       .then(response => {
         this.resetForm();
         console.log(response.statusText);
-        this.isCollapsed = false;
         this.$state.go('promptSuccess');
       }, err => {
         this.$state.go('promptError');

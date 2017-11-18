@@ -2,12 +2,13 @@
 const angular = require('angular');
 
 /*@ngInject*/
-export function editEntryController(Auth, $http, $stateParams) {
+export function editEntryController(Auth, $http, $state, $stateParams) {
   this.currentUser = Auth.getCurrentUserSync().name;
   this.$http = $http;
+  this.$state = $state;
   this.$stateParams = $stateParams;
 
-  this.earmix = this.$stateParams.id;
+  this.entryID = this.$stateParams.id;
 
   this.$http.get('/api/informations/' + this.$stateParams.id)
   .then(response => {
@@ -16,45 +17,13 @@ export function editEntryController(Auth, $http, $stateParams) {
     this.startDate = response.data.startDate;
     this.endDate = response.data.endDate;
     this.details = response.data.details;
+    this.oldDetails = response.data.details;
     this.message = response.data.message;
+    this.oldMessage = response.data.message;
     this.tags = response.data.tags;
+    this.oldTags = response.data.tags;
     this.type = response.data.type;
   });
-
-  this.type = '';
-  this.typeSelect = {
-    'Select a Type': '',
-    Information: 'what',
-    Event: 'when',
-    Location: 'where',
-    Instruction: 'how',
-    Provider: 'which'
-  };
-
-  this.altInputFormats = ['M!/d!/yyyy'];
-  this.startDatePicker = {
-    isDatepickerOpen: false,
-    datepickerOptions: {
-      datepickerMode: 'day',
-      showWeeks: true,
-      startingDay: 0, // (0=Sunday, ..., 6=Saturday)
-      minDate: new Date(Date.now()), // must be JS Date
-      maxDate: null, // must be JS Date
-      initDate: null // must be JS Date
-    }
-  };
-
-  this.endDatePicker = {
-    isDatepickerOpen: false,
-    datepickerOptions: {
-      datepickerMode: 'day',
-      showWeeks: true,
-      startingDay: 0, // (0=Sunday, ..., 6=Saturday)
-      minDate: new Date(Date.now()), // must be JS Date
-      maxDate: null, // must be JS Date
-      initDate: null // must be JS Date
-    }
-  };
 
   this.addDetail = function(input) {
     if(input) {
@@ -125,6 +94,43 @@ export function editEntryController(Auth, $http, $stateParams) {
       this.tags = response.data.tags;
       this.type = response.data.type;
     });
+  };
+
+  this.editEntry = function() {
+    if(this.entryID) {
+      var entry = {
+        name: this.entryName,
+        type: this.type,
+        details: this.details,
+        message: this.message,
+        tags: this.tags,
+        author: this.currentUser
+      };
+  
+      if(this.startDate && this.endDate) {
+        entry = {
+          name: this.entryName,
+          startDate: this.startDate,
+          endDate: this.endDate,
+          type: this.type,
+          details: this.details,
+          message: this.message,
+          tags: this.tags,
+          author: this.currentUser
+        };
+      }
+
+      //Update entry
+      this.$http.patch('/api/informations/' + this.entryID, entry)
+      .then(response => {
+        this.resetForm();
+        console.log(response.statusText);
+        this.$state.go('promptSuccess');
+      }, err => {
+        this.$state.go('promptError');
+        console.log(err.statusText);
+      });
+    }
   };
 }
 

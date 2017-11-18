@@ -5,7 +5,7 @@
         <h2>Edit Entry</h2>
       </div>
     </div>
-    <div class="row">
+    <div class="row" ng-hide="editEntryCtrl.stepThree">
       <div class="col-md-12" ng-show="true">
         <h3>
           <strong>Step 1. </strong>Modify necessary information.</h3>
@@ -15,8 +15,9 @@
         <h5 ng-if="editEntryCtrl.type == 'when'">{{editEntryCtrl.startDate | date: 'longDate'}} to {{editEntryCtrl.endDate | date: 'longDate'}}</h5>
       </div>
     </div>
-    <div class="row">
+    <div class="row" ng-hide="editEntryCtrl.stepThree">
       <div class="col-md-6">
+        <h4>Modify the response message.</h4>
         <form id="newEntry" name="newEntry" novalidate>
           <div class="form-group" ng-class="{ 'has-success': newEntry.message.$valid && newEntry.message.$dirty, 'has-error': newEntry.message.$invalid && newEntry.message.$dirty }">
             <label class="control-label" for="message">Message</label>
@@ -25,7 +26,7 @@
             <p class="help-block">This must contain that UBAE would use to respond if this entry is searched.</p>
           </div>
         </form>
-
+        <h4>Add more keywords.</h4>
         <div class="form-group">
           <label class="control-label" for="keyword">Add Keyword</label>
           <div class="input-group">
@@ -41,7 +42,6 @@
             <br>**This is important when UBAE is searching for an information.
           </p>
         </div>
-
         <div class="form-group">
           <label class="control-label" for="keywords">Keywords</label>
           <p class="{{editEntryCtrl.keywordClass}}">{{editEntryCtrl.keywordError}}</p>
@@ -56,13 +56,9 @@
             </li>
           </ul>
         </div>
-
-
       </div>
       <div class="col-md-6">
-        <!-- <h3>
-            Add more information.</h3>
-          <hr> -->
+        <h4>Add more information.</h4>
         <div class="form-group">
           <label class="control-label" for="detail">Add Detail</label>
           <div class="input-group">
@@ -89,18 +85,20 @@
           </ul>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <hr>
-          <div class="text-right">
-            <button type="submit" ng-click="editEntryCtrl.stepThree = true; editEntryCtrl.stepOne = true; editEntryCtrl.stepTwo = false"
-              ng-show="newEntry.$valid && editEntryCtrl.details.length > 0 && editEntryCtrl.tags.length > 0" class="btn btn-danger">Submit</button>
-            <button type="submit" ng-click="editEntryCtrl.resetForm()" class="btn btn-warning">Reset to Default</button>
-            <button type="submit" ui-sref="main" class="btn btn-default">Cancel</button>
-          </div>
+    </div>
+    <div class="row" ng-hide="editEntryCtrl.stepThree">
+      <div class="col-md-12">
+        <hr>
+        <div class="text-right">
+          <button type="submit" ng-click="editEntryCtrl.stepThree = true; editEntryCtrl.stepOne = true; editEntryCtrl.stepTwo = false"
+            ng-show="newEntry.$valid && editEntryCtrl.details.length > 0 && editEntryCtrl.tags.length > 0" class="btn btn-danger">Submit</button>
+          <button type="submit" ng-click="editEntryCtrl.resetForm()" class="btn btn-warning">Reset to Default</button>
+          <button type="submit" ui-sref="main" class="btn btn-default">Cancel</button>
         </div>
       </div>
+    </div>
 
+    <div class="row">
       <div class="col-md-12" ng-show="editEntryCtrl.stepThree">
         <h3>
           <strong>Step 3. </strong>Verify and confirm all the information.</h3>
@@ -141,11 +139,13 @@
           <br>This action cannot be undone.
         </p>
         <div class="text-right">
-          <button type="submit" ng-click="editEntryCtrl.createEntry(newEntry)" ng-show="newEntry.$valid" class="btn btn-danger">Yes, I'm Sure!</button>
+          <button type="submit" ng-click="editEntryCtrl.editEntry()" ng-show="newEntry.$valid" class="btn btn-danger">Yes, I'm Sure!</button>
           <button type="submit" ng-click="editEntryCtrl.stepThree = false; editEntryCtrl.stepOne = false; editEntryCtrl.stepTwo = true"
             class="btn btn-default">No, Go Back</button>
         </div>
       </div>
     </div>
+
+
   </div>
 </div>

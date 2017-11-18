@@ -15,7 +15,7 @@ export default function($stateProvider) {
       authenticate: true
     })
     .state('editEntry', {
-      // url: '/maintenance/edit/:id',
+      url: '/maintenance/edit/:id',
       template: require('./editEntry/editEntry.html'),
       controller: 'EditEntryController',
       controllerAs: 'editEntryCtrl',

@@ -28,17 +28,11 @@ import constants from './app.constants';
 import util from '../components/util/util.module';
 import socket from '../components/socket/socket.service';
 import ubae from './ubae/ubae.component';
+
 import ResponseComponent from './response/response.component';
-
 import FeedbackComponent from './feedback/feedback.component';
-
-import InformationComponent from './information/information.component';
-
-
-
-import DevelopmentComponent from './development/development.component';
-
 import MaintenanceComponent from './maintenance/maintenance.component';
+
 import CreateEntryController from './maintenance/createEntry/createEntry.controller';
 import EditEntryController from './maintenance/editEntry/editEntry.controller';
 import EntriesController from './maintenance/entries/entries.controller';
@@ -50,8 +44,6 @@ angular.module('ubaeApiApp', [ngAnimate, ngCookies, ngResource, ngSanitize, 'btf
   socket, util, statusbar,
   ResponseComponent,
   FeedbackComponent,
-  InformationComponent,
-  DevelopmentComponent,
   MaintenanceComponent,
   CreateEntryController,
   EditEntryController,
