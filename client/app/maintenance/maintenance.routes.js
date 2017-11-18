@@ -15,11 +15,24 @@ export default function($stateProvider) {
       authenticate: true
     })
     .state('editEntry', {
-      // url: '/maintenance/edit',
+      // url: '/maintenance/edit/:id',
       template: require('./editEntry/editEntry.html'),
       controller: 'EditEntryController',
       controllerAs: 'editEntryCtrl',
-      authenticate: true
+      authenticate: true,
+      params: {
+        id: null
+      }
+    })
+    .state('viewEntries', {
+      url: '/maintenance/view/:type',
+      template: require('./entries/entries.html'),
+      controller: 'EntriesController',
+      controllerAs: 'entriesCtrl',
+      authenticate: true,
+      params: {
+        type: ''
+      }
     })
     .state('promptSuccess', {
       // url: '/maintenance/success',

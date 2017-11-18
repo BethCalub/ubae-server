@@ -1,0 +1,170 @@
+<div class="confirm" ng-init="entriesCtrl.confirm = true" ng-hide="entriesCtrl.confirm">
+    <h1 style="font-size: 120px;">
+      <span class="glyphicon glyphicon-warning-sign"></span>
+    </h1>
+    <h3 class="text-center animateMe">Are you sure you want to {{entriesCtrl.confirmationName}} this entry?</h3>
+    <h5 class="text-center animateMe">This action cannot be undone.</h5>
+    <br>
+    <div class="btn-group">
+      <a ng-if="entriesCtrl.confirmationName == 'archive'" ng-click="entriesCtrl.archiveEntry(entriesCtrl.confirmationId); entriesCtrl.confirm = true"
+        class="btn btn-danger">Yes I'm Sure!</a>
+      <a ng-if="entriesCtrl.confirmationName == 'delete'" ng-click="entriesCtrl.deleteEntry(entriesCtrl.confirmationId); entriesCtrl.confirm = true"
+        class="btn btn-danger">Yes I'm Sure!</a>
+      <a ng-if="entriesCtrl.confirmationName == 'restore'" ng-click="entriesCtrl.unarchiveEntry(entriesCtrl.confirmationId); entriesCtrl.confirm = true"
+        class="btn btn-danger">Yes I'm Sure!</a>
+      <a ng-click="entriesCtrl.confirm = true" class="btn btn-default">Close</a>
+    </div>
+  </div>
+  
+  <div class="section" style="padding: 50px 0;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="breadcrumb">
+            <li>
+              <a ui-sref="main">Home</a>
+            </li>
+            <li>
+              Maintenance
+            </li>
+            <li class="active">
+                {{entriesCtrl.dataInfo.name}}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div uib-alert style="background-color: #EEEEEE;" ng-show="entriesCtrl.dataInfo.show" close="entriesCtrl.closeDataInfo()">
+            <h1>{{entriesCtrl.dataInfo.name}}</h1>
+            <p>{{entriesCtrl.dataInfo.info}}</p>
+            <ul>
+              <li ng-repeat="entry in entriesCtrl.dataInfo.guide">{{entry}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id=info>
+      <div class="row">
+        <div class="col-md-12">
+          <h4>{{(entriesCtrl.entryList | filter: { name: entriesCtrl.searchTags, active: entriesCtrl.filter.archive.selected }).length}}
+            {{entriesCtrl.dataInfo.name}} Entries:
+            <a ui-sref="createEntry" uib-popover="This action will open the create form." popover-popup-delay="1500"
+              popover-trigger="'mouseenter'" popover-placement="right" class="btn btn-link" style="text-decoration: none;" href="">Create New</a>
+          </h4>
+        </div>
+      </div>
+      <div class="row">
+          <div class="col-md-offset-5 col-md-3">
+              
+              <!-- <select name="" id="input${1/(\w+)/\u\1/g}" class="form-control" required="required">
+                <option value="">asdas</option>
+              </select> -->
+              
+            </div>
+        <div class="col-md-4">
+          <div class="form-group">
+            <!-- <label class="sr-only" for="search">Search</label> -->
+            <input type="text" class="form-control input-sm" id="search" ng-model="entriesCtrl.searchTags" uib-tooltip="Search for information contained in the {{entriesCtrl.tableName}} database. This will filter out the information as you type."
+              tooltip-placement="bottom" placeholder="Search {{entriesCtrl.dataInfo.name}}">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <uib-tabset active="entriesCtrl.active">
+            <uib-tab index="0" ng-click="entriesCtrl.filter.archive.selected = 'true'">
+              <uib-tab-heading>
+                Active
+                <span class="badge">{{(entriesCtrl.entryList | filter: { active: 'true' }).length}}</span>
+              </uib-tab-heading>
+            </uib-tab>
+            <uib-tab index="1" ng-click="entriesCtrl.filter.archive.selected = 'false'" select="entriesCtrl.alertMe('This table contains archived data that you can restore.')">
+              <uib-tab-heading>
+                Archived
+                <span class="badge">{{(entriesCtrl.entryList | filter: { active: 'false' }).length}}</span>
+              </uib-tab-heading>
+            </uib-tab>
+          </uib-tabset>
+        </div>
+      </div>
+      <div class="info" ng-repeat="entries in entriesCtrl.entryList |
+            filter: { name: entriesCtrl.searchTags, active: entriesCtrl.filter.archive.selected } | limitTo: 10:(entriesCtrl.currentPage-1)*10">
+        <div class="row">
+          <div class="col-md-12">
+            <h3>{{$index + 1}}. {{entries.name}}
+            </h3>
+            <h6 style="text-indent: 15px" ng-if="entries.created.author"><strong>by: {{entries.created.author}}</strong>, 
+              <span>{{entries.created.date | date: 'mediumDate'}}, {{entries.created.date | date: 'mediumTime'}}</span>
+            </h6>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+              <h4>
+                <i class="fa fa-fw fa-info-circle"></i>Details</h4>
+              <h5 ng-show="entries.startDate && entries.endDate">{{entries.startDate | date: "mediumDate"}} to {{entries.endDate | date: "mediumDate"}}</h5>
+              <p ng-repeat="entry in entries.details">{{entry}}</p>
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h4>
+              <i class="fa fa-fw fa-envelope"></i>Message</h4>
+            <p style="text-indent: 30px">{{entries.message}}</p>
+          </div>
+          <div class="col-md-6">
+            <h4>
+              <i class="fa fa-fw fa-tags"></i>Keywords</h4>
+            <p>
+              <ul class="tags">
+                <li ng-repeat="tags in entries.tags">
+                  <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
+                    {{tags}}
+                  </span>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+        <div class="row" ng-show="entries.modified.date && entries.modified.author">
+            <div class="col-md-12 text-right">
+              <h6>Modified: {{entries.modified.date | date: 'longDate'}}, {{entries.modified.date | date: 'mediumTime'}}</h6>
+              <h6 style="text-indent: 30px">by: {{entries.modified.author}}</h6>
+            </div>
+          </div>
+        <div class="row">
+          <br>
+          <div class="col-md-12 text-right">
+            <div class="btn-group" ng-if="entriesCtrl.filter.archive.selected == 'true'">
+              <a ui-sref="editEntry({id: entries._id})" uib-tooltip="Edit {{entries.name}} Entry" tooltip-placement="top-right" class="btn btn-default">
+                <i class="fa fa-fw fa-edit"></i>Edit</a>
+              <a ng-click="entriesCtrl.confirm = false; entriesCtrl.confirmationId = entries._id; entriesCtrl.confirmationName = 'archive'" uib-tooltip="WARNING!!! This action will archive this entry."
+                tooltip-placement="top-right" class="btn btn-default">
+                <i class="fa fa-fw fa-archive"></i>Archive</a>
+            </div>
+            <div class="btn-group" ng-if="entriesCtrl.filter.archive.selected == 'false'">
+              <a ng-click="entriesCtrl.confirm = false; entriesCtrl.confirmationId = entries._id; entriesCtrl.confirmationName = 'restore'" uib-tooltip="WARNING!!! This action will restore this entry to the active list."
+                tooltip-placement="top-right" class="btn btn-default" draggable="true">
+                <i class="fa fa-fw fa-rotate-left"></i>Restore</a>
+              <a ng-click="entriesCtrl.confirm = false; entriesCtrl.confirmationId = entries._id; entriesCtrl.confirmationName = 'delete'" uib-tooltip="WARNING!!! This action will delete this entry."
+                tooltip-placement="top-right" class="btn btn-danger">
+                <i class="fa fa-fw fa-trash"></i>Delete</a>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+      <div class="row" ng-show="(entriesCtrl.entryList | filter: { name: entriesCtrl.searchTags, active: entriesCtrl.filter.archive.selected }).length > 10">
+        <div class="col-md-12 text-center">
+          <ul ng-click="entriesCtrl.scrollTo('info')" uib-pagination total-items="(entriesCtrl.entryList | filter: { name: entriesCtrl.searchTags, active: entriesCtrl.filter.archive.selected }).length"
+            ng-model="entriesCtrl.currentPage" max-size="5" class="pagination-sm" boundary-links="true" force-ellipses="true"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <statusbar table-name="{{entriesCtrl.dataInfo.name}}" table-entries="{{(entriesCtrl.entryList | filter: { name: entriesCtrl.searchTags, active: entriesCtrl.filter.archive.selected }).length}}"
+    action-message="{{entriesCtrl.eventStatus}}"></statusbar>
+  

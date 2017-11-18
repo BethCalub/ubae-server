@@ -7,8 +7,9 @@ import routes from './maintenance.routes';
 
 export class MaintenanceComponent {
   /*@ngInject*/
-  constructor() {
-    this.message = 'Hello';
+  constructor($stateParams) {
+    this.$stateParams = $stateParams;
+    this.earmix = this.$stateParams.type;
   }
 }
 

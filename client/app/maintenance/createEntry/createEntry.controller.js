@@ -78,13 +78,16 @@ export function createEntryController(Auth, $http, $state) {
     }
   };
 
-  this.deleteDetail = function (input) {
-    if (this.details.indexOf(input) > -1) {
+  this.deleteDetail = function(input) {
+    if(this.details.indexOf(input) > -1) {
       this.details.splice(this.details.indexOf(input), 1);
+      this.detailError = 'Successfully deleted!';
+      this.detailClass = 'text-success';
+      this.detail = '';
     }
   };
 
-  this.createEntry = function () {
+  this.createEntry = function() {
     var entry = {
       name: this.entryName,
       type: this.type,
@@ -94,7 +97,7 @@ export function createEntryController(Auth, $http, $state) {
       author: this.currentUser
     };
 
-    if (this.startDate && this.endDate) {
+    if(this.startDate && this.endDate) {
       entry = {
         name: this.entryName,
         startDate: this.startDate,
@@ -119,11 +122,12 @@ export function createEntryController(Auth, $http, $state) {
       });
   };
 
-  this.resetForm = function () {
+  this.resetForm = function() {
     this.entryName = '';
     this.startDate = '';
     this.endDate = '';
-    this.details = '';
+    this.details = [];
+    this.detail = '';
     this.message = '';
     this.tags = '';
     this.type = '';

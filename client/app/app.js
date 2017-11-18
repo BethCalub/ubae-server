@@ -29,18 +29,19 @@ import util from '../components/util/util.module';
 import socket from '../components/socket/socket.service';
 import ubae from './ubae/ubae.component';
 import ResponseComponent from './response/response.component';
-import EventComponent from './event/event.component';
+
 import FeedbackComponent from './feedback/feedback.component';
-import LocationComponent from './location/location.component';
+
 import InformationComponent from './information/information.component';
-import InstructionComponent from './instruction/instruction.component';
-import ProviderComponent from './provider/provider.component';
+
+
 
 import DevelopmentComponent from './development/development.component';
 
 import MaintenanceComponent from './maintenance/maintenance.component';
 import CreateEntryController from './maintenance/createEntry/createEntry.controller';
 import EditEntryController from './maintenance/editEntry/editEntry.controller';
+import EntriesController from './maintenance/entries/entries.controller';
 
 import './app.scss';
 
@@ -48,16 +49,13 @@ angular.module('ubaeApiApp', [ngAnimate, ngCookies, ngResource, ngSanitize, 'btf
   uiBootstrap, _Auth, account, admin, 'validation.match', ubae, modal, navbar, footer, main, constants,
   socket, util, statusbar,
   ResponseComponent,
-  EventComponent,
   FeedbackComponent,
-  LocationComponent,
   InformationComponent,
-  InstructionComponent,
-  ProviderComponent,
   DevelopmentComponent,
   MaintenanceComponent,
   CreateEntryController,
-  EditEntryController
+  EditEntryController,
+  EntriesController
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {
