@@ -14,6 +14,8 @@ export class ResponseComponent {
     this.$anchorScroll.yOffset = 60;
     this.currentUser = Auth.getCurrentUserSync().name;
 
+    this.currentPage = 1;
+
     //connection to the server
     this.endpoint = {
       link: '/api/responses',

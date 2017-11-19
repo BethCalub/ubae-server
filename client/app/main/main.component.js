@@ -17,12 +17,6 @@ export class MainController {
     this.responses = '/api/responses';
     this.feedbacks = '/api/feedbacks';
 
-    this.alertMe = function(message) {
-      setTimeout(function() {
-        $window.alert(message);
-      });
-    };
-
     // $scope.$on('$destroy', function() {
     //   socket.unsyncUpdates('information');
     // });
@@ -35,6 +29,11 @@ export class MainController {
 
   $onInit() {
     this.scrollTo('top');
+      // Kick off the interval
+    this.getUpdate();
+  }
+
+  getUpdate() {
     this.$http.get(this.informations)
     .then(response => {
       this.informationEntries = response.data;

@@ -1,7 +1,7 @@
 'use strict';
 
 import Response from '../../response/response.model';
-import Feedback from '../../feedback/feedback.model';
+// import Feedback from '../../feedback/feedback.model';
 import messages from '../../../config/data/message.ubae';
 
 function ubaeInput(userInput, ubae) {
@@ -22,17 +22,17 @@ function ubaeResponse(message, story, entries) {
   };
 }
 
-function createFeedback(_in, cmd, mod, tag, ubaeresponse = '') {
-  Feedback.create({
-    userinput: _in,
-    command: cmd,
-
-    keywords: tag,
-
-    timestamp: Date.now()
-  })
-  .then(() => console.log('Successfully added feedback.'))
-  .catch(err => console.log('Failed adding feedback.', err));
+function updateCount(id, count) {
+  Response.findOneAndUpdate({_id: id}, {
+    searched: count + 1
+  }, {
+    new: true,
+    upsert: true,
+    setDefaultsOnInsert: true,
+    runValidators: true
+  }).exec()
+  .then(() => console.log('Successfully updated search count.'))
+  .catch(err => console.log('Failed to update search count.', err));
 }
 
 exports.response = function(req, res, userInput, ubae) {
@@ -42,13 +42,14 @@ exports.response = function(req, res, userInput, ubae) {
       $all: ubae.keywords
     }
   })
-  .select('message')
+  .select('message searched')
   .exec(function(err, story) {
     var msg = '';
     if(err) throw err;
     var length = 1;
     try {
       msg = story.message;
+      updateCount(story._id, story.searched);
       return res.send({
         user: ubaeInput(userInput, ubae),
         result: ubaeResponse(msg, story, length),

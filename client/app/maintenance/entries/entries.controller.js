@@ -14,10 +14,21 @@ export function entriesController(Auth, $http, $scope, socket, $anchorScroll, $l
   this.$location = $location;
   this.$anchorScroll.yOffset = 60;
 
+  this.currentPage = 1;
+
   //connection to the server
   this.endpoint = {
     link: '/api/informations',
     socket: 'information'
+  };
+
+  this.sortType = '-searched';
+  
+  this.sortSelect = {
+     // 'All Entries': '',
+    'Most Frequent': '-searched',
+    'Latest Entries': '-created.date',
+    'Recently Modified': 'modified.date'
   };
 
   $scope.$on('$destroy', function() {

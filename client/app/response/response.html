@@ -76,8 +76,8 @@
         </uib-tabset>
       </div>
     </div>
-    <div class="info" ng-repeat="entries in responseCtrl.entryList | orderBy: '-entries.added' |
-            filter: { message: responseCtrl.searchTags, active: responseCtrl.filter.archive.selected } | limitTo: 10:(responseCtrl.currentPage-1)*10">
+    <div class="info" ng-repeat="entries in responseCtrl.entryList | filter: { active: responseCtrl.filter.archive.selected, message: responseCtrl.searchTags } | limitTo: 10:(responseCtrl.currentPage-1)*10">
+        <!--   -->
       <div class="row">
         <div class="col-md-12">
           <h3>Response {{$index + 1}}
@@ -86,6 +86,9 @@
               <strong>by: {{entries.created.author}}</strong>,
               <span>{{entries.created.date | date: 'mediumDate'}}, {{entries.created.date | date: 'mediumTime'}}</span>
             </h6>
+            <h6 style="text-indent: 15px" ng-show="entries.searched > 0">
+                searched: <strong>{{entries.searched}}</strong> times
+              </h6>
         </div>
       </div>
       <div class="row">

@@ -4,8 +4,6 @@ import Ubaguio from '../../information/information.model';
 import Feedback from '../../feedback/feedback.model';
 import ErrorMessage from '../../../config/data/message.ubae';
 
-console.log('Hello World');
-
 function updateCount(id, count) {
   Ubaguio.findOneAndUpdate({_id: id}, {
     searched: count + 1

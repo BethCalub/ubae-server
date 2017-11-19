@@ -67,7 +67,9 @@ function handleError(res, statusCode) {
 
 // Gets a list of Responses
 export function index(req, res) {
-  return Response.find().exec()
+  return Response.find()
+    .sort('-searched')
+    .exec()
     .then(respondWithResult(res))
     .catch(handleError(res));
 }

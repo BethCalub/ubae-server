@@ -52,7 +52,20 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-offset-8 col-md-4">
+        <div class="col-md-offset-6 col-md-2">
+            <div class="form-group">
+              <!-- <label class="sr-only" for="search">Search</label> -->
+              <!-- <input type="text" class="form-control input-sm" id="search" ng-model="entriesCtrl.searchTags" uib-tooltip="Search for information contained in the {{entriesCtrl.tableName}} database. This will filter out the information as you type."
+                tooltip-placement="bottom" placeholder="Search {{entriesCtrl.dataInfo.name}}"> -->
+                <select ng-model="entriesCtrl.sortType" name="response" ng-options="x for (x, y) in entriesCtrl.sortSelect" class="form-control input-sm"
+                required="required">
+              </select>
+            </div>
+            
+
+            
+          </div>
+      <div class="col-md-4">
         <div class="form-group">
           <!-- <label class="sr-only" for="search">Search</label> -->
           <input type="text" class="form-control input-sm" id="search" ng-model="entriesCtrl.searchTags" uib-tooltip="Search for information contained in the {{entriesCtrl.tableName}} database. This will filter out the information as you type."
@@ -78,8 +91,8 @@
         </uib-tabset>
       </div>
     </div>
-    <div class="info" ng-repeat="entries in entriesCtrl.entryList |
-            filter: { name: entriesCtrl.searchTags, active: entriesCtrl.filter.archive.selected } | orderBy: '-searched' | limitTo: 10:(entriesCtrl.currentPage-1)*10">
+    <div class="info" ng-repeat="entries in entriesCtrl.entryList | orderBy: entriesCtrl.sortType |
+            filter: { name: entriesCtrl.searchTags, active: entriesCtrl.filter.archive.selected } | limitTo: 10:(entriesCtrl.currentPage-1)*10">
       <div class="row">
         <div class="col-md-12">
           <h3>{{$index + 1}}. {{entries.name}}
