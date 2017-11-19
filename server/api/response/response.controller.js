@@ -85,8 +85,10 @@ export function create(req, res) {
   return Response.create({
     message: req.body.message,
     tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags)),
-    author: req.body.author,
-    added: req.body.added
+    created: {
+      author: req.body.author,
+      date: req.body.date
+    }
   })
     .then(respondWithResult(res, 201))
     .catch(handleError(res));

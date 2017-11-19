@@ -38,66 +38,12 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid" id="responseForm" uib-collapse="!responseCtrl.isCollapsed">
-    <form role="form" name="responseForm" novalidate>
-      <div class="row">
-        <div class="col-md-12">
-          <h3>Add/Edit Entry</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="form-group">
-            <label class="control-label" for="message">Message</label>
-            <textarea name="message" ng-model="responseCtrl.message" id="input${1/(\w+)/\u\1/g}" popover-title="Message" uib-popover="The 'message' variable contains the sentence form of 'info' which will serve as UBAEs reply. Try to make it witty as possible as to emulate more human-like thinking."
-              popover-popup-delay="1500" popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Message" rows="3"
-              style="resize: none;" required></textarea>
-          </div>
-          <div class="form-group has-error">
-            <p class="help-block" ng-show="responseForm.message.$invalid && responseForm.message.$touched">
-              Please enter a valid message for this entry.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="form-group">
-            <label class="control-label" for="tags">Tags</label>
-            <textarea name="tags" ng-model="responseCtrl.tags" id="input${1/(\w+)/\u\1/g}" popover-title="Keywords" uib-popover="The variable 'tags' contains keywords that will be detected to determine which data UBAE will use as a response to the inquiry. Try to add more tags which are possible keywords."
-              popover-popup-delay="1500" popover-trigger="'mouseenter'" class="form-control" placeholder="Entry Keywords" rows="3"
-              style="resize: none;" required></textarea>
-          </div>
-          <div class="form-group has-error">
-            <p class="help-block" ng-show="responseForm.tags.$invalid && responseForm.tags.$touched">
-              Please enter valid tags for this entry.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-offset-8 col-md-4">
-          <label class="control-label">&nbsp;
-            <span ng-show="!responseCtrl.confirmSave">Are you sure you want to proceed?</span>
-          </label>
-          <div class="btn-group btn-group-justified" ng-init="responseCtrl.confirmSave = true" ng-show="responseCtrl.confirmSave">
-            <a ng-click="responseCtrl.confirmSave = false" ng-hide="responseForm.$invalid" class="btn btn-danger">Save</a>
-            <a ng-click="responseCtrl.resetForm()" class="btn btn-warning">Reset</a>
-            <a ng-click="responseCtrl.isCollapsed = false; responseCtrl.resetForm()" class="btn btn-default">Close</a>
-          </div>
-          <div class="btn-group btn-group-justified" ng-show="!responseCtrl.confirmSave">
-            <a ng-click="responseCtrl.saveEntry(); responseCtrl.confirmSave = true" ng-hide="responseForm.$invalid" class="btn btn-danger">Confirm</a>
-            <a ng-click="responseCtrl.confirmSave = true" class="btn btn-default">Cancel</a>
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
-
   <div class="container-fluid" id="info">
     <div class="row">
       <div class="col-md-12">
         <h4>{{(responseCtrl.entryList | filter: { message: responseCtrl.searchTags, active: responseCtrl.filter.archive.selected
           }).length}} {{responseCtrl.dataInfo.name}} Entries:
-          <a ng-click="responseCtrl.isCollapsed = true; responseCtrl.resetForm(); responseCtrl.scrollTo('responseForm');" uib-popover="This action will open the create form."
+          <a ui-sref="createResponse" uib-popover="This action will open the create form."
             popover-popup-delay="1500" popover-trigger="'mouseenter'" popover-placement="right" class="btn btn-link" style="text-decoration: none;"
             href="">Create New</a>
         </h4>
@@ -136,8 +82,10 @@
         <div class="col-md-12">
           <h3>Response {{$index + 1}}
           </h3>
-          <h6>
-              <i class="fa fa-fw fa-user"></i> {{entries.author}}</h6>
+          <h6 style="text-indent: 15px" ng-if="entries.created.author">
+              <strong>by: {{entries.created.author}}</strong>,
+              <span>{{entries.created.date | date: 'mediumDate'}}, {{entries.created.date | date: 'mediumTime'}}</span>
+            </h6>
         </div>
       </div>
       <div class="row">
@@ -161,17 +109,23 @@
           </p>
         </div>
       </div>
-      <div class="row">
+      <div class="row" ng-show="entries.modified.date && entries.modified.author">
         <div class="col-md-12 text-right">
-          <h6>Added: {{entries.added | date: 'longDate'}}, {{entries.added | date: 'mediumTime'}}</h6>
-          <h6 ng-show="entries.modified">Modified: {{entries.modified | date: 'longDate'}}, {{entries.modified | date: 'mediumTime'}}</h6>
+          <h6>Modified: {{entries.modified.date | date: 'longDate'}}, {{entries.modified.date | date: 'mediumTime'}}</h6>
+          <h6 style="text-indent: 30px">by: {{entries.modified.author}}</h6>
         </div>
       </div>
+      <div class="row" ng-show="entries.archived.date && entries.archived.author && responseCtrl.filter.archive.selected == 'false'">
+          <div class="col-md-12 text-right">
+            <h6>Archived: {{entries.archived.date | date: 'longDate'}}, {{entries.archived.date | date: 'mediumTime'}}</h6>
+            <h6 style="text-indent: 30px">by: {{entries.archived.author}}</h6>
+          </div>
+        </div>
       <div class="row">
         <br>
         <div class="col-md-12 text-right">
           <div class="btn-group" ng-if="responseCtrl.filter.archive.selected == 'true'">
-            <a ng-click="responseCtrl.getEntry(entries._id); responseCtrl.scrollTo('responseForm');" uib-tooltip="Edit {{entries.name}} Entry"
+            <a ui-sref="editResponse({id: entries._id})" uib-tooltip="Edit {{entries.name}} Entry"
               tooltip-placement="top-right" class="btn btn-default">
               <i class="fa fa-fw fa-edit"></i>Edit</a>
             <a ng-click="responseCtrl.confirm = false; responseCtrl.confirmationId = entries._id; responseCtrl.confirmationName = 'archive'"
@@ -191,7 +145,7 @@
         </div>
       </div>
     </div>
-    <div class="row">
+    <div class="row" ng-show="(responseCtrl.entryList | filter: { message: responseCtrl.searchTags, active: responseCtrl.filter.archive.selected }).length > 10">
       <div class="col-md-12 text-center">
         <ul ng-click="responseCtrl.scrollTo('info');" uib-pagination total-items="(responseCtrl.entryList | filter: { name: responseCtrl.searchTags, active: responseCtrl.filter.archive.selected }).length"
           ng-model="responseCtrl.currentPage" max-size="5" class="pagination-sm" boundary-links="true" force-ellipses="true"></ul>

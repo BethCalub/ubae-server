@@ -9,7 +9,7 @@ export default function($stateProvider) {
     })
     .state('createEntry', {
       // url: '/maintenance/create',
-      template: require('./createEntry/createEntry.html'),
+      template: require('./create/createEntry.html'),
       controller: 'CreateEntryController',
       controllerAs: 'createEntryCtrl',
       authenticate: true,
@@ -19,7 +19,7 @@ export default function($stateProvider) {
     })
     .state('editEntry', {
       // url: '/maintenance/edit/:id',
-      template: require('./editEntry/editEntry.html'),
+      template: require('./edit/editEntry.html'),
       controller: 'EditEntryController',
       controllerAs: 'editEntryCtrl',
       authenticate: true,
