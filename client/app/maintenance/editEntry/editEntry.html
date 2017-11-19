@@ -6,13 +6,17 @@
       </div>
     </div>
     <div class="row" ng-hide="editEntryCtrl.stepThree">
+      <div class="col-md-12">
+        <h3>{{editEntryCtrl.entryName}}</h3>
+        <h4>{{editEntryCtrl.type | uppercase}} ENTRY</h4>
+        <h5 ng-if="editEntryCtrl.type == 'when'">{{editEntryCtrl.startDate | date: 'longDate'}} to {{editEntryCtrl.endDate | date: 'longDate'}}</h5>
+      </div>
+    </div>
+    <div class="row" ng-hide="editEntryCtrl.stepThree">
       <div class="col-md-12" ng-show="true">
         <h3>
           <strong>Step 1. </strong>Modify necessary information.</h3>
         <hr>
-        <h3>{{editEntryCtrl.entryName}}</h3>
-        <h4>{{editEntryCtrl.type | uppercase}} ENTRY</h4>
-        <h5 ng-if="editEntryCtrl.type == 'when'">{{editEntryCtrl.startDate | date: 'longDate'}} to {{editEntryCtrl.endDate | date: 'longDate'}}</h5>
       </div>
     </div>
     <div class="row" ng-hide="editEntryCtrl.stepThree">
@@ -93,7 +97,7 @@
           <button type="submit" ng-click="editEntryCtrl.stepThree = true; editEntryCtrl.stepOne = true; editEntryCtrl.stepTwo = false"
             ng-show="newEntry.$valid && editEntryCtrl.details.length > 0 && editEntryCtrl.tags.length > 0" class="btn btn-danger">Submit</button>
           <button type="submit" ng-click="editEntryCtrl.resetForm()" class="btn btn-warning">Reset to Default</button>
-          <button type="submit" ui-sref="main" class="btn btn-default">Cancel</button>
+          <button type="submit" ui-sref="viewEntries({type: editEntryCtrl.type})" class="btn btn-default">Cancel</button>
         </div>
       </div>
     </div>
@@ -101,7 +105,7 @@
     <div class="row">
       <div class="col-md-12" ng-show="editEntryCtrl.stepThree">
         <h3>
-          <strong>Step 3. </strong>Verify and confirm all the information.</h3>
+          <strong>Step 2. </strong>Verify and confirm all the information.</h3>
         <hr>
         <div>
           <h4>{{editEntryCtrl.entryName}}</h4>

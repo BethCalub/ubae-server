@@ -2,7 +2,7 @@
 const angular = require('angular');
 
 /*@ngInject*/
-export function createEntryController(Auth, $http, $state) {
+export function createEntryController(Auth, $http, $state, $stateParams) {
   this.currentUser = Auth.getCurrentUserSync().name;
   this.$http = $http;
   this.$state = $state;
@@ -16,14 +16,14 @@ export function createEntryController(Auth, $http, $state) {
     'Item 4'
   ];
 
-  this.type = '';
+  this.type = $stateParams.type;
   this.typeSelect = {
     'Select a Type': '',
-    Information: 'WHAT',
-    Event: 'WHEN',
-    Location: 'WHERE',
-    Instruction: 'HOW',
-    Provider: 'WHICH'
+    Information: 'what',
+    Event: 'when',
+    Location: 'where',
+    Instruction: 'how',
+    Provider: 'which'
   };
 
   this.altInputFormats = ['M!/d!/yyyy'];
@@ -129,7 +129,7 @@ export function createEntryController(Auth, $http, $state) {
     this.detail = '';
     this.message = '';
     this.tags = '';
-    this.type = '';
+    this.type = $stateParams.type;
   };
 }
 

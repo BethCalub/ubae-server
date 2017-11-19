@@ -12,10 +12,13 @@ export default function($stateProvider) {
       template: require('./createEntry/createEntry.html'),
       controller: 'CreateEntryController',
       controllerAs: 'createEntryCtrl',
-      authenticate: true
+      authenticate: true,
+      params: {
+        type: ''
+      }
     })
     .state('editEntry', {
-      url: '/maintenance/edit/:id',
+      // url: '/maintenance/edit/:id',
       template: require('./editEntry/editEntry.html'),
       controller: 'EditEntryController',
       controllerAs: 'editEntryCtrl',

@@ -56,6 +56,16 @@ var InformationSchema = new mongoose.Schema({
       required: false
     }
   },
+  archived: {
+    author: {
+      type: String,
+      required: false
+    },
+    date: {
+      type: Date,
+      required: false
+    }
+  },
   active: {
     type: Boolean,
     default: true,

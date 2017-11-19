@@ -2,11 +2,13 @@
 const angular = require('angular');
 
 /*@ngInject*/
-export function entriesController($http, $scope, socket, $anchorScroll, $location, $state, $stateParams) {
+export function entriesController(Auth, $http, $scope, socket, $anchorScroll, $location, $state, $stateParams) {
   this.$http = $http;
   this.socket = socket;
   this.$state = $state;
   this.entryID = '';
+
+  this.getCurrentUser = Auth.getCurrentUserSync().name;
 
   this.$anchorScroll = $anchorScroll;
   this.$location = $location;
@@ -22,14 +24,19 @@ export function entriesController($http, $scope, socket, $anchorScroll, $locatio
     socket.unsyncUpdates(this.endpoint.socket);
   });
 
+  this.type = $stateParams.type;
+
   //get all entries
+  this.eventStatus = 'Loading Data...';
   this.$http.get(this.endpoint.link + '?type=' + $stateParams.type)
     .then(response => {
       this.entryList = response.data;
       this.socket.syncUpdates(this.endpoint.socket, this.entryList);
+      this.eventStatus = 'Data Successfully Loaded!';
       console.log(response.statusText);
     }, err => {
       console.log(err.statusText);
+      this.eventStatus = 'Data Failed to Load!';
     });
 
   //data information
@@ -115,8 +122,12 @@ export function entriesController($http, $scope, socket, $anchorScroll, $locatio
   this.archiveEntry = function(_id) {
     this.eventStatus = 'Processing...';
     this.$http.put(this.endpoint.link + '/' + _id, {
-        active: false
-      })
+      active: false,
+      archived: {
+        author: this.getCurrentUser,
+        date: new Date(Date.now())
+      }
+    })
       .then(response => {
         this.eventStatus = this.status.archive.success;
         console.log(response.statusText);

@@ -16,8 +16,6 @@ function onConnect(socket) {
   });
 
   // Insert sockets below
-  require('../api/ubaguio/ubaguio.socket').register(socket);
-
   require('../api/information/information.socket').register(socket);
   require('../api/feedback/feedback.socket').register(socket);
   require('../api/response/response.socket').register(socket);

@@ -46,7 +46,7 @@
       <div class="col-md-12">
         <h4>{{(entriesCtrl.entryList | filter: { name: entriesCtrl.searchTags, active: entriesCtrl.filter.archive.selected }).length}}
           {{entriesCtrl.dataInfo.name}} Entries:
-          <a ui-sref="createEntry" uib-popover="This action will open the create form." popover-popup-delay="1500" popover-trigger="'mouseenter'"
+          <a ui-sref="createEntry({type: entriesCtrl.type})" uib-popover="This action will open the create form." popover-popup-delay="1500" popover-trigger="'mouseenter'"
             popover-placement="right" class="btn btn-link" style="text-decoration: none;" href="">Create New</a>
         </h4>
       </div>
@@ -79,7 +79,7 @@
       </div>
     </div>
     <div class="info" ng-repeat="entries in entriesCtrl.entryList |
-            filter: { name: entriesCtrl.searchTags, active: entriesCtrl.filter.archive.selected } | limitTo: 10:(entriesCtrl.currentPage-1)*10">
+            filter: { name: entriesCtrl.searchTags, active: entriesCtrl.filter.archive.selected } | orderBy: '-searched' | limitTo: 10:(entriesCtrl.currentPage-1)*10">
       <div class="row">
         <div class="col-md-12">
           <h3>{{$index + 1}}. {{entries.name}}
@@ -88,6 +88,9 @@
             <strong>by: {{entries.created.author}}</strong>,
             <span>{{entries.created.date | date: 'mediumDate'}}, {{entries.created.date | date: 'mediumTime'}}</span>
           </h6>
+          <h6 style="text-indent: 15px" ng-show="entries.searched > 0">
+              searched: <strong>{{entries.searched}}</strong> times
+            </h6>
         </div>
       </div>
       <div class="row">
@@ -124,6 +127,12 @@
           <h6 style="text-indent: 30px">by: {{entries.modified.author}}</h6>
         </div>
       </div>
+      <div class="row" ng-show="entries.archived.date && entries.archived.author && entriesCtrl.filter.archive.selected == 'false'">
+          <div class="col-md-12 text-right">
+            <h6>Archived: {{entries.archived.date | date: 'longDate'}}, {{entries.archived.date | date: 'mediumTime'}}</h6>
+            <h6 style="text-indent: 30px">by: {{entries.archived.author}}</h6>
+          </div>
+        </div>
       <div class="row">
         <br>
         <div class="col-md-12 text-right">

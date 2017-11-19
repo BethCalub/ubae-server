@@ -26,7 +26,7 @@
             </select>
             <p class="help-block">This would be the classification of this entry.</p>
           </div>
-          <div class="form-group" ng-if="createEntryCtrl.type === 'WHEN'" ng-class="{ 'has-success': newEntry.startDate.$valid && newEntry.startDate.$dirty,
+          <div class="form-group" ng-if="createEntryCtrl.type === 'when'" ng-class="{ 'has-success': newEntry.startDate.$valid && newEntry.startDate.$dirty,
                 'has-error': newEntry.startDate.$invalid && newEntry.startDate.$dirty }">
             <label class="control-label" for="startDate">Start Date</label>
             <div class="input-group">
@@ -42,7 +42,7 @@
             <p class="help-block">This must contain the start date of this entry.
               <br>**The start date must not be earlier than the date today.</p>
           </div>
-          <div class="form-group" ng-if="createEntryCtrl.type === 'WHEN' && newEntry.startDate.$valid" ng-class="{ 'has-success': newEntry.endDate.$valid && newEntry.endDate.$dirty,
+          <div class="form-group" ng-if="createEntryCtrl.type === 'when' && newEntry.startDate.$valid" ng-class="{ 'has-success': newEntry.endDate.$valid && newEntry.endDate.$dirty,
                 'has-error': newEntry.endDate.$invalid && newEntry.endDate.$dirty }">
             <label class="control-label" for="endDate">End Date</label>
             <div class="input-group">
@@ -73,7 +73,7 @@
             <hr>
             <div class="form-group" ng-class="{ 'has-success': newEntry.tags.$valid && newEntry.tags.$dirty, 'has-error': newEntry.tags.$invalid && newEntry.tags.$dirty }">
               <label class="control-label" for="tags">Inquiry</label>
-              <textarea name="tags" style="resize: none;" placeholder="Separate the tags using a 'comma'. Ex. tag 1, tag 2, tag 3" ng-model="createEntryCtrl.tags"
+              <textarea name="tags" style="resize: none;" placeholder="Tip: Try to make the reference inquiry as complex as possible." ng-model="createEntryCtrl.tags"
                 id="tags" class="form-control" rows="3" required></textarea>
               <p class="help-block">This must contain the most complex inquiry for this entry.
                 <br>The inquiry would be processed into keywords.

@@ -1,6 +1,6 @@
 'use strict';
 
-import Ubaguio from '../../ubaguio/ubaguio.model';
+import Ubaguio from '../../information/information.model';
 import Feedback from '../../feedback/feedback.model';
 import ErrorMessage from '../../../config/data/message.ubae';
 

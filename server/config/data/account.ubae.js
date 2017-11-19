@@ -6,7 +6,6 @@ var account = [{
   password: 'admin'
 }, {
   provider: 'local',
-  role: 'admin',
   name: 'Edgar Allan Macatulad',
   email: 'earmix@ubae.com',
   password: 'earmix'
