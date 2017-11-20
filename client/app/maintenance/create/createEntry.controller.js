@@ -9,6 +9,8 @@ export function createEntryController(Auth, $http, $state, $stateParams) {
 
   this.details = [];
 
+  this.referrer = $stateParams.type;
+  
   this.searchResult = [
     'Item 1',
     'Item 2',
@@ -114,7 +116,7 @@ export function createEntryController(Auth, $http, $state, $stateParams) {
       .then(response => {
         this.resetForm();
         console.log(response.statusText);
-        this.$state.go('promptSuccess');
+        this.$state.go('promptSuccess', { action: 'Created', referrer: entry.type});
       }, err => {
         this.$state.go('promptError');
         console.log(err.statusText);

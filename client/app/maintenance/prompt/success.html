@@ -3,13 +3,13 @@
     <div class="row" id="prompt">
       <div class="col-md-6 text-center">
         <i class="fa fa-5x fa-check-circle fa-fw text-success"></i>
-        <h1>Action Successful!</h1>
+        <h1>{{promptCtrl.action}} Successful!</h1>
         <hr>
-        <p>You may now return back home, 
+        <p>You may now return back <a ui-sref="main">home</a>, 
           <a ui-sref="createEntry">create</a> a new entry, or 
-          <a ui-sref="editEntry">modify</a> existing entries.</p>
+          <a ui-sref="viewEntries({type: promptCtrl.referrer})">view</a> existing entries.</p>
           <hr>
-        <button type="button" ui-sref="main" class="btn btn-link">Back to Home</button>
+        <button type="button" ui-sref="viewEntries({type: promptCtrl.referrer})" class="btn btn-link">Great! Dissmiss this message. </button>
       </div>
     </div>
   </div>

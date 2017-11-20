@@ -89,21 +89,34 @@ export function show(req, res) {
 
 // Creates a new Information in the DB
 export function create(req, res) {
-  return Information.create({
-    name: req.body.name,
+  var searchName = new RegExp('^' + req.body.name + '$', "i");
+  console.log(searchName);
+  Information.find({
+    name: searchName,
     type: req.body.type,
-    details: req.body.details,
-    message: req.body.message,
-    startDate: req.body.startDate,
-    endDate: req.body.endDate,
-    created: {
-      author: req.body.author,
-      date: new Date(Date.now())
-    },
-    tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags))
-  })
-    .then(respondWithResult(res, 201))
-    .catch(handleError(res));
+    active: true
+  }).exec(function(err, data) {
+    console.log(data.length);
+    if(data.length < 1) {
+      return Information.create({
+        name: req.body.name,
+        type: req.body.type,
+        details: req.body.details,
+        message: req.body.message,
+        startDate: req.body.startDate,
+        endDate: req.body.endDate,
+        created: {
+          author: req.body.author,
+          date: new Date(Date.now())
+        },
+        tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags))
+      })
+        .then(respondWithResult(res, 201))
+        .catch(handleError(res));
+    } else {
+      res.status(401).send(err);
+    }
+  });
 }
 
 // Upserts the given Information in the DB at the specified ID

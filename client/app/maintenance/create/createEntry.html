@@ -13,10 +13,10 @@
         <hr>
           <div class="form-group" ng-class="{ 'has-success': newEntry.entryName.$valid && newEntry.entryName.$dirty,
                     'has-error': newEntry.entryName.$invalid && newEntry.entryName.$dirty }">
-            <label class="control-label" for="entryName">Name</label>
+            <label class="control-label" for="entryName">Entry Name</label>
             <input class="form-control" id="entryName" placeholder="Enter the name of this entry." ng-model="createEntryCtrl.entryName"
               name="entryName" type="text" required>
-            <p class="help-block">This must contain a name that is related to the information contained in this entry.</p>
+            <p class="help-block" ng-hide="newEntry.entryName.$valid && newEntry.entryName.$dirty">This must contain a name that is related to the information contained in this entry.</p>
           </div>
           <div class="form-group" ng-class="{ 'has-success': newEntry.type.$valid && newEntry.type.$dirty,
               'has-error': newEntry.type.$invalid && newEntry.type.$dirty }">
@@ -24,7 +24,7 @@
             <select name="type" id="type" class="form-control" ng-model="createEntryCtrl.type" ng-options="x for (x, y) in createEntryCtrl.typeSelect"
               required="required">
             </select>
-            <p class="help-block">This would be the classification of this entry.</p>
+            <p class="help-block" ng-hide="newEntry.type.$valid && newEntry.type.$dirty">This would be the classification of this entry.</p>
           </div>
           <div class="form-group" ng-if="createEntryCtrl.type === 'when'" ng-class="{ 'has-success': newEntry.startDate.$valid && newEntry.startDate.$dirty,
                 'has-error': newEntry.startDate.$invalid && newEntry.startDate.$dirty }">
@@ -39,7 +39,7 @@
                 </button>
               </span>
             </div>
-            <p class="help-block">This must contain the start date of this entry.
+            <p class="help-block" ng-hide="newEntry.startDate.$valid && newEntry.startDate.$dirty">This must contain the start date of this entry.
               <br>**The start date must not be earlier than the date today.</p>
           </div>
           <div class="form-group" ng-if="createEntryCtrl.type === 'when' && newEntry.startDate.$valid" ng-class="{ 'has-success': newEntry.endDate.$valid && newEntry.endDate.$dirty,
@@ -55,9 +55,9 @@
                 </button>
               </span>
             </div>
-            <p class="help-block">This must contain the end date of this entry.
+            <p class="help-block" ng-hide="newEntry.endDate.$valid && newEntry.endDate.$dirty">This must contain the end date of this entry.
               <br>**The end date must not be earlier than the start date.</p>
-            <p class="help-block" ng-if="createEntryCtrl.startDate < createEntryCtrl.endDate">Please check the start date and end date.</p>
+            <p class="help-block" ng-if="createEntryCtrl.startDate > createEntryCtrl.endDate">Please check the start date and end date.</p>
           </div>
           <h3>
               Add a response message.</h3>
@@ -66,7 +66,7 @@
               <label class="control-label" for="message">Message</label>
               <textarea name="message" style="resize: none;" placeholder="Enter a message UBAE will use to respond when this entry is searched."
                 ng-model="createEntryCtrl.message" id="message" class="form-control" rows="3" required></textarea>
-              <p class="help-block">This must contain that UBAE would use to respond if this entry is searched.</p>
+              <p class="help-block" ng-hide="newEntry.message.$valid && newEntry.message.$dirty">This must contain that UBAE would use to respond if this entry is searched.</p>
             </div>
           <h3>
               Add a reference inquiry.</h3>
@@ -75,15 +75,15 @@
               <label class="control-label" for="tags">Inquiry</label>
               <textarea name="tags" style="resize: none;" placeholder="Tip: Try to make the reference inquiry as complex as possible." ng-model="createEntryCtrl.tags"
                 id="tags" class="form-control" rows="3" required></textarea>
-              <p class="help-block">This must contain the most complex inquiry for this entry.
-                <br>The inquiry would be processed into keywords.
+              <p class="help-block" ng-hide="newEntry.tags.$valid && newEntry.tags.$dirty">This must contain a unique inquiry that would help search the entry.
+                <br>The reference inquiry would be processed into useful keywords.
                 <br>**This is important when UBAE is searching for an information.
               </p>
             </div>
       </div>
       <div class="col-md-6">
         <h3>
-          Add more information.</h3>
+          Add more related information.</h3>
         <hr>
         <div class="form-group">
           <label class="control-label" for="detail">Add Detail</label>
@@ -103,6 +103,7 @@
           <p class="{{createEntryCtrl.detailClass}}">{{createEntryCtrl.detailError}}</p>
           <ul>
             <li class="text-danger" ng-hide="createEntryCtrl.details.length > 0">Please add atleast one detail.</li>
+            <li class="text-danger" ng-hide="createEntryCtrl.details.length > 0">Use the add detail input above to add a detail.</li>
             <li ng-repeat="x in createEntryCtrl.details">{{x}}
               <a href="" ng-click="createEntryCtrl.deleteDetail(x)">
                 <strong>remove</strong>
@@ -120,7 +121,8 @@
           <button type="submit" ng-click="createEntryCtrl.stepThree = true; createEntryCtrl.stepOne = true; createEntryCtrl.stepTwo = false"
             ng-show="newEntry.$valid && createEntryCtrl.details.length > 0" class="btn btn-danger">Submit</button>
           <button type="submit" ng-click="createEntryCtrl.resetForm()" class="btn btn-warning">Reset Form</button>
-          <button type="submit" ui-sref="main" class="btn btn-default">Cancel</button>
+          <button type="submit" ui-sref="main" ng-hide="createEntryCtrl.referrer" class="btn btn-default">Cancel</button>
+          <button type="submit" ui-sref="viewEntries({type: createEntryCtrl.referrer})" ng-show="createEntryCtrl.referrer" class="btn btn-default">Cancel</button>
         </div>
       </div>
     </div>

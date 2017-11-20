@@ -125,7 +125,7 @@ export function editEntryController(Auth, $http, $state, $stateParams) {
       .then(response => {
         this.resetForm();
         console.log(response.statusText);
-        this.$state.go('promptSuccess');
+        this.$state.go('promptSuccess', { action: 'Updated', referrer: this.type});
       }, err => {
         this.$state.go('promptError');
         console.log(err.statusText);

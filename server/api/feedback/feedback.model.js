@@ -29,6 +29,11 @@ var FeedbackSchema = new mongoose.Schema({
   archive: {
     type: Boolean,
     default: false
+  },
+  searched: {
+    type: Number,
+    default: 0,
+    required: false
   }
 });
 

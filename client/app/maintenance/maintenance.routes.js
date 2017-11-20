@@ -14,7 +14,8 @@ export default function($stateProvider) {
       controllerAs: 'createEntryCtrl',
       authenticate: true,
       params: {
-        type: ''
+        type: '',
+        referrer: 'main'
       }
     })
     .state('editEntry', {
@@ -22,6 +23,36 @@ export default function($stateProvider) {
       template: require('./edit/editEntry.html'),
       controller: 'EditEntryController',
       controllerAs: 'editEntryCtrl',
+      authenticate: true,
+      params: {
+        id: null
+      }
+    })
+    .state('archiveEntry', {
+      url: '/maintenance/archive/:id',
+      template: require('./archive/archiveEntry.html'),
+      controller: 'ArchiveEntryController',
+      controllerAs: 'archiveEntryCtrl',
+      authenticate: true,
+      params: {
+        id: null
+      }
+    })
+    .state('restoreEntry', {
+      url: '/maintenance/restore/:id',
+      template: require('./restore/restoreEntry.html'),
+      controller: 'RestoreEntryController',
+      controllerAs: 'restoreEntryCtrl',
+      authenticate: true,
+      params: {
+        id: null
+      }
+    })
+    .state('deleteEntry', {
+      url: '/maintenance/delete/:id',
+      template: require('./delete/deleteEntry.html'),
+      controller: 'DeleteEntryController',
+      controllerAs: 'deleteEntryCtrl',
       authenticate: true,
       params: {
         id: null
@@ -39,7 +70,13 @@ export default function($stateProvider) {
     })
     .state('promptSuccess', {
       // url: '/maintenance/success',
-      template: require('./prompt/success.html')
+      template: require('./prompt/success.html'),
+      controller: 'PromptController',
+      controllerAs: 'promptCtrl',
+      params: {
+        action: 'Action',
+        referrer: 'main'
+      }
     })
     .state('promptError', {
       // url: '/maintenance/failed',

@@ -1,0 +1,60 @@
+<div class="section">
+  <div class="container" style="padding: 60px 15px">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Restore Entry</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>
+          <strong>Verify</strong> and
+          <strong>confirm</strong> that this is the entry you want to restore.</h3>
+        <hr>
+        <div>
+          <h4>{{restoreEntryCtrl.entryName}}</h4>
+          <h5 ng-show="restoreEntryCtrl.type">
+            <strong>{{restoreEntryCtrl.type | uppercase}}</strong> ENTRY</h5>
+          <h6>created by:
+            <strong>{{restoreEntryCtrl.created.author}}</strong>, {{restoreEntryCtrl.created.date | date: 'longDate'}}</h6>
+          <h6 ng-show="restoreEntryCtrl.modified.author && restoreEntryCtrl.modified.date">modified by:
+            <strong>{{restoreEntryCtrl.modified.author}}</strong>, {{restoreEntryCtrl.modified.date | date: 'longDate'}}</h6>
+          <h6 ng-show="restoreEntryCtrl.archived.author && restoreEntryCtrl.archived.date">archived by:
+            <strong>{{restoreEntryCtrl.archived.author}}</strong>, {{restoreEntryCtrl.archived.date | date: 'longDate'}}</h6>
+          <h6 ng-show="restoreEntryCtrl.startDate">Start Date</h6>
+          <p style="text-indent: 20px">{{restoreEntryCtrl.startDate | date: 'longDate'}}</p>
+          <h6 ng-show="restoreEntryCtrl.endDate">End Date</h6>
+          <p style="text-indent: 20px">{{restoreEntryCtrl.endDate | date: 'longDate'}}</p>
+          <h6 ng-show="restoreEntryCtrl.details">Details</h6>
+          <p style="text-indent: 20px">
+            <ul>
+              <li ng-repeat="i in restoreEntryCtrl.details">{{i}}</li>
+            </ul>
+          </p>
+          <h6 ng-show="restoreEntryCtrl.message">Message</h6>
+          <p style="text-indent: 20px">{{restoreEntryCtrl.message}}</p>
+          <h6 ng-show="restoreEntryCtrl.tags">Keywords</h6>
+          <p style="text-indent: 20px">
+            <ul class="tags">
+              <li ng-repeat="tags in restoreEntryCtrl.tags">
+                <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
+                  {{tags}}
+                </span>
+              </li>
+            </ul>
+          </p>
+        </div>
+        <hr>
+        <p class="text-right">
+          <strong>Are you sure you want to restore this entry.</strong>
+          <br>By restoring this entry, you are allowing this entry to be searched by UBAE.
+          <br>This action cannot be undone.
+        </p>
+        <div class="text-right">
+          <button type="submit" ng-click="restoreEntryCtrl.restoreEntry()" class="btn btn-danger">Yes, I'm Sure!</button>
+          <button type="submit" ui-sref="viewEntries({type: restoreEntryCtrl.type})" class="btn btn-default">No, Go Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
