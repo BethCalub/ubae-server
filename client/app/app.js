@@ -41,6 +41,11 @@ import DeleteEntryController from './maintenance/delete/deleteEntry.controller';
 import EntriesController from './maintenance/entries/entries.controller';
 import PromptController from './maintenance/prompt/prompt.controller';
 
+import ArchiveResponseController from './response/archive/archiveResponse.controller';
+import RestoreResponseController from './response/restore/restoreResponse.controller';
+import DeleteResponseController from './response/delete/deleteResponse.controller';
+import PromptResponseController from './response/prompt/promptResponse.controller';
+
 import CreateResponseController from './response/create/createResponse.controller';
 import EditResponseController from './response/edit/editResponse.controller';
 
@@ -60,7 +65,11 @@ angular.module('ubaeApiApp', [ngAnimate, ngCookies, ngResource, ngSanitize, 'btf
   PromptController,
   ArchiveEntryController,
   RestoreEntryController,
-  DeleteEntryController
+  DeleteEntryController,
+  ArchiveResponseController,
+  RestoreResponseController,
+  DeleteResponseController,
+  PromptResponseController
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {

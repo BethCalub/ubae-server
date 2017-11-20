@@ -19,9 +19,9 @@ export function createResponseController(Auth, $http, $state) {
       .then(response => {
         this.resetForm();
         console.log(response.statusText);
-        this.$state.go('promptSuccess');
+        this.$state.go('promptResponseSuccess');
       }, err => {
-        this.$state.go('promptError');
+        this.$state.go('promptResponseError');
         console.log(err.statusText);
       });
   };

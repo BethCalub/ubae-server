@@ -1,0 +1,45 @@
+<div class="section">
+    <div class="container" style="padding: 60px 15px">
+        <div class="row">
+            <div class="col-md-12">
+              <h2>Delete Entry</h2>
+            </div>
+          </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>
+            <strong>Verify</strong> and <strong>confirm</strong> that this is the entry you want to delete.</h3>
+          <hr>
+          <div>
+            <h4>Response</h4>
+            <h5 ng-show="deleteResponseCtrl.type">
+              <strong>NO COMMAND</strong> ENTRY</h5>
+            <h6>created by: <strong>{{deleteResponseCtrl.created.author}}</strong>, {{deleteResponseCtrl.created.date | date: 'longDate'}}</h6>
+            <h6 ng-show="deleteResponseCtrl.modified.author && deleteResponseCtrl.modified.date">modified by: <strong>{{deleteResponseCtrl.modified.author}}</strong>, {{deleteResponseCtrl.modified.date | date: 'longDate'}}</h6>
+            <h6 ng-show="deleteResponseCtrl.message">Message</h6>
+            <p style="text-indent: 20px">{{deleteResponseCtrl.message}}</p>
+            <h6 ng-show="deleteResponseCtrl.tags">Keywords</h6>
+            <p style="text-indent: 20px">
+              <ul class="tags">
+                <li ng-repeat="tags in deleteResponseCtrl.tags">
+                  <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
+                    {{tags}}
+                  </span>
+                </li>
+              </ul>
+            </p>
+          </div>
+          <hr>
+          <p class="text-right">
+            <strong>Are you sure you want to delete this entry.</strong>
+            <br>This action is permanent.
+            <br>This action cannot be undone.
+          </p>
+          <div class="text-right">
+            <button type="submit" ng-click="deleteResponseCtrl.deleteEntry()" class="btn btn-danger">Yes, I'm Sure!</button>
+            <button type="submit" ui-sref="response"class="btn btn-default">No, Go Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -131,16 +131,16 @@
             <a ui-sref="editResponse({id: entries._id})" uib-tooltip="Edit {{entries.name}} Entry"
               tooltip-placement="top-right" class="btn btn-default">
               <i class="fa fa-fw fa-edit"></i>Edit</a>
-            <a ng-click="responseCtrl.confirm = false; responseCtrl.confirmationId = entries._id; responseCtrl.confirmationName = 'archive'"
+            <a ui-sref="archiveResponse({id: entries._id})"
               uib-tooltip="WARNING!!! This action will archive this entry." tooltip-placement="top-right" class="btn btn-default">
               <i class="fa fa-fw fa-archive"></i>Archive</a>
           </div>
           <div class="btn-group" ng-if="responseCtrl.filter.archive.selected == 'false'">
-            <a ng-click="responseCtrl.confirm = false; responseCtrl.confirmationId = entries._id; responseCtrl.confirmationName = 'restore'"
+            <a ui-sref="restoreResponse({id: entries._id})"
               uib-tooltip="WARNING!!! This action will restore this entry to the active list." tooltip-placement="top-right"
               class="btn btn-default" draggable="true">
               <i class="fa fa-fw fa-rotate-left"></i>Restore</a>
-            <a ng-click="responseCtrl.confirm = false; responseCtrl.confirmationId = entries._id; responseCtrl.confirmationName = 'delete'"
+            <a ui-sref="deleteResponse({id: entries._id})"
               uib-tooltip="WARNING!!! This action will delete this entry." tooltip-placement="top-right" class="btn btn-danger">
               <i class="fa fa-fw fa-trash"></i>Delete</a>
           </div>
