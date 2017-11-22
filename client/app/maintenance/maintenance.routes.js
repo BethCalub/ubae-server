@@ -29,7 +29,7 @@ export default function($stateProvider) {
       }
     })
     .state('archiveEntry', {
-      url: '/maintenance/archive/:id',
+      // url: '/maintenance/archive/:id',
       template: require('./archive/archiveEntry.html'),
       controller: 'ArchiveEntryController',
       controllerAs: 'archiveEntryCtrl',
@@ -39,7 +39,7 @@ export default function($stateProvider) {
       }
     })
     .state('restoreEntry', {
-      url: '/maintenance/restore/:id',
+      // url: '/maintenance/restore/:id',
       template: require('./restore/restoreEntry.html'),
       controller: 'RestoreEntryController',
       controllerAs: 'restoreEntryCtrl',
@@ -49,7 +49,7 @@ export default function($stateProvider) {
       }
     })
     .state('deleteEntry', {
-      url: '/maintenance/delete/:id',
+      // url: '/maintenance/delete/:id',
       template: require('./delete/deleteEntry.html'),
       controller: 'DeleteEntryController',
       controllerAs: 'deleteEntryCtrl',

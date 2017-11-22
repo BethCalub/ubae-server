@@ -29,7 +29,7 @@ export default function($stateProvider) {
       }
     })
     .state('archiveResponse', {
-      url: '/response/archive/:id',
+      // url: '/response/archive/:id',
       template: require('./archive/archiveResponse.html'),
       controller: 'ArchiveResponseController',
       controllerAs: 'archiveResponseCtrl',
@@ -39,7 +39,7 @@ export default function($stateProvider) {
       }
     })
     .state('restoreResponse', {
-      url: '/response/restore/:id',
+      // url: '/response/restore/:id',
       template: require('./restore/restoreResponse.html'),
       controller: 'RestoreResponseController',
       controllerAs: 'restoreResponseCtrl',
@@ -49,7 +49,7 @@ export default function($stateProvider) {
       }
     })
     .state('deleteResponse', {
-      url: '/response/delete/:id',
+      // url: '/response/delete/:id',
       template: require('./delete/deleteResponse.html'),
       controller: 'DeleteResponseController',
       controllerAs: 'deleteResponseCtrl',
