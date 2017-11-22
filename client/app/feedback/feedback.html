@@ -77,6 +77,7 @@
               ng-if="response.resolved == false" class="close">&times;</a>
             <h6>Inquiry {{$index + 1}}</h6>
             <h5 class="text-right" ng-if="response.resolved == true">RESOLVED</h5>
+            <h6 class="text-right" ng-if="response.resolved == true && response.author">by: {{response.author}}</h6>
             <h5 class="text-right">
 
               <a ng-click="feedbackCtrl.confirm = false; feedbackCtrl.confirmationId = response._id; feedbackCtrl.confirmationName = 'resolve'"
