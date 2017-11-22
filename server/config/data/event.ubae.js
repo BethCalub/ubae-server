@@ -17,6 +17,7 @@ var event = [{
   type: 'WHEN',
   message: 'The midterm examinations of the 1st semester will start on the 17th of October and will end on the 20th SY 2017-2018.',
   tags: ['Midterms', 'Examinations', 'Exams', 'SY1718', '1st', 'First', 'Semester'],
+  active: false
 }, {
   name: 'Midterm Examination for School of Law and Graduate School 1st Sem SY 2017-2018',
   details: 'Midterm Exams for School of Law and Graduate School 1st Sem, Oct 1-7,2017 SY 2017-2018',
@@ -25,6 +26,7 @@ var event = [{
   type: 'WHEN',
   message: 'The midterm examination of the 1st semester for the School of Law and Graduate School will be on October 1 to 7 of 2017 SY 2017-2018.',
   tags: ['Midterms', 'Exams', 'Examinations', 'School', 'Law', 'Graduate', 'SY1718', '1st', 'First', 'Semester'],
+  active: false
 }, {
   name: 'Final Examinations 1st Sem SY 2017-2018',
   details: 'Final Exams 1st Sem, Dec 1-6, 2017 SY 2017-2018',

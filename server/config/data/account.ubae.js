@@ -24,11 +24,6 @@ var account = [{
   name: 'Stephanie Odasing',
   email: 'steph@ubae.com',
   password: 'steph'
-}, {
-  provider: 'local',
-  name: 'Bryan Ribo',
-  email: 'bryanribo@ubae.com',
-  password: 'bryanribo'
 }];
 
 exports.account = account;
