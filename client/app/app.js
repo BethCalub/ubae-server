@@ -28,30 +28,48 @@ import constants from './app.constants';
 import util from '../components/util/util.module';
 import socket from '../components/socket/socket.service';
 import ubae from './ubae/ubae.component';
+
 import ResponseComponent from './response/response.component';
-import EventComponent from './event/event.component';
 import FeedbackComponent from './feedback/feedback.component';
-import LocationComponent from './location/location.component';
-import InformationComponent from './information/information.component';
-import InstructionComponent from './instruction/instruction.component';
-import ProviderComponent from './provider/provider.component';
-import ReportsComponent from './reports/reports.component';
-import DevelopmentComponent from './development/development.component';
+import MaintenanceComponent from './maintenance/maintenance.component';
+
+import CreateEntryController from './maintenance/create/createEntry.controller';
+import EditEntryController from './maintenance/edit/editEntry.controller';
+import ArchiveEntryController from './maintenance/archive/archiveEntry.controller';
+import RestoreEntryController from './maintenance/restore/restoreEntry.controller';
+import DeleteEntryController from './maintenance/delete/deleteEntry.controller';
+import EntriesController from './maintenance/entries/entries.controller';
+import PromptController from './maintenance/prompt/prompt.controller';
+
+import ArchiveResponseController from './response/archive/archiveResponse.controller';
+import RestoreResponseController from './response/restore/restoreResponse.controller';
+import DeleteResponseController from './response/delete/deleteResponse.controller';
+import PromptResponseController from './response/prompt/promptResponse.controller';
+
+import CreateResponseController from './response/create/createResponse.controller';
+import EditResponseController from './response/edit/editResponse.controller';
 
 import './app.scss';
 
 angular.module('ubaeApiApp', [ngAnimate, ngCookies, ngResource, ngSanitize, 'btford.socket-io', uiRouter,
   uiBootstrap, _Auth, account, admin, 'validation.match', ubae, modal, navbar, footer, main, constants,
   socket, util, statusbar,
-  ReportsComponent,
   ResponseComponent,
-  EventComponent,
   FeedbackComponent,
-  LocationComponent,
-  InformationComponent,
-  InstructionComponent,
-  ProviderComponent,
-  DevelopmentComponent
+  MaintenanceComponent,
+  CreateEntryController,
+  EditEntryController,
+  EntriesController,
+  CreateResponseController,
+  EditResponseController,
+  PromptController,
+  ArchiveEntryController,
+  RestoreEntryController,
+  DeleteEntryController,
+  ArchiveResponseController,
+  RestoreResponseController,
+  DeleteResponseController,
+  PromptResponseController
 ])
   .config(routeConfig)
   .run(function($rootScope, $location, Auth) {

@@ -1,0 +1,79 @@
+<div class="section">
+    <div class="container" style="padding-top: 60px; padding-bottom: 60px;">
+      <form id="newEntry" name="newEntry" novalidate>
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Create New Entry</h2>
+        </div>
+      </div>
+      <div class="row" ng-hide="createResponseCtrl.stepOne">
+        <div class="col-md-6">
+          <h3>
+            <strong>Step 1. </strong>Add a response message.</h3>
+          <hr>
+              <div class="form-group" ng-class="{ 'has-success': newEntry.message.$valid && newEntry.message.$dirty, 'has-error': newEntry.message.$invalid && newEntry.message.$dirty }">
+                <label class="control-label" for="message">Message</label>
+                <textarea name="message" style="resize: none;" placeholder="Enter a message UBAE will use to respond when this entry is searched."
+                  ng-model="createResponseCtrl.message" id="message" class="form-control" rows="3" required></textarea>
+                <p class="help-block">This must contain that UBAE would use to respond if this entry is searched.</p>
+              </div>
+        </div>
+        <div class="col-md-6">
+            <h3>
+                Add a reference inquiry.</h3>
+              <hr>
+              <div class="form-group" ng-class="{ 'has-success': newEntry.tags.$valid && newEntry.tags.$dirty, 'has-error': newEntry.tags.$invalid && newEntry.tags.$dirty }">
+                <label class="control-label" for="tags">Inquiry</label>
+                <textarea name="tags" style="resize: none;" placeholder="Tip: Try to make the reference inquiry as complex as possible." ng-model="createResponseCtrl.tags"
+                  id="tags" class="form-control" rows="3" required></textarea>
+                <p class="help-block">This must contain the most complex inquiry for this entry.
+                  <br>The inquiry would be processed into keywords.
+                  <br>**This is important when UBAE is searching for an information.
+                </p>
+              </div>
+          </div>
+      </div>
+      <div class="row" ng-hide="createResponseCtrl.stepOne">
+        <hr>
+        <div class="col-md-12">
+          <div class="text-right">
+            <!-- <button type="submit" ng-click="createResponseCtrl.createEntry(newEntry)" ng-show="newEntry.$valid" class="btn btn-danger">Submit</button> -->
+            <button type="submit" ng-click="createResponseCtrl.stepThree = true; createResponseCtrl.stepOne = true; createResponseCtrl.stepTwo = false"
+              ng-show="newEntry.$valid" class="btn btn-danger">Submit</button>
+            <button type="submit" ng-click="createResponseCtrl.resetForm()" class="btn btn-warning">Reset Form</button>
+            <button type="submit" ui-sref="response" class="btn btn-default">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </form>
+      <div class="row" ng-show="createResponseCtrl.stepThree">
+          <div class="col-md-12">
+            <h3>
+              <strong>Step 2. </strong>Verify and confirm all the information.</h3>
+            <hr>
+            <div>
+              <h4>New Response Entry</h4>
+              <h5><strong>NO COMMAND</strong> ENTRY</h5>
+              <!-- <h5>{{createResponseCtrl.now | date: 'fullDate'}}</h5> -->
+              <h6>by: {{createResponseCtrl.currentUser}}</h6>
+              <h6 ng-show="createResponseCtrl.message">Message</h6>
+              <p style="text-indent: 20px">{{createResponseCtrl.message}}</p>
+              <h6 ng-show="createResponseCtrl.tags">Inquiry</h6>
+              <p style="text-indent: 20px">{{createResponseCtrl.tags}}</p>
+            </div>
+            <hr>
+            <p class="text-right">
+              <strong>Are you sure you want to save this entry. </strong>
+              <br>Please make sure that all the details are correct.
+              <br>This action cannot be undone.
+            </p>
+            <div class="text-right">
+              <button type="submit" ng-click="createResponseCtrl.createEntry()" ng-show="newEntry.$valid" class="btn btn-danger">Yes, I'm Sure!</button>
+              <button type="submit" ng-click="createResponseCtrl.stepThree = false; createResponseCtrl.stepOne = false; createResponseCtrl.stepTwo = true"
+                class="btn btn-default">No, Go Back</button>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  

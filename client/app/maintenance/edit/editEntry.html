@@ -1,0 +1,155 @@
+<div class="section">
+  <div class="container" style="padding-top: 60px; padding-bottom:30px;">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Edit Entry</h2>
+      </div>
+    </div>
+    <div class="row" ng-hide="editEntryCtrl.stepThree">
+      <div class="col-md-12">
+        <h3>{{editEntryCtrl.entryName}}</h3>
+        <h4>{{editEntryCtrl.type | uppercase}} ENTRY</h4>
+        <h5 ng-if="editEntryCtrl.type == 'when'">{{editEntryCtrl.startDate | date: 'longDate'}} to {{editEntryCtrl.endDate | date: 'longDate'}}</h5>
+      </div>
+    </div>
+    <div class="row" ng-hide="editEntryCtrl.stepThree">
+      <div class="col-md-12" ng-show="true">
+        <h3>
+          <strong>Step 1. </strong>Modify necessary information.</h3>
+        <hr>
+      </div>
+    </div>
+    <div class="row" ng-hide="editEntryCtrl.stepThree">
+      <div class="col-md-6">
+        <h4>Modify the response message.</h4>
+        <form id="newEntry" name="newEntry" novalidate>
+          <div class="form-group" ng-class="{ 'has-success': newEntry.message.$valid && newEntry.message.$dirty, 'has-error': newEntry.message.$invalid && newEntry.message.$dirty }">
+            <label class="control-label" for="message">Message</label>
+            <textarea name="message" style="resize: none;" placeholder="Enter a message UBAE will use to respond when this entry is searched."
+              ng-model="editEntryCtrl.message" id="message" class="form-control" rows="6" required></textarea>
+            <p class="help-block">This must contain that UBAE would use to respond if this entry is searched.</p>
+          </div>
+        </form>
+        <h4>Add more keywords.</h4>
+        <div class="form-group">
+          <label class="control-label" for="keyword">Add Keyword</label>
+          <div class="input-group">
+            <input type="text" id="keyword" name="keyword" class="form-control" placeholder="Add a detail for this entry." ng-model="editEntryCtrl.keyword"
+            />
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default" ng-click="editEntryCtrl.addKeyword(editEntryCtrl.keyword)">
+                Add Keyword
+              </button>
+            </span>
+          </div>
+          <p class="help-block">This must contain keywords that best describe this entry.
+            <br>**This is important when UBAE is searching for an information.
+          </p>
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="keywords">Keywords</label>
+          <p class="{{editEntryCtrl.keywordClass}}">{{editEntryCtrl.keywordError}}</p>
+          <ul class="tags">
+            <li ng-repeat="tags in editEntryCtrl.tags">
+              <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
+                {{tags}}
+                <a href="" style="color: black" ng-click="editEntryCtrl.deleteKeyword(tags)">
+                  x
+                </a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h4>Add more information.</h4>
+        <div class="form-group">
+          <label class="control-label" for="detail">Add Detail</label>
+          <div class="input-group">
+            <input type="text" id="detail" name="detail" class="form-control" placeholder="Add a detail for this entry." ng-model="editEntryCtrl.detail"
+            />
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default" ng-click="editEntryCtrl.addDetail(editEntryCtrl.detail)">
+                Add Detail
+              </button>
+            </span>
+          </div>
+          <p class="help-block">This must contain additional information that would help describe this entry.</p>
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="details">Details</label>
+          <p class="{{editEntryCtrl.detailClass}}">{{editEntryCtrl.detailError}}</p>
+          <ul>
+            <li class="text-danger" ng-hide="editEntryCtrl.details.length > 0">Please add atleast one detail.</li>
+            <li ng-repeat="x in editEntryCtrl.details">{{x}}
+              <a href="" ng-click="editEntryCtrl.deleteDetail(x)">
+                <strong>remove</strong>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row" ng-hide="editEntryCtrl.stepThree">
+      <div class="col-md-12">
+        <hr>
+        <div class="text-right">
+          <button type="submit" ng-click="editEntryCtrl.stepThree = true; editEntryCtrl.stepOne = true; editEntryCtrl.stepTwo = false"
+            ng-show="newEntry.$valid && editEntryCtrl.details.length > 0 && editEntryCtrl.tags.length > 0" class="btn btn-danger">Submit</button>
+          <button type="submit" ng-click="editEntryCtrl.resetForm()" class="btn btn-warning">Reset to Default</button>
+          <button type="submit" ui-sref="viewEntries({type: editEntryCtrl.type})" class="btn btn-default">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12" ng-show="editEntryCtrl.stepThree">
+        <h3>
+          <strong>Step 2. </strong>Verify and confirm all the information.</h3>
+        <hr>
+        <div>
+          <h4>{{editEntryCtrl.entryName}}</h4>
+          <h5 ng-show="editEntryCtrl.type">
+            <strong>{{editEntryCtrl.type | uppercase}}</strong> ENTRY</h5>
+          <h5>{{editEntryCtrl.now | date: 'fullDate'}}</h5>
+          <h6>modified by: {{editEntryCtrl.currentUser}}</h6>
+          <h6 ng-show="editEntryCtrl.startDate">Start Date</h6>
+          <p style="text-indent: 20px">{{editEntryCtrl.startDate | date: 'longDate'}}</p>
+          <h6 ng-show="editEntryCtrl.endDate">End Date</h6>
+          <p style="text-indent: 20px">{{editEntryCtrl.endDate | date: 'longDate'}}</p>
+          <h6 ng-show="editEntryCtrl.details">Details</h6>
+          <p style="text-indent: 20px">
+            <ul>
+              <li ng-repeat="i in editEntryCtrl.details">{{i}}</li>
+            </ul>
+          </p>
+          <h6 ng-show="editEntryCtrl.message">Message</h6>
+          <p style="text-indent: 20px">{{editEntryCtrl.message}}</p>
+          <h6 ng-show="editEntryCtrl.tags">Keywords</h6>
+          <p style="text-indent: 20px">
+            <ul class="tags">
+              <li ng-repeat="tags in editEntryCtrl.tags">
+                <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
+                  {{tags}}
+                </span>
+              </li>
+            </ul>
+          </p>
+        </div>
+        <hr>
+        <p class="text-right">
+          <strong>Are you sure you want to save this entry. </strong>
+          <br>Please make sure that all the details are correct.
+          <br>This action cannot be undone.
+        </p>
+        <div class="text-right">
+          <button type="submit" ng-click="editEntryCtrl.editEntry()" ng-show="newEntry.$valid" class="btn btn-danger">Yes, I'm Sure!</button>
+          <button type="submit" ng-click="editEntryCtrl.stepThree = false; editEntryCtrl.stepOne = false; editEntryCtrl.stepTwo = true"
+            class="btn btn-default">No, Go Back</button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

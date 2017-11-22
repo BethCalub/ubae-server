@@ -18,15 +18,15 @@ export function use(req, res) {
       if(ubae.keywords.length > 0) {
         switch (ubae.command) {
         case 'what':
-          return UbaeSearch.searchWhat(req, res, userInput, ubae);
+          return UbaeSearch.searchUbaguio(req, res, userInput, ubae);
         case 'when':
-          return UbaeSearch.searchWhen(req, res, userInput, ubae);
+          return UbaeSearch.searchUbaguio(req, res, userInput, ubae);
         case 'where':
-          return UbaeSearch.searchWhere(req, res, userInput, ubae);
+          return UbaeSearch.searchUbaguio(req, res, userInput, ubae);
         case 'how':
-          return UbaeSearch.searchHow(req, res, userInput, ubae);
+          return UbaeSearch.searchUbaguio(req, res, userInput, ubae);
         case 'which':
-          return UbaeSearch.searchWhich(req, res, userInput, ubae);
+          return UbaeSearch.searchUbaguio(req, res, userInput, ubae);
         default:
           return UbaeSearch.searchResponse(req, res, userInput, ubae);
         }

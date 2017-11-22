@@ -77,23 +77,13 @@ html {
 
 @import 'components/tagsView';
 
-@import 'development/development';
-
-@import 'event/event';
-
 @import 'feedback/feedback';
-
-@import 'information/information';
-
-@import 'instruction/instruction';
-
-@import 'location/location';
 
 @import 'main/main';
 
-@import 'provider/provider';
+@import 'maintenance/maintenance';
 
-@import 'reports/reports';
+@import 'maintenance/prompt/prompt';
 
 @import 'response/response';
 

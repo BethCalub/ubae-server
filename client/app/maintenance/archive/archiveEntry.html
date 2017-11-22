@@ -1,0 +1,54 @@
+<div class="section">
+  <div class="container" style="padding: 60px 15px">
+      <div class="row">
+          <div class="col-md-12">
+            <h2>Archive Entry</h2>
+          </div>
+        </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>
+          <strong>Verify</strong> and <strong>confirm</strong> that this is the entry you want to archive.</h3>
+        <hr>
+        <div>
+          <h4>{{archiveEntryCtrl.entryName}}</h4>
+          <h5 ng-show="archiveEntryCtrl.type">
+            <strong>{{archiveEntryCtrl.type | uppercase}}</strong> ENTRY</h5>
+          <h6>created by: <strong>{{archiveEntryCtrl.created.author}}</strong>, {{archiveEntryCtrl.created.date | date: 'longDate'}}</h6>
+          <h6 ng-show="archiveEntryCtrl.modified.author && archiveEntryCtrl.modified.date">modified by: <strong>{{archiveEntryCtrl.modified.author}}</strong>, {{archiveEntryCtrl.modified.date | date: 'longDate'}}</h6>
+          <h6 ng-show="archiveEntryCtrl.startDate">Start Date</h6>
+          <p style="text-indent: 20px">{{archiveEntryCtrl.startDate | date: 'longDate'}}</p>
+          <h6 ng-show="archiveEntryCtrl.endDate">End Date</h6>
+          <p style="text-indent: 20px">{{archiveEntryCtrl.endDate | date: 'longDate'}}</p>
+          <h6 ng-show="archiveEntryCtrl.details">Details</h6>
+          <p style="text-indent: 20px">
+            <ul>
+              <li ng-repeat="i in archiveEntryCtrl.details">{{i}}</li>
+            </ul>
+          </p>
+          <h6 ng-show="archiveEntryCtrl.message">Message</h6>
+          <p style="text-indent: 20px">{{archiveEntryCtrl.message}}</p>
+          <h6 ng-show="archiveEntryCtrl.tags">Keywords</h6>
+          <p style="text-indent: 20px">
+            <ul class="tags">
+              <li ng-repeat="tags in archiveEntryCtrl.tags">
+                <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
+                  {{tags}}
+                </span>
+              </li>
+            </ul>
+          </p>
+        </div>
+        <hr>
+        <p class="text-right">
+          <strong>Are you sure you want to archive this entry.</strong>
+          <br>This action cannot be undone.
+        </p>
+        <div class="text-right">
+          <button type="submit" ng-click="archiveEntryCtrl.archiveEntry()" class="btn btn-danger">Yes, I'm Sure!</button>
+          <button type="submit" ui-sref="viewEntries({type: archiveEntryCtrl.type})"class="btn btn-default">No, Go Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

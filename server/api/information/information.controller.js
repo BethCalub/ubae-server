@@ -10,9 +10,10 @@
 
 'use strict';
 
-import jsonpatch from 'fast-json-patch';
+// import jsonpatch from 'fast-json-patch';
 import Information from './information.model';
 import UbaeNLP from '../ubae/nlp/nlp.stopper';
+import UbaeUtility from '../ubae/nlp/nlp.utility';
 
 function respondWithResult(res, statusCode) {
   statusCode = statusCode || 200;
@@ -24,18 +25,18 @@ function respondWithResult(res, statusCode) {
   };
 }
 
-function patchUpdates(patches) {
-  return function(entity) {
-    try {
-      // eslint-disable-next-line prefer-reflect
-      jsonpatch.apply(entity, patches, /*validate*/ true);
-    } catch(err) {
-      return Promise.reject(err);
-    }
+// function patchUpdates(patches) {
+//   return function(entity) {
+//     try {
+//       // eslint-disable-next-line prefer-reflect
+//       jsonpatch.apply(entity, patches, /*validate*/ true);
+//     } catch(err) {
+//       return Promise.reject(err);
+//     }
 
-    return entity.save();
-  };
-}
+//     return entity.save();
+//   };
+// }
 
 function removeEntity(res) {
   return function(entity) {
@@ -67,7 +68,13 @@ function handleError(res, statusCode) {
 
 // Gets a list of Informations
 export function index(req, res) {
-  return Information.find().exec()
+  var filter = {};
+  if(req.query.type) {
+    filter = {
+      type: req.query.type
+    };
+  }
+  return Information.find(filter).exec()
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
@@ -82,14 +89,34 @@ export function show(req, res) {
 
 // Creates a new Information in the DB
 export function create(req, res) {
-  return Information.create({
-    name: req.body.name,
-    info: req.body.details,
-    message: req.body.message,
-    tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags))
-  })
-    .then(respondWithResult(res, 201))
-    .catch(handleError(res));
+  var searchName = new RegExp('^' + req.body.name + '$', "i");
+  console.log(searchName);
+  Information.find({
+    name: searchName,
+    type: req.body.type,
+    active: true
+  }).exec(function(err, data) {
+    console.log(data.length);
+    if(data.length < 1) {
+      return Information.create({
+        name: req.body.name,
+        type: req.body.type,
+        details: req.body.details,
+        message: req.body.message,
+        startDate: req.body.startDate,
+        endDate: req.body.endDate,
+        created: {
+          author: req.body.author,
+          date: new Date(Date.now())
+        },
+        tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags))
+      })
+        .then(respondWithResult(res, 201))
+        .catch(handleError(res));
+    } else {
+      res.status(401).send(err);
+    }
+  });
 }
 
 // Upserts the given Information in the DB at the specified ID
@@ -113,8 +140,14 @@ export function patch(req, res) {
   return Information.findOneAndUpdate({_id: req.params.id},
     {
       name: req.body.name,
-      info: req.body.details,
+      details: req.body.details,
       message: req.body.message,
+      startDate: req.body.startDate,
+      endDate: req.body.endDate,
+      modified: {
+        author: req.body.author,
+        date: new Date(Date.now())
+      },
       tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags))
     },
     {new: true, upsert: true, setDefaultsOnInsert: true, runValidators: true}).exec()

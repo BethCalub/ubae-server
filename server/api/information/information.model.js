@@ -8,13 +8,14 @@ var InformationSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  info: {
+  details: [{
     type: String,
     required: true
-  },
+  }],
   type: {
     type: String,
-    required: false
+    required: true,
+    lowercase: true
   },
   message: {
     type: String,
@@ -25,24 +26,55 @@ var InformationSchema = new mongoose.Schema({
     lowercase: true,
     required: true
   }],
-  author: {
-    type: String,
-    default: 'Team UBAE',
-    required: true
-  },
-  added: {
+  startDate: {
     type: Date,
-    default: new Date(Date.now()),
-    required: true
+    required: false
+  },
+  endDate: {
+    type: Date,
+    required: false
+  },
+  created: {
+    author: {
+      type: String,
+      default: 'Team UBAE',
+      required: true
+    },
+    date: {
+      type: Date,
+      default: new Date(Date.now()),
+      required: true
+    }
   },
   modified: {
-    type: Date,
-    // default: new Date(Date.now()),
-    required: false
+    author: {
+      type: String,
+      required: false
+    },
+    date: {
+      type: Date,
+      required: false
+    }
+  },
+  archived: {
+    author: {
+      type: String,
+      required: false
+    },
+    date: {
+      type: Date,
+      required: false
+    }
   },
   active: {
     type: Boolean,
-    default: true
+    default: true,
+    required: true
+  },
+  searched: {
+    type: Number,
+    default: 0,
+    required: false
   }
 });
 

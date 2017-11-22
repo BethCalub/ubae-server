@@ -74,10 +74,12 @@ function generateResults(err, story, userInput, ubae) {
 exports.what = function(req, res, userInput, ubae) {
   if(!ubae.foulwords) {
     return Information.find({
+      type: 'what',
+      active: true,
       tags: {
         $all: ubae.stemmed
       }
-    }).select('name info type message')
+    }).select('name details type message')
     .exec(function(err, story) {
       return res.send(generateResults(err, story, userInput, ubae));
     });

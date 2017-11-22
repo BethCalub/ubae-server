@@ -1,0 +1,170 @@
+<div class="section">
+  <div class="container" style="padding-top: 60px; padding-bottom: 60px;">
+    <form id="newEntry" name="newEntry" novalidate>
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Create New Entry</h2>
+      </div>
+    </div>
+    <div class="row" ng-hide="createEntryCtrl.stepOne">
+      <div class="col-md-6">
+        <h3>
+          <strong>Step 1. </strong>Fill in necessary information.</h3>
+        <hr>
+          <div class="form-group" ng-class="{ 'has-success': newEntry.entryName.$valid && newEntry.entryName.$dirty,
+                    'has-error': newEntry.entryName.$invalid && newEntry.entryName.$dirty }">
+            <label class="control-label" for="entryName">Entry Name</label>
+            <input class="form-control" id="entryName" placeholder="Enter the name of this entry." ng-model="createEntryCtrl.entryName"
+              name="entryName" type="text" required>
+            <p class="help-block" ng-hide="newEntry.entryName.$valid && newEntry.entryName.$dirty">This must contain a name that is related to the information contained in this entry.</p>
+          </div>
+          <div class="form-group" ng-class="{ 'has-success': newEntry.type.$valid && newEntry.type.$dirty,
+              'has-error': newEntry.type.$invalid && newEntry.type.$dirty }">
+            <label class="control-label" for="type">Type</label>
+            <select name="type" id="type" class="form-control" ng-model="createEntryCtrl.type" ng-options="x for (x, y) in createEntryCtrl.typeSelect"
+              required="required">
+            </select>
+            <p class="help-block" ng-hide="newEntry.type.$valid && newEntry.type.$dirty">This would be the classification of this entry.</p>
+          </div>
+          <div class="form-group" ng-if="createEntryCtrl.type === 'when'" ng-class="{ 'has-success': newEntry.startDate.$valid && newEntry.startDate.$dirty,
+                'has-error': newEntry.startDate.$invalid && newEntry.startDate.$dirty }">
+            <label class="control-label" for="startDate">Start Date</label>
+            <div class="input-group">
+              <input type="text" id="startDate" name="startDate" class="form-control" uib-datepicker-popup="longDate" datepicker-options="createEntryCtrl.startDatePicker.datepickerOptions"
+                placeholder="Click the date picker button to pick a start date." ng-model="createEntryCtrl.startDate" is-open="createEntryCtrl.startDatePicker.isDatepickerOpen"
+                ng-required="true" close-text="Close" alt-input-formats="createEntryCtrl.altInputFormats" readonly ng-change="createEntryCtrl.setEndDateMin()"/>
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="createEntryCtrl.startDatePicker.isDatepickerOpen = !createEntryCtrl.startDatePicker.isDatepickerOpen">
+                  <i class="glyphicon glyphicon-calendar"></i>
+                </button>
+              </span>
+            </div>
+            <p class="help-block" ng-hide="newEntry.startDate.$valid && newEntry.startDate.$dirty">This must contain the start date of this entry.
+              <br>**The start date must not be earlier than the date today.</p>
+          </div>
+          <div class="form-group" ng-if="createEntryCtrl.type === 'when' && newEntry.startDate.$valid" ng-class="{ 'has-success': newEntry.endDate.$valid && newEntry.endDate.$dirty,
+                'has-error': newEntry.endDate.$invalid && newEntry.endDate.$dirty }">
+            <label class="control-label" for="endDate">End Date</label>
+            <div class="input-group">
+              <input type="text" id="endDate" name="endDate" class="form-control" uib-datepicker-popup="longDate" datepicker-options="createEntryCtrl.endDatePicker.datepickerOptions"
+                placeholder="Click the date picker button to pick an end date." ng-model="createEntryCtrl.endDate" is-open="createEntryCtrl.endDatePicker.isDatepickerOpen"
+                ng-required="true" close-text="Close" alt-input-formats="createEntryCtrl.altInputFormats" readonly ng-change="createEntryCtrl.setStartDateMax()"/>
+              <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="createEntryCtrl.endDatePicker.isDatepickerOpen = !createEntryCtrl.endDatePicker.isDatepickerOpen">
+                  <i class="glyphicon glyphicon-calendar"></i>
+                </button>
+              </span>
+            </div>
+            <p class="help-block" ng-hide="newEntry.endDate.$valid && newEntry.endDate.$dirty">This must contain the end date of this entry.
+              <br>**The end date must not be earlier than the start date.</p>
+            <p class="help-block" ng-if="createEntryCtrl.startDate > createEntryCtrl.endDate">Please check the start date and end date.</p>
+          </div>
+          <h3>
+              Add a response message.</h3>
+            <hr>
+            <div class="form-group" ng-class="{ 'has-success': newEntry.message.$valid && newEntry.message.$dirty, 'has-error': newEntry.message.$invalid && newEntry.message.$dirty }">
+              <label class="control-label" for="message">Message</label>
+              <textarea name="message" style="resize: none;" placeholder="Enter a message UBAE will use to respond when this entry is searched."
+                ng-model="createEntryCtrl.message" id="message" class="form-control" rows="3" required></textarea>
+              <p class="help-block" ng-hide="newEntry.message.$valid && newEntry.message.$dirty">This must contain that UBAE would use to respond if this entry is searched.</p>
+            </div>
+          <h3>
+              Add a reference inquiry.</h3>
+            <hr>
+            <div class="form-group" ng-class="{ 'has-success': newEntry.tags.$valid && newEntry.tags.$dirty, 'has-error': newEntry.tags.$invalid && newEntry.tags.$dirty }">
+              <label class="control-label" for="tags">Inquiry</label>
+              <textarea name="tags" style="resize: none;" placeholder="Tip: Try to make the reference inquiry as complex as possible." ng-model="createEntryCtrl.tags"
+                id="tags" class="form-control" rows="3" required></textarea>
+              <p class="help-block" ng-hide="newEntry.tags.$valid && newEntry.tags.$dirty">This must contain a unique inquiry that would help search the entry.
+                <br>The reference inquiry would be processed into useful keywords.
+                <br>**This is important when UBAE is searching for an information.
+              </p>
+            </div>
+      </div>
+      <div class="col-md-6">
+        <h3>
+          Add more related information.</h3>
+        <hr>
+        <div class="form-group">
+          <label class="control-label" for="detail">Add Detail</label>
+          <div class="input-group">
+            <input type="text" id="detail" name="detail" class="form-control" placeholder="Add a detail for this entry." ng-model="createEntryCtrl.detail"
+            />
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default" ng-click="createEntryCtrl.addDetail(createEntryCtrl.detail)">
+                Add Detail
+              </button>
+            </span>
+          </div>
+          <p class="help-block">This must contain additional information that would help describe this entry.</p>
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="details">Details</label>
+          <p class="{{createEntryCtrl.detailClass}}">{{createEntryCtrl.detailError}}</p>
+          <ul>
+            <li class="text-danger" ng-hide="createEntryCtrl.details.length > 0">Please add atleast one detail.</li>
+            <li class="text-danger" ng-hide="createEntryCtrl.details.length > 0">Use the add detail input above to add a detail.</li>
+            <li ng-repeat="x in createEntryCtrl.details">{{x}}
+              <a href="" ng-click="createEntryCtrl.deleteDetail(x)">
+                <strong>remove</strong>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row" ng-hide="createEntryCtrl.stepOne">
+      <hr>
+      <div class="col-md-12">
+        <div class="text-right">
+          <!-- <button type="submit" ng-click="createEntryCtrl.createEntry(newEntry)" ng-show="newEntry.$valid" class="btn btn-danger">Submit</button> -->
+          <button type="submit" ng-click="createEntryCtrl.stepThree = true; createEntryCtrl.stepOne = true; createEntryCtrl.stepTwo = false"
+            ng-show="newEntry.$valid && createEntryCtrl.details.length > 0" class="btn btn-danger">Submit</button>
+          <button type="submit" ng-click="createEntryCtrl.resetForm()" class="btn btn-warning">Reset Form</button>
+          <button type="submit" ui-sref="main" ng-hide="createEntryCtrl.referrer" class="btn btn-default">Cancel</button>
+          <button type="submit" ui-sref="viewEntries({type: createEntryCtrl.referrer})" ng-show="createEntryCtrl.referrer" class="btn btn-default">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </form>
+    <div class="row" ng-show="createEntryCtrl.stepThree">
+        <div class="col-md-12">
+          <h3>
+            <strong>Step 2. </strong>Verify and confirm all the information.</h3>
+          <hr>
+          <div>
+            <h4>{{createEntryCtrl.entryName}}</h4>
+            <h5 ng-show="createEntryCtrl.type">
+              <strong>{{createEntryCtrl.type}}</strong> ENTRY</h5>
+            <h5>{{createEntryCtrl.now | date: 'fullDate'}}</h5>
+            <h6>by: {{createEntryCtrl.currentUser}}</h6>
+            <h6 ng-show="createEntryCtrl.startDate">Start Date</h6>
+            <p style="text-indent: 20px">{{createEntryCtrl.startDate | date: 'longDate'}}</p>
+            <h6 ng-show="createEntryCtrl.endDate">End Date</h6>
+            <p style="text-indent: 20px">{{createEntryCtrl.endDate | date: 'longDate'}}</p>
+            <h6 ng-show="createEntryCtrl.details">Details</h6>
+            <p style="text-indent: 20px">
+              <ul>
+                <li ng-repeat="i in createEntryCtrl.details">{{i}}</li>
+              </ul>
+            </p>
+            <h6 ng-show="createEntryCtrl.message">Message</h6>
+            <p style="text-indent: 20px">{{createEntryCtrl.message}}</p>
+            <h6 ng-show="createEntryCtrl.tags">Inquiry</h6>
+            <p style="text-indent: 20px">{{createEntryCtrl.tags}}</p>
+          </div>
+          <hr>
+          <p class="text-right">
+            <strong>Are you sure you want to save this entry. </strong>
+            <br>Please make sure that all the details are correct.
+            <br>This action cannot be undone.
+          </p>
+          <div class="text-right">
+            <button type="submit" ng-click="createEntryCtrl.createEntry()" ng-show="newEntry.$valid" class="btn btn-danger">Yes, I'm Sure!</button>
+            <button type="submit" ng-click="createEntryCtrl.stepThree = false; createEntryCtrl.stepOne = false; createEntryCtrl.stepTwo = true"
+              class="btn btn-default">No, Go Back</button>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

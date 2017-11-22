@@ -1,7 +1,7 @@
 // Guide Lines
 // {
 //   name: 'Name of Location',
-//   location: 'Address or something that wwould describe the location',
+//   details: 'Address or something that wwould describe the location',
 //   type: 'OPTIONAL FOR NOW',
 //   message: 'Message that UBAE will show to the user. Must be human like',
 //   tags: ['Tag1', 'Tag 2'],
@@ -9,8 +9,8 @@
 
 var location = [{
   name: 'SBAA Dean\'s Office ',
-  location: 'This are the details for the H Building, 3rd Floor, Room H301',
-  type: '',
+  details: 'This are the details for the H Building, 3rd Floor, Room H301',
+  type: 'WHERE',
   message: 'The SBAA Dean\'s Office is located at the 3rd Floor of H Building, Room H301.',
   tags: ['SBAA', 'Dean', 'Office',
     'school',
@@ -24,8 +24,8 @@ var location = [{
   ]
 }, {
   name: 'SCJPS Dean\'s Office ',
-  location: 'This are the details for the A Building, 8th Floor, Room A801',
-  type: '',
+  details: 'This are the details for the A Building, 8th Floor, Room A801',
+  type: 'WHERE',
   message: 'The SCJPS Dean\'s Office is located at the 8th Floor of A Building, Room A801.',
   tags: ['SCJPS',
     'Dean',
@@ -42,8 +42,8 @@ var location = [{
   ]
 }, {
   name: 'SOD Dean\'s Office ',
-  location: 'This are the details for the B Building, 3rd Floor, Room B301',
-  type: '',
+  details: 'This are the details for the B Building, 3rd Floor, Room B301',
+  type: 'WHERE',
   message: 'The SOD Dean\'s Office is located at the 3rd Floor of B Building, Room B301.',
   tags: ['SOD', 'Dean', 'Office',
     'school',
@@ -55,8 +55,8 @@ var location = [{
   ]
 }, {
   name: 'SEA Dean\'s Office ',
-  location: 'This are the details for the HB Building, B2 Floor, Room HB202',
-  type: '',
+  details: 'This are the details for the HB Building, B2 Floor, Room HB202',
+  type: 'WHERE',
   message: 'The SEA Dean\'s Office is located at the 2nd Basement Floor of H Building, Room HB202.',
   tags: ['SEA', 'Dean', 'Office',
     'school',
@@ -69,8 +69,8 @@ var location = [{
   ]
 }, {
   name: 'SIT Dean\'s Office ',
-  location: 'This are the details for the F Building, 2nd Floor, Room F201',
-  type: '',
+  details: 'This are the details for the F Building, 2nd Floor, Room F201',
+  type: 'WHERE',
   message: 'The SIT Dean\'s Office is located at the 2nd Floor of F Building, Room F201.',
   tags: ['SIT', 'Dean', 'Office',
     'school',
@@ -83,8 +83,8 @@ var location = [{
   ]
 }, {
   name: 'SIHTM Dean\'s Office ',
-  location: 'This are the details for the A Building, A Floor',
-  type: '',
+  details: 'This are the details for the A Building, A Floor',
+  type: 'WHERE',
   message: 'The SIHTM Dean\'s Office is located at the A Floor of A Building.',
   tags: ['SIHTM', 'Dean', 'Office',
     'school',
@@ -98,8 +98,8 @@ var location = [{
   ]
 }, {
   name: 'SOL Dean\'s Office ',
-  location: 'This are the details for the F Building, 1st Floor, Room F104',
-  type: '',
+  details: 'This are the details for the F Building, 1st Floor, Room F104',
+  type: 'WHERE',
   message: 'The SOL Dean\'s Office is located at the 1st Floor of F Building, Room F104.',
   tags: ['SOL', 'Dean', 'Office',
     'school',
@@ -111,8 +111,8 @@ var location = [{
   ]
 }, {
   name: 'SLAHS Dean\'s Office ',
-  location: 'This are the details for the H Building, 2nd Floor, Room H201',
-  type: '',
+  details: 'This are the details for the H Building, 2nd Floor, Room H201',
+  type: 'WHERE',
   message: 'The SLAHS Dean\'s Office is located at the 2nd Floor of H Building, Room H201.',
   tags: ['SLAHS', 'Dean', 'Office',
     'school',
@@ -127,8 +127,8 @@ var location = [{
   ]
 }, {
   name: 'SNS Dean\'s Office ',
-  location: 'This are the details for the B Building, 5th Floor, Room B501',
-  type: '',
+  details: 'This are the details for the B Building, 5th Floor, Room B501',
+  type: 'WHERE',
   message: 'The SNS Dean\'s Office is located at the 5th Floor of B Building, Room B501.',
   tags: ['SNS Dean', 'Dean', 'Office',
     'school',
@@ -141,8 +141,8 @@ var location = [{
   ]
 }, {
   name: 'SON Dean\'s Office ',
-  location: 'This are the details for the A Building, 3rd Floor, Room A301',
-  type: '',
+  details: 'This are the details for the A Building, 3rd Floor, Room A301',
+  type: 'WHERE',
   message: 'The SON Dean\'s Office is located at the 3rd Floor of A Building, Room A301.',
   tags: ['SON', 'Dean', 'Office',
     'school',
@@ -154,8 +154,8 @@ var location = [{
   ]
 }, {
   name: 'STE Dean\'s Office ',
-  location: 'This are the details for the H Building, 5th Floor, Room H501',
-  type: '',
+  details: 'This are the details for the H Building, 5th Floor, Room H501',
+  type: 'WHERE',
   message: 'The STE Dean\'s Office is located at the 5th Floor of H Building, Room H501.',
   tags: ['STE', 'Dean', 'Office',
     'school',
@@ -168,104 +168,104 @@ var location = [{
   ]
 }, {
   name: 'Athletics Office ',
-  location: 'This are the details for the Athletics Office: Building - D Building, Floor - 2nd Floor, Room - Room D201',
-  type: '',
+  details: 'This are the details for the Athletics Office: Building - D Building, Floor - 2nd Floor, Room - Room D201',
+  type: 'WHERE',
   message: 'The Athletics Office is located at the 2nd Floor of D Building, Room D201.',
   tags: ['Athletics', 'location', 'Office', 'D201']
 }, {
   name: 'Center for Counseling and Student Development Office ',
-  location: 'This are the details for the Center for Counseling and Student Development Office: Building - F Building, Floor - 2nd Floor, Room - Room F206',
-  type: '',
+  details: 'This are the details for the Center for Counseling and Student Development Office: Building - F Building, Floor - 2nd Floor, Room - Room F206',
+  type: 'WHERE',
   message: 'The Center for Counseling and Student Development Office is located at the 2nd Floor of F Building, Room F206.',
   tags: ['CCSD', 'Center', 'Counseling', 'Student', 'Development', 'Office', 'location', 'F206']
 }, {
   name: 'University of Baguio Clinic ',
-  location: 'This are the details for the University of Baguio Clinic: Building - F Building, Floor - 1st Floor, Room - Room F105',
+  details: 'This are the details for the University of Baguio Clinic: Building - F Building, Floor - 1st Floor, Room - Room F105',
   type: '1st',
   message: 'The University of Baguio Clinic is Located at the 1st Floor of F Building, Room F105.',
   tags: ['Clinic', 'location', 'F105']
 }, {
   name: 'Media Affairs and Publications Office ',
-  location: 'This are the details for the Media Affairs and Publications Office: Building - F Building, Floor - 2nd Floor, Room F205',
-  type: '',
+  details: 'This are the details for the Media Affairs and Publications Office: Building - F Building, Floor - 2nd Floor, Room F205',
+  type: 'WHERE',
   message: 'The Media Affairs and Publications Office is located at the 2nd Floor of F Building, Room F205.',
   tags: ['MAPS', 'Media', 'Affairs', 'Publications', 'location', 'Office', 'F205']
 }, {
   name: 'Office of Student Affairs',
-  location: 'This are the details for the Office of Student Affairs: Building - F Building, Floor - 1st Floor',
-  type: '',
+  details: 'This are the details for the Office of Student Affairs: Building - F Building, Floor - 1st Floor',
+  type: 'WHERE',
   message: 'The Office of Student Affairs if located at the 1st Floor of F Building, in front of the cashier.',
   tags: ['OSA', 'Office', 'Student', 'Affairs', 'location']
 }, {
   name: 'Management Information Systems Office ',
-  location: 'This are the details for the Management Information Systems Office: Building - F Building, Floor - 4th Floor, Room - Room F403',
-  type: '',
+  details: 'This are the details for the Management Information Systems Office: Building - F Building, Floor - 4th Floor, Room - Room F403',
+  type: 'WHERE',
   message: 'The Management Information Systems Office is located at the 4th Floor of F Building, Room F403.',
   tags: ['MIS', 'Management', 'Information', 'Systems', 'Office', 'location', 'F403']
 }, {
   name: 'Research and Development Center Office ',
-  location: 'This are the details for the Research and Development Center Office: Building - F Building, Floor - 2nd Floor, Room - Room F208',
-  type: '',
+  details: 'This are the details for the Research and Development Center Office: Building - F Building, Floor - 2nd Floor, Room - Room F208',
+  type: 'WHERE',
   message: 'The Research and Development Center Office is located at the 2nd Floor of F Building, Room F208.',
   tags: ['RNDC', 'Research', 'Development', 'Center', 'Office', 'location', 'F208']
 }, {
   name: 'Student Accounts Section Office ',
-  location: 'This are the details for the Student Accounts Section Office: Building - F Building, Floor - 1st Floor, Room - Room F103',
-  type: '',
+  details: 'This are the details for the Student Accounts Section Office: Building - F Building, Floor - 1st Floor, Room - Room F103',
+  type: 'WHERE',
   message: 'The Student Accounts Section Office is located at the 1st Floor of F Building, Room F103.',
   tags: ['SAS', 'Student', 'Accounts', 'Section', 'Office', 'location', 'F103']
 }, {
   name: 'Admission and Records Center ',
-  location: 'This are the details for the Admission and Records Center Office: Building - D Building, Floor - 2nd Floor',
-  type: '',
+  details: 'This are the details for the Admission and Records Center Office: Building - D Building, Floor - 2nd Floor',
+  type: 'WHERE',
   message: 'The Admission and Records Center Office is located at the 2nd Floor of D Building beside the UB Gym.',
   tags: ['ARC', 'Admission', 'Records', 'Center', 'location', 'Office', 'registrar']
 }, {
   name: 'Extension and Community Outreach Services ',
-  location: 'This are the details for the Extension and Community Outreach Services Office: Building - D Building, Floor - 1st Floor',
-  type: '',
+  details: 'This are the details for the Extension and Community Outreach Services Office: Building - D Building, Floor - 1st Floor',
+  type: 'WHERE',
   message: 'The Extension and Community Outreach Services Office is located at the 1st Floor of D Building below the UB Gym.',
   tags: ['ECOS', 'Extension', 'Community', 'Outreach', 'Services', 'Office', 'location']
 }, {
   name: 'Linkages, Alumni and Review Center ',
-  location: 'This are the details for the Linkages, Alumni and Review Center Office: Building - A Building, Floor - 2nd Floor, Room - Room A205',
-  type: '',
+  details: 'This are the details for the Linkages, Alumni and Review Center Office: Building - A Building, Floor - 2nd Floor, Room - Room A205',
+  type: 'WHERE',
   message: 'The Linkages, Alumni and Review Center is located at the 2nd Floor of A Bulding, Room A205. ',
   tags: ['LARC', 'Linkages', 'Alumni', 'Review', 'Center', 'Office', 'location', 'A205']
 }, {
   name: 'Main Library ',
-  location: 'This are the details for the Main Library: Building - A Building, Floor - 4th Floor, Library Sections: Allied Medical Sciences, Criminology and Forensic Science, Filipiniana and General Reference, Periodicals, General Collections and Senior High School.',
-  type: '',
+  details: 'This are the details for the Main Library: Building - A Building, Floor - 4th Floor, Library Sections: Allied Medical Sciences, Criminology and Forensic Science, Filipiniana and General Reference, Periodicals, General Collections and Senior High School.',
+  type: 'WHERE',
   message: 'The Main Library is located at the 4th Floor of A Building.',
   tags: ['Main', 'Library', 'location']
 }, {
   name: 'Centennial Library',
-  location: 'This are the details for the Centennial Library: Building - H Building, Floor - 6th Floor, Library Sections: Business Administration and Accountancy, Education, Engineering, Liberal Arts and Human Sciences, Theses and Dissertions and Graduate School',
-  type: '',
+  details: 'This are the details for the Centennial Library: Building - H Building, Floor - 6th Floor, Library Sections: Business Administration and Accountancy, Education, Engineering, Liberal Arts and Human Sciences, Theses and Dissertions and Graduate School',
+  type: 'WHERE',
   message: 'The Centennial Library is located at the 6th Floor of H Building.',
   tags: ['Centennial', 'Library', 'location']
 }, {
   name: 'Centennial Hall',
-  location: 'This are the details for the Centennial Hall: Beside the H Building ',
-  type: '',
+  details: 'This are the details for the Centennial Hall: Beside the H Building ',
+  type: 'WHERE',
   message: 'The Centennial Hall is located beside the H Building.',
   tags: ['Centennial', 'Hall', 'location']
 }, {
   name: 'Extension Library ',
-  location: 'This are the details for the Extension Library: Building - F Building, Floor - 3rd Floor, Library Sections: Law, CD, IT, Relegation, Fiction and Technical ',
-  type: '',
+  details: 'This are the details for the Extension Library: Building - F Building, Floor - 3rd Floor, Library Sections: Law, CD, IT, Relegation, Fiction and Technical ',
+  type: 'WHERE',
   message: 'The Extension Library is located at the 3rd floor of F Building.',
   tags: ['Extension', 'Library', 'location']
 }, {
   name: 'Security Office ',
-  location: 'This are the details for the Security Office: Building - D Building, Floor - 2nd Floor',
-  type: '',
+  details: 'This are the details for the Security Office: Building - D Building, Floor - 2nd Floor',
+  type: 'WHERE',
   message: 'The Security Office is located at the 2nd floor of D Building beside the UB Cardinals Gym.',
   tags: ['Campus', 'Security', 'Office', 'Report', 'Complaints', 'Assistance', 'location']
 }, {
   name: 'Rooms in the 1st Floor of F Bulding ',
-  location: 'This are the rooms in the F Bulding, 1st Floor',
-  type: '',
+  details: 'This are the rooms in the F Bulding, 1st Floor',
+  type: 'WHERE',
   message: 'It is located at the 1st Floor of F Building.',
   tags: ['F106',
     'F107',
@@ -282,8 +282,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 2nd Floor of F Bulding ',
-  location: 'This are the rooms in the F Bulding, 2nd Floor',
-  type: '',
+  details: 'This are the rooms in the F Bulding, 2nd Floor',
+  type: 'WHERE',
   message: 'It is located at the 2nd Floor of F Building.',
   tags: ['F203',
     'F204',
@@ -300,8 +300,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 3rd Floor of F Bulding ',
-  location: 'This are the rooms in the F Bulding, 3rd Floor',
-  type: '',
+  details: 'This are the rooms in the F Bulding, 3rd Floor',
+  type: 'WHERE',
   message: 'It is located at the 3rd Floor of F Building.',
   tags: ['F301',
     'F302',
@@ -323,8 +323,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 1st Floor of D Bulding ',
-  location: 'This are the rooms in the D Bulding, 1st Floor',
-  type: '',
+  details: 'This are the rooms in the D Bulding, 1st Floor',
+  type: 'WHERE',
   message: 'It is located at the 1st Floor of D Building.',
   tags: ['D201',
     'D102',
@@ -346,8 +346,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 2nd Floor of D Bulding ',
-  location: 'This are the rooms in the D Bulding, 2nd Floor',
-  type: '',
+  details: 'This are the rooms in the D Bulding, 2nd Floor',
+  type: 'WHERE',
   message: 'It is located at the 2nd Floor of D Building.',
   tags: ['D202',
     'D203',
@@ -367,8 +367,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 3rd Floor of D Bulding ',
-  location: 'This are the rooms in the D Bulding, 3rd Floor',
-  type: '',
+  details: 'This are the rooms in the D Bulding, 3rd Floor',
+  type: 'WHERE',
   message: 'It is located at the 3rd Floor of D Building.',
   tags: ['D301',
     'D302',
@@ -389,8 +389,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 1st Floor of B Bulding ',
-  location: 'This are the rooms in the B Bulding, 1st Floor',
-  type: '',
+  details: 'This are the rooms in the B Bulding, 1st Floor',
+  type: 'WHERE',
   message: 'It is located at the 1st Floor of B Building.',
   tags: ['B101',
     'B102',
@@ -412,8 +412,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 2nd Floor of B Bulding ',
-  location: 'This are the rooms in the B Bulding, 2nd Floor',
-  type: '',
+  details: 'This are the rooms in the B Bulding, 2nd Floor',
+  type: 'WHERE',
   message: 'It is located at the 2nd Floor of B Building.',
   tags: ['B201',
     'B202',
@@ -435,8 +435,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 3rd Floor of B Bulding ',
-  location: 'This are the rooms in the B Bulding, 3rd Floor',
-  type: '',
+  details: 'This are the rooms in the B Bulding, 3rd Floor',
+  type: 'WHERE',
   message: 'It is located at the 3rd Floor of B Building.',
   tags: ['B302',
     'B303',
@@ -457,8 +457,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 4th Floor of B Bulding ',
-  location: 'This are the rooms in the B Bulding, 4th Floor',
-  type: '',
+  details: 'This are the rooms in the B Bulding, 4th Floor',
+  type: 'WHERE',
   message: 'It is located at the 4th Floor of B Building.',
   tags: ['B402',
     'B403',
@@ -479,8 +479,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 5th Floor of B Bulding ',
-  location: 'This are the rooms in the B Bulding, 5th Floor',
-  type: '',
+  details: 'This are the rooms in the B Bulding, 5th Floor',
+  type: 'WHERE',
   message: 'It is located at the 5th Floor of B Building.',
   tags: ['B502',
     'B503',
@@ -500,8 +500,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 1st Floor of A Bulding ',
-  location: 'This are the rooms in the A Bulding, 1st Floor',
-  type: '',
+  details: 'This are the rooms in the A Bulding, 1st Floor',
+  type: 'WHERE',
   message: 'It is located at the 1st Floor of A Building.',
   tags: ['A101',
     'A102',
@@ -523,8 +523,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 2nd Floor of A Bulding ',
-  location: 'This are the rooms in the A Bulding, 2nd Floor',
-  type: '',
+  details: 'This are the rooms in the A Bulding, 2nd Floor',
+  type: 'WHERE',
   message: 'It is located at the 2nd Floor of A Building.',
   tags: ['A202',
     'A203',
@@ -544,8 +544,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 3rd Floor of A Bulding ',
-  location: 'This are the rooms in the A Bulding, 3rd Floor',
-  type: '',
+  details: 'This are the rooms in the A Bulding, 3rd Floor',
+  type: 'WHERE',
   message: 'It is located at the 3rd Floor of A Building.',
   tags: ['A303',
     'A304',
@@ -565,8 +565,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 4th Floor of A Bulding ',
-  location: 'This are the rooms in the A Bulding, 4th Floor',
-  type: '',
+  details: 'This are the rooms in the A Bulding, 4th Floor',
+  type: 'WHERE',
   message: 'It is located at the 4th Floor of A Building.',
   tags: ['A401',
     'A402',
@@ -588,8 +588,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 5th Floor of A Bulding ',
-  location: 'This are the rooms in the A Bulding, 5th Floor',
-  type: '',
+  details: 'This are the rooms in the A Bulding, 5th Floor',
+  type: 'WHERE',
   message: 'It is located at the 5th Floor of A Building.',
   tags: ['A501',
     'A502',
@@ -611,8 +611,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 6th Floor of A Bulding ',
-  location: 'This are the rooms in the A Bulding, 6th Floor',
-  type: '',
+  details: 'This are the rooms in the A Bulding, 6th Floor',
+  type: 'WHERE',
   message: 'It is located at the 6th Floor of A Building.',
   tags: ['A601',
     'A602',
@@ -634,8 +634,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 7th Floor of A Bulding ',
-  location: 'This are the rooms in the A Bulding, 7th Floor',
-  type: '',
+  details: 'This are the rooms in the A Bulding, 7th Floor',
+  type: 'WHERE',
   message: 'It is located at the 7th Floor of A Building.',
   tags: ['A701',
     'A702',
@@ -657,8 +657,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 8th Floor of A Bulding ',
-  location: 'This are the rooms in the A Bulding, 8th Floor',
-  type: '',
+  details: 'This are the rooms in the A Bulding, 8th Floor',
+  type: 'WHERE',
   message: 'It is located at the 8th Floor of A Building.',
   tags: ['A802',
     'A803',
@@ -678,8 +678,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 1st Floor of H Bulding ',
-  location: 'This are the rooms in the H Bulding, 1st Floor',
-  type: '',
+  details: 'This are the rooms in the H Bulding, 1st Floor',
+  type: 'WHERE',
   message: 'It is located at the 1st Floor of H Building.',
   tags: ['H101',
     'H102',
@@ -701,8 +701,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 2nd Floor of H Bulding ',
-  location: 'This are the rooms in the H Bulding, 2nd Floor',
-  type: '',
+  details: 'This are the rooms in the H Bulding, 2nd Floor',
+  type: 'WHERE',
   message: 'It is located at the 2nd Floor of H Building.',
   tags: ['H204',
     'H205',
@@ -720,8 +720,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 3rd Floor of H Bulding ',
-  location: 'This are the rooms in the H Bulding, 3rd Floor',
-  type: '',
+  details: 'This are the rooms in the H Bulding, 3rd Floor',
+  type: 'WHERE',
   message: 'It is located at the 3rd Floor of H Building.',
   tags: ['H302',
     'H303',
@@ -742,8 +742,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 4th Floor of H Bulding ',
-  location: 'This are the rooms in the H Bulding, 4th Floor',
-  type: '',
+  details: 'This are the rooms in the H Bulding, 4th Floor',
+  type: 'WHERE',
   message: 'It is located at the 4th Floor of H Building.',
   tags: ['H401',
     'H402',
@@ -764,8 +764,8 @@ var location = [{
   ]
 }, {
   name: 'Rooms in the 5th Floor of H Bulding ',
-  location: 'This are the rooms in the H Bulding, 5th Floor',
-  type: '',
+  details: 'This are the rooms in the H Bulding, 5th Floor',
+  type: 'WHERE',
   message: 'It is located at the 5th Floor of H Building.',
   tags: ['H502',
     'H503',
@@ -785,806 +785,806 @@ var location = [{
   ]
 }, {
   name: 'University of Baguio Address ',
-  location: 'This is the University of Baguio Address: General Luna Rd. Baguio City Philippines 2600',
-  type: '',
+  details: 'This is the University of Baguio Address: General Luna Rd. Baguio City Philippines 2600',
+  type: 'WHERE',
   message: 'The University of Baguio is located at General Luna Rd. Baguio City Philippines 2600.',
   tags: ['Address', 'UB', 'University', 'Baguio', 'Location']
 }, {
   name: 'Where to process Medical Certificate ',
-  location: 'Where to process Medical Certificate details: Office - University Clinic, Building - F Building, Floor - 1st Floor, Room - Room F105',
-  type: '',
+  details: 'Where to process Medical Certificate details: Office - University Clinic, Building - F Building, Floor - 1st Floor, Room - Room F105',
+  type: 'WHERE',
   message: 'You can process your Medical Certificate in the University Clinic which is located at the F Building, 1st Floor, Room F105',
   tags: ['Medical', 'Certificate', 'Get', 'Request', 'process']
 }, {
   name: 'Where to report complaints ',
-  location: 'Where to report complaints Details: Office - Security Office, Building - D Building, Floor - 2nd Floor',
-  type: '',
+  details: 'Where to report complaints Details: Office - Security Office, Building - D Building, Floor - 2nd Floor',
+  type: 'WHERE',
   message: 'You can report your complaints for suspicious and unusual activities in the Security Office which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['complaints', 'offenses', 'report', 'Request', 'suspicious', 'crimes', 'bully', 'incident', 'accident', 'file']
 }, {
   name: 'Where is the lost and found ',
-  location: 'Where is the lost and found Details: Office - Security Office, Building - D Building, Floor - 2nd Floor',
-  type: '',
+  details: 'Where is the lost and found Details: Office - Security Office, Building - D Building, Floor - 2nd Floor',
+  type: 'WHERE',
   message: 'You can try to find your missing items or surrender lost items at the Security Office which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['lost', 'found', 'report', 'items', 'missing', 'file']
 }, {
   name: 'Where to volunteer for the outreach ',
-  location: 'Where to volunteer for the outreach Details: Office - ECOS Building - D Building, Floor - 1st Floor',
-  type: '',
+  details: 'Where to volunteer for the outreach Details: Office - ECOS Building - D Building, Floor - 1st Floor',
+  type: 'WHERE',
   message: 'If you want to join the outreach, you can submit an application at the ECOS Office which is located at the 1st Floor of D Building below the UB Gym. ',
   tags: ['outreach', 'volunteer', 'process']
 }, {
   name: 'Where to process assessment of fees/accounts inquiry ',
-  location: 'Where to process assessment of fees/accounts inquiry Details: Office - Students Accounts Section, Room - Room F103, Floor - 1st Floor, Bulding - F Building',
-  type: '',
+  details: 'Where to process assessment of fees/accounts inquiry Details: Office - Students Accounts Section, Room - Room F103, Floor - 1st Floor, Bulding - F Building',
+  type: 'WHERE',
   message: 'You can process your assessment of fees or inquire about your account at the Student Accounts Section which is located at the 1st Floor of F Building Room F103. ',
   tags: ['Assessment', 'Fees', 'Account', 'Get', 'Inquiry', 'Request', 'Process']
 }, {
   name: 'Where to process Promissory Note ',
-  location: 'Where to process Promissory Note Details: Office - Students Accounts Section, Room - Room F103, Building - 1st Floor, Building - F Building',
-  type: '',
+  details: 'Where to process Promissory Note Details: Office - Students Accounts Section, Room - Room F103, Building - 1st Floor, Building - F Building',
+  type: 'WHERE',
   message: 'You can process your Promissory Note or inquire about your account at the Student Accounts Section which is located at the 1st Floor of F Building Room F103. ',
   tags: ['Promissory', 'Note', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Examination Permit ',
-  location: 'Where to process Examination Permit Details: Office - Students Accounts Section, Room - Room F103, Floor - 1st Floor, Building - F Building',
-  type: '',
+  details: 'Where to process Examination Permit Details: Office - Students Accounts Section, Room - Room F103, Floor - 1st Floor, Building - F Building',
+  type: 'WHERE',
   message: 'You can get your Examination Permit at the Student Accounts Section which is located at the 1st Floor of F Building Room F103. ',
   tags: ['Examination', 'Permit', 'Get', 'Process']
 }, {
   name: 'Where to process Clearance for the release of School Credentials ',
-  location: 'Where to process Clearance for the release of School Credentials Details: Office - Students Accounts Section, Room - Room F103, Floor - 1st Floor Building - F Building',
-  type: '',
+  details: 'Where to process Clearance for the release of School Credentials Details: Office - Students Accounts Section, Room - Room F103, Floor - 1st Floor Building - F Building',
+  type: 'WHERE',
   message: 'You can get your clearance for School Credentials at the Student Accounts Section which is located at the 1st Floor of F Building Room F103. ',
   tags: ['Clearance', 'School', 'Credentials', 'Request', 'Get', 'Process']
 }, {
   name: 'Where to Process Press Releases and Advertisements ',
-  location: 'Where to Process Press Releases and Advertisements Details: Office - MAPS Office, Room - Room F205, Floor - 2nd Floor, Building - F Building',
-  type: '',
+  details: 'Where to Process Press Releases and Advertisements Details: Office - MAPS Office, Room - Room F205, Floor - 2nd Floor, Building - F Building',
+  type: 'WHERE',
   message: 'You can process your Press Releases and Advertisements at the MAPS Office which is located at the 2nd Floor of F Building Room F205. ',
   tags: ['Press', 'Release', 'Advertisements', 'Request', 'Process']
 }, {
   name: 'Where to Process Yearbook and Graduation Materials ',
-  location: 'Where to Process Yearbook and Graduation Materials Detaisl: Office - MAPS Office, Room - Room F205, Floor - 2nd Floor, Building - F Building',
-  type: '',
+  details: 'Where to Process Yearbook and Graduation Materials Detaisl: Office - MAPS Office, Room - Room F205, Floor - 2nd Floor, Building - F Building',
+  type: 'WHERE',
   message: 'You can process your yearbook and other graduation materials at the MAPS Office which is located at the 2nd Floor of F Building Room F205. ',
   tags: ['Yearbook', 'Graduation', 'Materials', 'Request', 'Get', 'Process']
 }, {
   name: 'Where to process Social Media Content Development ',
-  location: 'Where to process Social Media Content Development Details: Office - MAPS Office, Room - Room F205, Floor - 2nd Floor, Building - F Building',
-  type: '',
+  details: 'Where to process Social Media Content Development Details: Office - MAPS Office, Room - Room F205, Floor - 2nd Floor, Building - F Building',
+  type: 'WHERE',
   message: 'You can process the Social Media Content Development at the MAPS Office which is located at the 2nd Floor of F Building Room F205. ',
   tags: ['Social', 'Media', 'Content', 'Development', 'Request', 'Process']
 }, {
   name: 'Where to process Website Content Development ',
-  location: 'Where to process Website Content Development Details: Office - MAPS Office, Room - Room F205, Floor - 2nd Floor, Building - F Building',
-  type: '',
+  details: 'Where to process Website Content Development Details: Office - MAPS Office, Room - Room F205, Floor - 2nd Floor, Building - F Building',
+  type: 'WHERE',
   message: 'You can process the Website Content Development at the MAPS Office which is located at the 2nd Floor of F Building Room F205. ',
   tags: ['Website', 'Content', 'Development', 'Request', 'Process']
 }, {
   name: 'Where to process Transcript of Records ',
-  location: 'Where to process Transcript of Records Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
-  type: '',
+  details: 'Where to process Transcript of Records Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
+  type: 'WHERE',
   message: 'You can process your Transcript of Records at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['Transcript', 'Records', 'TOR', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Scholastic Records ',
-  location: 'Where to process Scholastic Records Details: Office - Admissions and Records Center, Floor - 2nd Floor, Buidling - D Building',
-  type: '',
+  details: 'Where to process Scholastic Records Details: Office - Admissions and Records Center, Floor - 2nd Floor, Buidling - D Building',
+  type: 'WHERE',
   message: 'You can process your Scholastic Records at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['Scholastic', 'Records', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Course Description ',
-  location: 'Where to process Course Description Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
-  type: '',
+  details: 'Where to process Course Description Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
+  type: 'WHERE',
   message: 'You can process your Course Description at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['Course', 'Description', 'Get', 'Request', 'Process', 'copy']
 }, {
   name: 'Where to process Permit to Cross Enroll ',
-  location: 'Where to process Permit to Cross Enroll Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
-  type: '',
+  details: 'Where to process Permit to Cross Enroll Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
+  type: 'WHERE',
   message: 'You can process your Permit to Cross Enroll at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['Cross', 'Enrollment', 'Request', 'Get', 'Process']
 }, {
   name: 'Where to process Clock Hours ',
-  location: 'Where to process Clock Hours Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
-  type: '',
+  details: 'Where to process Clock Hours Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
+  type: 'WHERE',
   message: 'You can process your Clock Hours at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['Clock', 'Hours', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Certificate of Good Moral Character ',
-  location: 'Where to process Certificate of Good Moral Character Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
-  type: '',
+  details: 'Where to process Certificate of Good Moral Character Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
+  type: 'WHERE',
   message: 'You can process your Clock Hours at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['Certificate', 'Good', 'Moral', 'Character', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Diploma(Documentary Stamp Included) ',
-  location: 'Where to process Diploma(Documentary Stamp Included) Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
-  type: '',
+  details: 'Where to process Diploma(Documentary Stamp Included) Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
+  type: 'WHERE',
   message: 'You can process your Diploma (Documentary Stamp Included) at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['Diploma', 'Documentary', 'Stamp', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Certificate of Enrollment ',
-  location: 'Where to process Certificate of Enrollment Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
-  type: '',
+  details: 'Where to process Certificate of Enrollment Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
+  type: 'WHERE',
   message: 'You can process your Certificate of Enrollment at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['Certificate', 'Enrollment', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Certificate of General Weighted Average (GWA) ',
-  location: 'Where to process Certificate of General Weighted Average (GWA) Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
-  type: '',
+  details: 'Where to process Certificate of General Weighted Average (GWA) Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
+  type: 'WHERE',
   message: 'You can process your Certificate of General Weighted Average (GWA) at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['Certificate', 'GWA', 'General', 'Weighted', 'Average', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Certificate of English as Medium Instruction ',
-  location: 'Where to process Certificate of English as Medium Instruction Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
-  type: '',
+  details: 'Where to process Certificate of English as Medium Instruction Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
+  type: 'WHERE',
   message: 'You can process your Certificate of English as Medium Instruction at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['Certificate', 'English', 'Medium', 'Instruction', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Certificate of Graduation ',
-  location: 'Where to process Certificate of Graduation Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
-  type: '',
+  details: 'Where to process Certificate of Graduation Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
+  type: 'WHERE',
   message: 'You can process your Certificate of Graduation at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['Certificate', 'Graduation', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Certificate of Multiple Attendance ',
-  location: 'Where to process Certificate of Multiple Attendance  Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
-  type: '',
+  details: 'Where to process Certificate of Multiple Attendance  Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
+  type: 'WHERE',
   message: 'You can process your Certificate of Multiple Attendance at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['Certificate', 'Multiple', 'Attendance', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process HS Form 137 ',
-  location: 'Where to process HS Form 137 Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
-  type: '',
+  details: 'Where to process HS Form 137 Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
+  type: 'WHERE',
   message: 'You can process your HS Form 137 at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['HS', 'Form', '137', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Change of Name ',
-  location: 'Where to process Change of Name Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
-  type: '',
+  details: 'Where to process Change of Name Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
+  type: 'WHERE',
   message: 'You can process your Change of Name at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['Change', 'Name', 'Request', 'Process']
 }, {
   name: 'Where to process Copy of Schedule ',
-  location: 'Where to process Copy of Schedule Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
-  type: '',
+  details: 'Where to process Copy of Schedule Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
+  type: 'WHERE',
   message: 'You can process your Copy of Schedule at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['Copy', 'Schedule', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Copy of Grades ',
-  location: 'Where to process Copy of Grades Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
-  type: '',
+  details: 'Where to process Copy of Grades Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
+  type: 'WHERE',
   message: 'You can process your Copy of Grades at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['Copy', 'Grades', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Certificate of Grades ',
-  location: 'Where to process Certificate of Grades Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
-  type: '',
+  details: 'Where to process Certificate of Grades Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
+  type: 'WHERE',
   message: 'You can process your Certificate of Grades at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['Certificate', 'Grades', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Certificate of Earned Units ',
-  location: 'Where to process Certificate of Earned Units Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
-  type: '',
+  details: 'Where to process Certificate of Earned Units Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
+  type: 'WHERE',
   message: 'You can process your Certificate of Earned Units at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['Certificate', 'Earned', 'Units', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to process Certificate needed/required by Accrediting Agency ',
-  location: 'Where to process Certificate needed/required by Accrediting Agency Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
-  type: '',
+  details: 'Where to process Certificate needed/required by Accrediting Agency Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building',
+  type: 'WHERE',
   message: 'You can request your required by the Accrediting Agency at the ARC which is located at the 2nd Floor of D Building beside the UB Gym. ',
   tags: ['Certificate', 'Accrediting', 'Agency', 'Get', 'Request', 'Process']
 }, {
   name: 'Where to ask for USB or Hard Disk Virus Removal ',
-  location: 'Where to ask for USB or Hard Disk Virus Removal Details: Office - MIS Office, Floor -  4th Floor, Building - F Building, Room - Room F403 ',
-  type: '',
+  details: 'Where to ask for USB or Hard Disk Virus Removal Details: Office - MIS Office, Floor -  4th Floor, Building - F Building, Room - Room F403 ',
+  type: 'WHERE',
   message: 'You can bring your Flash Drive or Hard Disk for Virus Removal at the 4th Floor of F Building, Room F403. ',
   tags: ['Flash', 'Drive', 'Virus', 'Removal', 'USB', 'Avail', 'Request', 'Service']
 }, {
   name: 'Where to ask for Assessment of PC or Laptop ',
-  location: 'Where to ask for Assessment of PC or Laptop Details: Office - MIS Office, Floor -  4th Floor, Building - F Building, Room - Room F403 ',
-  type: '',
+  details: 'Where to ask for Assessment of PC or Laptop Details: Office - MIS Office, Floor -  4th Floor, Building - F Building, Room - Room F403 ',
+  type: 'WHERE',
   message: 'You can bring your PC or Laptop for assessment at the 4th Floor of F Building, Room F403. ',
   tags: ['PC', 'Personal', 'Computer', 'Laptop', 'Assessment', 'Avail', 'Request', 'Process', 'Service']
 }, {
   name: 'Where to ask for installation of Open Source/Free Software ',
-  location: 'Where to ask for installation of Open Source/Free Software Details: Office - MIS Office, Floor -  4th Floor, Building - F Building, Room - Room F403 ',
-  type: '',
+  details: 'Where to ask for installation of Open Source/Free Software Details: Office - MIS Office, Floor -  4th Floor, Building - F Building, Room - Room F403 ',
+  type: 'WHERE',
   message: 'You can ask for installation of Open Source / Free Software at the 4th Floor of F Building, Room F403. ',
   tags: ['Installation', 'Free', 'Open', 'Source', 'Avail', 'Software', 'Request', 'Process']
 }, {
   name: 'Where to print and validate Student ID ',
-  location: 'Where to print and validate Student ID Details: Office - MIS Office, Floor -  4th Floor, Building - F Building, Room - Room F403 ',
-  type: '',
+  details: 'Where to print and validate Student ID Details: Office - MIS Office, Floor -  4th Floor, Building - F Building, Room - Room F403 ',
+  type: 'WHERE',
   message: 'You can print and validate your ID at the 4th Floor of F Building, Room F403. ',
   tags: ['Print', 'Validate', 'Student', 'ID', 'Request', 'Process']
 }, {
   name: 'Where to print Alumni ID ',
-  location: 'Where to print Alumni ID Details: Office - MIS Office, Floor -  4th Floor, Building - F Building, Room - Room F403 ',
-  type: '',
+  details: 'Where to print Alumni ID Details: Office - MIS Office, Floor -  4th Floor, Building - F Building, Room - Room F403 ',
+  type: 'WHERE',
   message: 'You can print your Alumni ID at the 4th Floor of F Building, Room F403. Be sure to bring your clearance from the Alumni Office.',
   tags: ['Print', 'Alumni', 'ID', 'Process']
 }, {
   name: 'Where to ask for Creation of WiFi Account ',
-  location: 'Where to ask for Creation of WiFi Account Details: Office - MIS Office, Floor -  4th Floor, Building - F Building, Room - Room F403 ',
-  type: '',
+  details: 'Where to ask for Creation of WiFi Account Details: Office - MIS Office, Floor -  4th Floor, Building - F Building, Room - Room F403 ',
+  type: 'WHERE',
   message: 'You can ask for the creation of your WiFi account at the 4th Floor of F Building, Room F403. ',
   tags: ['Creation', 'WiFi', 'Account', 'Request', 'Process']
 }, {
   name: 'Where can students access the WiFi ',
-  location: 'UB Gym, FB Food Court, Science High Hallway, AA and AC Floors of SIHTM Hallway, SCJPS Hallway, SBAA Hallway, STE Hallway, SIT WiFi Area and the Main, Extension and Centennial Library ',
-  type: '',
+  details: 'UB Gym, FB Food Court, Science High Hallway, AA and AC Floors of SIHTM Hallway, SCJPS Hallway, SBAA Hallway, STE Hallway, SIT WiFi Area and the Main, Extension and Centennial Library ',
+  type: 'WHERE',
   message: 'You can access the WiFi in these areas: UB Gym, FB Food Court, Science High Hallway, AA and AC Floors of SIHTM Hallway, SCJPS Hallway, SBAA Hallway, STE Hallway, SIT WiFi Area and the Main, Extension and Centennial Library. Be Sure to have an account to gain access of the WiFi. ',
   tags: ['WiFi', 'Area', 'Access']
 }, {
   name: 'Where students can use the Student Development Facilitation and Counseling Service ',
-  location: 'Where students can use the Student Development Facilitation and Counseling Service Details: Office - CCSD, Floor - 2nd Floor, Building - F Building, Room -  Room F206',
-  type: '',
+  details: 'Where students can use the Student Development Facilitation and Counseling Service Details: Office - CCSD, Floor - 2nd Floor, Building - F Building, Room -  Room F206',
+  type: 'WHERE',
   message: 'You can use this service at the CCSD which located at the 2nd Floor of F Building, Room F206. ',
   tags: ['Student', 'Development', 'Facilitation', 'Counseling', 'Avail', 'Use', 'Service']
 }, {
   name: 'Where students can use the Psychological Testing Service ',
-  location: 'Where students can use the Psychological Testing Service Details: Office - CCSD, Floor - 2nd Floor, Building - F Building, Room -  Room F206',
-  type: '',
+  details: 'Where students can use the Psychological Testing Service Details: Office - CCSD, Floor - 2nd Floor, Building - F Building, Room -  Room F206',
+  type: 'WHERE',
   message: 'You can use this service at the CCSD which is located at the 2nd Floor of F Building, Room F206. ',
   tags: ['Psychological', 'Testing', 'Avail', 'Use', 'Service']
 }, {
   name: 'Where students can use the Career and Placement Services ',
-  location: 'Where students can use the Career and Placement Services Details: Office - CCSD, Floor - 2nd Floor, Building - F Building, Room -  Room F206',
-  type: '',
+  details: 'Where students can use the Career and Placement Services Details: Office - CCSD, Floor - 2nd Floor, Building - F Building, Room -  Room F206',
+  type: 'WHERE',
   message: 'You can use this service at the CCSD which is located at the 2nd Floor of F Building, Room F206. ',
   tags: ['Career', 'Placement', 'Avail', 'Use', 'Service']
 }, {
   name: ' Where is the Readmission for Students ',
-  location: 'Where is the Readmission for Students Details: Office - OSA, Floor - 1st Floor, Building - F Building',
-  type: '',
+  details: 'Where is the Readmission for Students Details: Office - OSA, Floor - 1st Floor, Building - F Building',
+  type: 'WHERE',
   message: 'You can ask for readmission at the Office of Student Affairs which is located at the 1st Floor of F Building. ',
   tags: ['Readmission', 'Readmitted', 'Claim', 'Dropped', 'Class', 'Card']
 }, {
   name: 'Where to apply for Performing Arts ',
-  location: 'Where to apply for Performing Arts Details: Office - OSA, Floor - 1st Floor, Building - F Building',
-  type: '',
+  details: 'Where to apply for Performing Arts Details: Office - OSA, Floor - 1st Floor, Building - F Building',
+  type: 'WHERE',
   message: 'You can apply for Performing Arts at the Office of Student Affairs which is located at the 1st Floor of F Building. Ask for the office director. ',
   tags: ['Performing', 'Arts', 'Graces', 'Voices', 'Chamber', 'Orchestra', 'Plug', 'Play', 'Band', 'UBBUK', 'Ethnic', 'Dance', 'Group', 'Process', 'Application']
 }, {
   name: 'Where to ask for Handbook ',
-  location: 'Office - OSA, Floor - 1st Floor, Building - F Building or Office - Deans Office',
-  type: '',
+  details: 'Office - OSA, Floor - 1st Floor, Building - F Building or Office - Deans Office',
+  type: 'WHERE',
   message: 'You can ask for a copy of the Student handbook at the Office of Student Affairs which is located at the 1st Floor of F Building or at your Deans Office. ',
   tags: ['Handbook', 'Ask', 'Copy']
 }, {
   name: 'Where to borrow Sports Equipments ',
-  location: 'Where to borrow Sports Equipments Details: Office - Athletics Office, Building - D Building, Floor - 2nd Floor, Room - Room D201',
-  type: '',
+  details: 'Where to borrow Sports Equipments Details: Office - Athletics Office, Building - D Building, Floor - 2nd Floor, Room - Room D201',
+  type: 'WHERE',
   message: 'You can borrow Sports Equipments at the Athletics Office which is located at the 2nd Floor of D Building, Room D201. ',
   tags: ['Sports', 'Equipments', 'Borrow', 'Lending']
 }, {
   name: 'Where to avail of Books, Manuals, Uniforms ',
-  location: 'Where to avail of Books, Manuals, Uniforms Details: Office - AMD Office, Building - D Building, Floor - 2nd Floor, Beside the UB Gym',
-  type: '',
+  details: 'Where to avail of Books, Manuals, Uniforms Details: Office - AMD Office, Building - D Building, Floor - 2nd Floor, Beside the UB Gym',
+  type: 'WHERE',
   message: 'You can purchase that at the AMD which is located at the 2nd Floor of D Building beside the UB Gym. Be sure to pay at the cashier first. ',
   tags: ['Buy', 'Avail', 'Purchase', 'Book', 'Manual', 'Uniform']
 }, {
   name: 'Where to process International OJT ',
-  location: 'Where to process International OJT Details: Office -LARC Office,  Floor - 2nd Floor,  Building -  A Building,  Room - Room A205 ',
-  type: '',
+  details: 'Where to process International OJT Details: Office -LARC Office,  Floor - 2nd Floor,  Building -  A Building,  Room - Room A205 ',
+  type: 'WHERE',
   message: 'You can process your application for International OJT at the LARC Office which is located at the 2nd Floor of A Building, Room A205. ',
   tags: ['Process', 'IOJT', 'International', 'Application', 'Apply', 'Job', 'Training']
 }, {
   name: 'Where to get the clearance form for Alumni ID ',
-  location: 'Where to get the clearance form for Alumni ID Details: Office - Alumni Office, Floor - 2nd Floor, Building - A Building, Room - Room A201 ',
-  type: '',
+  details: 'Where to get the clearance form for Alumni ID Details: Office - Alumni Office, Floor - 2nd Floor, Building - A Building, Room - Room A201 ',
+  type: 'WHERE',
   message: 'You can process your clearance form for the Alumni ID at the Alumni Office which is located at the 2nd Floor of A Building, Room A201. ',
   tags: ['Clearance', 'Alumni', 'ID', 'Get', 'Process']
 }, {
   name: 'Graduate School ',
-  location: 'Graduate School Details: Building - H Building, Floor - 4th Floor, Room - Room H411 ',
-  type: '',
+  details: 'Graduate School Details: Building - H Building, Floor - 4th Floor, Room - Room H411 ',
+  type: 'WHERE',
   message: 'The Office of the Graduate School is located at the 4th Floor of H Building, room H411. ',
   tags: ['Graduate', 'School', 'Office', 'Location']
 }, {
   name: 'Where to be admitted ',
-  location: 'Where to be admitted Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building, Beside the UB Gym',
-  type: '',
+  details: 'Where to be admitted Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building, Beside the UB Gym',
+  type: 'WHERE',
   message: 'This service is provided by the ARC which is located at the 2nd floor of D Building beside the UB Gym. ',
   tags: ['Admission', 'Admitted', 'Process', 'Service']
 }, {
   name: 'Enrollment for Transferee and Freshmen ',
-  location: 'Enrollment for Transferee and Freshmen Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building, Beside the UB Gym',
-  type: '',
+  details: 'Enrollment for Transferee and Freshmen Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building, Beside the UB Gym',
+  type: 'WHERE',
   message: 'If you\'re a new student or a transferee, please proceed to the ARC which is located at the 2nd floor of D Building beside the UB Gym. ',
   tags: ['Enrollment', 'Transferee', 'Freshmen', 'Freshman', 'New', 'Student', 'Service', 'Process']
 }, {
   name: 'Enrollment for International Students ',
-  location: 'Enrollment for International Students Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building, Beside the UB Gym',
-  type: '',
+  details: 'Enrollment for International Students Details: Office - Admissions and Records Center, Floor - 2nd Floor, Building - D Building, Beside the UB Gym',
+  type: 'WHERE',
   message: 'For international students, please proceed to your Dean\'s Office first. ',
   tags: ['Enrollment', 'International', 'Foreign', 'Students']
 }, {
   name: 'Enrollment for Current Students ',
-  location: 'Dean\'s Office',
-  type: '',
+  details: 'Dean\'s Office',
+  type: 'WHERE',
   message: 'If you\'re a current student, please proceed to your Dean\'s Office for your enrollment. ',
   tags: ['Enrollment', 'Current', 'Old', 'Student', 'Service', 'Process']
 }, {
   name: 'Format Editing ',
-  location: 'Format Editing Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
-  type: '',
+  details: 'Format Editing Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
+  type: 'WHERE',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
   tags: ['Format', 'Editing', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'Statistics Assistance, Statistic Package for Social Sciences ',
-  location: 'Statistics Assistance, Statistic Package for Social Sciences Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
-  type: '',
+  details: 'Statistics Assistance, Statistic Package for Social Sciences Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
+  type: 'WHERE',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
   tags: ['Statistics', 'Assistance', 'Package', 'Social', 'Sciences', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'Poster Preparation ',
-  location: 'Poster Preparation Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
-  type: '',
+  details: 'Poster Preparation Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
+  type: 'WHERE',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
   tags: ['Poster', 'Preparation', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'Publication of Research Findings (Catalyst) ',
-  location: 'Publication of Research Findings (Catalyst) Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
-  type: '',
+  details: 'Publication of Research Findings (Catalyst) Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
+  type: 'WHERE',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
   tags: ['Publication', 'Research', 'Findings', 'Catalyst', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'Presentation of Research Findings ',
-  location: 'Presentation of Research Findings Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
-  type: '',
+  details: 'Presentation of Research Findings Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
+  type: 'WHERE',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
   tags: ['Presentation', 'Research', 'Findings', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'Tool Validation ',
-  location: 'Tool Validation Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
-  type: '',
+  details: 'Tool Validation Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
+  type: 'WHERE',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
   tags: ['Tool', 'Validation', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'Grammar Check ',
-  location: 'Grammar Check Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
-  type: '',
+  details: 'Grammar Check Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
+  type: 'WHERE',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
   tags: ['Grammar', 'Check', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'Grammarly ',
-  location: 'Grammarly Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
-  type: '',
+  details: 'Grammarly Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
+  type: 'WHERE',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
   tags: ['Grammarly', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'Plagiarism Test ',
-  location: 'Plagiarism Test Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
-  type: '',
+  details: 'Plagiarism Test Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
+  type: 'WHERE',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
   tags: ['Plagiarism', 'Test', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'Spell Check ',
-  location: 'Spell Check Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
-  type: '',
+  details: 'Spell Check Details: Office - RNDC, Building - F building, Floor -  2nd Floor, Room - Room F208',
+  type: 'WHERE',
   message: 'You can avail of this service at the RNDC which is located at the 2nd Floor of F Building, Room F208. ',
   tags: ['Spell', 'Check', 'Use', 'Avail', 'Request', 'Service']
 }, {
   name: 'UB Gym ',
-  location: 'University of Baguio Gym Details: Building - D Building',
-  type: '',
+  details: 'University of Baguio Gym Details: Building - D Building',
+  type: 'WHERE',
   message: 'The University of Baguio Cardinals Gym is located at the D Building. ',
   tags: ['UB', 'Gym', 'Cardinals', 'Location']
 }, {
   name: 'Cashier ',
-  location: 'University of Baguio Cashier Details: Building - F Building, Floor - 1st Floor',
-  type: '',
+  details: 'University of Baguio Cashier Details: Building - F Building, Floor - 1st Floor',
+  type: 'WHERE',
   message: 'The Cashier is located at the 1st Floor of F Building in front of OSA. ',
   tags: ['Cashier', 'Location']
 }, {
   name: 'Where to pay Tuition Fee ',
-  location: 'Where to pay Tuition Fee Details: Building - F Building, Floor - 1st Floor',
-  type: '',
+  details: 'Where to pay Tuition Fee Details: Building - F Building, Floor - 1st Floor',
+  type: 'WHERE',
   message: 'You can pay your tuition fee at the Cashier which is located at the 1st Floor of F Building in front of OSA. ',
   tags: ['Payment', 'Tuition', 'Fee', 'Location']
 }, {
   name: 'Where is the Dental Clinic ',
-  location: 'Where is the Dental Clinic Details: Building - F Building, Floor - 1st Floor, Room - Room F105 ',
-  type: '',
+  details: 'Where is the Dental Clinic Details: Building - F Building, Floor - 1st Floor, Room - Room F105 ',
+  type: 'WHERE',
   message: 'The dental clinic is located at the 1st Floor of F Building, Room F105. ',
   tags: ['Dental', 'Dentist', 'Clinic', 'Location']
 }, {
   name: 'Where to Print Schedule ',
-  location: 'Where to Print Schedule Details: Office - MIS, Building - F Building, Floor - 4th Floor, Room - Room F403 ',
-  type: '',
+  details: 'Where to Print Schedule Details: Office - MIS, Building - F Building, Floor - 4th Floor, Room - Room F403 ',
+  type: 'WHERE',
   message: 'You can print your schedule at the MIS Office which is located at the 4th Floor of F Building, Room F403. ',
   tags: ['Printing', 'Print', 'Schedule', 'Location']
 }, {
   name: 'Where is the Medical/Medtech Clinical Lab ',
-  location: 'Where is the Medical/Medtech Clinical Lab Details: Building - F Building, Floor - 1st Floor, Room - Room F102 ',
-  type: '',
+  details: 'Where is the Medical/Medtech Clinical Lab Details: Building - F Building, Floor - 1st Floor, Room - Room F102 ',
+  type: 'WHERE',
   message: 'The Medtech Clinical Lab is located at the 1st Floor of F Building, Room F102. ',
   tags: ['Medtech', 'Clinic', 'Laboratory', 'Location', 'Lab', 'Medical']
 }, {
   name: 'Where to request a copy of PRC Board Syllabi for STE Students ',
-  location: 'Where to request a copy of PRC Board Syllabi for STE Students Details: Office - LARC, Building - A Building, Floor - 2nd Floor, Room - Room A205 ',
-  type: '',
+  details: 'Where to request a copy of PRC Board Syllabi for STE Students Details: Office - LARC, Building - A Building, Floor - 2nd Floor, Room - Room A205 ',
+  type: 'WHERE',
   message: 'You can request for a copy of the PRC Board Syllabi at the LARC Office which is located at the 2nd Floor of A Building, Room A205. ',
   tags: ['PRC', 'Board', 'Syllabi', 'Copy', 'Request', 'Location']
 }, {
   name: 'Where to apply for scholarships ',
-  location: 'Where to apply for scholarships Details: Office - OSA, Building - F Building, Floor - 1st Floor, Room - Room F103 ',
-  type: '',
+  details: 'Where to apply for scholarships Details: Office - OSA, Building - F Building, Floor - 1st Floor, Room - Room F103 ',
+  type: 'WHERE',
   message: 'Please prodeed to the Student Accounts Section which is located at the 1st Floor of F Building, Room F103 for further assistance. ',
   tags: ['Application', 'Scholarship', 'Apply', 'Location']
 }, {
   name: 'IOJT/OJT ',
-  location: 'IOJT/OJT Details: Office -  Dean\'s Office or LARC, A205 ',
-  type: '',
+  details: 'IOJT/OJT Details: Office -  Dean\'s Office or LARC, A205 ',
+  type: 'WHERE',
   message: 'Please proceed to your Dean\'s Office in order for them to evaluate your current status if you are qualified to enroll for OJT. If your concern is about the International OJT, please proceed to the LARC Office which is located at the 2nd Floor of A Building, Room A205. ',
   tags: ['OJT', 'IOJT', 'International', 'Job', 'Training', 'Process', 'Apply', 'Application']
 }, {
   name: 'Grades ',
-  location: 'To see your grades, please visit the student portal aims.ubaguio.edu/aims/students. For printed grades, please visit your Dean\'s Office. ',
-  type: '',
+  details: 'To see your grades, please visit the student portal aims.ubaguio.edu/aims/students. For printed grades, please visit your Dean\'s Office. ',
+  type: 'WHERE',
   message: 'To see your grades, please visit the student portal aims.ubaguio.edu/aims/students. For printed grades, please visit your Dean\'s Office. ',
   tags: ['Grades', 'Printed', 'See', 'Process']
 }, {
   name: 'X Ray ',
-  location: 'X Ray office details: Office - Clinice, Building - F building, Floor - 1st Floor ',
-  type: '',
+  details: 'X Ray office details: Office - Clinice, Building - F building, Floor - 1st Floor ',
+  type: 'WHERE',
   message: 'The X-Ray Laboratory is located at the 1st floor of F building. ',
   tags: ['XRAY', 'Laboratory', 'Location', 'Ray', 'Lab']
 }, {
   name: 'Office of the Vice President for Finance ',
-  location: 'Office of the Vice President for Finance Details: Building - F building, Floor - 1st Floor ',
-  type: '',
+  details: 'Office of the Vice President for Finance Details: Building - F building, Floor - 1st Floor ',
+  type: 'WHERE',
   message: 'The Office of the Vice President for Finance is located at the 1st floor of F building. ',
   tags: ['VP', 'Vice', 'President', 'Finance', 'Office']
 }, {
   name: 'University of Baguio Alumni Foundation Inc (UBAFI) ',
-  location: 'University of Baguio Alumni Foundation Inc (UBAFI) Details: Buidling - F building, Floor - 2nd Floor, Beside the SIT Dean\'s Office ',
-  type: '',
+  details: 'University of Baguio Alumni Foundation Inc (UBAFI) Details: Buidling - F building, Floor - 2nd Floor, Beside the SIT Dean\'s Office ',
+  type: 'WHERE',
   message: 'The University of Baguio Alumni Foundation Inc (UBAFI) is located at the 2nd floor of F building beside the SIT Dean\'s Office. ',
   tags: ['University', 'Baguio', 'Alumni', 'Foundation', 'UBAFI', 'Inc', 'Office']
 }, {
   name: 'University of Baguio Faculty and Education Workers Union (UBFEWU) ',
-  location: 'University of Baguio Faculty and Education Workers Union (UBFEWU) Details: Building - F building, Floor - 2nd Floor, in front of the UBAFI Office ',
-  type: '',
+  details: 'University of Baguio Faculty and Education Workers Union (UBFEWU) Details: Building - F building, Floor - 2nd Floor, in front of the UBAFI Office ',
+  type: 'WHERE',
   message: 'The University of Baguio Faculty and Education Workers Union (UBFEWU) is located at the 2nd floor of F building in front of the UBAFI Office. ',
   tags: ['University', 'Baguio', 'Faculty', 'Education', 'Workers', 'Union', 'UBFEWU', 'Office']
 }, {
   name: 'Physical Therapy Center ',
-  location: 'Physical Therapy Center Details: Building - D Building, Floor - 2nd Floor ',
-  type: '',
+  details: 'Physical Therapy Center Details: Building - D Building, Floor - 2nd Floor ',
+  type: 'WHERE',
   message: 'The Physical Therapy Center is located at the 2nd Floor of D Building beside the UB Cardinals Gym. ',
   tags: ['Physical', 'Therapy', 'Center', 'Location']
 }, {
   name: 'ECE Laboratory ',
-  location: 'ECE Laboratory Details: Building - D Building, Floor - 2nd Floor, Room - Room D204 ',
-  type: '',
+  details: 'ECE Laboratory Details: Building - D Building, Floor - 2nd Floor, Room - Room D204 ',
+  type: 'WHERE',
   message: 'The ECE Laboratory is located at the 2nd Floor of D Building, Room D204. ',
   tags: ['ECE', 'Laboratory', 'Electronics', 'Communications', 'Engineering', 'Location', 'D204']
 }, {
   name: 'Smart Wireless Laboratory ',
-  location: 'Smart Wireless Laboratory Details: Building - D Building, Floor - 2nd Floor, Beside D204 ',
-  type: '',
+  details: 'Smart Wireless Laboratory Details: Building - D Building, Floor - 2nd Floor, Beside D204 ',
+  type: 'WHERE',
   message: 'The Smart Wireless Laboratory is located at the 2nd Floor of D Building beside Room D204. ',
   tags: ['Smart', 'Wireless', 'Laboratory', 'Location']
 }, {
   name: 'Post Office ',
-  location: 'Post Office Details: Building - D Building, Floor - 2nd Floor, Behind the UB Cardinals Gym ',
-  type: '',
+  details: 'Post Office Details: Building - D Building, Floor - 2nd Floor, Behind the UB Cardinals Gym ',
+  type: 'WHERE',
   message: 'The Post Office is located at the 2nd Floor of D Building behind the UB Cardinals Gym. ',
   tags: ['Post', 'Office', 'PHL', 'location']
 }, {
   name: 'Chamber Orchestra/Nocanor Sta. Ana Abelardo ',
-  location: 'Chamber Orchestra/Nocanor Sta. Ana Abelardo Details: Building - D Building, Floor - 3rd Floor ',
-  type: '',
+  details: 'Chamber Orchestra/Nocanor Sta. Ana Abelardo Details: Building - D Building, Floor - 3rd Floor ',
+  type: 'WHERE',
   message: 'The Chamber Orchestra/Nocanor Sta. Ana Abelardo is located at the 3rd Floor of D Building. ',
   tags: ['Chamber', 'Orchestra', 'Nocanor', 'Sta', 'Ana', 'Santa', 'Abelardo', 'location']
 }, {
   name: 'Music Studio ',
-  location: 'Music Studio Details: Building - D Building, Floor - 3rd Floor ',
-  type: '',
+  details: 'Music Studio Details: Building - D Building, Floor - 3rd Floor ',
+  type: 'WHERE',
   message: 'The Music Studio is located at the 3rd Floor of D Bulding. ',
   tags: ['Music', 'Studio', 'Location']
 }, {
   name: 'Sound Technical Communication and Information ',
-  location: 'Sound Technical Communication and Information  Details: Building - D Building, Floor - 3rd Floor, Room - Room D307 ',
-  type: '',
+  details: 'Sound Technical Communication and Information  Details: Building - D Building, Floor - 3rd Floor, Room - Room D307 ',
+  type: 'WHERE',
   message: 'The Sound Technical Communication and Information is located at the 3rd Floor of D Building, Room D307. ',
   tags: ['Location', 'Sound', 'Technical', 'Communication', 'Information']
 }, {
   name: 'Chapel ',
-  location: 'Chapel Details: Building - D Building, Floor - 3rd Floor ',
-  type: '',
+  details: 'Chapel Details: Building - D Building, Floor - 3rd Floor ',
+  type: 'WHERE',
   message: 'The Chapel is located at the 3rd Floor of D Building. ',
   tags: ['Location', 'Chapel', 'Church', 'Pray']
 }, {
   name: 'Physical Education Office ',
-  location: 'Physical Education Office Details: Building - D Building, Floor - 4th Floor, Room - D404 ',
-  type: '',
+  details: 'Physical Education Office Details: Building - D Building, Floor - 4th Floor, Room - D404 ',
+  type: 'WHERE',
   message: 'The PE Office is located at the 4th Floor of D Building, Room D404. ',
   tags: ['Location', 'Physical', 'Education', 'PE', 'D404']
 }, {
   name: 'Fitness Center ',
-  location: 'Fitness Center Details: Building - D Building, Floor - 4th Floor, Beside PE Office ',
-  type: '',
+  details: 'Fitness Center Details: Building - D Building, Floor - 4th Floor, Beside PE Office ',
+  type: 'WHERE',
   message: 'The Fitness Center is located at the 4th Floor of D Building beside the PE Office. ',
   tags: ['Location', 'Fitness', 'Center']
 }, {
   name: 'Athletes Room ',
-  location: 'Athletes Room Details: Building - D Building, Floor - 4th Floor ',
-  type: '',
+  details: 'Athletes Room Details: Building - D Building, Floor - 4th Floor ',
+  type: 'WHERE',
   message: 'The athletes room is located at the 4th Floor of D Building. ',
   tags: ['Location', 'Athletes', 'Room']
 }, {
   name: 'Martial Arts Room ',
-  location: 'Martial Arts Room Details: Building - D Building, Floor - 4th Floor ',
-  type: '',
+  details: 'Martial Arts Room Details: Building - D Building, Floor - 4th Floor ',
+  type: 'WHERE',
   message: 'The Martial Arts Room is located at the 4th Floor of D Building. ',
   tags: ['Location', 'Martial', 'Arts', 'Room']
 }, {
   name: 'AMD Asset Management Department ',
-  location: 'AMD Asset Management Department Details: Building - D Building, Floor - 2nd Floor, Beside the UB Cardinals Gym. ',
-  type: '',
+  details: 'AMD Asset Management Department Details: Building - D Building, Floor - 2nd Floor, Beside the UB Cardinals Gym. ',
+  type: 'WHERE',
   message: 'The AMD is located at the 2nd Floor of D Building beside the UB Cardinals Gym. ',
   tags: ['Location', 'AMD', 'Asset', 'Management', 'Department', 'Office']
 }, {
   name: 'Junior Philippine Institute of Engineers, JPICE ',
-  location: 'Junior Philippine Institute of Engineers, JPICE Details: Building - H Building, Floor - 3rd Basement ',
-  type: '',
+  details: 'Junior Philippine Institute of Engineers, JPICE Details: Building - H Building, Floor - 3rd Basement ',
+  type: 'WHERE',
   message: 'The JPICE is located at the 3rd Basement Floor of H Building. ',
   tags: ['Location', 'JPICE', 'Junior', 'Philippine', 'Institute', 'Engineers']
 }, {
   name: 'Physics Laboratories ',
-  location: 'Physics Laboratories Details: Building - H Building, Floor - 3rd Basement, Rooms HB310, HB308 ',
-  type: '',
+  details: 'Physics Laboratories Details: Building - H Building, Floor - 3rd Basement, Rooms HB310, HB308 ',
+  type: 'WHERE',
   message: 'The physics laboratories are located at the 3rd Basement of H Building, Rooms HB310 and HB308. ',
   tags: ['Location', 'Physics', 'Laboratory', 'HB310', 'HB308']
 }, {
   name: 'Physics Laboratory Equipments ',
-  location: 'Physics Laboratory Equipments Details: Building - H Building, Floor - 3rd Basement, Room - HB309 ',
-  type: '',
+  details: 'Physics Laboratory Equipments Details: Building - H Building, Floor - 3rd Basement, Room - HB309 ',
+  type: 'WHERE',
   message: 'You can borrow Laboratory Equipments for Physics at the 3rd Basement of H Building, Room HB309. ',
   tags: ['Location', 'Borrow', 'Physics', 'Laboratory', 'Equipments', 'HB309']
 }, {
   name: 'Hydraulics Lab ',
-  location: 'Hydraulics Lab Details: Building - H Building, Floor - 2nd Basement, Room - Room HB302 ',
-  type: '',
+  details: 'Hydraulics Lab Details: Building - H Building, Floor - 2nd Basement, Room - Room HB302 ',
+  type: 'WHERE',
   message: 'The Hydraulics Lab is located at the 3rd Basement of H Building, Room HB302. ',
   tags: ['Location', 'Hydraulics', 'Laboratory', 'HB302']
 }, {
   name: 'ESE Laboratory ',
-  location: 'ESE Laboratory Details: Building - H Building, Floor - 3rd Basement, Room - Room HB303 ',
-  type: '',
+  details: 'ESE Laboratory Details: Building - H Building, Floor - 3rd Basement, Room - Room HB303 ',
+  type: 'WHERE',
   message: 'The ESE Laboratory is located at the 3rd Basement of H Building, Room HB303. ',
   tags: ['Location', 'ESE', 'Laboratory', 'Environmental', 'Sanitary', 'Engineering']
 }, {
   name: 'Engineering Faculty Room ',
-  location: 'Engineering Faculty Room Details: Building - H Building, Floor - 2nd Basement, Room - Room HB201 ',
-  type: '',
+  details: 'Engineering Faculty Room Details: Building - H Building, Floor - 2nd Basement, Room - Room HB201 ',
+  type: 'WHERE',
   message: 'The Engineering Faculty Room is located at the 2nd Basement of H Building, Room HB201. ',
   tags: ['Location', 'Engineering', 'Faculty', 'Room', 'HB201', 'Office', 'Department', 'College']
 }, {
   name: 'Masscom Laboratory ',
-  location: 'Masscom Laboratory Details: Building - H Building, Floor - 2nd Floor ',
-  type: '',
+  details: 'Masscom Laboratory Details: Building - H Building, Floor - 2nd Floor ',
+  type: 'WHERE',
   message: 'The Masscom Laboratory is located at the 2nd Floor of H Building. ',
   tags: ['Location', 'Masscom', 'Laboratory']
 }, {
   name: 'Production Room ',
-  location: 'Production Room Details: Building - H Building, Floor - 2nd Floor ',
-  type: '',
+  details: 'Production Room Details: Building - H Building, Floor - 2nd Floor ',
+  type: 'WHERE',
   message: 'The production room is located at the 2nd Floor of H Building. ',
   tags: ['Location', 'Production', 'Room']
 }, {
   name: 'E Media Room ',
-  location: 'E Media Room Details: Building - H Building, Floor - 2nd Floor, Room - H202 ',
-  type: '',
+  details: 'E Media Room Details: Building - H Building, Floor - 2nd Floor, Room - H202 ',
+  type: 'WHERE',
   message: 'The E-Media Room is located at the 2nd Floor of H Building, Room H202. ',
   tags: ['Location', 'Media', 'Room', 'H202']
 }, {
   name: 'SLAHS Faculty Room ',
-  location: 'SLAHS Faculty Room Details: Building - H Building, Floor - 2nd Floor, Room - H209 ',
-  type: '',
+  details: 'SLAHS Faculty Room Details: Building - H Building, Floor - 2nd Floor, Room - H209 ',
+  type: 'WHERE',
   message: 'The SLAHS Faculty Room is located at the 2nd Floor of H Building, Room H209. ',
   tags: ['Location', 'SLAHS', 'School', 'Human', 'Liberal', 'Arts', 'Faculty', 'Room', 'H209', 'Office', 'Department', 'college']
 }, {
   name: 'Psychology Laboratory ',
-  location: 'Psychology Laboratory Details: Building - H Building, Floor - 2nd Floor, Room - Room H203 ',
-  type: '',
+  details: 'Psychology Laboratory Details: Building - H Building, Floor - 2nd Floor, Room - Room H203 ',
+  type: 'WHERE',
   message: 'The Psychology Laboratory is located at the 2nd Floor of H Building, Room H203. ',
   tags: ['Location', 'H203', 'Psychology', 'Laboratory']
 }, {
   name: 'SBAA Faculty Room ',
-  location: 'SBAA Faculty Room Details: Building - H Building, Floor - 3rd Floor, Room - Room H310 ',
-  type: '',
+  details: 'SBAA Faculty Room Details: Building - H Building, Floor - 3rd Floor, Room - Room H310 ',
+  type: 'WHERE',
   message: 'The SBAA Faculty Room is located at the 3rd Floor of H Building, Room H310. ',
   tags: ['Location', 'SBAA', 'BAA', 'School', 'Business', 'Administration', 'Faculty', 'Room', 'Office', 'Department', 'College']
 }, {
   name: 'CTE/STE Faculty Room ',
-  location: 'CTE/STE Faculty Room Details: Building - H Building, Floor - 5th Floor, Room - Room H501 ',
-  type: '',
+  details: 'CTE/STE Faculty Room Details: Building - H Building, Floor - 5th Floor, Room - Room H501 ',
+  type: 'WHERE',
   message: 'The CTE Faculty Room is located at the 5th Floor of H Building, Room H501. ',
   tags: ['Location', 'CTE', 'STE', 'Faculty', 'Room', 'School', 'College', 'Teacher', 'Education', 'Office', 'department']
 }, {
   name: 'Music Room ',
-  location: 'Music Room Details: Building - H Building, Floor - 5th Floor, Room - Room H506 ',
-  type: '',
+  details: 'Music Room Details: Building - H Building, Floor - 5th Floor, Room - Room H506 ',
+  type: 'WHERE',
   message: 'The Music Room is located at the 5th Floor of H Building, Room H506. ',
   tags: ['Location', 'Music', 'Room', 'H506']
 }, {
   name: 'Swimming Pool ',
-  location: 'Swimming Pool Details: Building - B Building, Floor - Ground Floor, Room - Room BC01 ',
-  type: '',
+  details: 'Swimming Pool Details: Building - B Building, Floor - Ground Floor, Room - Room BC01 ',
+  type: 'WHERE',
   message: 'The Swimming Pool is located at the ground Floor of B Building, Room BC01. ',
   tags: ['Location', 'Swimming', 'Pool', 'BC01']
 }, {
   name: 'SOD Faculty Room ',
-  location: 'SOD Faculty Room Details: Building - B Building, Floor - 3rd Floor, In front of the General Laboratory Room ',
-  type: '',
+  details: 'SOD Faculty Room Details: Building - B Building, Floor - 3rd Floor, In front of the General Laboratory Room ',
+  type: 'WHERE',
   message: 'The SOD Faculty Room is located at the 3rd Floor of B Building. ',
   tags: ['SOD', 'School', 'Dentistry', 'Faculty', 'Room', 'Location', 'Office', 'Department', 'College']
 }, {
   name: 'SAMS Learning Center ',
-  location: 'SAMS Learning Center Details: Building - B Building, Floor - 4th Floor, Room - Room B401 ',
-  type: '',
+  details: 'SAMS Learning Center Details: Building - B Building, Floor - 4th Floor, Room - Room B401 ',
+  type: 'WHERE',
   message: 'The SAMS Learning Center is located at the 4th Floor of B Building, Room B401. ',
   tags: ['SAMS', 'Learning', 'Center', 'B401', 'Location']
 }, {
   name: 'NATSCI Faculty Room ',
-  location: 'NATSCI Faculty Room Details: Building - B Building, Floor - 5th Floor, Room - B509 ',
-  type: '',
+  details: 'NATSCI Faculty Room Details: Building - B Building, Floor - 5th Floor, Room - B509 ',
+  type: 'WHERE',
   message: 'The NATSCI Faculty Room is located at the 5th Floor of B Building, Room B509. ',
   tags: ['NATSCI', 'School', 'Natural', 'Sciences', 'Faculty', 'Room', 'B509', 'Location', 'Office', 'Department', 'College']
 }, {
   name: 'Chemistry Laboratory ',
-  location: 'Chemistry Laboratory Details: Building - B Building, Floor - 6th Floor, Rooms B604 and B607 ',
-  type: '',
+  details: 'Chemistry Laboratory Details: Building - B Building, Floor - 6th Floor, Rooms B604 and B607 ',
+  type: 'WHERE',
   message: 'The chemistry laboratories are located at the 6th Floor of B Building, Rooms B604 and B607. ',
   tags: ['Chemistry', 'Laboratory', 'Location', 'B604', 'B607']
 }, {
   name: 'Medtech/MLS Laboratory ',
-  location: 'Medtech/MLS Laboratory Details: Building - B Building, Floor - 6th Floor, Rooms B608 and B609 ',
-  type: '',
+  details: 'Medtech/MLS Laboratory Details: Building - B Building, Floor - 6th Floor, Rooms B608 and B609 ',
+  type: 'WHERE',
   message: 'The Medtech/MLS Laboratory is located at the 6th Floor of B Building, Rooms B608 and B609. ',
   tags: ['Location', 'Medtech', 'MLS', 'Laboratory', 'B608', 'B609']
 }, {
   name: 'Physical Therapy Laboratory ',
-  location: 'Physical Therapy Laboratory Details: Building - B Building, Floor - 6th Floor, Room - B601 ',
-  type: '',
+  details: 'Physical Therapy Laboratory Details: Building - B Building, Floor - 6th Floor, Room - B601 ',
+  type: 'WHERE',
   message: 'The Physical Therapy Laboratory is located at the 6th Floor of B Building, Room B601. ',
   tags: ['Location', 'PT', 'Physical', 'Therapy', 'Laboratory', 'B601']
 }, {
   name: 'Chemistry Laboratories ',
-  location: 'Chemistry Laboratories  Details: Building - B Building, Floor - 7th Floor, Room - Room B707 ',
-  type: '',
+  details: 'Chemistry Laboratories  Details: Building - B Building, Floor - 7th Floor, Room - Room B707 ',
+  type: 'WHERE',
   message: 'The Chemistry Laboratories are located at the 7th Floor of B Building, Rooms B707. ',
   tags: ['Location', 'Chemistry', 'Laboratory', 'B707']
 }, {
   name: 'NATSCI Laboratory ',
-  location: 'NATSCI Laboratory Details: Building - B Building, Floor - 6th Floor, Room - B706 ',
-  type: '',
+  details: 'NATSCI Laboratory Details: Building - B Building, Floor - 6th Floor, Room - B706 ',
+  type: 'WHERE',
   message: 'The NATSCI Laboratory is located at the 6th Floor of B Building, Room B706. ',
   tags: ['Location', 'NATSCI', 'Natural', 'Sciences', 'Laboratory', 'B706']
 }, {
   name: 'Drafting Studios ',
-  location: 'Drafting Studios Details: Building - A Building, Floor - 9th Floor, Rooms A901, A902, A904, A905',
-  type: '',
+  details: 'Drafting Studios Details: Building - A Building, Floor - 9th Floor, Rooms A901, A902, A904, A905',
+  type: 'WHERE',
   message: 'The Drafting Studios are located at the 9th Floor of A Building, Rooms A901, A902, A904 and A905. ',
   tags: ['Location', 'Drafting', 'Studios', 'A901', 'A902', 'A904', 'A905']
 }, {
   name: 'Architecture Faculty Room ',
-  location: 'Architecture Faculty Room Details: Building - A Building, Floor - 9th Floor, Room - Room A907 ',
-  type: '',
+  details: 'Architecture Faculty Room Details: Building - A Building, Floor - 9th Floor, Room - Room A907 ',
+  type: 'WHERE',
   message: 'The Architecture Faculty Room is located at the 9th Floor of A Building, Room A907. ',
   tags: ['Location', 'Architecture', 'Faculty', 'Room', 'A907', 'Office', 'Department', 'College']
 }, {
   name: 'SCJPS Faculty Room ',
-  location: 'SCJPS Faculty Room Details: Building - A Building, Floor - 8th Floor, In front of the Dean\'s Office ',
-  type: '',
+  details: 'SCJPS Faculty Room Details: Building - A Building, Floor - 8th Floor, In front of the Dean\'s Office ',
+  type: 'WHERE',
   message: 'The SCJPS Faculty Room is located at the 8th Floor of A Building in front of the Dean\'s Office. ',
   tags: ['Location', 'SCJPS', 'School', 'Criminal', 'Justice', 'Public', 'Safety', 'Faculty', 'Room', 'Office', 'Department', 'College']
 }, {
   name: 'MOOT Court Room ',
-  location: 'MOOT Court Room Details: Building - A Building, Floor - 8th Floor ',
-  type: '',
+  details: 'MOOT Court Room Details: Building - A Building, Floor - 8th Floor ',
+  type: 'WHERE',
   message: 'The MOOT Court Room is located at the 8th Floor of A Building. ',
   tags: ['Location', 'MOOT', 'Court', 'Room']
 }, {
   name: 'Interrogation Room ',
-  location: 'Interrogation Room Details: Building - A Building, Floor - 8th Floor ',
-  type: '',
+  details: 'Interrogation Room Details: Building - A Building, Floor - 8th Floor ',
+  type: 'WHERE',
   message: 'The Interrogation Room is located at the 8th Floor of A Building. ',
   tags: ['Location', 'Interrogation', 'Room']
 }, {
   name: 'Crime Laboratory ',
-  location: 'Crime Laboratory Details: Building - A Building, Floor - 8th Floor, Room - A809 ',
-  type: '',
+  details: 'Crime Laboratory Details: Building - A Building, Floor - 8th Floor, Room - A809 ',
+  type: 'WHERE',
   message: 'The Crime Laboratory is located at the 8th Floor of A Building, Room A809. ',
   tags: ['Location', 'Crime', 'Laboratory', 'A809']
 }, {
   name: 'Nursing Faculty Room ',
-  location: 'Nursing Faculty Room Details: Building - A Building, Floor - 3rd Floor, Room - Room A302 ',
-  type: '',
+  details: 'Nursing Faculty Room Details: Building - A Building, Floor - 3rd Floor, Room - Room A302 ',
+  type: 'WHERE',
   message: 'The SON Faculty Room is located at the 3rd Floor of A Building, Room A302. ',
   tags: ['Location', 'SON', 'School', 'Nursing', 'Faculty', 'Room', 'A302', 'Office', 'Department', 'College']
 }, {
   name: 'Office of the President ',
-  location: 'Office of the President Details: Building - A Building, Floor - 2nd Floor ',
-  type: '',
+  details: 'Office of the President Details: Building - A Building, Floor - 2nd Floor ',
+  type: 'WHERE',
   message: 'The Office of the President is located at the 2nd Floor of A Building. ',
   tags: ['Location', 'Office', 'President']
 }, {
   name: 'Office of the Vice President for Academic Affairs ',
-  location: 'Office of the Vice President for Academic Affairs Details: Building - A Building, Floor - 2nd Floor, Room - Room A205 ',
-  type: '',
+  details: 'Office of the Vice President for Academic Affairs Details: Building - A Building, Floor - 2nd Floor, Room - Room A205 ',
+  type: 'WHERE',
   message: 'The Office of the Vice President for Academic Affairs is located at the 2nd Floor of A Building, Room A205. ',
   tags: ['Location', 'Office', 'VP', 'Vice', 'President', 'Academic', 'Affairs', 'A205']
 }, {
   name: 'Office of the Vice President for Institutional and External Affairs ',
-  location: 'Office of the Vice President for Institutional and External Affairs Details: Building - A Building, Floor - 2nd Floor, Room - Room A205 ',
-  type: '',
+  details: 'Office of the Vice President for Institutional and External Affairs Details: Building - A Building, Floor - 2nd Floor, Room - Room A205 ',
+  type: 'WHERE',
   message: 'The Office of the Vice President for Institutional and External Affairs is located at the 2nd Floor of A Building, Room A205. ',
   tags: ['Location', 'Office', 'VP', 'Vice', 'President', 'Institutional', 'External', 'Affairs', 'A205']
 }, {
   name: 'Human Resource Management Center ',
-  location: 'Human Resource Management Center Details: Building - A Building, Floor - 2nd Floor ',
-  type: '',
+  details: 'Human Resource Management Center Details: Building - A Building, Floor - 2nd Floor ',
+  type: 'WHERE',
   message: 'The Human Resource Management Center is located at the 2nd Floor of A Building. ',
   tags: ['Location', 'Human', 'Resource', 'Management', 'Center', 'HRMC']
 }, {
   name: 'Z Radio DWUB-FM 98.7 ',
-  location: 'Z Radio DWUB-FM 98.7 Details: Building - A Building, Floor - A Floor, Room - AA02 ',
-  type: '',
+  details: 'Z Radio DWUB-FM 98.7 Details: Building - A Building, Floor - A Floor, Room - AA02 ',
+  type: 'WHERE',
   message: 'The Z Radio DWUB-FM 98.7 Radio Station is located at the A Floor of A Building, Room AA02. ',
   tags: ['Location', 'Radio', 'Station', 'DWUB', 'AA02']
 }, {
   name: ' SIHTM Faculty Room ',
-  location: 'SIHTM Faculty Room  Details: Building - A Building, Floor - Floor A ',
-  type: '',
+  details: 'SIHTM Faculty Room  Details: Building - A Building, Floor - Floor A ',
+  type: 'WHERE',
   message: 'The SIHTM Faculty Room is located at the A Floor of A Building. ',
   tags: ['Location', 'SIHTM', 'School', 'International', 'Hotel', 'Tourism', 'Management', 'Faculty', 'Room', 'Office', 'Department', 'College']
 }, {
   name: 'Front Office and Travel Agency Room ',
-  location: 'Front Office and Travel Agency Room Details: Building - A Building, Floor - Floor B ',
-  type: '',
+  details: 'Front Office and Travel Agency Room Details: Building - A Building, Floor - Floor B ',
+  type: 'WHERE',
   message: 'The Front Office and Travel Agency Room is located at the B Floor of A Building. ',
   tags: ['Location', 'Front', 'Office', 'Travel', 'Agency', 'Room']
 }, {
   name: 'Hot and Cold Kitchen ',
-  location: 'Hot and Cold Kitchen Details: Building - A Bulding, Floor - Floor D ',
-  type: '',
+  details: 'Hot and Cold Kitchen Details: Building - A Bulding, Floor - Floor D ',
+  type: 'WHERE',
   message: 'The Hot and Cold Kitchen is located A Building Floor D. ',
   tags: ['Location', 'Hot', 'Cold', 'Kitchen']
 }, {
   name: 'SIT Faculty Office ',
-  location: 'SIT Faculty Office Details: Building - F Building, Floor - 2nd Floor, Room - F202 ',
-  type: '',
+  details: 'SIT Faculty Office Details: Building - F Building, Floor - 2nd Floor, Room - F202 ',
+  type: 'WHERE',
   message: 'The SIT Faculty Office is located at the 2nd Floor of F Building, Room F202. ',
   tags: ['Location', 'SIT', 'School', 'Information', 'Technology', 'Faculty', 'Room', 'F202', 'Office', 'Department', 'College']
 }, {
   name: 'UB SQUARE ',
-  location: 'UB SQUARE Details: Building - F Building ',
-  type: '',
+  details: 'UB SQUARE Details: Building - F Building ',
+  type: 'WHERE',
   message: 'The UB Square is located at the F Building below the cashier. ',
   tags: ['Location', 'UB', 'Square']
 }, {
   name: 'Borrow Books ',
-  location: 'Where to Borrow Books in the university: Main, Extension, Centennial Library ',
-  type: '',
+  details: 'Where to Borrow Books in the university: Main, Extension, Centennial Library ',
+  type: 'WHERE',
   message: 'You can borrow or read books at the Main, Extension or Centennial Library. ',
   tags: ['Borrow', 'Read', 'Books', 'Location']
 }, {
   name: 'Food Court',
-  location: 'F Building, A and B Building Ground Floor, Kubo  ',
-  type: '',
+  details: 'F Building, A and B Building Ground Floor, Kubo  ',
+  type: 'WHERE',
   message: 'There are two food courts in the university, One is located at F building below the first floor and the other is located at A and B Building Ground Floor. There is also a turo turo infront of the gym called kubo. Or you can just eat on a plate hehehe ;).',
   tags: ['Eat', 'Foods', 'Court', 'Drink', 'Buy', 'Beverage']
 }, {
   name: 'SBAA Department',
-  location: 'This are the details for the location of the SBAA Department: Building - H Building, Floor - 3rd Floor',
-  type: '',
+  details: 'This are the details for the location of the SBAA Department: Building - H Building, Floor - 3rd Floor',
+  type: 'WHERE',
   message: 'The SBAA Department is located at the 3rd Floor of H Building',
   tags: ['SBAA',
     'school',
@@ -1598,8 +1598,8 @@ var location = [{
   ]
 }, {
   name: 'SCJPS Department ',
-  location: 'This are the details for the location of the SCJPS Department: Building - A Building',
-  type: '',
+  details: 'This are the details for the location of the SCJPS Department: Building - A Building',
+  type: 'WHERE',
   message: 'The SCJPS Department is located at the 8th Floor of A Building',
   tags: ['SCJPS',
     'school',
@@ -1614,8 +1614,8 @@ var location = [{
   ]
 }, {
   name: 'SOD Department ',
-  location: 'This are the details for the location of the SOD Department: Building - B Building',
-  type: '',
+  details: 'This are the details for the location of the SOD Department: Building - B Building',
+  type: 'WHERE',
   message: 'The SOD Department is located at the 3rd Floor of B Building',
   tags: ['SOD',
     'school',
@@ -1627,8 +1627,8 @@ var location = [{
   ]
 }, {
   name: 'SEA Department ',
-  location: 'This are the details for the location of the SEA Department: Building - HB Building, Floor - B2 Floor',
-  type: '',
+  details: 'This are the details for the location of the SEA Department: Building - HB Building, Floor - B2 Floor',
+  type: 'WHERE',
   message: 'The SEA Department is located at the 2nd Basement Floor of H Building.',
   tags: ['SEA',
     'school',
@@ -1641,8 +1641,8 @@ var location = [{
   ]
 }, {
   name: 'SIT Department ',
-  location: 'This are the details for the location of the SIT Department: Building - F Building, Floor - 2nd Floor',
-  type: '',
+  details: 'This are the details for the location of the SIT Department: Building - F Building, Floor - 2nd Floor',
+  type: 'WHERE',
   message: 'The SIT Department is located at the 2nd Floor of F Building, Room F201.',
   tags: ['SIT',
     'school',
@@ -1659,8 +1659,8 @@ var location = [{
   ]
 }, {
   name: 'SIHTM Department ',
-  location: 'This are the details for the location of the SIHTM Department: Building - A Building, Floor - A Floor',
-  type: '',
+  details: 'This are the details for the location of the SIHTM Department: Building - A Building, Floor - A Floor',
+  type: 'WHERE',
   message: 'The SIHTM Department is located at the A Floor of A Building.',
   tags: ['SIHTM',
     'school',
@@ -1676,8 +1676,8 @@ var location = [{
   ]
 }, {
   name: 'SLAHS Department ',
-  location: 'This are the details for the location of the SLAHS Department: Building - H Building, Floor - 2nd Floor',
-  type: '',
+  details: 'This are the details for the location of the SLAHS Department: Building - H Building, Floor - 2nd Floor',
+  type: 'WHERE',
   message: 'The SLAHS Department is located at the 2nd Floor of H Building.',
   tags: ['SLAHS',
     'school',
@@ -1692,8 +1692,8 @@ var location = [{
   ]
 }, {
   name: 'SNS Department ',
-  location: 'This are the details for the location of the SNS Department: Building - B Building, Floor - 5th Floor',
-  type: '',
+  details: 'This are the details for the location of the SNS Department: Building - B Building, Floor - 5th Floor',
+  type: 'WHERE',
   message: 'The SNS Department is located at the 5th Floor of B Building.',
   tags: ['SNS',
     'school',
@@ -1707,8 +1707,8 @@ var location = [{
   ]
 }, {
   name: 'SON Department ',
-  location: 'This are the details for the location of the SON Department: Building - A Building, Floor - 3rd Floor',
-  type: '',
+  details: 'This are the details for the location of the SON Department: Building - A Building, Floor - 3rd Floor',
+  type: 'WHERE',
   message: 'The SON Department is located at the 3rd Floor of A Building.',
   tags: ['SON',
     'school',
@@ -1720,8 +1720,8 @@ var location = [{
   ]
 }, {
   name: 'STE Department ',
-  location: 'This are the details for the location of the STE Department: Building - H Building, Floor - 5th Floor',
-  type: '',
+  details: 'This are the details for the location of the STE Department: Building - H Building, Floor - 5th Floor',
+  type: 'WHERE',
   message: 'The STE Department is located at the 5th Floor of H Building',
   tags: ['STE',
     'school',
@@ -1734,8 +1734,8 @@ var location = [{
   ]
 }, {
   name: 'SBAA Courses Enrolllment Location',
-  location: 'This is where you can enroll SBAA courses in the university: Building - H Building, Floor - 3rd Floor',
-  type: '',
+  details: 'This is where you can enroll SBAA courses in the university: Building - H Building, Floor - 3rd Floor',
+  type: 'WHERE',
   message: 'You can enroll that at the SBAA Department which is located at the 3rd Floor of H Building',
   tags: ['SBAA',
     'school',
@@ -1770,8 +1770,8 @@ var location = [{
   ]
 }, {
   name: 'SCJPS Courses Enrollment Location ',
-  location: 'This is where you can enroll SCJPS courses in the university: Building - A Building',
-  type: '',
+  details: 'This is where you can enroll SCJPS courses in the university: Building - A Building',
+  type: 'WHERE',
   message: 'You can enroll that at the SCJPS Department which is located at the 8th Floor of A Building',
   tags: ['SCJPS',
     'school',
@@ -1800,8 +1800,8 @@ var location = [{
   ]
 }, {
   name: 'SOD Courses Enrollment Location ',
-  location: 'This is where you can enroll SOD courses in the university: Building - B Building',
-  type: '',
+  details: 'This is where you can enroll SOD courses in the university: Building - B Building',
+  type: 'WHERE',
   message: 'You can enroll that at the SOD Department which is located at the 3rd Floor of B Building',
   tags: ['SOD',
     'school',
@@ -1824,8 +1824,8 @@ var location = [{
   ]
 }, {
   name: 'SEA Courses Enrollment Location ',
-  location: 'This is where you can enroll SEA courses in the university: Building - HB Building, Floor - B2 Floor',
-  type: '',
+  details: 'This is where you can enroll SEA courses in the university: Building - HB Building, Floor - B2 Floor',
+  type: 'WHERE',
   message: 'You can enroll that at the SEA Department which is located at the 2nd Basement Floor of H Building.',
   tags: ['SEA',
     'school',
@@ -1853,8 +1853,8 @@ var location = [{
   ]
 }, {
   name: 'SIT Courses Enrollment Location',
-  location: 'This is where you can enroll SIT courses in the university: Building - F Building, Floor - 2nd Floor',
-  type: '',
+  details: 'This is where you can enroll SIT courses in the university: Building - F Building, Floor - 2nd Floor',
+  type: 'WHERE',
   message: 'You can enroll that at the SIT Department which is located at the 2nd Floor of F Building, Room F201.',
   tags: ['SIT',
     'school',
@@ -1874,8 +1874,8 @@ var location = [{
   ]
 }, {
   name: 'SIHTM Courses Enrollment Location ',
-  location: 'This is where you can enroll SIHTM courses in the university: Building - A Building, Floor - A Floor',
-  type: '',
+  details: 'This is where you can enroll SIHTM courses in the university: Building - A Building, Floor - A Floor',
+  type: 'WHERE',
   message: 'You can enroll that at the SIHTM Department which is located at the A Floor of A Building.',
   tags: ['SIHTM',
     'school',
@@ -1898,8 +1898,8 @@ var location = [{
   ]
 }, {
   name: 'SLAHS Courses Enrollment Location ',
-  location: 'This is where you can enroll SLAHS courses in the university: Building - H Building, Floor - 2nd Floor',
-  type: '',
+  details: 'This is where you can enroll SLAHS courses in the university: Building - H Building, Floor - 2nd Floor',
+  type: 'WHERE',
   message: 'You can enroll that at the SLAHS Department which is located at the 2nd Floor of H Building.',
   tags: [
     'SLAHS', 'school', 'college',
@@ -1919,8 +1919,8 @@ var location = [{
   ]
 }, {
   name: 'SNS Courses Enrollment Location ',
-  location: 'This is where you can enroll SNS courses in the university: Building - B Building, Floor - 5th Floor',
-  type: '',
+  details: 'This is where you can enroll SNS courses in the university: Building - B Building, Floor - 5th Floor',
+  type: 'WHERE',
   message: 'You can enroll that at the SNS Department which is located at the 5th Floor of B Building.',
   tags: ['SNS',
     'school',
@@ -1940,8 +1940,8 @@ var location = [{
   ]
 }, {
   name: 'SON Courses Enrollment Location ',
-  location: 'This is where you can enroll SON courses in the university: Building - A Building, Floor - 3rd Floor',
-  type: '',
+  details: 'This is where you can enroll SON courses in the university: Building - A Building, Floor - 3rd Floor',
+  type: 'WHERE',
   message: 'You can enroll that at the SON Department which is located at the 3rd Floor of A Building.',
   tags: ['SON',
     'school',
@@ -1960,8 +1960,8 @@ var location = [{
   ]
 }, {
   name: 'STE Courses Enrollment Location ',
-  location: 'This is where you can enroll STE courses in the university: Building - H Building, Floor - 5th Floor',
-  type: '',
+  details: 'This is where you can enroll STE courses in the university: Building - H Building, Floor - 5th Floor',
+  type: 'WHERE',
   message: 'You can enroll that at the STE Department which is located at the 5th Floor of H Building',
   tags: ['STE',
     'school',

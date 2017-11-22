@@ -14,6 +14,8 @@ export class ResponseComponent {
     this.$anchorScroll.yOffset = 60;
     this.currentUser = Auth.getCurrentUserSync().name;
 
+    this.currentPage = 1;
+
     //connection to the server
     this.endpoint = {
       link: '/api/responses',
@@ -24,8 +26,8 @@ export class ResponseComponent {
     this.dataInfo = {
       name: 'Response',
       info: 'The response table contains conversational messages which can handle users who want to use the UBAE for fun.',
-      guide: ['The variable \'message\' contains UBAEs reply. Try to make it witty as possible as to emulate more human-like thinking which can handle sarcastic inquiries.',
-      'The variable \'tags\' contains keywords that will be detected to determine which data UBAE will use as a response to users message. Try to add more tags which are possible keywords.'],
+      guide: ['The \'message\' contains UBAEs reply. Try to make it witty as possible as to emulate more human-like thinking which can handle sarcastic inquiries.',
+      'The \'tags\' contains keywords that will be detected to determine which data UBAE will use as a response to users message. Try to add more tags which are possible keywords.'],
       show: true,
       table: ['#', 'Message', 'Tags']
     };
@@ -88,13 +90,6 @@ export class ResponseComponent {
     this.dataInfo.show = false;
   }
 
-  resetForm() {
-    this.eventStatus = 'Resetting Form';
-    this.entryID = '';
-    this.message = '';
-    this.tags = '';
-  }
-
   //onLoad
   $onInit() {
     this.eventStatus = 'Loading...';
@@ -139,51 +134,15 @@ export class ResponseComponent {
     });
   }
 
-  //Save entry
-  saveEntry() {
-    if(this.entryID) {
-      //Update entry
-      this.$http.patch(this.endpoint.link + '/' + this.entryID, {
-        message: this.message,
-        tags: this.tags,
-        author: this.currentUser,
-        modified: new Date(Date.now())
-      })
-      .then(response => {
-        this.resetForm();
-        this.getEntries();
-        this.eventStatus = this.status.update.success;
-        console.log(response.statusText);
-        this.isCollapsed = false;
-      }, err => {
-        this.eventStatus = this.status.update.error;
-        console.log(err.statusText);
-      });
-    } else {
-      //Create entry
-      this.$http.post(this.endpoint.link, {
-        message: this.message,
-        tags: this.tags,
-        author: this.currentUser,
-        added: new Date(Date.now())
-      })
-      .then(response => {
-        this.resetForm();
-        this.eventStatus = this.status.create.success;
-        console.log(response.statusText);
-        this.isCollapsed = false;
-      }, err => {
-        this.eventStatus = this.status.create.error;
-        console.log(err.statusText);
-      });
-    }
-  }
-
   //Archive an entry
   archiveEntry(_id) {
     this.eventStatus = 'Processing...';
     this.$http.put(this.endpoint.link + '/' + _id, {
-      active: false
+      active: false,
+      archived: {
+        author: this.currentUser,
+        date: new Date(Date.now())
+      }
     })
     .then(response => {
       this.eventStatus = this.status.archive.success;

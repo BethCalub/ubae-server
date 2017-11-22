@@ -1,0 +1,119 @@
+<div class="section">
+    <div class="container" style="padding-top: 60px; padding-bottom:30px;">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Edit Entry</h2>
+        </div>
+      </div>
+      <div class="row" ng-hide="editResponseCtrl.stepThree">
+        <div class="col-md-12">
+          <h3>Response Entry</h3>
+          <h4>NO COMMAND ENTRY</h4>
+        </div>
+      </div>
+      <div class="row" ng-hide="editResponseCtrl.stepThree">
+        <div class="col-md-12" ng-show="true">
+          <h3>
+            <strong>Step 1. </strong>Modify necessary information.</h3>
+          <hr>
+        </div>
+      </div>
+      <div class="row" ng-hide="editResponseCtrl.stepThree">
+        <div class="col-md-6">
+          <h4>Modify the response message.</h4>
+          <form id="newEntry" name="newEntry" novalidate>
+            <div class="form-group" ng-class="{ 'has-success': newEntry.message.$valid && newEntry.message.$dirty, 'has-error': newEntry.message.$invalid && newEntry.message.$dirty }">
+              <label class="control-label" for="message">Message</label>
+              <textarea name="message" style="resize: none;" placeholder="Enter a message UBAE will use to respond when this entry is searched."
+                ng-model="editResponseCtrl.message" id="message" class="form-control" rows="6" required></textarea>
+              <p class="help-block">This must contain that UBAE would use to respond if this entry is searched.</p>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+            <h4>Add more keywords.</h4>
+            <div class="form-group">
+              <label class="control-label" for="keyword">Add Keyword</label>
+              <div class="input-group">
+                <input type="text" id="keyword" name="keyword" class="form-control" placeholder="Add a detail for this entry." ng-model="editResponseCtrl.keyword"
+                />
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-default" ng-click="editResponseCtrl.addKeyword(editResponseCtrl.keyword)">
+                    Add Keyword
+                  </button>
+                </span>
+              </div>
+              <p class="help-block">This must contain keywords that best describe this entry.
+                <br>**This is important when UBAE is searching for an information.
+              </p>
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="keywords">Keywords</label>
+              <p class="{{editResponseCtrl.keywordClass}}">{{editResponseCtrl.keywordError}}</p>
+              <ul class="tags">
+                <li ng-repeat="tags in editResponseCtrl.tags">
+                  <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
+                    {{tags}}
+                    <a href="" style="color: black" ng-click="editResponseCtrl.deleteKeyword(tags)">
+                      x
+                    </a>
+                  </span>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+      <div class="row" ng-hide="editResponseCtrl.stepThree">
+        <div class="col-md-12">
+          <hr>
+          <div class="text-right">
+            <button type="submit" ng-click="editResponseCtrl.stepThree = true; editResponseCtrl.stepOne = true; editResponseCtrl.stepTwo = false"
+              ng-show="newEntry.$valid && editResponseCtrl.tags.length > 0" class="btn btn-danger">Submit</button>
+            <button type="submit" ng-click="editResponseCtrl.resetForm()" class="btn btn-warning">Reset to Default</button>
+            <button type="submit" ui-sref="response" class="btn btn-default">Cancel</button>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row">
+        <div class="col-md-12" ng-show="editResponseCtrl.stepThree">
+          <h3>
+            <strong>Step 2. </strong>Verify and confirm all the information.</h3>
+          <hr>
+          <div>
+            <h4>Response Entry</h4>
+            <h5 ng-show="editResponseCtrl.type">
+              <strong>NO COMMAND</strong> ENTRY</h5>
+            <h5>{{editResponseCtrl.now | date: 'fullDate'}}</h5>
+            <h6>modified by: {{editResponseCtrl.currentUser}}</h6>
+            <h6 ng-show="editResponseCtrl.message">Message</h6>
+            <p style="text-indent: 20px">{{editResponseCtrl.message}}</p>
+            <h6 ng-show="editResponseCtrl.tags">Keywords</h6>
+            <p style="text-indent: 20px">
+              <ul class="tags">
+                <li ng-repeat="tags in editResponseCtrl.tags">
+                  <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
+                    {{tags}}
+                  </span>
+                </li>
+              </ul>
+            </p>
+          </div>
+          <hr>
+          <p class="text-right">
+            <strong>Are you sure you want to save this entry. </strong>
+            <br>Please make sure that all the details are correct.
+            <br>This action cannot be undone.
+          </p>
+          <div class="text-right">
+            <button type="submit" ng-click="editResponseCtrl.editEntry()" ng-show="newEntry.$valid" class="btn btn-danger">Yes, I'm Sure!</button>
+            <button type="submit" ng-click="editResponseCtrl.stepThree = false; editResponseCtrl.stepOne = false; editResponseCtrl.stepTwo = true"
+              class="btn btn-default">No, Go Back</button>
+          </div>
+        </div>
+      </div>
+  
+  
+    </div>
+  </div>
+  

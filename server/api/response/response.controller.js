@@ -67,7 +67,9 @@ function handleError(res, statusCode) {
 
 // Gets a list of Responses
 export function index(req, res) {
-  return Response.find().exec()
+  return Response.find()
+    .sort('-searched')
+    .exec()
     .then(respondWithResult(res))
     .catch(handleError(res));
 }
@@ -85,8 +87,10 @@ export function create(req, res) {
   return Response.create({
     message: req.body.message,
     tags: UbaeNLP.keywordSearch(JSON.stringify(req.body.tags)),
-    author: req.body.author,
-    added: req.body.added
+    created: {
+      author: req.body.author,
+      date: req.body.date
+    }
   })
     .then(respondWithResult(res, 201))
     .catch(handleError(res));

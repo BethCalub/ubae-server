@@ -1,0 +1,51 @@
+<div class="section">
+    <div class="container" style="padding: 60px 15px">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Restore Entry</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h3>
+            <strong>Verify</strong> and
+            <strong>confirm</strong> that this is the entry you want to restore.</h3>
+          <hr>
+          <div>
+            <h4>Response</h4>
+            <h5 ng-show="restoreResponseCtrl.type">
+              <strong>NO COMMAND</strong> ENTRY</h5>
+            <h6>created by:
+              <strong>{{restoreResponseCtrl.created.author}}</strong>, {{restoreResponseCtrl.created.date | date: 'longDate'}}</h6>
+            <h6 ng-show="restoreResponseCtrl.modified.author && restoreResponseCtrl.modified.date">modified by:
+              <strong>{{restoreResponseCtrl.modified.author}}</strong>, {{restoreResponseCtrl.modified.date | date: 'longDate'}}</h6>
+            <h6 ng-show="restoreResponseCtrl.archived.author && restoreResponseCtrl.archived.date">archived by:
+              <strong>{{restoreResponseCtrl.archived.author}}</strong>, {{restoreResponseCtrl.archived.date | date: 'longDate'}}</h6>
+            <h6 ng-show="restoreResponseCtrl.message">Message</h6>
+            <p style="text-indent: 20px">{{restoreResponseCtrl.message}}</p>
+            <h6 ng-show="restoreResponseCtrl.tags">Keywords</h6>
+            <p style="text-indent: 20px">
+              <ul class="tags">
+                <li ng-repeat="tags in restoreResponseCtrl.tags">
+                  <span class="label label-danger" uib-tooltip="{{tags}}" tooltip-placement="top">
+                    {{tags}}
+                  </span>
+                </li>
+              </ul>
+            </p>
+          </div>
+          <hr>
+          <p class="text-right">
+            <strong>Are you sure you want to restore this entry.</strong>
+            <br>By restoring this entry, you are allowing this entry to be searched by UBAE.
+            <br>This action cannot be undone.
+          </p>
+          <div class="text-right">
+            <button type="submit" ng-click="restoreResponseCtrl.restoreEntry()" class="btn btn-danger">Yes, I'm Sure!</button>
+            <button type="submit" ui-sref="response" class="btn btn-default">No, Go Back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

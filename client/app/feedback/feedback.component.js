@@ -7,11 +7,12 @@ import routes from './feedback.routes';
 
 export class FeedbackComponent {
   /*@ngInject*/
-  constructor($http, $scope, socket) {
+  constructor(Auth, $http, $scope, socket) {
     this.$http = $http;
     this.socket = socket;
     this.link = '/api/feedbacks';
     this.showNotif = false;
+    this.currentUser = Auth.getCurrentUserSync().name;
 
     this.commandType = '';
 
@@ -77,7 +78,8 @@ export class FeedbackComponent {
   archiveEntry(_id) {
     this.$http.put(this.link + '/' + _id, {
       resolved: true,
-      timestamp: new Date(Date.now())
+      timestamp: new Date(Date.now()),
+      author: this.currentUser
     })
     .then(response => {
       this.eventStatus = 'Inquery Resolved';
